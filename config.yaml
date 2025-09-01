@@ -1,0 +1,34 @@
+# Configuration for Agent arXiv Daily
+
+# Keywords to search for in paper titles and abstracts
+keywords:
+  - "agent"
+  - "multi-agent"
+  - "autonomous agent"
+  - "intelligent agent"
+  - "agent-based"
+  - "LLM agent"
+  - "AI agent"
+  - "cognitive agent"
+  - "software agent"
+  - "conversational agent"
+  - "virtual agent"
+  - "reinforcement learning agent"
+  - "planning agent"
+  - "reasoning agent"
+  - "embodied agent"
+
+# arXiv categories to search in
+categories:
+  - "cs.AI"    # Artificial Intelligence
+  - "cs.MA"    # Multiagent Systems
+  - "cs.CL"    # Computation and Language
+  - "cs.LG"    # Machine Learning
+  - "cs.RO"    # Robotics
+  - "cs.HC"    # Human-Computer Interaction
+
+# Maximum number of results to fetch
+max_results: 100
+
+# Number of days to look back for papers
+days_back: 7
