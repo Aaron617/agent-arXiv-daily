@@ -27,8 +27,5 @@ categories:
   - "cs.RO"    # Robotics
   - "cs.HC"    # Human-Computer Interaction
 
-# Maximum number of results to fetch
-max_results: 100
-
-# Number of days to look back for papers
-days_back: 7
+# Request delay between scraping (seconds)
+request_delay: 1

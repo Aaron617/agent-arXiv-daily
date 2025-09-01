@@ -1,153 +1,161 @@
 # Agent Research Papers Daily
 
-**Last Updated:** 2025-09-01 18:59:19
+**Last Updated:** 2025-09-01 19:43:07
 
-**Total Papers:** 100
+**Total Papers:** 15
 
 ## Table of Contents
 
 - [Autonomous Agents](#autonomous-agents)
 - [Conversational Agents](#conversational-agents)
-- [Game Playing Agents](#game-playing-agents)
 - [LLM Agents](#llm-agents)
 - [Multi-Agent Systems](#multi-agent-systems)
 - [Other Agent Research](#other-agent-research)
-- [Planning and Reasoning](#planning-and-reasoning)
 
-## Autonomous Agents
+<details open>
+<summary><h2>Autonomous Agents (1 papers)</h2></summary>
 
-*3 papers*
+<details>
+<summary><strong>A Survey of Scientific Large Language Models: From Data Foundations to Agent Frontiers</strong> - Ming Hu, Chenglong Ma, Wei Li et al. - <a href="https://arxiv.org/pdf/2508.21148">2025-09-01</a></summary>
 
-- **A Survey of Scientific Large Language Models: From Data Foundations to Agent Frontiers** - Ming Hu, Chenglong Ma, Wei Li et al. - [2025-08-28](http://arxiv.org/pdf/2508.21148v1)
-- **CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning** - Zeyi Sun, Yuhang Cao, Jianze Liang et al. - [2025-08-27](http://arxiv.org/pdf/2508.20096v1)
-- **Evaluating Language Model Reasoning about Confidential Information** - Dylan Sam, Alexander Robey, Andy Zou et al. - [2025-08-27](http://arxiv.org/pdf/2508.19980v1)
+**Abstract:** Scientific Large Language Models (Sci-LLMs) are transforming how knowledge is represented, integrated, and applied in scientific research, yet their progress is shaped by the complex nature of scienti...
 
-## Conversational Agents
+**arXiv ID:** 2508.21148
+</details>
 
-*5 papers*
+</details>
 
-- **Designing Smarter Conversational Agents for Kids: Lessons from Cognitive Work and Means-Ends Analyses** - Vanessa Figueiredo - [2025-08-28](http://arxiv.org/pdf/2508.21209v1)
-- **BED-LLM: Intelligent Information Gathering with LLMs and Bayesian Experimental Design** - Deepro Choudhury, Sinead Williamson, Adam Goliński et al. - [2025-08-28](http://arxiv.org/pdf/2508.21184v1)
-- **ProactiveEval: A Unified Evaluation Framework for Proactive Dialogue Agents** - Tianjian Liu, Fanqi Wan, Jiajian Guo et al. - [2025-08-28](http://arxiv.org/pdf/2508.20973v1)
-- **Persode: Personalized Visual Journaling with Episodic Memory-Aware AI Agent** - Seokho Jin, Manseo Kim, Sungho Byun et al. - [2025-08-28](http://arxiv.org/pdf/2508.20585v1)
-- **CASE: An Agentic AI Framework for Enhancing Scam Intelligence in Digital Payments** - Nitish Jaipuria, Lorenzo Gatto, Zijun Kan et al. - [2025-08-27](http://arxiv.org/pdf/2508.19932v1)
+<details open>
+<summary><h2>Conversational Agents (1 papers)</h2></summary>
 
-## Game Playing Agents
+<details>
+<summary><strong>Designing Smarter Conversational Agents for Kids: Lessons from Cognitive Work and Means-Ends Analyses</strong> - Vanessa Figueiredo - <a href="https://arxiv.org/pdf/2508.21209">2025-09-01</a></summary>
 
-*3 papers*
+**Abstract:** This paper presents two studies on how Brazilian children (ages 9--11) use conversational agents (CAs) for schoolwork, discovery, and entertainment, and how structured scaffolds can enhance these inte...
 
-- **Machine Intelligence on the Edge: Interpretable Cardiac Pattern Localisation Using Reinforcement Learning** - Haozhe Tian, Qiyu Rao, Nina Moutonnet et al. - [2025-08-29](http://arxiv.org/pdf/2508.21652v1)
-- **Spiking Decision Transformers: Local Plasticity, Phase-Coding, and Dendritic Routing for Low-Power Sequence Control** - Vishal Pandey, Debasmita Biswas - [2025-08-29](http://arxiv.org/pdf/2508.21505v1)
-- **Reinforcement Learning for Optimizing Large Qubit Array based Quantum Sensor Circuits** - Laxmisha Ashok Attisara, Sathish Kumar - [2025-08-28](http://arxiv.org/pdf/2508.21253v1)
+**arXiv ID:** 2508.21209
+</details>
 
-## LLM Agents
+</details>
 
-*9 papers*
+<details open>
+<summary><h2>LLM Agents (1 papers)</h2></summary>
 
-- **ORCA: ORchestrating Causal Agent** - Joanie Hayoun Chung, Chaemyung Lim, Sumin Lee et al. - [2025-08-29](http://arxiv.org/pdf/2508.21304v1)
-- **How Does Cognitive Bias Affect Large Language Models? A Case Study on the Anchoring Effect in Price Negotiation Simulations** - Yoshiki Takenami, Yin Jou Huang, Yugo Murawaki et al. - [2025-08-28](http://arxiv.org/pdf/2508.21137v1)
-- **MCP-Bench: Benchmarking Tool-Using LLM Agents with Complex Real-World Tasks via MCP Servers** - Zhenting Wang, Qi Chang, Hemani Patel et al. - [2025-08-28](http://arxiv.org/pdf/2508.20453v1)
-- **AgentCoMa: A Compositional Benchmark Mixing Commonsense and Mathematical Reasoning in Real-World Scenarios** - Lisa Alazraki, Lihu Chen, Ana Brassard et al. - [2025-08-27](http://arxiv.org/pdf/2508.19988v1)
-- **Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning** - Sikuan Yan, Xiufeng Yang, Zuchao Huang et al. - [2025-08-27](http://arxiv.org/pdf/2508.19828v2)
-- **Survey of Specialized Large Language Model** - Chenghan Yang, Ruiyu Zhao, Yang Liu et al. - [2025-08-27](http://arxiv.org/pdf/2508.19667v1)
-- **Encouraging Good Processes Without the Need for Good Answers: Reinforcement Learning for LLM Agent Planning** - Zhiwei Li, Yong Hu, Wenqing Wang - [2025-08-27](http://arxiv.org/pdf/2508.19598v1)
-- **Aegis: Taxonomy and Optimizations for Overcoming Agent-Environment Failures in LLM Agents** - Kevin Song, Anand Jayarajan, Yaoyao Ding et al. - [2025-08-27](http://arxiv.org/pdf/2508.19504v1)
-- **Reliable Weak-to-Strong Monitoring of LLM Agents** - Neil Kale, Chen Bo Calvin Zhang, Kevin Zhu et al. - [2025-08-26](http://arxiv.org/pdf/2508.19461v1)
+<details>
+<summary><strong>ORCA: ORchestrating Causal Agent</strong> - Joanie Hayoun Chung, Chaemyung Lim, Sumin Lee et al. - <a href="https://arxiv.org/pdf/2508.21304">2025-09-01</a></summary>
 
-## Multi-Agent Systems
+**Abstract:** Causal inference is essential for decision-making science while the complexity of the data analysis workflow, ranging from data wrangling to causal analysis, increases substantially as the scale of da...
 
-*29 papers*
+**arXiv ID:** 2508.21304
+</details>
 
-- **Automated Clinical Problem Detection from SOAP Notes using a Collaborative Multi-Agent LLM Architecture** - Yeawon Lee, Xiaoyang Wang, Christopher C. Yang - [2025-08-29](http://arxiv.org/pdf/2508.21803v1)
-- **PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation** - Jiho Choi, Seojeong Park, Seongjong Song et al. - [2025-08-29](http://arxiv.org/pdf/2508.21720v1)
-- **Scalable Solution Methods for Dec-POMDPs with Deterministic Dynamics** - Yang You, Alex Schutz, Zhikun Li et al. - [2025-08-29](http://arxiv.org/pdf/2508.21595v1)
-- **Igniting Creative Writing in Small Language Models: LLM-as-a-Judge versus Multi-Agent Refined Rewards** - Xiaolong Wei, Bo Lu, Xingyu Zhang et al. - [2025-08-29](http://arxiv.org/pdf/2508.21476v1)
-- **CARJAN: Agent-Based Generation and Simulation of Traffic Scenarios with AJAN** - Leonard Frank Neis, Andre Antakli, Matthias Klusch - [2025-08-29](http://arxiv.org/pdf/2508.21411v1)
-- **ChatThero: An LLM-Supported Chatbot for Behavior Change and Therapeutic Support in Addiction Recovery** - Junda Wang, Zonghai Yao, Zhichao Yang et al. - [2025-08-28](http://arxiv.org/pdf/2508.20996v1)
-- **How Can Input Reformulation Improve Tool Usage Accuracy in a Complex Dynamic Environment? A Study on $τ$-bench** - Venkatesh Mishra, Amir Saeidi, Satyam Raj et al. - [2025-08-28](http://arxiv.org/pdf/2508.20931v1)
-- **Finite-Time Guarantees for Multi-Agent Combinatorial Bandits with Nonstationary Rewards** - Katherine B. Adams, Justin J. Boutilier, Qinyang He et al. - [2025-08-28](http://arxiv.org/pdf/2508.20923v1)
-- **cMALC-D: Contextual Multi-Agent LLM-Guided Curriculum Learning with Diversity-Based Context Blending** - Anirudh Satheesh, Keenan Powell, Hua Wei - [2025-08-28](http://arxiv.org/pdf/2508.20818v1)
-- **Multi-Agent Penetration Testing AI for the Web** - Isaac David, Arthur Gervais - [2025-08-28](http://arxiv.org/pdf/2508.20816v1)
-- **Single Agent Robust Deep Reinforcement Learning for Bus Fleet Control** - Yifan Zhang - [2025-08-28](http://arxiv.org/pdf/2508.20784v1)
-- **Adaptive Root Cause Localization for Microservice Systems with Multi-Agent Recursion-of-Thought** - Lingzhe Zhang, Tong Jia, Kangjin Wang et al. - [2025-08-28](http://arxiv.org/pdf/2508.20370v1)
-- **Multi-Agent Reinforcement Learning in Intelligent Transportation Systems: A Comprehensive Survey** - RexCharles Donatus, Kumater Ter, Ore-Ofe Ajayi et al. - [2025-08-27](http://arxiv.org/pdf/2508.20315v1)
-- **Neural Spline Operators for Risk Quantification in Stochastic Systems** - Zhuoyuan Wang, Raffaele Romagnoli, Kamyar Azizzadenesheli et al. - [2025-08-27](http://arxiv.org/pdf/2508.20288v1)
-- **Discrete-Guided Diffusion for Scalable and Safe Multi-Robot Motion Planning** - Jinhao Liang, Sven Koenig, Ferdinando Fioretto - [2025-08-27](http://arxiv.org/pdf/2508.20095v1)
-- **Symphony: A Decentralized Multi-Agent Framework for Scalable Collective Intelligence** - Ji Wang, Kashing Chen, Xinyuan Song et al. - [2025-08-27](http://arxiv.org/pdf/2508.20019v1)
-- **SWIRL: A Staged Workflow for Interleaved Reinforcement Learning in Mobile GUI Control** - Quanfeng Lu, Zhantao Ma, Shuai Zhong et al. - [2025-08-27](http://arxiv.org/pdf/2508.20018v1)
-- **CataractSurg-80K: Knowledge-Driven Benchmarking for Structured Reasoning in Ophthalmic Surgery Planning** - Yang Meng, Zewen Pan, Yandi Lu et al. - [2025-08-27](http://arxiv.org/pdf/2508.20014v1)
-- **Constraint Learning in Multi-Agent Dynamic Games from Demonstrations of Local Nash Interactions** - Zhouyu Zhang, Chih-Yuan Chiu, Glen Chou - [2025-08-27](http://arxiv.org/pdf/2508.19945v2)
-- **The Anatomy of a Personal Health Agent** - A. Ali Heydari, Ken Gu, Vidya Srinivas et al. - [2025-08-27](http://arxiv.org/pdf/2508.20148v1)
-- **Your AI Bosses Are Still Prejudiced: The Emergence of Stereotypes in LLM-Based Multi-Agent Systems** - Jingyu Guo, Yingying Xu - [2025-08-27](http://arxiv.org/pdf/2508.19919v1)
-- **Beyond BEV: Optimizing Point-Level Tokens for Collaborative Perception** - Yang Li, Quan Yuan, Guiyang Luo et al. - [2025-08-27](http://arxiv.org/pdf/2508.19638v1)
-- **PersoNo: Personalised Notification Urgency Classifier in Mixed Reality** - Jingyao Zheng, Haodi Weng, Xian Wang et al. - [2025-08-27](http://arxiv.org/pdf/2508.19622v1)
-- **Instructional Agents: LLM Agents on Automated Course Material Generation for Teaching Faculties** - Huaiyuan Yao, Wanpeng Xu, Justin Turnau et al. - [2025-08-27](http://arxiv.org/pdf/2508.19611v1)
-- **CompLex: Music Theory Lexicon Constructed by Autonomous Agents for Automatic Music Generation** - Zhejing Hu, Yan Liu, Gong Chen et al. - [2025-08-27](http://arxiv.org/pdf/2508.19603v1)
-- **PoolFlip: A Multi-Agent Reinforcement Learning Security Environment for Cyber Defense** - Xavier Cadet, Simona Boboila, Sie Hendrata Dharmawan et al. - [2025-08-27](http://arxiv.org/pdf/2508.19488v1)
-- **An Iterative Approach for Heterogeneous Multi-Agent Route Planning with Resource Transportation Uncertainty and Temporal Logic Goals** - Gustavo A. Cardona, Kaier Liang, Cristian-Ioan Vasile - [2025-08-26](http://arxiv.org/pdf/2508.19429v1)
-- **Aleks: AI powered Multi Agent System for Autonomous Scientific Discovery via Data-Driven Approaches in Plant Science** - Daoyuan Jin, Nick Gunner, Niko Carvajal Janke et al. - [2025-08-26](http://arxiv.org/pdf/2508.19383v1)
-- **QAgent: An LLM-based Multi-Agent System for Autonomous OpenQASM programming** - Zhenxiao Fu, Fan Chen, Lei Jiang - [2025-08-26](http://arxiv.org/pdf/2508.20134v1)
+</details>
 
-## Other Agent Research
+<details open>
+<summary><h2>Multi-Agent Systems (5 papers)</h2></summary>
 
-*49 papers*
+<details>
+<summary><strong>CARJAN: Agent-Based Generation and Simulation of Traffic Scenarios with AJAN</strong> - Leonard Frank Neis, Andre Antakli, Matthias Klusch - <a href="https://arxiv.org/pdf/2508.21411">2025-09-01</a></summary>
 
-- **Can a mobile robot learn from a pedestrian model to prevent the sidewalk salsa?** - Olger Siebinga, David Abbink - [2025-08-29](http://arxiv.org/pdf/2508.21690v1)
-- **Integrating Large Language Models with Network Optimization for Interactive and Explainable Supply Chain Planning: A Real-World Case Study** - Saravanan Venkatachalam - [2025-08-29](http://arxiv.org/pdf/2508.21622v1)
-- **MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents** - Xijia Tao, Yihua Teng, Xinxing Su et al. - [2025-08-29](http://arxiv.org/pdf/2508.21475v1)
-- **Morae: Proactively Pausing UI Agents for User Choices** - Yi-Hao Peng, Dingzeyu Li, Jeffrey P. Bigham et al. - [2025-08-29](http://arxiv.org/pdf/2508.21456v1)
-- **Beyond expected value: geometric mean optimization for long-term policy performance in reinforcement learning** - Xinyi Sheng, Dominik Baumann - [2025-08-29](http://arxiv.org/pdf/2508.21443v1)
-- **A General Framework of Epistemic Forgetting and its Instantiation by Ranking Functions** - Christoph Beierle, Alexander Hahn, Diana Howey et al. - [2025-08-29](http://arxiv.org/pdf/2508.21441v1)
-- **The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management** - Tobias Lindenbauer, Igor Slinko, Ludwig Felder et al. - [2025-08-29](http://arxiv.org/pdf/2508.21433v1)
-- **AI Compute Architecture and Evolution Trends** - Bor-Sung Liang - [2025-08-29](http://arxiv.org/pdf/2508.21394v1)
-- **EconAgentic in DePIN Markets: A Large Language Model Approach to the Sharing Economy of Decentralized Physical Infrastructure** - Yulin Liu, Mocca Schweitzer - [2025-08-29](http://arxiv.org/pdf/2508.21368v1)
-- **Think in Games: Learning to Reason in Games via Reinforcement Learning with Large Language Models** - Yi Liao, Yu Gu, Yuan Sui et al. - [2025-08-29](http://arxiv.org/pdf/2508.21365v1)
-- **Convergence of regularized agent-state-based Q-learning in POMDPs** - Amit Sinha, Matthieu Geist, Aditya Mahajan - [2025-08-29](http://arxiv.org/pdf/2508.21314v1)
-- **MultiFluxAI Enhancing Platform Engineering with Advanced Agent-Orchestrated Retrieval Systems** - Sri Ram Macharla, Sridhar Murthy J, Anjaneyulu Pasala - [2025-08-29](http://arxiv.org/pdf/2508.21307v1)
-- **Locus: Agentic Predicate Synthesis for Directed Fuzzing** - Jie Zhu, Chihao Shen, Ziyang Li et al. - [2025-08-29](http://arxiv.org/pdf/2508.21302v1)
-- **HCQA: Hybrid Classical-Quantum Agent for Generating Optimal Quantum Sensor Circuits** - Ahmad Alomari, Sathish A. P. Kumar - [2025-08-28](http://arxiv.org/pdf/2508.21246v1)
-- **Automating the Deep Space Network Data Systems; A Case Study in Adaptive Anomaly Detection through Agentic AI** - Evan J. Chou, Lisa S. Locke, Harvey M. Soldan - [2025-08-28](http://arxiv.org/pdf/2508.21111v1)
-- **AI Agentic Vulnerability Injection And Transformation with Optimized Reasoning** - Amine Lbath, Massih-Reza Amini, Aurelien Delaitre et al. - [2025-08-28](http://arxiv.org/pdf/2508.20866v1)
-- **Rethinking Testing for LLM Applications: Characteristics, Challenges, and a Lightweight Interaction Protocol** - Wei Ma, Yixiao Yang, Qiang Hu et al. - [2025-08-28](http://arxiv.org/pdf/2508.20737v1)
-- **Re4: Scientific Computing Agent with Rewriting, Resolution, Review and Revision** - Ao Cheng, Lei Zhang, Guowei He - [2025-08-28](http://arxiv.org/pdf/2508.20729v1)
-- **rStar2-Agent: Agentic Reasoning Technical Report** - Ning Shang, Yifei Liu, Yi Zhu et al. - [2025-08-28](http://arxiv.org/pdf/2508.20722v1)
-- **SemSR: Semantics aware robust Session-based Recommendations** - Jyoti Narwariya, Priyanka Gupta, Muskan Gupta et al. - [2025-08-28](http://arxiv.org/pdf/2508.20587v1)
-- **PVPO: Pre-Estimated Value-Based Policy Optimization for Agentic Reasoning** - Wenfeng Feng, Penghong Zhao, Guochao Jiang et al. - [2025-08-28](http://arxiv.org/pdf/2508.21104v1)
-- **Beyond Prediction: Reinforcement Learning as the Defining Leap in Healthcare AI** - Dilruk Perera, Gousia Habib, Qianyi Xu et al. - [2025-08-28](http://arxiv.org/pdf/2508.21101v1)
-- **QTMRL: An Agent for Quantitative Trading Decision-Making Based on Multi-Indicator Guided Reinforcement Learning** - Xiangdong Liu, Jiahao Chen - [2025-08-28](http://arxiv.org/pdf/2508.20467v1)
-- **AWorld: Orchestrating the Training Recipe for Agentic AI** - Chengyue Yu, Siyuan Lu, Chenyi Zhuang et al. - [2025-08-28](http://arxiv.org/pdf/2508.20404v1)
-- **CAPE: Context-Aware Personality Evaluation Framework for Large Language Models** - Jivnesh Sandhan, Fei Cheng, Tushar Sandhan et al. - [2025-08-28](http://arxiv.org/pdf/2508.20385v1)
-- **AI-SearchPlanner: Modular Agentic Search via Pareto-Optimal Multi-Objective Reinforcement Learning** - Lang Mei, Zhihan Yang, Chong Chen - [2025-08-28](http://arxiv.org/pdf/2508.20368v1)
-- **Can Compact Language Models Search Like Agents? Distillation-Guided Policy Optimization for Preserving Agentic RAG Capabilities** - Rikuto Kotoge, Mai Nishimura, Jiaxin Ma - [2025-08-27](http://arxiv.org/pdf/2508.20324v1)
-- **Dynamics-Aligned Latent Imagination in Contextual World Models for Zero-Shot Generalization** - Frank Röder, Jan Benad, Manfred Eppe et al. - [2025-08-27](http://arxiv.org/pdf/2508.20294v1)
-- **Network-Level Prompt and Trait Leakage in Local Research Agents** - Hyejun Jeong, Mohammadreze Teymoorianfard, Abhinav Kumar et al. - [2025-08-27](http://arxiv.org/pdf/2508.20282v1)
-- **SwizzlePerf: Hardware-Aware LLMs for GPU Kernel Performance Optimization** - Arya Tschand, Muhammad Awad, Ryan Swann et al. - [2025-08-27](http://arxiv.org/pdf/2508.20258v1)
-- **Validating Generative Agent-Based Models for Logistics and Supply Chain Management Research** - Vincent E. Castillo - [2025-08-27](http://arxiv.org/pdf/2508.20234v1)
-- **Regulation-Aware Game-Theoretic Motion Planning for Autonomous Racing** - Francesco Prignoli, Francesco Borrelli, Paolo Falcone et al. - [2025-08-27](http://arxiv.org/pdf/2508.20203v1)
-- **AI-AI Esthetic Collaboration with Explicit Semiotic Awareness and Emergent Grammar Development** - Nicanor I. Moldovan - [2025-08-27](http://arxiv.org/pdf/2508.20195v1)
-- **Divide, Discover, Deploy: Factorized Skill Learning with Symmetry and Style Priors** - Rafael Cathomen, Mayank Mittal, Marin Vlastelica et al. - [2025-08-27](http://arxiv.org/pdf/2508.19953v2)
-- **Socially Interactive Agents for Preserving and Transferring Tacit Knowledge in Organizations** - Martin Benderoth, Patrick Gebhard, Christian Keller et al. - [2025-08-27](http://arxiv.org/pdf/2508.19942v1)
-- **Attention is also needed for form design** - B. Sankar, Dibakar Sen - [2025-08-27](http://arxiv.org/pdf/2508.19708v1)
-- **InquireMobile: Teaching VLM-based Mobile Agent to Request Human Assistance via Reinforcement Fine-Tuning** - Qihang Ai, Pi Bu, Yue Cao et al. - [2025-08-27](http://arxiv.org/pdf/2508.19679v1)
-- **A Symbolic Adversarial Learning Framework for Evolving Fake News Generation and Detection** - Chong Tian, Qirong Ho, Xiuying Chen - [2025-08-27](http://arxiv.org/pdf/2508.19633v1)
-- **Democracy-in-Silico: Institutional Design as Alignment in AI-Governed Polities** - Trisanth Srinivasan, Santosh Patapati - [2025-08-27](http://arxiv.org/pdf/2508.19562v1)
-- **Can LLMs Generate Behaviors for Embodied Virtual Agents Based on Personality Traits?** - Bin Han, Deuksin Kwon, Spencer Lin et al. - [2025-08-27](http://arxiv.org/pdf/2508.21087v1)
-- **Learning Game-Playing Agents with Generative Code Optimization** - Zhiyi Kuang, Ryan Rong, YuCheng Yuan et al. - [2025-08-27](http://arxiv.org/pdf/2508.19506v1)
-- **Is the medical image segmentation problem solved? A survey of current developments and future directions** - Guoping Xu, Jayaram K. Udupa, Jax Luo et al. - [2025-08-27](http://arxiv.org/pdf/2508.20139v1)
-- **Servant, Stalker, Predator: How An Honest, Helpful, And Harmless (3H) Agent Unlocks Adversarial Skills** - David Noever - [2025-08-27](http://arxiv.org/pdf/2508.19500v1)
-- **Incentivized Lipschitz Bandits** - Sourav Chakraborty, Amit Kiran Rege, Claire Monteleoni et al. - [2025-08-26](http://arxiv.org/pdf/2508.19466v1)
-- **Aggregate Fictitious Play for Learning in Anonymous Polymatrix Games (Extended Version)** - Semih Kara, Tamer Başar - [2025-08-26](http://arxiv.org/pdf/2508.19371v1)
-- **Atrial Fibrillation Prediction Using a Lightweight Temporal Convolutional and Selective State Space Architecture** - Yongbin Lee, Ki H. Chon - [2025-08-26](http://arxiv.org/pdf/2508.19361v1)
-- **Reflective Agreement: Combining Self-Mixture of Agents with a Sequence Tagger for Robust Event Extraction** - Fatemeh Haji, Mazal Bethany, Cho-Yu Jason Chiang et al. - [2025-08-26](http://arxiv.org/pdf/2508.19359v1)
-- **Re:Frame -- Retrieving Experience From Associative Memory** - Daniil Zelezetsky, Egor Cherepanov, Alexey K. Kovalev et al. - [2025-08-26](http://arxiv.org/pdf/2508.19344v1)
-- **Optimizing Highway Traffic Flow in Mixed Autonomy: A Multiagent Truncated Rollout Approach** - Lu Liu, Chi Xie, Xi Xiong - [2025-08-26](http://arxiv.org/pdf/2508.19203v1)
+**Abstract:** User-friendly modeling and virtual simulation of urban traffic scenarios with different types of interacting agents such as pedestrians, cyclists and autonomous vehicles remains a challenge. We presen...
 
-## Planning and Reasoning
+**arXiv ID:** 2508.21411
+</details>
 
-*2 papers*
+<details>
+<summary><strong>PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation</strong> - Jiho Choi, Seojeong Park, Seongjong Song et al. - <a href="https://arxiv.org/pdf/2508.21720">2025-09-01</a></summary>
 
-- **Evolution favours positively biased reasoning in sequential interactions with high future gains** - Marco Saponara, Elias Fernandez Domingos, Jorge M. Pacheco et al. - [2025-08-28](http://arxiv.org/pdf/2508.20799v1)
-- **GDS Agent: A Graph Algorithmic Reasoning Agent** - Borun Shi, Ioannis Panagiotas - [2025-08-28](http://arxiv.org/pdf/2508.20637v1)
+**Abstract:** We present a novel training-free framework, \textit{PosterForest}, for automated scientific poster generation. Unlike prior approaches, which largely neglect the hierarchical structure of scientific d...
+
+**arXiv ID:** 2508.21720
+</details>
+
+<details>
+<summary><strong>Automated Clinical Problem Detection from SOAP Notes using a Collaborative Multi-Agent LLM Architecture</strong> - Yeawon Lee, Xiaoyang Wang, Christopher C. Yang - <a href="https://arxiv.org/pdf/2508.21803">2025-09-01</a></summary>
+
+**Abstract:** Accurate interpretation of clinical narratives is critical for patient care, but the complexity of these notes makes automation challenging. While Large Language Models (LLMs) show promise, single-mod...
+
+**arXiv ID:** 2508.21803
+</details>
+
+<details>
+<summary><strong>Automated Clinical Problem Detection from SOAP Notes using a Collaborative Multi-Agent LLM Architecture</strong> - Yeawon Lee, Xiaoyang Wang, Christopher C. Yang - <a href="https://arxiv.org/pdf/2508.21803">2025-09-01</a></summary>
+
+**Abstract:** Accurate interpretation of clinical narratives is critical for patient care, but the complexity of these notes makes automation challenging. While Large Language Models (LLMs) show promise, single-mod...
+
+**arXiv ID:** 2508.21803
+</details>
+
+<details>
+<summary><strong>Igniting Creative Writing in Small Language Models: LLM-as-a-Judge versus Multi-Agent Refined Rewards</strong> - Xiaolong Wei, Bo Lu, Xingyu Zhang et al. - <a href="https://arxiv.org/pdf/2508.21476">2025-09-01</a></summary>
+
+**Abstract:** Large Language Models (LLMs) have demonstrated remarkable creative writing capabilities, yet their substantial computational demands hinder widespread use. Enhancing Small Language Models (SLMs) offer...
+
+**arXiv ID:** 2508.21476
+</details>
+
+</details>
+
+<details open>
+<summary><h2>Other Agent Research (7 papers)</h2></summary>
+
+<details>
+<summary><strong>MultiFluxAI Enhancing Platform Engineering with Advanced Agent-Orchestrated Retrieval Systems</strong> - Sri Ram Macharla, Sridhar Murthy J, Anjaneyulu Pasala - <a href="https://arxiv.org/pdf/2508.21307">2025-09-01</a></summary>
+
+**Abstract:** MultiFluxAI is an innovative AI platform developed to address the challenges of managing and integrating vast, disparate data sources in product engineering across application domains. It addresses bo...
+
+**arXiv ID:** 2508.21307
+</details>
+
+<details>
+<summary><strong>MMSearch-Plus: A Simple Yet Challenging Benchmark for Multimodal Browsing Agents</strong> - Xijia Tao, Yihua Teng, Xinxing Su et al. - <a href="https://arxiv.org/pdf/2508.21475">2025-09-01</a></summary>
+
+**Abstract:** Large multimodal language models (MLLMs) are increasingly deployed as web agents, yet many multimodal browsing benchmarks can be solved by shallow, fixed workflows that lean on high-recall image searc...
+
+**arXiv ID:** 2508.21475
+</details>
+
+<details>
+<summary><strong>PVPO: Pre-Estimated Value-Based Policy Optimization for Agentic Reasoning</strong> - Wenfeng Feng, Penghong Zhao, Guochao Jiang et al. - <a href="https://arxiv.org/pdf/2508.21104">2025-09-01</a></summary>
+
+**Abstract:** Critic-free reinforcement learning methods, particularly group policies, have attracted considerable attention for their efficiency in complex tasks. However, these methods rely heavily on multiple sa...
+
+**arXiv ID:** 2508.21104
+</details>
+
+<details>
+<summary><strong>Automating the Deep Space Network Data Systems; A Case Study in Adaptive Anomaly Detection through Agentic AI</strong> - Evan J. Chou, Lisa S. Locke, Harvey M. Soldan - <a href="https://arxiv.org/pdf/2508.21111">2025-09-01</a></summary>
+
+**Abstract:** The Deep Space Network (DSN) is NASA's largest network of antenna facilities that generate a large volume of multivariate time-series data. These facilities contain DSN antennas and transmitters that ...
+
+**arXiv ID:** 2508.21111
+</details>
+
+<details>
+<summary><strong>Convergence of regularized agent-state-based Q-learning in POMDPs</strong> - Amit Sinha, Matthieu Geist, Aditya Mahajan - <a href="https://arxiv.org/pdf/2508.21314">2025-09-01</a></summary>
+
+**Abstract:** In this paper, we present a framework to understand the convergence of commonly used Q-learning reinforcement learning algorithms in practice. Two salient features of such algorithms are: (i)~the Q-ta...
+
+**arXiv ID:** 2508.21314
+</details>
+
+<details>
+<summary><strong>Can LLMs Generate Behaviors for Embodied Virtual Agents Based on Personality Traits?</strong> - Bin Han, Deuksin Kwon, Spencer Lin et al. - <a href="https://arxiv.org/pdf/2508.21087">2025-09-01</a></summary>
+
+**Abstract:** This study proposes a framework that employs personality prompting with Large Language Models to generate verbal and nonverbal behaviors for virtual agents based on personality traits. Focusing on ext...
+
+**arXiv ID:** 2508.21087
+</details>
+
+<details>
+<summary><strong>Morae: Proactively Pausing UI Agents for User Choices</strong> - Yi-Hao Peng, Dingzeyu Li, Jeffrey P. Bigham et al. - <a href="https://arxiv.org/pdf/2508.21456">2025-09-01</a></summary>
+
+**Abstract:** User interface (UI) agents promise to make inaccessible or complex UIs easier to access for blind and low-vision (BLV) users. However, current UI agents typically perform tasks end-to-end without invo...
+
+**arXiv ID:** 2508.21456
+</details>
+
+</details>
 
 ---
 

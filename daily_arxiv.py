@@ -1,17 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import arxiv
 import yaml
 import os
+import shutil
+import time
+import re
+import requests
+from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
-import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class AgentArxivDaily:
     def __init__(self, config_path: str = "config.yaml"):
         self.config = self.load_config(config_path)
-        self.client = arxiv.Client()
+        self.archive_dir = "archives"
+        self.session = requests.Session()
+        self.session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (compatible; arXiv-Agent-Bot/1.0; Educational Use)'
+        })
         
     def load_config(self, config_path: str) -> Dict[str, Any]:
         """Load configuration from YAML file"""
@@ -24,45 +32,184 @@ class AgentArxivDaily:
                 'keywords': [
                     'agent', 'multi-agent', 'autonomous agent', 'intelligent agent',
                     'agent-based', 'LLM agent', 'AI agent', 'cognitive agent',
-                    'software agent', 'conversational agent', 'virtual agent'
+                    'software agent', 'conversational agent', 'virtual agent',
+                    'reinforcement learning agent', 'planning agent', 'reasoning agent'
                 ],
-                'categories': ['cs.AI', 'cs.MA', 'cs.CL', 'cs.LG'],
-                'max_results': 50,
-                'days_back': 7
+                'categories': ['cs.AI', 'cs.MA', 'cs.CL', 'cs.LG', 'cs.RO', 'cs.HC'],
+                'request_delay': 1
             }
     
-    def build_query(self) -> str:
-        """Build arXiv search query based on keywords and categories"""
-        keyword_query = ' OR '.join([f'"{keyword}"' for keyword in self.config['keywords']])
-        category_query = ' OR '.join([f'cat:{cat}' for cat in self.config['categories']])
+    def scrape_category_new_papers(self, category: str) -> List[Dict]:
+        """Scrape new papers from a single category"""
+        url = f"https://arxiv.org/list/{category}/new"
+        print(f"📥 Scraping {category} from: {url}")
         
-        return f"({keyword_query}) AND ({category_query})"
+        try:
+            response = self.session.get(url, timeout=30)
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find the first dl section (New submissions)
+            new_submissions = soup.find('dl', id='articles')
+            if not new_submissions:
+                print(f"⚠️  No articles section found for {category}")
+                return []
+            
+            # Extract paper metadata from dd elements
+            dd_elements = new_submissions.find_all('dd')
+            papers = []
+            
+            print(f"🔍 Found {len(dd_elements)} papers in {category}")
+            
+            for dd in dd_elements:
+                paper_data = self._extract_paper_metadata(dd, category)
+                if paper_data:
+                    papers.append(paper_data)
+            
+            print(f"✅ Successfully extracted {len(papers)} papers from {category}")
+            return papers
+            
+        except Exception as e:
+            print(f"❌ Error scraping {category}: {e}")
+            return []
     
-    def fetch_papers(self) -> List[arxiv.Result]:
-        """Fetch papers from arXiv based on configuration"""
-        query = self.build_query()
-        
-        # Calculate date range
-        end_date = datetime.now()
-        start_date = end_date - timedelta(days=self.config['days_back'])
-        
-        search = arxiv.Search(
-            query=query,
-            max_results=self.config['max_results'],
-            sort_by=arxiv.SortCriterion.SubmittedDate
-        )
-        
-        papers = []
-        for result in self.client.results(search):
-            # Filter by date
-            if result.published.date() >= start_date.date():
-                papers.append(result)
-        
-        return sorted(papers, key=lambda x: x.published, reverse=True)
+    def _extract_paper_metadata(self, dd_element, category: str) -> Dict:
+        """Extract metadata from a paper's dd element"""
+        try:
+            # Get title
+            title_div = dd_element.find('div', class_='list-title')
+            if not title_div:
+                return None
+            title = title_div.get_text().replace('Title:', '').strip()
+            
+            # Get authors
+            authors_div = dd_element.find('div', class_='list-authors')
+            authors = []
+            if authors_div:
+                author_links = authors_div.find_all('a')
+                authors = [link.get_text().strip() for link in author_links]
+            
+            # Get arXiv ID from previous dt element
+            dt_element = dd_element.find_previous_sibling('dt')
+            if not dt_element:
+                return None
+            
+            id_link = dt_element.find('a', href=lambda x: x and '/abs/' in x if x else False)
+            if not id_link:
+                return None
+            
+            arxiv_id = id_link.get('href').split('/abs/')[-1]
+            paper_url = f"https://arxiv.org/abs/{arxiv_id}"
+            
+            return {
+                'arxiv_id': arxiv_id,
+                'title': title,
+                'authors': authors,
+                'category': category,
+                'url': paper_url,
+                'pdf_url': f"https://arxiv.org/pdf/{arxiv_id}",
+                'published': datetime.now().date(),
+                'abstract': None  # Will be fetched separately
+            }
+            
+        except Exception as e:
+            print(f"⚠️  Error extracting paper metadata: {e}")
+            return None
     
-    def categorize_paper(self, paper: arxiv.Result) -> str:
+    def fetch_paper_abstract(self, paper: Dict) -> str:
+        """Fetch the complete abstract for a paper"""
+        try:
+            response = self.session.get(paper['url'], timeout=30)
+            response.raise_for_status()
+            
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Find abstract in blockquote.abstract
+            abstract_block = soup.find('blockquote', class_='abstract')
+            if abstract_block:
+                abstract_text = abstract_block.get_text()
+                # Remove "Abstract:" prefix and clean up
+                abstract = abstract_text.replace('Abstract:', '').strip()
+                return abstract
+            
+            return ""
+            
+        except Exception as e:
+            print(f"⚠️  Error fetching abstract for {paper['arxiv_id']}: {e}")
+            return ""
+    
+    def fetch_papers(self) -> List[Dict]:
+        """Fetch papers from arXiv using web scraping"""
+        all_papers = []
+        
+        for i, category in enumerate(self.config['categories']):
+            papers = self.scrape_category_new_papers(category)
+            all_papers.extend(papers)
+            
+            # Be polite with requests
+            if i < len(self.config['categories']) - 1:
+                print(f"⏳ Waiting {self.config['request_delay']} seconds...")
+                time.sleep(self.config['request_delay'])
+        
+        # Filter for agent-related papers
+        agent_papers = []
+        for paper in all_papers:
+            if self.is_agent_relevant(paper):
+                agent_papers.append(paper)
+        
+        print(f"📊 Total papers scraped: {len(all_papers)}")
+        print(f"🤖 Agent-related papers: {len(agent_papers)}")
+        
+        # Fetch abstracts for agent papers
+        if agent_papers:
+            agent_papers = self.fetch_abstracts_batch(agent_papers)
+        
+        return agent_papers
+    
+    def fetch_abstracts_batch(self, papers: List[Dict], max_workers: int = 3) -> List[Dict]:
+        """Fetch abstracts for multiple papers using thread pool"""
+        print(f"📝 Fetching abstracts for {len(papers)} papers...")
+        
+        def fetch_with_delay(paper):
+            time.sleep(self.config['request_delay'])  # Rate limiting
+            abstract = self.fetch_paper_abstract(paper)
+            paper['abstract'] = abstract
+            return paper
+        
+        completed_papers = []
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            future_to_paper = {executor.submit(fetch_with_delay, paper): paper for paper in papers}
+            
+            for future in as_completed(future_to_paper):
+                paper = future_to_paper[future]
+                try:
+                    completed_paper = future.result()
+                    completed_papers.append(completed_paper)
+                    if len(completed_papers) % 5 == 0:
+                        print(f"📝 Fetched {len(completed_papers)}/{len(papers)} abstracts...")
+                except Exception as e:
+                    print(f"❌ Error fetching abstract for {paper['arxiv_id']}: {e}")
+                    paper['abstract'] = ""
+                    completed_papers.append(paper)
+        
+        return completed_papers
+    
+    def is_agent_relevant(self, paper: Dict) -> bool:
+        """Check if paper is relevant to agent research"""
+        title = paper['title'].lower()
+        abstract = (paper.get('abstract') or '').lower()
+        
+        # Check keywords in title and abstract
+        for keyword in self.config['keywords']:
+            if keyword.lower() in title or keyword.lower() in abstract:
+                return True
+        
+        return False
+    
+    def categorize_paper(self, paper: Dict) -> str:
         """Categorize paper based on title and abstract"""
-        title_abstract = (paper.title + " " + paper.summary).lower()
+        title_abstract = (paper['title'] + " " + (paper.get('abstract') or '')).lower()
         
         categories = {
             'Multi-Agent Systems': ['multi-agent', 'multi agent', 'cooperative agent', 'agent cooperation'],
@@ -84,15 +231,38 @@ class AgentArxivDaily:
         
         return 'Other Agent Research'
     
-    def format_paper(self, paper: arxiv.Result, category: str) -> str:
-        """Format paper information for markdown output"""
-        authors = ', '.join([author.name for author in paper.authors[:3]])
-        if len(paper.authors) > 3:
-            authors += ' et al.'
+    def format_paper(self, paper: Dict) -> str:
+        """Format paper information for markdown output with collapsible format"""
+        authors = paper.get('authors', [])
+        if authors:
+            if len(authors) <= 3:
+                author_str = ', '.join(authors)
+            else:
+                author_str = ', '.join(authors[:3]) + ' et al.'
+        else:
+            author_str = 'Unknown Authors'
         
-        return f"- **{paper.title}** - {authors} - [{paper.published.strftime('%Y-%m-%d')}]({paper.pdf_url})\n"
+        # Create collapsible format with summary
+        abstract = paper.get('abstract', '')
+        abstract_preview = abstract[:200] + "..." if len(abstract) > 200 else abstract
+        
+        published_date = paper.get('published', datetime.now().date())
+        if isinstance(published_date, str):
+            date_str = published_date
+        else:
+            date_str = published_date.strftime('%Y-%m-%d')
+        
+        return f"""<details>
+<summary><strong>{paper['title']}</strong> - {author_str} - <a href="{paper['pdf_url']}">{date_str}</a></summary>
+
+**Abstract:** {abstract_preview}
+
+**arXiv ID:** {paper['arxiv_id']}
+</details>
+
+"""
     
-    def generate_markdown(self, papers: List[arxiv.Result]) -> str:
+    def generate_markdown(self, papers: List[Dict]) -> str:
         """Generate markdown content for README"""
         # Group papers by category
         categorized_papers = {}
@@ -112,22 +282,42 @@ class AgentArxivDaily:
             markdown += f"- [{category}](#{category.lower().replace(' ', '-').replace('-', '-')})\n"
         markdown += "\n"
         
-        # Papers by category
+        # Papers by category with collapsible sections
         for category in sorted(categorized_papers.keys()):
             papers_in_category = categorized_papers[category]
-            markdown += f"## {category}\n\n"
-            markdown += f"*{len(papers_in_category)} papers*\n\n"
+            
+            markdown += f"""<details open>
+<summary><h2>{category} ({len(papers_in_category)} papers)</h2></summary>
+
+"""
             
             for paper in papers_in_category:
-                markdown += self.format_paper(paper, category)
+                markdown += self.format_paper(paper)
             
-            markdown += "\n"
+            markdown += "</details>\n\n"
         
         # Footer
         markdown += "---\n\n"
         markdown += "*This list is automatically generated daily using arXiv API*\n"
         
         return markdown
+    
+    def archive_previous_readme(self):
+        """Archive the current README.md if it exists"""
+        if not os.path.exists("README.md"):
+            return
+        
+        # Create archive directory if it doesn't exist
+        os.makedirs(self.archive_dir, exist_ok=True)
+        
+        # Generate archive filename with current date
+        today = datetime.now().strftime('%Y-%m-%d')
+        archive_filename = f"README-{today}.md"
+        archive_path = os.path.join(self.archive_dir, archive_filename)
+        
+        # Copy current README to archive
+        shutil.copy2("README.md", archive_path)
+        print(f"Archived previous README to {archive_path}")
     
     def update_readme(self, content: str, output_file: str = "README.md"):
         """Update README file with new content"""
@@ -136,6 +326,9 @@ class AgentArxivDaily:
     
     def run(self):
         """Main execution method"""
+        print("Archiving previous README.md...")
+        self.archive_previous_readme()
+        
         print("Fetching agent-related papers from arXiv...")
         papers = self.fetch_papers()
         print(f"Found {len(papers)} papers")
