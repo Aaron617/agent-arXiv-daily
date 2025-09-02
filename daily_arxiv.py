@@ -378,7 +378,7 @@ class AgentArxivDaily:
                 categorized_papers[category] = []
             categorized_papers[category].append(paper)
         
-        markdown = f"# Agent Research Papers Daily\n\n"
+        markdown = f"# Agent arXiv Daily\n\n"
         markdown += f"**Last Updated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
         markdown += f"**Total Papers:** {len(papers)}\n\n"
         
@@ -404,7 +404,7 @@ class AgentArxivDaily:
         
         # Footer
         markdown += "---\n\n"
-        markdown += "*This list is automatically generated daily using arXiv API*\n"
+        markdown += "*This list is automatically generated daily using arXiv web scraping*\n"
         
         return markdown
     

@@ -1,4 +1,4 @@
-name: Daily Agent Papers Update
+name: Daily Agent arXiv Update
 on:
   schedule:
     # Run daily at 8:00 AM UTC (you can adjust this time)
