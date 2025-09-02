@@ -40,17 +40,17 @@ class AgentArxivDaily:
             }
     
     def scrape_category_new_papers(self, category: str) -> List[Dict]:
-        """Scrape today's new papers from a single category with pagination"""
+        """Scrape new papers from a single category with pagination"""
         all_papers = []
         skip = 0
         show = 25  # Papers per page
         page_num = 1
         max_pages = 10  # Limit to prevent infinite loops
         
-        print(f"📥 Scraping today's papers from {category}...")
+        print(f"📥 Scraping new papers from {category}...")
         
         while page_num <= max_pages:
-            # Use the 'new' URL with pagination for today's papers
+            # Use the 'new' URL with pagination for daily new papers
             url = f"https://arxiv.org/list/{category}/new?skip={skip}&show={show}"
             
             try:
@@ -60,7 +60,7 @@ class AgentArxivDaily:
                 
                 soup = BeautifulSoup(response.content, 'html.parser')
                 
-                # Find all dl sections (New submissions + Cross-lists + Replacements)
+                # Find all dl sections but skip 'Replacement submissions'
                 article_sections = soup.find_all('dl')
                 page_papers = []
                 
@@ -70,6 +70,12 @@ class AgentArxivDaily:
                     break
                 
                 for section in article_sections:
+                    # Check if this section is about replacements and skip it
+                    prev_h3 = section.find_previous_sibling('h3')
+                    if prev_h3 and 'replacement' in prev_h3.get_text().lower():
+                        print(f"  📄 Page {page_num}: Skipping replacement submissions section")
+                        continue
+                    
                     dd_elements = section.find_all('dd')
                     
                     for dd in dd_elements:
@@ -169,12 +175,24 @@ class AgentArxivDaily:
             return ""
     
     def fetch_papers(self) -> List[Dict]:
-        """Fetch papers from arXiv using web scraping"""
+        """Fetch papers from arXiv using web scraping with deduplication"""
         all_papers = []
+        seen_arxiv_ids = set()
         
         for i, category in enumerate(self.config['categories']):
             papers = self.scrape_category_new_papers(category)
-            all_papers.extend(papers)
+            
+            # Deduplicate cross-listed papers
+            unique_papers = []
+            for paper in papers:
+                if paper['arxiv_id'] not in seen_arxiv_ids:
+                    seen_arxiv_ids.add(paper['arxiv_id'])
+                    unique_papers.append(paper)
+                else:
+                    print(f"  🔄 Skipping duplicate cross-listed paper: {paper['arxiv_id']}")
+            
+            print(f"  ✅ {category}: {len(unique_papers)} unique papers ({len(papers) - len(unique_papers)} duplicates removed)")
+            all_papers.extend(unique_papers)
             
             # Be polite with requests
             if i < len(self.config['categories']) - 1:
@@ -187,7 +205,7 @@ class AgentArxivDaily:
             if self.is_agent_relevant(paper):
                 agent_papers.append(paper)
         
-        print(f"📊 Total papers scraped: {len(all_papers)}")
+        print(f"📊 Total unique papers scraped: {len(all_papers)}")
         print(f"🤖 Agent-related papers: {len(agent_papers)}")
         
         # Fetch abstracts for agent papers
@@ -284,31 +302,54 @@ class AgentArxivDaily:
         
         return 'Other Agent Research'
     
+    def extract_repo_url(self, abstract: str) -> str:
+        """Extract repository URL from abstract using regex"""
+        import re
+        
+        # Common patterns for repository URLs
+        patterns = [
+            r'https://github\.com/[\w\-\.]+/[\w\-\.]+',
+            r'github\.com/[\w\-\.]+/[\w\-\.]+',
+            r'https://gitlab\.com/[\w\-\.]+/[\w\-\.]+',
+            r'https://bitbucket\.org/[\w\-\.]+/[\w\-\.]+',
+            r'https://code\.google\.com/[\w\-\.]+',
+            r'https://huggingface\.co/[\w\-\.]+/[\w\-\.]+'
+        ]
+        
+        for pattern in patterns:
+            matches = re.findall(pattern, abstract, re.IGNORECASE)
+            if matches:
+                # Return the first match, ensure it has https://
+                url = matches[0]
+                if not url.startswith('https://'):
+                    url = 'https://' + url
+                return url
+        
+        return ""
+    
     def format_paper(self, paper: Dict) -> str:
         """Format paper information for markdown output with collapsible format"""
         authors = paper.get('authors', [])
         if authors:
-            if len(authors) <= 3:
-                author_str = ', '.join(authors)
-            else:
-                author_str = ', '.join(authors[:3]) + ' et al.'
+            author_str = ', '.join(authors)  # Show all authors
         else:
             author_str = 'Unknown Authors'
         
-        # Create collapsible format with summary
+        # Extract repository URL from abstract
         abstract = paper.get('abstract', '')
-        abstract_preview = abstract[:200] + "..." if len(abstract) > 200 else abstract
+        repo_url = self.extract_repo_url(abstract)
         
-        published_date = paper.get('published', datetime.now().date())
-        if isinstance(published_date, str):
-            date_str = published_date
-        else:
-            date_str = published_date.strftime('%Y-%m-%d')
+        # Build links section
+        links = []
+        if repo_url:
+            links.append(f"[repo]({repo_url})")
+        links.append(f"[pdf]({paper['pdf_url']})")
+        links_str = " ".join(links)
         
         return f"""<details>
-<summary><strong>{paper['title']}</strong> - {author_str} - <a href="{paper['pdf_url']}">{date_str}</a></summary>
+<summary><strong>{paper['title']}</strong> - {author_str} - {links_str}</summary>
 
-**Abstract:** {abstract_preview}
+**Abstract:** {abstract}
 
 **arXiv ID:** {paper['arxiv_id']}
 </details>
