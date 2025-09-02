@@ -283,13 +283,25 @@ class AgentArxivDaily:
         title_abstract = (paper['title'] + " " + (paper.get('abstract') or '')).lower()
         
         categories = {
-            'Multi-Agent Systems': ['multi-agent', 'multi agent', 'cooperative agent', 'agent cooperation'],
-            'LLM Agents': ['llm agent', 'language model agent', 'chatgpt agent', 'gpt agent'],
-            'Autonomous Agents': ['autonomous agent', 'autonomous system', 'self-driving'],
-            'Conversational Agents': ['conversational agent', 'chatbot', 'dialogue agent', 'virtual assistant'],
-            'Game Playing Agents': ['game playing', 'game agent', 'reinforcement learning agent'],
-            'Planning and Reasoning': ['agent planning', 'reasoning agent', 'decision making'],
-            'Agent Learning': ['agent learning', 'learning agent', 'adaptive agent'],
+            'Multi-Agent Systems': ['multi-agent', 'multi agent', 'cooperative agent', 'agent cooperation', 'collaborative agent'],
+            'LLM Agents': ['llm agent', 'language model agent', 'chatgpt agent', 'gpt agent', 'large language model agent'],
+            'Agent Applications': [
+                'autonomous agent', 'autonomous system', 'self-driving',
+                'conversational agent', 'chatbot', 'dialogue agent', 'virtual assistant',
+                'game playing', 'game agent'
+            ],
+            'Reinforcement Learning': [
+                'reinforcement learning', 'deep reinforcement learning', 'rl agent', 'policy optimization',
+                'q-learning', 'actor-critic', 'policy gradient', 'temporal difference',
+                'markov decision process', 'mdp', 'proximal policy optimization', 'ppo',
+                'deep q-network', 'dqn', 'soft actor-critic', 'sac'
+            ],
+            'Benchmarks and Datasets': [
+                'benchmark', 'dataset', 'evaluation', 'testbed', 'suite',
+                'benchmark for', 'dataset for', 'evaluation of', 'test suite',
+                'benchmarking', 'evaluation framework', 'evaluation benchmark'
+            ],
+            'Planning and Reasoning': ['agent planning', 'reasoning agent', 'decision making', 'strategic reasoning'],
             'Other Agent Research': []
         }
         
@@ -342,8 +354,8 @@ class AgentArxivDaily:
         # Build links section
         links = []
         if repo_url:
-            links.append(f"[repo]({repo_url})")
-        links.append(f"[pdf]({paper['pdf_url']})")
+            links.append(f"[[repo]]({repo_url})")
+        links.append(f"[[pdf]]({paper['pdf_url']})")
         links_str = " ".join(links)
         
         return f"""<details>
