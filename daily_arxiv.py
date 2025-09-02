@@ -40,39 +40,68 @@ class AgentArxivDaily:
             }
     
     def scrape_category_new_papers(self, category: str) -> List[Dict]:
-        """Scrape new papers from a single category"""
-        url = f"https://arxiv.org/list/{category}/new"
-        print(f"📥 Scraping {category} from: {url}")
+        """Scrape today's new papers from a single category with pagination"""
+        all_papers = []
+        skip = 0
+        show = 25  # Papers per page
+        page_num = 1
+        max_pages = 10  # Limit to prevent infinite loops
         
-        try:
-            response = self.session.get(url, timeout=30)
-            response.raise_for_status()
+        print(f"📥 Scraping today's papers from {category}...")
+        
+        while page_num <= max_pages:
+            # Use the 'new' URL with pagination for today's papers
+            url = f"https://arxiv.org/list/{category}/new?skip={skip}&show={show}"
             
-            soup = BeautifulSoup(response.content, 'html.parser')
-            
-            # Find the first dl section (New submissions)
-            new_submissions = soup.find('dl', id='articles')
-            if not new_submissions:
-                print(f"⚠️  No articles section found for {category}")
-                return []
-            
-            # Extract paper metadata from dd elements
-            dd_elements = new_submissions.find_all('dd')
-            papers = []
-            
-            print(f"🔍 Found {len(dd_elements)} papers in {category}")
-            
-            for dd in dd_elements:
-                paper_data = self._extract_paper_metadata(dd, category)
-                if paper_data:
-                    papers.append(paper_data)
-            
-            print(f"✅ Successfully extracted {len(papers)} papers from {category}")
-            return papers
-            
-        except Exception as e:
-            print(f"❌ Error scraping {category}: {e}")
-            return []
+            try:
+                print(f"  📄 Page {page_num}: {url}")
+                response = self.session.get(url, timeout=30)
+                response.raise_for_status()
+                
+                soup = BeautifulSoup(response.content, 'html.parser')
+                
+                # Find all dl sections (New submissions + Cross-lists + Replacements)
+                article_sections = soup.find_all('dl')
+                page_papers = []
+                
+                # Check if we have any articles on this page
+                if not article_sections:
+                    print(f"  📄 Page {page_num}: No article sections found")
+                    break
+                
+                for section in article_sections:
+                    dd_elements = section.find_all('dd')
+                    
+                    for dd in dd_elements:
+                        paper_data = self._extract_paper_metadata(dd, category)
+                        if paper_data:
+                            page_papers.append(paper_data)
+                
+                if not page_papers:
+                    print(f"  📄 Page {page_num}: No papers found, stopping")
+                    break
+                
+                print(f"  📄 Page {page_num}: Found {len(page_papers)} papers")
+                all_papers.extend(page_papers)
+                
+                # If we got fewer papers than expected, this is likely the last page
+                if len(page_papers) < show:
+                    print(f"  📄 Page {page_num}: Last page detected ({len(page_papers)} < {show})")
+                    break
+                
+                # Move to next page
+                skip += show
+                page_num += 1
+                
+                # Be polite with requests
+                time.sleep(self.config['request_delay'])
+                    
+            except Exception as e:
+                print(f"❌ Error scraping {category} page {page_num}: {e}")
+                break
+        
+        print(f"✅ {category}: Total {len(all_papers)} papers from {page_num-1} pages")
+        return all_papers
     
     def _extract_paper_metadata(self, dd_element, category: str) -> Dict:
         """Extract metadata from a paper's dd element"""
@@ -196,13 +225,37 @@ class AgentArxivDaily:
         return completed_papers
     
     def is_agent_relevant(self, paper: Dict) -> bool:
-        """Check if paper is relevant to agent research"""
+        """Check if paper is relevant to agent research with improved matching"""
         title = paper['title'].lower()
         abstract = (paper.get('abstract') or '').lower()
         
-        # Check keywords in title and abstract
-        for keyword in self.config['keywords']:
-            if keyword.lower() in title or keyword.lower() in abstract:
+        # Enhanced keywords list
+        enhanced_keywords = self.config['keywords'] + [
+            'agentic', 'agentive', 'multi agent', 'multiagent',
+            'autonomous system', 'intelligent system', 'embodied',
+            'rl agent', 'agents', 'cooperative', 'collaborative agent',
+            'virtual agent', 'chatbot', 'dialogue system'
+        ]
+        
+        # Check keywords in title (higher priority)
+        for keyword in enhanced_keywords:
+            if keyword.lower() in title:
+                return True
+        
+        # Check keywords in abstract (if no title match)
+        for keyword in enhanced_keywords:
+            if keyword.lower() in abstract:
+                return True
+        
+        # Additional context-based checks
+        agent_contexts = [
+            'agent-based', 'multi-agent', 'agent learning', 'agent planning',
+            'agent reasoning', 'agent behavior', 'agent interaction',
+            'reinforcement learning', 'autonomous', 'intelligent'
+        ]
+        
+        for context in agent_contexts:
+            if context in title or context in abstract:
                 return True
         
         return False
