@@ -1,8 +1,10 @@
 name: Daily Agent arXiv Update
 on:
   schedule:
-    # Run daily at 8:00 AM UTC (you can adjust this time)
-    - cron: '0 8 * * *'  # 修复了这里的语法错误
+    # 对应 EDT：00:00 UTC（= 前一天 20:00 ET），周一到周五
+    - cron: '10 0 * * 1-5'
+    # 对应 EST：01:00 UTC（= 前一天 20:00 ET），周一到周五
+    - cron: '10 1 * * 1-5'
   workflow_dispatch:  # Allow manual triggering
 
 # 添加权限设置
