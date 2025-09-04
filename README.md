@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-09-04 01:57:08
+**Last Updated:** 2025-09-04 02:34:40
 
 **Total Papers:** 55
 
@@ -47,19 +47,19 @@
 <summary><h2>Benchmarks and Datasets (9 papers)</h2></summary>
 
 <details>
-<summary><strong>Do LLM Modules Generalize? A Study on Motion Generation for Autonomous Driving</strong> - Mingyi Wang, Jingke Wang, Tengju Ye, Junbo Chen, Kaicheng Yu - [[pdf]](https://arxiv.org/pdf/2509.02754)</summary>
-
-**Abstract:** Recent breakthroughs in large language models (LLMs) have not only advanced natural language processing but also inspired their application in domains with structurally similar problems--most notably, autonomous driving motion generation. Both domains involve autoregressive sequence modeling, token-based representations, and context-aware decision making, making the transfer of LLM components a natural and increasingly common practice. However, despite promising early attempts, a systematic understanding of which LLM modules are truly transferable remains lacking. In this paper, we present a comprehensive evaluation of five key LLM modules--tokenizer design, positional embedding, pre-training paradigms, post-training strategies, and test-time computation--within the context of motion generation for autonomous driving. Through extensive experiments on the Waymo Sim Agents benchmark, we demonstrate that, when appropriately adapted, these modules can significantly improve performance for autonomous driving motion generation. In addition, we identify which techniques can be effectively transferred, analyze the potential reasons for the failure of others, and discuss the specific adaptations needed for autonomous driving scenarios. We evaluate our method on the Sim Agents task and achieve competitive results.
-
-**arXiv ID:** 2509.02754
-</details>
-
-<details>
 <summary><strong>app.build: A Production Framework for Scaling Agentic Prompt-to-App Generation with Environment Scaffolding</strong> - Evgenii Kniazev, Arseny Kravchenko, Igor Rekun, James Broadhead, Nikita Shamgunov, Pranav Sah, Pratik Nichite, Ivan Yamshchikov - [[pdf]](https://arxiv.org/pdf/2509.03310)</summary>
 
 **Abstract:** We present this http URL (this https URL), an open-source framework that improves LLM-based application generation through systematic validation and structured environments. Our approach combines multi-layered validation pipelines, stack-specific orchestration, and model-agnostic architecture, implemented across three reference stacks. Through evaluation on 30 generation tasks, we demonstrate that comprehensive validation achieves 73.3% viability rate with 30% reaching perfect quality scores, while open-weights models achieve 80.8% of closed-model performance when provided structured environments. The open-source framework has been adopted by the community, with over 3,000 applications generated to date. This work demonstrates that scaling reliable AI agents requires scaling environments, not just models -- providing empirical insights and complete reference implementations for production-oriented agent systems.
 
 **arXiv ID:** 2509.03310
+</details>
+
+<details>
+<summary><strong>Do LLM Modules Generalize? A Study on Motion Generation for Autonomous Driving</strong> - Mingyi Wang, Jingke Wang, Tengju Ye, Junbo Chen, Kaicheng Yu - [[pdf]](https://arxiv.org/pdf/2509.02754)</summary>
+
+**Abstract:** Recent breakthroughs in large language models (LLMs) have not only advanced natural language processing but also inspired their application in domains with structurally similar problems--most notably, autonomous driving motion generation. Both domains involve autoregressive sequence modeling, token-based representations, and context-aware decision making, making the transfer of LLM components a natural and increasingly common practice. However, despite promising early attempts, a systematic understanding of which LLM modules are truly transferable remains lacking. In this paper, we present a comprehensive evaluation of five key LLM modules--tokenizer design, positional embedding, pre-training paradigms, post-training strategies, and test-time computation--within the context of motion generation for autonomous driving. Through extensive experiments on the Waymo Sim Agents benchmark, we demonstrate that, when appropriately adapted, these modules can significantly improve performance for autonomous driving motion generation. In addition, we identify which techniques can be effectively transferred, analyze the potential reasons for the failure of others, and discuss the specific adaptations needed for autonomous driving scenarios. We evaluate our method on the Sim Agents task and achieve competitive results.
+
+**arXiv ID:** 2509.02754
 </details>
 
 <details>
@@ -361,19 +361,19 @@ These results extend the known separation map of 14 canonical robot models, reve
 </details>
 
 <details>
-<summary><strong>A Hierarchical Deep Reinforcement Learning Framework for Traffic Signal Control with Predictable Cycle Planning</strong> - Hankang Gu, Yuli Zhang, Chengming Wang, Ruiyuan Jiang, Ziheng Qiao, Pengfei Fan, Dongyao Jia - [[pdf]](https://arxiv.org/pdf/2509.03118)</summary>
-
-**Abstract:** Deep reinforcement learning (DRL) has become a popular approach in traffic signal control (TSC) due to its ability to learn adaptive policies from complex traffic environments. Within DRL-based TSC methods, two primary control paradigms are ``choose phase" and ``switch" strategies. Although the agent in the choose phase paradigm selects the next active phase adaptively, this paradigm may result in unexpected phase sequences for drivers, disrupting their anticipation and potentially compromising safety at intersections. Meanwhile, the switch paradigm allows the agent to decide whether to switch to the next predefined phase or extend the current phase. While this structure maintains a more predictable order, it can lead to unfair and inefficient phase allocations, as certain movements may be extended disproportionately while others are neglected. In this paper, we propose a DRL model, named Deep Hierarchical Cycle Planner (DHCP), to allocate the traffic signal cycle duration hierarchically. A high-level agent first determines the split of the total cycle time between the North-South (NS) and East-West (EW) directions based on the overall traffic state. Then, a low-level agent further divides the allocated duration within each major direction between straight and left-turn movements, enabling more flexible durations for the two movements. We test our model on both real and synthetic road networks, along with multiple sets of real and synthetic traffic flows. Empirical results show our model achieves the best performance over all datasets against baselines.
-
-**arXiv ID:** 2509.03118
-</details>
-
-<details>
 <summary><strong>VendiRL: A Framework for Self-Supervised Reinforcement Learning of Diversely Diverse Skills</strong> - Erik M. Lintunen - [[pdf]](https://arxiv.org/pdf/2509.02930)</summary>
 
 **Abstract:** In self-supervised reinforcement learning (RL), one of the key challenges is learning a diverse set of skills to prepare agents for unknown future tasks. Despite impressive advances, scalability and evaluation remain prevalent issues. Regarding scalability, the search for meaningful skills can be obscured by high-dimensional feature spaces, where relevant features may vary across downstream task domains. For evaluating skill diversity, defining what constitutes "diversity" typically requires a hard commitment to a specific notion of what it means for skills to be diverse, potentially leading to inconsistencies in how skill diversity is understood, making results across different approaches hard to compare, and leaving many forms of diversity unexplored. To address these issues, we adopt a measure of sample diversity that translates ideas from ecology to machine learning -- the Vendi Score -- allowing the user to specify and evaluate any desired form of diversity. We demonstrate how this metric facilitates skill evaluation and introduce VendiRL, a unified framework for learning diversely diverse sets of skills. Given distinct similarity functions, VendiRL motivates distinct forms of diversity, which could support skill-diversity pretraining in new and richly interactive environments where optimising for various forms of diversity may be desirable.
 
 **arXiv ID:** 2509.02930
+</details>
+
+<details>
+<summary><strong>A Hierarchical Deep Reinforcement Learning Framework for Traffic Signal Control with Predictable Cycle Planning</strong> - Hankang Gu, Yuli Zhang, Chengming Wang, Ruiyuan Jiang, Ziheng Qiao, Pengfei Fan, Dongyao Jia - [[pdf]](https://arxiv.org/pdf/2509.03118)</summary>
+
+**Abstract:** Deep reinforcement learning (DRL) has become a popular approach in traffic signal control (TSC) due to its ability to learn adaptive policies from complex traffic environments. Within DRL-based TSC methods, two primary control paradigms are ``choose phase" and ``switch" strategies. Although the agent in the choose phase paradigm selects the next active phase adaptively, this paradigm may result in unexpected phase sequences for drivers, disrupting their anticipation and potentially compromising safety at intersections. Meanwhile, the switch paradigm allows the agent to decide whether to switch to the next predefined phase or extend the current phase. While this structure maintains a more predictable order, it can lead to unfair and inefficient phase allocations, as certain movements may be extended disproportionately while others are neglected. In this paper, we propose a DRL model, named Deep Hierarchical Cycle Planner (DHCP), to allocate the traffic signal cycle duration hierarchically. A high-level agent first determines the split of the total cycle time between the North-South (NS) and East-West (EW) directions based on the overall traffic state. Then, a low-level agent further divides the allocated duration within each major direction between straight and left-turn movements, enabling more flexible durations for the two movements. We test our model on both real and synthetic road networks, along with multiple sets of real and synthetic traffic flows. Empirical results show our model achieves the best performance over all datasets against baselines.
+
+**arXiv ID:** 2509.03118
 </details>
 
 <details>
