@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-09-05 02:00:01
+**Last Updated:** 2025-09-05 02:37:54
 
 **Total Papers:** 53
 
@@ -43,7 +43,7 @@
 <details>
 <summary><strong>Arabic Chatbot Technologies in Education: An Overview</strong> - Hicham Bourhil, Yacine El Younoussi - [[pdf]](https://arxiv.org/pdf/2509.04066)</summary>
 
-**Abstract:** 
+**Abstract:** The recent advancements in Artificial Intelligence (AI) in general, and in Natural Language Processing (NLP) in particular, and some of its applications such as chatbots, have led to their implementation in different domains like education, healthcare, tourism, and customer service. Since the COVID-19 pandemic, there has been an increasing interest in these digital technologies to allow and enhance remote access. In education, e-learning systems have been massively adopted worldwide. The emergence of Large Language Models (LLM) such as BERT (Bidirectional Encoder Representations from Transformers) and GPT (Generative Pre-trained Transformers) made chatbots even more popular. In this study, we present a survey on existing Arabic chatbots in education and their different characteristics such as the adopted approaches, language variety, and metrics used to measure their performance. We were able to identified some research gaps when we discovered that, despite the success of chatbots in other languages such as English, only a few educational Arabic chatbots used modern techniques. Finally, we discuss future directions of research in this field.
 
 **arXiv ID:** 2509.04066
 </details>
@@ -405,19 +405,19 @@ This work provides a configurable and explainable MAS platform for exploring leg
 </details>
 
 <details>
-<summary><strong>RL's Razor: Why Online Reinforcement Learning Forgets Less</strong> - Idan Shenfeld, Jyothish Pari, Pulkit Agrawal - [[pdf]](https://arxiv.org/pdf/2509.04259)</summary>
-
-**Abstract:** Comparison of fine-tuning models with reinforcement learning (RL) and supervised fine-tuning (SFT) reveals that, despite similar performance at a new task, RL preserves prior knowledge and capabilities significantly better. We find that the degree of forgetting is determined by the distributional shift, measured as the KL-divergence between the fine-tuned and base policy evaluated on the new task. Our analysis reveals that on-policy RL is implicitly biased towards KL-minimal solutions among the many that solve the new task, whereas SFT can converge to distributions arbitrarily far from the base model. We validate these findings through experiments with large language models and robotic foundation models and further provide theoretical justification for why on-policy RL updates lead to a smaller KL change. We term this principle $\textit{RL's Razor}$: among all ways to solve a new task, RL prefers those closest in KL to the original model.
-
-**arXiv ID:** 2509.04259
-</details>
-
-<details>
 <summary><strong>Machine Learning for LiDAR-Based Indoor Surface Classification in Intelligent Wireless Environments</strong> - Parth Ashokbhai Shiroya, Swarnagowri Shashidhar, Amod Ashtekar, Krishna Aindrila Kar, Rafaela Lomboy, Dalton Davis, Mohammed E. Eltayeb - [[pdf]](https://arxiv.org/pdf/2509.03813)</summary>
 
 **Abstract:** Reliable connectivity in millimeter-wave (mmWave) and sub-terahertz (sub-THz) networks depends on reflections from surrounding surfaces, as high-frequency signals are highly vulnerable to blockage. The scattering behavior of a surface is determined not only by material permittivity but also by roughness, which governs whether energy remains in the specular direction or is diffusely scattered. This paper presents a LiDAR-driven machine learning framework for classifying indoor surfaces into semi-specular and low-specular categories, using optical reflectivity as a proxy for electromagnetic scattering behavior. A dataset of over 78,000 points from 15 representative indoor materials was collected and partitioned into 3 cm x 3 cm patches to enable classification from partial views. Patch-level features capturing geometry and intensity, including elevation angle, natural-log-scaled intensity, and max-to-mean ratio, were extracted and used to train Random Forest, XGBoost, and neural network classifiers. Results show that ensemble tree-based models consistently provide the best trade-off between accuracy and robustness, confirming that LiDAR-derived features capture roughness-induced scattering effects. The proposed framework enables the generation of scatter aware environment maps and digital twins, supporting adaptive beam management, blockage recovery, and environment-aware connectivity in next-generation networks.
 
 **arXiv ID:** 2509.03813
+</details>
+
+<details>
+<summary><strong>RL's Razor: Why Online Reinforcement Learning Forgets Less</strong> - Idan Shenfeld, Jyothish Pari, Pulkit Agrawal - [[pdf]](https://arxiv.org/pdf/2509.04259)</summary>
+
+**Abstract:** Comparison of fine-tuning models with reinforcement learning (RL) and supervised fine-tuning (SFT) reveals that, despite similar performance at a new task, RL preserves prior knowledge and capabilities significantly better. We find that the degree of forgetting is determined by the distributional shift, measured as the KL-divergence between the fine-tuned and base policy evaluated on the new task. Our analysis reveals that on-policy RL is implicitly biased towards KL-minimal solutions among the many that solve the new task, whereas SFT can converge to distributions arbitrarily far from the base model. We validate these findings through experiments with large language models and robotic foundation models and further provide theoretical justification for why on-policy RL updates lead to a smaller KL change. We term this principle $\textit{RL's Razor}$: among all ways to solve a new task, RL prefers those closest in KL to the original model.
+
+**arXiv ID:** 2509.04259
 </details>
 
 <details>
