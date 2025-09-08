@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-09-08 02:06:14
+**Last Updated:** 2025-09-08 02:44:40
 
 **Total Papers:** 53
 
@@ -298,19 +298,19 @@ We find that difficulties with long-trajectory learning in smaller language mode
 </details>
 
 <details>
-<summary><strong>A Knowledge-Driven Diffusion Policy for End-to-End Autonomous Driving Based on Expert Routing</strong> - Chengkai Xu, Jiaqi Liu, Yicheng Guo, Peng Hang, Jian Sun - [[pdf]](https://arxiv.org/pdf/2509.04853)</summary>
-
-**Abstract:** End-to-end autonomous driving remains constrained by the need to generate multi-modal actions, maintain temporal stability, and generalize across diverse scenarios. Existing methods often collapse multi-modality, struggle with long-horizon consistency, or lack modular adaptability. This paper presents KDP, a knowledge-driven diffusion policy that integrates generative diffusion modeling with a sparse mixture-of-experts routing mechanism. The diffusion component generates temporally coherent and multi-modal action sequences, while the expert routing mechanism activates specialized and reusable experts according to context, enabling modular knowledge composition. Extensive experiments across representative driving scenarios demonstrate that KDP achieves consistently higher success rates, reduced collision risk, and smoother control compared to prevailing paradigms. Ablation studies highlight the effectiveness of sparse expert activation and the Transformer backbone, and activation analyses reveal structured specialization and cross-scenario reuse of experts. These results establish diffusion with expert routing as a scalable and interpretable paradigm for knowledge-driven end-to-end autonomous driving.
-
-**arXiv ID:** 2509.04853
-</details>
-
-<details>
 <summary><strong>SePA: A Search-enhanced Predictive Agent for Personalized Health Coaching</strong> - Melik Ozolcer, Sang Won Bae - [[pdf]](https://arxiv.org/pdf/2509.04752)</summary>
 
 **Abstract:** This paper introduces SePA (Search-enhanced Predictive AI Agent), a novel LLM health coaching system that integrates personalized machine learning and retrieval-augmented generation to deliver adaptive, evidence-based guidance. SePA combines: (1) Individualized models predicting daily stress, soreness, and injury risk from wearable sensor data (28 users, 1260 data points); and (2) A retrieval module that grounds LLM-generated feedback in expert-vetted web content to ensure contextual relevance and reliability. Our predictive models, evaluated with rolling-origin cross-validation and group k-fold cross-validation show that personalized models outperform generalized baselines. In a pilot expert study (n=4), SePA's retrieval-based advice was preferred over a non-retrieval baseline, yielding meaningful practical effect (Cliff's $\delta$=0.3, p=0.05). We also quantify latency performance trade-offs between response quality and speed, offering a transparent blueprint for next-generation, trustworthy personal health informatics systems.
 
 **arXiv ID:** 2509.04752
+</details>
+
+<details>
+<summary><strong>A Knowledge-Driven Diffusion Policy for End-to-End Autonomous Driving Based on Expert Routing</strong> - Chengkai Xu, Jiaqi Liu, Yicheng Guo, Peng Hang, Jian Sun - [[pdf]](https://arxiv.org/pdf/2509.04853)</summary>
+
+**Abstract:** End-to-end autonomous driving remains constrained by the need to generate multi-modal actions, maintain temporal stability, and generalize across diverse scenarios. Existing methods often collapse multi-modality, struggle with long-horizon consistency, or lack modular adaptability. This paper presents KDP, a knowledge-driven diffusion policy that integrates generative diffusion modeling with a sparse mixture-of-experts routing mechanism. The diffusion component generates temporally coherent and multi-modal action sequences, while the expert routing mechanism activates specialized and reusable experts according to context, enabling modular knowledge composition. Extensive experiments across representative driving scenarios demonstrate that KDP achieves consistently higher success rates, reduced collision risk, and smoother control compared to prevailing paradigms. Ablation studies highlight the effectiveness of sparse expert activation and the Transformer backbone, and activation analyses reveal structured specialization and cross-scenario reuse of experts. These results establish diffusion with expert routing as a scalable and interpretable paradigm for knowledge-driven end-to-end autonomous driving.
+
+**arXiv ID:** 2509.04853
 </details>
 
 <details>
