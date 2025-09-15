@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-09-15 02:06:57
+**Last Updated:** 2025-09-15 02:45:50
 
 **Total Papers:** 47
 
@@ -225,7 +225,7 @@ We also introduce StuLife, a benchmark dataset for ELL that simulates a student'
 <details>
 <summary><strong>We Need a New Ethics for a World of AI Agents</strong> - Iason Gabriel, Geoff Keeling, Arianna Manzini, James Evans - [[pdf]](https://arxiv.org/pdf/2509.10289)</summary>
 
-**Abstract:** 
+**Abstract:** The deployment of capable AI agents raises fresh questions about safety, human-machine relationships and social coordination. We argue for greater engagement by scientists, scholars, engineers and policymakers with the implications of a world increasingly populated by AI agents. We explore key challenges that must be addressed to ensure that interactions between humans and agents, and among agents themselves, remain broadly beneficial.
 
 **arXiv ID:** 2509.10289
 </details>
