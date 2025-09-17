@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-09-17 01:57:35
+**Last Updated:** 2025-09-17 02:35:06
 
 **Total Papers:** 51
 
@@ -70,14 +70,6 @@
 <summary><h2>Benchmarks and Datasets (9 papers)</h2></summary>
 
 <details>
-<summary><strong>AIssistant: An Agentic Approach for Human--AI Collaborative Scientific Work on Reviews and Perspectives in Machine Learning</strong> - Sasi Kiran Gaddipati, Farhana Keya, Gollam Rabby, Sören Auer - [[pdf]](https://arxiv.org/pdf/2509.12282)</summary>
-
-**Abstract:** Advances in AI-assisted research have introduced powerful tools for literature retrieval, hypothesis generation, experimentation, and manuscript preparation. However, systems remain fragmented and lack human-centred workflows. To address these gaps, we introduce AIssistant, an agentic, open-source Human-AI collaborative framework designed to simplify the end-to-end creation of scientific workflows. Since our development is still in an early stage, we present here the first experiments with AIssistant for perspective and review research papers in machine learning. Our system integrates modular tools and agents for literature synthesis, section-wise experimentation, citation management, and automatic LaTeX paper text generation, while maintaining human oversight at every stage to ensure accuracy, coherence, and scholarly rigour. We conducted a comprehensive evaluation across three layers: (1) Independent Human Review, following NeurIPS double-blind standards; (2) Automated LLM Review, using GPT-5 as a scalable human review proxy; and (3) Program Chair Oversight, where the chair monitors the entire review process and makes final validation and acceptance decisions. The results demonstrate that AIssistant improves drafting efficiency and thematic consistency. Nonetheless, Human-AI collaboration remains essential for maintaining factual correctness, methodological soundness, and ethical compliance. Despite its effectiveness, we identify key limitations, including hallucinated citations, difficulty adapting to dynamic paper structures, and incomplete integration of multimodal content.
-
-**arXiv ID:** 2509.12282
-</details>
-
-<details>
 <summary><strong>Building Coding Agents via Entropy-Enhanced Multi-Turn Preference Optimization</strong> - Jiahao Yu, Zelei Cheng, Xian Wu, Xinyu Xing - [[pdf]](https://arxiv.org/pdf/2509.12434)</summary>
 
 **Abstract:** Software engineering presents complex, multi-step challenges for Large Language Models (LLMs), requiring reasoning over large codebases and coordinated tool use. The difficulty of these tasks is exemplified by benchmarks like SWE-bench, where current LLMs still struggle to resolve real-world issues.
@@ -91,6 +83,14 @@ To maximize performance gains from TTS, we further propose a hybrid best-traject
 On the \swebench leaderboard, our approach establishes new state-of-the-art results among open-weight models. A 30B parameter model trained with \sys ranks 1st on \lite and 4th on \verified on the open-weight leaderboard, surpassed only by models with over 10x more parameters(\eg$>$350B).
 
 **arXiv ID:** 2509.12434
+</details>
+
+<details>
+<summary><strong>AIssistant: An Agentic Approach for Human--AI Collaborative Scientific Work on Reviews and Perspectives in Machine Learning</strong> - Sasi Kiran Gaddipati, Farhana Keya, Gollam Rabby, Sören Auer - [[pdf]](https://arxiv.org/pdf/2509.12282)</summary>
+
+**Abstract:** Advances in AI-assisted research have introduced powerful tools for literature retrieval, hypothesis generation, experimentation, and manuscript preparation. However, systems remain fragmented and lack human-centred workflows. To address these gaps, we introduce AIssistant, an agentic, open-source Human-AI collaborative framework designed to simplify the end-to-end creation of scientific workflows. Since our development is still in an early stage, we present here the first experiments with AIssistant for perspective and review research papers in machine learning. Our system integrates modular tools and agents for literature synthesis, section-wise experimentation, citation management, and automatic LaTeX paper text generation, while maintaining human oversight at every stage to ensure accuracy, coherence, and scholarly rigour. We conducted a comprehensive evaluation across three layers: (1) Independent Human Review, following NeurIPS double-blind standards; (2) Automated LLM Review, using GPT-5 as a scalable human review proxy; and (3) Program Chair Oversight, where the chair monitors the entire review process and makes final validation and acceptance decisions. The results demonstrate that AIssistant improves drafting efficiency and thematic consistency. Nonetheless, Human-AI collaboration remains essential for maintaining factual correctness, methodological soundness, and ethical compliance. Despite its effectiveness, we identify key limitations, including hallucinated citations, difficulty adapting to dynamic paper structures, and incomplete integration of multimodal content.
+
+**arXiv ID:** 2509.12282
 </details>
 
 <details>
