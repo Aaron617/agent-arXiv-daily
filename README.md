@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-09-23 01:58:17
+**Last Updated:** 2025-09-23 02:36:30
 
 **Total Papers:** 66
 
@@ -152,19 +152,19 @@
 <summary><h2>Multi-Agent Systems (14 papers)</h2></summary>
 
 <details>
-<summary><strong>MICA: Multi-Agent Industrial Coordination Assistant</strong> - Di Wen, Kunyu Peng, Junwei Zheng, Yufan Chen, Yitain Shi, Jiale Wei, Ruiping Liu, Kailun Yang, Rainer Stiefelhagen - [[pdf]](https://arxiv.org/pdf/2509.15237)</summary>
-
-**Abstract:** Industrial workflows demand adaptive and trustworthy assistance that can operate under limited computing, connectivity, and strict privacy constraints. In this work, we present MICA (Multi-Agent Industrial Coordination Assistant), a perception-grounded and speech-interactive system that delivers real-time guidance for assembly, troubleshooting, part queries, and maintenance. MICA coordinates five role-specialized language agents, audited by a safety checker, to ensure accurate and compliant support. To achieve robust step understanding, we introduce Adaptive Step Fusion (ASF), which dynamically blends expert reasoning with online adaptation from natural speech feedback. Furthermore, we establish a new multi-agent coordination benchmark across representative task categories and propose evaluation metrics tailored to industrial assistance, enabling systematic comparison of different coordination topologies. Our experiments demonstrate that MICA consistently improves task success, reliability, and responsiveness over baseline structures, while remaining deployable on practical offline hardware. Together, these contributions highlight MICA as a step toward deployable, privacy-preserving multi-agent assistants for dynamic factory environments. The source code will be made publicly available at this https URL.
-
-**arXiv ID:** 2509.15237
-</details>
-
-<details>
 <summary><strong>Diagnostics of cognitive failures in multi-agent expert systems using dynamic evaluation protocols and subsequent mutation of the processing context</strong> - Andrejs Sorstkins, Josh Bailey, Dr Alistair Baron - [[pdf]](https://arxiv.org/pdf/2509.15366)</summary>
 
 **Abstract:** The rapid evolution of neural architectures - from multilayer perceptrons to large-scale Transformer-based models - has enabled language models (LLMs) to exhibit emergent agentic behaviours when equipped with memory, planning, and external tool use. However, their inherent stochasticity and multi-step decision processes render classical evaluation methods inadequate for diagnosing agentic performance. This work introduces a diagnostic framework for expert systems that not only evaluates but also facilitates the transfer of expert behaviour into LLM-powered agents. The framework integrates (i) curated golden datasets of expert annotations, (ii) silver datasets generated through controlled behavioural mutation, and (iii) an LLM-based Agent Judge that scores and prescribes targeted improvements. These prescriptions are embedded into a vectorized recommendation map, allowing expert interventions to propagate as reusable improvement trajectories across multiple system instances. We demonstrate the framework on a multi-agent recruiter-assistant system, showing that it uncovers latent cognitive failures - such as biased phrasing, extraction drift, and tool misrouting - while simultaneously steering agents toward expert-level reasoning and style. The results establish a foundation for standardized, reproducible expert behaviour transfer in stochastic, tool-augmented LLM agents, moving beyond static evaluation to active expert system refinement.
 
 **arXiv ID:** 2509.15366
+</details>
+
+<details>
+<summary><strong>MICA: Multi-Agent Industrial Coordination Assistant</strong> - Di Wen, Kunyu Peng, Junwei Zheng, Yufan Chen, Yitain Shi, Jiale Wei, Ruiping Liu, Kailun Yang, Rainer Stiefelhagen - [[pdf]](https://arxiv.org/pdf/2509.15237)</summary>
+
+**Abstract:** Industrial workflows demand adaptive and trustworthy assistance that can operate under limited computing, connectivity, and strict privacy constraints. In this work, we present MICA (Multi-Agent Industrial Coordination Assistant), a perception-grounded and speech-interactive system that delivers real-time guidance for assembly, troubleshooting, part queries, and maintenance. MICA coordinates five role-specialized language agents, audited by a safety checker, to ensure accurate and compliant support. To achieve robust step understanding, we introduce Adaptive Step Fusion (ASF), which dynamically blends expert reasoning with online adaptation from natural speech feedback. Furthermore, we establish a new multi-agent coordination benchmark across representative task categories and propose evaluation metrics tailored to industrial assistance, enabling systematic comparison of different coordination topologies. Our experiments demonstrate that MICA consistently improves task success, reliability, and responsiveness over baseline structures, while remaining deployable on practical offline hardware. Together, these contributions highlight MICA as a step toward deployable, privacy-preserving multi-agent assistants for dynamic factory environments. The source code will be made publicly available at this https URL.
+
+**arXiv ID:** 2509.15237
 </details>
 
 <details>
