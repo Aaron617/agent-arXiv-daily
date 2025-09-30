@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-09-29 02:43:25
+**Last Updated:** 2025-09-30 01:58:27
 
 **Total Papers:** 89
 
@@ -62,7 +62,7 @@
 </details>
 
 <details>
-<summary><strong>DS-STAR: Data Science Agent via Iterative Planning and Verification</strong> - Jaehyun Nam, Jinsung Yoon, Jiefeng Chen, Jinwoo Shin, Tomas Pfister - [[pdf]](https://arxiv.org/pdf/2509.21825)</summary>
+<summary><strong>DS-STAR: Data Science Agent via Iterative Planning and Verification</strong> - Jaehyun Nam, Jinsung Yoon, Jiefeng Chen, Tomas Pfister - [[pdf]](https://arxiv.org/pdf/2509.21825)</summary>
 
 **Abstract:** Data science, which transforms raw data into actionable insights, is critical for data-driven decision-making. However, these tasks are often complex, involving steps for exploring multiple data sources and synthesizing findings to deliver insightful answers. While large language models (LLMs) show significant promise in automating this process, they often struggle with heterogeneous data formats and generate sub-optimal analysis plans, as verifying plan sufficiency is inherently difficult without ground-truth labels for such open-ended tasks. To overcome these limitations, we introduce DS-STAR, a novel data science agent. Specifically, DS-STAR makes three key contributions: (1) a data file analysis module that automatically explores and extracts context from diverse data formats, including unstructured types; (2) a verification step where an LLM-based judge evaluates the sufficiency of the analysis plan at each stage; and (3) a sequential planning mechanism that starts with a simple, executable plan and iteratively refines it based on the DS-STAR's feedback until its sufficiency is verified. This iterative refinement allows DS-STAR to reliably navigate complex analyses involving diverse data sources. Our experiments show that DS-STAR achieves state-of-the-art performance across three challenging benchmarks: DABStep, KramaBench, and DA-Code. Moreover, DS-STAR particularly outperforms baselines on hard tasks that require processing multiple data files with heterogeneous formats.
 
