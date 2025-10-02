@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-02 01:58:41
+**Last Updated:** 2025-10-02 02:36:01
 
 **Total Papers:** 89
 
@@ -251,19 +251,19 @@ Experimental evaluations demonstrate the effectiveness of the system. The VLM-RA
 <summary><h2>Multi-Agent Systems (21 papers)</h2></summary>
 
 <details>
-<summary><strong>AuditAgent: Expert-Guided Multi-Agent Reasoning for Cross-Document Fraudulent Evidence Discovery</strong> - Songran Bai, Bingzhe Wu, Yiwei Zhang, Chengke Wu, Xiaolong Zheng, Yaze Yuan, Ke Wu, Jianqiang Li - [[pdf]](https://arxiv.org/pdf/2510.00156)</summary>
-
-**Abstract:** Financial fraud detection in real-world scenarios presents significant challenges due to the subtlety and dispersion of evidence across complex, multi-year financial disclosures. In this work, we introduce a novel multi-agent reasoning framework AuditAgent, enhanced with auditing domain expertise, for fine-grained evidence chain localization in financial fraud cases. Leveraging an expert-annotated dataset constructed from enforcement documents and financial reports released by the China Securities Regulatory Commission, our approach integrates subject-level risk priors, a hybrid retrieval strategy, and specialized agent modules to efficiently identify and aggregate cross-report evidence. Extensive experiments demonstrate that our method substantially outperforms General-Purpose Agent paradigm in both recall and interpretability, establishing a new benchmark for automated, transparent financial forensics. Our results highlight the value of domain-specific reasoning and dataset construction for advancing robust financial fraud detection in practical, real-world regulatory applications.
-
-**arXiv ID:** 2510.00156
-</details>
-
-<details>
 <summary><strong>Learning to Lead Themselves: Agentic AI in MAS using MARL</strong> - Ansh Kamthan - [[pdf]](https://arxiv.org/pdf/2510.00022)</summary>
 
 **Abstract:** As autonomous systems move from prototypes to real deployments, the ability of multiple agents to make decentralized, cooperative decisions becomes a core requirement. This paper examines how agentic artificial intelligence, agents that act independently, adaptively and proactively can improve task allocation and coordination in multi-agent systems, with primary emphasis on drone delivery and secondary relevance to warehouse automation. We formulate the problem in a cooperative multi-agent reinforcement learning setting and implement a lightweight multi-agent Proximal Policy Optimization, called IPPO, approach in PyTorch under a centralized-training, decentralized-execution paradigm. Experiments are conducted in PettingZoo environment, where multiple homogeneous drones or agents must self-organize to cover distinct targets without explicit communication.
 
 **arXiv ID:** 2510.00022
+</details>
+
+<details>
+<summary><strong>AuditAgent: Expert-Guided Multi-Agent Reasoning for Cross-Document Fraudulent Evidence Discovery</strong> - Songran Bai, Bingzhe Wu, Yiwei Zhang, Chengke Wu, Xiaolong Zheng, Yaze Yuan, Ke Wu, Jianqiang Li - [[pdf]](https://arxiv.org/pdf/2510.00156)</summary>
+
+**Abstract:** Financial fraud detection in real-world scenarios presents significant challenges due to the subtlety and dispersion of evidence across complex, multi-year financial disclosures. In this work, we introduce a novel multi-agent reasoning framework AuditAgent, enhanced with auditing domain expertise, for fine-grained evidence chain localization in financial fraud cases. Leveraging an expert-annotated dataset constructed from enforcement documents and financial reports released by the China Securities Regulatory Commission, our approach integrates subject-level risk priors, a hybrid retrieval strategy, and specialized agent modules to efficiently identify and aggregate cross-report evidence. Extensive experiments demonstrate that our method substantially outperforms General-Purpose Agent paradigm in both recall and interpretability, establishing a new benchmark for automated, transparent financial forensics. Our results highlight the value of domain-specific reasoning and dataset construction for advancing robust financial fraud detection in practical, real-world regulatory applications.
+
+**arXiv ID:** 2510.00156
 </details>
 
 <details>
@@ -291,19 +291,19 @@ Experimental evaluations demonstrate the effectiveness of the system. The VLM-RA
 </details>
 
 <details>
-<summary><strong>EpidemIQs: Prompt-to-Paper LLM Agents for Epidemic Modeling and Analysis</strong> - Mohammad Hossein Samaei, Faryad Darabi Sahneh, Lee W. Cohnstaedt, Caterina Scoglio - [[pdf]](https://arxiv.org/pdf/2510.00024)</summary>
-
-**Abstract:** Large Language Models (LLMs) offer new opportunities to automate complex interdisciplinary research domains. Epidemic modeling, characterized by its complexity and reliance on network science, dynamical systems, epidemiology, and stochastic simulations, represents a prime candidate for leveraging LLM-driven automation. We introduce \textbf{EpidemIQs}, a novel multi-agent LLM framework that integrates user inputs and autonomously conducts literature review, analytical derivation, network modeling, mechanistic modeling, stochastic simulations, data visualization and analysis, and finally documentation of findings in a structured manuscript. We introduced two types of agents: a scientist agent for planning, coordination, reflection, and generation of final results, and a task-expert agent to focus exclusively on one specific duty serving as a tool to the scientist agent. The framework consistently generated complete reports in scientific article format. Specifically, using GPT 4.1 and GPT 4.1 mini as backbone LLMs for scientist and task-expert agents, respectively, the autonomous process completed with average total token usage 870K at a cost of about \$1.57 per study, achieving a 100\% completion success rate through our experiments. We evaluate EpidemIQs across different epidemic scenarios, measuring computational cost, completion success rate, and AI and human expert reviews of generated reports. We compare EpidemIQs to the single-agent LLM, which has the same system prompts and tools, iteratively planning, invoking tools, and revising outputs until task completion. The comparison shows consistently higher performance of the proposed framework across five different scenarios. EpidemIQs represents a step forward in accelerating scientific research by significantly reducing costs and turnaround time of discovery processes, and enhancing accessibility to advanced modeling tools.
-
-**arXiv ID:** 2510.00024
-</details>
-
-<details>
 <summary><strong>VibeCodeHPC: An Agent-Based Iterative Prompting Auto-Tuner for HPC Code Generation Using LLMs</strong> - Shun-ichiro Hayashi, Koki Morita, Daichi Mukunoki, Tetsuya Hoshino, Takahiro Katagiri - [[pdf]](https://arxiv.org/pdf/2510.00031)</summary>
 
 **Abstract:** We propose VibeCodeHPC, an automatic tuning system for HPC programs based on multi-agent LLMs for code generation. VibeCodeHPC tunes programs through multi-agent role allocation and iterative prompt refinement. We describe the system configuration with four roles: Project Manager (PM), System Engineer (SE), Programmer (PG), and Continuous Delivery (CD). We introduce dynamic agent deployment and activity monitoring functions to facilitate effective multi-agent collaboration. In our case study, we convert and optimize CPU-based matrix-matrix multiplication code written in C to GPU code using CUDA. The multi-agent configuration of VibeCodeHPC achieved higher-quality code generation per unit time compared to a solo-agent configuration. Additionally, the dynamic agent deployment and activity monitoring capabilities facilitated more effective identification of requirement violations and other issues.
 
 **arXiv ID:** 2510.00031
+</details>
+
+<details>
+<summary><strong>EpidemIQs: Prompt-to-Paper LLM Agents for Epidemic Modeling and Analysis</strong> - Mohammad Hossein Samaei, Faryad Darabi Sahneh, Lee W. Cohnstaedt, Caterina Scoglio - [[pdf]](https://arxiv.org/pdf/2510.00024)</summary>
+
+**Abstract:** Large Language Models (LLMs) offer new opportunities to automate complex interdisciplinary research domains. Epidemic modeling, characterized by its complexity and reliance on network science, dynamical systems, epidemiology, and stochastic simulations, represents a prime candidate for leveraging LLM-driven automation. We introduce \textbf{EpidemIQs}, a novel multi-agent LLM framework that integrates user inputs and autonomously conducts literature review, analytical derivation, network modeling, mechanistic modeling, stochastic simulations, data visualization and analysis, and finally documentation of findings in a structured manuscript. We introduced two types of agents: a scientist agent for planning, coordination, reflection, and generation of final results, and a task-expert agent to focus exclusively on one specific duty serving as a tool to the scientist agent. The framework consistently generated complete reports in scientific article format. Specifically, using GPT 4.1 and GPT 4.1 mini as backbone LLMs for scientist and task-expert agents, respectively, the autonomous process completed with average total token usage 870K at a cost of about \$1.57 per study, achieving a 100\% completion success rate through our experiments. We evaluate EpidemIQs across different epidemic scenarios, measuring computational cost, completion success rate, and AI and human expert reviews of generated reports. We compare EpidemIQs to the single-agent LLM, which has the same system prompts and tools, iteratively planning, invoking tools, and revising outputs until task completion. The comparison shows consistently higher performance of the proposed framework across five different scenarios. EpidemIQs represents a step forward in accelerating scientific research by significantly reducing costs and turnaround time of discovery processes, and enhancing accessibility to advanced modeling tools.
+
+**arXiv ID:** 2510.00024
 </details>
 
 <details>
@@ -315,15 +315,6 @@ Experimental evaluations demonstrate the effectiveness of the system. The VLM-RA
 </details>
 
 <details>
-<summary><strong>MAVUL: Multi-Agent Vulnerability Detection via Contextual Reasoning and Interactive Refinement</strong> - Youpeng Li, Kartik Joshi, Xinda Wang, Eric Wong - [[pdf]](https://arxiv.org/pdf/2510.00317)</summary>
-
-**Abstract:** The widespread adoption of open-source software (OSS) necessitates the mitigation of vulnerability risks. Most vulnerability detection (VD) methods are limited by inadequate contextual understanding, restrictive single-round interactions, and coarse-grained evaluations, resulting in undesired model performance and biased evaluation results. To address these challenges, we propose MAVUL, a novel multi-agent VD system that integrates contextual reasoning and interactive refinement. Specifically, a vulnerability analyst agent is designed to flexibly leverage tool-using capabilities and contextual reasoning to achieve cross-procedural code understanding and effectively mine vulnerability patterns. Through iterative feedback and refined decision-making within cross-role agent interactions, the system achieves reliable reasoning and vulnerability prediction. Furthermore, MAVUL introduces multi-dimensional ground truth information for fine-grained evaluation, thereby enhancing evaluation accuracy and reliability.
-Extensive experiments conducted on a pairwise vulnerability dataset demonstrate MAVUL's superior performance. Our findings indicate that MAVUL significantly outperforms existing multi-agent systems with over 62% higher pairwise accuracy and single-agent systems with over 600% higher average performance. The system's effectiveness is markedly improved with increased communication rounds between the vulnerability analyst agent and the security architect agent, underscoring the importance of contextual reasoning in tracing vulnerability flows and the crucial feedback role. Additionally, the integrated evaluation agent serves as a critical, unbiased judge, ensuring a more accurate and reliable estimation of the system's real-world applicability by preventing misleading binary comparisons.
-
-**arXiv ID:** 2510.00317
-</details>
-
-<details>
 <summary><strong>Reasoning-Aware Prompt Orchestration: A Foundation Model for Multi-Agent Language Model Coordination</strong> - Hassen Dhrif - [[pdf]](https://arxiv.org/pdf/2510.00326)</summary>
 
 **Abstract:** The emergence of large language models has enabled sophisticated multi-agent systems, yet coordinating their reasoning capabilities through prompt engineering remains challenging. We present a theoretically-grounded framework for dynamic prompt orchestration that enhances reasoning across multiple specialized agents. This framework addresses three core challenges: logical consistency preservation during agent transitions, reasoning-aware prompt adaptation, and scalable coordination of distributed inference.
@@ -331,6 +322,15 @@ Our approach formalizes agent states using prompt templates, reasoning context v
 Experimental results on 1,000 synthetic multi-agent conversations demonstrate a 42% reduction in reasoning latency, a 23% improvement in logical consistency measured by ROUGE-L score, and an 89% success rate for task completion without context loss across agent transitions. Ablation studies identify the consensus mechanism as the primary performance driver, while revealing limitations: performance degrades beyond 10 agent transitions, and the system requires 76.5GB memory for 1,000 concurrent agents. These findings establish a new paradigm for scalable reasoning in multi-agent systems, providing theoretical foundations for understanding reasoning emergence across coordinated language models.
 
 **arXiv ID:** 2510.00326
+</details>
+
+<details>
+<summary><strong>MAVUL: Multi-Agent Vulnerability Detection via Contextual Reasoning and Interactive Refinement</strong> - Youpeng Li, Kartik Joshi, Xinda Wang, Eric Wong - [[pdf]](https://arxiv.org/pdf/2510.00317)</summary>
+
+**Abstract:** The widespread adoption of open-source software (OSS) necessitates the mitigation of vulnerability risks. Most vulnerability detection (VD) methods are limited by inadequate contextual understanding, restrictive single-round interactions, and coarse-grained evaluations, resulting in undesired model performance and biased evaluation results. To address these challenges, we propose MAVUL, a novel multi-agent VD system that integrates contextual reasoning and interactive refinement. Specifically, a vulnerability analyst agent is designed to flexibly leverage tool-using capabilities and contextual reasoning to achieve cross-procedural code understanding and effectively mine vulnerability patterns. Through iterative feedback and refined decision-making within cross-role agent interactions, the system achieves reliable reasoning and vulnerability prediction. Furthermore, MAVUL introduces multi-dimensional ground truth information for fine-grained evaluation, thereby enhancing evaluation accuracy and reliability.
+Extensive experiments conducted on a pairwise vulnerability dataset demonstrate MAVUL's superior performance. Our findings indicate that MAVUL significantly outperforms existing multi-agent systems with over 62% higher pairwise accuracy and single-agent systems with over 600% higher average performance. The system's effectiveness is markedly improved with increased communication rounds between the vulnerability analyst agent and the security architect agent, underscoring the importance of contextual reasoning in tracing vulnerability flows and the crucial feedback role. Additionally, the integrated evaluation agent serves as a critical, unbiased judge, ensuring a more accurate and reliable estimation of the system's real-world applicability by preventing misleading binary comparisons.
+
+**arXiv ID:** 2510.00317
 </details>
 
 <details>
@@ -531,19 +531,19 @@ In this paper, we expose this vulnerability and present RLStealer, a reinforceme
 </details>
 
 <details>
-<summary><strong>Directed-MAML: Meta Reinforcement Learning Algorithm with Task-directed Approximation</strong> - Yang Zhang, Huiwen Yan, Mushuang Liu - [[pdf]](https://arxiv.org/pdf/2510.00212)</summary>
-
-**Abstract:** Model-Agnostic Meta-Learning (MAML) is a versatile meta-learning framework applicable to both supervised learning and reinforcement learning (RL). However, applying MAML to meta-reinforcement learning (meta-RL) presents notable challenges. First, MAML relies on second-order gradient computations, leading to significant computational and memory overhead. Second, the nested structure of optimization increases the problem's complexity, making convergence to a global optimum more challenging. To overcome these limitations, we propose Directed-MAML, a novel task-directed meta-RL algorithm. Before the second-order gradient step, Directed-MAML applies an additional first-order task-directed approximation to estimate the effect of second-order gradients, thereby accelerating convergence to the optimum and reducing computational cost. Experimental results demonstrate that Directed-MAML surpasses MAML-based baselines in computational efficiency and convergence speed in the scenarios of CartPole-v1, LunarLander-v2 and two-vehicle intersection crossing. Furthermore, we show that task-directed approximation can be effectively integrated into other meta-learning algorithms, such as First-Order Model-Agnostic Meta-Learning (FOMAML) and Meta Stochastic Gradient Descent(Meta-SGD), yielding improved computational efficiency and convergence speed.
-
-**arXiv ID:** 2510.00212
-</details>
-
-<details>
 <summary><strong>Can AI agents understand spoken conversations about data visualizations in online meetings?</strong> - Rizul Sharma, Tianyu Jiang, Seokki Lee, Jillian Aurisano - [[pdf]](https://arxiv.org/pdf/2510.00245)</summary>
 
 **Abstract:** In this short paper, we present work evaluating an AI agent's understanding of spoken conversations about data visualizations in an online meeting scenario. There is growing interest in the development of AI-assistants that support meetings, such as by providing assistance with tasks or summarizing a discussion. The quality of this support depends on a model that understands the conversational dialogue. To evaluate this understanding, we introduce a dual-axis testing framework for diagnosing the AI agent's comprehension of spoken conversations about data. Using this framework, we designed a series of tests to evaluate understanding of a novel corpus of 72 spoken conversational dialogues about data visualizations. We examine diverse pipelines and model architectures, LLM vs VLM, and diverse input formats for visualizations (the chart image, its underlying source code, or a hybrid of both) to see how this affects model performance on our tests. Using our evaluation methods, we found that text-only input modalities achieved the best performance (96%) in understanding discussions of visualizations in online meetings.
 
 **arXiv ID:** 2510.00245
+</details>
+
+<details>
+<summary><strong>Directed-MAML: Meta Reinforcement Learning Algorithm with Task-directed Approximation</strong> - Yang Zhang, Huiwen Yan, Mushuang Liu - [[pdf]](https://arxiv.org/pdf/2510.00212)</summary>
+
+**Abstract:** Model-Agnostic Meta-Learning (MAML) is a versatile meta-learning framework applicable to both supervised learning and reinforcement learning (RL). However, applying MAML to meta-reinforcement learning (meta-RL) presents notable challenges. First, MAML relies on second-order gradient computations, leading to significant computational and memory overhead. Second, the nested structure of optimization increases the problem's complexity, making convergence to a global optimum more challenging. To overcome these limitations, we propose Directed-MAML, a novel task-directed meta-RL algorithm. Before the second-order gradient step, Directed-MAML applies an additional first-order task-directed approximation to estimate the effect of second-order gradients, thereby accelerating convergence to the optimum and reducing computational cost. Experimental results demonstrate that Directed-MAML surpasses MAML-based baselines in computational efficiency and convergence speed in the scenarios of CartPole-v1, LunarLander-v2 and two-vehicle intersection crossing. Furthermore, we show that task-directed approximation can be effectively integrated into other meta-learning algorithms, such as First-Order Model-Agnostic Meta-Learning (FOMAML) and Meta Stochastic Gradient Descent(Meta-SGD), yielding improved computational efficiency and convergence speed.
+
+**arXiv ID:** 2510.00212
 </details>
 
 <details>
