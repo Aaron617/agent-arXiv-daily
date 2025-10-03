@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-03 01:58:27
+**Last Updated:** 2025-10-03 02:35:27
 
 **Total Papers:** 75
 
@@ -110,19 +110,19 @@
 </details>
 
 <details>
-<summary><strong>WebRollback: Enhancing Web Agents with Explicit Rollback Mechanisms</strong> - Zhisong Zhang, Tianqing Fang, Kaixin Ma, Wenhao Yu, Hongming Zhang, Haitao Mi, Dong Yu - [[pdf]](https://arxiv.org/pdf/2504.11788)</summary>
-
-**Abstract:** With recent advancements in large language models, web agents have been greatly improved. However, dealing with complex and dynamic web environments requires more advanced planning and search abilities. Previous studies usually adopt a greedy one-way search strategy, which may struggle to recover from erroneous states. In this work, we enhance web agents with an explicit rollback mechanism, enabling the agent to revert back to a previous state in its navigation trajectory. This mechanism gives the model the flexibility to directly control the search process, leading to an effective and efficient web navigation method. We conduct experiments on two live web navigation benchmarks with zero-shot and fine-tuning settings. The results demonstrate the effectiveness of our proposed approach.
-
-**arXiv ID:** 2504.11788
-</details>
-
-<details>
 <summary><strong>Agent-ScanKit: Unraveling Memory and Reasoning of Multimodal Agents via Sensitivity Perturbations</strong> - Pengzhou Cheng, Lingzhong Dong, Zeng Wu, Zongru Wu, Zhuosheng Zhang, Gongshen Liu - [[pdf]](https://arxiv.org/pdf/2510.00496)</summary>
 
 **Abstract:** Although numerous strategies have recently been proposed to enhance the autonomous interaction capabilities of multimodal agents in graphical user interface (GUI), their reliability remains limited when faced with complex or out-of-domain tasks. This raises a fundamental question: Are existing multimodal agents reasoning spuriously? In this paper, we propose \textbf{Agent-ScanKit}, a systematic probing framework to unravel the memory and reasoning capabilities of multimodal agents under controlled perturbations. Specifically, we introduce three orthogonal probing paradigms: visual-guided, text-guided, and structure-guided, each designed to quantify the contributions of memorization and reasoning without requiring access to model internals. In five publicly available GUI benchmarks involving 18 multimodal agents, the results demonstrate that mechanical memorization often outweighs systematic reasoning. Most of the models function predominantly as retrievers of training-aligned knowledge, exhibiting limited generalization. Our findings underscore the necessity of robust reasoning modeling for multimodal agents in real-world scenarios, offering valuable insights toward the development of reliable multimodal agents.
 
 **arXiv ID:** 2510.00496
+</details>
+
+<details>
+<summary><strong>WebRollback: Enhancing Web Agents with Explicit Rollback Mechanisms</strong> - Zhisong Zhang, Tianqing Fang, Kaixin Ma, Wenhao Yu, Hongming Zhang, Haitao Mi, Dong Yu - [[pdf]](https://arxiv.org/pdf/2504.11788)</summary>
+
+**Abstract:** With recent advancements in large language models, web agents have been greatly improved. However, dealing with complex and dynamic web environments requires more advanced planning and search abilities. Previous studies usually adopt a greedy one-way search strategy, which may struggle to recover from erroneous states. In this work, we enhance web agents with an explicit rollback mechanism, enabling the agent to revert back to a previous state in its navigation trajectory. This mechanism gives the model the flexibility to directly control the search process, leading to an effective and efficient web navigation method. We conduct experiments on two live web navigation benchmarks with zero-shot and fine-tuning settings. The results demonstrate the effectiveness of our proposed approach.
+
+**arXiv ID:** 2504.11788
 </details>
 
 <details>
@@ -313,19 +313,19 @@ This paper presents two AI-driven strategies to reduce false positives in OSS-Fu
 </details>
 
 <details>
-<summary><strong>AMAS: Adaptively Determining Communication Topology for LLM-based Multi-Agent System</strong> - Hui Yi Leong, Yuheng Li, Yuqing Wu, Wenwen Ouyang, Wei Zhu, Jiechao Gao - [[pdf]](https://arxiv.org/pdf/2510.01617)</summary>
-
-**Abstract:** Although large language models (LLMs) have revolutionized natural language processing capabilities, their practical implementation as autonomous multi-agent systems (MAS) for industrial problem-solving encounters persistent barriers. Conventional MAS architectures are fundamentally restricted by inflexible, hand-crafted graph topologies that lack contextual responsiveness, resulting in diminished efficacy across varied academic and commercial workloads. To surmount these constraints, we introduce AMAS, a paradigm-shifting framework that redefines LLM-based MAS through a novel dynamic graph designer. This component autonomously identifies task-specific optimal graph configurations via lightweight LLM adaptation, eliminating the reliance on monolithic, universally applied structural templates. Instead, AMAS exploits the intrinsic properties of individual inputs to intelligently direct query trajectories through task-optimized agent pathways. Rigorous validation across question answering, mathematical deduction, and code generation benchmarks confirms that AMAS systematically exceeds state-of-the-art single-agent and multi-agent approaches across diverse LLM architectures. Our investigation establishes that context-sensitive structural adaptability constitutes a foundational requirement for high-performance LLM MAS deployments.
-
-**arXiv ID:** 2510.01617
-</details>
-
-<details>
 <summary><strong>AniMaker: Multi-Agent Animated Storytelling with MCTS-Driven Clip Generation</strong> - Haoyuan Shi, Yunxin Li, Xinyu Chen, Longyue Wang, Baotian Hu, Min Zhang - [[pdf]](https://arxiv.org/pdf/2506.10540)</summary>
 
 **Abstract:** Despite rapid advancements in video generation models, generating coherent storytelling videos that span multiple scenes and characters remains challenging. Current methods often rigidly convert pre-generated keyframes into fixed-length clips, resulting in disjointed narratives and pacing issues. Furthermore, the inherent instability of video generation models means that even a single low-quality clip can significantly degrade the entire output animation's logical coherence and visual continuity. To overcome these obstacles, we introduce AniMaker, a multi-agent framework enabling efficient multi-candidate clip generation and storytelling-aware clip selection, thus creating globally consistent and story-coherent animation solely from text input. The framework is structured around specialized agents, including the Director Agent for storyboard generation, the Photography Agent for video clip generation, the Reviewer Agent for evaluation, and the Post-Production Agent for editing and voiceover. Central to AniMaker's approach are two key technical components: MCTS-Gen in Photography Agent, an efficient Monte Carlo Tree Search (MCTS)-inspired strategy that intelligently navigates the candidate space to generate high-potential clips while optimizing resource usage; and AniEval in Reviewer Agent, the first framework specifically designed for multi-shot animation evaluation, which assesses critical aspects such as story-level consistency, action completion, and animation-specific features by considering each clip in the context of its preceding and succeeding clips. Experiments demonstrate that AniMaker achieves superior quality as measured by popular metrics including VBench and our proposed AniEval framework, while significantly improving the efficiency of multi-candidate generation, pushing AI-generated storytelling animation closer to production standards.
 
 **arXiv ID:** 2506.10540
+</details>
+
+<details>
+<summary><strong>AMAS: Adaptively Determining Communication Topology for LLM-based Multi-Agent System</strong> - Hui Yi Leong, Yuheng Li, Yuqing Wu, Wenwen Ouyang, Wei Zhu, Jiechao Gao - [[pdf]](https://arxiv.org/pdf/2510.01617)</summary>
+
+**Abstract:** Although large language models (LLMs) have revolutionized natural language processing capabilities, their practical implementation as autonomous multi-agent systems (MAS) for industrial problem-solving encounters persistent barriers. Conventional MAS architectures are fundamentally restricted by inflexible, hand-crafted graph topologies that lack contextual responsiveness, resulting in diminished efficacy across varied academic and commercial workloads. To surmount these constraints, we introduce AMAS, a paradigm-shifting framework that redefines LLM-based MAS through a novel dynamic graph designer. This component autonomously identifies task-specific optimal graph configurations via lightweight LLM adaptation, eliminating the reliance on monolithic, universally applied structural templates. Instead, AMAS exploits the intrinsic properties of individual inputs to intelligently direct query trajectories through task-optimized agent pathways. Rigorous validation across question answering, mathematical deduction, and code generation benchmarks confirms that AMAS systematically exceeds state-of-the-art single-agent and multi-agent approaches across diverse LLM architectures. Our investigation establishes that context-sensitive structural adaptability constitutes a foundational requirement for high-performance LLM MAS deployments.
+
+**arXiv ID:** 2510.01617
 </details>
 
 <details>
@@ -596,19 +596,19 @@ VIS-ReAct is a two-agent framework: a primary LLM analysis agent interprets new 
 </details>
 
 <details>
-<summary><strong>Black-Box Combinatorial Optimization with Order-Invariant Reinforcement Learning</strong> - Olivier Goudet, Quentin Suire, Adrien Goëffon, Frédéric Saubion, Sylvain Lamprier - [[pdf]](https://arxiv.org/pdf/2510.01824)</summary>
-
-**Abstract:** We introduce an order-invariant reinforcement learning framework for black-box combinatorial optimization. Classical estimation-of-distribution algorithms (EDAs) often rely on learning explicit variable dependency graphs, which can be costly and fail to capture complex interactions efficiently. In contrast, we parameterize a multivariate autoregressive generative model trained without a fixed variable ordering. By sampling random generation orders during training - a form of information-preserving dropout - the model is encouraged to be invariant to variable order, promoting search-space diversity and shaping the model to focus on the most relevant variable dependencies, improving sample efficiency. We adapt Generalized Reinforcement Policy Optimization (GRPO) to this setting, providing stable policy-gradient updates from scale-invariant advantages. Across a wide range of benchmark algorithms and problem instances of varying sizes, our method frequently achieves the best performance and consistently avoids catastrophic failures.
-
-**arXiv ID:** 2510.01824
-</details>
-
-<details>
 <summary><strong>Reinforcement Learning with Action-Triggered Observations</strong> - Alexander Ryabchenko, Wenlong Mou - [[pdf]](https://arxiv.org/pdf/2510.02149)</summary>
 
 **Abstract:** We study reinforcement learning problems where state observations are stochastically triggered by actions, a constraint common in many real-world applications. This framework is formulated as Action-Triggered Sporadically Traceable Markov Decision Processes (ATST-MDPs), where each action has a specified probability of triggering a state observation. We derive tailored Bellman optimality equations for this framework and introduce the action-sequence learning paradigm in which agents commit to executing a sequence of actions until the next observation arrives. Under the linear MDP assumption, value-functions are shown to admit linear representations in an induced action-sequence feature map. Leveraging this structure, we propose off-policy estimators with statistical error guarantees for such feature maps and introduce ST-LSVI-UCB, a variant of LSVI-UCB adapted for action-triggered settings. ST-LSVI-UCB achieves regret $\widetilde O(\sqrt{Kd^3(1-\gamma)^{-3}})$, where $K$ is the number of episodes, $d$ the feature dimension, and $\gamma$ the discount factor (per-step episode non-termination probability). Crucially, this work establishes the theoretical foundation for learning with sporadic, action-triggered observations while demonstrating that efficient learning remains feasible under such observation constraints.
 
 **arXiv ID:** 2510.02149
+</details>
+
+<details>
+<summary><strong>Black-Box Combinatorial Optimization with Order-Invariant Reinforcement Learning</strong> - Olivier Goudet, Quentin Suire, Adrien Goëffon, Frédéric Saubion, Sylvain Lamprier - [[pdf]](https://arxiv.org/pdf/2510.01824)</summary>
+
+**Abstract:** We introduce an order-invariant reinforcement learning framework for black-box combinatorial optimization. Classical estimation-of-distribution algorithms (EDAs) often rely on learning explicit variable dependency graphs, which can be costly and fail to capture complex interactions efficiently. In contrast, we parameterize a multivariate autoregressive generative model trained without a fixed variable ordering. By sampling random generation orders during training - a form of information-preserving dropout - the model is encouraged to be invariant to variable order, promoting search-space diversity and shaping the model to focus on the most relevant variable dependencies, improving sample efficiency. We adapt Generalized Reinforcement Policy Optimization (GRPO) to this setting, providing stable policy-gradient updates from scale-invariant advantages. Across a wide range of benchmark algorithms and problem instances of varying sizes, our method frequently achieves the best performance and consistently avoids catastrophic failures.
+
+**arXiv ID:** 2510.01824
 </details>
 
 <details>
@@ -628,19 +628,19 @@ VIS-ReAct is a two-agent framework: a primary LLM analysis agent interprets new 
 </details>
 
 <details>
-<summary><strong>World Model for AI Autonomous Navigation in Mechanical Thrombectomy</strong> - Harry Robertshaw, Han-Ru Wu, Alejandro Granados, Thomas C Booth - [[pdf]](https://arxiv.org/pdf/2509.25518)</summary>
-
-**Abstract:** Autonomous navigation for mechanical thrombectomy (MT) remains a critical challenge due to the complexity of vascular anatomy and the need for precise, real-time decision-making. Reinforcement learning (RL)-based approaches have demonstrated potential in automating endovascular navigation, but current methods often struggle with generalization across multiple patient vasculatures and long-horizon tasks. We propose a world model for autonomous endovascular navigation using TD-MPC2, a model-based RL algorithm. We trained a single RL agent across multiple endovascular navigation tasks in ten real patient vasculatures, comparing performance against the state-of-the-art Soft Actor-Critic (SAC) method. Results indicate that TD-MPC2 significantly outperforms SAC in multi-task learning, achieving a 65% mean success rate compared to SAC's 37%, with notable improvements in path ratio. TD-MPC2 exhibited increased procedure times, suggesting a trade-off between success rate and execution speed. These findings highlight the potential of world models for improving autonomous endovascular navigation and lay the foundation for future research in generalizable AI-driven robotic interventions.
-
-**arXiv ID:** 2509.25518
-</details>
-
-<details>
 <summary><strong>How can AI agents support journalists' work? An experiment with designing an LLM-driven intelligent reporting system</strong> - Vasileios Maltezos, Roman Kyrychenko, Aleksi Knuutila - [[pdf]](https://arxiv.org/pdf/2510.01193)</summary>
 
 **Abstract:** The integration of artificial intelligence into journalistic practices represents a transformative shift in how news is gathered, analyzed, and disseminated. Large language models (LLMs), particularly those with agentic capabilities, offer unprecedented opportunities for enhancing journalistic workflows while simultaneously presenting complex challenges for newsroom integration. This research explores how agentic LLMs can support journalists' workflows, based on insights from journalist interviews and from the development of an LLM-based automation tool performing information filtering, summarization, and reporting. The paper details automated aggregation and summarization systems for journalists, presents a technical overview and evaluation of a user-centric LLM-driven reporting system (TeleFlash), and discusses both addressed and unmet journalist needs, with an outlook on future directions for AI-driven tools in journalism.
 
 **arXiv ID:** 2510.01193
+</details>
+
+<details>
+<summary><strong>World Model for AI Autonomous Navigation in Mechanical Thrombectomy</strong> - Harry Robertshaw, Han-Ru Wu, Alejandro Granados, Thomas C Booth - [[pdf]](https://arxiv.org/pdf/2509.25518)</summary>
+
+**Abstract:** Autonomous navigation for mechanical thrombectomy (MT) remains a critical challenge due to the complexity of vascular anatomy and the need for precise, real-time decision-making. Reinforcement learning (RL)-based approaches have demonstrated potential in automating endovascular navigation, but current methods often struggle with generalization across multiple patient vasculatures and long-horizon tasks. We propose a world model for autonomous endovascular navigation using TD-MPC2, a model-based RL algorithm. We trained a single RL agent across multiple endovascular navigation tasks in ten real patient vasculatures, comparing performance against the state-of-the-art Soft Actor-Critic (SAC) method. Results indicate that TD-MPC2 significantly outperforms SAC in multi-task learning, achieving a 65% mean success rate compared to SAC's 37%, with notable improvements in path ratio. TD-MPC2 exhibited increased procedure times, suggesting a trade-off between success rate and execution speed. These findings highlight the potential of world models for improving autonomous endovascular navigation and lay the foundation for future research in generalizable AI-driven robotic interventions.
+
+**arXiv ID:** 2509.25518
 </details>
 
 </details>
