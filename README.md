@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-06 02:40:02
+**Last Updated:** 2025-10-07 01:59:11
 
 **Total Papers:** 64
 
@@ -232,19 +232,19 @@
 <summary><h2>Multi-Agent Systems (9 papers)</h2></summary>
 
 <details>
-<summary><strong>Agentic Additive Manufacturing Alloy Discovery</strong> - Peter Pak, Achuth Chandrasekhar, Amir Barati Farimani - [[pdf]](https://arxiv.org/pdf/2510.02567)</summary>
-
-**Abstract:** Agentic systems enable the intelligent use of research tooling, augmenting a researcher's ability to investigate and propose novel solutions to existing problems. Within Additive Manufacturing (AM), alloy discovery remains a complex challenge, often requiring expertise in the various domains of materials science, thermodynamic simulations, and experimental analysis. Large Language Model (LLM) enabled agents can facilitate this endeavor by utilizing their extensive knowledge base to dispatch tool calls via Model Context Protocol (MCP) to perform actions such as Thermo-Calc property diagram calculations and lack of fusion process map generation. In addition, the multi-agent system developed in this work is able to effectively reason through complex user prompts and provide analysis on the printability of proposed alloys. These agents can dynamically adjust their task trajectory to the outcomes of tool call results, effectively enabling autonomous decision-making in practical environments. This work aims to utilize LLM enabled agents to automate and accelerate the task of alloy discovery within the field of additive manufacturing and showcase the benefits of adopting this multi-agent system.
-
-**arXiv ID:** 2510.02567
-</details>
-
-<details>
 <summary><strong>Orchestrating Human-AI Teams: The Manager Agent as a Unifying Research Challenge</strong> - Charlie Masters, Advaith Vellanki, Jiangbo Shangguan, Bart Kultys, Jonathan Gilmore, Alastair Moore, Stefano V. Albrecht - [[pdf]](https://arxiv.org/pdf/2510.02557)</summary>
 
 **Abstract:** While agentic AI has advanced in automating individual tasks, managing complex multi-agent workflows remains a challenging problem. This paper presents a research vision for autonomous agentic systems that orchestrate collaboration within dynamic human-AI teams. We propose the Autonomous Manager Agent as a core challenge: an agent that decomposes complex goals into task graphs, allocates tasks to human and AI workers, monitors progress, adapts to changing conditions, and maintains transparent stakeholder communication. We formalize workflow management as a Partially Observable Stochastic Game and identify four foundational challenges: (1) compositional reasoning for hierarchical decomposition, (2) multi-objective optimization under shifting preferences, (3) coordination and planning in ad hoc teams, and (4) governance and compliance by design. To advance this agenda, we release MA-Gym, an open-source simulation and evaluation framework for multi-agent workflow orchestration. Evaluating GPT-5-based Manager Agents across 20 workflows, we find they struggle to jointly optimize for goal completion, constraint adherence, and workflow runtime - underscoring workflow management as a difficult open problem. We conclude with organizational and ethical implications of autonomous management systems.
 
 **arXiv ID:** 2510.02557
+</details>
+
+<details>
+<summary><strong>Agentic Additive Manufacturing Alloy Discovery</strong> - Peter Pak, Achuth Chandrasekhar, Amir Barati Farimani - [[pdf]](https://arxiv.org/pdf/2510.02567)</summary>
+
+**Abstract:** Agentic systems enable the intelligent use of research tooling, augmenting a researcher's ability to investigate and propose novel solutions to existing problems. Within Additive Manufacturing (AM), alloy discovery remains a complex challenge, often requiring expertise in the various domains of materials science, thermodynamic simulations, and experimental analysis. Large Language Model (LLM) enabled agents can facilitate this endeavor by utilizing their extensive knowledge base to dispatch tool calls via Model Context Protocol (MCP) to perform actions such as Thermo-Calc property diagram calculations and lack of fusion process map generation. In addition, the multi-agent system developed in this work is able to effectively reason through complex user prompts and provide analysis on the printability of proposed alloys. These agents can dynamically adjust their task trajectory to the outcomes of tool call results, effectively enabling autonomous decision-making in practical environments. This work aims to utilize LLM enabled agents to automate and accelerate the task of alloy discovery within the field of additive manufacturing and showcase the benefits of adopting this multi-agent system.
+
+**arXiv ID:** 2510.02567
 </details>
 
 <details>
