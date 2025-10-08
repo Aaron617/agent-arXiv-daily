@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-08 01:59:12
+**Last Updated:** 2025-10-08 02:36:44
 
 **Total Papers:** 77
 
@@ -139,6 +139,14 @@
 <summary><h2>LLM Agents (8 papers)</h2></summary>
 
 <details>
+<summary><strong>Plug-and-Play Dramaturge: A Divide-and-Conquer Approach for Iterative Narrative Script Refinement via Collaborative LLM Agents</strong> - Wenda Xie, Chao Guo, Yanqing Jing. Junle Wang, Yisheng Lv, Fei-Yue Wang - [[pdf]](https://arxiv.org/pdf/2510.05188)</summary>
+
+**Abstract:** Although LLMs have been widely adopted for creative content generation, a single-pass process often struggles to produce high-quality long narratives. How to effectively revise and improve long narrative scripts like scriptwriters remains a significant challenge, as it demands a comprehensive understanding of the entire context to identify global structural issues and local detailed flaws, as well as coordinating revisions at multiple granularities and locations. Direct modifications by LLMs typically introduce inconsistencies between local edits and the overall narrative requirements. To address these issues, we propose Dramaturge, a task and feature oriented divide-and-conquer approach powered by hierarchical multiple LLM agents. It consists of a Global Review stage to grasp the overall storyline and structural issues, a Scene-level Review stage to pinpoint detailed scene and sentence flaws, and a Hierarchical Coordinated Revision stage that coordinates and integrates structural and detailed improvements throughout the script. The top-down task flow ensures that high-level strategies guide local modifications, maintaining contextual consistency. The review and revision workflow follows a coarse-to-fine iterative process, continuing through multiple rounds until no further substantive improvements can be made. Comprehensive experiments show that Dramaturge significantly outperforms all baselines in terms of script-level overall quality and scene-level details. Our approach is plug-and-play and can be easily integrated into existing methods to improve the generated scripts.
+
+**arXiv ID:** 2510.05188
+</details>
+
+<details>
 <summary><strong>Structured Cognition for Behavioral Intelligence in Large Language Model Agents: Preliminary Study</strong> - Myung Ho Kim - [[pdf]](https://arxiv.org/pdf/2510.05107)</summary>
 
 **Abstract:** Large language models have advanced natural language understanding and generation, yet their use as autonomous agents raises architectural challenges for multi-step tasks. Existing frameworks often intertwine inference, memory, and control in a single prompt, which can reduce coherence and predictability. The Structured Cognitive Loop (SCL) is introduced as an alternative architecture that separates these functions. In SCL, the language model is dedicated to inference, memory is maintained externally, and execution is guided by a lightweight controller within a goal-directed loop. This design offloads cognitive load from the model and allows intermediate results to be stored, revisited, and checked before actions are taken, providing a clearer basis for traceability and evaluation.
@@ -146,14 +154,6 @@ We evaluate SCL against prompt-based baselines including ReAct and common LangCh
 These results suggest that architectural separation can improve reliability and traceability without relying on larger models or heavier prompts. The findings are preliminary and intended to guide extended studies with additional models, longer horizons, multimodal tasks, and collaborative settings.
 
 **arXiv ID:** 2510.05107
-</details>
-
-<details>
-<summary><strong>Plug-and-Play Dramaturge: A Divide-and-Conquer Approach for Iterative Narrative Script Refinement via Collaborative LLM Agents</strong> - Wenda Xie, Chao Guo, Yanqing Jing. Junle Wang, Yisheng Lv, Fei-Yue Wang - [[pdf]](https://arxiv.org/pdf/2510.05188)</summary>
-
-**Abstract:** Although LLMs have been widely adopted for creative content generation, a single-pass process often struggles to produce high-quality long narratives. How to effectively revise and improve long narrative scripts like scriptwriters remains a significant challenge, as it demands a comprehensive understanding of the entire context to identify global structural issues and local detailed flaws, as well as coordinating revisions at multiple granularities and locations. Direct modifications by LLMs typically introduce inconsistencies between local edits and the overall narrative requirements. To address these issues, we propose Dramaturge, a task and feature oriented divide-and-conquer approach powered by hierarchical multiple LLM agents. It consists of a Global Review stage to grasp the overall storyline and structural issues, a Scene-level Review stage to pinpoint detailed scene and sentence flaws, and a Hierarchical Coordinated Revision stage that coordinates and integrates structural and detailed improvements throughout the script. The top-down task flow ensures that high-level strategies guide local modifications, maintaining contextual consistency. The review and revision workflow follows a coarse-to-fine iterative process, continuing through multiple rounds until no further substantive improvements can be made. Comprehensive experiments show that Dramaturge significantly outperforms all baselines in terms of script-level overall quality and scene-level details. Our approach is plug-and-play and can be easily integrated into existing methods to improve the generated scripts.
-
-**arXiv ID:** 2510.05188
 </details>
 
 <details>
@@ -404,7 +404,7 @@ These results suggest that architectural separation can improve reliability and 
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (10 papers)</h2></summary>
+<summary><h2>Other Agent Research (9 papers)</h2></summary>
 
 <details>
 <summary><strong>Artificially intelligent agents in the social and behavioral sciences: A history and outlook</strong> - Petter Holme, Milena Tsvetkova - [[pdf]](https://arxiv.org/pdf/2510.05743)</summary>
@@ -448,14 +448,6 @@ We also surface a failure mode diverging from Lynch et al. (2025): two models (G
 </details>
 
 <details>
-<summary><strong>Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations</strong> - Chengzhi Liu, Yuzhe Yang, Kaiwen Zhou, Zhen Zhang, Yue Fan, Yannan Xie, Peng Qi, Xin Eric Wang - [[pdf]](https://arxiv.org/pdf/2510.05571)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2510.05571
-</details>
-
-<details>
 <summary><strong>AgenticIE: An Adaptive Agent for Information Extraction from Complex Regulatory Documents</strong> - Gaye Colakoglu, Gürkan Solmaz, Jonathan Fürst - [[pdf]](https://arxiv.org/pdf/2509.11773)</summary>
 
 **Abstract:** Declaration of Performance (DoP) documents, mandated by EU regulation, certify the performance of construction products. There are two challenges to make DoPs machine and human accessible through automated key-value pair extraction (KVP) and question answering (QA): (1) While some of their content is standardized, DoPs vary widely in layout, schema, and format; (2) Both users and documents are multilingual. Existing static or LLM-only Information Extraction (IE) pipelines fail to adapt to this structural document and user diversity. Our domain-specific, agentic system addresses these challenges through a planner-executor-responder architecture. The system infers user intent, detects document language and modality, and orchestrates tools dynamically for robust, traceable reasoning while avoiding tool misuse or execution loops. Our agent outperforms baselines (ROUGE: 0.783 vs. 0.703/0.608) with better cross-lingual stability (17-point vs. 21-26-point variation).
@@ -490,7 +482,7 @@ We also surface a failure mode diverging from Lynch et al. (2025): two models (G
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (21 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (22 papers)</h2></summary>
 
 <details>
 <summary><strong>In-the-Flow Agentic System Optimization for Effective Planning and Tool Use</strong> - Zhuofeng Li, Haoxiang Zhang, Seungju Han, Sheng Liu, Jianwen Xie, Yu Zhang, Yejin Choi, James Zou, Pan Lu - [[pdf]](https://arxiv.org/pdf/2510.05592)</summary>
@@ -567,6 +559,14 @@ Agent Spec benefits four key groups: (i) Agent developers, who gain access to a 
 </details>
 
 <details>
+<summary><strong>Presenting a Paper is an Art: Self-Improvement Aesthetic Agents for Academic Presentations</strong> - Chengzhi Liu, Yuzhe Yang, Kaiwen Zhou, Zhen Zhang, Yue Fan, Yannan Xie, Peng Qi, Xin Eric Wang - [[pdf]](https://arxiv.org/pdf/2510.05571)</summary>
+
+**Abstract:** The promotion of academic papers has become an important means of enhancing research visibility. However, existing automated methods struggle limited storytelling, insufficient aesthetic quality, and constrained self-adjustment, making it difficult to achieve efficient and engaging dissemination. At the heart of those challenges is a simple principle: \emph{there is no way to improve it when you cannot evaluate it right}. To address this, we introduce \textbf{EvoPresent}, a self-improvement agent framework that unifies coherent narratives, aesthetic-aware designs, and realistic presentation delivery via virtual characters. Central to EvoPresent is \textbf{PresAesth}, a multi-task reinforcement learning (RL) aesthetic model that provides reliable aesthetic scoring, defect adjustment, and comparative feedback, enabling iterative self-improvement even under limited aesthetic training data. To systematically evaluate the methods, we introduce \textbf{EvoPresent Benchmark}, a comprehensive benchmark comprising: \textit{Presentation Generation Quality}, built on 650 top-tier AI conference papers with multimodal resources (slides, videos and scripts) to assess both content and design; and \textit{Aesthetic Awareness}, consisting of 2,000 slide pairs with varying aesthetic levels, supporting joint training and evaluation on scoring, defect adjustment, and comparison. Our findings highlight that (i) High-quality feedback is essential for agent self-improvement, while initial capability alone does not guarantee effective self-correction. (ii) Automated generation pipelines exhibit a trade-off between visual design and content construction. (iii) Multi-task RL training shows stronger generalization in aesthetic awareness tasks.
+
+**arXiv ID:** 2510.05571
+</details>
+
+<details>
 <summary><strong>A Goal Without a Plan Is Just a Wish: Efficient and Effective Global Planner Training for Long-Horizon Agent Tasks</strong> - Shuzheng Si, Haozhe Zhao, Kangyang Luo, Gang Chen, Fanchao Qi, Minjia Zhang, Baobao Chang, Maosong Sun - [[pdf]](https://arxiv.org/pdf/2510.05608)</summary>
 
 **Abstract:** Agents based on large language models (LLMs) struggle with brainless trial-and-error and generating hallucinatory actions due to a lack of global planning in long-horizon tasks. In this paper, we introduce a plan-and-execute framework and propose EAGLET, an efficient and effective planner training method to enhance the executor agent's planning abilities without human effort. Specifically, we train a plug-and-play global planner through a two-step process: we first synthesize high-quality plans from an advanced LLM using our proposed homologous consensus filtering strategy, and apply fine-tuning as a cold start. Moreover, we further improve the planner with a rule-based reinforcement learning stage using a novel executor capability gain reward, ensuring it can handle task instructions of varying difficulty. Experiments on three long-horizon agent tasks show that executor agents equipped with our planner outperform existing methods, achieving new state-of-the-art performance. Meanwhile, EAGLET reduces training costs by 8x compared to RL-based baselines, and it does not require manual effort or extra training data, offering an efficient and effective solution.
@@ -599,20 +599,20 @@ Agent Spec benefits four key groups: (i) Agent developers, who gain access to a 
 </details>
 
 <details>
-<summary><strong>Oracle-Guided Masked Contrastive Reinforcement Learning for Visuomotor Policies</strong> - Yuhang Zhang, Jiaping Xiao, Chao Yan, Mir Feroskhan - [[pdf]](https://arxiv.org/pdf/2510.05692)</summary>
-
-**Abstract:** A prevailing approach for learning visuomotor policies is to employ reinforcement learning to map high-dimensional visual observations directly to action commands. However, the combination of high-dimensional visual inputs and agile maneuver outputs leads to long-standing challenges, including low sample efficiency and significant sim-to-real gaps. To address these issues, we propose Oracle-Guided Masked Contrastive Reinforcement Learning (OMC-RL), a novel framework designed to improve the sample efficiency and asymptotic performance of visuomotor policy learning. OMC-RL explicitly decouples the learning process into two stages: an upstream representation learning stage and a downstream policy learning stage. In the upstream stage, a masked Transformer module is trained with temporal modeling and contrastive learning to extract temporally-aware and task-relevant representations from sequential visual inputs. After training, the learned encoder is frozen and used to extract visual representations from consecutive frames, while the Transformer module is discarded. In the downstream stage, an oracle teacher policy with privileged access to global state information supervises the agent during early training to provide informative guidance and accelerate early policy learning. This guidance is gradually reduced to allow independent exploration as training progresses. Extensive experiments in simulated and real-world environments demonstrate that OMC-RL achieves superior sample efficiency and asymptotic policy performance, while also improving generalization across diverse and perceptually complex scenarios.
-
-**arXiv ID:** 2510.05692
-</details>
-
-<details>
 <summary><strong>EARL: Efficient Agentic Reinforcement Learning Systems for Large Language Models</strong> - Zheyue Tan, Mustapha Abdullahi, Tuo Shi, Huining Yuan, Zelai Xu, Chao Yu, Boxun Li, Bo Zhao - [[pdf]](https://arxiv.org/pdf/2510.05943)</summary>
 
 **Abstract:** Reinforcement learning (RL) has become a pivotal component of large language model (LLM) post-training, and agentic RL extends this paradigm to operate as agents through multi-turn interaction and tool use. Scaling such systems exposes two practical bottlenecks: (1) context length grows rapidly during training, inflating memory usage and latency, and triggering out-of-memory (OOM) failures; and (2) intermediate tensors accumulate with context length, making cross-device data movement a major system bottleneck.
 We present EARL, a scalable system for efficient agentic RL. EARL designs a parallelism selector that dynamically adapts model and training parallelism across RL stages based on sequence length and system load, and a data dispatcher that performs layout-aware, decentralized exchange of intermediate data batches. Together, these components increase throughput, reduce long-context failures, and enable stable large-scale training of agentic LLMs without relying on hard limits or penalties of context length.
 
 **arXiv ID:** 2510.05943
+</details>
+
+<details>
+<summary><strong>Oracle-Guided Masked Contrastive Reinforcement Learning for Visuomotor Policies</strong> - Yuhang Zhang, Jiaping Xiao, Chao Yan, Mir Feroskhan - [[pdf]](https://arxiv.org/pdf/2510.05692)</summary>
+
+**Abstract:** A prevailing approach for learning visuomotor policies is to employ reinforcement learning to map high-dimensional visual observations directly to action commands. However, the combination of high-dimensional visual inputs and agile maneuver outputs leads to long-standing challenges, including low sample efficiency and significant sim-to-real gaps. To address these issues, we propose Oracle-Guided Masked Contrastive Reinforcement Learning (OMC-RL), a novel framework designed to improve the sample efficiency and asymptotic performance of visuomotor policy learning. OMC-RL explicitly decouples the learning process into two stages: an upstream representation learning stage and a downstream policy learning stage. In the upstream stage, a masked Transformer module is trained with temporal modeling and contrastive learning to extract temporally-aware and task-relevant representations from sequential visual inputs. After training, the learned encoder is frozen and used to extract visual representations from consecutive frames, while the Transformer module is discarded. In the downstream stage, an oracle teacher policy with privileged access to global state information supervises the agent during early training to provide informative guidance and accelerate early policy learning. This guidance is gradually reduced to allow independent exploration as training progresses. Extensive experiments in simulated and real-world environments demonstrate that OMC-RL achieves superior sample efficiency and asymptotic policy performance, while also improving generalization across diverse and perceptually complex scenarios.
+
+**arXiv ID:** 2510.05692
 </details>
 
 <details>
