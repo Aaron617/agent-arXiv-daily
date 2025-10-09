@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-09 02:00:22
+**Last Updated:** 2025-10-09 02:39:07
 
 **Total Papers:** 73
 
@@ -587,19 +587,19 @@ To support this research, we introduce two new datasets: TAPO-easy-60K and TAPO-
 </details>
 
 <details>
-<summary><strong>Reinforcement Learning for Dynamic Memory Allocation</strong> - Arisrei Lim, Abhiram Maddukuri - [[pdf]](https://arxiv.org/pdf/2410.15492)</summary>
-
-**Abstract:** In recent years, reinforcement learning (RL) has gained popularity and has been applied to a wide range of tasks. One such popular domain where RL has been effective is resource management problems in systems. We look to extend work on RL for resource management problems by considering the novel domain of dynamic memory allocation management. We consider dynamic memory allocation to be a suitable domain for RL since current algorithms like first-fit, best-fit, and worst-fit can fail to adapt to changing conditions and can lead to fragmentation and suboptimal efficiency. In this paper, we present a framework in which an RL agent continuously learns from interactions with the system to improve memory management tactics. We evaluate our approach through various experiments using high-level and low-level action spaces and examine different memory allocation patterns. Our results show that RL can successfully train agents that can match and surpass traditional allocation strategies, particularly in environments characterized by adversarial request patterns. We also explore the potential of history-aware policies that leverage previous allocation requests to enhance the allocator's ability to handle complex request patterns. Overall, we find that RL offers a promising avenue for developing more adaptive and efficient memory allocation strategies, potentially overcoming limitations of hardcoded allocation algorithms.
-
-**arXiv ID:** 2410.15492
-</details>
-
-<details>
 <summary><strong>Dynamic Learning Rate for Deep Reinforcement Learning: A Bandit Approach</strong> - Henrique Donâncio, Antoine Barrier, Leah F. South, Florence Forbes - [[pdf]](https://arxiv.org/pdf/2410.12598)</summary>
 
 **Abstract:** In deep Reinforcement Learning (RL), the learning rate critically influences both stability and performance, yet its optimal value shifts during training as the environment and policy evolve. Standard decay schedulers assume monotonic convergence and often misalign with these dynamics, leading to premature or delayed adjustments. We introduce LRRL, a meta-learning approach that dynamically selects the learning rate based on policy performance rather than training steps. LRRL adaptively favors rates that improve returns, remaining robust even when the candidate set includes values that individually cause divergence. Across Atari and MuJoCo benchmarks, LRRL achieves performance competitive with or superior to tuned baselines and standard schedulers. Our findings position LRRL as a practical solution for adapting to non-stationary objectives in deep RL.
 
 **arXiv ID:** 2410.12598
+</details>
+
+<details>
+<summary><strong>Reinforcement Learning for Dynamic Memory Allocation</strong> - Arisrei Lim, Abhiram Maddukuri - [[pdf]](https://arxiv.org/pdf/2410.15492)</summary>
+
+**Abstract:** In recent years, reinforcement learning (RL) has gained popularity and has been applied to a wide range of tasks. One such popular domain where RL has been effective is resource management problems in systems. We look to extend work on RL for resource management problems by considering the novel domain of dynamic memory allocation management. We consider dynamic memory allocation to be a suitable domain for RL since current algorithms like first-fit, best-fit, and worst-fit can fail to adapt to changing conditions and can lead to fragmentation and suboptimal efficiency. In this paper, we present a framework in which an RL agent continuously learns from interactions with the system to improve memory management tactics. We evaluate our approach through various experiments using high-level and low-level action spaces and examine different memory allocation patterns. Our results show that RL can successfully train agents that can match and surpass traditional allocation strategies, particularly in environments characterized by adversarial request patterns. We also explore the potential of history-aware policies that leverage previous allocation requests to enhance the allocator's ability to handle complex request patterns. Overall, we find that RL offers a promising avenue for developing more adaptive and efficient memory allocation strategies, potentially overcoming limitations of hardcoded allocation algorithms.
+
+**arXiv ID:** 2410.15492
 </details>
 
 <details>
