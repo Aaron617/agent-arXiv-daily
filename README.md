@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-10 02:01:11
+**Last Updated:** 2025-10-10 02:39:35
 
 **Total Papers:** 105
 
@@ -240,19 +240,19 @@
 <summary><h2>Multi-Agent Systems (36 papers)</h2></summary>
 
 <details>
-<summary><strong>ProSEA: Problem Solving via Exploration Agents</strong> - William Nguyen, Vinh Luong, Christopher Nguyen - [[pdf]](https://arxiv.org/pdf/2510.07423)</summary>
-
-**Abstract:** Large language models (LLMs) have empowered AI agents to tackle increasingly complex tasks. However, most existing agents remain limited to static planning and brittle interactions, falling short of true collaboration or adaptive reasoning. We introduce ProSEA, a modular, general-purpose multi-agent framework designed for iterative problem solving through exploration and plan evolution. ProSEA features a hierarchical architecture in which a Manager Agent orchestrates domain-specialized Expert Agents, decomposes tasks, and adaptively replans based on structured feedback from failed attempts. Unlike prior systems, ProSEA agents report not only success or failure but also detailed reasons for failure and newly discovered constraints, enabling dynamic plan refinement informed by exploratory traces. The framework operates autonomously but supports seamless integration with human collaborators when needed. Experiments on the challenging FinanceBench benchmark demonstrate that ProSEA, even without human feedback, outperforms state-of-the-art baselines and achieves robust performance across reasoning-heavy tasks. These results underscore ProSEA's potential as a foundation for more transparent, adaptive, and human-aligned AI agents.
-
-**arXiv ID:** 2510.07423
-</details>
-
-<details>
 <summary><strong>L2M-AID: Autonomous Cyber-Physical Defense by Fusing Semantic Reasoning of Large Language Models with Multi-Agent Reinforcement Learning (Preprint)</strong> - Tianxiang Xu, Zhichao Wen, Xinyu Zhao, Jun Wang, Yan Li, Chang Liu - [[pdf]](https://arxiv.org/pdf/2510.07363)</summary>
 
 **Abstract:** The increasing integration of Industrial IoT (IIoT) exposes critical cyber-physical systems to sophisticated, multi-stage attacks that elude traditional defenses lacking contextual awareness. This paper introduces L2M-AID, a novel framework for Autonomous Industrial Defense using LLM-empowered, Multi-agent reinforcement learning. L2M-AID orchestrates a team of collaborative agents, each driven by a Large Language Model (LLM), to achieve adaptive and resilient security. The core innovation lies in the deep fusion of two AI paradigms: we leverage an LLM as a semantic bridge to translate vast, unstructured telemetry into a rich, contextual state representation, enabling agents to reason about adversary intent rather than merely matching patterns. This semantically-aware state empowers a Multi-Agent Reinforcement Learning (MARL) algorithm, MAPPO, to learn complex cooperative strategies. The MARL reward function is uniquely engineered to balance security objectives (threat neutralization) with operational imperatives, explicitly penalizing actions that disrupt physical process stability. To validate our approach, we conduct extensive experiments on the benchmark SWaT dataset and a novel synthetic dataset generated based on the MITRE ATT&CK for ICS framework. Results demonstrate that L2M-AID significantly outperforms traditional IDS, deep learning anomaly detectors, and single-agent RL baselines across key metrics, achieving a 97.2% detection rate while reducing false positives by over 80% and improving response times by a factor of four. Crucially, it demonstrates superior performance in maintaining physical process stability, presenting a robust new paradigm for securing critical national infrastructure.
 
 **arXiv ID:** 2510.07363
+</details>
+
+<details>
+<summary><strong>ProSEA: Problem Solving via Exploration Agents</strong> - William Nguyen, Vinh Luong, Christopher Nguyen - [[pdf]](https://arxiv.org/pdf/2510.07423)</summary>
+
+**Abstract:** Large language models (LLMs) have empowered AI agents to tackle increasingly complex tasks. However, most existing agents remain limited to static planning and brittle interactions, falling short of true collaboration or adaptive reasoning. We introduce ProSEA, a modular, general-purpose multi-agent framework designed for iterative problem solving through exploration and plan evolution. ProSEA features a hierarchical architecture in which a Manager Agent orchestrates domain-specialized Expert Agents, decomposes tasks, and adaptively replans based on structured feedback from failed attempts. Unlike prior systems, ProSEA agents report not only success or failure but also detailed reasons for failure and newly discovered constraints, enabling dynamic plan refinement informed by exploratory traces. The framework operates autonomously but supports seamless integration with human collaborators when needed. Experiments on the challenging FinanceBench benchmark demonstrate that ProSEA, even without human feedback, outperforms state-of-the-art baselines and achieves robust performance across reasoning-heavy tasks. These results underscore ProSEA's potential as a foundation for more transparent, adaptive, and human-aligned AI agents.
+
+**arXiv ID:** 2510.07423
 </details>
 
 <details>
