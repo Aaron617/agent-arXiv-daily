@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-13 02:08:27
+**Last Updated:** 2025-10-13 02:47:44
 
 **Total Papers:** 82
 
@@ -466,19 +466,19 @@
 <summary><h2>Reinforcement Learning (29 papers)</h2></summary>
 
 <details>
-<summary><strong>What Is Your Agent's GPA? A Framework for Evaluating Agent Goal-Plan-Action Alignment</strong> - Allison Sihan Jia, Daniel Huang, Nikhil Vytla, Nirvika Choudhury, John C Mitchell, Anupam Datta - [[pdf]](https://arxiv.org/pdf/2510.08847)</summary>
-
-**Abstract:** We introduce the Agent GPA (Goal-Plan-Action) framework: an evaluation paradigm based on an agent's operational loop of setting goals, devising plans, and executing actions. The framework includes five evaluation metrics: Goal Fulfillment, Logical Consistency, Execution Efficiency, Plan Quality, and Plan Adherence. Logical Consistency checks that an agent's actions are consistent with its prior actions. Execution Efficiency checks whether the agent executes in the most efficient way to achieve its goal. Plan Quality checks whether an agent's plans are aligned with its goals; Plan Adherence checks if an agent's actions are aligned with its plan; and Goal Fulfillment checks that agent's final outcomes match the stated goals. Our experimental results on two benchmark datasets - the public TRAIL/GAIA dataset and an internal dataset for a production-grade data agent - show that this framework (a) provides a systematic way to cover a broad range of agent failures, including all agent errors on the TRAIL/GAIA benchmark dataset; (b) supports LLM-judges that exhibit strong agreement with human annotation, covering 80% to over 95% errors; and (c) localizes errors with 86% agreement to enable targeted improvement of agent performance.
-
-**arXiv ID:** 2510.08847
-</details>
-
-<details>
 <summary><strong>Hypothesis Hunting with Evolving Networks of Autonomous Scientific Agents</strong> - Tennison Liu, Silas Ruhrberg Estévez, David L. Bentley, Mihaela van der Schaar - [[pdf]](https://arxiv.org/pdf/2510.08619)</summary>
 
 **Abstract:** Large-scale scientific datasets -- spanning health biobanks, cell atlases, Earth reanalyses, and more -- create opportunities for exploratory discovery unconstrained by specific research questions. We term this process hypothesis hunting: the cumulative search for insight through sustained exploration across vast and complex hypothesis spaces. To support it, we introduce AScience, a framework modeling discovery as the interaction of agents, networks, and evaluation norms, and implement it as ASCollab, a distributed system of LLM-based research agents with heterogeneous behaviors. These agents self-organize into evolving networks, continually producing and peer-reviewing findings under shared standards of evaluation. Experiments show that such social dynamics enable the accumulation of expert-rated results along the diversity-quality-novelty frontier, including rediscoveries of established biomarkers, extensions of known pathways, and proposals of new therapeutic targets. While wet-lab validation remains indispensable, our experiments on cancer cohorts demonstrate that socially structured, agentic networks can sustain exploratory hypothesis hunting at scale.
 
 **arXiv ID:** 2510.08619
+</details>
+
+<details>
+<summary><strong>What Is Your Agent's GPA? A Framework for Evaluating Agent Goal-Plan-Action Alignment</strong> - Allison Sihan Jia, Daniel Huang, Nikhil Vytla, Nirvika Choudhury, John C Mitchell, Anupam Datta - [[pdf]](https://arxiv.org/pdf/2510.08847)</summary>
+
+**Abstract:** We introduce the Agent GPA (Goal-Plan-Action) framework: an evaluation paradigm based on an agent's operational loop of setting goals, devising plans, and executing actions. The framework includes five evaluation metrics: Goal Fulfillment, Logical Consistency, Execution Efficiency, Plan Quality, and Plan Adherence. Logical Consistency checks that an agent's actions are consistent with its prior actions. Execution Efficiency checks whether the agent executes in the most efficient way to achieve its goal. Plan Quality checks whether an agent's plans are aligned with its goals; Plan Adherence checks if an agent's actions are aligned with its plan; and Goal Fulfillment checks that agent's final outcomes match the stated goals. Our experimental results on two benchmark datasets - the public TRAIL/GAIA dataset and an internal dataset for a production-grade data agent - show that this framework (a) provides a systematic way to cover a broad range of agent failures, including all agent errors on the TRAIL/GAIA benchmark dataset; (b) supports LLM-judges that exhibit strong agreement with human annotation, covering 80% to over 95% errors; and (c) localizes errors with 86% agreement to enable targeted improvement of agent performance.
+
+**arXiv ID:** 2510.08847
 </details>
 
 <details>
@@ -538,19 +538,19 @@
 </details>
 
 <details>
-<summary><strong>Detecting Data Contamination from Reinforcement Learning Post-training for Large Language Models</strong> - Yongding Tao, Tian Wang, Yihong Dong, Huanyu Liu, Kechi Zhang, Xiaolong Hu, Ge Li - [[pdf]](https://arxiv.org/pdf/2510.09259)</summary>
-
-**Abstract:** Data contamination poses a significant threat to the reliable evaluation of Large Language Models (LLMs). This issue arises when benchmark samples may inadvertently appear in training sets, compromising the validity of reported performance. While detection methods have been developed for the pre-training and Supervised Fine-Tuning stages, a critical research gap exists for the increasingly significant phase of Reinforcement Learning (RL) post-training. As RL post-training becomes pivotal for advancing LLM reasoning, the absence of specialized contamination detection methods in this paradigm presents a critical vulnerability. To address this, we conduct the first systematic study of data detection within RL post-training scenario and propose Self-Critique. Our method is motivated by a key observation: after RL phase, the output entropy distribution of LLMs tends to collapse into highly specific and sparse modes. Self-Critique probes for the underlying policy collapse, i.e., the model's convergence to a narrow reasoning path, which causes this entropy reduction. To facilitate this research, we also introduce RL-MIA, a benchmark constructed to simulate this specific contamination scenario. Extensive experiments show that Self-Critique significantly outperforms baseline methods across multiple models and contamination tasks, achieving an AUC improvement of up to 30%. Whereas existing methods are close to a random guess for RL-phase contamination, our method makes detection possible.
-
-**arXiv ID:** 2510.09259
-</details>
-
-<details>
 <summary><strong>Obstacle Avoidance using Dynamic Movement Primitives and Reinforcement Learning</strong> - Dominik Urbaniak, Alejandro Agostini, Pol Ramon, Jan Rosell, Raúl Suárez, Michael Suppa - [[pdf]](https://arxiv.org/pdf/2510.09254)</summary>
 
 **Abstract:** Learning-based motion planning can quickly generate near-optimal trajectories. However, it often requires either large training datasets or costly collection of human demonstrations. This work proposes an alternative approach that quickly generates smooth, near-optimal collision-free 3D Cartesian trajectories from a single artificial demonstration. The demonstration is encoded as a Dynamic Movement Primitive (DMP) and iteratively reshaped using policy-based reinforcement learning to create a diverse trajectory dataset for varying obstacle configurations. This dataset is used to train a neural network that takes as inputs the task parameters describing the obstacle dimensions and location, derived automatically from a point cloud, and outputs the DMP parameters that generate the trajectory. The approach is validated in simulation and real-robot experiments, outperforming a RRT-Connect baseline in terms of computation and execution time, as well as trajectory length, while supporting multi-modal trajectory generation for different obstacle geometries and end-effector dimensions. Videos and the implementation code are available at this https URL.
 
 **arXiv ID:** 2510.09254
+</details>
+
+<details>
+<summary><strong>Detecting Data Contamination from Reinforcement Learning Post-training for Large Language Models</strong> - Yongding Tao, Tian Wang, Yihong Dong, Huanyu Liu, Kechi Zhang, Xiaolong Hu, Ge Li - [[pdf]](https://arxiv.org/pdf/2510.09259)</summary>
+
+**Abstract:** Data contamination poses a significant threat to the reliable evaluation of Large Language Models (LLMs). This issue arises when benchmark samples may inadvertently appear in training sets, compromising the validity of reported performance. While detection methods have been developed for the pre-training and Supervised Fine-Tuning stages, a critical research gap exists for the increasingly significant phase of Reinforcement Learning (RL) post-training. As RL post-training becomes pivotal for advancing LLM reasoning, the absence of specialized contamination detection methods in this paradigm presents a critical vulnerability. To address this, we conduct the first systematic study of data detection within RL post-training scenario and propose Self-Critique. Our method is motivated by a key observation: after RL phase, the output entropy distribution of LLMs tends to collapse into highly specific and sparse modes. Self-Critique probes for the underlying policy collapse, i.e., the model's convergence to a narrow reasoning path, which causes this entropy reduction. To facilitate this research, we also introduce RL-MIA, a benchmark constructed to simulate this specific contamination scenario. Extensive experiments show that Self-Critique significantly outperforms baseline methods across multiple models and contamination tasks, achieving an AUC improvement of up to 30%. Whereas existing methods are close to a random guess for RL-phase contamination, our method makes detection possible.
+
+**arXiv ID:** 2510.09259
 </details>
 
 <details>
