@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-15 02:04:11
+**Last Updated:** 2025-10-15 02:43:31
 
 **Total Papers:** 75
 
@@ -322,19 +322,19 @@ Transductive learning suggests that, counter to Shannon's theory, a key role of 
 </details>
 
 <details>
-<summary><strong>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</strong> - Yurun Chen, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang - [[pdf]](https://arxiv.org/pdf/2510.00507)</summary>
-
-**Abstract:** As multimodal LLM-driven agents continue to advance in autonomy and generalization, evaluation based on static datasets can no longer adequately assess their true capabilities in dynamic environments and diverse tasks. Existing LLM-based synthetic data methods are largely designed for LLM training and evaluation, and thus cannot be directly applied to agent tasks that require tool use and interactive capabilities. While recent studies have explored automatic agent task generation with LLMs, most efforts remain limited to text or image analysis, without systematically modeling multi-step interactions in web environments. To address these challenges, we propose Graph2Eval, a knowledge graph-based framework that automatically generates both multimodal document comprehension tasks and web interaction tasks, enabling comprehensive evaluation of agents' reasoning, collaboration, and interactive capabilities. In our approach, knowledge graphs constructed from multi-source external data serve as the task space, where we translate semantic relations into structured multimodal tasks using subgraph sampling, task templates, and meta-paths. A multi-stage filtering pipeline based on node reachability, LLM scoring, and similarity analysis is applied to guarantee the quality and executability of the generated tasks. Furthermore, Graph2Eval supports end-to-end evaluation of multiple agent types (Single-Agent, Multi-Agent, Web Agent) and measures reasoning, collaboration, and interaction capabilities. We instantiate the framework with Graph2Eval-Bench, a curated dataset of 1,319 tasks spanning document comprehension and web interaction scenarios. Experiments show that Graph2Eval efficiently generates tasks that differentiate agent and model performance, revealing gaps in reasoning, collaboration, and web interaction across different settings and offering a new perspective for agent evaluation.
-
-**arXiv ID:** 2510.00507
-</details>
-
-<details>
 <summary><strong>Heterogeneous RBCs via deep multi-agent reinforcement learning</strong> - Federico Gabriele, Aldo Glielmo, Marco Taboga - [[pdf]](https://arxiv.org/pdf/2510.12272)</summary>
 
 **Abstract:** Current macroeconomic models with agent heterogeneity can be broadly divided into two main groups. Heterogeneous-agent general equilibrium (GE) models, such as those based on Heterogeneous Agents New Keynesian (HANK) or Krusell-Smith (KS) approaches, rely on GE and 'rational expectations', somewhat unrealistic assumptions that make the models very computationally cumbersome, which in turn limits the amount of heterogeneity that can be modelled. In contrast, agent-based models (ABMs) can flexibly encompass a large number of arbitrarily heterogeneous agents, but typically require the specification of explicit behavioural rules, which can lead to a lengthy trial-and-error model-development process. To address these limitations, we introduce MARL-BC, a framework that integrates deep multi-agent reinforcement learning (MARL) with Real Business Cycle (RBC) models. We demonstrate that MARL-BC can: (1) recover textbook RBC results when using a single agent; (2) recover the results of the mean-field KS model using a large number of identical agents; and (3) effectively simulate rich heterogeneity among agents, a hard task for traditional GE approaches. Our framework can be thought of as an ABM if used with a variety of heterogeneous interacting agents, and can reproduce GE results in limit cases. As such, it is a step towards a synthesis of these often opposed modelling paradigms.
 
 **arXiv ID:** 2510.12272
+</details>
+
+<details>
+<summary><strong>Graph2Eval: Automatic Multimodal Task Generation for Agents via Knowledge Graphs</strong> - Yurun Chen, Xavier Hu, Yuhan Liu, Ziqi Wang, Zeyi Liao, Lin Chen, Feng Wei, Yuxi Qian, Bo Zheng, Keting Yin, Shengyu Zhang - [[pdf]](https://arxiv.org/pdf/2510.00507)</summary>
+
+**Abstract:** As multimodal LLM-driven agents continue to advance in autonomy and generalization, evaluation based on static datasets can no longer adequately assess their true capabilities in dynamic environments and diverse tasks. Existing LLM-based synthetic data methods are largely designed for LLM training and evaluation, and thus cannot be directly applied to agent tasks that require tool use and interactive capabilities. While recent studies have explored automatic agent task generation with LLMs, most efforts remain limited to text or image analysis, without systematically modeling multi-step interactions in web environments. To address these challenges, we propose Graph2Eval, a knowledge graph-based framework that automatically generates both multimodal document comprehension tasks and web interaction tasks, enabling comprehensive evaluation of agents' reasoning, collaboration, and interactive capabilities. In our approach, knowledge graphs constructed from multi-source external data serve as the task space, where we translate semantic relations into structured multimodal tasks using subgraph sampling, task templates, and meta-paths. A multi-stage filtering pipeline based on node reachability, LLM scoring, and similarity analysis is applied to guarantee the quality and executability of the generated tasks. Furthermore, Graph2Eval supports end-to-end evaluation of multiple agent types (Single-Agent, Multi-Agent, Web Agent) and measures reasoning, collaboration, and interaction capabilities. We instantiate the framework with Graph2Eval-Bench, a curated dataset of 1,319 tasks spanning document comprehension and web interaction scenarios. Experiments show that Graph2Eval efficiently generates tasks that differentiate agent and model performance, revealing gaps in reasoning, collaboration, and web interaction across different settings and offering a new perspective for agent evaluation.
+
+**arXiv ID:** 2510.00507
 </details>
 
 <details>
