@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-16 02:02:49
+**Last Updated:** 2025-10-16 02:41:22
 
 **Total Papers:** 67
 
@@ -208,19 +208,19 @@
 </details>
 
 <details>
-<summary><strong>Reinforcing Competitive Multi-Agents for Playing 'So Long Sucker'</strong> - Medant Sharan, Chandranath Adak - [[pdf]](https://arxiv.org/pdf/2411.11057)</summary>
-
-**Abstract:** This paper investigates the strategy game So Long Sucker (SLS) as a novel benchmark for multi-agent reinforcement learning (MARL). Unlike traditional board or video game testbeds, SLS is distinguished by its coalition formation, strategic deception, and dynamic elimination rules, making it a uniquely challenging environment for autonomous agents. We introduce the first publicly available computational framework for SLS, complete with a graphical user interface and benchmarking support for reinforcement learning algorithms. Using classical deep reinforcement learning methods (e.g., DQN, DDQN, and Dueling DQN), we train self-playing agents to learn the rules and basic strategies of SLS. Experimental results demonstrate that, although these agents achieve roughly half of the maximum attainable reward and consistently outperform random baselines, they require long training horizons (~2000 games) and still commit occasional illegal moves, highlighting both the promise and limitations of classical reinforcement learning. Our findings establish SLS as a negotiation-aware benchmark for MARL, opening avenues for future research that integrates game-theoretic reasoning, coalition-aware strategies, and advanced reinforcement learning architectures to better capture the social and adversarial dynamics of complex multi-agent games.
-
-**arXiv ID:** 2411.11057
-</details>
-
-<details>
 <summary><strong>Improving Planning with Large Language Models: A Modular Agentic Architecture</strong> - Taylor Webb, Shanka Subhra Mondal, Ida Momennejad - [[pdf]](https://arxiv.org/pdf/2310.00194)</summary>
 
 **Abstract:** Large language models (LLMs) demonstrate impressive performance on a wide variety of tasks, but they often struggle with tasks that require multi-step reasoning or goal-directed planning. Both cognitive neuroscience and reinforcement learning (RL) have proposed a number of interacting functional components that together implement search and evaluation in multi-step decision making. These components include conflict monitoring, state prediction, state evaluation, task decomposition, and orchestration. To improve planning with LLMs, we propose an agentic architecture, the Modular Agentic Planner (MAP), in which planning is accomplished via the recurrent interaction of the specialized modules mentioned above, each implemented using an LLM. MAP improves planning through the interaction of specialized modules that break down a larger problem into multiple brief automated calls to the LLM. We evaluate MAP on three challenging planning tasks -- graph traversal, Tower of Hanoi, and the PlanBench benchmark -- as well as an NLP task requiring multi-step reasoning (strategyQA). We find that MAP yields significant improvements over both standard LLM methods (zero-shot prompting, in-context learning) and competitive baselines (chain-of-thought, multi-agent debate, and tree-of-thought), can be effectively combined with smaller and more cost-efficient LLMs (Llama3-70B), and displays superior transfer across tasks. These results suggest the benefit of a modular and multi-agent approach to planning with LLMs.
 
 **arXiv ID:** 2310.00194
+</details>
+
+<details>
+<summary><strong>Reinforcing Competitive Multi-Agents for Playing 'So Long Sucker'</strong> - Medant Sharan, Chandranath Adak - [[pdf]](https://arxiv.org/pdf/2411.11057)</summary>
+
+**Abstract:** This paper investigates the strategy game So Long Sucker (SLS) as a novel benchmark for multi-agent reinforcement learning (MARL). Unlike traditional board or video game testbeds, SLS is distinguished by its coalition formation, strategic deception, and dynamic elimination rules, making it a uniquely challenging environment for autonomous agents. We introduce the first publicly available computational framework for SLS, complete with a graphical user interface and benchmarking support for reinforcement learning algorithms. Using classical deep reinforcement learning methods (e.g., DQN, DDQN, and Dueling DQN), we train self-playing agents to learn the rules and basic strategies of SLS. Experimental results demonstrate that, although these agents achieve roughly half of the maximum attainable reward and consistently outperform random baselines, they require long training horizons (~2000 games) and still commit occasional illegal moves, highlighting both the promise and limitations of classical reinforcement learning. Our findings establish SLS as a negotiation-aware benchmark for MARL, opening avenues for future research that integrates game-theoretic reasoning, coalition-aware strategies, and advanced reinforcement learning architectures to better capture the social and adversarial dynamics of complex multi-agent games.
+
+**arXiv ID:** 2411.11057
 </details>
 
 <details>
@@ -508,19 +508,19 @@ This discovery has profound implications for the future of our cities. We demons
 </details>
 
 <details>
-<summary><strong>Pruning Cannot Hurt Robustness: Certified Trade-offs in Reinforcement Learning</strong> - James Pedley, Benjamin Etheridge, Stephen J. Roberts, Francesco Quinzan - [[pdf]](https://arxiv.org/pdf/2510.12939)</summary>
-
-**Abstract:** Reinforcement learning (RL) policies deployed in real-world environments must remain reliable under adversarial perturbations. At the same time, modern deep RL agents are heavily over-parameterized, raising costs and fragility concerns. While pruning has been shown to improve robustness in supervised learning, its role in adversarial RL remains poorly understood. We develop the first theoretical framework for certified robustness under pruning in state-adversarial Markov decision processes (SA-MDPs). For Gaussian and categorical policies with Lipschitz networks, we prove that element-wise pruning can only tighten certified robustness bounds; pruning never makes the policy less robust. Building on this, we derive a novel three-term regret decomposition that disentangles clean-task performance, pruning-induced performance loss, and robustness gains, exposing a fundamental performance--robustness frontier. Empirically, we evaluate magnitude and micro-pruning schedules on continuous-control benchmarks with strong policy-aware adversaries. Across tasks, pruning consistently uncovers reproducible ``sweet spots'' at moderate sparsity levels, where robustness improves substantially without harming - and sometimes even enhancing - clean performance. These results position pruning not merely as a compression tool but as a structural intervention for robust RL.
-
-**arXiv ID:** 2510.12939
-</details>
-
-<details>
 <summary><strong>CE-GPPO: Coordinating Entropy via Gradient-Preserving Clipping Policy Optimization in Reinforcement Learning</strong> - Zhenpeng Su, Leiyu Pan, Minxuan Lv, Yuntao Li, Wenping Hu, Fuzheng Zhang, Kun Gai, Guorui Zhou - [[pdf]](https://arxiv.org/pdf/2509.20712)</summary>
 
 **Abstract:** Reinforcement learning (RL) has become a powerful paradigm for optimizing large language models (LLMs) to handle complex reasoning tasks. A core challenge in this process lies in managing policy entropy, which reflects the balance between exploration and exploitation during training. Existing methods, such as proximal policy optimization (PPO) and its variants, discard valuable gradient signals from low-probability tokens due to the clipping mechanism. We systematically analyze the entropy dynamics and reveal that these clipped tokens play a critical yet overlooked role in regulating entropy evolution. We propose \textbf{C}oordinating \textbf{E}ntropy via \textbf{G}radient-\textbf{P}reserving \textbf{P}olicy \textbf{O}ptimization (CE-GPPO), a novel algorithm that reintroduces gradients from clipped tokens in native PPO in a gentle and bounded manner. By controlling the magnitude of gradients from tokens outside the clipping interval, CE-GPPO is able to achieve an exploration-exploitation trade-off. We provide theoretical justification and empirical evidence showing that CE-GPPO effectively mitigates entropy instability. Extensive experiments on mathematical reasoning benchmarks show that CE-GPPO consistently outperforms strong baselines across different model scales.
 
 **arXiv ID:** 2509.20712
+</details>
+
+<details>
+<summary><strong>Pruning Cannot Hurt Robustness: Certified Trade-offs in Reinforcement Learning</strong> - James Pedley, Benjamin Etheridge, Stephen J. Roberts, Francesco Quinzan - [[pdf]](https://arxiv.org/pdf/2510.12939)</summary>
+
+**Abstract:** Reinforcement learning (RL) policies deployed in real-world environments must remain reliable under adversarial perturbations. At the same time, modern deep RL agents are heavily over-parameterized, raising costs and fragility concerns. While pruning has been shown to improve robustness in supervised learning, its role in adversarial RL remains poorly understood. We develop the first theoretical framework for certified robustness under pruning in state-adversarial Markov decision processes (SA-MDPs). For Gaussian and categorical policies with Lipschitz networks, we prove that element-wise pruning can only tighten certified robustness bounds; pruning never makes the policy less robust. Building on this, we derive a novel three-term regret decomposition that disentangles clean-task performance, pruning-induced performance loss, and robustness gains, exposing a fundamental performance--robustness frontier. Empirically, we evaluate magnitude and micro-pruning schedules on continuous-control benchmarks with strong policy-aware adversaries. Across tasks, pruning consistently uncovers reproducible ``sweet spots'' at moderate sparsity levels, where robustness improves substantially without harming - and sometimes even enhancing - clean performance. These results position pruning not merely as a compression tool but as a structural intervention for robust RL.
+
+**arXiv ID:** 2510.12939
 </details>
 
 <details>
