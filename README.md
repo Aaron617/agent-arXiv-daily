@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-27 02:20:32
+**Last Updated:** 2025-10-27 02:56:14
 
 **Total Papers:** 75
 
@@ -515,19 +515,19 @@ We introduce a generic algorithmic framework that removes this reliance on close
 </details>
 
 <details>
-<summary><strong>Mind the GAP! The Challenges of Scale in Pixel-based Deep Reinforcement Learning</strong> - Ghada Sokar, Pablo Samuel Castro - [[pdf]](https://arxiv.org/pdf/2505.17749)</summary>
-
-**Abstract:** Scaling deep reinforcement learning in pixel-based environments presents a significant challenge, often resulting in diminished performance. While recent works have proposed algorithmic and architectural approaches to address this, the underlying cause of the performance drop remains unclear. In this paper, we identify the connection between the output of the encoder (a stack of convolutional layers) and the ensuing dense layers as the main underlying factor limiting scaling capabilities; we denote this connection as the bottleneck, and we demonstrate that previous approaches implicitly target this bottleneck. As a result of our analyses, we present global average pooling as a simple yet effective way of targeting the bottleneck, thereby avoiding the complexity of earlier approaches.
-
-**arXiv ID:** 2505.17749
-</details>
-
-<details>
 <summary><strong>T1: A Tool-Oriented Conversational Dataset for Multi-Turn Agentic Planning</strong> - Amartya Chakraborty, Paresh Dashore, Nadia Bathaee, Anmol Jain, Anirban Das, Shi-Xiong Zhang, Sambit Sahu, Milind Naphade, Genta Indra Winata - [[pdf]](https://arxiv.org/pdf/2505.16986)</summary>
 
 **Abstract:** Large Language Models (LLMs) have demonstrated impressive capabilities as intelligent agents capable of solving complex problems. However, effective planning in scenarios involving dependencies between API or tool calls-particularly in multi-turn conversations-remains a significant challenge. To address this, we introduce T1, a tool-augmented, multi-domain, multi-turn conversational dataset specifically designed to capture and manage inter-tool dependencies across diverse domains. T1 enables rigorous evaluation of agents' ability to coordinate tool use across nine distinct domains (4 single domain and 5 multi-domain) with the help of an integrated caching mechanism for both short- and long-term memory, while supporting dynamic replanning-such as deciding whether to recompute or reuse cached results. Beyond facilitating research on tool use and planning, T1 also serves as a benchmark for evaluating the performance of open-weight and proprietary large language models. We present results powered by T1-Agent, highlighting their ability to plan and reason in complex, tool-dependent scenarios.
 
 **arXiv ID:** 2505.16986
+</details>
+
+<details>
+<summary><strong>Mind the GAP! The Challenges of Scale in Pixel-based Deep Reinforcement Learning</strong> - Ghada Sokar, Pablo Samuel Castro - [[pdf]](https://arxiv.org/pdf/2505.17749)</summary>
+
+**Abstract:** Scaling deep reinforcement learning in pixel-based environments presents a significant challenge, often resulting in diminished performance. While recent works have proposed algorithmic and architectural approaches to address this, the underlying cause of the performance drop remains unclear. In this paper, we identify the connection between the output of the encoder (a stack of convolutional layers) and the ensuing dense layers as the main underlying factor limiting scaling capabilities; we denote this connection as the bottleneck, and we demonstrate that previous approaches implicitly target this bottleneck. As a result of our analyses, we present global average pooling as a simple yet effective way of targeting the bottleneck, thereby avoiding the complexity of earlier approaches.
+
+**arXiv ID:** 2505.17749
 </details>
 
 <details>
@@ -619,19 +619,19 @@ We introduce a generic algorithmic framework that removes this reliance on close
 </details>
 
 <details>
-<summary><strong>Prior-Guided Diffusion Planning for Offline Reinforcement Learning</strong> - Donghyeon Ki, JunHyeok Oh, Seong-Woong Shim, Byung-Jun Lee - [[pdf]](https://arxiv.org/pdf/2505.10881)</summary>
-
-**Abstract:** Diffusion models have recently gained prominence in offline reinforcement learning due to their ability to effectively learn high-performing, generalizable policies from static datasets. Diffusion-based planners facilitate long-horizon decision-making by generating high-quality trajectories through iterative denoising, guided by return-maximizing objectives. However, existing guided sampling strategies such as Classifier Guidance, Classifier-Free Guidance, and Monte Carlo Sample Selection either produce suboptimal multi-modal actions, struggle with distributional drift, or incur prohibitive inference-time costs. To address these challenges, we propose Prior Guidance (PG), a novel guided sampling framework that replaces the standard Gaussian prior of a behavior-cloned diffusion model with a learnable distribution, optimized via a behavior-regularized objective. PG directly generates high-value trajectories without costly reward optimization of the diffusion model itself, and eliminates the need to sample multiple candidates at inference for sample selection. We present an efficient training strategy that applies behavior regularization in latent space, and empirically demonstrate that PG outperforms state-of-the-art diffusion policies and planners across diverse long-horizon offline RL this http URL code is available at this https URL.
-
-**arXiv ID:** 2505.10881
-</details>
-
-<details>
 <summary><strong>Spatial-Aware Decision-Making with Ring Attractors in Reinforcement Learning Systems</strong> - Marcos Negre Saura, Richard Allmendinger, Wei Pan, Theodore Papamarkou - [[pdf]](https://arxiv.org/pdf/2410.03119)</summary>
 
 **Abstract:** Ring attractors, mathematical models inspired by neural circuit dynamics, provide a biologically plausible mechanism to improve learning speed and accuracy in Reinforcement Learning (RL). Serving as specialized brain-inspired structures that encode spatial information and uncertainty, ring attractors explicitly encode the action space, facilitate the organization of neural activity, and enable the distribution of spatial representations across the neural network in the context of Deep Reinforcement Learning (DRL). These structures also provide temporal filtering that stabilizes action selection during exploration, for example, by preserving the continuity between rotation angles in robotic control or adjacency between tactical moves in game-like environments. The application of ring attractors in the action selection process involves mapping actions to specific locations on the ring and decoding the selected action based on neural activity. We investigate the application of ring attractors by both building an exogenous model and integrating them as part of DRL agents. Our approach significantly improves state-of-the-art performance on the Atari 100k benchmark, achieving a 53% increase in performance over selected baselines.
 
 **arXiv ID:** 2410.03119
+</details>
+
+<details>
+<summary><strong>Prior-Guided Diffusion Planning for Offline Reinforcement Learning</strong> - Donghyeon Ki, JunHyeok Oh, Seong-Woong Shim, Byung-Jun Lee - [[pdf]](https://arxiv.org/pdf/2505.10881)</summary>
+
+**Abstract:** Diffusion models have recently gained prominence in offline reinforcement learning due to their ability to effectively learn high-performing, generalizable policies from static datasets. Diffusion-based planners facilitate long-horizon decision-making by generating high-quality trajectories through iterative denoising, guided by return-maximizing objectives. However, existing guided sampling strategies such as Classifier Guidance, Classifier-Free Guidance, and Monte Carlo Sample Selection either produce suboptimal multi-modal actions, struggle with distributional drift, or incur prohibitive inference-time costs. To address these challenges, we propose Prior Guidance (PG), a novel guided sampling framework that replaces the standard Gaussian prior of a behavior-cloned diffusion model with a learnable distribution, optimized via a behavior-regularized objective. PG directly generates high-value trajectories without costly reward optimization of the diffusion model itself, and eliminates the need to sample multiple candidates at inference for sample selection. We present an efficient training strategy that applies behavior regularization in latent space, and empirically demonstrate that PG outperforms state-of-the-art diffusion policies and planners across diverse long-horizon offline RL this http URL code is available at this https URL.
+
+**arXiv ID:** 2505.10881
 </details>
 
 <details>
