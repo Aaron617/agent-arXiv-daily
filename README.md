@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-30 02:10:33
+**Last Updated:** 2025-10-30 02:48:56
 
-**Total Papers:** 71
+**Total Papers:** 68
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Agent Applications (7 papers)</h2></summary>
+<summary><h2>Agent Applications (6 papers)</h2></summary>
 
 <details>
 <summary><strong>GAP: Graph-Based Agent Planning with Parallel Tool Use and Reinforcement Learning</strong> - Jiaqi Wu, Qinlao Zhao, Zefeng Chen, Kai Qin, Yifei Zhao, Xueqian Wang, Yuhang Yao - [[pdf]](https://arxiv.org/pdf/2510.25320)</summary>
@@ -47,14 +47,6 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 **Abstract:** Assessing scenario coverage is crucial for evaluating the robustness of autonomous agents, yet existing methods rely on expensive human annotations or computationally intensive Large Vision-Language Models (LVLMs). These approaches are impractical for large-scale deployment due to cost and efficiency constraints. To address these shortcomings, we propose SCOUT (Scenario Coverage Oversight and Understanding Tool), a lightweight surrogate model designed to predict scenario coverage labels directly from an agent's latent sensor representations. SCOUT is trained through a distillation process, learning to approximate LVLM-generated coverage labels while eliminating the need for continuous LVLM inference or human annotation. By leveraging precomputed perception features, SCOUT avoids redundant computations and enables fast, scalable scenario coverage estimation. We evaluate our method across a large dataset of real-life autonomous navigation scenarios, demonstrating that it maintains high accuracy while significantly reducing computational cost. Our results show that SCOUT provides an effective and practical alternative for large-scale coverage analysis. While its performance depends on the quality of LVLM-generated training labels, SCOUT represents a major step toward efficient scenario coverage oversight in autonomous systems.
 
 **arXiv ID:** 2510.24949
-</details>
-
-<details>
-<summary><strong>RobEthiChor: Automated Context-aware Ethics-based Negotiation for Autonomous Robots</strong> - Mashal Afzal Memon, Gianluca Filippone, Gian Luca Scoccia, Marco Autili, Paola Inverardi - [[pdf]](https://arxiv.org/pdf/2507.22664)</summary>
-
-**Abstract:** The presence of autonomous systems is growing at a fast pace and it is impacting many aspects of our lives. Designed to learn and act independently, these systems operate and perform decision-making without human intervention. However, they lack the ability to incorporate users' ethical preferences, which are unique for each individual in society and are required to personalize the decision-making processes. This reduces user trust and prevents autonomous systems from behaving according to the moral beliefs of their end-users. When multiple systems interact with differing ethical preferences, they must negotiate to reach an agreement that satisfies the ethical beliefs of all the parties involved and adjust their behavior consequently. To address this challenge, this paper proposes RobEthiChor, an approach that enables autonomous systems to incorporate user ethical preferences and contextual factors into their decision-making through ethics-based negotiation. RobEthiChor features a domain-agnostic reference architecture for designing autonomous systems capable of ethic-based negotiating. The paper also presents RobEthiChor-Ros, an implementation of RobEthiChor within the Robot Operating System (ROS), which can be deployed on robots to provide them with ethics-based negotiation capabilities. To evaluate our approach, we deployed RobEthiChor-Ros on real robots and ran scenarios where a pair of robots negotiate upon resource contention. Experimental results demonstrate the feasibility and effectiveness of the system in realizing ethics-based negotiation. RobEthiChor allowed robots to reach an agreement in more than 73% of the scenarios with an acceptable negotiation time (0.67s on average). Experiments also demonstrate that the negotiation approach implemented in RobEthiChor is scalable.
-
-**arXiv ID:** 2507.22664
 </details>
 
 <details>
@@ -119,14 +111,6 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 </details>
 
 <details>
-<summary><strong>Classification of Driver Behaviour Using External Observation Techniques for Autonomous Vehicles</strong> - Ian Nell, Shane Gilroy - [[pdf]](https://arxiv.org/pdf/2509.09349)</summary>
-
-**Abstract:** Road traffic accidents remain a significant global concern, with human error, particularly distracted and impaired driving, among the leading causes. This study introduces a novel driver behaviour classification system that uses external observation techniques to detect indicators of distraction and impairment. The proposed framework employs advanced computer vision methodologies, including real-time object tracking, lateral displacement analysis, and lane position monitoring. The system identifies unsafe driving behaviours such as excessive lateral movement and erratic trajectory patterns by implementing the YOLO object detection model and custom lane estimation algorithms. Unlike systems reliant on inter-vehicular communication, this vision-based approach enables behavioural analysis of non-connected vehicles. Experimental evaluations on diverse video datasets demonstrate the framework's reliability and adaptability across varying road and environmental conditions.
-
-**arXiv ID:** 2509.09349
-</details>
-
-<details>
 <summary><strong>SeeingEye: Agentic Information Flow Unlocks Multimodal Reasoning In Text-only LLMs</strong> - Weijia Zhang, Zijia Liu, Haoru Li, Haoqi Chen, Jiaxuan You - [[pdf]](https://arxiv.org/pdf/2510.25092)</summary>
 
 **Abstract:** Recent advances in text-only large language models (LLMs), such as DeepSeek-R1, demonstrate remarkable reasoning ability. However, these models remain fragile or entirely incapable when extended to multi-modal tasks. Existing approaches largely rely on single-form captions, which lack diversity and often fail to adapt across different types of Visual Question Answering (VQA) benchmarks. As a result, they provide no principled or efficient channel for transmitting fine-grained visual information. We introduce Seeing Eye, a modular framework that unlocks multimodal reasoning in text-only LLMs through an agent-based small VLM translator. This translator acts as a perception agent: it can invoke specialized tools (e.g., OCR and crop) and iteratively distill multimodal inputs into structured intermediate representations (SIRs) tailored to the question. These SIRs are then passed to the text-only LLM, which serves as a reasoning agent. Crucially, the translator and reasoner engage in multi-round feedback and interaction, enabling the extraction of targeted visual details and yielding more confident answers. Experiments on knowledge-intensive VQA benchmarks, including MMMU and MIA-Bench, demonstrate that Seeing Eye not only reduces inference cost but also surpasses much larger end-to-end VLMs. For example, an instantiation combining a 3B-parameter vision translator with an 8B-parameter language reasoner outperforms a monolithic 32B VLM on challenging knowledge-based questions. Our results highlight that decoupling perception from reasoning via agent information flow offers a scalable and plug-and-play pathway to multimodal reasoning, allowing strong text-only LLMs to fully leverage their reasoning capabilities. Code is available at: this https URL
@@ -156,6 +140,14 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 **Abstract:** Computer use agents are LLM-based agents that can directly interact with a graphical user interface, by processing screenshots or accessibility trees. While these systems are gaining popularity, their safety has been largely overlooked, despite the fact that evaluating and understanding their potential for harmful behavior is essential for widespread adoption. To address this gap, we introduce OS-Harm, a new benchmark for measuring safety of computer use agents. OS-Harm is built on top of the OSWorld environment and aims to test models across three categories of harm: deliberate user misuse, prompt injection attacks, and model misbehavior. To cover these cases, we create 150 tasks that span several types of safety violations (harassment, copyright infringement, disinformation, data exfiltration, etc.) and require the agent to interact with a variety of OS applications (email client, code editor, browser, etc.). Moreover, we propose an automated judge to evaluate both accuracy and safety of agents that achieves high agreement with human annotations (0.76 and 0.79 F1 score). We evaluate computer use agents based on a range of frontier models - such as o4-mini, Claude 3.7 Sonnet, Gemini 2.5 Pro - and provide insights into their safety. In particular, all models tend to directly comply with many deliberate misuse queries, are relatively vulnerable to static prompt injections, and occasionally perform unsafe actions. The OS-Harm benchmark is available at this https URL.
 
 **arXiv ID:** 2506.14866
+</details>
+
+<details>
+<summary><strong>Classification of Driver Behaviour Using External Observation Techniques for Autonomous Vehicles</strong> - Ian Nell, Shane Gilroy - [[pdf]](https://arxiv.org/pdf/2509.09349)</summary>
+
+**Abstract:** Road traffic accidents remain a significant global concern, with human error, particularly distracted and impaired driving, among the leading causes. This study introduces a novel driver behaviour classification system that uses external observation techniques to detect indicators of distraction and impairment. The proposed framework employs advanced computer vision methodologies, including real-time object tracking, lateral displacement analysis, and lane position monitoring. The system identifies unsafe driving behaviours such as excessive lateral movement and erratic trajectory patterns by implementing the YOLO object detection model and custom lane estimation algorithms. Unlike systems reliant on inter-vehicular communication, this vision-based approach enables behavioural analysis of non-connected vehicles. Experimental evaluations on diverse video datasets demonstrate the framework's reliability and adaptability across varying road and environmental conditions.
+
+**arXiv ID:** 2509.09349
 </details>
 
 </details>
@@ -198,7 +190,7 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (23 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (22 papers)</h2></summary>
 
 <details>
 <summary><strong>Agentic Moderation: Multi-Agent Design for Safer Vision-Language Models</strong> - Juan Ren, Mark Dras, Usman Naseem - [[pdf]](https://arxiv.org/pdf/2510.25179)</summary>
@@ -273,19 +265,19 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 </details>
 
 <details>
-<summary><strong>HAMLET: Hyperadaptive Agent-based Modeling for Live Embodied Theatrics</strong> - Sizhou Chen, Shufan Jiang, Chi Zhang, Xiao-Lei Zhang, Xuelong Li - [[pdf]](https://arxiv.org/pdf/2507.15518)</summary>
-
-**Abstract:** Creating an immersive and interactive theatrical experience is a long-term goal in the field of interactive narrative. The emergence of large language model (LLM) is providing a new path to achieve this goal. However, existing LLM-based drama generation methods often result in agents that lack initiative and cannot interact with the physical scene. Furthermore, these methods typically require detailed user input to drive the drama. These limitations reduce the interactivity and immersion of online real-time performance. To address the above challenges, we propose HAMLET, a multi-agent framework focused on drama creation and online performance. Given a simple topic, the framework generates a narrative blueprint, guiding the subsequent improvisational performance. During the online performance, each actor is given an autonomous mind. This means that actors can make independent decisions based on their own background, goals, and emotional state. In addition to conversations with other actors, their decisions can also change the state of scene props through actions such as opening a letter or picking up a weapon. The change is then broadcast to other related actors, updating what they know and care about, which in turn influences their next action. To evaluate the quality of drama performance generated by HAMLET, we designed an evaluation method to assess three primary aspects, including character performance, narrative quality, and interaction experience. The experimental evaluation shows that HAMLET can create expressive and coherent theatrical experiences.
-
-**arXiv ID:** 2507.15518
-</details>
-
-<details>
 <summary><strong>Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour</strong> - Bálint Gyevnár, Christopher G. Lucas, Stefano V. Albrecht, Shay B. Cohen - [[pdf]](https://arxiv.org/pdf/2505.17801)</summary>
 
 **Abstract:** Autonomous multi-agent systems (MAS) are useful for automating complex tasks but raise trust concerns due to risks such as miscoordination or goal misalignment. Explainability is vital for users' trust calibration, but explainable MAS face challenges due to complex environments, the human factor, and non-standardised evaluation. Leveraging the counterfactual effect size model and LLMs, we propose Agentic eXplanations via Interrogative Simulation (AXIS). AXIS generates human-centred action explanations for multi-agent policies by having an LLM interrogate an environment simulator using prompts like 'whatif' and 'remove' to observe and synthesise counterfactual information over multiple rounds. We evaluate AXIS on autonomous driving across ten scenarios for five LLMs with a comprehensive methodology combining robustness, subjective preference, correctness, and goal/action prediction with an external LLM as evaluator. Compared to baselines, AXIS improves perceived explanation correctness by at least 7.7% across all models and goal prediction accuracy by 23% for four models, with comparable action prediction accuracy, achieving the highest scores overall. Our code is open-sourced at this https URL.
 
 **arXiv ID:** 2505.17801
+</details>
+
+<details>
+<summary><strong>HAMLET: Hyperadaptive Agent-based Modeling for Live Embodied Theatrics</strong> - Sizhou Chen, Shufan Jiang, Chi Zhang, Xiao-Lei Zhang, Xuelong Li - [[pdf]](https://arxiv.org/pdf/2507.15518)</summary>
+
+**Abstract:** Creating an immersive and interactive theatrical experience is a long-term goal in the field of interactive narrative. The emergence of large language model (LLM) is providing a new path to achieve this goal. However, existing LLM-based drama generation methods often result in agents that lack initiative and cannot interact with the physical scene. Furthermore, these methods typically require detailed user input to drive the drama. These limitations reduce the interactivity and immersion of online real-time performance. To address the above challenges, we propose HAMLET, a multi-agent framework focused on drama creation and online performance. Given a simple topic, the framework generates a narrative blueprint, guiding the subsequent improvisational performance. During the online performance, each actor is given an autonomous mind. This means that actors can make independent decisions based on their own background, goals, and emotional state. In addition to conversations with other actors, their decisions can also change the state of scene props through actions such as opening a letter or picking up a weapon. The change is then broadcast to other related actors, updating what they know and care about, which in turn influences their next action. To evaluate the quality of drama performance generated by HAMLET, we designed an evaluation method to assess three primary aspects, including character performance, narrative quality, and interaction experience. The experimental evaluation shows that HAMLET can create expressive and coherent theatrical experiences.
+
+**arXiv ID:** 2507.15518
 </details>
 
 <details>
@@ -318,14 +310,6 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 **Abstract:** Credit assignmen, disentangling each agent's contribution to a shared reward, is a critical challenge in cooperative multi-agent reinforcement learning (MARL). To be effective, credit assignment methods must preserve the environment's optimal policy. Some recent approaches attempt this by enforcing return equivalence, where the sum of distributed rewards must equal the team reward. However, their guarantees are conditional on a learned model's regression accuracy, making them unreliable in practice. We introduce Temporal-Agent Reward Redistribution (TAR$^2$), an approach that decouples credit modeling from this constraint. A neural network learns unnormalized contribution scores, while a separate, deterministic normalization step enforces return equivalence by construction. We demonstrate that this method is equivalent to a valid Potential-Based Reward Shaping (PBRS), which guarantees the optimal policy is preserved regardless of model accuracy. Empirically, on challenging SMACLite and Google Research Football (GRF) benchmarks, TAR$^2$ accelerates learning and achieves higher final performance than strong baselines. These results establish our method as an effective solution for the agent-temporal credit assignment problem.
 
 **arXiv ID:** 2502.04864
-</details>
-
-<details>
-<summary><strong>Intelligent Design 4.0: Paradigm Evolution Toward the Agentic AI Era</strong> - Shuo Jiang, Min Xie, Frank Youhua Chen, Jian Ma, Jianxi Luo - [[pdf]](https://arxiv.org/pdf/2506.09755)</summary>
-
-**Abstract:** Research and practice in Intelligent Design (ID) have significantly enhanced engineering innovation, efficiency, quality, and productivity over recent decades, fundamentally reshaping how engineering designers think, behave, and interact with design processes. The recent emergence of Foundation Models (FMs), particularly Large Language Models (LLMs), has demonstrated general knowledge-based reasoning capabilities, and open new avenues for further transformation in engineering design. In this context, this paper introduces Intelligent Design 4.0 (ID 4.0) as an emerging paradigm empowered by foundation model-based agentic AI systems. We review the historical evolution of ID across four distinct stages: rule-based expert systems, task-specific machine learning models, large-scale foundation AI models, and the recent emerging paradigm of foundation model-based multi-agent collaboration. We propose an ontological framework for ID 4.0 and discuss its potential to support end-to-end automation of engineering design processes through coordinated, autonomous multi-agent-based systems. Furthermore, we discuss challenges and opportunities of ID 4.0, including perspectives on data foundations, agent collaboration mechanisms, and the formulation of design problems and objectives. In sum, these insights provide a foundation for advancing Intelligent Design toward greater adaptivity, autonomy, and effectiveness in addressing the growing complexity of engineering design.
-
-**arXiv ID:** 2506.09755
 </details>
 
 <details>
@@ -387,7 +371,7 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (4 papers)</h2></summary>
+<summary><h2>Other Agent Research (3 papers)</h2></summary>
 
 <details>
 <summary><strong>Agentic AI: A Comprehensive Survey of Architectures, Applications, and Future Directions</strong> - Mohamad Abou Ali, Fadi Dornaika - [[pdf]](https://arxiv.org/pdf/2510.25445)</summary>
@@ -395,14 +379,6 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 **Abstract:** Agentic AI represents a transformative shift in artificial intelligence, but its rapid advancement has led to a fragmented understanding, often conflating modern neural systems with outdated symbolic models -- a practice known as conceptual retrofitting. This survey cuts through this confusion by introducing a novel dual-paradigm framework that categorizes agentic systems into two distinct lineages: the Symbolic/Classical (relying on algorithmic planning and persistent state) and the Neural/Generative (leveraging stochastic generation and prompt-driven orchestration). Through a systematic PRISMA-based review of 90 studies (2018--2025), we provide a comprehensive analysis structured around this framework across three dimensions: (1) the theoretical foundations and architectural principles defining each paradigm; (2) domain-specific implementations in healthcare, finance, and robotics, demonstrating how application constraints dictate paradigm selection; and (3) paradigm-specific ethical and governance challenges, revealing divergent risks and mitigation strategies. Our analysis reveals that the choice of paradigm is strategic: symbolic systems dominate safety-critical domains (e.g., healthcare), while neural systems prevail in adaptive, data-rich environments (e.g., finance). Furthermore, we identify critical research gaps, including a significant deficit in governance models for symbolic systems and a pressing need for hybrid neuro-symbolic architectures. The findings culminate in a strategic roadmap arguing that the future of Agentic AI lies not in the dominance of one paradigm, but in their intentional integration to create systems that are both adaptable and reliable. This work provides the essential conceptual toolkit to guide future research, development, and policy toward robust and trustworthy hybrid intelligent systems.
 
 **arXiv ID:** 2510.25445
-</details>
-
-<details>
-<summary><strong>Dynamic Risk Assessments for Offensive Cybersecurity Agents</strong> - Boyi Wei, Benedikt Stroebl, Jiacen Xu, Joie Zhang, Zhou Li, Peter Henderson - [[pdf]](https://arxiv.org/pdf/2505.18384)</summary>
-
-**Abstract:** Foundation models are increasingly becoming better autonomous programmers, raising the prospect that they could also automate dangerous offensive cyber-operations. Current frontier model audits probe the cybersecurity risks of such agents, but most fail to account for the degrees of freedom available to adversaries in the real world. In particular, with strong verifiers and financial incentives, agents for offensive cybersecurity are amenable to iterative improvement by would-be adversaries. We argue that assessments should take into account an expanded threat model in the context of cybersecurity, emphasizing the varying degrees of freedom that an adversary may possess in stateful and non-stateful environments within a fixed compute budget. We show that even with a relatively small compute budget (8 H100 GPU Hours in our study), adversaries can improve an agent's cybersecurity capability on InterCode CTF by more than 40\% relative to the baseline -- without any external assistance. These results highlight the need to evaluate agents' cybersecurity risk in a dynamic manner, painting a more representative picture of risk.
-
-**arXiv ID:** 2505.18384
 </details>
 
 <details>
@@ -531,34 +507,6 @@ The system was evaluated on a diverse dataset spanning six hospitals across four
 </details>
 
 <details>
-<summary><strong>Pass@K Policy Optimization: Solving Harder Reinforcement Learning Problems</strong> - Christian Walder, Deep Karkhanis - [[pdf]](https://arxiv.org/pdf/2505.15201)</summary>
-
-**Abstract:** Reinforcement Learning (RL) algorithms sample multiple n>1 solution attempts for each problem and reward them independently. This optimizes for pass@1 performance and prioritizes the strength of isolated samples at the expense of the diversity and collective utility of sets of samples. This under-utilizes the sampling capacity, limiting exploration and eventual improvement on harder examples. As a fix, we propose Pass-at-k Policy Optimization (PKPO), a transformation on the final rewards which leads to direct optimization of pass@k performance, thus optimizing for sets of samples that maximize reward when considered jointly. Our contribution is to derive novel low variance unbiased estimators for pass@k and its gradient, in both the binary and continuous reward settings. We show optimization with our estimators reduces to standard RL with rewards that have been jointly transformed by a stable and efficient transformation function.
-While previous efforts are restricted to k=n, ours is the first to enable robust optimization of pass@k for any arbitrary k <= n. Moreover, instead of trading off pass@1 performance for pass@k gains, our method allows annealing k during training, optimizing both metrics and often achieving strong pass@1 numbers alongside significant pass@k gains.
-We validate our reward transformations on toy experiments, which reveal the variance reducing properties of our formulations. We also include real-world examples using the open-source LLM, GEMMA-2. We find that our transformation effectively optimizes for the target k. Furthermore, higher k values enable solving more and harder problems, while annealing k boosts both the pass@1 and pass@k . Crucially, for challenging task sets where conventional pass@1 optimization stalls, our pass@k approach unblocks learning, likely due to better exploration by prioritizing joint utility over the utility of individual samples.
-
-**arXiv ID:** 2505.15201
-</details>
-
-<details>
-<summary><strong>SATURN: SAT-based Reinforcement Learning to Unleash Language Model Reasoning</strong> - Huanyu Liu, Jia Li, Hao Zhu, Kechi Zhang, Yihong Dong, Ge Li - [[pdf]](https://arxiv.org/pdf/2505.16368)</summary>
-
-**Abstract:** How to design reinforcement learning (RL) tasks that effectively unleash the reasoning capability of large language models (LLMs) remains an open question. Existing RL tasks (e.g., math, programming, and constructing reasoning tasks) suffer from three key limitations: (1) Scalability. They rely heavily on human annotation or expensive LLM synthesis to generate sufficient training data. (2) Verifiability. LLMs' outputs are hard to verify automatically and reliably. (3) Controllable Difficulty. Most tasks lack fine-grained difficulty control, making it hard to train LLMs to develop reasoning ability from easy to hard.
-To address these limitations, we propose Saturn, a SAT-based RL framework that uses Boolean Satisfiability (SAT) problems to train and evaluate LLMs reasoning. Saturn enables scalable task construction, rule-based verification, and precise difficulty control. Saturn designs a curriculum learning pipeline that continuously improves LLMs' reasoning capability by constructing SAT tasks of increasing difficulty and training LLMs from easy to hard. To ensure stable training, we design a principled mechanism to control difficulty transitions.
-We introduce Saturn-2.6k, a dataset of 2,660 SAT problems with varying difficulty. It supports the evaluation of how LLM reasoning changes with problem difficulty. We apply Saturn to DeepSeek-R1-Distill-Qwen and obtain Saturn-1.5B and Saturn-7B. We achieve several notable results: (1) On SAT problems, Saturn-1.5B and Saturn-7B achieve average pass@3 improvements of +14.0 and +28.1, respectively. (2) On math and programming tasks, Saturn-1.5B and Saturn-7B improve average scores by +4.9 and +1.8 on benchmarks (e.g., AIME, LiveCodeBench). (3) Compared to the state-of-the-art (SOTA) approach in constructing RL tasks, Saturn achieves further improvements of +8.8%. We release the source code, data, and models to support future research.
-
-**arXiv ID:** 2505.16368
-</details>
-
-<details>
-<summary><strong>Reinforcement Learning Teachers of Test Time Scaling</strong> - Edoardo Cetin, Tianyu Zhao, Yujin Tang - [[pdf]](https://arxiv.org/pdf/2506.08388)</summary>
-
-**Abstract:** Training reasoning language models (LMs) with reinforcement learning (RL) for one-hot correctness inherently relies on the LM being able to explore and solve its task with some chance at initialization. Furthermore, a key use case of reasoning LMs is to act as teachers for distilling new students and cold-starting future RL iterations rather than being deployed themselves. From these considerations, we introduce a new framework that avoids RL's exploration challenge by training a new class of Reinforcement-Learned Teachers (RLTs) focused on yielding the most effective downstream distillation. RLTs are prompted with both the question and solution to each problem, and tasked to simply "connect-the-dots" with detailed explanations tailored for their students. We train RLTs with dense rewards obtained by feeding each explanation to the student and testing its understanding of the problem's solution. In practice, the raw outputs of a 7B RLT provide higher final performance on competition and graduate-level tasks than existing distillation and cold-starting pipelines that collect and postprocess the reasoning traces of orders of magnitude larger LMs. Furthermore, RLTs maintain their effectiveness when training larger students and when applied zero-shot to out-of-distribution tasks, unlocking new levels of efficiency and re-usability for the RL reasoning framework. Code available at: this https URL
-
-**arXiv ID:** 2506.08388
-</details>
-
-<details>
 <summary><strong>ProMediate: A Socio-cognitive framework for evaluating proactive agents in multi-party negotiation</strong> - Ziyi Liu, Bahar Sarrafzadeh, Pei Zhou, Longqi Yang, Jieyu Zhao, Ashish Sharma - [[pdf]](https://arxiv.org/pdf/2510.25224)</summary>
 
 **Abstract:** While Large Language Models (LLMs) are increasingly used in agentic frameworks to assist individual users, there is a growing need for agents that can proactively manage complex, multi-party collaboration. Systematic evaluation methods for such proactive agents remain scarce, limiting progress in developing AI that can effectively support multiple people together. Negotiation offers a demanding testbed for this challenge, requiring socio-cognitive intelligence to navigate conflicting interests between multiple participants and multiple topics and build consensus. Here, we present ProMediate, the first framework for evaluating proactive AI mediator agents in complex, multi-topic, multi-party negotiations. ProMediate consists of two core components: (i) a simulation testbed based on realistic negotiation cases and theory-driven difficulty levels (ProMediate-Easy, ProMediate-Medium, and ProMediate-Hard), with a plug-and-play proactive AI mediator grounded in socio-cognitive mediation theories, capable of flexibly deciding when and how to intervene; and (ii) a socio-cognitive evaluation framework with a new suite of metrics to measure consensus changes, intervention latency, mediator effectiveness, and intelligence. Together, these components establish a systematic framework for assessing the socio-cognitive intelligence of proactive AI agents in multi-party settings. Our results show that a socially intelligent mediator agent outperforms a generic baseline, via faster, better-targeted interventions. In the ProMediate-Hard setting, our social mediator increases consensus change by 3.6 percentage points compared to the generic baseline (10.65\% vs 7.01\%) while being 77\% faster in response (15.98s vs. 3.71s). In conclusion, ProMediate provides a rigorous, theory-grounded testbed to advance the development of proactive, socially intelligent agents.
@@ -591,11 +539,39 @@ We introduce Saturn-2.6k, a dataset of 2,660 SAT problems with varying difficult
 </details>
 
 <details>
+<summary><strong>Pass@K Policy Optimization: Solving Harder Reinforcement Learning Problems</strong> - Christian Walder, Deep Karkhanis - [[pdf]](https://arxiv.org/pdf/2505.15201)</summary>
+
+**Abstract:** Reinforcement Learning (RL) algorithms sample multiple n>1 solution attempts for each problem and reward them independently. This optimizes for pass@1 performance and prioritizes the strength of isolated samples at the expense of the diversity and collective utility of sets of samples. This under-utilizes the sampling capacity, limiting exploration and eventual improvement on harder examples. As a fix, we propose Pass-at-k Policy Optimization (PKPO), a transformation on the final rewards which leads to direct optimization of pass@k performance, thus optimizing for sets of samples that maximize reward when considered jointly. Our contribution is to derive novel low variance unbiased estimators for pass@k and its gradient, in both the binary and continuous reward settings. We show optimization with our estimators reduces to standard RL with rewards that have been jointly transformed by a stable and efficient transformation function.
+While previous efforts are restricted to k=n, ours is the first to enable robust optimization of pass@k for any arbitrary k <= n. Moreover, instead of trading off pass@1 performance for pass@k gains, our method allows annealing k during training, optimizing both metrics and often achieving strong pass@1 numbers alongside significant pass@k gains.
+We validate our reward transformations on toy experiments, which reveal the variance reducing properties of our formulations. We also include real-world examples using the open-source LLM, GEMMA-2. We find that our transformation effectively optimizes for the target k. Furthermore, higher k values enable solving more and harder problems, while annealing k boosts both the pass@1 and pass@k . Crucially, for challenging task sets where conventional pass@1 optimization stalls, our pass@k approach unblocks learning, likely due to better exploration by prioritizing joint utility over the utility of individual samples.
+
+**arXiv ID:** 2505.15201
+</details>
+
+<details>
 <summary><strong>Enhancing Hierarchical Reinforcement Learning through Change Point Detection in Time Series</strong> - Hemanath Arumugam, Falong Fan, Bo Liu - [[pdf]](https://arxiv.org/pdf/2510.24988)</summary>
 
 **Abstract:** Hierarchical Reinforcement Learning (HRL) enhances the scalability of decision-making in long-horizon tasks by introducing temporal abstraction through options-policies that span multiple timesteps. Despite its theoretical appeal, the practical implementation of HRL suffers from the challenge of autonomously discovering semantically meaningful subgoals and learning optimal option termination boundaries. This paper introduces a novel architecture that integrates a self-supervised, Transformer-based Change Point Detection (CPD) module into the Option-Critic framework, enabling adaptive segmentation of state trajectories and the discovery of options. The CPD module is trained using heuristic pseudo-labels derived from intrinsic signals to infer latent shifts in environment dynamics without external supervision. These inferred change-points are leveraged in three critical ways: (i) to serve as supervisory signals for stabilizing termination function gradients, (ii) to pretrain intra-option policies via segment-wise behavioral cloning, and (iii) to enforce functional specialization through inter-option divergence penalties over CPD-defined state partitions. The overall optimization objective enhances the standard actor-critic loss using structure-aware auxiliary losses. In our framework, option discovery arises naturally as CPD-defined trajectory segments are mapped to distinct intra-option policies, enabling the agent to autonomously partition its behavior into reusable, semantically meaningful skills. Experiments on the Four-Rooms and Pinball tasks demonstrate that CPD-guided agents exhibit accelerated convergence, higher cumulative returns, and significantly improved option specialization. These findings confirm that integrating structural priors via change-point segmentation leads to more interpretable, sample-efficient, and robust hierarchical policies in complex environments.
 
 **arXiv ID:** 2510.24988
+</details>
+
+<details>
+<summary><strong>Reinforcement Learning Teachers of Test Time Scaling</strong> - Edoardo Cetin, Tianyu Zhao, Yujin Tang - [[pdf]](https://arxiv.org/pdf/2506.08388)</summary>
+
+**Abstract:** Training reasoning language models (LMs) with reinforcement learning (RL) for one-hot correctness inherently relies on the LM being able to explore and solve its task with some chance at initialization. Furthermore, a key use case of reasoning LMs is to act as teachers for distilling new students and cold-starting future RL iterations rather than being deployed themselves. From these considerations, we introduce a new framework that avoids RL's exploration challenge by training a new class of Reinforcement-Learned Teachers (RLTs) focused on yielding the most effective downstream distillation. RLTs are prompted with both the question and solution to each problem, and tasked to simply "connect-the-dots" with detailed explanations tailored for their students. We train RLTs with dense rewards obtained by feeding each explanation to the student and testing its understanding of the problem's solution. In practice, the raw outputs of a 7B RLT provide higher final performance on competition and graduate-level tasks than existing distillation and cold-starting pipelines that collect and postprocess the reasoning traces of orders of magnitude larger LMs. Furthermore, RLTs maintain their effectiveness when training larger students and when applied zero-shot to out-of-distribution tasks, unlocking new levels of efficiency and re-usability for the RL reasoning framework. Code available at: this https URL
+
+**arXiv ID:** 2506.08388
+</details>
+
+<details>
+<summary><strong>SATURN: SAT-based Reinforcement Learning to Unleash Language Model Reasoning</strong> - Huanyu Liu, Jia Li, Hao Zhu, Kechi Zhang, Yihong Dong, Ge Li - [[pdf]](https://arxiv.org/pdf/2505.16368)</summary>
+
+**Abstract:** How to design reinforcement learning (RL) tasks that effectively unleash the reasoning capability of large language models (LLMs) remains an open question. Existing RL tasks (e.g., math, programming, and constructing reasoning tasks) suffer from three key limitations: (1) Scalability. They rely heavily on human annotation or expensive LLM synthesis to generate sufficient training data. (2) Verifiability. LLMs' outputs are hard to verify automatically and reliably. (3) Controllable Difficulty. Most tasks lack fine-grained difficulty control, making it hard to train LLMs to develop reasoning ability from easy to hard.
+To address these limitations, we propose Saturn, a SAT-based RL framework that uses Boolean Satisfiability (SAT) problems to train and evaluate LLMs reasoning. Saturn enables scalable task construction, rule-based verification, and precise difficulty control. Saturn designs a curriculum learning pipeline that continuously improves LLMs' reasoning capability by constructing SAT tasks of increasing difficulty and training LLMs from easy to hard. To ensure stable training, we design a principled mechanism to control difficulty transitions.
+We introduce Saturn-2.6k, a dataset of 2,660 SAT problems with varying difficulty. It supports the evaluation of how LLM reasoning changes with problem difficulty. We apply Saturn to DeepSeek-R1-Distill-Qwen and obtain Saturn-1.5B and Saturn-7B. We achieve several notable results: (1) On SAT problems, Saturn-1.5B and Saturn-7B achieve average pass@3 improvements of +14.0 and +28.1, respectively. (2) On math and programming tasks, Saturn-1.5B and Saturn-7B improve average scores by +4.9 and +1.8 on benchmarks (e.g., AIME, LiveCodeBench). (3) Compared to the state-of-the-art (SOTA) approach in constructing RL tasks, Saturn achieves further improvements of +8.8%. We release the source code, data, and models to support future research.
+
+**arXiv ID:** 2505.16368
 </details>
 
 <details>
