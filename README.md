@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-10-31 02:48:11
+**Last Updated:** 2025-11-03 02:18:26
 
 **Total Papers:** 63
 
@@ -392,19 +392,19 @@ Conclusion: An ensemble of medium to large sized open-source LLMs provides a mor
 <summary><h2>Reinforcement Learning (20 papers)</h2></summary>
 
 <details>
-<summary><strong>From Queries to Insights: Agentic LLM Pipelines for Spatio-Temporal Text-to-SQL</strong> - Manu Redd, Tao Zhe, Dongjie Wang - [[pdf]](https://arxiv.org/pdf/2510.25997)</summary>
-
-**Abstract:** Natural-language-to-SQL (NL-to-SQL) systems hold promise for democratizing access to structured data, allowing users to query databases without learning SQL. Yet existing systems struggle with realistic spatio-temporal queries, where success requires aligning vague user phrasing with schema-specific categories, handling temporal reasoning, and choosing appropriate outputs. We present an agentic pipeline that extends a naive text-to-SQL baseline (llama-3-sqlcoder-8b) with orchestration by a Mistral-based ReAct agent. The agent can plan, decompose, and adapt queries through schema inspection, SQL generation, execution, and visualization tools. We evaluate on 35 natural-language queries over the NYC and Tokyo check-in dataset, covering spatial, temporal, and multi-dataset reasoning. The agent achieves substantially higher accuracy than the naive baseline 91.4% vs. 28.6% and enhances usability through maps, plots, and structured natural-language summaries. Crucially, our design enables more natural human-database interaction, supporting users who lack SQL expertise, detailed schema knowledge, or prompting skill. We conclude that agentic orchestration, rather than stronger SQL generators alone, is a promising foundation for interactive geospatial assistants.
-
-**arXiv ID:** 2510.25997
-</details>
-
-<details>
 <summary><strong>An Agentic Framework for Rapid Deployment of Edge AI Solutions in Industry 5.0</strong> - Jorge Martinez-Gil, Mario Pichler, Nefeli Bountouni, Sotiris Koussouris, Marielena Márquez Barreiro, Sergio Gusmeroli - [[pdf]](https://arxiv.org/pdf/2510.25813)</summary>
 
 **Abstract:** We present a novel framework for Industry 5.0 that simplifies the deployment of AI models on edge devices in various industrial settings. The design reduces latency and avoids external data transfer by enabling local inference and real-time processing. Our implementation is agent-based, which means that individual agents, whether human, algorithmic, or collaborative, are responsible for well-defined tasks, enabling flexibility and simplifying integration. Moreover, our framework supports modular integration and maintains low resource requirements. Preliminary evaluations concerning the food industry in real scenarios indicate improved deployment time and system adaptability performance. The source code is publicly available at this https URL.
 
 **arXiv ID:** 2510.25813
+</details>
+
+<details>
+<summary><strong>From Queries to Insights: Agentic LLM Pipelines for Spatio-Temporal Text-to-SQL</strong> - Manu Redd, Tao Zhe, Dongjie Wang - [[pdf]](https://arxiv.org/pdf/2510.25997)</summary>
+
+**Abstract:** Natural-language-to-SQL (NL-to-SQL) systems hold promise for democratizing access to structured data, allowing users to query databases without learning SQL. Yet existing systems struggle with realistic spatio-temporal queries, where success requires aligning vague user phrasing with schema-specific categories, handling temporal reasoning, and choosing appropriate outputs. We present an agentic pipeline that extends a naive text-to-SQL baseline (llama-3-sqlcoder-8b) with orchestration by a Mistral-based ReAct agent. The agent can plan, decompose, and adapt queries through schema inspection, SQL generation, execution, and visualization tools. We evaluate on 35 natural-language queries over the NYC and Tokyo check-in dataset, covering spatial, temporal, and multi-dataset reasoning. The agent achieves substantially higher accuracy than the naive baseline 91.4% vs. 28.6% and enhances usability through maps, plots, and structured natural-language summaries. Crucially, our design enables more natural human-database interaction, supporting users who lack SQL expertise, detailed schema knowledge, or prompting skill. We conclude that agentic orchestration, rather than stronger SQL generators alone, is a promising foundation for interactive geospatial assistants.
+
+**arXiv ID:** 2510.25997
 </details>
 
 <details>
