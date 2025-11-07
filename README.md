@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-06 02:50:54
+**Last Updated:** 2025-11-07 02:07:32
 
 **Total Papers:** 63
 
@@ -177,19 +177,19 @@ This report explains the program's motivation and evaluation criteria, and walks
 <summary><h2>Multi-Agent Systems (16 papers)</h2></summary>
 
 <details>
-<summary><strong>PublicAgent: Multi-Agent Design Principles From an LLM-Based Open Data Analysis Framework</strong> - Sina Montazeri, Yunhe Feng, Kewei Sha - [[pdf]](https://arxiv.org/pdf/2511.03023)</summary>
-
-**Abstract:** Open data repositories hold potential for evidence-based decision-making, yet are inaccessible to non-experts lacking expertise in dataset discovery, schema mapping, and statistical analysis. Large language models show promise for individual tasks, but end-to-end analytical workflows expose fundamental limitations: attention dilutes across growing contexts, specialized reasoning patterns interfere, and errors propagate undetected. We present PublicAgent, a multi-agent framework that addresses these limitations through decomposition into specialized agents for intent clarification, dataset discovery, analysis, and reporting. This architecture maintains focused attention within agent contexts and enables validation at each stage. Evaluation across five models and 50 queries derives five design principles for multi-agent LLM systems. First, specialization provides value independent of model strength--even the strongest model shows 97.5% agent win rates, with benefits orthogonal to model scale. Second, agents divide into universal (discovery, analysis) and conditional (report, intent) categories. Universal agents show consistent effectiveness (std dev 12.4%) while conditional agents vary by model (std dev 20.5%). Third, agents mitigate distinct failure modes--removing discovery or analysis causes catastrophic failures (243-280 instances), while removing report or intent causes quality degradation. Fourth, architectural benefits persist across task complexity with stable win rates (86-92% analysis, 84-94% discovery), indicating workflow management value rather than reasoning enhancement. Fifth, wide variance in agent effectiveness across models (42-96% for analysis) requires model-aware architecture design. These principles guide when and why specialization is necessary for complex analytical workflows while enabling broader access to public data through natural language interfaces.
-
-**arXiv ID:** 2511.03023
-</details>
-
-<details>
 <summary><strong>No-Human in the Loop: Agentic Evaluation at Scale for Recommendation</strong> - Tao Zhang, Kehui Yao, Luyi Ma, Jiao Chen, Reza Yousefi Maragheh, Kai Zhao, Jianpeng Xu, Evren Korpeoglu, Sushant Kumar, Kannan Achan - [[pdf]](https://arxiv.org/pdf/2511.03051)</summary>
 
 **Abstract:** Evaluating large language models (LLMs) as judges is increasingly critical for building scalable and trustworthy evaluation pipelines. We present ScalingEval, a large-scale benchmarking study that systematically compares 36 LLMs, including GPT, Gemini, Claude, and Llama, across multiple product categories using a consensus-driven evaluation protocol. Our multi-agent framework aggregates pattern audits and issue codes into ground-truth labels via scalable majority voting, enabling reproducible comparison of LLM evaluators without human annotation. Applied to large-scale complementary-item recommendation, the benchmark reports four key findings: (i) Anthropic Claude 3.5 Sonnet achieves the highest decision confidence; (ii) Gemini 1.5 Pro offers the best overall performance across categories; (iii) GPT-4o provides the most favorable latency-accuracy-cost tradeoff; and (iv) GPT-OSS 20B leads among open-source models. Category-level analysis shows strong consensus in structured domains (Electronics, Sports) but persistent disagreement in lifestyle categories (Clothing, Food). These results establish ScalingEval as a reproducible benchmark and evaluation protocol for LLMs as judges, with actionable guidance on scaling, reliability, and model family tradeoffs.
 
 **arXiv ID:** 2511.03051
+</details>
+
+<details>
+<summary><strong>PublicAgent: Multi-Agent Design Principles From an LLM-Based Open Data Analysis Framework</strong> - Sina Montazeri, Yunhe Feng, Kewei Sha - [[pdf]](https://arxiv.org/pdf/2511.03023)</summary>
+
+**Abstract:** Open data repositories hold potential for evidence-based decision-making, yet are inaccessible to non-experts lacking expertise in dataset discovery, schema mapping, and statistical analysis. Large language models show promise for individual tasks, but end-to-end analytical workflows expose fundamental limitations: attention dilutes across growing contexts, specialized reasoning patterns interfere, and errors propagate undetected. We present PublicAgent, a multi-agent framework that addresses these limitations through decomposition into specialized agents for intent clarification, dataset discovery, analysis, and reporting. This architecture maintains focused attention within agent contexts and enables validation at each stage. Evaluation across five models and 50 queries derives five design principles for multi-agent LLM systems. First, specialization provides value independent of model strength--even the strongest model shows 97.5% agent win rates, with benefits orthogonal to model scale. Second, agents divide into universal (discovery, analysis) and conditional (report, intent) categories. Universal agents show consistent effectiveness (std dev 12.4%) while conditional agents vary by model (std dev 20.5%). Third, agents mitigate distinct failure modes--removing discovery or analysis causes catastrophic failures (243-280 instances), while removing report or intent causes quality degradation. Fourth, architectural benefits persist across task complexity with stable win rates (86-92% analysis, 84-94% discovery), indicating workflow management value rather than reasoning enhancement. Fifth, wide variance in agent effectiveness across models (42-96% for analysis) requires model-aware architecture design. These principles guide when and why specialization is necessary for complex analytical workflows while enabling broader access to public data through natural language interfaces.
+
+**arXiv ID:** 2511.03023
 </details>
 
 <details>
@@ -273,19 +273,19 @@ This report explains the program's motivation and evaluation criteria, and walks
 </details>
 
 <details>
-<summary><strong>Learning Communication Skills in Multi-task Multi-agent Deep Reinforcement Learning</strong> - Changxi Zhu, Mehdi Dastani, Shihan Wang - [[pdf]](https://arxiv.org/pdf/2511.03348)</summary>
-
-**Abstract:** In multi-agent deep reinforcement learning (MADRL), agents can communicate with one another to perform a task in a coordinated manner. When multiple tasks are involved, agents can also leverage knowledge from one task to improve learning in other tasks. In this paper, we propose Multi-task Communication Skills (MCS), a MADRL with communication method that learns and performs multiple tasks simultaneously, with agents interacting through learnable communication protocols. MCS employs a Transformer encoder to encode task-specific observations into a shared message space, capturing shared communication skills among agents. To enhance coordination among agents, we introduce a prediction network that correlates messages with the actions of sender agents in each task. We adapt three multi-agent benchmark environments to multi-task settings, where the number of agents as well as the observation and action spaces vary across tasks. Experimental results demonstrate that MCS achieves better performance than multi-task MADRL baselines without communication, as well as single-task MADRL baselines with and without communication.
-
-**arXiv ID:** 2511.03348
-</details>
-
-<details>
 <summary><strong>ALAS: Transactional and Dynamic Multi-Agent LLM Planning</strong> - Longling Geng, Edward Y. Chang - [[pdf]](https://arxiv.org/pdf/2511.03094)</summary>
 
 **Abstract:** Large language models enable flexible multi-agent planning but remain fragile in practice: verification is often circular, state changes are not tracked for repair, and small faults trigger costly global recomputation. We present ALAS, a stateful, disruption-aware framework that separates planning from non-circular validation, records a versioned execution log for grounded checks and restore points, and performs localized repair that preserves work in progress. The validator operates independently of the planning LLM with fresh, bounded context, avoiding self-check loops and mid-context attrition. The repair protocol edits only the minimal affected region under explicit policies (retry, catch, timeout, backoff, idempotency keys, compensation, loop guards) defined in a canonical workflow IR that maps to Amazon States Language and Argo Workflows. On job-shop scheduling suites (DMU, TA) across five classical benchmarks, ALAS matches or exceeds strong single-LLM and multi-agent baselines, achieving 83.7% success, reducing token usage by 60%, and running 1.82times faster under comparable settings. A minimal reliability study shows that the validator detects injected structural faults with low overhead, and that localized repair contains runtime perturbations with a bounded edit radius and less makespan degradation than global recompute. Results indicate that the combination of validator isolation, versioned execution logs, and localized repair provides measurable efficiency, feasibility, and scalability for multi-agent LLM planning. Code and seeds will be released.
 
 **arXiv ID:** 2511.03094
+</details>
+
+<details>
+<summary><strong>Learning Communication Skills in Multi-task Multi-agent Deep Reinforcement Learning</strong> - Changxi Zhu, Mehdi Dastani, Shihan Wang - [[pdf]](https://arxiv.org/pdf/2511.03348)</summary>
+
+**Abstract:** In multi-agent deep reinforcement learning (MADRL), agents can communicate with one another to perform a task in a coordinated manner. When multiple tasks are involved, agents can also leverage knowledge from one task to improve learning in other tasks. In this paper, we propose Multi-task Communication Skills (MCS), a MADRL with communication method that learns and performs multiple tasks simultaneously, with agents interacting through learnable communication protocols. MCS employs a Transformer encoder to encode task-specific observations into a shared message space, capturing shared communication skills among agents. To enhance coordination among agents, we introduce a prediction network that correlates messages with the actions of sender agents in each task. We adapt three multi-agent benchmark environments to multi-task settings, where the number of agents as well as the observation and action spaces vary across tasks. Experimental results demonstrate that MCS achieves better performance than multi-task MADRL baselines without communication, as well as single-task MADRL baselines with and without communication.
+
+**arXiv ID:** 2511.03348
 </details>
 
 <details>
@@ -543,7 +543,7 @@ Our framework achieves a 97% success rate on real-world wrapping tasks. We show 
 </details>
 
 <details>
-<summary><strong>Knowledge Graph for Intelligent Generation of Artistic Image Creation: Constructing a New Annotation Hierarchy</strong> - Jia Kaixin, Zhu Kewen, Deng Huanghuang, Qiu Yiwu, Ding Shiying, Ding Chenyang, Li Zejian - [[pdf]](https://arxiv.org/pdf/2511.03585)</summary>
+<summary><strong>Knowledge Graph for Intelligent Generation of Artistic Image Creation: Constructing a New Annotation Hierarchy</strong> - Jia Kaixin, Zhu Kewen, Deng Huanghuang, Qiu Yiwu, Ding Shiying, Ding Chenyang, Ning Zou, Li Zejian - [[pdf]](https://arxiv.org/pdf/2511.03585)</summary>
 
 **Abstract:** Our study aims to establish a unified, systematic, and referable knowledge framework for the annotation of art image datasets, addressing issues of ambiguous definitions and inconsistent results caused by the lack of common standards during the annotation process. To achieve this goal, a hierarchical and systematic art image knowledge graph was constructed. It was developed based on the composition principles of art images, incorporating the Structured Theory of Visual Knowledge proposed by Academician Yunhe Pan in On Visual Knowledge-which states that visual knowledge must achieve precise expression of spatial forms and dynamic relationships through "prototype-category" and "hierarchical structure". Through in-depth review of Chinese and Western art theories and pioneering integration of the Chinese cultural perspective, this graph took shape. The core visual language of art images was deconstructed by this knowledge graph. Meanwhile, the unique spatial theory and symbolic system of Chinese painting were compared with and supplemented by Western art theories. This graph converts qualitative artistic concepts into a clear structured framework. It not only conforms to the cognitive law that "visual knowledge takes precedence over verbal knowledge" in humans but also provides an interpretable and inferential visual knowledge foundation for AI art generation and cross-cultural art analysis. It ensures the high quality and consistency of annotated data, thus offering key support for art intelligence research in the AI 2.0 era.
 
