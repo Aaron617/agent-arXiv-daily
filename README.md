@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-10 02:55:33
+**Last Updated:** 2025-11-11 02:09:41
 
 **Total Papers:** 49
 
@@ -43,7 +43,7 @@
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (7 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (8 papers)</h2></summary>
 
 <details>
 <summary><strong>Learning to reason about rare diseases through retrieval-augmented agents</strong> - Ha Young Kim, Jun Li, Ana Beatriz Solana, Carolin M. Pirkl, Benedikt Wiestler, Julia A. Schnabel, Cosmin I. Bercea - [[pdf]](https://arxiv.org/pdf/2511.04720)</summary>
@@ -51,6 +51,14 @@
 **Abstract:** Rare diseases represent the long tail of medical imaging, where AI models often fail due to the scarcity of representative training data. In clinical workflows, radiologists frequently consult case reports and literature when confronted with unfamiliar findings. Following this line of reasoning, we introduce RADAR, Retrieval Augmented Diagnostic Reasoning Agents, an agentic system for rare disease detection in brain MRI. Our approach uses AI agents with access to external medical knowledge by embedding both case reports and literature using sentence transformers and indexing them with FAISS to enable efficient similarity search. The agent retrieves clinically relevant evidence to guide diagnostic decision making on unseen diseases, without the need of additional training. Designed as a model-agnostic reasoning module, RADAR can be seamlessly integrated with diverse large language models, consistently improving their rare pathology recognition and interpretability. On the NOVA dataset comprising 280 distinct rare diseases, RADAR achieves up to a 10.2% performance gain, with the strongest improvements observed for open source models such as DeepSeek. Beyond accuracy, the retrieved examples provide interpretable, literature grounded explanations, highlighting retrieval-augmented reasoning as a powerful paradigm for low-prevalence conditions in medical imaging.
 
 **arXiv ID:** 2511.04720
+</details>
+
+<details>
+<summary><strong>SmartSecChain-SDN: A Blockchain-Integrated Intelligent Framework for Secure and Efficient Software-Defined Networks</strong> - Azhar Hussain Mozumder, M. John Basha, Chayapathi A. R - [[pdf]](https://arxiv.org/pdf/2511.05156)</summary>
+
+**Abstract:** With more and more existing networks being transformed to Software-Defined Networking (SDN), they need to be more secure and demand smarter ways of traffic control. This work, SmartSecChain-SDN, is a platform that combines machine learning based intrusion detection, blockchain-based storage of logs, and application-awareness-based priority in SDN networks. To detect network intrusions in a real-time, precision and low-false positives setup, the framework utilizes the application of advanced machine learning algorithms, namely Random Forest, XGBoost, CatBoost, and CNN-BiLSTM. SmartSecChain-SDN is based on the Hyperledger Fabric, which is a permissioned blockchain technology, to provide secure, scalable, and privacy-preserving storage and, thus, guarantee that the Intrusion Detection System (IDS) records cannot be altered and can be analyzed comprehensively. The system also has Quality of Service (QoS) rules and traffic shaping based on applications, which enables prioritization of critical services, such as VoIP, video conferencing, and business applications, as well as de-prioritization of non-essential traffic, such as downloads and updates. Mininet can simulate real-time SDN scenarios because it is used to prototype whole architectures. It is also compatible with controllers OpenDaylight and Ryu. It has tested the framework using the InSDN dataset and proved that it can identify different kinds of cyberattacks and handle bandwidth allocation efficiently under circumstances of resource constraints. SmartSecChain-SDN comprehensively addresses SDN system protection, securing and enhancing. The proposed study offers an innovative, extensible way to improve cybersecurity, regulatory compliance, and the administration of next-generation programmable networks.
+
+**arXiv ID:** 2511.05156
 </details>
 
 <details>
@@ -235,15 +243,7 @@ Code at this https URL and Dataset at this https URL
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (6 papers)</h2></summary>
-
-<details>
-<summary><strong>Autonomous generation of different courses of action in mechanized combat operations</strong> - Johan Schubert, Patrik Hansen, Pontus Hörling, Ronnie Johansson - [[pdf]](https://arxiv.org/pdf/2511.05182)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2511.05182
-</details>
+<summary><h2>Other Agent Research (4 papers)</h2></summary>
 
 <details>
 <summary><strong>ORCHID: Orchestrated Retrieval-Augmented Classification with Human-in-the-Loop Intelligent Decision-Making for High-Risk Property</strong> - Maria Mahbub, Vanessa Lama, Sanjay Das, Brian Starks, Christopher Polchek, Saffell Silvers, Lauren Deck, Prasanna Balaprakash, Tirthankar Ghosal - [[pdf]](https://arxiv.org/pdf/2511.04956)</summary>
@@ -251,14 +251,6 @@ Code at this https URL and Dataset at this https URL
 **Abstract:** High-Risk Property (HRP) classification is critical at U.S. Department of Energy (DOE) sites, where inventories include sensitive and often dual-use equipment. Compliance must track evolving rules designated by various export control policies to make transparent and auditable decisions. Traditional expert-only workflows are time-consuming, backlog-prone, and struggle to keep pace with shifting regulatory boundaries. We demo ORCHID, a modular agentic system for HRP classification that pairs retrieval-augmented generation (RAG) with human oversight to produce policy-based outputs that can be audited. Small cooperating agents, retrieval, description refiner, classifier, validator, and feedback logger, coordinate via agent-to-agent messaging and invoke tools through the Model Context Protocol (MCP) for model-agnostic on-premise operation. The interface follows an Item to Evidence to Decision loop with step-by-step reasoning, on-policy citations, and append-only audit bundles (run-cards, prompts, evidence). In preliminary tests on real HRP cases, ORCHID improves accuracy and traceability over a non-agentic baseline while deferring uncertain items to Subject Matter Experts (SMEs). The demonstration shows single item submission, grounded citations, SME feedback capture, and exportable audit artifacts, illustrating a practical path to trustworthy LLM assistance in sensitive DOE compliance workflows.
 
 **arXiv ID:** 2511.04956
-</details>
-
-<details>
-<summary><strong>SmartSecChain-SDN: A Blockchain-Integrated Intelligent Framework for Secure and Efficient Software-Defined Networks</strong> - Azhar Hussain Mozumder, M. John Basha, Chayapathi A. R - [[pdf]](https://arxiv.org/pdf/2511.05156)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2511.05156
 </details>
 
 <details>
@@ -288,7 +280,7 @@ Code at this https URL and Dataset at this https URL
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (18 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (19 papers)</h2></summary>
 
 <details>
 <summary><strong>Real-Time Reasoning Agents in Evolving Environments</strong> - Yule Wen, Yixin Ye, Yanzhe Zhang, Diyi Yang, Hao Zhu - [[pdf]](https://arxiv.org/pdf/2511.04898)</summary>
@@ -296,6 +288,14 @@ Code at this https URL and Dataset at this https URL
 **Abstract:** Agents in the real world must make not only logical but also timely judgments. This requires continuous awareness of the dynamic environment: hazards emerge, opportunities arise, and other agents act, while the agent's reasoning is still unfolding. Despite advances in language model reasoning, existing approaches fail to account for this dynamic nature. We introduce real-time reasoning as a new problem formulation for agents in evolving environments and build Real-Time Reasoning Gym to demonstrate it. We study two paradigms for deploying language models in agents: (1) reactive agents, which employ language models with bounded reasoning computation for rapid responses, and (2) planning agents, which allow extended reasoning computation for complex problems. Our experiments show that even state-of-the-art models struggle with making logical and timely judgments in either paradigm. To address this limitation, we propose AgileThinker, which simultaneously engages both reasoning paradigms. AgileThinker consistently outperforms agents engaging only one reasoning paradigm as the task difficulty and time pressure rise, effectively balancing reasoning depth and response latency. Our work establishes real-time reasoning as a critical testbed for developing practical agents and provides a foundation for research in temporally constrained AI systems, highlighting a path toward real-time capable agents.
 
 **arXiv ID:** 2511.04898
+</details>
+
+<details>
+<summary><strong>Autonomous generation of different courses of action in mechanized combat operations</strong> - Johan Schubert, Patrik Hansen, Pontus Hörling, Ronnie Johansson - [[pdf]](https://arxiv.org/pdf/2511.05182)</summary>
+
+**Abstract:** In this paper, we propose a methodology designed to support decision-making during the execution phase of military ground combat operations, with a focus on one's actions. This methodology generates and evaluates recommendations for various courses of action for a mechanized battalion, commencing with an initial set assessed by their anticipated outcomes. It systematically produces thousands of individual action alternatives, followed by evaluations aimed at identifying alternative courses of action with superior outcomes. These alternatives are appraised in light of the opponent's status and actions, considering unit composition, force ratios, types of offense and defense, and anticipated advance rates. Field manuals evaluate battle outcomes and advancement rates. The processes of generation and evaluation work concurrently, yielding a variety of alternative courses of action. This approach facilitates the management of new course generation based on previously evaluated actions. As the combat unfolds and conditions evolve, revised courses of action are formulated for the decision-maker within a sequential decision-making framework.
+
+**arXiv ID:** 2511.05182
 </details>
 
 <details>
