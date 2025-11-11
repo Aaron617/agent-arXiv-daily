@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-11 02:09:41
+**Last Updated:** 2025-11-11 02:50:36
 
 **Total Papers:** 49
 
@@ -283,19 +283,19 @@ Code at this https URL and Dataset at this https URL
 <summary><h2>Reinforcement Learning (19 papers)</h2></summary>
 
 <details>
-<summary><strong>Real-Time Reasoning Agents in Evolving Environments</strong> - Yule Wen, Yixin Ye, Yanzhe Zhang, Diyi Yang, Hao Zhu - [[pdf]](https://arxiv.org/pdf/2511.04898)</summary>
-
-**Abstract:** Agents in the real world must make not only logical but also timely judgments. This requires continuous awareness of the dynamic environment: hazards emerge, opportunities arise, and other agents act, while the agent's reasoning is still unfolding. Despite advances in language model reasoning, existing approaches fail to account for this dynamic nature. We introduce real-time reasoning as a new problem formulation for agents in evolving environments and build Real-Time Reasoning Gym to demonstrate it. We study two paradigms for deploying language models in agents: (1) reactive agents, which employ language models with bounded reasoning computation for rapid responses, and (2) planning agents, which allow extended reasoning computation for complex problems. Our experiments show that even state-of-the-art models struggle with making logical and timely judgments in either paradigm. To address this limitation, we propose AgileThinker, which simultaneously engages both reasoning paradigms. AgileThinker consistently outperforms agents engaging only one reasoning paradigm as the task difficulty and time pressure rise, effectively balancing reasoning depth and response latency. Our work establishes real-time reasoning as a critical testbed for developing practical agents and provides a foundation for research in temporally constrained AI systems, highlighting a path toward real-time capable agents.
-
-**arXiv ID:** 2511.04898
-</details>
-
-<details>
 <summary><strong>Autonomous generation of different courses of action in mechanized combat operations</strong> - Johan Schubert, Patrik Hansen, Pontus Hörling, Ronnie Johansson - [[pdf]](https://arxiv.org/pdf/2511.05182)</summary>
 
 **Abstract:** In this paper, we propose a methodology designed to support decision-making during the execution phase of military ground combat operations, with a focus on one's actions. This methodology generates and evaluates recommendations for various courses of action for a mechanized battalion, commencing with an initial set assessed by their anticipated outcomes. It systematically produces thousands of individual action alternatives, followed by evaluations aimed at identifying alternative courses of action with superior outcomes. These alternatives are appraised in light of the opponent's status and actions, considering unit composition, force ratios, types of offense and defense, and anticipated advance rates. Field manuals evaluate battle outcomes and advancement rates. The processes of generation and evaluation work concurrently, yielding a variety of alternative courses of action. This approach facilitates the management of new course generation based on previously evaluated actions. As the combat unfolds and conditions evolve, revised courses of action are formulated for the decision-maker within a sequential decision-making framework.
 
 **arXiv ID:** 2511.05182
+</details>
+
+<details>
+<summary><strong>Real-Time Reasoning Agents in Evolving Environments</strong> - Yule Wen, Yixin Ye, Yanzhe Zhang, Diyi Yang, Hao Zhu - [[pdf]](https://arxiv.org/pdf/2511.04898)</summary>
+
+**Abstract:** Agents in the real world must make not only logical but also timely judgments. This requires continuous awareness of the dynamic environment: hazards emerge, opportunities arise, and other agents act, while the agent's reasoning is still unfolding. Despite advances in language model reasoning, existing approaches fail to account for this dynamic nature. We introduce real-time reasoning as a new problem formulation for agents in evolving environments and build Real-Time Reasoning Gym to demonstrate it. We study two paradigms for deploying language models in agents: (1) reactive agents, which employ language models with bounded reasoning computation for rapid responses, and (2) planning agents, which allow extended reasoning computation for complex problems. Our experiments show that even state-of-the-art models struggle with making logical and timely judgments in either paradigm. To address this limitation, we propose AgileThinker, which simultaneously engages both reasoning paradigms. AgileThinker consistently outperforms agents engaging only one reasoning paradigm as the task difficulty and time pressure rise, effectively balancing reasoning depth and response latency. Our work establishes real-time reasoning as a critical testbed for developing practical agents and provides a foundation for research in temporally constrained AI systems, highlighting a path toward real-time capable agents.
+
+**arXiv ID:** 2511.04898
 </details>
 
 <details>
