@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-13 02:52:21
+**Last Updated:** 2025-11-14 02:09:46
 
 **Total Papers:** 67
 
@@ -86,7 +86,7 @@
 </details>
 
 <details>
-<summary><strong>LLM4AD: Large Language Models for Autonomous Driving - Concept, Review, Benchmark, Experiments, and Future Trends</strong> - Can Cui, Yunsheng Ma, Sung-Yeon Park, Zichong Yang, Yupeng Zhou, Juanwu Lu, Juntong Peng, Jiaru Zhang, Ruqi Zhang, Lingxi Li, Yaobin Chen, Jitesh H. Panchal, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Ziran Wang - [[pdf]](https://arxiv.org/pdf/2410.15281)</summary>
+<summary><strong>LLM4AD: Large Language Models for Autonomous Driving -- Concept, Review, Benchmark, Experiments, and Future Trends</strong> - Can Cui, Yunsheng Ma, Sung-Yeon Park, Zichong Yang, Yupeng Zhou, Juanwu Lu, Juntong Peng, Jiaru Zhang, Ruqi Zhang, Lingxi Li, Yaobin Chen, Jitesh H. Panchal, Amr Abdelraouf, Rohit Gupta, Kyungtae Han, Ziran Wang - [[pdf]](https://arxiv.org/pdf/2410.15281)</summary>
 
 **Abstract:** With the broader adoption and highly successful development of Large Language Models (LLMs), there has been growing interest and demand for applying LLMs to autonomous driving technology. Driven by their natural language understanding and reasoning capabilities, LLMs have the potential to enhance various aspects of autonomous driving systems, from perception and scene understanding to interactive decision-making. In this paper, we first introduce the novel concept of designing Large Language Models for Autonomous Driving (LLM4AD), followed by a review of existing LLM4AD studies. Then, we propose a comprehensive benchmark for evaluating the instruction-following and reasoning abilities of LLM4AD systems, which includes LaMPilot-Bench, CARLA Leaderboard 1.0 Benchmark in simulation and NuPlanQA for multi-view visual question answering. Furthermore, we conduct extensive real-world experiments on autonomous vehicle platforms, examining both on-cloud and on-edge LLM deployment for personalized decision-making and motion control. Next, we explore the future trends of integrating language diffusion models into autonomous driving, exemplified by the proposed ViLaD (Vision-Language Diffusion) framework. Finally, we discuss the main challenges of LLM4AD, including latency, deployment, security and privacy, safety, trust and transparency, and personalization.
 
@@ -362,19 +362,19 @@
 <summary><h2>Reinforcement Learning (27 papers)</h2></summary>
 
 <details>
-<summary><strong>UCO: A Multi-Turn Interactive Reinforcement Learning Method for Adaptive Teaching with Large Language Models</strong> - Shouang Wei, Min Zhang, Xin Lin, Bo Jiang, Kun Kuang, Zhongxiang Dai - [[pdf]](https://arxiv.org/pdf/2511.08873)</summary>
-
-**Abstract:** Large language models (LLMs) are shifting from answer providers to intelligent tutors in educational settings, yet current supervised fine-tuning methods only learn surface teaching patterns without dynamic adaptation capabilities. Recent reinforcement learning approaches address this limitation but face two critical challenges. First, they evaluate teaching effectiveness solely based on whether students produce correct outputs, unable to distinguish whether students genuinely understand or echo teacher-provided answers during interaction. Second, they cannot perceive students' evolving cognitive states in real time through interactive dialogue, thus failing to adapt teaching strategies to match students' cognitive levels dynamically. We propose the Unidirectional Cognitive Optimization (UCO) method to address these challenges. UCO uses a multi-turn interactive reinforcement learning paradigm where the innovation lies in two synergistic reward functions: the Progress Reward captures students' cognitive advancement, evaluating whether students truly transition from confusion to comprehension, while the Scaffold Reward dynamically identifies each student's Zone of Proximal Development (ZPD), encouraging teachers to maintain productive teaching within this zone. We evaluate UCO by comparing it against 11 baseline models on BigMath and MathTutorBench benchmarks. Experimental results demonstrate that our UCO model outperforms all models of equivalent scale and achieves performance comparable to advanced closed-source models. The code and data are available at this https URL.
-
-**arXiv ID:** 2511.08873
-</details>
-
-<details>
 <summary><strong>Interpretable by Design: Query-Specific Neural Modules for Explainable Reinforcement Learning</strong> - Mehrdad Zakershahrak - [[pdf]](https://arxiv.org/pdf/2511.08749)</summary>
 
 **Abstract:** Reinforcement learning has traditionally focused on a singular objective: learning policies that select actions to maximize reward. We challenge this paradigm by asking: what if we explicitly architected RL systems as inference engines that can answer diverse queries about their environment? In deterministic settings, trained agents implicitly encode rich knowledge about reachability, distances, values, and dynamics - yet current architectures are not designed to expose this information efficiently. We introduce Query Conditioned Deterministic Inference Networks (QDIN), a unified architecture that treats different types of queries (policy, reachability, paths, comparisons) as first-class citizens, with specialized neural modules optimized for each inference pattern. Our key empirical finding reveals a fundamental decoupling: inference accuracy can reach near-perfect levels (99% reachability IoU) even when control performance remains suboptimal (31% return), suggesting that the representations needed for accurate world knowledge differ from those required for optimal control. Experiments demonstrate that query specialized architectures outperform both unified models and post-hoc extraction methods, while maintaining competitive control performance. This work establishes a research agenda for RL systems designed from inception as queryable knowledge bases, with implications for interpretability, verification, and human-AI collaboration.
 
 **arXiv ID:** 2511.08749
+</details>
+
+<details>
+<summary><strong>UCO: A Multi-Turn Interactive Reinforcement Learning Method for Adaptive Teaching with Large Language Models</strong> - Shouang Wei, Min Zhang, Xin Lin, Bo Jiang, Kun Kuang, Zhongxiang Dai - [[pdf]](https://arxiv.org/pdf/2511.08873)</summary>
+
+**Abstract:** Large language models (LLMs) are shifting from answer providers to intelligent tutors in educational settings, yet current supervised fine-tuning methods only learn surface teaching patterns without dynamic adaptation capabilities. Recent reinforcement learning approaches address this limitation but face two critical challenges. First, they evaluate teaching effectiveness solely based on whether students produce correct outputs, unable to distinguish whether students genuinely understand or echo teacher-provided answers during interaction. Second, they cannot perceive students' evolving cognitive states in real time through interactive dialogue, thus failing to adapt teaching strategies to match students' cognitive levels dynamically. We propose the Unidirectional Cognitive Optimization (UCO) method to address these challenges. UCO uses a multi-turn interactive reinforcement learning paradigm where the innovation lies in two synergistic reward functions: the Progress Reward captures students' cognitive advancement, evaluating whether students truly transition from confusion to comprehension, while the Scaffold Reward dynamically identifies each student's Zone of Proximal Development (ZPD), encouraging teachers to maintain productive teaching within this zone. We evaluate UCO by comparing it against 11 baseline models on BigMath and MathTutorBench benchmarks. Experimental results demonstrate that our UCO model outperforms all models of equivalent scale and achieves performance comparable to advanced closed-source models. The code and data are available at this https URL.
+
+**arXiv ID:** 2511.08873
 </details>
 
 <details>
@@ -418,19 +418,19 @@
 </details>
 
 <details>
-<summary><strong>Thinking Forward and Backward: Multi-Objective Reinforcement Learning for Retrieval-Augmented Reasoning</strong> - Wenda Wei, Yu-An Liu, Ruqing Zhang, Jiafeng Guo, Lixin Su, Shuaiqiang Wang, Dawei Yin, Maarten de Rijke, Xueqi Cheng - [[pdf]](https://arxiv.org/pdf/2511.09109)</summary>
-
-**Abstract:** Retrieval-augmented generation (RAG) has proven to be effective in mitigating hallucinations in large language models, yet its effectiveness remains limited in complex, multi-step reasoning this http URL efforts have incorporated search-based interactions into RAG, enabling iterative reasoning with real-time retrieval. Most approaches rely on outcome-based supervision, offering no explicit guidance for intermediate steps. This often leads to reward hacking and degraded response quality. We propose Bi-RAR, a novel retrieval-augmented reasoning framework that evaluates each intermediate step jointly in both forward and backward directions. To assess the information completeness of each step, we introduce a bidirectional information distance grounded in Kolmogorov complexity, approximated via language model generation probabilities. This quantification measures both how far the current reasoning is from the answer and how well it addresses the question. To optimize reasoning under these bidirectional signals, we adopt a multi-objective reinforcement learning framework with a cascading reward structure that emphasizes early trajectory alignment. Empirical results on seven question answering benchmarks demonstrate that Bi-RAR surpasses previous methods and enables efficient interaction and reasoning with the search engine during training and inference.
-
-**arXiv ID:** 2511.09109
-</details>
-
-<details>
 <summary><strong>Vendor-Aware Industrial Agents: RAG-Enhanced LLMs for Secure On-Premise PLC Code Generation</strong> - Joschka Kersting, Michael Rummel, Gesa Benndorf - [[pdf]](https://arxiv.org/pdf/2511.09122)</summary>
 
 **Abstract:** Programmable Logic Controllers are operated by proprietary code dialects; this makes it challenging to train coding assistants. Current LLMs are trained on large code datasets and are capable of writing IEC 61131-3 compatible code out of the box, but they neither know specific function blocks, nor related project code. Moreover, companies like Mitsubishi Electric and their customers do not trust cloud providers. Hence, an own coding agent is the desired solution to cope with this. In this study, we present our work on a low-data domain coding assistant solution for industrial use. We show how we achieved high quality code generation without fine-tuning large models and by fine-tuning small local models for edge device usage. Our tool lets several AI models compete with each other, uses reasoning, corrects bugs automatically and checks code validity by compiling it directly in the chat interface. We support our approach with an extensive evaluation that comes with code compilation statistics and user ratings. We found that a Retrieval-Augmented Generation (RAG) supported coding assistant can work in low-data domains by using extensive prompt engineering and directed retrieval.
 
 **arXiv ID:** 2511.09122
+</details>
+
+<details>
+<summary><strong>Thinking Forward and Backward: Multi-Objective Reinforcement Learning for Retrieval-Augmented Reasoning</strong> - Wenda Wei, Yu-An Liu, Ruqing Zhang, Jiafeng Guo, Lixin Su, Shuaiqiang Wang, Dawei Yin, Maarten de Rijke, Xueqi Cheng - [[pdf]](https://arxiv.org/pdf/2511.09109)</summary>
+
+**Abstract:** Retrieval-augmented generation (RAG) has proven to be effective in mitigating hallucinations in large language models, yet its effectiveness remains limited in complex, multi-step reasoning scenarios. Recent efforts have incorporated search-based interactions into RAG, enabling iterative reasoning with real-time retrieval. Most approaches rely on outcome-based supervision, offering no explicit guidance for intermediate steps. This often leads to reward hacking and degraded response quality. We propose Bi-RAR, a novel retrieval-augmented reasoning framework that evaluates each intermediate step jointly in both forward and backward directions. To assess the information completeness of each step, we introduce a bidirectional information distance grounded in Kolmogorov complexity, approximated via language model generation probabilities. This quantification measures both how far the current reasoning is from the answer and how well it addresses the question. To optimize reasoning under these bidirectional signals, we adopt a multi-objective reinforcement learning framework with a cascading reward structure that emphasizes early trajectory alignment. Empirical results on seven question answering benchmarks demonstrate that Bi-RAR surpasses previous methods and enables efficient interaction and reasoning with the search engine during training and inference.
+
+**arXiv ID:** 2511.09109
 </details>
 
 <details>
