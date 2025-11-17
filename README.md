@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-14 02:50:25
+**Last Updated:** 2025-11-17 02:12:49
 
 **Total Papers:** 47
 
@@ -213,7 +213,7 @@ Using the concept of Markov entanglement, we proved that a widely-used class of 
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (2 papers)</h2></summary>
+<summary><h2>Other Agent Research (3 papers)</h2></summary>
 
 <details>
 <summary><strong>Balancing Centralized Learning and Distributed Self-Organization: A Hybrid Model for Embodied Morphogenesis</strong> - Takehiro Ishikawa - [[pdf]](https://arxiv.org/pdf/2511.10101)</summary>
@@ -231,10 +231,18 @@ Using the concept of Markov entanglement, we proved that a widely-used class of 
 **arXiv ID:** 2508.05294
 </details>
 
+<details>
+<summary><strong>MSGNav: Unleashing the Power of Multi-modal 3D Scene Graph for Zero-Shot Embodied Navigation</strong> - Xun Huang, Shijia Zhao, Yunxiang Wang, Xin Lu, Wanfa Zhang, Rongsheng Qu, Weixin Li, Yunhong Wang, Chenglu Wen - [[pdf]](https://arxiv.org/pdf/2511.10376)</summary>
+
+**Abstract:** Embodied navigation is a fundamental capability for robotic agents operating. Real-world deployment requires open vocabulary generalization and low training overhead, motivating zero-shot methods rather than task-specific RL training. However, existing zero-shot methods that build explicit 3D scene graphs often compress rich visual observations into text-only relations, leading to high construction cost, irreversible loss of visual evidence, and constrained vocabularies. To address these limitations, we introduce the Multi-modal 3D Scene Graph (M3DSG), which preserves visual cues by replacing textual relation
+
+**arXiv ID:** 2511.10376
+</details>
+
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (23 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (22 papers)</h2></summary>
 
 <details>
 <summary><strong>Beyond Single-Step Updates: Reinforcement Learning of Heuristics with Limited-Horizon Search</strong> - Gal Hadar, Forest Agostinelli, Shahaf S. Shperberg - [[pdf]](https://arxiv.org/pdf/2511.10264)</summary>
@@ -261,6 +269,14 @@ Using the concept of Markov entanglement, we proved that a widely-used class of 
 </details>
 
 <details>
+<summary><strong>EEGAgent: A Unified Framework for Automated EEG Analysis Using Large Language Models</strong> - Sha Zhao, Mingyi Peng, Haiteng Jiang, Tao Li, Shijian Li, Gang Pan - [[pdf]](https://arxiv.org/pdf/2511.09947)</summary>
+
+**Abstract:** Scalable and generalizable analysis of brain activity is essential for advancing both clinical diagnostics and cognitive research. Electroencephalography (EEG), a non-invasive modality with high temporal resolution, has been widely used for brain states analysis. However, most existing EEG models are usually tailored for individual specific tasks, limiting their utility in realistic scenarios where EEG analysis often involves multi-task and continuous reasoning. In this work, we introduce EEGAgent, a general-purpose framework that leverages large language models (LLMs) to schedule and plan multiple tools to automatically complete EEG-related tasks. EEGAgent is capable of performing the key functions: EEG basic information perception, spatiotemporal EEG exploration, EEG event detection, interaction with users, and EEG report generation. To realize these capabilities, we design a toolbox composed of different tools for EEG preprocessing, feature extraction, event detection, etc. These capabilities were evaluated on public datasets, and our EEGAgent can support flexible and interpretable EEG analysis, highlighting its potential for real-world clinical applications.
+
+**arXiv ID:** 2511.09947
+</details>
+
+<details>
 <summary><strong>SEBA: Sample-Efficient Black-Box Attacks on Visual Reinforcement Learning</strong> - Tairan Huang, Yulin Jin, Junxu Liu, Qingqing Ye, Haibo Hu - [[pdf]](https://arxiv.org/pdf/2511.09681)</summary>
 
 **Abstract:** Visual reinforcement learning has achieved remarkable progress in visual control and robotics, but its vulnerability to adversarial perturbations remains underexplored. Most existing black-box attacks focus on vector-based or discrete-action RL, and their effectiveness on image-based continuous control is limited by the large action space and excessive environment queries. We propose SEBA, a sample-efficient framework for black-box adversarial attacks on visual RL agents. SEBA integrates a shadow Q model that estimates cumulative rewards under adversarial conditions, a generative adversarial network that produces visually imperceptible perturbations, and a world model that simulates environment dynamics to reduce real-world queries. Through a two-stage iterative training procedure that alternates between learning the shadow model and refining the generator, SEBA achieves strong attack performance while maintaining efficiency. Experiments on MuJoCo and Atari benchmarks show that SEBA significantly reduces cumulative rewards, preserves visual fidelity, and greatly decreases environment interactions compared to prior black-box and white-box methods.
@@ -276,14 +292,6 @@ We evaluated QME on three datasets, each limited to 100 samples. We use Soft-Act
 We further investigate the $\Delta$-hyperbolicity of our framework, a geometric property of the state space known to be important for the RL training efficacy. The QME-embedded states exhibit low $\Delta$-hyperbolicity, suggesting that the improvement after embedding arises from the modified geometry of the state space induced by QME. Thus, the low $\Delta$-hyperbolicity and the corresponding effectiveness of QME could provide valuable information for developing efficient offline RL methods under limited-sample conditions.
 
 **arXiv ID:** 2511.10187
-</details>
-
-<details>
-<summary><strong>EEGAgent: A Unified Framework for Automated EEG Analysis Using Large Language Models</strong> - Sha Zhao, Mingyi Peng, Haiteng Jiang, Tao Li, Shijian Li, Gang Pan - [[pdf]](https://arxiv.org/pdf/2511.09947)</summary>
-
-**Abstract:** Scalable and generalizable analysis of brain activity is essential for advancing both clinical diagnostics and cognitive research. Electroencephalography (EEG), a non-invasive modality with high temporal resolution, has been widely used for brain states analysis. However, most existing EEG models are usually tailored for individual specific tasks, limiting their utility in realistic scenarios where EEG analysis often involves multi-task and continuous reasoning. In this work, we introduce EEGAgent, a general-purpose framework that leverages large language models (LLMs) to schedule and plan multiple tools to automatically complete EEG-related tasks. EEGAgent is capable of performing the key functions: EEG basic information perception, spatiotemporal EEG exploration, EEG event detection, interaction with users, and EEG report generation. To realize these capabilities, we design a toolbox composed of different tools for EEG preprocessing, feature extraction, event detection, etc. These capabilities were evaluated on public datasets, and our EEGAgent can support flexible and interpretable EEG analysis, highlighting its potential for real-world clinical applications.
-
-**arXiv ID:** 2511.09947
 </details>
 
 <details>
@@ -311,19 +319,19 @@ We further investigate the $\Delta$-hyperbolicity of our framework, a geometric 
 </details>
 
 <details>
+<summary><strong>An Efficient Training Pipeline for Reasoning Graphical User Interface Agents</strong> - Georgios Pantazopoulos, Eda B. Özyiğit - [[pdf]](https://arxiv.org/pdf/2511.08172)</summary>
+
+**Abstract:** Visual grounding is the task of localising image regions from natural language queries and is critical for reasoning capable Graphical User Interface agents. Many existing methods rely on massive, noisy synthetic datasets. This work introduces an efficient training pipeline that combines model-based data filtering with parameter-efficient fine-tuning. From 4.8M synthetic examples, 12K clean and diverse instances are curated by first identifying challenging cases, removing misaligned and then selecting a diverse set of multimodal instances. On this data, a 3B-parameter Vision-Language Model is trained under three regimes: supervised fine-tuning, chain-of-thought-augmented fine-tuning, and reinforcement learning via Group Relative Policy Optimization. Models trained with the filtered data and lightweight training strategies match or surpass larger baselines on benchmarks such as ScreenSpot, Multimodal-Mind2Web, and AndroidControl. These results demonstrate that principled data curation and robust adaptation can rival large-scale training, enabling compact yet capable multimodal reasoning agents.
+
+**arXiv ID:** 2511.08172
+</details>
+
+<details>
 <summary><strong>Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning</strong> - Shenzhi Wang, Le Yu, Chang Gao, Chujie Zheng, Shixuan Liu, Rui Lu, Kai Dang, Xionghui Chen, Jianxin Yang, Zhenru Zhang, Yuqiong Liu, An Yang, Andrew Zhao, Yang Yue, Shiji Song, Bowen Yu, Gao Huang, Junyang Lin - [[pdf]](https://arxiv.org/pdf/2506.01939)</summary>
 
 **Abstract:** Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a powerful approach to enhancing the reasoning capabilities of Large Language Models (LLMs), while its mechanisms are not yet well understood. In this work, we undertake a pioneering exploration of RLVR through the novel perspective of token entropy patterns, comprehensively analyzing how different tokens influence reasoning performance. By examining token entropy patterns in Chain-of-Thought (CoT) reasoning, we observe that only a small fraction of tokens exhibit high entropy, and these tokens act as critical forks that steer the model toward diverse reasoning pathways. Furthermore, studying how entropy patterns evolve during RLVR training reveals that RLVR largely adheres to the base model's entropy patterns, primarily adjusting the entropy of high-entropy tokens. These findings highlight the significance of high-entropy tokens (i.e., forking tokens) to RLVR. We ultimately improve RLVR by restricting policy gradient updates to forking tokens and uncover a finding even beyond the 80/20 rule: utilizing only 20% of the tokens while maintaining performance comparable to full-gradient updates on the Qwen3-8B base model and significantly surpassing full-gradient updates on the Qwen3-32B (+11.04 on AIME'25 and +7.71 on AIME'24) and Qwen3-14B (+4.79 on AIME'25 and +5.21 on AIME'24) base models, highlighting a strong scaling trend. In contrast, training exclusively on the 80% lowest-entropy tokens leads to a marked decline in performance. These findings indicate that the efficacy of RLVR primarily arises from optimizing the high-entropy tokens that decide reasoning directions. Collectively, our results highlight the potential to understand RLVR through a token-entropy perspective and optimize RLVR by leveraging high-entropy minority tokens to further improve LLM reasoning.
 
 **arXiv ID:** 2506.01939
-</details>
-
-<details>
-<summary><strong>An Efficient Training Pipeline for Reasoning Graphical User Interface Agents</strong> - Georgios Pantazopoulos, Eda B. Özyiğit - [[pdf]](https://arxiv.org/pdf/2511.08172)</summary>
-
-**Abstract:** Visual grounding is the task of localising image regions from natural language queries and is critical for reasoning capable Graphical User Interface agents. Many existing methods rely on massive, noisy synthetic this http URL work introduces an efficient training pipeline that combines model-based data filtering with parameter-efficient fine-tuning. From 4.8M synthetic examples, 12K clean and diverse instances are curated by first identifying challenging cases, removing misaligned and then selecting a diverse set of multimodal instances. On this data, a 3B-parameter Vision-Language Model is trained under three regimes: supervised fine-tuning, chain-of-thought-augmented fine-tuning, and reinforcement learning via Group Relative Policy Optimization. Models trained with the filtered data and lightweight training strategies match or surpass larger baselines on benchmarks such as ScreenSpot, Multimodal-Mind2Web, and AndroidControl. These results demonstrate that principled data curation and robust adaptation can rival large-scale training, enabling compact yet capable multimodal reasoning agents.
-
-**arXiv ID:** 2511.08172
 </details>
 
 <details>
@@ -335,19 +343,19 @@ We further investigate the $\Delta$-hyperbolicity of our framework, a geometric 
 </details>
 
 <details>
-<summary><strong>Rectify Evaluation Preference: Improving LLMs' Critique on Math Reasoning via Perplexity-aware Reinforcement Learning</strong> - Changyuan Tian, Zhicong Lu, Shuang Qian, Nayu Liu, Peiguang Li, Li Jin, Leiyi Hu, Zhizhao Zeng, Sirui Wang, Ke Zeng, Zhi Guo - [[pdf]](https://arxiv.org/pdf/2511.10303)</summary>
-
-**Abstract:** To improve Multi-step Mathematical Reasoning (MsMR) of Large Language Models (LLMs), it is crucial to obtain scalable supervision from the corpus by automatically critiquing mistakes in the reasoning process of MsMR and rendering a final verdict of the problem-solution. Most existing methods rely on crafting high-quality supervised fine-tuning demonstrations for critiquing capability enhancement and pay little attention to delving into the underlying reason for the poor critiquing performance of LLMs. In this paper, we orthogonally quantify and investigate the potential reason -- imbalanced evaluation preference, and conduct a statistical preference analysis. Motivated by the analysis of the reason, a novel perplexity-aware reinforcement learning algorithm is proposed to rectify the evaluation preference, elevating the critiquing capability. Specifically, to probe into LLMs' critiquing characteristics, a One-to-many Problem-Solution (OPS) benchmark is meticulously constructed to quantify the behavior difference of LLMs when evaluating the problem solutions generated by itself and others. Then, to investigate the behavior difference in depth, we conduct a statistical preference analysis oriented on perplexity and find an intriguing phenomenon -- ``LLMs incline to judge solutions with lower perplexity as correct'', which is dubbed as \textit{imbalanced evaluation preference}. To rectify this preference, we regard perplexity as the baton in the algorithm of Group Relative Policy Optimization, supporting the LLMs to explore trajectories that judge lower perplexity as wrong and higher perplexity as correct. Extensive experimental results on our built OPS and existing available critic benchmarks demonstrate the validity of our method.
-
-**arXiv ID:** 2511.10303
-</details>
-
-<details>
 <summary><strong>HierRouter: Coordinated Routing of Specialized Large Language Models via Reinforcement Learning</strong> - Nikunj Gupta, Bill Guo, Rajgopal Kannan, Viktor K. Prasanna - [[pdf]](https://arxiv.org/pdf/2511.09873)</summary>
 
 **Abstract:** Large Language Models (LLMs) deliver state-of-the-art performance across many tasks but impose high computational and memory costs, limiting their deployment in resource-constrained or real-time settings. To address this, we propose HierRouter, a hierarchical routing approach that dynamically assembles inference pipelines from a pool of specialized, lightweight language models. Formulated as a finite-horizon Markov Decision Process (MDP), our approach trains a Proximal Policy Optimization (PPO)-based reinforcement learning agent to iteratively select which models to invoke at each stage of multi-hop inference. The agent conditions on the evolving context and accumulated cost to make context-aware routing decisions. Experiments with three open-source candidate LLMs across six benchmarks, including QA, code generation, and mathematical reasoning, show that HierRouter improves response quality by up to 2.4x compared to using individual models independently, while incurring only a minimal additional inference cost on average. These results highlight the promise of hierarchical routing for cost-efficient, high-performance LLM inference. All codes can be found here this https URL Nikunj-Gupta/hierouter.
 
 **arXiv ID:** 2511.09873
+</details>
+
+<details>
+<summary><strong>Rectify Evaluation Preference: Improving LLMs' Critique on Math Reasoning via Perplexity-aware Reinforcement Learning</strong> - Changyuan Tian, Zhicong Lu, Shuang Qian, Nayu Liu, Peiguang Li, Li Jin, Leiyi Hu, Zhizhao Zeng, Sirui Wang, Ke Zeng, Zhi Guo - [[pdf]](https://arxiv.org/pdf/2511.10303)</summary>
+
+**Abstract:** To improve Multi-step Mathematical Reasoning (MsMR) of Large Language Models (LLMs), it is crucial to obtain scalable supervision from the corpus by automatically critiquing mistakes in the reasoning process of MsMR and rendering a final verdict of the problem-solution. Most existing methods rely on crafting high-quality supervised fine-tuning demonstrations for critiquing capability enhancement and pay little attention to delving into the underlying reason for the poor critiquing performance of LLMs. In this paper, we orthogonally quantify and investigate the potential reason -- imbalanced evaluation preference, and conduct a statistical preference analysis. Motivated by the analysis of the reason, a novel perplexity-aware reinforcement learning algorithm is proposed to rectify the evaluation preference, elevating the critiquing capability. Specifically, to probe into LLMs' critiquing characteristics, a One-to-many Problem-Solution (OPS) benchmark is meticulously constructed to quantify the behavior difference of LLMs when evaluating the problem solutions generated by itself and others. Then, to investigate the behavior difference in depth, we conduct a statistical preference analysis oriented on perplexity and find an intriguing phenomenon -- ``LLMs incline to judge solutions with lower perplexity as correct'', which is dubbed as \textit{imbalanced evaluation preference}. To rectify this preference, we regard perplexity as the baton in the algorithm of Group Relative Policy Optimization, supporting the LLMs to explore trajectories that judge lower perplexity as wrong and higher perplexity as correct. Extensive experimental results on our built OPS and existing available critic benchmarks demonstrate the validity of our method.
+
+**arXiv ID:** 2511.10303
 </details>
 
 <details>
@@ -404,14 +412,6 @@ We further investigate the $\Delta$-hyperbolicity of our framework, a geometric 
 **Abstract:** Double Reinforcement Learning (DRL) enables efficient inference for policy values in nonparametric Markov decision processes (MDPs), but existing methods face two major obstacles: (1) they require stringent intertemporal overlap conditions on state trajectories, and (2) they rely on estimating high-dimensional occupancy density ratios. Motivated by problems in long-term causal inference, we extend DRL to a semiparametric setting and develop doubly robust, automatic estimators for general linear functionals of the Q-function in infinite-horizon, time-homogeneous MDPs. By imposing structure on the Q-function, we relax the overlap conditions required by nonparametric methods and obtain efficiency gains. The second obstacle--density-ratio estimation--typically requires computationally expensive and unstable min-max optimization. To address both challenges, we introduce superefficient nonparametric estimators whose limiting variance falls below the generalized Cramer-Rao bound. These estimators treat the Q-function as a one-dimensional summary of the state-action process, reducing high-dimensional overlap requirements to a single-dimensional condition. The procedure is simple to implement: estimate and calibrate the Q-function using fitted Q-iteration, then plug the result into the target functional, thereby avoiding density-ratio estimation altogether.
 
 **arXiv ID:** 2501.06926
-</details>
-
-<details>
-<summary><strong>MSGNav: Unleashing the Power of Multi-modal 3D Scene Graph for Zero-Shot Embodied Navigation</strong> - Xun Huang, Shijia Zhao, Yunxiang Wang, Xin Lu, Wanfa Zhang, Rongsheng Qu, Weixin Li, Yunhong Wang, Chenglu Wen - [[pdf]](https://arxiv.org/pdf/2511.10376)</summary>
-
-**Abstract:** Embodied navigation is a fundamental capability for robotic agents operating. Real-world deployment requires open vocabulary generalization and low training overhead, motivating zero-shot methods rather than task-specific RL training. However, existing zero-shot methods that build explicit 3D scene graphs often compress rich visual observations into text-only relations, leading to high construction cost, irreversible loss of visual evidence, and constrained vocabularies. To address these limitations, we introduce the Multi-modal 3D Scene Graph (M3DSG), which preserves visual cues by replacing textual relational edges with dynamically assigned images. Built on M3DSG, we propose MSGNav, a zero-shot navigation system that includes a Key Subgraph Selection module for efficient reasoning, an Adaptive Vocabulary Update module for open vocabulary support, and a Closed-Loop Reasoning module for accurate exploration reasoning. Additionally, we further identify the last-mile problem in zero-shot navigation - determining the feasible target location with a suitable final viewpoint, and propose a Visibility-based Viewpoint Decision module to explicitly resolve it. Comprehensive experimental results demonstrate that MSGNav achieves state-of-the-art performance on GOAT-Bench and HM3D-OVON datasets. The open-source code will be publicly available.
-
-**arXiv ID:** 2511.10376
 </details>
 
 <details>
