@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-17 02:52:20
+**Last Updated:** 2025-11-18 02:09:07
 
 **Total Papers:** 68
 
@@ -225,19 +225,19 @@ We evaluate UFO$^3$ on NebulaBench, a benchmark of 55 cross-device tasks across 
 </details>
 
 <details>
-<summary><strong>Robust and Efficient Communication in Multi-Agent Reinforcement Learning</strong> - Zejiao Liu, Yi Li, Jiali Wang, Junqi Tu, Yitian Hong, Fangfei Li, Yang Liu, Toshiharu Sugawara, Yang Tang - [[pdf]](https://arxiv.org/pdf/2511.11393)</summary>
-
-**Abstract:** Multi-agent reinforcement learning (MARL) has made significant strides in enabling coordinated behaviors among autonomous agents. However, most existing approaches assume that communication is instantaneous, reliable, and has unlimited bandwidth; these conditions are rarely met in real-world deployments. This survey systematically reviews recent advances in robust and efficient communication strategies for MARL under realistic constraints, including message perturbations, transmission delays, and limited bandwidth. Furthermore, because the challenges of low-latency reliability, bandwidth-intensive data sharing, and communication-privacy trade-offs are central to practical MARL systems, we focus on three applications involving cooperative autonomous driving, distributed simultaneous localization and mapping, and federated learning. Finally, we identify key open challenges and future research directions, advocating a unified approach that co-designs communication, learning, and robustness to bridge the gap between theoretical MARL models and practical implementations.
-
-**arXiv ID:** 2511.11393
-</details>
-
-<details>
 <summary><strong>MarsRL: Advancing Multi-Agent Reasoning System via Reinforcement Learning with Agentic Pipeline Parallelism</strong> - Shulin Liu, Dong Du, Tao Yang, Yang Li, Boyu Qiu - [[pdf]](https://arxiv.org/pdf/2511.11373)</summary>
 
 **Abstract:** Recent progress in large language models (LLMs) has been propelled by reinforcement learning with verifiable rewards (RLVR) and test-time scaling. However, the limited output length of LLMs constrains the depth of reasoning attainable in a single inference process. Multi-agent reasoning systems offer a promising alternative by employing multiple agents including Solver, Verifier, and Corrector, to iteratively refine solutions. While effective in closed-source models like Gemini 2.5 Pro, they struggle to generalize to open-source models due to insufficient critic and correction capabilities. To address this, we propose MarsRL, a novel reinforcement learning framework with agentic pipeline parallelism, designed to jointly optimize all agents in the system. MarsRL introduces agent-specific reward mechanisms to mitigate reward noise and employs pipeline-inspired training to enhance efficiency in handling long trajectories. Applied to Qwen3-30B-A3B-Thinking-2507, MarsRL improves AIME2025 accuracy from 86.5% to 93.3% and BeyondAIME from 64.9% to 73.8%, even surpassing Qwen3-235B-A22B-Thinking-2507. These findings highlight the potential of MarsRL to advance multi-agent reasoning systems and broaden their applicability across diverse reasoning tasks.
 
 **arXiv ID:** 2511.11373
+</details>
+
+<details>
+<summary><strong>Robust and Efficient Communication in Multi-Agent Reinforcement Learning</strong> - Zejiao Liu, Yi Li, Jiali Wang, Junqi Tu, Yitian Hong, Fangfei Li, Yang Liu, Toshiharu Sugawara, Yang Tang - [[pdf]](https://arxiv.org/pdf/2511.11393)</summary>
+
+**Abstract:** Multi-agent reinforcement learning (MARL) has made significant strides in enabling coordinated behaviors among autonomous agents. However, most existing approaches assume that communication is instantaneous, reliable, and has unlimited bandwidth; these conditions are rarely met in real-world deployments. This survey systematically reviews recent advances in robust and efficient communication strategies for MARL under realistic constraints, including message perturbations, transmission delays, and limited bandwidth. Furthermore, because the challenges of low-latency reliability, bandwidth-intensive data sharing, and communication-privacy trade-offs are central to practical MARL systems, we focus on three applications involving cooperative autonomous driving, distributed simultaneous localization and mapping, and federated learning. Finally, we identify key open challenges and future research directions, advocating a unified approach that co-designs communication, learning, and robustness to bridge the gap between theoretical MARL models and practical implementations.
+
+**arXiv ID:** 2511.11393
 </details>
 
 <details>
@@ -257,19 +257,19 @@ We evaluate UFO$^3$ on NebulaBench, a benchmark of 55 cross-device tasks across 
 </details>
 
 <details>
-<summary><strong>AirCopBench: A Benchmark for Multi-drone Collaborative Embodied Perception and Reasoning</strong> - Jirong Zha, Yuxuan Fan, Tianyu Zhang, Geng Chen, Yingfeng Chen, Chen Gao, Xinlei Chen - [[pdf]](https://arxiv.org/pdf/2511.11025)</summary>
-
-**Abstract:** Multimodal Large Language Models (MLLMs) have shown promise in single-agent vision tasks, yet benchmarks for evaluating multi-agent collaborative perception remain scarce. This gap is critical, as multi-drone systems provide enhanced coverage, robustness, and collaboration compared to single-sensor setups. Existing multi-image benchmarks mainly target basic perception tasks using high-quality single-agent images, thus failing to evaluate MLLMs in more complex, egocentric collaborative scenarios, especially under real-world degraded perception this http URL address these challenges, we introduce AirCopBench, the first comprehensive benchmark designed to evaluate MLLMs in embodied aerial collaborative perception under challenging perceptual conditions. AirCopBench includes 14.6k+ questions derived from both simulator and real-world data, spanning four key task dimensions: Scene Understanding, Object Understanding, Perception Assessment, and Collaborative Decision, across 14 task types. We construct the benchmark using data from challenging degraded-perception scenarios with annotated collaborative events, generating large-scale questions through model-, rule-, and human-based methods under rigorous quality control. Evaluations on 40 MLLMs show significant performance gaps in collaborative perception tasks, with the best model trailing humans by 24.38% on average and exhibiting inconsistent results across tasks. Fine-tuning experiments further confirm the feasibility of sim-to-real transfer in aerial collaborative perception and reasoning.
-
-**arXiv ID:** 2511.11025
-</details>
-
-<details>
 <summary><strong>Exposing Weak Links in Multi-Agent Systems under Adversarial Prompting</strong> - Nirmit Arora, Sathvik Joel, Ishan Kavathekar, Palak, Rohan Gandhi, Yash Pandya, Tanuja Ganu, Aditya Kanade, Akshay Nambi - [[pdf]](https://arxiv.org/pdf/2511.10949)</summary>
 
 **Abstract:** LLM-based agents are increasingly deployed in multi-agent systems (MAS). As these systems move toward real-world applications, their security becomes paramount. Existing research largely evaluates single-agent security, leaving a critical gap in understanding the vulnerabilities introduced by multi-agent design. However, existing systems fall short due to lack of unified frameworks and metrics focusing on unique rejection modes in MAS. We present SafeAgents, a unified and extensible framework for fine-grained security assessment of MAS. SafeAgents systematically exposes how design choices such as plan construction strategies, inter-agent context sharing, and fallback behaviors affect susceptibility to adversarial prompting. We introduce Dharma, a diagnostic measure that helps identify weak links within multi-agent pipelines. Using SafeAgents, we conduct a comprehensive study across five widely adopted multi-agent architectures (centralized, decentralized, and hybrid variants) on four datasets spanning web tasks, tool use, and code generation. Our findings reveal that common design patterns carry significant vulnerabilities. For example, centralized systems that delegate only atomic instructions to sub-agents obscure harmful objectives, reducing robustness. Our results highlight the need for security-aware design in MAS. Link to code is this https URL
 
 **arXiv ID:** 2511.10949
+</details>
+
+<details>
+<summary><strong>AirCopBench: A Benchmark for Multi-drone Collaborative Embodied Perception and Reasoning</strong> - Jirong Zha, Yuxuan Fan, Tianyu Zhang, Geng Chen, Yingfeng Chen, Chen Gao, Xinlei Chen - [[pdf]](https://arxiv.org/pdf/2511.11025)</summary>
+
+**Abstract:** Multimodal Large Language Models (MLLMs) have shown promise in single-agent vision tasks, yet benchmarks for evaluating multi-agent collaborative perception remain scarce. This gap is critical, as multi-drone systems provide enhanced coverage, robustness, and collaboration compared to single-sensor setups. Existing multi-image benchmarks mainly target basic perception tasks using high-quality single-agent images, thus failing to evaluate MLLMs in more complex, egocentric collaborative scenarios, especially under real-world degraded perception this http URL address these challenges, we introduce AirCopBench, the first comprehensive benchmark designed to evaluate MLLMs in embodied aerial collaborative perception under challenging perceptual conditions. AirCopBench includes 14.6k+ questions derived from both simulator and real-world data, spanning four key task dimensions: Scene Understanding, Object Understanding, Perception Assessment, and Collaborative Decision, across 14 task types. We construct the benchmark using data from challenging degraded-perception scenarios with annotated collaborative events, generating large-scale questions through model-, rule-, and human-based methods under rigorous quality control. Evaluations on 40 MLLMs show significant performance gaps in collaborative perception tasks, with the best model trailing humans by 24.38% on average and exhibiting inconsistent results across tasks. Fine-tuning experiments further confirm the feasibility of sim-to-real transfer in aerial collaborative perception and reasoning.
+
+**arXiv ID:** 2511.11025
 </details>
 
 <details>
@@ -394,7 +394,7 @@ This strategic setting, with agents that want to interconnect and potential atta
 <details>
 <summary><strong>Human-AI collaborative autonomous synthesis with pulsed laser deposition for remote epitaxy</strong> - Asraful Haque, Daniel T. Yimam, Jawad Chowdhury, Ralph Bulanadi, Ivan Vlassiouk, John Lasseter, Sujoy Ghosh, Christopher M. Rouleau, Kai Xiao, Yongtao Liu, Eva Zarkadoula, Rama K. Vasudevan, Sumner B. Harris - [[pdf]](https://arxiv.org/pdf/2511.11558)</summary>
 
-**Abstract:** 
+**Abstract:** Autonomous laboratories typically rely on data-driven decision-making, occasionally with human-in-the-loop oversight to inject domain expertise. Fully leveraging AI agents, however, requires tightly coupled, collaborative workflows spanning hypothesis generation, experimental planning, execution, and interpretation. To address this, we develop and deploy a human-AI collaborative (HAIC) workflow that integrates large language models for hypothesis generation and analysis, with collaborative policy updates driving autonomous pulsed laser deposition (PLD) experiments for remote epitaxy of BaTiO$_3$/graphene. HAIC accelerated the hypothesis formation and experimental design and efficiently mapped the growth space to graphene-damage. In situ Raman spectroscopy reveals that chemistry drives degradation while the highest energy plume components seed defects, identifying a low-O$_2$ pressure low-temperature synthesis window that preserves graphene but is incompatible with optimal BaTiO$_3$ growth. Thus, we show a two-step Ar/O$_2$ deposition is required to exfoliate ferroelectric BaTiO$_3$ while maintaining a monolayer graphene interlayer. HAIC stages human insight with AI reasoning between autonomous batches to drive rapid scientific progress, providing an evolution to many existing human-in-the-loop autonomous workflows.
 
 **arXiv ID:** 2511.11558
 </details>
