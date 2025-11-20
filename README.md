@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-19 02:49:51
+**Last Updated:** 2025-11-20 02:07:02
 
 **Total Papers:** 74
 
@@ -14,7 +14,7 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Agent Applications (3 papers)</h2></summary>
+<summary><h2>Agent Applications (4 papers)</h2></summary>
 
 <details>
 <summary><strong>From Legacy Fortran to Portable Kokkos: An Autonomous Agentic AI Workflow</strong> - Sparsh Gupta, Kamalavasan Kamalakkannan, Maxim Moraru, Galen Shipman, Patrick Diehl - [[pdf]](https://arxiv.org/pdf/2509.12443)</summary>
@@ -27,7 +27,7 @@
 <details>
 <summary><strong>Watchdogs and Oracles: Runtime Verification Meets Large Language Models for Autonomous Systems</strong> - Angelo Ferrando - [[pdf]](https://arxiv.org/pdf/2511.14435)</summary>
 
-**Abstract:** 
+**Abstract:** Assuring the safety and trustworthiness of autonomous systems is particularly difficult when learning-enabled components and open environments are involved. Formal methods provide strong guarantees but depend on complete models and static assumptions. Runtime verification (RV) complements them by monitoring executions at run time and, in its predictive variants, by anticipating potential violations. Large language models (LLMs), meanwhile, excel at translating natural language into formal artefacts and recognising patterns in data, yet they remain error-prone and lack formal guarantees. This vision paper argues for a symbiotic integration of RV and LLMs. RV can serve as a guardrail for LLM-driven autonomy, while LLMs can extend RV by assisting specification capture, supporting anticipatory reasoning, and helping to handle uncertainty. We outline how this mutual reinforcement differs from existing surveys and roadmaps, discuss challenges and certification implications, and identify future research directions towards dependable autonomy.
 
 **arXiv ID:** 2511.14435
 </details>
@@ -40,10 +40,18 @@
 **arXiv ID:** 2507.12215
 </details>
 
+<details>
+<summary><strong>Safe-ROS: An Architecture for Autonomous Robots in Safety-Critical Domains</strong> - Diana C. Benjumea, Marie Farrell, Louise A. Dennis - [[pdf]](https://arxiv.org/pdf/2511.14433)</summary>
+
+**Abstract:** Deploying autonomous robots in safety-critical domains requires architectures that ensure operational effectiveness and safety compliance. In this paper, we contribute the Safe-ROS architecture for developing reliable and verifiable autonomous robots in such domains. It features two distinct subsystems: (1) an intelligent control system that is responsible for normal/routine operations, and (2) a Safety System consisting of Safety Instrumented Functions (SIFs) that provide formally verifiable independent oversight. We demonstrate Safe-ROS on an AgileX Scout Mini robot performing autonomous inspection in a nuclear environment. One safety requirement is selected and instantiated as a SIF. To support verification, we implement the SIF as a cognitive agent, programmed to stop the robot whenever it detects that it is too close to an obstacle. We verify that the agent meets the safety requirement and integrate it into the autonomous inspection. This integration is also verified, and the full deployment is validated in a Gazebo simulation, and lab testing. We evaluate this architecture in the context of the UK nuclear sector, where safety and regulation are crucial aspects of deployment. Success criteria include the development of a formal property from the safety requirement, implementation, and verification of the SIF, and the integration of the SIF into the operational robotic autonomous system. Our results demonstrate that the  Safe-ROS architecture can provide safety verifiable oversight while deploying autonomous robots in safety-critical domains, offering a robust framework that can be extended to additional requirements and various applications.
+
+**arXiv ID:** 2511.14433
+</details>
+
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (13 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (12 papers)</h2></summary>
 
 <details>
 <summary><strong>Jailbreaking Large Vision Language Models in Intelligent Transportation Systems</strong> - Badhan Chandra Das, Md Tasnim Jawad, Md Jueal Mia, M. Hadi Amini, Yanzhao Wu - [[pdf]](https://arxiv.org/pdf/2511.13892)</summary>
@@ -107,14 +115,6 @@
 **Abstract:** We introduce RynnEC, a video multimodal large language model designed for embodied cognition. Built upon a general-purpose vision-language foundation model, RynnEC incorporates a region encoder and a mask decoder, enabling flexible region-level video interaction. Despite its compact architecture, RynnEC achieves state-of-the-art performance in object property understanding, object segmentation, and spatial reasoning. Conceptually, it offers a region-centric video paradigm for the brain of embodied agents, providing fine-grained perception of the physical world and enabling more precise interactions. To mitigate the scarcity of annotated 3D datasets, we propose an egocentric video based pipeline for generating embodied cognition data. Furthermore, we introduce RynnEC-Bench, a region-centered benchmark for evaluating embodied cognitive capabilities. We anticipate that RynnEC will advance the development of general-purpose cognitive cores for embodied agents and facilitate generalization across diverse embodied tasks. The code, model checkpoints, and benchmark are available at: this https URL
 
 **arXiv ID:** 2508.14160
-</details>
-
-<details>
-<summary><strong>MedBench v4: A Robust and Scalable Benchmark for Evaluating Chinese Medical Language Models, Multimodal Models, and Intelligent Agents</strong> - Jinru Ding, Lu Lu, Chao Ding, Mouxiao Bian, Jiayuan Chen, Renjie Lu, Wenrao Pang, Xiaoqin Wu, Zhiqiang Liu, Luyi Jiang, Bing Han, Yunqiu Wang, Jie Xu - [[pdf]](https://arxiv.org/pdf/2511.14439)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2511.14439
 </details>
 
 <details>
@@ -368,15 +368,7 @@ We evaluated the prototype with the same experts using System Usability Scale(SU
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (11 papers)</h2></summary>
-
-<details>
-<summary><strong>Randomized Controlled Trials for Conditional Access Optimization Agent</strong> - James Bono, Beibei Cheng, Joaquin Lozano - [[pdf]](https://arxiv.org/pdf/2511.13865)</summary>
-
-**Abstract:** AI agents are increasingly deployed to automate complex enterprise workflows, yet evidence of their effectiveness in identity governance is limited. We report results from the first randomized controlled trial (RCT) evaluating an AI agent for Conditional Access (CA) policy management in Microsoft Entra. The agent assists with four high-value tasks: policy merging, Zero-Trust baseline gap detection, phased rollout planning, and user-policy alignment. In a production-grade environment, 162 identity administrators were randomly assigned to a control group (no agent) or treatment group (agent-assisted) and asked to perform these tasks. Agent access produced substantial gains: accuracy improved by 48% and task completion time decreased by 43% while holding accuracy constant. The largest benefits emerged on cognitively demanding tasks such as baseline gap detection. These findings demonstrate that purpose-built AI agents can significantly enhance both speed and accuracy in identity administration.
-
-**arXiv ID:** 2511.13865
-</details>
+<summary><h2>Other Agent Research (10 papers)</h2></summary>
 
 <details>
 <summary><strong>Randomized Controlled Trials for Phishing Triage Agent</strong> - James Bono - [[pdf]](https://arxiv.org/pdf/2511.13860)</summary>
@@ -384,6 +376,14 @@ We evaluated the prototype with the same experts using System Usability Scale(SU
 **Abstract:** Security operations centers (SOCs) face a persistent challenge: efficiently triaging a high volume of user-reported phishing emails while maintaining robust protection against threats. This paper presents the first randomized controlled trial (RCT) evaluating the impact of a domain-specific AI agent - the Microsoft Security Copilot Phishing Triage Agent - on analyst productivity and accuracy. Our results demonstrate that agent-augmented analysts achieved up to 6.5 times as many true positives per analyst minute and a 77% improvement in verdict accuracy compared to a control group. The agent's queue prioritization and verdict explanations were both significant drivers of efficiency. Behavioral analysis revealed that agent-augmented analysts reallocated their attention, spending 53% more time on malicious emails, and were not prone to rubber-stamping the agent's malicious verdicts. These findings offer actionable insights for SOC leaders considering AI adoption, including the potential for agents to fundamentally change the optimal allocation of SOC resources.
 
 **arXiv ID:** 2511.13860
+</details>
+
+<details>
+<summary><strong>Randomized Controlled Trials for Conditional Access Optimization Agent</strong> - James Bono, Beibei Cheng, Joaquin Lozano - [[pdf]](https://arxiv.org/pdf/2511.13865)</summary>
+
+**Abstract:** AI agents are increasingly deployed to automate complex enterprise workflows, yet evidence of their effectiveness in identity governance is limited. We report results from the first randomized controlled trial (RCT) evaluating an AI agent for Conditional Access (CA) policy management in Microsoft Entra. The agent assists with four high-value tasks: policy merging, Zero-Trust baseline gap detection, phased rollout planning, and user-policy alignment. In a production-grade environment, 162 identity administrators were randomly assigned to a control group (no agent) or treatment group (agent-assisted) and asked to perform these tasks. Agent access produced substantial gains: accuracy improved by 48% and task completion time decreased by 43% while holding accuracy constant. The largest benefits emerged on cognitively demanding tasks such as baseline gap detection. These findings demonstrate that purpose-built AI agents can significantly enhance both speed and accuracy in identity administration.
+
+**arXiv ID:** 2511.13865
 </details>
 
 <details>
@@ -450,18 +450,10 @@ We evaluated the prototype with the same experts using System Usability Scale(SU
 **arXiv ID:** 2511.11587
 </details>
 
-<details>
-<summary><strong>Safe-ROS: An Architecture for Autonomous Robots in Safety-Critical Domains</strong> - Diana C. Benjumea, Marie Farrell, Louise A. Dennis - [[pdf]](https://arxiv.org/pdf/2511.14433)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2511.14433
-</details>
-
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (22 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (23 papers)</h2></summary>
 
 <details>
 <summary><strong>When AI Does Science: Evaluating the Autonomous AI Scientist KOSMOS in Radiation Biology</strong> - Humza Nusrat, Omar Nusrat - [[pdf]](https://arxiv.org/pdf/2511.13825)</summary>
@@ -527,6 +519,14 @@ To the best of our knowledge, this is the first work to systematically analyze p
 **Abstract:** Multi-objective reinforcement learning (MORL) aims to optimize policies in the presence of conflicting objectives, where linear scalarization is commonly used to reduce vector-valued returns into scalar signals. While effective for certain preferences, this approach cannot capture fairness-oriented goals such as Nash social welfare or max-min fairness, which require nonlinear and non-additive trade-offs. Although several online algorithms have been proposed for specific fairness objectives, a unified approach for optimizing nonlinear welfare criteria in the offline setting-where learning must proceed from a fixed dataset-remains unexplored. In this work, we present FairDICE, the first offline MORL framework that directly optimizes nonlinear welfare objective. FairDICE leverages distribution correction estimation to jointly account for welfare maximization and distributional regularization, enabling stable and sample-efficient learning without requiring explicit preference weights or exhaustive weight search. Across multiple offline benchmarks, FairDICE demonstrates strong fairness-aware performance compared to existing baselines.
 
 **arXiv ID:** 2506.08062
+</details>
+
+<details>
+<summary><strong>MedBench v4: A Robust and Scalable Benchmark for Evaluating Chinese Medical Language Models, Multimodal Models, and Intelligent Agents</strong> - Jinru Ding, Lu Lu, Chao Ding, Mouxiao Bian, Jiayuan Chen, Renjie Lu, Wenrao Pang, Xiaoqin Wu, Zhiqiang Liu, Luyi Jiang, Bing Han, Yunqiu Wang, Jie Xu - [[pdf]](https://arxiv.org/pdf/2511.14439)</summary>
+
+**Abstract:** Recent advances in medical large language models (LLMs), multimodal models, and agents demand evaluation frameworks that reflect real clinical workflows and safety constraints. We present MedBench v4, a nationwide, cloud-based benchmarking infrastructure comprising over 700,000 expert-curated tasks spanning 24 primary and 91 secondary specialties, with dedicated tracks for LLMs, multimodal models, and agents. Items undergo multi-stage refinement and multi-round review by clinicians from more than 500 institutions, and open-ended responses are scored by an LLM-as-a-judge calibrated to human ratings. We evaluate 15 frontier models. Base LLMs reach a mean overall score of 54.1/100 (best: Claude Sonnet 4.5, 62.5/100), but safety and ethics remain low (18.4/100). Multimodal models perform worse overall (mean 47.5/100; best: GPT-5, 54.9/100), with solid perception yet weaker cross-modal reasoning. Agents built on the same backbones substantially improve end-to-end performance (mean 79.8/100), with Claude Sonnet 4.5-based agents achieving up to 85.3/100 overall and 88.9/100 on safety tasks. MedBench v4 thus reveals persisting gaps in multimodal reasoning and safety for base models, while showing that governance-aware agentic orchestration can markedly enhance benchmarked clinical readiness without sacrificing capability. By aligning tasks with Chinese clinical guidelines and regulatory priorities, the platform offers a practical reference for hospitals, developers, and policymakers auditing medical AI.
+
+**arXiv ID:** 2511.14439
 </details>
 
 <details>
