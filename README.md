@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-21 02:48:24
+**Last Updated:** 2025-11-24 02:22:49
 
-**Total Papers:** 53
+**Total Papers:** 50
 
 ## Table of Contents
 
@@ -91,11 +91,11 @@ Learn more at: this https URL
 </details>
 
 <details>
-<summary><strong>The Shawshank Redemption of Embodied AI: Understanding and Benchmarking Indirect Environmental Jailbreaks</strong> - Chunyang Li, Zifeng Kang, Junwei Zhang, Zhuo Ma, Anda Cheng, Xinghua Li, Jianfeng Ma - [[pdf]](https://arxiv.org/pdf/2511.16347)</summary>
+<summary><strong>AeroVerse: UAV-Agent Benchmark Suite for Simulating, Pre-training, Finetuning, and Evaluating Aerospace Embodied World Models</strong> - Fanglong Yao, Yuanchang Yue, Youzhi Liu, Xian Sun, Kun Fu - [[pdf]](https://arxiv.org/pdf/2408.15511)</summary>
 
-**Abstract:** The adoption of Vision-Language Models (VLMs) in embodied AI agents, while being effective, brings safety concerns such as jailbreaking. Prior work have explored the possibility of directly jailbreaking the embodied agents through elaborated multi-modal prompts. However, no prior work has studied or even reported indirect jailbreaks in embodied AI, where a black-box attacker induces a jailbreak without issuing direct prompts to the embodied agent. In this paper, we propose, for the first time, indirect environmental jailbreak (IEJ), a novel attack to jailbreak embodied AI via indirect prompt injected into the environment, such as malicious instructions written on a wall. Our key insight is that embodied AI does not ''think twice'' about the instructions provided by the environment -- a blind trust that attackers can exploit to jailbreak the embodied agent. We further design and implement open-source prototypes of two fully-automated frameworks: SHAWSHANK, the first automatic attack generation framework for the proposed attack IEJ; and SHAWSHANK-FORGE, the first automatic benchmark generation framework for IEJ. Then, using SHAWSHANK-FORGE, we automatically construct SHAWSHANK-BENCH, the first benchmark for indirectly jailbreaking embodied agents. Together, our two frameworks and one benchmark answer the questions of what content can be used for malicious IEJ instructions, where they should be placed, and how IEJ can be systematically evaluated. Evaluation results show that SHAWSHANK outperforms eleven existing methods across 3,957 task-scene combinations and compromises all six tested VLMs. Furthermore, current defenses only partially mitigate our attack, and we have responsibly disclosed our findings to all affected VLM vendors.
+**Abstract:** Aerospace embodied intelligence aims to empower unmanned aerial vehicles (UAVs) and other aerospace platforms to achieve autonomous perception, cognition, and action, as well as egocentric active interaction with humans and the environment. The aerospace embodied world model serves as an effective means to realize the autonomous intelligence of UAVs and represents a necessary pathway toward aerospace embodied intelligence. However, existing embodied world models primarily focus on ground-level intelligent agents in indoor scenarios, while research on UAV intelligent agents remains unexplored. To address this gap, we construct the first large-scale real-world image-text pre-training dataset, AerialAgent-Ego10k, featuring urban drones from a first-person perspective. We also create a virtual image-text-pose alignment dataset, CyberAgent Ego500k, to facilitate the pre-training of the aerospace embodied world model. For the first time, we clearly define 5 downstream tasks, i.e., aerospace embodied scene awareness, spatial reasoning, navigational exploration, task planning, and motion decision, and construct corresponding instruction datasets, i.e., SkyAgent-Scene3k, SkyAgent-Reason3k, SkyAgent-Nav3k and SkyAgent-Plan3k, and SkyAgent-Act3k, for fine-tuning the aerospace embodiment world model. Simultaneously, we develop SkyAgentEval, the downstream task evaluation metrics based on GPT-4, to comprehensively, flexibly, and objectively assess the results, revealing the potential and limitations of 2D/3D visual language models in UAV-agent tasks. Furthermore, we integrate over 10 2D/3D visual-language models, 2 pre-training datasets, 5 finetuning datasets, more than 10 evaluation metrics, and a simulator into the benchmark suite, i.e., AeroVerse, which will be released to the community to promote exploration and development of aerospace embodied intelligence.
 
-**arXiv ID:** 2511.16347
+**arXiv ID:** 2408.15511
 </details>
 
 </details>
@@ -155,15 +155,7 @@ Using SkyRL-Agent, we train SA-SWE-32B, a software engineering agent trained fro
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (18 papers)</h2></summary>
-
-<details>
-<summary><strong>MACIE: Multi-Agent Causal Intelligence Explainer for Collective Behavior Understanding</strong> - Abraham Itzhak Weinberg - [[pdf]](https://arxiv.org/pdf/2511.15716)</summary>
-
-**Abstract:** As Multi Agent Reinforcement Learning systems are used in safety critical applications. Understanding why agents make decisions and how they achieve collective behavior is crucial. Existing explainable AI methods struggle in multi agent settings. They fail to attribute collective outcomes to individuals, quantify emergent behaviors, or capture complex interactions. We present MACIE Multi Agent Causal Intelligence Explainer, a framework combining structural causal models, interventional counterfactuals, and Shapley values to provide comprehensive explanations. MACIE addresses three questions. First, each agent's causal contribution using interventional attribution scores. Second, system level emergent intelligence through synergy metrics separating collective effects from individual contributions. Third, actionable explanations using natural language narratives synthesizing causal insights. We evaluate MACIE across four MARL scenarios: cooperative, competitive, and mixed motive. Results show accurate outcome attribution, mean phi_i equals 5.07, standard deviation less than 0.05, detection of positive emergence in cooperative tasks, synergy index up to 0.461, and efficient computation, 0.79 seconds per dataset on CPU. MACIE uniquely combines causal rigor, emergence quantification, and multi agent support while remaining practical for real time use. This represents a step toward interpretable, trustworthy, and accountable multi agent AI.
-
-**arXiv ID:** 2511.15716
-</details>
+<summary><h2>Multi-Agent Systems (17 papers)</h2></summary>
 
 <details>
 <summary><strong>Build AI Assistants using Large Language Models and Agents to Enhance the Engineering Education of Biomechanics</strong> - Hanzhi Yan, Qin Lu, Xianqiao Wang, Xiaoming Zhai, Tianming Liu, He Li - [[pdf]](https://arxiv.org/pdf/2511.15752)</summary>
@@ -171,6 +163,14 @@ Using SkyRL-Agent, we train SA-SWE-32B, a software engineering agent trained fro
 **Abstract:** While large language models (LLMs) have demonstrated remarkable versatility across a wide range of general tasks, their effectiveness often diminishes in domain-specific applications due to inherent knowledge gaps. Moreover, their performance typically declines when addressing complex problems that require multi-step reasoning and analysis. In response to these challenges, we propose leveraging both LLMs and AI agents to develop education assistants aimed at enhancing undergraduate learning in biomechanics courses that focus on analyzing the force and moment in the musculoskeletal system of the human body. To achieve our goal, we construct a dual-module framework to enhance LLM performance in biomechanics educational tasks: 1) we apply Retrieval-Augmented Generation (RAG) to improve the specificity and logical consistency of LLM's responses to the conceptual true/false questions; 2) we build a Multi-Agent System (MAS) to solve calculation-oriented problems involving multi-step reasoning and code execution. Specifically, we evaluate the performance of several LLMs, i.e., Qwen-1.0-32B, Qwen-2.5-32B, and Llama-70B, on a biomechanics dataset comprising 100 true/false conceptual questions and problems requiring equation derivation and calculation. Our results demonstrate that RAG significantly enhances the performance and stability of LLMs in answering conceptual questions, surpassing those of vanilla models. On the other hand, the MAS constructed using multiple LLMs demonstrates its ability to perform multi-step reasoning, derive equations, execute code, and generate explainable solutions for tasks that require calculation. These findings demonstrate the potential of applying RAG and MAS to enhance LLM performance for specialized courses in engineering curricula, providing a promising direction for developing intelligent tutoring in engineering education.
 
 **arXiv ID:** 2511.15752
+</details>
+
+<details>
+<summary><strong>MACIE: Multi-Agent Causal Intelligence Explainer for Collective Behavior Understanding</strong> - Abraham Itzhak Weinberg - [[pdf]](https://arxiv.org/pdf/2511.15716)</summary>
+
+**Abstract:** As Multi Agent Reinforcement Learning systems are used in safety critical applications. Understanding why agents make decisions and how they achieve collective behavior is crucial. Existing explainable AI methods struggle in multi agent settings. They fail to attribute collective outcomes to individuals, quantify emergent behaviors, or capture complex interactions. We present MACIE Multi Agent Causal Intelligence Explainer, a framework combining structural causal models, interventional counterfactuals, and Shapley values to provide comprehensive explanations. MACIE addresses three questions. First, each agent's causal contribution using interventional attribution scores. Second, system level emergent intelligence through synergy metrics separating collective effects from individual contributions. Third, actionable explanations using natural language narratives synthesizing causal insights. We evaluate MACIE across four MARL scenarios: cooperative, competitive, and mixed motive. Results show accurate outcome attribution, mean phi_i equals 5.07, standard deviation less than 0.05, detection of positive emergence in cooperative tasks, synergy index up to 0.461, and efficient computation, 0.79 seconds per dataset on CPU. MACIE uniquely combines causal rigor, emergence quantification, and multi agent support while remaining practical for real time use. This represents a step toward interpretable, trustworthy, and accountable multi agent AI.
+
+**arXiv ID:** 2511.15716
 </details>
 
 <details>
@@ -232,7 +232,7 @@ The goal of this prototype is intentionally limited: to demonstrate feasibility,
 </details>
 
 <details>
-<summary><strong>Hiding in the AI Traffic: Abusing MCP for LLM-Powered Agentic Red Teaming</strong> - Strahinja Janjuesvic, Anna Baron Garcia, Sohrob Kazerounian - [[pdf]](https://arxiv.org/pdf/2511.15998)</summary>
+<summary><strong>Hiding in the AI Traffic: Abusing MCP for LLM-Powered Agentic Red Teaming</strong> - Strahinja Janjusevic, Anna Baron Garcia, Sohrob Kazerounian - [[pdf]](https://arxiv.org/pdf/2511.15998)</summary>
 
 **Abstract:** Generative AI is reshaping offensive cybersecurity by enabling autonomous red team agents that can plan, execute, and adapt during penetration tests. However, existing approaches face trade-offs between generality and specialization, and practical deployments reveal challenges such as hallucinations, context limitations, and ethical concerns. In this work, we introduce a novel command & control (C2) architecture leveraging the Model Context Protocol (MCP) to coordinate distributed, adaptive reconnaissance agents covertly across networks. Notably, we find that our architecture not only improves goal-directed behavior of the system as whole, but also eliminates key host and network artifacts that can be used to detect and prevent command & control behavior altogether. We begin with a comprehensive review of state-of-the-art generative red teaming methods, from fine-tuned specialist models to modular or agentic frameworks, analyzing their automation capabilities against task-specific accuracy. We then detail how our MCP-based C2 can overcome current limitations by enabling asynchronous, parallel operations and real-time intelligence sharing without periodic beaconing. We furthermore explore advanced adversarial capabilities of this architecture, its detection-evasion techniques, and address dual-use ethical implications, proposing defensive measures and controlled evaluation in lab settings. Experimental comparisons with traditional C2 show drastic reductions in manual effort and detection footprint. We conclude with future directions for integrating autonomous exploitation, defensive LLM agents, predictive evasive maneuvers, and multi-agent swarms. The proposed MCP-enabled C2 framework demonstrates a significant step toward realistic, AI-driven red team operations that can simulate advanced persistent threats while informing the development of next-generation defensive systems.
 
@@ -295,18 +295,10 @@ The goal of this prototype is intentionally limited: to demonstrate feasibility,
 **arXiv ID:** 2511.16635
 </details>
 
-<details>
-<summary><strong>Risk Map As Middleware: Towards Interpretable Cooperative End-to-end Autonomous Driving for Risk-Aware Planning</strong> - Mingyue Lei, Zewei Zhou, Hongchen Li, Jiaqi Ma, Jia Hu - [[pdf]](https://arxiv.org/pdf/2508.07686)</summary>
-
-**Abstract:** End-to-end paradigm has emerged as a promising approach to autonomous driving. However, existing single-agent end-to-end pipelines are often constrained by occlusion and limited perception range, resulting in hazardous driving. Furthermore, their black-box nature prevents the interpretability of the driving behavior, leading to an untrustworthiness system. To address these limitations, we introduce Risk Map as Middleware (RiskMM) and propose an interpretable cooperative end-to-end driving framework. The risk map learns directly from the driving data and provides an interpretable spatiotemporal representation of the scenario from the upstream perception and the interactions between the ego vehicle and the surrounding environment for downstream planning. RiskMM first constructs a multi-agent spatiotemporal representation with unified Transformer-based architecture, then derives risk-aware representations by modeling interactions among surrounding environments with attention. These representations are subsequently fed into a learning-based Model Predictive Control (MPC) module. The MPC planner inherently accommodates physical constraints and different vehicle types and can provide interpretation by aligning learned parameters with explicit MPC elements. Evaluations conducted on the real-world V2XPnP-Seq dataset confirm that RiskMM achieves superior and robust performance in risk-aware trajectory planning, significantly enhancing the interpretability of the cooperative end-to-end driving framework. The codebase will be released to facilitate future research in this field.
-
-**arXiv ID:** 2508.07686
-</details>
-
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (3 papers)</h2></summary>
+<summary><h2>Other Agent Research (4 papers)</h2></summary>
 
 <details>
 <summary><strong>CorrectHDL: Agentic HDL Design with LLMs Leveraging High-Level Synthesis as Reference</strong> - Kangwei Xu, Grace Li Zhang, Ulf Schlichtmann, Bing Li - [[pdf]](https://arxiv.org/pdf/2511.16395)</summary>
@@ -333,10 +325,18 @@ This paper presents our vision of AgentOps: a comprehensive framework for observ
 **arXiv ID:** 2507.11277
 </details>
 
+<details>
+<summary><strong>VLM-SFD: VLM-Assisted Siamese Flow Diffusion Framework for Dual-Arm Cooperative Manipulation</strong> - Jiaming Chen, Yiyu Jiang, Aoshen Huang, Yang Li, Wei Pan - [[pdf]](https://arxiv.org/pdf/2506.13428)</summary>
+
+**Abstract:** Dual-arm cooperative manipulation holds great promise for tackling complex real-world tasks that demand seamless coordination and adaptive dynamics. Despite substantial progress in learning-based motion planning, most approaches struggle to generalize across diverse manipulation tasks and adapt to dynamic, unstructured environments, particularly in scenarios involving interactions between two objects such as assembly, tool use, and bimanual grasping. To address these challenges, we introduce a novel VLM-Assisted Siamese Flow Diffusion (VLM-SFD) framework for efficient imitation learning in dual-arm cooperative manipulation. The proposed VLM-SFD framework exhibits outstanding adaptability, significantly enhancing the ability to rapidly adapt and generalize to diverse real-world tasks from only a minimal number of human demonstrations. Specifically, we propose a Siamese Flow Diffusion Network (SFDNet) employs a dual-encoder-decoder Siamese architecture to embed two target objects into a shared latent space, while a diffusion-based conditioning process - conditioned by task instructions - generates two-stream object-centric motion flows that guide dual-arm coordination. We further design a dynamic task assignment strategy that seamlessly maps the predicted 2D motion flows into 3D space and incorporates a pre-trained vision-language model (VLM) to adaptively assign the optimal motion to each robotic arm over time. Experiments validate the effectiveness of the proposed method, demonstrating its ability to generalize to diverse manipulation tasks while maintaining high efficiency and adaptability. The code and demo videos are publicly available on our project website this https URL.
+
+**arXiv ID:** 2506.13428
+</details>
+
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (17 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (14 papers)</h2></summary>
 
 <details>
 <summary><strong>Detecting Sleeper Agents in Large Language Models via Semantic Drift Analysis</strong> - Shahin Zanbaghi, Ryan Rostampour, Farhan Abid, Salim Al Jarmakani - [[pdf]](https://arxiv.org/pdf/2511.15992)</summary>
@@ -449,31 +449,6 @@ In this work, we propose a novel approach that leverages expert knowledge embedd
 **Abstract:** The field of Offline Reinforcement Learning (RL) aims to derive effective policies from pre-collected datasets without active environment interaction. While traditional offline RL algorithms like Conservative Q-Learning (CQL) and Implicit Q-Learning (IQL) have shown promise, they often face challenges in balancing exploration and exploitation, especially in environments with varying reward densities. The recently proposed Decision Transformer (DT) approach, which reframes offline RL as a sequence modelling problem, has demonstrated impressive results across various benchmarks. This paper presents a comparative study evaluating the performance of DT against traditional offline RL algorithms in dense and sparse reward settings for the ANT continous control environment. Our research investigates how these algorithms perform when faced with different reward structures, examining their ability to learn effective policies and generalize across varying levels of feedback. Through empirical analysis in the ANT environment, we found that DTs showed less sensitivity to varying reward density compared to other methods and particularly excelled with medium-expert datasets in sparse reward scenarios. In contrast, traditional value-based methods like IQL showed improved performance in dense reward settings with high-quality data, while CQL offered balanced performance across different data qualities. Additionally, DTs exhibited lower variance in performance but required significantly more computational resources compared to traditional approaches. These findings suggest that sequence modelling approaches may be more suitable for scenarios with uncertain reward structures or mixed-quality data, while value-based methods remain competitive in settings with dense rewards and high-quality demonstrations.
 
 **arXiv ID:** 2511.16475
-</details>
-
-<details>
-<summary><strong>MagBotSim: Physics-Based Simulation and Reinforcement Learning Environments for Magnetic Robotics</strong> - Lara Bergmann, Cedric Grothues, Klaus Neumann - [[pdf]](https://arxiv.org/pdf/2511.16158)</summary>
-
-**Abstract:** Magnetic levitation is about to revolutionize in-machine material flow in industrial automation. Such systems are flexibly configurable and can include a large number of independently actuated shuttles (movers) that dynamically rebalance production capacity. Beyond their capabilities for dynamic transportation, these systems possess the inherent yet unexploited potential to perform manipulation. By merging the fields of transportation and manipulation into a coordinated swarm of magnetic robots (MagBots), we enable manufacturing systems to achieve significantly higher efficiency, adaptability, and compactness. To support the development of intelligent algorithms for magnetic levitation systems, we introduce MagBotSim (Magnetic Robotics Simulation): a physics-based simulation for magnetic levitation systems. By framing magnetic levitation systems as robot swarms and providing a dedicated simulation, this work lays the foundation for next generation manufacturing systems powered by Magnetic Robotics. MagBotSim's documentation, videos, experiments, and code are available at: this https URL
-
-**arXiv ID:** 2511.16158
-</details>
-
-<details>
-<summary><strong>Leveraging Reinforcement Learning, Genetic Algorithms and Transformers for background determination in particle physics</strong> - Guillermo Hijano Mendizabal, Davide Lancierini, Alex Marshall, Andrea Mauri, Patrick Haworth Owen, Mitesh Patel, Konstantinos Petridis, Shah Rukh Qasim, Nicola Serra, William Sutcliffe, Hanae Tilquin - [[pdf]](https://arxiv.org/pdf/2509.14894)</summary>
-
-**Abstract:** Experimental studies of beauty hadron decays face significant challenges due to a wide range of backgrounds arising from the numerous possible decay channels with similar final states. For a particular signal decay, the process for ascertaining the most relevant background processes necessitates a detailed analysis of final state particles, potential misidentifications, and kinematic overlaps, which, due to computational limitations, is restricted to the simulation of only the most relevant backgrounds. Moreover, this process typically relies on the physicist's intuition and expertise, as no systematic method exists.
-This paper has two primary goals. First, from a particle physics perspective, we present a novel approach that utilises Reinforcement Learning (RL) to overcome the aforementioned challenges by systematically determining the critical backgrounds affecting beauty hadron decay measurements. While beauty hadron physics serves as the case study in this work, the proposed strategy is broadly adaptable to other types of particle physics measurements. Second, from a Machine Learning perspective, we introduce a novel algorithm which exploits the synergy between RL and Genetic Algorithms (GAs) for environments with highly sparse rewards and a large trajectory space. This strategy leverages GAs to efficiently explore the trajectory space and identify successful trajectories, which are used to guide the RL agent's training. Our method also incorporates a transformer architecture for the RL agent to handle token sequences representing decays.
-
-**arXiv ID:** 2509.14894
-</details>
-
-<details>
-<summary><strong>Safe and Optimal Variable Impedance Control via Certified Reinforcement Learning</strong> - Shreyas Kumar, Ravi Prakash - [[pdf]](https://arxiv.org/pdf/2511.16330)</summary>
-
-**Abstract:** Reinforcement learning (RL) offers a powerful approach for robots to learn complex, collaborative skills by combining Dynamic Movement Primitives (DMPs) for motion and Variable Impedance Control (VIC) for compliant interaction. However, this model-free paradigm often risks instability and unsafe exploration due to the time-varying nature of impedance gains. This work introduces Certified Gaussian Manifold Sampling (C-GMS), a novel trajectory-centric RL framework that learns combined DMP and VIC policies while guaranteeing Lyapunov stability and actuator feasibility by construction. Our approach reframes policy exploration as sampling from a mathematically defined manifold of stable gain schedules. This ensures every policy rollout is guaranteed to be stable and physically realizable, thereby eliminating the need for reward penalties or post-hoc validation. Furthermore, we provide a theoretical guarantee that our approach ensures bounded tracking error even in the presence of bounded model errors and deployment-time uncertainties. We demonstrate the effectiveness of C-GMS in simulation and verify its efficacy on a real robot, paving the way for reliable autonomous interaction in complex environments.
-
-**arXiv ID:** 2511.16330
 </details>
 
 </details>
