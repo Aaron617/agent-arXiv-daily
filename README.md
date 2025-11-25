@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-24 02:59:46
+**Last Updated:** 2025-11-25 02:09:57
 
 **Total Papers:** 51
 
