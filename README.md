@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-11-26 02:52:26
+**Last Updated:** 2025-11-27 02:07:43
 
 **Total Papers:** 74
 
@@ -38,19 +38,19 @@
 <summary><h2>Benchmarks and Datasets (16 papers)</h2></summary>
 
 <details>
-<summary><strong>Fara-7B: An Efficient Agentic Model for Computer Use</strong> - Ahmed Awadallah, Yash Lara, Raghav Magazine, Hussein Mozannar, Akshay Nambi, Yash Pandya, Aravind Rajeswaran, Corby Rosset, Alexey Taymanov, Vibhav Vineet, Spencer Whitehead, Andrew Zhao - [[pdf]](https://arxiv.org/pdf/2511.19663)</summary>
-
-**Abstract:** Progress in computer use agents (CUAs) has been constrained by the absence of large and high-quality datasets that capture how humans interact with a computer. While LLMs have thrived on abundant textual data, no comparable corpus exists for CUA trajectories. To address these gaps, we introduce FaraGen, a novel synthetic data generation system for multi-step web tasks. FaraGen can propose diverse tasks from frequently used websites, generate multiple solution attempts, and filter successful trajectories using multiple verifiers. It achieves high throughput, yield, and diversity for multi-step web tasks, producing verified trajectories at approximately $1 each. We use this data to train Fara-7B, a native CUA model that perceives the computer using only screenshots, executes actions via predicted coordinates, and is small enough to run on-device. We find that Fara-7B outperforms other CUA models of comparable size on benchmarks like WebVoyager, Online-Mind2Web, and WebTailBench -- our novel benchmark that better captures under-represented web tasks in pre-existing benchmarks. Furthermore, Fara-7B is competitive with much larger frontier models, illustrating key benefits of scalable data generation systems in advancing small efficient agentic models. We are making Fara-7B open-weight on Microsoft Foundry and HuggingFace, and we are releasing WebTailBench.
-
-**arXiv ID:** 2511.19663
-</details>
-
-<details>
 <summary><strong>HeaRT: A Hierarchical Circuit Reasoning Tree-Based Agentic Framework for AMS Design Optimization</strong> - Souradip Poddar, Chia-Tung Ho, Ziming Wei, Weidong Cao, Haoxing Ren, David Z. Pan - [[pdf]](https://arxiv.org/pdf/2511.19669)</summary>
 
 **Abstract:** Conventional AI-driven AMS design automation algorithms remain constrained by their reliance on high-quality datasets to capture underlying circuit behavior, coupled with poor transferability across architectures, and a lack of adaptive mechanisms. This work proposes HeaRT, a foundational reasoning engine for automation loops and a first step toward intelligent, adaptive, human-style design optimization. HeaRT consistently demonstrates reasoning accuracy >97% and Pass@1 performance >98% across our 40-circuit benchmark repository, even as circuit complexity increases, while operating at <0.5x real-time token budget of SOTA baselines. Our experiments show that HeaRT yields >3x faster convergence in both sizing and topology design adaptation tasks across diverse optimization approaches, while preserving prior design intent.
 
 **arXiv ID:** 2511.19669
+</details>
+
+<details>
+<summary><strong>Fara-7B: An Efficient Agentic Model for Computer Use</strong> - Ahmed Awadallah, Yash Lara, Raghav Magazine, Hussein Mozannar, Akshay Nambi, Yash Pandya, Aravind Rajeswaran, Corby Rosset, Alexey Taymanov, Vibhav Vineet, Spencer Whitehead, Andrew Zhao - [[pdf]](https://arxiv.org/pdf/2511.19663)</summary>
+
+**Abstract:** Progress in computer use agents (CUAs) has been constrained by the absence of large and high-quality datasets that capture how humans interact with a computer. While LLMs have thrived on abundant textual data, no comparable corpus exists for CUA trajectories. To address these gaps, we introduce FaraGen, a novel synthetic data generation system for multi-step web tasks. FaraGen can propose diverse tasks from frequently used websites, generate multiple solution attempts, and filter successful trajectories using multiple verifiers. It achieves high throughput, yield, and diversity for multi-step web tasks, producing verified trajectories at approximately $1 each. We use this data to train Fara-7B, a native CUA model that perceives the computer using only screenshots, executes actions via predicted coordinates, and is small enough to run on-device. We find that Fara-7B outperforms other CUA models of comparable size on benchmarks like WebVoyager, Online-Mind2Web, and WebTailBench -- our novel benchmark that better captures under-represented web tasks in pre-existing benchmarks. Furthermore, Fara-7B is competitive with much larger frontier models, illustrating key benefits of scalable data generation systems in advancing small efficient agentic models. We are making Fara-7B open-weight on Microsoft Foundry and HuggingFace, and we are releasing WebTailBench.
+
+**arXiv ID:** 2511.19663
 </details>
 
 <details>
@@ -233,14 +233,6 @@ In this work, we examine the landscape of prompt injection attacks and synthesiz
 </details>
 
 <details>
-<summary><strong>Trust-Based Social Learning for Communication (TSLEC) Protocol Evolution in Multi-Agent Reinforcement Learning</strong> - Abraham Itzhak Weinberg - [[pdf]](https://arxiv.org/pdf/2511.19562)</summary>
-
-**Abstract:** Emergent communication in multi-agent systems typically occurs through independent learning, resulting in slow convergence and potentially suboptimal protocols. We introduce TSLEC (Trust-Based Social Learning with Emergent Communication), a framework where agents explicitly teach successful strategies to peers, with knowledge transfer modulated by learned trust relationships. Through experiments with 100 episodes across 30 random seeds, we demonstrate that trust-based social learning reduces episodes-to-convergence by 23.9% (p < 0.001, Cohen's d = 1.98) compared to independent emergence, while producing compositional protocols (C = 0.38) that remain robust under dynamic objectives (Phi > 0.867 decoding accuracy). Trust scores strongly correlate with teaching quality (r = 0.743, p < 0.001), enabling effective knowledge filtering. Our results establish that explicit social learning fundamentally accelerates emergent communication in multi-agent coordination.
-
-**arXiv ID:** 2511.19562
-</details>
-
-<details>
 <summary><strong>Z-Space: A Multi-Agent Tool Orchestration Framework for Enterprise-Grade LLM Automation</strong> - Qingsong He, Jing Nan, Jiayu Jiao, Liangjie Tang, Xiaodong Xu, Mengmeng Sun, Qingyao Wang, Minghui Yan - [[pdf]](https://arxiv.org/pdf/2511.19483)</summary>
 
 **Abstract:** Large Language Models can break through knowledge and timeliness limitations by invoking external tools within the Model Context Protocol framework to achieve automated execution of complex tasks. However, with the rapid growth of enterprise-scale MCP services, efficiently and accurately matching target functionalities among thousands of heterogeneous tools has become a core challenge restricting system practicality. Existing approaches generally rely on full-prompt injection or static semantic retrieval, facing issues including semantic disconnection between user queries and tool descriptions, context inflation in LLM input, and high inference latency. To address these challenges, this paper proposes Z-Space, a data-generation-oriented multi-agent collaborative tool invocation framework Z-Space. The Z-Space framework establishes a multi-agent collaborative architecture and tool filtering algorithm: (1) A structured semantic understanding of user queries is achieved through an intent parsing model; (2) A tool filtering module (FSWW) based on fused subspace weighted algorithm realizes fine-grained semantic alignment between intents and tools without parameter tuning; (3) An inference execution agent is constructed to support dynamic planning and fault-tolerant execution for multi-step tasks. This framework has been deployed in the Eleme platform's technical division, serving large-scale test data generation scenarios across multiple business units including Taotian, Gaode, and Hema. Production data demonstrates that the system reduces average token consumption in tool inference by 96.26\% while achieving a 92\% tool invocation accuracy rate, significantly enhancing the efficiency and reliability of intelligent test data generation systems.
@@ -257,11 +249,11 @@ In this work, we examine the landscape of prompt injection attacks and synthesiz
 </details>
 
 <details>
-<summary><strong>An Adaptive, Data-Integrated Agent-Based Modeling Framework for Explainable and Contestable Policy Design</strong> - Roberto Garrone - [[pdf]](https://arxiv.org/pdf/2511.19726)</summary>
+<summary><strong>Trust-Based Social Learning for Communication (TSLEC) Protocol Evolution in Multi-Agent Reinforcement Learning</strong> - Abraham Itzhak Weinberg - [[pdf]](https://arxiv.org/pdf/2511.19562)</summary>
 
-**Abstract:** Multi-agent systems often operate under feedback, adaptation, and non-stationarity, yet many simulation studies retain static decision rules and fixed control parameters. This paper introduces a general adaptive multi-agent learning framework that integrates: (i) four dynamic regimes distinguishing static versus adaptive agents and fixed versus adaptive system parameters; (ii) information-theoretic diagnostics (entropy rate, statistical complexity, and predictive information) to assess predictability and structure; (iii) structural causal models for explicit intervention semantics; (iv) procedures for generating agent-level priors from aggregate or sample data; and (v) unsupervised methods for identifying emergent behavioral regimes. The framework offers a domain-neutral architecture for analyzing how learning agents and adaptive controls jointly shape system trajectories, enabling systematic comparison of stability, performance, and interpretability across non-equilibrium, oscillatory, or drifting dynamics. Mathematical definitions, computational operators, and an experimental design template are provided, yielding a structured methodology for developing explainable and contestable multi-agent decision processes.
+**Abstract:** Emergent communication in multi-agent systems typically occurs through independent learning, resulting in slow convergence and potentially suboptimal protocols. We introduce TSLEC (Trust-Based Social Learning with Emergent Communication), a framework where agents explicitly teach successful strategies to peers, with knowledge transfer modulated by learned trust relationships. Through experiments with 100 episodes across 30 random seeds, we demonstrate that trust-based social learning reduces episodes-to-convergence by 23.9% (p < 0.001, Cohen's d = 1.98) compared to independent emergence, while producing compositional protocols (C = 0.38) that remain robust under dynamic objectives (Phi > 0.867 decoding accuracy). Trust scores strongly correlate with teaching quality (r = 0.743, p < 0.001), enabling effective knowledge filtering. Our results establish that explicit social learning fundamentally accelerates emergent communication in multi-agent coordination.
 
-**arXiv ID:** 2511.19726
+**arXiv ID:** 2511.19562
 </details>
 
 <details>
@@ -271,6 +263,14 @@ In this work, we examine the landscape of prompt injection attacks and synthesiz
 Current network architectural stacks (OSI and TCP/IP) were designed for data delivery between hosts and processes, not for agent collaboration with semantic understanding. To address this gap, we propose two new layers: an \textbf{Agent Communication Layer (L8)} and an \textbf{Agent Semantic Negotiation Layer (L9)}. L8 formalizes the \textit{structure} of communication, standardizing message envelopes, speech-act performatives (e.g., REQUEST, INFORM), and interaction patterns (e.g., request-reply, publish-subscribe), building on protocols like MCP. L9, which does not exist today, formalizes the \textit{meaning} of communication, enabling agents to discover, negotiate, and lock a "Shared Context" -- a formal schema defining the concepts, tasks, and parameters relevant to their interaction. Together, these layers provide the foundation for scalable, distributed agent collaboration, enabling the next generation of multi-agentic systems.
 
 **arXiv ID:** 2511.19699
+</details>
+
+<details>
+<summary><strong>An Adaptive, Data-Integrated Agent-Based Modeling Framework for Explainable and Contestable Policy Design</strong> - Roberto Garrone - [[pdf]](https://arxiv.org/pdf/2511.19726)</summary>
+
+**Abstract:** Multi-agent systems often operate under feedback, adaptation, and non-stationarity, yet many simulation studies retain static decision rules and fixed control parameters. This paper introduces a general adaptive multi-agent learning framework that integrates: (i) four dynamic regimes distinguishing static versus adaptive agents and fixed versus adaptive system parameters; (ii) information-theoretic diagnostics (entropy rate, statistical complexity, and predictive information) to assess predictability and structure; (iii) structural causal models for explicit intervention semantics; (iv) procedures for generating agent-level priors from aggregate or sample data; and (v) unsupervised methods for identifying emergent behavioral regimes. The framework offers a domain-neutral architecture for analyzing how learning agents and adaptive controls jointly shape system trajectories, enabling systematic comparison of stability, performance, and interpretability across non-equilibrium, oscillatory, or drifting dynamics. Mathematical definitions, computational operators, and an experimental design template are provided, yielding a structured methodology for developing explainable and contestable multi-agent decision processes.
+
+**arXiv ID:** 2511.19726
 </details>
 
 <details>
@@ -330,19 +330,19 @@ Current network architectural stacks (OSI and TCP/IP) were designed for data del
 </details>
 
 <details>
-<summary><strong>VIL2C: Value-of-Information Aware Low-Latency Communication for Multi-Agent Reinforcement Learning</strong> - Qian Zhang, Zhuo Sun, Yao Zhang, Zhiwen Yu, Bin Guo, Jun Zhang - [[pdf]](https://arxiv.org/pdf/2511.19146)</summary>
-
-**Abstract:** Inter-agent communication serves as an effective mechanism for enhancing performance in collaborative multi-agent reinforcement learning(MARL) systems. However, the inherent communication latency in practical systems induces both action decision delays and outdated information sharing, impeding MARL performance gains, particularly in time-critical applications like autonomous driving. In this work, we propose a Value-of-Information aware Low-latency Communication(VIL2C) scheme that proactively adjusts the latency distribution to mitigate its effects in MARL systems. Specifically, we define a Value of Information (VOI) metric to quantify the importance of delayed message transmission based on each delayed message's importance. Moreover, we propose a progressive message reception mechanism to adaptively adjust the reception duration based on received messages. We derive the optimized VoI aware resource allocation and theoretically prove the performance advantage of the proposed VIL2C scheme. Extensive experiments demonstrate that VIL2C outperforms existing approaches under various communication conditions. These gains are attributed to the low-latency transmission of high-VoI messages via resource allocation and the elimination of unnecessary waiting periods via adaptive reception duration.
-
-**arXiv ID:** 2511.19146
-</details>
-
-<details>
 <summary><strong>RadAgents: Multimodal Agentic Reasoning for Chest X-ray Interpretation with Radiologist-like Workflows</strong> - Kai Zhang, Corey D Barrett, Jangwon Kim, Lichao Sun, Tara Taghavi, Krishnaram Kenthapadi - [[pdf]](https://arxiv.org/pdf/2509.20490)</summary>
 
 **Abstract:** Agentic systems offer a potential path to solve complex clinical tasks through collaboration among specialized agents, augmented by tool use and external knowledge bases. Nevertheless, for chest X-ray (CXR) interpretation, prevailing methods remain limited: (i) reasoning is frequently neither clinically interpretable nor aligned with guidelines, reflecting mere aggregation of tool outputs; (ii) multimodal evidence is insufficiently fused, yielding text-only rationales that are not visually grounded; and (iii) systems rarely detect or resolve cross-tool inconsistencies and provide no principled verification mechanisms. To bridge the above gaps, we present RadAgents, a multi-agent framework that couples clinical priors with task-aware multimodal reasoning and encodes a radiologist-style workflow into a modular, auditable pipeline. In addition, we integrate grounding and multimodal retrieval-augmentation to verify and resolve context conflicts, resulting in outputs that are more reliable, transparent, and consistent with clinical practice.
 
 **arXiv ID:** 2509.20490
+</details>
+
+<details>
+<summary><strong>VIL2C: Value-of-Information Aware Low-Latency Communication for Multi-Agent Reinforcement Learning</strong> - Qian Zhang, Zhuo Sun, Yao Zhang, Zhiwen Yu, Bin Guo, Jun Zhang - [[pdf]](https://arxiv.org/pdf/2511.19146)</summary>
+
+**Abstract:** Inter-agent communication serves as an effective mechanism for enhancing performance in collaborative multi-agent reinforcement learning(MARL) systems. However, the inherent communication latency in practical systems induces both action decision delays and outdated information sharing, impeding MARL performance gains, particularly in time-critical applications like autonomous driving. In this work, we propose a Value-of-Information aware Low-latency Communication(VIL2C) scheme that proactively adjusts the latency distribution to mitigate its effects in MARL systems. Specifically, we define a Value of Information (VOI) metric to quantify the importance of delayed message transmission based on each delayed message's importance. Moreover, we propose a progressive message reception mechanism to adaptively adjust the reception duration based on received messages. We derive the optimized VoI aware resource allocation and theoretically prove the performance advantage of the proposed VIL2C scheme. Extensive experiments demonstrate that VIL2C outperforms existing approaches under various communication conditions. These gains are attributed to the low-latency transmission of high-VoI messages via resource allocation and the elimination of unnecessary waiting periods via adaptive reception duration.
+
+**arXiv ID:** 2511.19146
 </details>
 
 <details>
@@ -520,17 +520,9 @@ IRSDA incorporates a knowledge-driven architecture that integrates contextual in
 <details>
 <summary><strong>Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning</strong> - Jiaqi Liu, Kaiwen Xiong, Peng Xia, Yiyang Zhou, Haonian Ji, Lu Feng, Siwei Han, Mingyu Ding, Huaxiu Yao - [[pdf]](https://arxiv.org/pdf/2511.19900)</summary>
 
-**Abstract:** Vision-language agents have achieved remarkable progress in a variety of multimodal reasoning tasks; however, their learning remains constrained by the limitations of human-annotated supervision. Recent self-rewarding approaches attempt to overcome this constraint by allowing models to act as their own critics or reward providers. Yet, purely text-based self-evaluation struggles to verify complex visual reasoning steps and often suffers from evaluation hallucinations. To address these challenges, inspired by recent advances in tool-integrated reasoning, we propose Agent0-VL, a self-evolving vision-language agent that achieves continual improvement with tool-integrated reasoning. Agent0-VL incorporates tool usage not only into reasoning but also into self-evaluation and self-repair, enabling the model to introspect, verify, and refine its reasoning through evidence-grounded analysis. It unifies two synergistic roles within a single LVLM: a Solver that performs multi-turn tool-integrated reasoning, and a Verifier that generates structured feedback and fine-grained self-rewards through tool-grounded critique. These roles interact through a Self-Evolving Reasoning Cycle, where tool-based verification and reinforcement learning jointly align the reasoning and evaluation distributions for stable self-improvement. Through this zero-external-reward evolution, Agent0-VL aligns its reasoning and verification behaviors without any human annotation or external reward models, achieving continual self-improvement. Experiments on geometric problem solving and visual scientific analysis show that Agent0-VL achieves an 12.5% improvement over the base model. Our code is available at \href{this https URL}{this https URL}.
+**Abstract:** Vision-language agents have achieved remarkable progress in a variety of multimodal reasoning tasks; however, their learning remains constrained by the limitations of human-annotated supervision. Recent self-rewarding approaches attempt to overcome this constraint by allowing models to act as their own critics or reward providers. Yet, purely text-based self-evaluation struggles to verify complex visual reasoning steps and often suffers from evaluation hallucinations. To address these challenges, inspired by recent advances in tool-integrated reasoning, we propose Agent0-VL, a self-evolving vision-language agent that achieves continual improvement with tool-integrated reasoning. Agent0-VL incorporates tool usage not only into reasoning but also into self-evaluation and self-repair, enabling the model to introspect, verify, and refine its reasoning through evidence-grounded analysis. It unifies two synergistic roles within a single LVLM: a Solver that performs multi-turn tool-integrated reasoning, and a Verifier that generates structured feedback and fine-grained self-rewards through tool-grounded critique. These roles interact through a Self-Evolving Reasoning Cycle, where tool-based verification and reinforcement learning jointly align the reasoning and evaluation distributions for stable self-improvement. Through this zero-external-reward evolution, Agent0-VL aligns its reasoning and verification behaviors without any human annotation or external reward models, achieving continual self-improvement. Experiments on geometric problem solving and visual scientific analysis show that Agent0-VL achieves an 12.5% improvement over the base model. Our code is available at this https URL.
 
 **arXiv ID:** 2511.19900
-</details>
-
-<details>
-<summary><strong>WaymoQA: A Multi-View Visual Question Answering Dataset for Safety-Critical Reasoning in Autonomous Driving</strong> - Seungjun Yu, Seonho Lee, Namho Kim, Jaeyo Shin, Junsung Park, Wonjeong Ryu, Raehyuk Jung, Hyunjung Shim - [[pdf]](https://arxiv.org/pdf/2511.20022)</summary>
-
-**Abstract:** Recent advancements in multimodal large language models (MLLMs) have shown strong understanding of driving scenes, drawing interest in their application to autonomous driving. However, high-level reasoning in safety-critical scenarios, where avoiding one traffic risk can create another, remains a major challenge. Such reasoning is often infeasible with only a single front view and requires a comprehensive view of the environment, which we achieve through multi-view inputs. We define Safety-Critical Reasoning as a new task that leverages multi-view inputs to address this challenge. Then, we distill Safety-Critical Reasoning into two stages: first resolve the immediate risk, then mitigate the decision-induced downstream risks. To support this, we introduce WaymoQA, a dataset of 35,000 human-annotated question-answer pairs covering complex, high-risk driving scenarios. The dataset includes multiple-choice and open-ended formats across both image and video modalities. Experiments reveal that existing MLLMs underperform in safety-critical scenarios compared to normal scenes, but fine-tuning with WaymoQA significantly improves their reasoning ability, highlighting the effectiveness of our dataset in developing safer and more reasoning-capable driving agents.
-
-**arXiv ID:** 2511.20022
 </details>
 
 <details>
@@ -539,6 +531,14 @@ IRSDA incorporates a knowledge-driven architecture that integrates contextual in
 **Abstract:** Magnetic Resonance Fingerprinting (MRF) leverages transient-state signal dynamics generated by the tunable acquisition parameters, making the design of an optimal, robust sequence a complex, high-dimensional sequential decision problem, such as optimizing one of the key parameters, flip angle. Reinforcement learning (RL) offers a promising approach to automate parameter selection, to optimize pulse sequences that maximize the distinguishability of fingerprints across the parameter space. In this work, we introduce an RL framework for optimizing the flip-angle schedule in MRF and demonstrate a learned schedule exhibiting non-periodic patterns that enhances fingerprint separability. Additionally, an interesting observation is that the RL-optimized schedule may enable a reduction in the number of repetition time, potentially accelerate MRF acquisitions.
 
 **arXiv ID:** 2511.19941
+</details>
+
+<details>
+<summary><strong>WaymoQA: A Multi-View Visual Question Answering Dataset for Safety-Critical Reasoning in Autonomous Driving</strong> - Seungjun Yu, Seonho Lee, Namho Kim, Jaeyo Shin, Junsung Park, Wonjeong Ryu, Raehyuk Jung, Hyunjung Shim - [[pdf]](https://arxiv.org/pdf/2511.20022)</summary>
+
+**Abstract:** Recent advancements in multimodal large language models (MLLMs) have shown strong understanding of driving scenes, drawing interest in their application to autonomous driving. However, high-level reasoning in safety-critical scenarios, where avoiding one traffic risk can create another, remains a major challenge. Such reasoning is often infeasible with only a single front view and requires a comprehensive view of the environment, which we achieve through multi-view inputs. We define Safety-Critical Reasoning as a new task that leverages multi-view inputs to address this challenge. Then, we distill Safety-Critical Reasoning into two stages: first resolve the immediate risk, then mitigate the decision-induced downstream risks. To support this, we introduce WaymoQA, a dataset of 35,000 human-annotated question-answer pairs covering complex, high-risk driving scenarios. The dataset includes multiple-choice and open-ended formats across both image and video modalities. Experiments reveal that existing MLLMs underperform in safety-critical scenarios compared to normal scenes, but fine-tuning with WaymoQA significantly improves their reasoning ability, highlighting the effectiveness of our dataset in developing safer and more reasoning-capable driving agents.
+
+**arXiv ID:** 2511.20022
 </details>
 
 <details>
