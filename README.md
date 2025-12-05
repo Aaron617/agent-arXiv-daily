@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-12-04 02:55:36
+**Last Updated:** 2025-12-05 02:18:58
 
 **Total Papers:** 70
 
@@ -540,7 +540,7 @@ We examine how gossip can support context-rich state propagation, resilient coor
 <details>
 <summary><strong>Deep Reinforcement Learning for Dynamic Algorithm Configuration: A Case Study on Optimizing OneMax with the (1+($λ$,$λ$))-GA</strong> - Tai Nguyen, Phong Le, André Biedenkapp, Carola Doerr, Nguyen Dang - [[pdf]](https://arxiv.org/pdf/2512.03805)</summary>
 
-**Abstract:** 
+**Abstract:** Dynamic Algorithm Configuration (DAC) studies the efficient identification of control policies for parameterized optimization algorithms. Numerous studies have leveraged the robustness of decision-making in Reinforcement Learning (RL) to address the optimization challenges in algorithm configuration. However, applying RL to DAC is challenging and often requires extensive domain expertise. We conduct a comprehensive study of deep-RL algorithms in DAC through a systematic analysis of controlling the population size parameter of the (1+($\lambda$,$\lambda$))-GA on OneMax instances. Our investigation of DDQN and PPO reveals two fundamental challenges that limit their effectiveness in DAC: scalability degradation and learning instability. We trace these issues to two primary causes: under-exploration and planning horizon coverage, each of which can be effectively addressed through targeted solutions. To address under-exploration, we introduce an adaptive reward shifting mechanism that leverages reward distribution statistics to enhance DDQN agent exploration, eliminating the need for instance-specific hyperparameter tuning and ensuring consistent effectiveness across different problem scales. In dealing with the planning horizon coverage problem, we demonstrate that undiscounted learning effectively resolves it in DDQN, while PPO faces fundamental variance issues that necessitate alternative algorithmic designs. We further analyze the hyperparameter dependencies of PPO, showing that while hyperparameter optimization enhances learning stability, it consistently falls short in identifying effective policies across various configurations. Finally, we demonstrate that DDQN equipped with our adaptive reward shifting strategy achieves performance comparable to theoretically derived policies with vastly improved sample efficiency, outperforming prior DAC approaches by several orders of magnitude.
 
 **arXiv ID:** 2512.03805
 </details>
