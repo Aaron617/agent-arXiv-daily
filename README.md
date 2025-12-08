@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-12-05 02:55:59
+**Last Updated:** 2025-12-08 02:19:54
 
 **Total Papers:** 59
 
@@ -178,19 +178,19 @@ We evaluate the Static-DRA against the established DeepResearch Bench using the 
 <summary><h2>Multi-Agent Systems (12 papers)</h2></summary>
 
 <details>
-<summary><strong>Orchestrator Multi-Agent Clinical Decision Support System for Secondary Headache Diagnosis in Primary Care</strong> - Xizhi Wu, Nelly Estefanie Garduno-Rapp, Justin F Rousseau, Mounika Thakkallapally, Hang Zhang, Yuelyu Ji, Shyam Visweswaran, Yifan Peng, Yanshan Wang - [[pdf]](https://arxiv.org/pdf/2512.04207)</summary>
-
-**Abstract:** Unlike most primary headaches, secondary headaches need specialized care and can have devastating consequences if not treated promptly. Clinical guidelines highlight several 'red flag' features, such as thunderclap onset, meningismus, papilledema, focal neurologic deficits, signs of temporal arteritis, systemic illness, and the 'worst headache of their life' presentation. Despite these guidelines, determining which patients require urgent evaluation remains challenging in primary care settings. Clinicians often work with limited time, incomplete information, and diverse symptom presentations, which can lead to under-recognition and inappropriate care. We present a large language model (LLM)-based multi-agent clinical decision support system built on an orchestrator-specialist architecture, designed to perform explicit and interpretable secondary headache diagnosis from free-text clinical vignettes. The multi-agent system decomposes diagnosis into seven domain-specialized agents, each producing a structured and evidence-grounded rationale, while a central orchestrator performs task decomposition and coordinates agent routing. We evaluated the multi-agent system using 90 expert-validated secondary headache cases and compared its performance with a single-LLM baseline across two prompting strategies: question-based prompting (QPrompt) and clinical practice guideline-based prompting (GPrompt). We tested five open-source LLMs (Qwen-30B, GPT-OSS-20B, Qwen-14B, Qwen-8B, and Llama-3.1-8B), and found that the orchestrated multi-agent system with GPrompt consistently achieved the highest F1 scores, with larger gains in smaller models. These findings demonstrate that structured multi-agent reasoning improves accuracy beyond prompt engineering alone and offers a transparent, clinically aligned approach for explainable decision support in secondary headache diagnosis.
-
-**arXiv ID:** 2512.04207
-</details>
-
-<details>
 <summary><strong>Toward Virtuous Reinforcement Learning</strong> - Majid Ghasemi, Mark Crowley - [[pdf]](https://arxiv.org/pdf/2512.04246)</summary>
 
 **Abstract:** This paper critiques common patterns in machine ethics for Reinforcement Learning (RL) and argues for a virtue focused alternative. We highlight two recurring limitations in much of the current literature: (i) rule based (deontological) methods that encode duties as constraints or shields often struggle under ambiguity and nonstationarity and do not cultivate lasting habits, and (ii) many reward based approaches, especially single objective RL, implicitly compress diverse moral considerations into a single scalar signal, which can obscure trade offs and invite proxy gaming in practice. We instead treat ethics as policy level dispositions, that is, relatively stable habits that hold up when incentives, partners, or contexts change. This shifts evaluation beyond rule checks or scalar returns toward trait summaries, durability under interventions, and explicit reporting of moral trade offs. Our roadmap combines four components: (1) social learning in multi agent RL to acquire virtue like patterns from imperfect but normatively informed exemplars; (2) multi objective and constrained formulations that preserve value conflicts and incorporate risk aware criteria to guard against harm; (3) affinity based regularization toward updateable virtue priors that support trait like stability under distribution shift while allowing norms to evolve; and (4) operationalizing diverse ethical traditions as practical control signals, making explicit the value and cultural assumptions that shape ethical RL benchmarks.
 
 **arXiv ID:** 2512.04246
+</details>
+
+<details>
+<summary><strong>Orchestrator Multi-Agent Clinical Decision Support System for Secondary Headache Diagnosis in Primary Care</strong> - Xizhi Wu, Nelly Estefanie Garduno-Rapp, Justin F Rousseau, Mounika Thakkallapally, Hang Zhang, Yuelyu Ji, Shyam Visweswaran, Yifan Peng, Yanshan Wang - [[pdf]](https://arxiv.org/pdf/2512.04207)</summary>
+
+**Abstract:** Unlike most primary headaches, secondary headaches need specialized care and can have devastating consequences if not treated promptly. Clinical guidelines highlight several 'red flag' features, such as thunderclap onset, meningismus, papilledema, focal neurologic deficits, signs of temporal arteritis, systemic illness, and the 'worst headache of their life' presentation. Despite these guidelines, determining which patients require urgent evaluation remains challenging in primary care settings. Clinicians often work with limited time, incomplete information, and diverse symptom presentations, which can lead to under-recognition and inappropriate care. We present a large language model (LLM)-based multi-agent clinical decision support system built on an orchestrator-specialist architecture, designed to perform explicit and interpretable secondary headache diagnosis from free-text clinical vignettes. The multi-agent system decomposes diagnosis into seven domain-specialized agents, each producing a structured and evidence-grounded rationale, while a central orchestrator performs task decomposition and coordinates agent routing. We evaluated the multi-agent system using 90 expert-validated secondary headache cases and compared its performance with a single-LLM baseline across two prompting strategies: question-based prompting (QPrompt) and clinical practice guideline-based prompting (GPrompt). We tested five open-source LLMs (Qwen-30B, GPT-OSS-20B, Qwen-14B, Qwen-8B, and Llama-3.1-8B), and found that the orchestrated multi-agent system with GPrompt consistently achieved the highest F1 scores, with larger gains in smaller models. These findings demonstrate that structured multi-agent reasoning improves accuracy beyond prompt engineering alone and offers a transparent, clinically aligned approach for explainable decision support in secondary headache diagnosis.
+
+**arXiv ID:** 2512.04207
 </details>
 
 <details>
@@ -202,7 +202,7 @@ We evaluate the Static-DRA against the established DeepResearch Bench using the 
 </details>
 
 <details>
-<summary><strong>Persona-based Multi-Agent Collaboration for Brainstorming</strong> - Nate Straub, Saara Khan, Kat Jay, Brian Cabral, Oskar Linde - [[pdf]](https://arxiv.org/pdf/2512.04488)</summary>
+<summary><strong>Persona-based Multi-Agent Collaboration for Brainstorming</strong> - Nate Straub, Saara Khan, Katharina Jay, Brian Cabral, Oskar Linde - [[pdf]](https://arxiv.org/pdf/2512.04488)</summary>
 
 **Abstract:** We demonstrate the importance of persona-based multi-agents brainstorming for both diverse topics and subject matter ideation. Prior work has shown that generalized multi-agent collaboration often provides better reasoning than a single agent alone. In this paper, we propose and develop a framework for persona-based agent selection, showing how persona domain curation can improve brainstorming outcomes. Using multiple experimental setups, we evaluate brainstorming outputs across different persona pairings (e.g., Doctor vs VR Engineer) and A2A (agent-to-agent) dynamics (separate, together, separate-then-together). Our results show that (1) persona choice shapes idea domains, (2) collaboration mode shifts diversity of idea generation, and (3) multi-agent persona-driven brainstorming produces idea depth and cross-domain coverage.
 
