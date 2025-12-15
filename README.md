@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-12-12 02:59:37
+**Last Updated:** 2025-12-15 02:26:56
 
 **Total Papers:** 54
 
@@ -153,7 +153,7 @@ Conclusions. Current agentic frameworks, designed for powerful LLMs, fail to ope
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (17 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (18 papers)</h2></summary>
 
 <details>
 <summary><strong>Exploring Health Misinformation Detection with Multi-Agent Debate</strong> - Chih-Han Chen, Chen-Han Tsai, Yu-Shao Peng - [[pdf]](https://arxiv.org/pdf/2512.09935)</summary>
@@ -204,6 +204,14 @@ Using LLM-based agents with tool access and typed message protocols, we show in 
 Overall, the results suggest that regulated, simulator-driven decision environments are most naturally modelled as norm-governed, simulator-coupled multi-agent systems.
 
 **arXiv ID:** 2512.09939
+</details>
+
+<details>
+<summary><strong>Long-horizon Reasoning Agent for Olympiad-Level Mathematical Problem Solving</strong> - Songyang Gao, Yuzhe Gu, Zijian Wu, Lingkai Kong, Wenwei Zhang, Zhongrui Cai, Fan Zheng, Tianyou Ma, Junhao Shen, Haiteng Zhao, Duanyang Zhang, Huilun Zhang, Kuikun Liu, Chengqi Lyu, Yanhui Duan, Chiyu Chen, Ningsheng Ma, Jianfei Gao, Han Lyu, Dahua Lin, Kai Chen - [[pdf]](https://arxiv.org/pdf/2512.10739)</summary>
+
+**Abstract:** Large Reasoning Models (LRMs) have expanded the mathematical reasoning frontier through Chain-of-Thought (CoT) techniques and Reinforcement Learning with Verifiable Rewards (RLVR), capable of solving AIME-level problems. However, the performance of LRMs is heavily dependent on the extended reasoning context length. For solving ultra-hard problems like those in the International Mathematical Olympiad (IMO), the required reasoning complexity surpasses the space that an LRM can explore in a single round. Previous works attempt to extend the reasoning context of LRMs but remain prompt-based and built upon proprietary models, lacking systematic structures and training pipelines. Therefore, this paper introduces Intern-S1-MO, a long-horizon math agent that conducts multi-round hierarchical reasoning, composed of an LRM-based multi-agent system including reasoning, summary, and verification. By maintaining a compact memory in the form of lemmas, Intern-S1-MO can more freely explore the lemma-rich reasoning spaces in multiple reasoning stages, thereby breaking through the context constraints for IMO-level math problems. Furthermore, we propose OREAL-H, an RL framework for training the LRM using the online explored trajectories to simultaneously bootstrap the reasoning ability of LRM and elevate the overall performance of Intern-S1-MO. Experiments show that Intern-S1-MO can obtain 26 out of 35 points on the non-geometry problems of IMO2025, matching the performance of silver medalists. It also surpasses the current advanced LRMs on inference benchmarks such as HMMT2025, AIME2025, and CNMO2025. In addition, our agent officially participates in CMO2025 and achieves a score of 102/126 under the judgment of human experts, reaching the gold medal level.
+
+**arXiv ID:** 2512.10739
 </details>
 
 <details>
@@ -353,7 +361,7 @@ Our results show that prompt design directly governs the dynamical regime of an 
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (16 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (15 papers)</h2></summary>
 
 <details>
 <summary><strong>An exploration for higher efficiency in multi objective optimisation with reinforcement learning</strong> - Mehmet Emin Aydin - [[pdf]](https://arxiv.org/pdf/2512.10208)</summary>
@@ -409,14 +417,6 @@ Our results show that prompt design directly governs the dynamical regime of an 
 **Abstract:** Connected and automated vehicles (CAVs) have the potential to enhance driving safety, for example by enabling safe vehicle following and more efficient traffic scheduling. For such future deployments, safety requirements should be addressed, where the primary such are avoidance of vehicle collisions and substantial mitigating of harm when collisions are unavoidable. However, conservative worst-case-based control strategies come at the price of reduced flexibility and may compromise overall performance. In light of this, we investigate how Deep Reinforcement Learning (DRL) can be leveraged to improve safety in multi-vehicle-following scenarios involving emergency braking. Specifically, we investigate how DRL with vehicle-to-vehicle communication can be used to ethically select an emergency breaking profile in scenarios where overall, or collective, three-vehicle harm reduction or collision avoidance shall be obtained instead of single-vehicle such. As an algorithm, we provide a hybrid approach that combines DRL with a previously published method based on analytical expressions for selecting optimal constant deceleration. By combining DRL with the previous method, the proposed hybrid approach increases the reliability compared to standalone DRL, while achieving superior performance in terms of overall harm reduction and collision avoidance.
 
 **arXiv ID:** 2512.10698
-</details>
-
-<details>
-<summary><strong>Long-horizon Reasoning Agent for Olympiad-Level Mathematical Problem Solving</strong> - Songyang Gao, Yuzhe Gu, Zijian Wu, Lingkai Kong, Wenwei Zhang, Zhongrui Cai, Fan Zheng, Tianyou Ma, Junhao Shen, Haiteng Zhao, Duanyang Zhang, Huilun Zhang, Kuikun Liu, Chengqi Lyu, Yanhui Duan, Chiyu Chen, Ningsheng Ma, Jianfei Gao, Han Lyu, Dahua Lin, Kai Chen - [[pdf]](https://arxiv.org/pdf/2512.10739)</summary>
-
-**Abstract:** Large language models (LLMs) have achieved significant progress in solving complex reasoning tasks by Reinforcement Learning with Verifiable Rewards (RLVR). This advancement is also inseparable from the oversight automated by reliable verifiers. However, current outcome-based verifiers (OVs) are unable to inspect the unreliable intermediate steps in the long reasoning chains of thought (CoTs). Meanwhile, current process-based verifiers (PVs) have difficulties in reliably detecting errors in the complex long CoTs, limited by the scarcity of high-quality annotations due to the prohibitive costs of human annotations. Therefore, we propose the \textbf{O}utcome-based \textbf{P}rocess \textbf{V}erifier (OPV), which verifies the rationale process of summarized outcomes from long CoTs to achieve both accurate and efficient verification and enable large-scale annotation. To empower the proposed verifier, we adopt an iterative active learning framework with expert annotations to progressively improve the verification capability of OPV with fewer annotation costs. Specifically, in each iteration, the most uncertain cases of the current best OPV are annotated and then subsequently used to train a new OPV through Rejection Fine-Tuning (RFT) and RLVR for the next round. Extensive experiments demonstrate OPV's superior performance and broad applicability. It achieves new state-of-the-art results on our held-out \textsc{\thisbench}, outperforming much larger open-source models such as Qwen3-Max-Preview with an F1 score of 83.1 compared to 76.3. Furthermore, OPV effectively detects false positives within synthetic dataset, closely align with expert assessment. When collaborating with policy models, OPV consistently yields performance gains, e.g., raising the accuracy of DeepSeek-R1-Distill-Qwen-32B from 55.2\% to 73.3\% on AIME2025 as the compute budget scales.
-
-**arXiv ID:** 2512.10739
 </details>
 
 <details>
