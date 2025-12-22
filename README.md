@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-12-19 03:00:17
+**Last Updated:** 2025-12-22 02:28:31
 
 **Total Papers:** 65
 
@@ -542,19 +542,19 @@ We implement VET for an API-based LLM agent and evaluate our instantiation on re
 </details>
 
 <details>
-<summary><strong>EnviSAgE: A Survey of Environment Scaling for Qualitative Agentic Experience Collection</strong> - Yuchen Huang, Sijia Li, Minghao Liu, Wei Liu, Shijue Huang, Zhiyuan Fan, Hou Pong Chan, Yi R. Fung - [[pdf]](https://arxiv.org/pdf/2511.09586)</summary>
-
-**Abstract:** LLM-based agents can autonomously accomplish complex tasks across various domains. However, to further cultivate capabilities such as adaptive behavior and long-term decision-making, training on static datasets built from human-level knowledge is insufficient. These datasets are costly to construct and lack both dynamism and realism. A growing consensus is that agents should instead interact directly with environments and learn from experience through reinforcement learning. We formalize this iterative process as the Generation-Execution-Feedback (GEF) loop, where environments generate tasks to challenge agents, return observations in response to agents' actions during task execution, and provide evaluative feedback on rollouts for subsequent learning. Under this paradigm, environments function as indispensable producers of experiential data, highlighting the need to scale them toward greater complexity, realism, and interactivity. In this survey, we systematically review representative methods for environment scaling from a pioneering environment-centric perspective and organize them along the stages of the GEF loop, namely task generation, task execution, and feedback. We further analyze implementation frameworks, challenges, and applications, consolidating fragmented advances and outlining future research directions for agent intelligence.
-
-**arXiv ID:** 2511.09586
-</details>
-
-<details>
 <summary><strong>UAMDP: Uncertainty-Aware Markov Decision Process for Risk-Constrained Reinforcement Learning from Probabilistic Forecasts</strong> - Michal Koren, Or Peretz, Tai Dinh, Philip S. Yu - [[pdf]](https://arxiv.org/pdf/2510.08226)</summary>
 
 **Abstract:** Sequential decisions in volatile, high-stakes settings require more than maximizing expected return; they require principled uncertainty management. This paper presents the Uncertainty-Aware Markov Decision Process (UAMDP), a unified framework that couples Bayesian forecasting, posterior-sampling reinforcement learning, and planning under a conditional value-at-risk (CVaR) constraint. In a closed loop, the agent updates its beliefs over latent dynamics, samples plausible futures via Thompson sampling, and optimizes policies subject to preset risk tolerances. We establish regret bounds that converge to the Bayes-optimal benchmark under standard regularity conditions. We evaluate UAMDP in two domains including high-frequency equity trading and retail inventory control, both marked by structural uncertainty and economic volatility. Relative to strong deep learning baselines, UAMDP improves long-horizon forecasting accuracy (RMSE decreases by up to 25% and sMAPE by 32%), and these gains translate into economic performance: the trading Sharpe ratio rises from 1.54 to 1.74 while maximum drawdown is roughly halved. These results show that integrating calibrated probabilistic modeling, exploration aligned with posterior uncertainty, and risk-aware control yields a robust, generalizable approach to safer and more profitable sequential decision-making.
 
 **arXiv ID:** 2510.08226
+</details>
+
+<details>
+<summary><strong>EnviSAgE: A Survey of Environment Scaling for Qualitative Agentic Experience Collection</strong> - Yuchen Huang, Sijia Li, Minghao Liu, Wei Liu, Shijue Huang, Zhiyuan Fan, Hou Pong Chan, Yi R. Fung - [[pdf]](https://arxiv.org/pdf/2511.09586)</summary>
+
+**Abstract:** LLM-based agents can autonomously accomplish complex tasks across various domains. However, to further cultivate capabilities such as adaptive behavior and long-term decision-making, training on static datasets built from human-level knowledge is insufficient. These datasets are costly to construct and lack both dynamism and realism. A growing consensus is that agents should instead interact directly with environments and learn from experience through reinforcement learning. We formalize this iterative process as the Generation-Execution-Feedback (GEF) loop, where environments generate tasks to challenge agents, return observations in response to agents' actions during task execution, and provide evaluative feedback on rollouts for subsequent learning. Under this paradigm, environments function as indispensable producers of experiential data, highlighting the need to scale them toward greater complexity, realism, and interactivity. In this survey, we systematically review representative methods for environment scaling from a pioneering environment-centric perspective and organize them along the stages of the GEF loop, namely task generation, task execution, and feedback. We further analyze implementation frameworks, challenges, and applications, consolidating fragmented advances and outlining future research directions for agent intelligence.
+
+**arXiv ID:** 2511.09586
 </details>
 
 <details>
