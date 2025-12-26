@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2025-12-25 03:02:43
+**Last Updated:** 2025-12-26 02:22:24
 
 **Total Papers:** 50
 
@@ -14,7 +14,15 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Agent Applications (1 papers)</h2></summary>
+<summary><h2>Agent Applications (2 papers)</h2></summary>
+
+<details>
+<summary><strong>Agentic Explainable Artificial Intelligence (Agentic XAI) Approach To Explore Better Explanation</strong> - Tomoaki Yamaguchi, Yutong Zhou, Masahiro Ryo, Keisuke Katsura - [[pdf]](https://arxiv.org/pdf/2512.21066)</summary>
+
+**Abstract:** Explainable artificial intelligence (XAI) enables data-driven understanding of factor associations with response variables, yet communicating XAI outputs to laypersons remains challenging, hindering trust in AI-based predictions. Large language models (LLMs) have emerged as promising tools for translating technical explanations into accessible narratives, yet the integration of agentic AI, where LLMs operate as autonomous agents through iterative refinement, with XAI remains unexplored. This study proposes an agentic XAI framework combining SHAP-based explainability with multimodal LLM-driven iterative refinement to generate progressively enhanced explanations. As a use case, we tested this framework as an agricultural recommendation system using rice yield data from 26 fields in Japan. The Agentic XAI initially provided a SHAP result and explored how to improve the explanation through additional analysis iteratively across 11 refinement rounds (Rounds 0-10). Explanations were evaluated by human experts (crop scientists) (n=12) and LLMs (n=14) against seven metrics: Specificity, Clarity, Conciseness, Practicality, Contextual Relevance, Cost Consideration, and Crop Science Credibility. Both evaluator groups confirmed that the framework successfully enhanced recommendation quality with an average score increase of 30-33% from Round 0, peaking at Rounds 3-4. However, excessive refinement showed a substantial drop in recommendation quality, indicating a bias-variance trade-off where early rounds lacked explanation depth (bias) while excessive iteration introduced verbosity and ungrounded abstraction (variance), as revealed by metric-specific analysis. These findings suggest that strategic early stopping (regularization) is needed for optimizing practical utility, challenging assumptions about monotonic improvement and providing evidence-based design principles for agentic XAI systems.
+
+**arXiv ID:** 2512.21066
+</details>
 
 <details>
 <summary><strong>VCB Bench: An Evaluation Benchmark for Audio-Grounded Large Language Model Conversational Agents</strong> - Jiliang Hu, Wenfu Wang, Zuchao Li, Chenxing Li, Yiyang Zhao, Hanzhao Li, Liqiang Zhang, Meng Yu, Dong Yu - [[pdf]](https://arxiv.org/pdf/2510.11098)</summary>
@@ -27,7 +35,7 @@
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (9 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (10 papers)</h2></summary>
 
 <details>
 <summary><strong>A Benchmark for Evaluating Outcome-Driven Constraint Violations in Autonomous AI Agents</strong> - Miles Q. Li, Benjamin C. M. Fung, Martin Weiss, Pulei Xiong, Khalil Al-Hussaeni, Claude Fachkha - [[pdf]](https://arxiv.org/pdf/2512.20798)</summary>
@@ -91,6 +99,14 @@
 **Abstract:** The rapid proliferation of online misinformation poses significant risks to public trust, policy, and safety, necessitating reliable automated fake news detection. Existing methods often struggle with multimodal content, domain generalization, and explainability. We propose AMPEND-LS, an agentic multi-persona evidence-grounded framework with LLM-SLM synergy for multimodal fake news detection. AMPEND-LS integrates textual, visual, and contextual signals through a structured reasoning pipeline powered by LLMs, augmented with reverse image search, knowledge graph paths, and persuasion strategy analysis. To improve reliability, we introduce a credibility fusion mechanism combining semantic similarity, domain trustworthiness, and temporal context, and a complementary SLM classifier to mitigate LLM uncertainty and hallucinations. Extensive experiments across three benchmark datasets demonstrate that AMPEND-LS consistently outperformed state-of-the-art baselines in accuracy, F1 score, and robustness. Qualitative case studies further highlight its transparent reasoning and resilience against evolving misinformation. This work advances the development of adaptive, explainable, and evidence-aware systems for safeguarding online information integrity.
 
 **arXiv ID:** 2512.21039
+</details>
+
+<details>
+<summary><strong>Autonomous Uncertainty Quantification for Computational Point-of-care Sensors</strong> - Artem Goncharov, Rajesh Ghosh, Hyou-Arm Joung, Dino Di Carlo, Aydogan Ozcan - [[pdf]](https://arxiv.org/pdf/2512.21335)</summary>
+
+**Abstract:** Computational point-of-care (POC) sensors enable rapid, low-cost, and accessible diagnostics in emergency, remote and resource-limited areas that lack access to centralized medical facilities. These systems can utilize neural network-based algorithms to accurately infer a diagnosis from the signals generated by rapid diagnostic tests or sensors. However, neural network-based diagnostic models are subject to hallucinations and can produce erroneous predictions, posing a risk of misdiagnosis and inaccurate clinical decisions. To address this challenge, here we present an autonomous uncertainty quantification technique developed for POC diagnostics. As our testbed, we used a paper-based, computational vertical flow assay (xVFA) platform developed for rapid POC diagnosis of Lyme disease, the most prevalent tick-borne disease globally. The xVFA platform integrates a disposable paper-based assay, a handheld optical reader and a neural network-based inference algorithm, providing rapid and cost-effective Lyme disease diagnostics in under 20 min using only 20 uL of patient serum. By incorporating a Monte Carlo dropout (MCDO)-based uncertainty quantification approach into the diagnostics pipeline, we identified and excluded erroneous predictions with high uncertainty, significantly improving the sensitivity and reliability of the xVFA in an autonomous manner, without access to the ground truth diagnostic information of patients. Blinded testing using new patient samples demonstrated an increase in diagnostic sensitivity from 88.2% to 95.7%, indicating the effectiveness of MCDO-based uncertainty quantification in enhancing the robustness of neural network-driven computational POC sensing systems.
+
+**arXiv ID:** 2512.21335
 </details>
 
 <details>
@@ -227,7 +243,7 @@ Together, these mechanisms allow agents to develop stable and disentangled strat
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (7 papers)</h2></summary>
+<summary><h2>Other Agent Research (5 papers)</h2></summary>
 
 <details>
 <summary><strong>TrafficSimAgent: A Hierarchical Agent Framework for Autonomous Traffic Simulation with MCP Control</strong> - Yuwei Du, Jun Zhang, Jie Feng, Zhicheng Liu, Jian Yuan, Yong Li - [[pdf]](https://arxiv.org/pdf/2512.20996)</summary>
@@ -235,14 +251,6 @@ Together, these mechanisms allow agents to develop stable and disentangled strat
 **Abstract:** Traffic simulation is important for transportation optimization and policy making. While existing simulators such as SUMO and MATSim offer fully-featured platforms and utilities, users without too much knowledge about these platforms often face significant challenges when conducting experiments from scratch and applying them to their daily work. To solve this challenge, we propose TrafficSimAgent, an LLM-based agent framework that serves as an expert in experiment design and decision optimization for general-purpose traffic simulation tasks. The framework facilitates execution through cross-level collaboration among expert agents: high-level expert agents comprehend natural language instructions with high flexibility, plan the overall experiment workflow, and invoke corresponding MCP-compatible tools on demand; meanwhile, low-level expert agents select optimal action plans for fundamental elements based on real-time traffic conditions. Extensive experiments across multiple scenarios show that TrafficSimAgent effectively executes simulations under various conditions and consistently produces reasonable outcomes even when user instructions are ambiguous. Besides, the carefully designed expert-level autonomous decision-driven optimization in TrafficSimAgent yields superior performance when compared with other systems and SOTA LLM based methods.
 
 **arXiv ID:** 2512.20996
-</details>
-
-<details>
-<summary><strong>Agentic Explainable Artificial Intelligence (Agentic XAI) Approach To Explore Better Explanation</strong> - Tomoaki Yamaguchi, Yutong Zhou, Masahiro Ryo, Keisuke Katsura - [[pdf]](https://arxiv.org/pdf/2512.21066)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2512.21066
 </details>
 
 <details>
@@ -267,14 +275,6 @@ Together, these mechanisms allow agents to develop stable and disentangled strat
 **Abstract:** LLM-based code agents(e.g., ChatGPT Codex) are increasingly deployed as detector for code review and security auditing tasks. Although CoT-enhanced LLM vulnerability detectors are believed to provide improved robustness against obfuscated malicious code, we find that their reasoning chains and semantic abstraction processes exhibit exploitable systematic this http URL allows attackers to covertly embed malicious logic, bypass code review, and propagate backdoored components throughout real-world software supply this http URL investigate this issue, we present CoTDeceptor, the first adversarial code obfuscation framework targeting CoT-enhanced LLM detectors. CoTDeceptor autonomously constructs evolving, hard-to-reverse multi-stage obfuscation strategy chains that effectively disrupt CoT-driven detection this http URL obtained malicious code provided by security enterprise, experimental results demonstrate that CoTDeceptor achieves stable and transferable evasion performance against state-of-the-art LLMs and vulnerability detection agents. CoTDeceptor bypasses 14 out of 15 vulnerability categories, compared to only 2 bypassed by prior methods. Our findings highlight potential risks in real-world software supply chains and underscore the need for more robust and interpretable LLM-powered security analysis systems.
 
 **arXiv ID:** 2512.21250
-</details>
-
-<details>
-<summary><strong>Autonomous Uncertainty Quantification for Computational Point-of-care Sensors</strong> - Artem Goncharov, Rajesh Ghosh, Hyou-Arm Joung, Dino Di Carlo, Aydogan Ozcan - [[pdf]](https://arxiv.org/pdf/2512.21335)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2512.21335
 </details>
 
 <details>
