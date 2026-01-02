@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-01 03:18:29
+**Last Updated:** 2026-01-02 02:26:56
 
 **Total Papers:** 83
 
@@ -329,19 +329,19 @@ Second, recognizing that these expectations are not static, we introduce the Con
 </details>
 
 <details>
-<summary><strong>Heterogeneous Multi-Agent Multi-Target Tracking using Cellular Sheaves</strong> - Tyler Hanks, Cristian F. Nino, Joana Bou Barcelo, Austin Copeland, Warren Dixon, James Fairbanks - [[pdf]](https://arxiv.org/pdf/2512.24886)</summary>
-
-**Abstract:** Multi-agent target tracking in the presence of nonlinear dynamics and agent heterogeneity, where state-space dimensions may differ, is a challenging problem that traditional graph Laplacian methods cannot easily address. This work leverages the framework of cellular sheaves, a mathematical generalization of graph theory, to natively model such heterogeneous systems. While existing coordination sheaf frameworks focus on cooperative problems like consensus, this work extends them to the non-cooperative target-tracking problem. The tracking of multiple, unknown targets is formulated as a harmonic extension problem on a cellular sheaf, accommodating nonlinear dynamics and external disturbances for all agents. A decentralized control law is developed using the sheaf Laplacian, and a corresponding Lyapunov-based stability analysis is provided to guarantee tracking error convergence, with results validated by simulation.
-
-**arXiv ID:** 2512.24886
-</details>
-
-<details>
 <summary><strong>MaRCA: Multi-Agent Reinforcement Learning for Dynamic Computation Allocation in Large-Scale Recommender Systems</strong> - Wan Jiang, Xinyi Zang, Yudong Zhao, Yusi Zou, Yunfei Lu, Junbo Tong, Yang Liu, Ming Li, Jiani Shi, Xin Yang - [[pdf]](https://arxiv.org/pdf/2512.24325)</summary>
 
 **Abstract:** Modern recommender systems face significant computational challenges due to growing model complexity and traffic scale, making efficient computation allocation critical for maximizing business revenue. Existing approaches typically simplify multi-stage computation resource allocation, neglecting inter-stage dependencies, thus limiting global optimality. In this paper, we propose MaRCA, a multi-agent reinforcement learning framework for end-to-end computation resource allocation in large-scale recommender systems. MaRCA models the stages of a recommender system as cooperative agents, using Centralized Training with Decentralized Execution (CTDE) to optimize revenue under computation resource constraints. We introduce an AutoBucket TestBench for accurate computation cost estimation, and a Model Predictive Control (MPC)-based Revenue-Cost Balancer to proactively forecast traffic loads and adjust the revenue-cost trade-off accordingly. Since its end-to-end deployment in the advertising pipeline of a leading global e-commerce platform in November 2024, MaRCA has consistently handled hundreds of billions of ad requests per day and has delivered a 16.67% revenue uplift using existing computation resources.
 
 **arXiv ID:** 2512.24325
+</details>
+
+<details>
+<summary><strong>Heterogeneous Multi-Agent Multi-Target Tracking using Cellular Sheaves</strong> - Tyler Hanks, Cristian F. Nino, Joana Bou Barcelo, Austin Copeland, Warren Dixon, James Fairbanks - [[pdf]](https://arxiv.org/pdf/2512.24886)</summary>
+
+**Abstract:** Multi-agent target tracking in the presence of nonlinear dynamics and agent heterogeneity, where state-space dimensions may differ, is a challenging problem that traditional graph Laplacian methods cannot easily address. This work leverages the framework of cellular sheaves, a mathematical generalization of graph theory, to natively model such heterogeneous systems. While existing coordination sheaf frameworks focus on cooperative problems like consensus, this work extends them to the non-cooperative target-tracking problem. The tracking of multiple, unknown targets is formulated as a harmonic extension problem on a cellular sheaf, accommodating nonlinear dynamics and external disturbances for all agents. A decentralized control law is developed using the sheaf Laplacian, and a corresponding Lyapunov-based stability analysis is provided to guarantee tracking error convergence, with results validated by simulation.
+
+**arXiv ID:** 2512.24886
 </details>
 
 <details>
@@ -549,19 +549,19 @@ We present a complete system architecture, threat model, and security analysis, 
 </details>
 
 <details>
-<summary><strong>Secure and Efficient Access Control for Computer-Use Agents via Context Space</strong> - Haochen Gong, Chenxiao Li, Rui Chang, Wenbo Shen - [[pdf]](https://arxiv.org/pdf/2509.22256)</summary>
-
-**Abstract:** Large language model (LLM)-based computer-use agents represent a convergence of AI and OS capabilities, enabling natural language to control system- and application-level functions. However, due to LLMs' inherent uncertainty issues, granting agents control over computers poses significant security risks. When agent actions deviate from user intentions, they can cause irreversible consequences. Existing mitigation approaches, such as user confirmation and LLM-based dynamic action validation, still suffer from limitations in usability, security, and performance. To address these challenges, we propose CSAgent, a system-level, static policy-based access control framework for computer-use agents. To bridge the gap between static policy and dynamic context and user intent, CSAgent introduces intent- and context-aware policies, and provides an automated toolchain to assist developers in constructing and refining them. CSAgent enforces these policies through an optimized OS service, ensuring that agent actions can only be executed under specific user intents and contexts. CSAgent supports protecting agents that control computers through diverse interfaces, including API, CLI, and GUI. We implement and evaluate CSAgent, which successfully defends against more than 99.56% of attacks while introducing only 1.99% performance overhead.
-
-**arXiv ID:** 2509.22256
-</details>
-
-<details>
 <summary><strong>In-N-Out: A Parameter-Level API Graph Dataset for Tool Agents</strong> - Seungkyu Lee, Nalim Kim, Yohan Jo - [[pdf]](https://arxiv.org/pdf/2509.01560)</summary>
 
 **Abstract:** Tool agents--LLM-based systems that interact with external APIs--offer a way to execute real-world tasks. However, as tasks become increasingly complex, these agents struggle to identify and call the correct APIs in the proper order. To tackle this problem, we investigate converting API documentation into a structured API graph that captures API dependencies and leveraging it for multi-tool queries that require compositional API calls. To support this, we introduce In-N-Out, the first expert-annotated dataset of API graphs built from two real-world API benchmarks and their documentation. Using In-N-Out significantly improves performance on both tool retrieval and multi-tool query generation, nearly doubling that of LLMs using documentation alone. Moreover, graphs generated by models fine-tuned on In-N-Out close 90% of this gap, showing that our dataset helps models learn to comprehend API documentation and parameter relationships. Our findings highlight the promise of using explicit API graphs for tool agents and the utility of In-N-Out as a valuable resource. We release our dataset and code at this https URL.
 
 **arXiv ID:** 2509.01560
+</details>
+
+<details>
+<summary><strong>Secure and Efficient Access Control for Computer-Use Agents via Context Space</strong> - Haochen Gong, Chenxiao Li, Rui Chang, Wenbo Shen - [[pdf]](https://arxiv.org/pdf/2509.22256)</summary>
+
+**Abstract:** Large language model (LLM)-based computer-use agents represent a convergence of AI and OS capabilities, enabling natural language to control system- and application-level functions. However, due to LLMs' inherent uncertainty issues, granting agents control over computers poses significant security risks. When agent actions deviate from user intentions, they can cause irreversible consequences. Existing mitigation approaches, such as user confirmation and LLM-based dynamic action validation, still suffer from limitations in usability, security, and performance. To address these challenges, we propose CSAgent, a system-level, static policy-based access control framework for computer-use agents. To bridge the gap between static policy and dynamic context and user intent, CSAgent introduces intent- and context-aware policies, and provides an automated toolchain to assist developers in constructing and refining them. CSAgent enforces these policies through an optimized OS service, ensuring that agent actions can only be executed under specific user intents and contexts. CSAgent supports protecting agents that control computers through diverse interfaces, including API, CLI, and GUI. We implement and evaluate CSAgent, which successfully defends against more than 99.56% of attacks while introducing only 1.99% performance overhead.
+
+**arXiv ID:** 2509.22256
 </details>
 
 <details>
