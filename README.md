@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-05 03:21:23
+**Last Updated:** 2026-01-06 02:25:51
 
 **Total Papers:** 52
 
@@ -56,7 +56,7 @@ YapBench contains over three hundred English prompts spanning three common brevi
 <summary><h2>Benchmarks and Datasets (4 papers)</h2></summary>
 
 <details>
-<summary><strong>Bio-inspired Agentic Self-healing Framework for Resilient Distributed Computing Continuum Systems</strong> - Alaa Saleh, Praveen Kumar Donta, Roberto Morabito, Sasu Tarkoma, Anders Lindgren, Qiyang Zhang, Schahram Dustdar Susanna Pirttikangas, Lauri Lovén - [[pdf]](https://arxiv.org/pdf/2601.00339)</summary>
+<summary><strong>Bio-inspired Agentic Self-healing Framework for Resilient Distributed Computing Continuum Systems</strong> - Alaa Saleh, Praveen Kumar Donta, Roberto Morabito, Sasu Tarkoma, Anders Lindgren, Qiyang Zhang, Schahram Dustdar, Susanna Pirttikangas, Lauri Lovén - [[pdf]](https://arxiv.org/pdf/2601.00339)</summary>
 
 **Abstract:** Human biological systems sustain life through extraordinary resilience, continually detecting damage, orchestrating targeted responses, and restoring function through self-healing. Inspired by these capabilities, this paper introduces ReCiSt, a bio-inspired agentic self-healing framework designed to achieve resilience in Distributed Computing Continuum Systems (DCCS). Modern DCCS integrate heterogeneous computing resources, ranging from resource-constrained IoT devices to high-performance cloud infrastructures, and their inherent complexity, mobility, and dynamic operating conditions expose them to frequent faults that disrupt service continuity. These challenges underscore the need for scalable, adaptive, and self-regulated resilience strategies. ReCiSt reconstructs the biological phases of Hemostasis, Inflammation, Proliferation, and Remodeling into the computational layers Containment, Diagnosis, Meta-Cognitive, and Knowledge for DCCS. These four layers perform autonomous fault isolation, causal diagnosis, adaptive recovery, and long-term knowledge consolidation through Language Model (LM)-powered agents. These agents interpret heterogeneous logs, infer root causes, refine reasoning pathways, and reconfigure resources with minimal human intervention. The proposed ReCiSt framework is evaluated on public fault datasets using multiple LMs, and no baseline comparison is included due to the scarcity of similar approaches. Nevertheless, our results, evaluated under different LMs, confirm ReCiSt's self-healing capabilities within tens of seconds with minimum of 10% of agent CPU usage. Our results also demonstrated depth of analysis to over come uncertainties and amount of micro-agents invoked to achieve resilience.
 
