@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-08 03:05:39
+**Last Updated:** 2026-01-09 02:27:13
 
 **Total Papers:** 75
 
@@ -114,7 +114,7 @@ Beyond delivering runnable tools, we report a deployment trace at the scale of 5
 <details>
 <summary><strong>Agent-Dice: Disentangling Knowledge Updates via Geometric Consensus for Agent Continual Learning</strong> - Zheng Wu, Xingyu Lou, Xinbei Ma, Yansi Li, Weiwen Liu, Weinan Zhang, Jun Wang, Zhuosheng Zhang - [[pdf]](https://arxiv.org/pdf/2601.03641)</summary>
 
-**Abstract:** Large Language Model (LLM)-based agents significantly extend the utility of LLMs by interacting with dynamic environments. However, enabling agents to continually learn new tasks without catastrophic forgetting remains a critical challenge, known as the stability-plasticity dilemma. In this work, we argue that this dilemma fundamentally arises from the failure to explicitly distinguish between common knowledge shared across tasks and conflicting knowledge introduced by task-specific interference. To address this, we propose Agent-Dice, a parameter fusion framework based on directional consensus evaluation. Concretely, Agent-Dice disentangles knowledge updates through a two-stage process: geometric consensus filtering to prune conflicting gradients, and curvature-based importance weighting to amplify shared semantics. We provide a rigorous theoretical analysis that establishes the validity of the proposed fusion scheme and offers insight into the origins of the stability-plasticity dilemma. Extensive experiments on GUI agents and tool-use agent domains demonstrate that Agent-Dice exhibits outstanding continual learning performance with minimal computational overhead and parameter updates.
+**Abstract:** Large Language Model (LLM)-based agents significantly extend the utility of LLMs by interacting with dynamic environments. However, enabling agents to continually learn new tasks without catastrophic forgetting remains a critical challenge, known as the stability-plasticity dilemma. In this work, we argue that this dilemma fundamentally arises from the failure to explicitly distinguish between common knowledge shared across tasks and conflicting knowledge introduced by task-specific interference. To address this, we propose Agent-Dice, a parameter fusion framework based on directional consensus evaluation. Concretely, Agent-Dice disentangles knowledge updates through a two-stage process: geometric consensus filtering to prune conflicting gradients, and curvature-based importance weighting to amplify shared semantics. We provide a rigorous theoretical analysis that establishes the validity of the proposed fusion scheme and offers insight into the origins of the stability-plasticity dilemma. Extensive experiments on GUI agents and tool-use agent domains demonstrate that Agent-Dice exhibits outstanding continual learning performance with minimal computational overhead and parameter updates. The codes are available at this https URL.
 
 **arXiv ID:** 2601.03641
 </details>
@@ -427,7 +427,7 @@ We conducted comprehensive experiments using the llama3.1-nemotron-nano-8B-v1 ar
 <summary><h2>Other Agent Research (9 papers)</h2></summary>
 
 <details>
-<summary><strong>Current Agents Fail to Leverage World Model as Tool for Foresight</strong> - Cheng Qian, Emre Can Acikgoz, Bingxuan Li, Xiusi Chen, Yuji Zhang, Bingxiang He, Qinyu Luo, Dilek Hakkani-Tür, Gokhan Tur, Yunzhu Li, Heng Ji, Heng Ji - [[pdf]](https://arxiv.org/pdf/2601.03905)</summary>
+<summary><strong>Current Agents Fail to Leverage World Model as Tool for Foresight</strong> - Cheng Qian, Emre Can Acikgoz, Bingxuan Li, Xiusi Chen, Yuji Zhang, Bingxiang He, Qinyu Luo, Dilek Hakkani-Tür, Gokhan Tur, Yunzhu Li, Heng Ji - [[pdf]](https://arxiv.org/pdf/2601.03905)</summary>
 
 **Abstract:** Agents built on vision-language models increasingly face tasks that demand anticipating future states rather than relying on short-horizon reasoning. Generative world models offer a promising remedy: agents could use them as external simulators to foresee outcomes before acting. This paper empirically examines whether current agents can leverage such world models as tools to enhance their cognition. Across diverse agentic and visual question answering tasks, we observe that some agents rarely invoke simulation (fewer than 1%), frequently misuse predicted rollouts (approximately 15%), and often exhibit inconsistent or even degraded performance (up to 5%) when simulation is available or enforced. Attribution analysis further indicates that the primary bottleneck lies in the agents' capacity to decide when to simulate, how to interpret predicted outcomes, and how to integrate foresight into downstream reasoning. These findings underscore the need for mechanisms that foster calibrated, strategic interaction with world models, paving the way toward more reliable anticipatory cognition in future agent systems.
 
@@ -528,7 +528,7 @@ We conducted comprehensive experiments using the llama3.1-nemotron-nano-8B-v1 ar
 </details>
 
 <details>
-<summary><strong>ReLA: Representation Learning and Aggregation for Job Scheduling with Reinforcement Learning</strong> - Zhengyi Kwan, Zhang Wei, Aik Beng Ng, Zhengkui Wang, Simon See - [[pdf]](https://arxiv.org/pdf/2601.03646)</summary>
+<summary><strong>ReLA: Representation Learning and Aggregation for Job Scheduling with Reinforcement Learning</strong> - Zhengyi Kwan, Wei Zhang, Aik Beng Ng, Zhengkui Wang, Simon See - [[pdf]](https://arxiv.org/pdf/2601.03646)</summary>
 
 **Abstract:** Job scheduling is widely used in real-world manufacturing systems to assign ordered job operations to machines under various constraints. Existing solutions remain limited by long running time or insufficient schedule quality, especially when problem scale increases. In this paper, we propose ReLA, a reinforcement-learning (RL) scheduler built on structured representation learning and aggregation. ReLA first learns diverse representations from scheduling entities, including job operations and machines, using two intra-entity learning modules with self-attention and convolution and one inter-entity learning module with cross-attention. These modules are applied in a multi-scale architecture, and their outputs are aggregated to support RL decision-making. Across experiments on small, medium, and large job instances, ReLA achieves the best makespan in most tested settings over the latest solutions. On non-large instances, ReLA reduces the optimality gap of the SOTA baseline by 13.0%, while on large-scale instances it reduces the gap by 78.6%, with the average optimality gaps lowered to 7.3% and 2.1%, respectively. These results confirm that ReLA's learned representations and aggregation provide strong decision support for RL scheduling, and enable fast job completion and decision-making for real-world applications.
 
