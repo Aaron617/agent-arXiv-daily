@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-14 03:14:24
+**Last Updated:** 2026-01-15 02:26:30
 
 **Total Papers:** 75
 
@@ -122,7 +122,7 @@ We evaluate MemoBrain on challenging long-horizon benchmarks, including GAIA, We
 <details>
 <summary><strong>To Retrieve or To Think? An Agentic Approach for Context Evolution</strong> - Rubing Chen, Jian Wang, Wenjie Li, Xiao-Yong Wei, Qing Li - [[pdf]](https://arxiv.org/pdf/2601.08747)</summary>
 
-**Abstract:** Current context augmentation methods, such as retrieval-augmented generation, are essential for solving knowledge-intensive reasoning this http URL, they typically adhere to a rigid, brute-force strategy that executes retrieval at every step. This indiscriminate approach not only incurs unnecessary computational costs but also degrades performance by saturating the context with irrelevant noise. To address these limitations, we introduce Agentic Context Evolution (ACE), a framework inspired by human metacognition that dynamically determines whether to seek new evidence or reason with existing knowledge. ACE employs a central orchestrator agent to make decisions strategically via majority this http URL aims to alternate between activating a retriever agent for external retrieval and a reasoner agent for internal analysis and refinement. By eliminating redundant retrieval steps, ACE maintains a concise and evolved context. Extensive experiments on challenging multi-hop QA benchmarks demonstrate that ACE significantly outperforms competitive baselines in accuracy while achieving efficient token this http URL work provides valuable insights into advancing context-evolved generation for complex, knowledge-intensive tasks.
+**Abstract:** Current context augmentation methods, such as retrieval-augmented generation, are essential for solving knowledge-intensive reasoning tasks. However, they typically adhere to a rigid, brute-force strategy that executes retrieval at every step. This indiscriminate approach not only incurs unnecessary computational costs but also degrades performance by saturating the context with irrelevant noise. To address these limitations, we introduce Agentic Context Evolution (ACE), a framework inspired by human metacognition that dynamically determines whether to seek new evidence or reason with existing knowledge. ACE employs a central orchestrator agent to make decisions strategically via majority voting. It aims to alternate between activating a retriever agent for external retrieval and a reasoner agent for internal analysis and refinement. By eliminating redundant retrieval steps, ACE maintains a concise and evolved context. Extensive experiments on challenging multi-hop QA benchmarks demonstrate that ACE significantly outperforms competitive baselines in accuracy while achieving efficient token consumption. Our work provides valuable insights into advancing context-evolved generation for complex, knowledge-intensive tasks.
 
 **arXiv ID:** 2601.08747
 </details>
@@ -448,19 +448,19 @@ Complementing these results, we establish information-theoretic lower bounds dem
 <summary><h2>Reinforcement Learning (25 papers)</h2></summary>
 
 <details>
-<summary><strong>MirrorBench: An Extensible Framework to Evaluate User-Proxy Agents for Human-Likeness</strong> - Ashutosh Hathidara, Julien Yu, Vaishali Senthil, Sebastian Schreiber, Anil Babu Ankisettipalli - [[pdf]](https://arxiv.org/pdf/2601.08118)</summary>
-
-**Abstract:** Large language models (LLMs) are increasingly used as human simulators, both for evaluating conversational systems and for generating fine-tuning data. However, naive "act-as-a-user" prompting often yields verbose, unrealistic utterances, underscoring the need for principled evaluation of so-called user proxy agents. We present MIRRORBENCH, a reproducible, extensible benchmarking framework that evaluates user proxies solely on their ability to produce human-like user utterances across diverse conversational tasks, explicitly decoupled from downstream task success. MIRRORBENCH features a modular execution engine with typed interfaces, metadata-driven registries, multi-backend support, caching, and robust observability. The system supports pluggable user proxies, datasets, tasks, and metrics, enabling researchers to evaluate arbitrary simulators under a uniform, variance-aware harness. We include three lexical-diversity metrics (MATTR, YULE'S K, and HD-D) and three LLM-judge-based metrics (GTEval, Pairwise Indistinguishability, and Rubric-and-Reason). Across four open datasets, MIRRORBENCH yields variance-aware results and reveals systematic gaps between user proxies and real human users. The framework is open source and includes a simple command-line interface for running experiments, managing configurations and caching, and generating reports. The framework can be accessed at this https URL.
-
-**arXiv ID:** 2601.08118
-</details>
-
-<details>
 <summary><strong>Forecast Aware Deep Reinforcement Learning for Efficient Electricity Load Scheduling in Dairy Farms</strong> - Nawazish Alia, Rachael Shawb, Karl Mason - [[pdf]](https://arxiv.org/pdf/2601.08052)</summary>
 
 **Abstract:** Dairy farming is an energy intensive sector that relies heavily on grid electricity. With increasing renewable energy integration, sustainable energy management has become essential for reducing grid dependence and supporting the United Nations Sustainable Development Goal 7 on affordable and clean energy. However, the intermittent nature of renewables poses challenges in balancing supply and demand in real time. Intelligent load scheduling is therefore crucial to minimize operational costs while maintaining reliability. Reinforcement Learning has shown promise in improving energy efficiency and reducing costs. However, most RL-based scheduling methods assume complete knowledge of future prices or generation, which is unrealistic in dynamic environments. Moreover, standard PPO variants rely on fixed clipping or KL divergence thresholds, often leading to unstable training under variable tariffs. To address these challenges, this study proposes a Deep Reinforcement Learning framework for efficient load scheduling in dairy farms, focusing on battery storage and water heating under realistic operational constraints. The proposed Forecast Aware PPO incorporates short term forecasts of demand and renewable generation using hour of day and month based residual calibration, while the PID KL PPO variant employs a proportional integral derivative controller to regulate KL divergence for stable policy updates adaptively. Trained on real world dairy farm data, the method achieves up to 1% lower electricity cost than PPO, 4.8% than DQN, and 1.5% than SAC. For battery scheduling, PPO reduces grid imports by 13.1%, demonstrating scalability and effectiveness for sustainable energy management in modern dairy farming.
 
 **arXiv ID:** 2601.08052
+</details>
+
+<details>
+<summary><strong>MirrorBench: An Extensible Framework to Evaluate User-Proxy Agents for Human-Likeness</strong> - Ashutosh Hathidara, Julien Yu, Vaishali Senthil, Sebastian Schreiber, Anil Babu Ankisettipalli - [[pdf]](https://arxiv.org/pdf/2601.08118)</summary>
+
+**Abstract:** Large language models (LLMs) are increasingly used as human simulators, both for evaluating conversational systems and for generating fine-tuning data. However, naive "act-as-a-user" prompting often yields verbose, unrealistic utterances, underscoring the need for principled evaluation of so-called user proxy agents. We present MIRRORBENCH, a reproducible, extensible benchmarking framework that evaluates user proxies solely on their ability to produce human-like user utterances across diverse conversational tasks, explicitly decoupled from downstream task success. MIRRORBENCH features a modular execution engine with typed interfaces, metadata-driven registries, multi-backend support, caching, and robust observability. The system supports pluggable user proxies, datasets, tasks, and metrics, enabling researchers to evaluate arbitrary simulators under a uniform, variance-aware harness. We include three lexical-diversity metrics (MATTR, YULE'S K, and HD-D) and three LLM-judge-based metrics (GTEval, Pairwise Indistinguishability, and Rubric-and-Reason). Across four open datasets, MIRRORBENCH yields variance-aware results and reveals systematic gaps between user proxies and real human users. The framework is open source and includes a simple command-line interface for running experiments, managing configurations and caching, and generating reports. The framework can be accessed at this https URL.
+
+**arXiv ID:** 2601.08118
 </details>
 
 <details>
