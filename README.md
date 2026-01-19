@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-19 02:33:44
+**Last Updated:** 2026-01-19 03:16:59
 
 **Total Papers:** 52
 
@@ -378,19 +378,19 @@
 </details>
 
 <details>
-<summary><strong>OctoBench: Benchmarking Scaffold-Aware Instruction Following in Repository-Grounded Agentic Coding</strong> - Deming Ding, Shichun Liu, Enhui Yang, Jiahang Lin, Ziying Chen, Shihan Dou, Honglin Guo, Weiyu Cheng, Pengyu Zhao, Chengjun Xiao, Qunhong Zeng, Qi Zhang, Xuanjing Huang, Qidi Xu, Tao Gui - [[pdf]](https://arxiv.org/pdf/2601.10343)</summary>
-
-**Abstract:** Modern coding scaffolds turn LLMs into capable software agents, but their ability to follow scaffold-specified instructions remains under-examined, especially when constraints are heterogeneous and persist across interactions. To fill this gap, we introduce OctoBench, which benchmarks scaffold-aware instruction following in repository-grounded agentic coding. OctoBench includes 34 environments and 217 tasks instantiated under three scaffold types, and is paired with 7,098 objective checklist items. To disentangle solving the task from following the rules, we provide an automated observation-and-scoring toolkit that captures full trajectories and performs fine-grained checks. Experiments on eight representative models reveal a systematic gap between task-solving and scaffold-aware compliance, underscoring the need for training and evaluation that explicitly targets heterogeneous instruction following. We release the benchmark to support reproducible benchmarking and to accelerate the development of more scaffold-aware coding agents.
-
-**arXiv ID:** 2601.10343
-</details>
-
-<details>
 <summary><strong>TSSR: Two-Stage Swap-Reward-Driven Reinforcement Learning for Character-Level SMILES Generation</strong> - Jacob Ede Levine, Yun Lyan Luo, Sai Chandra Kosaraju - [[pdf]](https://arxiv.org/pdf/2601.04521)</summary>
 
 **Abstract:** The design of reliable, valid, and diverse molecules is fundamental to modern drug discovery, as improved molecular generation supports efficient exploration of the chemical space for potential drug candidates and reduces the cost of early design efforts. Despite these needs, current chemical language models that generate molecules as SMILES strings are vulnerable to compounding token errors: many samples are unparseable or chemically implausible, and hard constraints meant to prevent failure can restrict exploration. To address this gap, we introduce TSSR, a Two-Stage, Swap-Reward-driven reinforcement learning (RL) framework for character-level SMILES generation. Stage one rewards local token swaps that repair syntax, promoting transitions from invalid to parseable strings. Stage two provides chemistry-aware feedback from RDKit diagnostics, rewarding reductions in valence, aromaticity, and connectivity issues. The reward decomposes into interpretable terms (swap efficiency, error reduction, distance to validity), is model agnostic, and requires no task-specific labels or hand-crafted grammars. We evaluated TSSR on the MOSES benchmark using a GRU policy trained with PPO in both pure RL (P-RL) from random initialization and fine-tuning RL (F-RL) starting from a pretrained chemical language model, assessing 10,000 generated SMILES per run. In P-RL, TSSR significantly improves syntactic validity, chemical validity, and novelty. In F-RL, TSSR preserves drug-likeness and synthesizability while increasing validity and novelty. Token-level analysis shows that syntax edits and chemistry fixes act jointly to reduce RDKit detected errors. TSSR converts a sparse terminal objective into a denser and more interpretable reward, improving both syntactic and chemical quality without reducing diversity. TSSR is dataset-agnostic and can be adapted to various reinforcement learning approaches.
 
 **arXiv ID:** 2601.04521
+</details>
+
+<details>
+<summary><strong>OctoBench: Benchmarking Scaffold-Aware Instruction Following in Repository-Grounded Agentic Coding</strong> - Deming Ding, Shichun Liu, Enhui Yang, Jiahang Lin, Ziying Chen, Shihan Dou, Honglin Guo, Weiyu Cheng, Pengyu Zhao, Chengjun Xiao, Qunhong Zeng, Qi Zhang, Xuanjing Huang, Qidi Xu, Tao Gui - [[pdf]](https://arxiv.org/pdf/2601.10343)</summary>
+
+**Abstract:** Modern coding scaffolds turn LLMs into capable software agents, but their ability to follow scaffold-specified instructions remains under-examined, especially when constraints are heterogeneous and persist across interactions. To fill this gap, we introduce OctoBench, which benchmarks scaffold-aware instruction following in repository-grounded agentic coding. OctoBench includes 34 environments and 217 tasks instantiated under three scaffold types, and is paired with 7,098 objective checklist items. To disentangle solving the task from following the rules, we provide an automated observation-and-scoring toolkit that captures full trajectories and performs fine-grained checks. Experiments on eight representative models reveal a systematic gap between task-solving and scaffold-aware compliance, underscoring the need for training and evaluation that explicitly targets heterogeneous instruction following. We release the benchmark to support reproducible benchmarking and to accelerate the development of more scaffold-aware coding agents.
+
+**arXiv ID:** 2601.10343
 </details>
 
 <details>
