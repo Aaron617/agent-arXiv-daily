@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-22 03:15:29
+**Last Updated:** 2026-01-23 02:30:19
 
-**Total Papers:** 79
+**Total Papers:** 78
 
 ## Table of Contents
 
@@ -110,20 +110,20 @@
 </details>
 
 <details>
+<summary><strong>IntelliSA: An Intelligent Static Analyzer for IaC Security Smell Detection Using Symbolic Rules and Neural Inference</strong> - Qiyue Mei, Michael Fu - [[pdf]](https://arxiv.org/pdf/2601.14595)</summary>
+
+**Abstract:** Infrastructure as Code (IaC) enables automated provisioning of large-scale cloud and on-premise environments, reducing the need for repetitive manual setup. However, this automation is a double-edged sword: a single misconfiguration in IaC scripts can propagate widely, leading to severe system downtime and security risks. Prior studies have shown that IaC scripts often contain security smells--bad coding patterns that may introduce vulnerabilities--and have proposed static analyzers based on symbolic rules to detect them. Yet, our preliminary analysis reveals that rule-based detection alone tends to over-approximate, producing excessive false positives and increasing the burden of manual inspection. In this paper, we present IntelliSA, an intelligent static analyzer for IaC security smell detection that integrates symbolic rules with neural inference. IntelliSA applies symbolic rules to over-approximate potential smells for broad coverage, then employs neural inference to filter false positives. While an LLM can effectively perform this filtering, reliance on LLM APIs introduces high cost and latency, raises data governance concerns, and limits reproducibility and offline deployment. To address the challenges, we adopt a knowledge distillation approach: an LLM teacher generates pseudo-labels to train a compact student model--over 500x smaller--that learns from the teacher's knowledge and efficiently classifies false positives. We evaluate IntelliSA against two static analyzers and three LLM baselines (Claude-4, Grok-4, and GPT-5) using a human-labeled dataset including 241 security smells across 11,814 lines of real-world IaC code. Experimental results show that IntelliSA achieves the highest F1 score (83%), outperforming baselines by 7-42%. Moreover, IntelliSA demonstrates the best cost-effectiveness, detecting 60% of security smells while inspecting less than 2% of the codebase.
+
+**arXiv ID:** 2601.14595
+</details>
+
+<details>
 <summary><strong>Real-Time Wildfire Localization on the NASA Autonomous Modular Sensor using Deep Learning</strong> - Yajvan Ravan, Aref Malek, Chester Dolph, Nikhil Behari - [[pdf]](https://arxiv.org/pdf/2601.14475)</summary>
 
 **Abstract:** High-altitude, multi-spectral, aerial imagery is scarce and expensive to acquire, yet it is necessary for algorithmic advances and application of machine learning models to high-impact problems such as wildfire detection. We introduce a human-annotated dataset from the NASA Autonomous Modular Sensor (AMS) using 12-channel, medium to high altitude (3 - 50 km) aerial wildfire images similar to those used in current US wildfire missions. Our dataset combines spectral data from 12 different channels, including infrared (IR), short-wave IR (SWIR), and thermal. We take imagery from 20 wildfire missions and randomly sample small patches to generate over 4000 images with high variability, including occlusions by smoke/clouds, easily-confused false positives, and nighttime imagery.
 We demonstrate results from a deep-learning model to automate the human-intensive process of fire perimeter determination. We train two deep neural networks, one for image classification and the other for pixel-level segmentation. The networks are combined into a unique real-time segmentation model to efficiently localize active wildfire on an incoming image feed. Our model achieves 96% classification accuracy, 74% Intersection-over-Union(IoU), and 84% recall surpassing past methods, including models trained on satellite data and classical color-rule algorithms. By leveraging a multi-spectral dataset, our model is able to detect active wildfire at nighttime and behind clouds, while distinguishing between false positives. We find that data from the SWIR, IR, and thermal bands is the most important to distinguish fire perimeters. Our code and dataset can be found here: this https URL and this https URL
 
 **arXiv ID:** 2601.14475
-</details>
-
-<details>
-<summary><strong>IntelliSA: An Intelligent Static Analyzer for IaC Security Smell Detection Using Symbolic Rules and Neural Inference</strong> - Qiyue Mei, Michael Fu - [[pdf]](https://arxiv.org/pdf/2601.14595)</summary>
-
-**Abstract:** Infrastructure as Code (IaC) enables automated provisioning of large-scale cloud and on-premise environments, reducing the need for repetitive manual setup. However, this automation is a double-edged sword: a single misconfiguration in IaC scripts can propagate widely, leading to severe system downtime and security risks. Prior studies have shown that IaC scripts often contain security smells--bad coding patterns that may introduce vulnerabilities--and have proposed static analyzers based on symbolic rules to detect them. Yet, our preliminary analysis reveals that rule-based detection alone tends to over-approximate, producing excessive false positives and increasing the burden of manual inspection. In this paper, we present IntelliSA, an intelligent static analyzer for IaC security smell detection that integrates symbolic rules with neural inference. IntelliSA applies symbolic rules to over-approximate potential smells for broad coverage, then employs neural inference to filter false positives. While an LLM can effectively perform this filtering, reliance on LLM APIs introduces high cost and latency, raises data governance concerns, and limits reproducibility and offline deployment. To address the challenges, we adopt a knowledge distillation approach: an LLM teacher generates pseudo-labels to train a compact student model--over 500x smaller--that learns from the teacher's knowledge and efficiently classifies false positives. We evaluate IntelliSA against two static analyzers and three LLM baselines (Claude-4, Grok-4, and GPT-5) using a human-labeled dataset including 241 security smells across 11,814 lines of real-world IaC code. Experimental results show that IntelliSA achieves the highest F1 score (83%), outperforming baselines by 7-42%. Moreover, IntelliSA demonstrates the best cost-effectiveness, detecting 60% of security smells while inspecting less than 2% of the codebase.
-
-**arXiv ID:** 2601.14595
 </details>
 
 <details>
@@ -167,7 +167,7 @@ We demonstrate results from a deep-learning model to automate the human-intensiv
 </details>
 
 <details>
-<summary><strong>SmartOracle - An Agentic Approach to Mitigate Noise in Differential Oracles</strong> - Srinath Srinivasan, Tim Menzies, Marcelo D'Amorim - [[pdf]](https://arxiv.org/pdf/2601.15074)</summary>
+<summary><strong>SmartOracle -- An Agentic Approach to Mitigate Noise in Differential Oracles</strong> - Srinath Srinivasan, Tim Menzies, Marcelo D'Amorim - [[pdf]](https://arxiv.org/pdf/2601.15074)</summary>
 
 **Abstract:** Differential fuzzers detect bugs by executing identical inputs across distinct implementations of the same specification, such as JavaScript interpreters. Validating the outputs requires an oracle and for differential testing of JavaScript, these are constructed manually, making them expensive, time-consuming, and prone to false positives. Worse, when the specification evolves, this manual effort must be repeated.
 Inspired by the success of agentic systems in other SE domains, this paper introduces SmartOracle. SmartOracle decomposes the manual triage workflow into specialized Large Language Model (LLM) sub-agents. These agents synthesize independently gathered evidence from terminal runs and targeted specification queries to reach a final verdict.
@@ -499,7 +499,7 @@ We conclude that unless organizations explicitly redesign decision boundaries or
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (23 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (22 papers)</h2></summary>
 
 <details>
 <summary><strong>Query-Efficient Agentic Graph Extraction Attacks on GraphRAG Systems</strong> - Shuhua Yang, Jiahao Zhang, Yilong Wang, Dongwon Lee, Suhang Wang - [[pdf]](https://arxiv.org/pdf/2601.14662)</summary>
@@ -659,14 +659,6 @@ We conclude that unless organizations explicitly redesign decision boundaries or
 **Abstract:** Agentic Reinforcement Learning (RL) has empowered Large Language Models (LLMs) to utilize tools like Python interpreters for complex problem-solving. However, for parameter-constrained models (e.g., 4B--7B), the exploration phase is often plagued by frequent execution failures, creating noisy trajectories that hinder policy optimization. Under standard outcome-based reward settings, this noise leads to a critical credit assignment issue, where erroneous actions are inadvertently reinforced alongside successful outcomes. Existing mitigations face a dilemma: dense rewards often trigger reward hacking, while supersampling incurs prohibitive computational costs. To address these challenges, we propose CLEANER. Distinct from external filtering methods, CLEANER exploits the model's intrinsic self-correction capabilities to eliminate error-contaminated context directly during data collection. At its core, the Similarity-Aware Adaptive Rollback (SAAR) mechanism autonomously constructs clean, purified trajectories by retrospectively replacing failures with successful self-corrections. Based on semantic similarity, SAAR adaptively regulates replacement granularity from shallow execution repairs to deep reasoning substitutions. By training on these self-purified paths, the model internalizes correct reasoning patterns rather than error-recovery loops. Empirical results on AIME24/25, GPQA, and LiveCodeBench show average accuracy gains of 6%, 3%, and 5% over baselines. Notably, CLEANER matches state-of-the-art performance using only one-third of the training steps, highlighting trajectory purification as a scalable solution for efficient agentic RL. Our models and code are available at GitHub
 
 **arXiv ID:** 2601.15141
-</details>
-
-<details>
-<summary><strong>RL-BioAug: Label-Efficient Reinforcement Learning for Self-Supervised EEG Representation Learning</strong> - Cheol-Hui Lee, Hwa-Yeon Lee, Dong-Joo Kim - [[pdf]](https://arxiv.org/pdf/2601.13964)</summary>
-
-**Abstract:** The quality of data augmentation serves as a critical determinant for the performance of contrastive learning in EEG tasks. Although this paradigm is promising for utilizing unlabeled data, static or random augmentation strategies often fail to preserve intrinsic information due to the non-stationarity of EEG signals where statistical properties change over time. To address this, we propose RL-BioAug, a framework that leverages a label-efficient reinforcement learning (RL) agent to autonomously determine optimal augmentation policies. While utilizing only a minimal fraction (10%) of labeled data to guide the agent's policy, our method enables the encoder to learn robust representations in a strictly self-supervised manner. Experimental results demonstrate that RL-BioAug significantly outperforms the random selection strategy, achieving substantial improvements of 9.69% and 8.80% in Macro-F1 score on the Sleep-EDFX and CHB-MIT datasets, respectively. Notably, this agent mainly chose optimal strategies for each task--for example, Time Masking with a 62% probability for sleep stage classification and Crop & Resize with a 77% probability for seizure detection. Our framework suggests its potential to replace conventional heuristic-based augmentations and establish a new autonomous paradigm for data augmentation. The source code is available at this https URL.
-
-**arXiv ID:** 2601.13964
 </details>
 
 <details>
