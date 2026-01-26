@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-26 02:39:49
+**Last Updated:** 2026-01-26 03:23:44
 
 **Total Papers:** 53
 
@@ -137,7 +137,7 @@ The impact of caching within the agentic loop is substantial. In our evaluation,
 <details>
 <summary><strong>EMemBench: Interactive Benchmarking of Episodic Memory for VLM Agents</strong> - Xinze Li, Ziyue Zhu, Siyuan Liu, Yubo Ma, Yuhang Zang, Yixin Cao, Aixin Sun - [[pdf]](https://arxiv.org/pdf/2601.16690)</summary>
 
-**Abstract:** 
+**Abstract:** We introduce EMemBench, a programmatic benchmark for evaluating long-term memory of agents through interactive games. Rather than using a fixed set of questions, EMemBench generates questions from each agent's own trajectory, covering both text and visual game environments. Each template computes verifiable ground truth from underlying game signals, with controlled answerability and balanced coverage over memory skills: single/multi-hop recall, induction, temporal, spatial, logical, and adversarial. We evaluate memory agents with strong LMs/VLMs as backbones, using in-context prompting as baselines. Across 15 text games and multiple visual seeds, results are far from saturated: induction and spatial reasoning are persistent bottlenecks, especially in visual setting. Persistent memory yields clear gains for open backbones on text games, but improvements are less consistent for VLM agents, suggesting that visually grounded episodic memory remains an open challenge. A human study further confirms the difficulty of EMemBench.
 
 **arXiv ID:** 2601.16690
 </details>
@@ -427,7 +427,7 @@ To address this issue, we propose Proof-of-Use (PoU), an evidence grounded RL fr
 <details>
 <summary><strong>A Regularized Actor-Critic Algorithm for Bi-Level Reinforcement Learning</strong> - Sihan Zeng, Sujay Bhatt, Sumitra Ganesh, Alec Koppel - [[pdf]](https://arxiv.org/pdf/2601.16399)</summary>
 
-**Abstract:** 
+**Abstract:** We study a structured bi-level optimization problem where the upper-level objective is a smooth function and the lower-level problem is policy optimization in a Markov decision process (MDP). The upper-level decision variable parameterizes the reward of the lower-level MDP, and the upper-level objective depends on the optimal induced policy. Existing methods for bi-level optimization and RL often require second-order information, impose strong regularization at the lower level, or inefficiently use samples through nested-loop procedures. In this work, we propose a single-loop, first-order actor-critic algorithm that optimizes the bi-level objective via a penalty-based reformulation. We introduce into the lower-level RL objective an attenuating entropy regularization, which enables asymptotically unbiased upper-level hyper-gradient estimation without solving the unregularized RL problem exactly. We establish the finite-time and finite-sample convergence of the proposed algorithm to a stationary point of the original, unregularized bi-level optimization problem through a novel lower-level residual analysis under a special type of Polyak-Lojasiewicz condition. We validate the performance of our method through experiments on a GridWorld goal position problem and on happy tweet generation through reinforcement learning from human feedback (RLHF).
 
 **arXiv ID:** 2601.16399
 </details>
@@ -441,19 +441,19 @@ To address this issue, we propose Proof-of-Use (PoU), an evidence grounded RL fr
 </details>
 
 <details>
-<summary><strong>Task Aware Dreamer for Task Generalization in Reinforcement Learning</strong> - Chengyang Ying, Xinning Zhou, Zhongkai Hao, Hang Su, Songming Liu, Dong Yan, Jun Zhu - [[pdf]](https://arxiv.org/pdf/2303.05092)</summary>
-
-**Abstract:** A long-standing goal of reinforcement learning is to acquire agents that can learn on training tasks and generalize well on unseen tasks that may share a similar dynamic but with different reward functions. The ability to generalize across tasks is important as it determines an agent's adaptability to real-world scenarios where reward mechanisms might vary. In this work, we first show that training a general world model can utilize similar structures in these tasks and help train more generalizable agents. Extending world models into the task generalization setting, we introduce a novel method named Task Aware Dreamer (TAD), which integrates reward-informed features to identify consistent latent characteristics across tasks. Within TAD, we compute the variational lower bound of sample data log-likelihood, which introduces a new term designed to differentiate tasks using their states, as the optimization objective of our reward-informed world models. To demonstrate the advantages of the reward-informed policy in TAD, we introduce a new metric called Task Distribution Relevance (TDR) which quantitatively measures the relevance of different tasks. For tasks exhibiting a high TDR, i.e., the tasks differ significantly, we illustrate that Markovian policies struggle to distinguish them, thus it is necessary to utilize reward-informed policies in TAD. Extensive experiments in both image-based and state-based tasks show that TAD can significantly improve the performance of handling different tasks simultaneously, especially for those with high TDR, and display a strong generalization ability to unseen tasks.
-
-**arXiv ID:** 2303.05092
-</details>
-
-<details>
 <summary><strong>Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation</strong> - Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung, Thomas Braunl - [[pdf]](https://arxiv.org/pdf/2601.16686)</summary>
 
 **Abstract:** This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL.
 
 **arXiv ID:** 2601.16686
+</details>
+
+<details>
+<summary><strong>Task Aware Dreamer for Task Generalization in Reinforcement Learning</strong> - Chengyang Ying, Xinning Zhou, Zhongkai Hao, Hang Su, Songming Liu, Dong Yan, Jun Zhu - [[pdf]](https://arxiv.org/pdf/2303.05092)</summary>
+
+**Abstract:** A long-standing goal of reinforcement learning is to acquire agents that can learn on training tasks and generalize well on unseen tasks that may share a similar dynamic but with different reward functions. The ability to generalize across tasks is important as it determines an agent's adaptability to real-world scenarios where reward mechanisms might vary. In this work, we first show that training a general world model can utilize similar structures in these tasks and help train more generalizable agents. Extending world models into the task generalization setting, we introduce a novel method named Task Aware Dreamer (TAD), which integrates reward-informed features to identify consistent latent characteristics across tasks. Within TAD, we compute the variational lower bound of sample data log-likelihood, which introduces a new term designed to differentiate tasks using their states, as the optimization objective of our reward-informed world models. To demonstrate the advantages of the reward-informed policy in TAD, we introduce a new metric called Task Distribution Relevance (TDR) which quantitatively measures the relevance of different tasks. For tasks exhibiting a high TDR, i.e., the tasks differ significantly, we illustrate that Markovian policies struggle to distinguish them, thus it is necessary to utilize reward-informed policies in TAD. Extensive experiments in both image-based and state-based tasks show that TAD can significantly improve the performance of handling different tasks simultaneously, especially for those with high TDR, and display a strong generalization ability to unseen tasks.
+
+**arXiv ID:** 2303.05092
 </details>
 
 <details>
