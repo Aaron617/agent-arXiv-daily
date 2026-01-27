@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-26 03:23:44
+**Last Updated:** 2026-01-27 02:34:17
 
 **Total Papers:** 53
 
@@ -441,19 +441,19 @@ To address this issue, we propose Proof-of-Use (PoU), an evidence grounded RL fr
 </details>
 
 <details>
-<summary><strong>Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation</strong> - Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung, Thomas Braunl - [[pdf]](https://arxiv.org/pdf/2601.16686)</summary>
-
-**Abstract:** This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL.
-
-**arXiv ID:** 2601.16686
-</details>
-
-<details>
 <summary><strong>Task Aware Dreamer for Task Generalization in Reinforcement Learning</strong> - Chengyang Ying, Xinning Zhou, Zhongkai Hao, Hang Su, Songming Liu, Dong Yan, Jun Zhu - [[pdf]](https://arxiv.org/pdf/2303.05092)</summary>
 
 **Abstract:** A long-standing goal of reinforcement learning is to acquire agents that can learn on training tasks and generalize well on unseen tasks that may share a similar dynamic but with different reward functions. The ability to generalize across tasks is important as it determines an agent's adaptability to real-world scenarios where reward mechanisms might vary. In this work, we first show that training a general world model can utilize similar structures in these tasks and help train more generalizable agents. Extending world models into the task generalization setting, we introduce a novel method named Task Aware Dreamer (TAD), which integrates reward-informed features to identify consistent latent characteristics across tasks. Within TAD, we compute the variational lower bound of sample data log-likelihood, which introduces a new term designed to differentiate tasks using their states, as the optimization objective of our reward-informed world models. To demonstrate the advantages of the reward-informed policy in TAD, we introduce a new metric called Task Distribution Relevance (TDR) which quantitatively measures the relevance of different tasks. For tasks exhibiting a high TDR, i.e., the tasks differ significantly, we illustrate that Markovian policies struggle to distinguish them, thus it is necessary to utilize reward-informed policies in TAD. Extensive experiments in both image-based and state-based tasks show that TAD can significantly improve the performance of handling different tasks simultaneously, especially for those with high TDR, and display a strong generalization ability to unseen tasks.
 
 **arXiv ID:** 2303.05092
+</details>
+
+<details>
+<summary><strong>Adaptive Reinforcement and Model Predictive Control Switching for Safe Human-Robot Cooperative Navigation</strong> - Ning Liu, Sen Shen, Zheng Li, Matthew D'Souza, Jen Jen Chung, Thomas Braunl - [[pdf]](https://arxiv.org/pdf/2601.16686)</summary>
+
+**Abstract:** This paper addresses the challenge of human-guided navigation for mobile collaborative robots under simultaneous proximity regulation and safety constraints. We introduce Adaptive Reinforcement and Model Predictive Control Switching (ARMS), a hybrid learning-control framework that integrates a reinforcement learning follower trained with Proximal Policy Optimization (PPO) and an analytical one-step Model Predictive Control (MPC) formulated as a quadratic program safety filter. To enable robust perception under partial observability and non-stationary human motion, ARMS employs a decoupled sensing architecture with a Long Short-Term Memory (LSTM) temporal encoder for the human-robot relative state and a spatial encoder for 360-degree LiDAR scans. The core contribution is a learned adaptive neural switcher that performs context-aware soft action fusion between the two controllers, favoring conservative, constraint-aware QP-based control in low-risk regions while progressively shifting control authority to the learned follower in highly cluttered or constrained scenarios where maneuverability is critical, and reverting to the follower action when the QP becomes infeasible. Extensive evaluations against Pure Pursuit, Dynamic Window Approach (DWA), and an RL-only baseline demonstrate that ARMS achieves an 82.5 percent success rate in highly cluttered environments, outperforming DWA and RL-only approaches by 7.1 percent and 3.1 percent, respectively, while reducing average computational latency by 33 percent to 5.2 milliseconds compared to a multi-step MPC baseline. Additional simulation transfer in Gazebo and initial real-world deployment results further indicate the practicality and robustness of ARMS for safe and efficient human-robot collaboration. Source code and a demonstration video are available at this https URL.
+
+**arXiv ID:** 2601.16686
 </details>
 
 <details>
