@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-27 02:34:17
+**Last Updated:** 2026-01-27 03:16:34
 
 **Total Papers:** 53
 
@@ -45,14 +45,6 @@
 <summary><h2>Benchmarks and Datasets (14 papers)</h2></summary>
 
 <details>
-<summary><strong>DSGym: A Holistic Framework for Evaluating and Training Data Science Agents</strong> - Fan Nie, Junlin Wang, Harper Hua, Federico Bianchi, Yongchan Kwon, Zhenting Qi, Owen Queen, Shang Zhu, James Zou - [[pdf]](https://arxiv.org/pdf/2601.16344)</summary>
-
-**Abstract:** Data science agents promise to accelerate discovery and insight-generation by turning data into executable analyses and findings. Yet existing data science benchmarks fall short due to fragmented evaluation interfaces that make cross-benchmark comparison difficult, narrow task coverage and a lack of rigorous data grounding. In particular, we show that a substantial portion of tasks in current benchmarks can be solved without using the actual data. To address these limitations, we introduce DSGym, a standardized framework for evaluating and training data science agents in self-contained execution environments. Unlike static benchmarks, DSGym provides a modular architecture that makes it easy to add tasks, agent scaffolds, and tools, positioning it as a live, extensible testbed. We curate DSGym-Tasks, a holistic task suite that standardizes and refines existing benchmarks via quality and shortcut solvability filtering. We further expand coverage with (1) DSBio: expert-derived bioinformatics tasks grounded in literature and (2) DSPredict: challenging prediction tasks spanning domains such as computer vision, molecular prediction, and single-cell perturbation. Beyond evaluation, DSGym enables agent training via execution-verified data synthesis pipeline. As a case study, we build a 2,000-example training set and trained a 4B model in DSGym that outperforms GPT-4o on standardized analysis benchmarks. Overall, DSGym enables rigorous end-to-end measurement of whether agents can plan, implement, and validate data analyses in realistic scientific context.
-
-**arXiv ID:** 2601.16344
-</details>
-
-<details>
 <summary><strong>SemanticALLI: Caching Reasoning, Not Just Responses, in Agentic Systems</strong> - Varun Chillara, Dylan Kline, Christopher Alvares, Evan Wooten, Huan Yang, Shlok Khetan, Cade Bauer, Tré Guillory, Tanishka Shah, Yashodhara Dhariwal, Volodymyr Pavlov, George Popstefanov - [[pdf]](https://arxiv.org/pdf/2601.16286)</summary>
 
 **Abstract:** Agentic AI pipelines suffer from a hidden inefficiency: they frequently reconstruct identical intermediate logic, such as metric normalization or chart scaffolding, even when the user's natural language phrasing is entirely novel. Conventional boundary caching fails to capture this inefficiency because it treats inference as a monolithic black box.
@@ -60,6 +52,14 @@ We introduce SemanticALLI, a pipeline-aware architecture within Alli (PMG's mark
 The impact of caching within the agentic loop is substantial. In our evaluation, baseline monolithic caching caps at a 38.7% hit rate due to linguistic variance. In contrast, our structured approach allows for an additional stage, the Visualization Synthesis stage, to achieve an 83.10% hit rate, bypassing 4,023 LLM calls with a median latency of just 2.66 ms. This internal reuse reduces total token consumption, offering a practical lesson for AI system design: even when users rarely repeat themselves, the pipeline often does, at stable, structured checkpoints where caching is most reliable.
 
 **arXiv ID:** 2601.16286
+</details>
+
+<details>
+<summary><strong>DSGym: A Holistic Framework for Evaluating and Training Data Science Agents</strong> - Fan Nie, Junlin Wang, Harper Hua, Federico Bianchi, Yongchan Kwon, Zhenting Qi, Owen Queen, Shang Zhu, James Zou - [[pdf]](https://arxiv.org/pdf/2601.16344)</summary>
+
+**Abstract:** Data science agents promise to accelerate discovery and insight-generation by turning data into executable analyses and findings. Yet existing data science benchmarks fall short due to fragmented evaluation interfaces that make cross-benchmark comparison difficult, narrow task coverage and a lack of rigorous data grounding. In particular, we show that a substantial portion of tasks in current benchmarks can be solved without using the actual data. To address these limitations, we introduce DSGym, a standardized framework for evaluating and training data science agents in self-contained execution environments. Unlike static benchmarks, DSGym provides a modular architecture that makes it easy to add tasks, agent scaffolds, and tools, positioning it as a live, extensible testbed. We curate DSGym-Tasks, a holistic task suite that standardizes and refines existing benchmarks via quality and shortcut solvability filtering. We further expand coverage with (1) DSBio: expert-derived bioinformatics tasks grounded in literature and (2) DSPredict: challenging prediction tasks spanning domains such as computer vision, molecular prediction, and single-cell perturbation. Beyond evaluation, DSGym enables agent training via execution-verified data synthesis pipeline. As a case study, we build a 2,000-example training set and trained a 4B model in DSGym that outperforms GPT-4o on standardized analysis benchmarks. Overall, DSGym enables rigorous end-to-end measurement of whether agents can plan, implement, and validate data analyses in realistic scientific context.
+
+**arXiv ID:** 2601.16344
 </details>
 
 <details>
@@ -294,19 +294,19 @@ The impact of caching within the agentic loop is substantial. In our evaluation,
 </details>
 
 <details>
-<summary><strong>VibeTensor: System Software for Deep Learning, Fully Generated by AI Agents</strong> - Bing Xu, Terry Chen, Fengzhe Zhou, Tianqi Chen, Yangqing Jia, Vinod Grover, Haicheng Wu, Wei Liu, Craig Wittenbrink, Wen-mei Hwu, Roger Bringmann, Ming-Yu Liu, Luis Ceze, Michael Lightstone, Humphrey Shi - [[pdf]](https://arxiv.org/pdf/2601.16238)</summary>
-
-**Abstract:** VIBETENSOR is an open-source research system software stack for deep learning, generated by LLM-powered coding agents under high-level human guidance. In this paper, "fully generated" refers to code provenance: implementation changes were produced and applied as agent-proposed diffs; validation relied on agent-run builds, tests, and differential checks, without per-change manual diff review. It implements a PyTorch-style eager tensor library with a C++20 core (CPU+CUDA), a torch-like Python overlay via nanobind, and an experimental this http URL interface. Unlike thin bindings, VIBETENSOR includes its own tensor/storage system, schema-lite dispatcher, reverse-mode autograd, CUDA runtime (streams/events/graphs), a stream-ordered caching allocator with diagnostics, and a stable C ABI for dynamically loaded operator plugins. We view this release as a milestone for AI-assisted software engineering: it shows coding agents can generate a coherent deep learning runtime spanning language bindings down to CUDA memory management, validated primarily by builds and tests. We describe the architecture, summarize the workflow used to produce and validate the system, and evaluate the artifact. We report repository scale and test-suite composition, and summarize reproducible microbenchmarks from an accompanying AI-generated kernel suite, including fused attention versus PyTorch SDPA/FlashAttention. We also report end-to-end training sanity checks on 3 small workloads (sequence reversal, ViT, miniGPT) on NVIDIA H100 (Hopper, SM90) and Blackwell-class GPUs; multi-GPU results are Blackwell-only and use an optional CUTLASS-based ring-allreduce plugin gated on CUDA 13+ and sm103a toolchain support. Finally, we discuss failure modes in generated system software, including a "Frankenstein" composition effect where locally correct subsystems interact to yield globally suboptimal performance.
-
-**arXiv ID:** 2601.16238
-</details>
-
-<details>
 <summary><strong>DMV-AVP: Distributed Multi-Vehicle Autonomous Valet Parking using Autoware</strong> - Zubair Islam, Mohamed El-Darieby - [[pdf]](https://arxiv.org/pdf/2601.16327)</summary>
 
 **Abstract:** This paper presents the DMV-AVP System, a distributed simulation of Multi-Vehicle Autonomous Valet Parking (AVP). The system was implemented as an application of the Distributed Multi-Vehicle Architecture (DMAVA) for synchronized multi-host execution. Most existing simulation approaches rely on centralized or non-distributed designs that constrain scalability and limit fully autonomous control. This work introduces two modules built on top of the DMAVA: 1) a Multi-Vehicle AVP Node that performs state-based coordination, queuing, and reservation management across multiple vehicles, and 2) a Unity-Integrated YOLOv5 Parking Spot Detection Module that provides real-time, vision-based perception within AWSIM Labs. Both modules integrate seamlessly with the DMAVA and extend it specifically for multi-vehicle AVP operation, supported by a Zenoh-based communication layer that ensures low-latency topic synchronization and coordinated behavior across hosts. Experiments conducted on two- and three-host configurations demonstrate deterministic coordination, conflict-free parking behavior, and scalable performance across distributed Autoware instances. The results confirm that the proposed Distributed Multi-Vehicle AVP System supports cooperative AVP simulation and establishes a foundation for future real-world and hardware-in-the-loop validation. Demo videos and source code are available at this https URL
 
 **arXiv ID:** 2601.16327
+</details>
+
+<details>
+<summary><strong>VibeTensor: System Software for Deep Learning, Fully Generated by AI Agents</strong> - Bing Xu, Terry Chen, Fengzhe Zhou, Tianqi Chen, Yangqing Jia, Vinod Grover, Haicheng Wu, Wei Liu, Craig Wittenbrink, Wen-mei Hwu, Roger Bringmann, Ming-Yu Liu, Luis Ceze, Michael Lightstone, Humphrey Shi - [[pdf]](https://arxiv.org/pdf/2601.16238)</summary>
+
+**Abstract:** VIBETENSOR is an open-source research system software stack for deep learning, generated by LLM-powered coding agents under high-level human guidance. In this paper, "fully generated" refers to code provenance: implementation changes were produced and applied as agent-proposed diffs; validation relied on agent-run builds, tests, and differential checks, without per-change manual diff review. It implements a PyTorch-style eager tensor library with a C++20 core (CPU+CUDA), a torch-like Python overlay via nanobind, and an experimental this http URL interface. Unlike thin bindings, VIBETENSOR includes its own tensor/storage system, schema-lite dispatcher, reverse-mode autograd, CUDA runtime (streams/events/graphs), a stream-ordered caching allocator with diagnostics, and a stable C ABI for dynamically loaded operator plugins. We view this release as a milestone for AI-assisted software engineering: it shows coding agents can generate a coherent deep learning runtime spanning language bindings down to CUDA memory management, validated primarily by builds and tests. We describe the architecture, summarize the workflow used to produce and validate the system, and evaluate the artifact. We report repository scale and test-suite composition, and summarize reproducible microbenchmarks from an accompanying AI-generated kernel suite, including fused attention versus PyTorch SDPA/FlashAttention. We also report end-to-end training sanity checks on 3 small workloads (sequence reversal, ViT, miniGPT) on NVIDIA H100 (Hopper, SM90) and Blackwell-class GPUs; multi-GPU results are Blackwell-only and use an optional CUTLASS-based ring-allreduce plugin gated on CUDA 13+ and sm103a toolchain support. Finally, we discuss failure modes in generated system software, including a "Frankenstein" composition effect where locally correct subsystems interact to yield globally suboptimal performance.
+
+**arXiv ID:** 2601.16238
 </details>
 
 <details>
