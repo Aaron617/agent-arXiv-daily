@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-01-29 02:49:25
+**Last Updated:** 2026-01-29 03:34:52
 
 **Total Papers:** 86
 
@@ -580,19 +580,19 @@ Experiments on continuous-control benchmarks with reward corruption demonstrate 
 </details>
 
 <details>
-<summary><strong>GRACE: A Language Model Framework for Explainable Inverse Reinforcement Learning</strong> - Silvia Sapora, Devon Hjelm, Alexander Toshev, Omar Attia, Bogdan Mazoure - [[pdf]](https://arxiv.org/pdf/2510.02180)</summary>
-
-**Abstract:** Inverse Reinforcement Learning aims to recover reward models from expert demonstrations, but traditional methods yield black-box models that are difficult to interpret and debug. In this work, we introduce GRACE (Generating Rewards As CodE), a method for using Large Language Models within an evolutionary search to reverse-engineer an interpretable, code-based reward function directly from expert trajectories. The resulting reward function is executable code that can be inspected and verified. We empirically validate GRACE on the MuJoCo, BabyAI and AndroidWorld benchmarks, where it efficiently learns highly accurate rewards, even in complex, multi-task settings. Further, we demonstrate that the resulting reward leads to strong policies, compared to both competitive Imitation Learning and online RL approaches with ground-truth rewards. Finally, we show that GRACE is able to build complex reward APIs in multi-task setups.
-
-**arXiv ID:** 2510.02180
-</details>
-
-<details>
 <summary><strong>Spectral Representation-based Reinforcement Learning</strong> - Chenxiao Gao, Haotian Sun, Na Li, Dale Schuurmans, Bo Dai - [[pdf]](https://arxiv.org/pdf/2512.15036)</summary>
 
 **Abstract:** In real-world applications with large state and action spaces, reinforcement learning (RL) typically employs function approximations to represent core components like the policies, value functions, and dynamics models. Although powerful approximations such as neural networks offer great expressiveness, they often present theoretical ambiguities, suffer from optimization instability and exploration difficulty, and incur substantial computational costs in practice. In this paper, we introduce the perspective of spectral representations as a solution to address these difficulties in RL. Stemming from the spectral decomposition of the transition operator, this framework yields an effective abstraction of the system dynamics for subsequent policy optimization while also providing a clear theoretical characterization. We reveal how to construct spectral representations for transition operators that possess latent variable structures or energy-based structures, which implies different learning methods to extract spectral representations from data. Notably, each of these learning methods realizes an effective RL algorithm under this framework. We also provably extend this spectral view to partially observable MDPs. Finally, we validate these algorithms on over 20 challenging tasks from the DeepMind Control Suite, where they achieve performances comparable or superior to current state-of-the-art model-free and model-based baselines.
 
 **arXiv ID:** 2512.15036
+</details>
+
+<details>
+<summary><strong>GRACE: A Language Model Framework for Explainable Inverse Reinforcement Learning</strong> - Silvia Sapora, Devon Hjelm, Alexander Toshev, Omar Attia, Bogdan Mazoure - [[pdf]](https://arxiv.org/pdf/2510.02180)</summary>
+
+**Abstract:** Inverse Reinforcement Learning aims to recover reward models from expert demonstrations, but traditional methods yield black-box models that are difficult to interpret and debug. In this work, we introduce GRACE (Generating Rewards As CodE), a method for using Large Language Models within an evolutionary search to reverse-engineer an interpretable, code-based reward function directly from expert trajectories. The resulting reward function is executable code that can be inspected and verified. We empirically validate GRACE on the MuJoCo, BabyAI and AndroidWorld benchmarks, where it efficiently learns highly accurate rewards, even in complex, multi-task settings. Further, we demonstrate that the resulting reward leads to strong policies, compared to both competitive Imitation Learning and online RL approaches with ground-truth rewards. Finally, we show that GRACE is able to build complex reward APIs in multi-task setups.
+
+**arXiv ID:** 2510.02180
 </details>
 
 <details>
@@ -701,19 +701,19 @@ Surprisingly, our experiments with 50 users in a within subject design reveal no
 </details>
 
 <details>
-<summary><strong>Smart Exploration in Reinforcement Learning using Bounded Uncertainty Models</strong> - J.S. van Hulst, W.P.M.H. Heemels, D.J. Antunes - [[pdf]](https://arxiv.org/pdf/2504.05978)</summary>
-
-**Abstract:** Reinforcement learning (RL) is a powerful framework for decision-making in uncertain environments, but it often requires large amounts of data to learn an optimal policy. We address this challenge by incorporating prior model knowledge to guide exploration and accelerate the learning process. Specifically, we assume access to a model set that contains the true transition kernel and reward function. We optimize over this model set to obtain upper and lower bounds on the Q-function, which are then used to guide the exploration of the agent. We provide theoretical guarantees on the convergence of the Q-function to the optimal Q-function under the proposed class of exploring policies. Furthermore, we also introduce a data-driven regularized version of the model set optimization problem that ensures the convergence of the class of exploring policies to the optimal policy. Lastly, we show that when the model set has a specific structure, namely the bounded-parameter MDP (BMDP) framework, the regularized model set optimization problem becomes convex and simple to implement. In this setting, we also prove finite-time convergence to the optimal policy under mild assumptions. We demonstrate the effectiveness of the proposed exploration strategy, which we call BUMEX (Bounded Uncertainty Model-based Exploration), in a simulation study. The results indicate that the proposed method can significantly accelerate learning in benchmark examples. A toolbox is available at this https URL.
-
-**arXiv ID:** 2504.05978
-</details>
-
-<details>
 <summary><strong>Generalization in Reinforcement Learning for Radio Access Networks</strong> - Burak Demirel, Yu Wang, Cristian Tatino, Pablo Soldati - [[pdf]](https://arxiv.org/pdf/2507.06602)</summary>
 
 **Abstract:** Modern RAN operate in highly dynamic and heterogeneous environments, where hand-tuned, rule-based RRM algorithms often underperform. While RL can surpass such heuristics in constrained settings, the diversity of deployments and unpredictable radio conditions introduce major generalization challenges. Data-driven policies frequently overfit to training conditions, degrading performance in unseen scenarios. To address this, we propose a generalization-centered RL framework for RAN control that: (i) robustly reconstructs dynamically varying states from partial and noisy observations, while encoding static and semi-static information, such as radio nodes, cell attributes, and their topology, through graph representations; (ii) applies domain randomization to broaden the training distribution; and (iii) distributes data generation across multiple actors while centralizing training in a cloud-compatible architecture aligned with O-RAN principles. Although generalization increases computational and data-management complexity, our distributed design mitigates this by scaling data collection and training across diverse network conditions. Applied to downlink link adaptation in five 5G benchmarks, our policy improves average throughput and spectral efficiency by ~10% over an OLLA baseline (10% BLER target) in full-buffer MIMO/mMIMO and by >20% under high mobility. It matches specialized RL in full-buffer traffic and achieves up to 4- and 2-fold gains in eMBB and mixed-traffic benchmarks, respectively. In nine-cell deployments, GAT models offer 30% higher throughput over MLP baselines. These results, combined with our scalable architecture, offer a path toward AI-native 6G RAN using a single, generalizable RL agent.
 
 **arXiv ID:** 2507.06602
+</details>
+
+<details>
+<summary><strong>Smart Exploration in Reinforcement Learning using Bounded Uncertainty Models</strong> - J.S. van Hulst, W.P.M.H. Heemels, D.J. Antunes - [[pdf]](https://arxiv.org/pdf/2504.05978)</summary>
+
+**Abstract:** Reinforcement learning (RL) is a powerful framework for decision-making in uncertain environments, but it often requires large amounts of data to learn an optimal policy. We address this challenge by incorporating prior model knowledge to guide exploration and accelerate the learning process. Specifically, we assume access to a model set that contains the true transition kernel and reward function. We optimize over this model set to obtain upper and lower bounds on the Q-function, which are then used to guide the exploration of the agent. We provide theoretical guarantees on the convergence of the Q-function to the optimal Q-function under the proposed class of exploring policies. Furthermore, we also introduce a data-driven regularized version of the model set optimization problem that ensures the convergence of the class of exploring policies to the optimal policy. Lastly, we show that when the model set has a specific structure, namely the bounded-parameter MDP (BMDP) framework, the regularized model set optimization problem becomes convex and simple to implement. In this setting, we also prove finite-time convergence to the optimal policy under mild assumptions. We demonstrate the effectiveness of the proposed exploration strategy, which we call BUMEX (Bounded Uncertainty Model-based Exploration), in a simulation study. The results indicate that the proposed method can significantly accelerate learning in benchmark examples. A toolbox is available at this https URL.
+
+**arXiv ID:** 2504.05978
 </details>
 
 <details>
