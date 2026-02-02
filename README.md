@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-02-02 03:18:12
+**Last Updated:** 2026-02-02 03:49:07
 
 **Total Papers:** 94
 
@@ -169,19 +169,19 @@ Meddollina exhibits a distinct behavioural profile: calibrated uncertainty, cons
 </details>
 
 <details>
-<summary><strong>DeepResearch Bench II: Diagnosing Deep Research Agents via Rubrics from Expert Report</strong> - Ruizhe Li, Mingxuan Du, Benfeng Xu, Chiwei Zhu, Xiaorui Wang, Zhendong Mao - [[pdf]](https://arxiv.org/pdf/2601.08536)</summary>
-
-**Abstract:** Deep Research Systems (DRS) aim to help users search the web, synthesize information, and deliver comprehensive investigative reports. However, how to rigorously evaluate these systems remains under-explored. Existing deep-research benchmarks often fall into two failure modes. Some do not adequately test a system's ability to analyze evidence and write coherent reports. Others rely on evaluation criteria that are either overly coarse or directly defined by LLMs (or both), leading to scores that can be biased relative to human experts and are hard to verify or interpret. To address these issues, we introduce Deep Research Bench II, a new benchmark for evaluating DRS-generated reports. It contains 132 grounded research tasks across 22 domains; for each task, a system must produce a long-form research report that is evaluated by a set of 9430 fine-grained binary rubrics in total, covering three dimensions: information recall, analysis, and presentation. All rubrics are derived from carefully selected expert-written investigative articles and are constructed through a four-stage LLM+human pipeline that combines automatic extraction with over 400 human-hours of expert review, ensuring that the criteria are atomic, verifiable, and aligned with human expert judgment. We evaluate several state-of-the-art deep-research systems on Deep Research Bench II and find that even the strongest models satisfy fewer than 50% of the rubrics, revealing a substantial gap between current DRSs and human experts.
-
-**arXiv ID:** 2601.08536
-</details>
-
-<details>
 <summary><strong>Beyond Retrieval: A Modular Benchmark for Academic Deep Research Agents</strong> - Zhihan Guo, Feiyang Xu, Yifan Li, Muzhi Li, Shuai Zou, Jiele Wu, Han Shi, Haoli Bai, Ho-fung Leung, Irwin King - [[pdf]](https://arxiv.org/pdf/2512.00986)</summary>
 
 **Abstract:** A surge in academic publications calls for automated deep research (DR) systems, but accurately evaluating them is still an open problem. First, existing benchmarks often focus narrowly on retrieval while neglecting high-level planning and reasoning. Second, existing benchmarks favor general domains over the academic domains that are the core application for DR agents. To address these gaps, we introduce ADRA-Bank, a modular benchmark for Academic DR Agents. Grounded in academic literature, our benchmark is a human-annotated dataset of 200 instances across 10 academic domains, including both research and review papers. Furthermore, we propose a modular Evaluation Paradigm for Academic DR Agents (ADRA-Eval), which leverages the rich structure of academic papers to assess the core capabilities of planning, retrieval, and reasoning. It employs two complementary modes: an end-to-end evaluation for \task agents and an isolated evaluation for foundational LLMs as potential backbones. Results reveal uneven capabilities: while agents show specialized strengths, they struggle with multi-source retrieval and cross-field consistency. Moreover, improving high-level planning capability is the crucial factor for unlocking the reasoning potential of foundational LLMs as backbones. By exposing these actionable failure modes, ADRA-Bank provides a diagnostic tool to guide the development of more reliable automatic academic research assistants.
 
 **arXiv ID:** 2512.00986
+</details>
+
+<details>
+<summary><strong>DeepResearch Bench II: Diagnosing Deep Research Agents via Rubrics from Expert Report</strong> - Ruizhe Li, Mingxuan Du, Benfeng Xu, Chiwei Zhu, Xiaorui Wang, Zhendong Mao - [[pdf]](https://arxiv.org/pdf/2601.08536)</summary>
+
+**Abstract:** Deep Research Systems (DRS) aim to help users search the web, synthesize information, and deliver comprehensive investigative reports. However, how to rigorously evaluate these systems remains under-explored. Existing deep-research benchmarks often fall into two failure modes. Some do not adequately test a system's ability to analyze evidence and write coherent reports. Others rely on evaluation criteria that are either overly coarse or directly defined by LLMs (or both), leading to scores that can be biased relative to human experts and are hard to verify or interpret. To address these issues, we introduce Deep Research Bench II, a new benchmark for evaluating DRS-generated reports. It contains 132 grounded research tasks across 22 domains; for each task, a system must produce a long-form research report that is evaluated by a set of 9430 fine-grained binary rubrics in total, covering three dimensions: information recall, analysis, and presentation. All rubrics are derived from carefully selected expert-written investigative articles and are constructed through a four-stage LLM+human pipeline that combines automatic extraction with over 400 human-hours of expert review, ensuring that the criteria are atomic, verifiable, and aligned with human expert judgment. We evaluate several state-of-the-art deep-research systems on Deep Research Bench II and find that even the strongest models satisfy fewer than 50% of the rubrics, revealing a substantial gap between current DRSs and human experts.
+
+**arXiv ID:** 2601.08536
 </details>
 
 <details>
@@ -246,19 +246,19 @@ Meddollina exhibits a distinct behavioural profile: calibrated uncertainty, cons
 </details>
 
 <details>
-<summary><strong>ChatInject: Abusing Chat Templates for Prompt Injection in LLM Agents</strong> - Hwan Chang, Yonghyun Jun, Hwanhee Lee - [[pdf]](https://arxiv.org/pdf/2509.22830)</summary>
-
-**Abstract:** The growing deployment of large language model (LLM) based agents that interact with external environments has created new attack surfaces for adversarial manipulation. One major threat is indirect prompt injection, where attackers embed malicious instructions in external environment output, causing agents to interpret and execute them as if they were legitimate prompts. While previous research has focused primarily on plain-text injection attacks, we find a significant yet underexplored vulnerability: LLMs' dependence on structured chat templates and their susceptibility to contextual manipulation through persuasive multi-turn dialogues. To this end, we introduce ChatInject, an attack that formats malicious payloads to mimic native chat templates, thereby exploiting the model's inherent instruction-following tendencies. Building on this foundation, we develop a persuasion-driven Multi-turn variant that primes the agent across conversational turns to accept and execute otherwise suspicious actions. Through comprehensive experiments across frontier LLMs, we demonstrate three critical findings: (1) ChatInject achieves significantly higher average attack success rates than traditional prompt injection methods, improving from 5.18% to 32.05% on AgentDojo and from 15.13% to 45.90% on InjecAgent, with multi-turn dialogues showing particularly strong performance at average 52.33% success rate on InjecAgent, (2) chat-template-based payloads demonstrate strong transferability across models and remain effective even against closed-source LLMs, despite their unknown template structures, and (3) existing prompt-based defenses are largely ineffective against this attack approach, especially against Multi-turn variants. These findings highlight vulnerabilities in current agent systems.
-
-**arXiv ID:** 2509.22830
-</details>
-
-<details>
 <summary><strong>Debating Truth: Debate-driven Claim Verification with Multiple Large Language Model Agents</strong> - Haorui He, Yupeng Li, Dacheng Wen, Yang Chen, Reynold Cheng, Donglong Chen, Francis C. M. Lau - [[pdf]](https://arxiv.org/pdf/2507.19090)</summary>
 
 **Abstract:** State-of-the-art single-agent claim verification methods struggle with complex claims that require nuanced analysis of multifaceted evidence. Inspired by real-world professional fact-checkers, we propose \textbf{DebateCV}, the first debate-driven claim verification framework powered by multiple LLM agents. In DebateCV, two \textit{Debaters} argue opposing stances to surface subtle errors in single-agent assessments. A decisive \textit{Moderator} is then required to weigh the evidential strength of conflicting arguments to deliver an accurate verdict. Yet, zero-shot Moderators are biased toward neutral judgments, and no datasets exist for training them. To bridge this gap, we propose \textbf{Debate-SFT}, a post-training framework that leverages synthetic data to enhance agents' ability to effectively adjudicate debates for claim verification. Results show that our methods surpass state-of-the-art non-debate approaches in both accuracy (across various evidence conditions) and justification quality.
 
 **arXiv ID:** 2507.19090
+</details>
+
+<details>
+<summary><strong>ChatInject: Abusing Chat Templates for Prompt Injection in LLM Agents</strong> - Hwan Chang, Yonghyun Jun, Hwanhee Lee - [[pdf]](https://arxiv.org/pdf/2509.22830)</summary>
+
+**Abstract:** The growing deployment of large language model (LLM) based agents that interact with external environments has created new attack surfaces for adversarial manipulation. One major threat is indirect prompt injection, where attackers embed malicious instructions in external environment output, causing agents to interpret and execute them as if they were legitimate prompts. While previous research has focused primarily on plain-text injection attacks, we find a significant yet underexplored vulnerability: LLMs' dependence on structured chat templates and their susceptibility to contextual manipulation through persuasive multi-turn dialogues. To this end, we introduce ChatInject, an attack that formats malicious payloads to mimic native chat templates, thereby exploiting the model's inherent instruction-following tendencies. Building on this foundation, we develop a persuasion-driven Multi-turn variant that primes the agent across conversational turns to accept and execute otherwise suspicious actions. Through comprehensive experiments across frontier LLMs, we demonstrate three critical findings: (1) ChatInject achieves significantly higher average attack success rates than traditional prompt injection methods, improving from 5.18% to 32.05% on AgentDojo and from 15.13% to 45.90% on InjecAgent, with multi-turn dialogues showing particularly strong performance at average 52.33% success rate on InjecAgent, (2) chat-template-based payloads demonstrate strong transferability across models and remain effective even against closed-source LLMs, despite their unknown template structures, and (3) existing prompt-based defenses are largely ineffective against this attack approach, especially against Multi-turn variants. These findings highlight vulnerabilities in current agent systems.
+
+**arXiv ID:** 2509.22830
 </details>
 
 <details>
@@ -397,20 +397,20 @@ Across 1,200 randomized scenarios with injected Black-Swan shocks (10% collatera
 </details>
 
 <details>
+<summary><strong>Emergent Coordination in Multi-Agent Systems via Pressure Fields and Temporal Decay</strong> - Roland Rodriguez - [[pdf]](https://arxiv.org/pdf/2601.08129)</summary>
+
+**Abstract:** Current multi-agent LLM frameworks rely on explicit orchestration patterns borrowed from human organizational structures: planners delegate to executors, managers coordinate workers, and hierarchical control flow governs agent interactions. These approaches suffer from coordination overhead that scales poorly with agent count and task complexity. We propose a fundamentally different paradigm inspired by natural coordination mechanisms: agents operate locally on a shared artifact, guided only by pressure gradients derived from measurable quality signals, with temporal decay preventing premature convergence. We formalize this as optimization over a pressure landscape and prove convergence guarantees under mild conditions. Empirically, on meeting room scheduling across 1,350 trials, pressure-field coordination outperforms all baselines: 48.5% aggregate solve rate versus 12.6% for conversation-based coordination, 1.5% for hierarchical control, and 0.4% for sequential and random baselines (all pairwise comparisons p < 0.001). Temporal decay is essential: disabling it reduces solve rate by 10 percentage points. On easy problems, pressure-field achieves 86.7% solve rate. The approach maintains consistent performance from 1 to 4 agents. Implicit coordination through shared pressure gradients outperforms explicit hierarchical control, suggesting that constraint-driven emergence offers a simpler and more effective foundation for multi-agent AI.
+
+**arXiv ID:** 2601.08129
+</details>
+
+<details>
 <summary><strong>Stronger-MAS: Multi-Agent Reinforcement Learning for Collaborative LLMs</strong> - Yujie Zhao, Lanxiang Hu, Yang Wang, Minmin Hou, Hao Zhang, Ke Ding, Jishen Zhao - [[pdf]](https://arxiv.org/pdf/2510.11062)</summary>
 
 **Abstract:** Multi-agent systems (MAS) and reinforcement learning (RL) are widely used to enhance the agentic capabilities of large language models (LLMs). MAS improves task performance through role-based orchestration, while RL uses environmental rewards to learn stronger policies, such as GRPO-style optimization. However, applying on-policy RL to MAS remains underexplored and presents unique challenges. Algorithmically, standard GRPO grouping assumptions break down because prompts vary by role and by turn. System-wise, the training stack must support MAS-workflow rollouts and on-policy updates for both single-policy and multi-policy models.
 We propose AT-GRPO, which includes (i) an agent- and turn-wise grouped RL algorithm tailored to MAS and (ii) a training system that supports both single- and multi-policy regimes. Across game, planning, coding, and math tasks, AT-GRPO delivers substantial gains. On long-horizon planning, it increases accuracy from a 14.0 to 47.0 percent single-agent RL baseline to 96.0 to 99.5 percent. It also improves reasoning performance, with average gains of 3.87 to 7.62 percent on coding tasks and 9.0 to 17.93 percent on math. Code and environments are available at: this https URL.
 
 **arXiv ID:** 2510.11062
-</details>
-
-<details>
-<summary><strong>Emergent Coordination in Multi-Agent Systems via Pressure Fields and Temporal Decay</strong> - Roland Rodriguez - [[pdf]](https://arxiv.org/pdf/2601.08129)</summary>
-
-**Abstract:** Current multi-agent LLM frameworks rely on explicit orchestration patterns borrowed from human organizational structures: planners delegate to executors, managers coordinate workers, and hierarchical control flow governs agent interactions. These approaches suffer from coordination overhead that scales poorly with agent count and task complexity. We propose a fundamentally different paradigm inspired by natural coordination mechanisms: agents operate locally on a shared artifact, guided only by pressure gradients derived from measurable quality signals, with temporal decay preventing premature convergence. We formalize this as optimization over a pressure landscape and prove convergence guarantees under mild conditions. Empirically, on meeting room scheduling across 1,350 trials, pressure-field coordination outperforms all baselines: 48.5% aggregate solve rate versus 12.6% for conversation-based coordination, 1.5% for hierarchical control, and 0.4% for sequential and random baselines (all pairwise comparisons p < 0.001). Temporal decay is essential: disabling it reduces solve rate by 10 percentage points. On easy problems, pressure-field achieves 86.7% solve rate. The approach maintains consistent performance from 1 to 4 agents. Implicit coordination through shared pressure gradients outperforms explicit hierarchical control, suggesting that constraint-driven emergence offers a simpler and more effective foundation for multi-agent AI.
-
-**arXiv ID:** 2601.08129
 </details>
 
 <details>
