@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-02-05 02:54:04
+**Last Updated:** 2026-02-05 03:41:15
 
 **Total Papers:** 78
 
@@ -305,19 +305,19 @@ Under this paradigm, the user's role transcends traditional prompt engineering, 
 </details>
 
 <details>
-<summary><strong>Bandwidth-constrained Variational Message Encoding for Cooperative Multi-agent Reinforcement Learning</strong> - Wei Duan, Jie Lu, En Yu, Junyu Xuan - [[pdf]](https://arxiv.org/pdf/2512.11179)</summary>
-
-**Abstract:** Graph-based multi-agent reinforcement learning (MARL) enables coordinated behavior under partial observability by modeling agents as nodes and communication links as edges. While recent methods excel at learning sparse coordination graphs-determining who communicates with whom-they do not address what information should be transmitted under hard bandwidth constraints. We study this bandwidth-limited regime and show that naive dimensionality reduction consistently degrades coordination performance. Hard bandwidth constraints force selective encoding, but deterministic projections lack mechanisms to control how compression occurs. We introduce Bandwidth-constrained Variational Message Encoding (BVME), a lightweight module that treats messages as samples from learned Gaussian posteriors regularized via KL divergence to an uninformative prior. BVME's variational framework provides principled, tunable control over compression strength through interpretable hyperparameters, directly constraining the representations used for decision-making. Across SMACv1, SMACv2, and MPE benchmarks, BVME achieves comparable or superior performance while using 67--83% fewer message dimensions, with gains most pronounced on sparse graphs where message quality critically impacts coordination. Ablations reveal U-shaped sensitivity to bandwidth, with BVME excelling at extreme ratios while adding minimal overhead.
-
-**arXiv ID:** 2512.11179
-</details>
-
-<details>
 <summary><strong>Cooperative Flexibility Exchange: Fair and Comfort-Aware Decentralized Resource Allocation</strong> - Rabiya Khalid, Evangelos Pournaras - [[pdf]](https://arxiv.org/pdf/2510.04192)</summary>
 
 **Abstract:** The growing electricity demand and use of smart appliances are placing pressure on power grids, making efficient energy management more important than ever. The existing energy management systems often prioritize system efficiency (balanced energy demand and supply) at the expense of consumer comfort. This paper addresses this gap by proposing a novel decentralized multi-agent coordination-based demand-side management system. The proposed system enables individual agents to coordinate for demand-side energy optimization while improving consumer comfort and maintaining system efficiency. A key innovation of this work is the introduction of a slot exchange mechanism, where agents first receive optimized appliance-level energy consumption schedules and then coordinate with each other to adjust these schedules through slot exchanges to improve their comfort even when agents show non-altruistic behaviour. It also scales well with large populations and promotes fairness by balancing satisfaction levels across consumers. For performance evaluation, a real-world dataset is used, and the results demonstrate that the proposed slot exchange mechanism increases consumer comfort and fairness without raising system inefficiency cost, making it a practical and scalable solution for future smart grids.
 
 **arXiv ID:** 2510.04192
+</details>
+
+<details>
+<summary><strong>Bandwidth-constrained Variational Message Encoding for Cooperative Multi-agent Reinforcement Learning</strong> - Wei Duan, Jie Lu, En Yu, Junyu Xuan - [[pdf]](https://arxiv.org/pdf/2512.11179)</summary>
+
+**Abstract:** Graph-based multi-agent reinforcement learning (MARL) enables coordinated behavior under partial observability by modeling agents as nodes and communication links as edges. While recent methods excel at learning sparse coordination graphs-determining who communicates with whom-they do not address what information should be transmitted under hard bandwidth constraints. We study this bandwidth-limited regime and show that naive dimensionality reduction consistently degrades coordination performance. Hard bandwidth constraints force selective encoding, but deterministic projections lack mechanisms to control how compression occurs. We introduce Bandwidth-constrained Variational Message Encoding (BVME), a lightweight module that treats messages as samples from learned Gaussian posteriors regularized via KL divergence to an uninformative prior. BVME's variational framework provides principled, tunable control over compression strength through interpretable hyperparameters, directly constraining the representations used for decision-making. Across SMACv1, SMACv2, and MPE benchmarks, BVME achieves comparable or superior performance while using 67--83% fewer message dimensions, with gains most pronounced on sparse graphs where message quality critically impacts coordination. Ablations reveal U-shaped sensitivity to bandwidth, with BVME excelling at extreme ratios while adding minimal overhead.
+
+**arXiv ID:** 2512.11179
 </details>
 
 <details>
