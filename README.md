@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-02-11 03:23:55
+**Last Updated:** 2026-02-11 04:03:52
 
 **Total Papers:** 81
 
@@ -33,19 +33,19 @@
 </details>
 
 <details>
-<summary><strong>Autonomous Action Runtime Management(AARM):A System Specification for Securing AI-Driven Actions at Runtime</strong> - Herman Errico - [[pdf]](https://arxiv.org/pdf/2602.09433)</summary>
-
-**Abstract:** As artificial intelligence systems evolve from passive assistants into autonomous agents capable of executing consequential actions, the security boundary shifts from model outputs to tool execution. Traditional security paradigms - log aggregation, perimeter defense, and post-hoc forensics - cannot protect systems where AI-driven actions are irreversible, execute at machine speed, and originate from potentially compromised orchestration layers. This paper introduces Autonomous Action Runtime Management (AARM), an open specification for securing AI-driven actions at runtime. AARM defines a runtime security system that intercepts actions before execution, accumulates session context, evaluates against policy and intent alignment, enforces authorization decisions, and records tamper-evident receipts for forensic reconstruction. We formalize a threat model addressing prompt injection, confused deputy attacks, data exfiltration, and intent drift. We introduce an action classification framework distinguishing forbidden, context-dependent deny, and context-dependent allow actions. We propose four implementation architectures - protocol gateway, SDK instrumentation, kernel eBPF, and vendor integration - with distinct trust properties, and specify minimum conformance requirements for AARM-compliant systems. AARM is model-agnostic, framework-agnostic, and vendor-neutral, treating action execution as the stable security boundary. This specification aims to establish industry-wide requirements before proprietary fragmentation forecloses interoperability.
-
-**arXiv ID:** 2602.09433
-</details>
-
-<details>
 <summary><strong>SWE-AGI: Benchmarking Specification-Driven Software Construction with MoonBit in the Era of Autonomous Agents</strong> - Zhirui Zhang, Hongbo Zhang, Haoxiang Fei, Zhiyuan Bao, Yubin Chen, Zhengyu Lei, Ziyue Liu, Yixuan Sun, Mingkun Xiao, Zihang Ye, Yu Zhang, Hongcheng Zhu, Yuxiang Wen, Heung-Yeung Shum - [[pdf]](https://arxiv.org/pdf/2602.09447)</summary>
 
 **Abstract:** Although large language models (LLMs) have demonstrated impressive coding capabilities, their ability to autonomously build production-scale software from explicit specifications remains an open question. We introduce SWE-AGI, an open-source benchmark for evaluating end-to-end, specification-driven construction of software systems written in MoonBit. SWE-AGI tasks require LLM-based agents to implement parsers, interpreters, binary decoders, and SAT solvers strictly from authoritative standards and RFCs under a fixed API scaffold. Each task involves implementing 1,000-10,000 lines of core logic, corresponding to weeks or months of engineering effort for an experienced human developer. By leveraging the nascent MoonBit ecosystem, SWE-AGI minimizes data leakage, forcing agents to rely on long-horizon architectural reasoning rather than code retrieval. Across frontier models, gpt-5.3-codex achieves the best overall performance (solving 19/22 tasks, 86.4%), outperforming claude-opus-4.6 (15/22, 68.2%), and kimi-2.5 exhibits the strongest performance among open-source models. Performance degrades sharply with increasing task difficulty, particularly on hard, specification-intensive systems. Behavioral analysis further reveals that as codebases scale, code reading, rather than writing, becomes the dominant bottleneck in AI-assisted development. Overall, while specification-driven autonomous software engineering is increasingly viable, substantial challenges remain before it can reliably support production-scale development.
 
 **arXiv ID:** 2602.09447
+</details>
+
+<details>
+<summary><strong>Autonomous Action Runtime Management(AARM):A System Specification for Securing AI-Driven Actions at Runtime</strong> - Herman Errico - [[pdf]](https://arxiv.org/pdf/2602.09433)</summary>
+
+**Abstract:** As artificial intelligence systems evolve from passive assistants into autonomous agents capable of executing consequential actions, the security boundary shifts from model outputs to tool execution. Traditional security paradigms - log aggregation, perimeter defense, and post-hoc forensics - cannot protect systems where AI-driven actions are irreversible, execute at machine speed, and originate from potentially compromised orchestration layers. This paper introduces Autonomous Action Runtime Management (AARM), an open specification for securing AI-driven actions at runtime. AARM defines a runtime security system that intercepts actions before execution, accumulates session context, evaluates against policy and intent alignment, enforces authorization decisions, and records tamper-evident receipts for forensic reconstruction. We formalize a threat model addressing prompt injection, confused deputy attacks, data exfiltration, and intent drift. We introduce an action classification framework distinguishing forbidden, context-dependent deny, and context-dependent allow actions. We propose four implementation architectures - protocol gateway, SDK instrumentation, kernel eBPF, and vendor integration - with distinct trust properties, and specify minimum conformance requirements for AARM-compliant systems. AARM is model-agnostic, framework-agnostic, and vendor-neutral, treating action execution as the stable security boundary. This specification aims to establish industry-wide requirements before proprietary fragmentation forecloses interoperability.
+
+**arXiv ID:** 2602.09433
 </details>
 
 <details>
@@ -271,7 +271,7 @@ Through grounded theory analysis of AI companion communities, we find that disco
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (16 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (17 papers)</h2></summary>
 
 <details>
 <summary><strong>CoMMa: Contribution-Aware Medical Multi-Agents From A Game-Theoretic Perspective</strong> - Yichen Wu, Yujin Oh, Sangjoon Park, Kailong Fan, Dania Daye, Hana Farzaneh, Xiang Li, Raul Uppot, Quanzheng Li - [[pdf]](https://arxiv.org/pdf/2602.09159)</summary>
@@ -311,6 +311,14 @@ Through grounded theory analysis of AI companion communities, we find that disco
 **Abstract:** Recent advances in Large Language Models (LLMs) have significantly improved table understanding tasks such as Table Question Answering (TableQA), yet challenges remain in ensuring reliability, scalability, and efficiency, especially in resource-constrained or privacy-sensitive environments. In this paper, we introduce MATA, a multi-agent TableQA framework that leverages multiple complementary reasoning paths and a set of tools built with small language models. MATA generates candidate answers through diverse reasoning styles for a given table and question, then refines or selects the optimal answer with the help of these tools. Furthermore, it incorporates an algorithm designed to minimize expensive LLM agent calls, enhancing overall efficiency. MATA maintains strong performance with small, open-source models and adapts easily across various LLM types. Extensive experiments on two benchmarks of varying difficulty with ten different LLMs demonstrate that MATA achieves state-of-the-art accuracy and highly efficient reasoning while avoiding excessive LLM inference. Our results highlight that careful orchestration of multiple reasoning pathways yields scalable and reliable TableQA. The code is available at this https URL.
 
 **arXiv ID:** 2602.09642
+</details>
+
+<details>
+<summary><strong>Anagent For Enhancing Scientific Table & Figure Analysis</strong> - Xuehang Guo, Zhiyong Lu, Tom Hope, Qingyun Wang - [[pdf]](https://arxiv.org/pdf/2602.10081)</summary>
+
+**Abstract:** In scientific research, analysis requires accurately interpreting complex multimodal knowledge, integrating evidence from different sources, and drawing inferences grounded in domain-specific knowledge. However, current artificial intelligence (AI) systems struggle to consistently demonstrate such capabilities. The complexity and variability of scientific tables and figures, combined with heterogeneous structures and long-context requirements, pose fundamental obstacles to scientific table \& figure analysis. To quantify these challenges, we introduce AnaBench, a large-scale benchmark featuring $63,178$ instances from nine scientific domains, systematically categorized along seven complexity dimensions. To tackle these challenges, we propose Anagent, a multi-agent framework for enhanced scientific table \& figure analysis through four specialized agents: Planner decomposes tasks into actionable subtasks, Expert retrieves task-specific information through targeted tool execution, Solver synthesizes information to generate coherent analysis, and Critic performs iterative refinement through five-dimensional quality assessment. We further develop modular training strategies that leverage supervised finetuning and specialized reinforcement learning to optimize individual capabilities while maintaining effective collaboration. Comprehensive evaluation across 170 subdomains demonstrates that Anagent achieves substantial improvements, up to $\uparrow 13.43\%$ in training-free settings and $\uparrow 42.12\%$ with finetuning, while revealing that task-oriented reasoning and context-aware problem-solving are essential for high-quality scientific table \& figure analysis. Our project page: this https URL.
+
+**arXiv ID:** 2602.10081
 </details>
 
 <details>
@@ -405,7 +413,7 @@ We address this gap by introducing a unified theoretical framework that decompos
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (7 papers)</h2></summary>
+<summary><h2>Other Agent Research (6 papers)</h2></summary>
 
 <details>
 <summary><strong>Human Control Is the Anchor, Not the Answer: Early Divergence of Oversight in Agentic AI Communities</strong> - Hanjing Shi, Dominic DiFranzo - [[pdf]](https://arxiv.org/pdf/2602.09286)</summary>
@@ -414,14 +422,6 @@ We address this gap by introducing a unified theoretical framework that decompos
 Using topic modeling in a shared comparison space, a coarse-grained oversight-theme abstraction, engagement-weighted salience, and divergence tests, we show the communities are strongly separable (JSD =0.418, cosine =0.372, permutation $p=0.0005$). Across both communities, "human control" is an anchor term, but its operational meaning diverges: r/OpenClaw} emphasizes execution guardrails and recovery (action-risk), while r/Moltbook} emphasizes identity, legitimacy, and accountability in public interaction (meaning-risk). The resulting distinction offers a portable lens for designing and evaluating oversight mechanisms that match agent role, rather than applying one-size-fits-all control policies.
 
 **arXiv ID:** 2602.09286
-</details>
-
-<details>
-<summary><strong>Anagent For Enhancing Scientific Table & Figure Analysis</strong> - Xuehang Guo, Zhiyong Lu, Tom Hope, Qingyun Wang - [[pdf]](https://arxiv.org/pdf/2602.10081)</summary>
-
-**Abstract:** 
-
-**arXiv ID:** 2602.10081
 </details>
 
 <details>
@@ -583,19 +583,19 @@ We introduce TURBO, a cloud-augmented control framework that addresses this chal
 </details>
 
 <details>
-<summary><strong>Boltzmann Reinforcement Learning for Noise resilience in Analog Ising Machines</strong> - Aditya Choudhary, Saaketh Desai, Prasad Iyer - [[pdf]](https://arxiv.org/pdf/2602.09162)</summary>
-
-**Abstract:** Analog Ising machines (AIMs) have emerged as a promising paradigm for combinatorial optimization, utilizing physical dynamics to solve Ising problems with high energy efficiency. However, the performance of traditional optimization and sampling algorithms on these platforms is often limited by inherent measurement noise. We introduce BRAIN (Boltzmann Reinforcement for Analog Ising Networks), a distribution learning framework that utilizes variational reinforcement learning to approximate the Boltzmann distribution. By shifting from state-by-state sampling to aggregating information across multiple noisy measurements, BRAIN is resilient to Gaussian noise characteristic of AIMs. We evaluate BRAIN across diverse combinatorial topologies, including the Curie-Weiss and 2D nearest-neighbor Ising systems. We find that under realistic 3\% Gaussian measurement noise, BRAIN maintains 98\% ground state fidelity, whereas Markov Chain Monte Carlo (MCMC) methods degrade to 51\% fidelity. Furthermore, BRAIN reaches the MCMC-equivalent solution up to 192x faster under these conditions. BRAIN exhibits $\mathcal{O}(N^{1.55})$ scaling up to 65,536 spins and maintains robustness against severe measurement uncertainty up to 40\%. Beyond ground state optimization, BRAIN accurately captures thermodynamic phase transitions and metastable states, providing a scalable and noise-resilient method for utilizing analog computing architectures in complex optimizations.
-
-**arXiv ID:** 2602.09162
-</details>
-
-<details>
 <summary><strong>Risk-sensitive reinforcement learning using expectiles, shortfall risk and optimized certainty equivalent risk</strong> - Sumedh Gupte, Shrey Rakeshkumar Patel, Soumen Pachal, Prashanth L. A., Sanjay P. Bhat - [[pdf]](https://arxiv.org/pdf/2602.09300)</summary>
 
 **Abstract:** We propose risk-sensitive reinforcement learning algorithms catering to three families of risk measures, namely expectiles, utility-based shortfall risk and optimized certainty equivalent risk. For each risk measure, in the context of a finite horizon Markov decision process, we first derive a policy gradient theorem. Second, we propose estimators of the risk-sensitive policy gradient for each of the aforementioned risk measures, and establish $\mathcal{O}\left(1/m\right)$ mean-squared error bounds for our estimators, where $m$ is the number of trajectories. Further, under standard assumptions for policy gradient-type algorithms, we establish smoothness of the risk-sensitive objective, in turn leading to stationary convergence rate bounds for the overall risk-sensitive policy gradient algorithm that we propose. Finally, we conduct numerical experiments to validate the theoretical findings on popular RL benchmarks.
 
 **arXiv ID:** 2602.09300
+</details>
+
+<details>
+<summary><strong>Boltzmann Reinforcement Learning for Noise resilience in Analog Ising Machines</strong> - Aditya Choudhary, Saaketh Desai, Prasad Iyer - [[pdf]](https://arxiv.org/pdf/2602.09162)</summary>
+
+**Abstract:** Analog Ising machines (AIMs) have emerged as a promising paradigm for combinatorial optimization, utilizing physical dynamics to solve Ising problems with high energy efficiency. However, the performance of traditional optimization and sampling algorithms on these platforms is often limited by inherent measurement noise. We introduce BRAIN (Boltzmann Reinforcement for Analog Ising Networks), a distribution learning framework that utilizes variational reinforcement learning to approximate the Boltzmann distribution. By shifting from state-by-state sampling to aggregating information across multiple noisy measurements, BRAIN is resilient to Gaussian noise characteristic of AIMs. We evaluate BRAIN across diverse combinatorial topologies, including the Curie-Weiss and 2D nearest-neighbor Ising systems. We find that under realistic 3\% Gaussian measurement noise, BRAIN maintains 98\% ground state fidelity, whereas Markov Chain Monte Carlo (MCMC) methods degrade to 51\% fidelity. Furthermore, BRAIN reaches the MCMC-equivalent solution up to 192x faster under these conditions. BRAIN exhibits $\mathcal{O}(N^{1.55})$ scaling up to 65,536 spins and maintains robustness against severe measurement uncertainty up to 40\%. Beyond ground state optimization, BRAIN accurately captures thermodynamic phase transitions and metastable states, providing a scalable and noise-resilient method for utilizing analog computing architectures in complex optimizations.
+
+**arXiv ID:** 2602.09162
 </details>
 
 <details>
@@ -631,19 +631,19 @@ We introduce TURBO, a cloud-augmented control framework that addresses this chal
 </details>
 
 <details>
-<summary><strong>From Scalar Rewards to Potential Trends: Shaping Potential Landscapes for Model-Based Reinforcement Learning</strong> - Yao-Hui Li, Zeyu Wang, Xin Li, Wei Pang, Yingfang Yuan, Zhengkun Chen, Boya Zhang, Riashat Islam, Alex Lamb, Yonggang Zhang - [[pdf]](https://arxiv.org/pdf/2602.03201)</summary>
-
-**Abstract:** Model-based reinforcement learning (MBRL) achieves high sample efficiency by simulating future trajectories with learned dynamics and reward models. However, its effectiveness is severely compromised in sparse reward settings. The core limitation lies in the standard paradigm of regressing ground-truth scalar rewards: in sparse environments, this yields a flat, gradient-free landscape that fails to provide directional guidance for planning. To address this challenge, we propose Shaping Landscapes with Optimistic Potential Estimates (SLOPE), a novel framework that shifts reward modeling from predicting scalars to constructing informative potential landscapes. SLOPE employs optimistic distributional regression to estimate high-confidence upper bounds, which amplifies rare success signals and ensures sufficient exploration gradients. Evaluations on 30+ tasks across 5 benchmarks demonstrate that SLOPE consistently outperforms leading baselines in fully sparse, semi-sparse, and dense rewards.
-
-**arXiv ID:** 2602.03201
-</details>
-
-<details>
 <summary><strong>ECHO-2: A Large-Scale Distributed Rollout Framework for Cost-Efficient Reinforcement Learning</strong> - Jie Xiao, Meng Chen, Qingnan Ren, Jingwei Song, Jiaqi Huang, Yangshen Deng, Chris Tong, Wanyi Chen, Suli Wang, Ziqian Bi, Shuo Lu, Yiqun Duan, Xu Wang, Rymon Yu, Ween Yang, Lynn Ai, Eric Yang, Bill Shi - [[pdf]](https://arxiv.org/pdf/2602.02192)</summary>
 
 **Abstract:** Reinforcement learning (RL) is a critical stage in post-training large language models (LLMs), involving repeated interaction between rollout generation, reward evaluation, and centralized learning. Distributing rollout execution offers opportunities to leverage more cost-efficient inference resources, but introduces challenges in wide-area coordination and policy dissemination. We present ECHO-2, a distributed RL framework for post-training with remote inference workers and non-negligible dissemination latency. ECHO-2 combines centralized learning with distributed rollouts and treats bounded policy staleness as a user-controlled parameter, enabling rollout generation, dissemination, and training to overlap. We introduce an overlap-based capacity model that relates training time, dissemination latency, and rollout throughput, yielding a practical provisioning rule for sustaining learner utilization. To mitigate dissemination bottlenecks and lower cost, ECHO-2 employs peer-assisted pipelined broadcast and cost-aware activation of heterogeneous workers. Experiments on GRPO post-training of 4B and 8B models under real wide-area bandwidth regimes show that ECHO-2 significantly improves cost efficiency while preserving RL reward comparable to strong baselines.
 
 **arXiv ID:** 2602.02192
+</details>
+
+<details>
+<summary><strong>From Scalar Rewards to Potential Trends: Shaping Potential Landscapes for Model-Based Reinforcement Learning</strong> - Yao-Hui Li, Zeyu Wang, Xin Li, Wei Pang, Yingfang Yuan, Zhengkun Chen, Boya Zhang, Riashat Islam, Alex Lamb, Yonggang Zhang - [[pdf]](https://arxiv.org/pdf/2602.03201)</summary>
+
+**Abstract:** Model-based reinforcement learning (MBRL) achieves high sample efficiency by simulating future trajectories with learned dynamics and reward models. However, its effectiveness is severely compromised in sparse reward settings. The core limitation lies in the standard paradigm of regressing ground-truth scalar rewards: in sparse environments, this yields a flat, gradient-free landscape that fails to provide directional guidance for planning. To address this challenge, we propose Shaping Landscapes with Optimistic Potential Estimates (SLOPE), a novel framework that shifts reward modeling from predicting scalars to constructing informative potential landscapes. SLOPE employs optimistic distributional regression to estimate high-confidence upper bounds, which amplifies rare success signals and ensures sufficient exploration gradients. Evaluations on 30+ tasks across 5 benchmarks demonstrate that SLOPE consistently outperforms leading baselines in fully sparse, semi-sparse, and dense rewards.
+
+**arXiv ID:** 2602.03201
 </details>
 
 <details>
