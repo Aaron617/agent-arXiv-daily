@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-02-16 03:17:53
+**Last Updated:** 2026-02-16 03:49:24
 
 **Total Papers:** 62
 
@@ -55,19 +55,19 @@ To address these challenges, we propose Aura, an Agent Universal Runtime Archite
 <summary><h2>Benchmarks and Datasets (10 papers)</h2></summary>
 
 <details>
-<summary><strong>GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics</strong> - Modi Jin, Yiming Zhang, Boyuan Sun, Dingwen Zhang, MingMing Cheng, Qibin Hou - [[pdf]](https://arxiv.org/pdf/2602.12617)</summary>
-
-**Abstract:** This paper presents GeoAgent, a model capable of reasoning closely with humans and deriving fine-grained address conclusions. Previous RL-based methods have achieved breakthroughs in performance and interpretability but still remain concerns because of their reliance on AI-generated chain-of-thought (CoT) data and training strategies, which conflict with geographic characteristics. To address these issues, we first introduce GeoSeek, a new geolocation dataset comprising CoT data annotated by geographic experts and professional players. We further thoroughly explore the inherent characteristics of geographic tasks and propose a geo-similarity reward and a consistency reward assessed by a consistency agent to assist training. This encourages the model to converge towards correct answers from a geographic perspective while ensuring the integrity and consistency of its reasoning process. Experimental results show that GeoAgent outperforms existing methods and a series of general VLLMs across multiple grains, while generating reasoning that closely aligns with humans.
-
-**arXiv ID:** 2602.12617
-</details>
-
-<details>
 <summary><strong>Scaling Web Agent Training through Automatic Data Generation and Fine-grained Evaluation</strong> - Lajanugen Logeswaran, Jaekyeom Kim, Sungryull Sohn, Creighton Glasscock, Honglak Lee - [[pdf]](https://arxiv.org/pdf/2602.12544)</summary>
 
 **Abstract:** We present a scalable pipeline for automatically generating high-quality training data for web agents. In particular, a major challenge in identifying high-quality training instances is trajectory evaluation - quantifying how much progress was made towards task completion. We introduce a novel constraint-based evaluation framework that provides fine-grained assessment of progress towards task completion. This enables us to leverage partially successful trajectories, which significantly expands the amount of usable training data. We evaluate our method on a new benchmark we propose called BookingArena, which consists of complex booking tasks across 20 popular websites, and demonstrate that our distilled student model outperforms open-source approaches and matches or exceeds commercial systems, while being a significantly smaller model. Our work addresses the challenge of efficiently creating diverse, realistic web interaction datasets and provides a systematic evaluation methodology for complex structured web tasks.
 
 **arXiv ID:** 2602.12544
+</details>
+
+<details>
+<summary><strong>GeoAgent: Learning to Geolocate Everywhere with Reinforced Geographic Characteristics</strong> - Modi Jin, Yiming Zhang, Boyuan Sun, Dingwen Zhang, MingMing Cheng, Qibin Hou - [[pdf]](https://arxiv.org/pdf/2602.12617)</summary>
+
+**Abstract:** This paper presents GeoAgent, a model capable of reasoning closely with humans and deriving fine-grained address conclusions. Previous RL-based methods have achieved breakthroughs in performance and interpretability but still remain concerns because of their reliance on AI-generated chain-of-thought (CoT) data and training strategies, which conflict with geographic characteristics. To address these issues, we first introduce GeoSeek, a new geolocation dataset comprising CoT data annotated by geographic experts and professional players. We further thoroughly explore the inherent characteristics of geographic tasks and propose a geo-similarity reward and a consistency reward assessed by a consistency agent to assist training. This encourages the model to converge towards correct answers from a geographic perspective while ensuring the integrity and consistency of its reasoning process. Experimental results show that GeoAgent outperforms existing methods and a series of general VLLMs across multiple grains, while generating reasoning that closely aligns with humans.
+
+**arXiv ID:** 2602.12617
 </details>
 
 <details>
