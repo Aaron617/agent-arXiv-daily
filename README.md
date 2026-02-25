@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-02-25 03:13:55
+**Last Updated:** 2026-02-25 03:45:38
 
 **Total Papers:** 80
 
@@ -63,6 +63,14 @@ Using partial least squares structural equation modeling, we find perceived usef
 <summary><h2>Benchmarks and Datasets (18 papers)</h2></summary>
 
 <details>
+<summary><strong>Implicit Intelligence -- Evaluating Agents on What Users Don't Say</strong> - Ved Sirdeshmukh, Marc Wetter - [[pdf]](https://arxiv.org/pdf/2602.20424)</summary>
+
+**Abstract:** Real-world requests to AI agents are fundamentally underspecified. Natural human communication relies on shared context and unstated constraints that speakers expect listeners to infer. Current agentic benchmarks test explicit instruction-following but fail to evaluate whether agents can reason about implicit requirements spanning accessibility needs, privacy boundaries, catastrophic risks, and contextual constraints. We present Implicit Intelligence, an evaluation framework testing whether AI agents can move beyond prompt-following to become genuine goal-fulfillers, paired with Agent-as-a-World (AaW), a harness where interactive worlds are defined in human-readable YAML files and simulated by language models. Our scenarios feature apparent simplicity in user requests, hidden complexity in correct solutions, and discoverability of constraints through environmental exploration. Evaluating 16 frontier and open-weight models across 205 scenarios, we find that even the best-performing model achieves only 48.3% scenario pass rate, revealing substantial room for improvement in bridging the gap between literal instruction-following and human-like contextual reasoning.
+
+**arXiv ID:** 2602.20424
+</details>
+
+<details>
 <summary><strong>ActionEngine: From Reactive to Programmatic GUI Agents via State Machine Memory</strong> - Hongbin Zhong, Fazle Faisal, Luis França, Tanakorn Leesatapornwongsa, Adriana Szekeres, Kexin Rong, Suman Nath - [[pdf]](https://arxiv.org/pdf/2602.20502)</summary>
 
 **Abstract:** Existing Graphical User Interface (GUI) agents operate through step-by-step calls to vision language models--taking a screenshot, reasoning about the next action, executing it, then repeating on the new page--resulting in high costs and latency that scale with the number of reasoning steps, and limited accuracy due to no persistent memory of previously visited pages.
@@ -72,14 +80,6 @@ This design drastically improves both efficiency and accuracy: on Reddit tasks f
 Together, these components yield scalable and reliable GUI interaction by combining global programmatic planning, crawler-validated action templates, and node-level execution with localized validation and repair.
 
 **arXiv ID:** 2602.20502
-</details>
-
-<details>
-<summary><strong>Implicit Intelligence -- Evaluating Agents on What Users Don't Say</strong> - Ved Sirdeshmukh, Marc Wetter - [[pdf]](https://arxiv.org/pdf/2602.20424)</summary>
-
-**Abstract:** Real-world requests to AI agents are fundamentally underspecified. Natural human communication relies on shared context and unstated constraints that speakers expect listeners to infer. Current agentic benchmarks test explicit instruction-following but fail to evaluate whether agents can reason about implicit requirements spanning accessibility needs, privacy boundaries, catastrophic risks, and contextual constraints. We present Implicit Intelligence, an evaluation framework testing whether AI agents can move beyond prompt-following to become genuine goal-fulfillers, paired with Agent-as-a-World (AaW), a harness where interactive worlds are defined in human-readable YAML files and simulated by language models. Our scenarios feature apparent simplicity in user requests, hidden complexity in correct solutions, and discoverability of constraints through environmental exploration. Evaluating 16 frontier and open-weight models across 205 scenarios, we find that even the best-performing model achieves only 48.3% scenario pass rate, revealing substantial room for improvement in bridging the gap between literal instruction-following and human-like contextual reasoning.
-
-**arXiv ID:** 2602.20424
 </details>
 
 <details>
