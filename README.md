@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-03-05 03:38:02
+**Last Updated:** 2026-03-06 02:49:58
 
 **Total Papers:** 87
 
@@ -134,7 +134,7 @@
 </details>
 
 <details>
-<summary><strong>AgentIR: Reasoning-Aware Retrival for Deep Research Agents</strong> - Zijian Chen, Xueguang Ma, Shengyao Zhuang, Jimmy Lin, Akari Asai, Victor Zhong - [[pdf]](https://arxiv.org/pdf/2603.04384)</summary>
+<summary><strong>AgentIR: Reasoning-Aware Retrieval for Deep Research Agents</strong> - Zijian Chen, Xueguang Ma, Shengyao Zhuang, Jimmy Lin, Akari Asai, Victor Zhong - [[pdf]](https://arxiv.org/pdf/2603.04384)</summary>
 
 **Abstract:** Deep Research agents are rapidly emerging as primary consumers of modern retrieval systems. Unlike human users who issue and refine queries without documenting their intermediate thought processes, Deep Research agents generate explicit natural language reasoning before each search call, revealing rich intent and contextual information that existing retrievers entirely ignore. To exploit this overlooked signal, we introduce: (1) Reasoning-Aware Retrieval, a retrieval paradigm that jointly embeds the agent's reasoning trace alongside its query; and (2) DR-Synth, a data synthesis method that generates Deep Research retriever training data from standard QA datasets. We demonstrate that both components are independently effective, and their combination yields a trained embedding model, AgentIR-4B, with substantial gains. On the challenging BrowseComp-Plus benchmark, AgentIR-4B achieves 68\% accuracy with the open-weight agent Tongyi-DeepResearch, compared to 50\% with conventional embedding models twice its size, and 37\% with BM25. Code and data are available at: this https URL.
 
@@ -648,7 +648,7 @@ To address these challenges, we introduce the Stepwise Hybrid Examination Reinfo
 <details>
 <summary><strong>ToolRLA: Multiplicative Reward Decomposition for Tool-Integrated Agents</strong> - Pengbo Liu - [[pdf]](https://arxiv.org/pdf/2603.01620)</summary>
 
-**Abstract:** Tool-integrated agents that interleave reasoning with API calls are promising for complex tasks, yet aligning them for high-stakes, domain-specific deployment remains challenging: existing reinforcement learning approaches rely on coarse binary rewards that cannot distinguish tool selection errors from malformed parameters. We present ToolRLA, a three-stage post-training pipeline (SFT $\rightarrow$ GRPO $\rightarrow$ DPO) for domain-specific tool agents. The core contribution is a fine-grained reward function with multiplicative correctness decomposition spanning four dimensions -- format validity, tool selection, parameter accuracy, and regulatory compliance -- that encodes domain priority orderings as inductive biases in the reward landscape. Deployed on a financial advisory copilot (80+ advisors, 1,200+ daily queries), ToolRLA achieves over three months: a 47\% improvement in task completion rate ($62\%\rightarrow91\%$), a 63\% reduction in tool invocation errors ($38\%\rightarrow14\%$), and a 93\% reduction in regulatory violations ($12\%\rightarrow0.8\%$), within sub-2-second latency. Ablation studies show the multiplicative reward design accounts for 7 percentage points of improvement over additive alternatives. Generalization is further validated on ToolBench and API-Bank.
+**Abstract:** Tool-integrated agents that interleave reasoning with API calls are promising for complex tasks, yet aligning them for high-stakes, domain-specific deployment remains challenging: existing reinforcement learning approaches rely on coarse binary rewards that cannot distinguish tool selection errors from malformed parameters. We present ToolRLA, a three-stage post-training pipeline (SFT -> GRPO -> DPO) for domain-specific tool agents. The core contribution is a fine-grained reward function with multiplicative correctness decomposition spanning four dimensions -- format validity, tool selection, parameter accuracy, and regulatory compliance -- that encodes domain priority orderings as inductive biases in the reward landscape. Deployed on a financial advisory copilot (80+ advisors, 1,200+ daily queries), ToolRLA achieves over three months: a 47% improvement in task completion rate (62%->91%), a 63% reduction in tool invocation errors (38%->14%), and a 93% reduction in regulatory violations (12%->0.8%), within sub-2-second latency. Ablation studies show the multiplicative reward design accounts for 7 percentage points of improvement over additive alternatives. Generalization is further validated on ToolBench and API-Bank.
 
 **arXiv ID:** 2603.01620
 </details>
