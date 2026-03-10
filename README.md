@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-03-10 02:49:11
+**Last Updated:** 2026-03-10 03:34:21
 
 **Total Papers:** 76
 
@@ -301,6 +301,14 @@ These results demonstrate, in this setting, that high aggregate payoffs can coex
 </details>
 
 <details>
+<summary><strong>MARLIN: Multi-Agent Reinforcement Learning with Murmuration Intelligence and LLM Guidance for Reservoir Management</strong> - Heming Fu, Shan Lin, Guojun Xiong - [[pdf]](https://arxiv.org/pdf/2509.25034)</summary>
+
+**Abstract:** As climate change intensifies extreme weather events, water disasters pose growing threats to global communities, making adaptive reservoir management critical for protecting vulnerable populations and ensuring water security. Modern water resource management faces unprecedented challenges from cascading uncertainties propagating through interconnected reservoir networks. These uncertainties, rooted in physical water transfer losses and environmental variability, make precise control difficult. For example, sending 10 tons downstream may yield only 8-12 tons due to evaporation and seepage. Traditional centralized optimization approaches suffer from exponential computational complexity and cannot effectively handle such real-world uncertainties, while existing multi-agent reinforcement learning (MARL) methods fail to achieve effective coordination under uncertainty. To address these challenges, we present MARLIN, a decentralized reservoir management framework inspired by starling murmurations intelligence. Integrating bio-inspired alignment, separation, and cohesion rules with MARL, MARLIN enables individual reservoirs to make local decisions while achieving emergent global coordination. In addition, a LLM provides real-time reward shaping signals, guiding agents to adapt to environmental changes and human-defined preferences. Experiments on USGS data show that MARLIN improves uncertainty handling by 23\%, cuts computation by 35\%, and accelerates flood response by 68\%, exhibiting super-linear coordination, with complexity scaling 5.4x from 400 to 10,000 nodes. These results demonstrate MARLIN's potential for disaster prevention and protecting communities through intelligent, scalable water resource management.
+
+**arXiv ID:** 2509.25034
+</details>
+
+<details>
 <summary><strong>Symmetry-Breaking in Multi-Agent Navigation: Winding Number-Aware MPC with a Learned Topological Strategy</strong> - Tomoki Nakao, Kazumi Kasaura, Tadashi Kozuno - [[pdf]](https://arxiv.org/pdf/2511.15239)</summary>
 
 **Abstract:** In distributed multi-agent navigation without explicit communication, agents can fall into symmetry-induced deadlocks because each agent must autonomously decide how to pass others. To address this problem, we propose WNumMPC, a hierarchical navigation method that quantifies cooperative symmetry-breaking strategies via a topological invariant, the winding number, and learns such strategies through reinforcement learning. The learning-based Planner outputs continuous-valued signed target winding numbers and dynamic importance weights to prioritize critical interactions in dense crossings. Then, the model-based Controller generates collision-free and efficient motions based on the strategy and weights provided by the Planner. Simulation and real-world robot experiments indicate that WNumMPC effectively avoids deadlocks and collisions and achieves better performance than the baselines, particularly in dense and symmetry-prone scenarios. These experiments also suggest that explicitly leveraging winding numbers yields robust sim-to-real transfer with minimal performance degradation. The code for the experiments is available at this https URL.
@@ -314,14 +322,6 @@ These results demonstrate, in this setting, that high aggregate payoffs can coex
 **Abstract:** Although artificial intelligence (AI) and Human-Computer Interaction (HCI) systems are often presented as universal solutions, their design remains predominantly text-first, underserving primarily oral languages and indigenous communities. This position paper uses Guaraní, an official and widely spoken language of Paraguay, as a case study to argue that language support in AI remains insufficient unless it aligns with lived oral practices. We propose an alternative to the standard "text-to-speech" pipeline, proposing instead an oral-first multi-agent architecture. By decoupling Guaraní natural language understanding from dedicated agents for conversation state and community-led governance, we demonstrate a technical framework that respects indigenous data sovereignty and diglossia. Our work moves beyond mere recognition to focus on turn-taking, repair, and shared context as the primary locus of interaction. We conclude that for AI to be truly culturally grounded, it must shift from adapting oral languages to text-centric systems to treating spoken conversation as a first-class design requirement, ensuring digital ecosystems empower rather than overlook diverse linguistic practices.
 
 **arXiv ID:** 2603.05743
-</details>
-
-<details>
-<summary><strong>MARLIN: Multi-Agent Reinforcement Learning with Murmuration Intelligence and LLM Guidance for Reservoir Management</strong> - Heming Fu, Shan Lin, Guojun Xiong - [[pdf]](https://arxiv.org/pdf/2509.25034)</summary>
-
-**Abstract:** As climate change intensifies extreme weather events, water disasters pose growing threats to global communities, making adaptive reservoir management critical for protecting vulnerable populations and ensuring water security. Modern water resource management faces unprecedented challenges from cascading uncertainties propagating through interconnected reservoir networks. These uncertainties, rooted in physical water transfer losses and environmental variability, make precise control difficult. For example, sending 10 tons downstream may yield only 8-12 tons due to evaporation and seepage. Traditional centralized optimization approaches suffer from exponential computational complexity and cannot effectively handle such real-world uncertainties, while existing multi-agent reinforcement learning (MARL) methods fail to achieve effective coordination under uncertainty. To address these challenges, we present MARLIN, a decentralized reservoir management framework inspired by starling murmurations intelligence. Integrating bio-inspired alignment, separation, and cohesion rules with MARL, MARLIN enables individual reservoirs to make local decisions while achieving emergent global coordination. In addition, a LLM provides real-time reward shaping signals, guiding agents to adapt to environmental changes and human-defined preferences. Experiments on USGS data show that MARLIN improves uncertainty handling by 23\%, cuts computation by 35\%, and accelerates flood response by 68\%, exhibiting super-linear coordination, with complexity scaling 5.4x from 400 to 10,000 nodes. These results demonstrate MARLIN's potential for disaster prevention and protecting communities through intelligent, scalable water resource management.
-
-**arXiv ID:** 2509.25034
 </details>
 
 <details>
