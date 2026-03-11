@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-03-11 02:48:55
+**Last Updated:** 2026-03-11 03:33:42
 
 **Total Papers:** 98
 
@@ -251,20 +251,20 @@ Conclusions: Sentinel triages RPM vitals with sensitivity exceeding individual c
 <summary><h2>Multi-Agent Systems (30 papers)</h2></summary>
 
 <details>
+<summary><strong>LDP: An Identity-Aware Protocol for Multi-Agent LLM Systems</strong> - Sunil Prakash - [[pdf]](https://arxiv.org/pdf/2603.08852)</summary>
+
+**Abstract:** As multi-agent AI systems grow in complexity, the protocols connecting them constrain their capabilities. Current protocols such as A2A and MCP do not expose model-level properties as first-class primitives, ignoring properties fundamental to effective delegation: model identity, reasoning profile, quality calibration, and cost characteristics. We present the LLM Delegate Protocol (LDP), an AI-native communication protocol introducing five mechanisms: (1) rich delegate identity cards with quality hints and reasoning profiles; (2) progressive payload modes with negotiation and fallback; (3) governed sessions with persistent context; (4) structured provenance tracking confidence and verification status; (5) trust domains enforcing security boundaries at the protocol level. We implement LDP as a plugin for the JamJet agent runtime and evaluate against A2A and random baselines using local Ollama models and LLM-as-judge evaluation. Identity-aware routing achieves ~12x lower latency on easy tasks through delegate specialization, though it does not improve aggregate quality in our small delegate pool; semantic frame payloads reduce token count by 37% (p=0.031) with no observed quality loss; governed sessions eliminate 39% token overhead at 10 rounds; and noisy provenance degrades synthesis quality below the no-provenance baseline, arguing that confidence metadata is harmful without verification. Simulated analyses show architectural advantages in attack detection (96% vs. 6%) and failure recovery (100% vs. 35% completion). This paper contributes a protocol design, reference implementation, and initial evidence that AI-native protocol primitives enable more efficient and governable delegation.
+
+**arXiv ID:** 2603.08852
+</details>
+
+<details>
 <summary><strong>MASEval: Extending Multi-Agent Evaluation from Models to Systems</strong> - Cornelius Emde, Alexander Rubinstein, Anmol Goel, Ahmed Heakl, Sangdoo Yun, Seong Joon Oh, Martin Gubri - [[pdf]](https://arxiv.org/pdf/2603.08835)</summary>
 
 **Abstract:** The rapid adoption of LLM-based agentic systems has produced a rich ecosystem of frameworks (smolagents, LangGraph, AutoGen, CAMEL, LlamaIndex, i.a.). Yet existing benchmarks are model-centric: they fix the agentic setup and do not compare other system components. We argue that implementation decisions substantially impact performance, including choices such as topology, orchestration logic, and error handling. MASEval addresses this evaluation gap with a framework-agnostic library that treats the entire system as the unit of analysis. Through a systematic system-level comparison across 3 benchmarks, 3 models, and 3 frameworks, we find that framework choice matters as much as model choice. MASEval allows researchers to explore all components of agentic systems, opening new avenues for principled system design, and practitioners to identify the best implementation for their use case.
 MASEval is available under the MIT licence this https URL.
 
 **arXiv ID:** 2603.08835
-</details>
-
-<details>
-<summary><strong>LDP: An Identity-Aware Protocol for Multi-Agent LLM Systems</strong> - Sunil Prakash - [[pdf]](https://arxiv.org/pdf/2603.08852)</summary>
-
-**Abstract:** As multi-agent AI systems grow in complexity, the protocols connecting them constrain their capabilities. Current protocols such as A2A and MCP do not expose model-level properties as first-class primitives, ignoring properties fundamental to effective delegation: model identity, reasoning profile, quality calibration, and cost characteristics. We present the LLM Delegate Protocol (LDP), an AI-native communication protocol introducing five mechanisms: (1) rich delegate identity cards with quality hints and reasoning profiles; (2) progressive payload modes with negotiation and fallback; (3) governed sessions with persistent context; (4) structured provenance tracking confidence and verification status; (5) trust domains enforcing security boundaries at the protocol level. We implement LDP as a plugin for the JamJet agent runtime and evaluate against A2A and random baselines using local Ollama models and LLM-as-judge evaluation. Identity-aware routing achieves ~12x lower latency on easy tasks through delegate specialization, though it does not improve aggregate quality in our small delegate pool; semantic frame payloads reduce token count by 37% (p=0.031) with no observed quality loss; governed sessions eliminate 39% token overhead at 10 rounds; and noisy provenance degrades synthesis quality below the no-provenance baseline, arguing that confidence metadata is harmful without verification. Simulated analyses show architectural advantages in attack detection (96% vs. 6%) and failure recovery (100% vs. 35% completion). This paper contributes a protocol design, reference implementation, and initial evidence that AI-native protocol primitives enable more efficient and governable delegation.
-
-**arXiv ID:** 2603.08852
 </details>
 
 <details>
@@ -717,19 +717,19 @@ We introduce Saturn-2.6k, a dataset of 2,660 SAT problems with varying difficult
 </details>
 
 <details>
-<summary><strong>Reward-Zero: Language Embedding Driven Implicit Reward Mechanisms for Reinforcement Learning</strong> - Heng Zhang, Haddy Alchaer, Arash Ajoudani, Yu She - [[pdf]](https://arxiv.org/pdf/2603.09331)</summary>
-
-**Abstract:** We introduce Reward-Zero, a general-purpose implicit reward mechanism that transforms natural-language task descriptions into dense, semantically grounded progress signals for reinforcement learning (RL). Reward-Zero serves as a simple yet sophisticated universal reward function that leverages language embeddings for efficient RL training. By comparing the embedding of a task specification with embeddings derived from an agent's interaction experience, Reward-Zero produces a continuous, semantically aligned sense-of-completion signal. This reward supplements sparse or delayed environmental feedback without requiring task-specific engineering. When integrated into standard RL frameworks, it accelerates exploration, stabilizes training, and enhances generalization across diverse tasks. Empirically, agents trained with Reward-Zero converge faster and achieve higher final success rates than conventional methods such as PPO with common reward-shaping baselines, successfully solving tasks that hand-designed rewards could not in some complex tasks. In addition, we develop a mini benchmark for the evaluation of completion sense during task execution via language embeddings. These results highlight the promise of language-driven implicit reward functions as a practical path toward more sample-efficient, generalizable, and scalable RL for embodied agents. Code will be released after peer review.
-
-**arXiv ID:** 2603.09331
-</details>
-
-<details>
 <summary><strong>Impact of Markov Decision Process Design on Sim-to-Real Reinforcement Learning</strong> - Tatjana Krau, Jorge Mandlmaier, Tobias Damm, Frieder Heieck - [[pdf]](https://arxiv.org/pdf/2603.09427)</summary>
 
 **Abstract:** Reinforcement Learning (RL) has demonstrated strong potential for industrial process control, yet policies trained in simulation often suffer from a significant sim-to-real gap when deployed on physical hardware. This work systematically analyzes how core Markov Decision Process (MDP) design choices -- state composition, target inclusion, reward formulation, termination criteria, and environment dynamics models -- affect this transfer. Using a color mixing task, we evaluate different MDP configurations and mixing dynamics across simulation and real-world experiments. We validate our findings on physical hardware, demonstrating that physics-based dynamics models achieve up to 50% real-world success under strict precision constraints where simplified models fail entirely. Our results provide practical MDP design guidelines for deploying RL in industrial process control.
 
 **arXiv ID:** 2603.09427
+</details>
+
+<details>
+<summary><strong>Reward-Zero: Language Embedding Driven Implicit Reward Mechanisms for Reinforcement Learning</strong> - Heng Zhang, Haddy Alchaer, Arash Ajoudani, Yu She - [[pdf]](https://arxiv.org/pdf/2603.09331)</summary>
+
+**Abstract:** We introduce Reward-Zero, a general-purpose implicit reward mechanism that transforms natural-language task descriptions into dense, semantically grounded progress signals for reinforcement learning (RL). Reward-Zero serves as a simple yet sophisticated universal reward function that leverages language embeddings for efficient RL training. By comparing the embedding of a task specification with embeddings derived from an agent's interaction experience, Reward-Zero produces a continuous, semantically aligned sense-of-completion signal. This reward supplements sparse or delayed environmental feedback without requiring task-specific engineering. When integrated into standard RL frameworks, it accelerates exploration, stabilizes training, and enhances generalization across diverse tasks. Empirically, agents trained with Reward-Zero converge faster and achieve higher final success rates than conventional methods such as PPO with common reward-shaping baselines, successfully solving tasks that hand-designed rewards could not in some complex tasks. In addition, we develop a mini benchmark for the evaluation of completion sense during task execution via language embeddings. These results highlight the promise of language-driven implicit reward functions as a practical path toward more sample-efficient, generalizable, and scalable RL for embodied agents. Code will be released after peer review.
+
+**arXiv ID:** 2603.09331
 </details>
 
 <details>
