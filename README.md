@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-03-12 02:53:47
+**Last Updated:** 2026-03-12 03:40:07
 
 **Total Papers:** 86
 
@@ -703,19 +703,19 @@ This paper proposes a reinforcement learning approach for learning the weights i
 </details>
 
 <details>
-<summary><strong>Cross-embodied Co-design for Dexterous Hands</strong> - Kehlani Fay, Darin Anthony Djapri, Anya Zorin, James Clinton, Ali El Lahib, Hao Su, Michael T. Tolley, Sha Yi, Xiaolong Wang - [[pdf]](https://arxiv.org/pdf/2512.03743)</summary>
-
-**Abstract:** Dexterous manipulation is limited by both control and design, without consensus as to what makes manipulators best for performing dexterous tasks. This raises a fundamental challenge: how should we design and control robot manipulators that are optimized for dexterity? We present a co-design framework that learns task-specific hand morphology and complementary dexterous control policies. The framework supports 1) an expansive morphology search space including joint, finger, and palm generation, 2) scalable evaluation across the wide design space via morphology-conditioned cross-embodied control, and 3) real-world fabrication with accessible components. We evaluate the approach across multiple dexterous tasks, including in-hand rotation with simulation and real deployment. Our framework enables an end-to-end pipeline that can design, train, fabricate, and deploy a new robotic hand in under 24 hours. The full framework will be open-sourced and available on our website: this https URL .
-
-**arXiv ID:** 2512.03743
-</details>
-
-<details>
 <summary><strong>Global End-Effector Pose Control of an Underactuated Aerial Manipulator via Reinforcement Learning</strong> - Shlok Deshmukh, Javier Alonso-Mora, Sihao Sun - [[pdf]](https://arxiv.org/pdf/2512.21085)</summary>
 
 **Abstract:** Aerial manipulators, which combine robotic arms with multi-rotor drones, face strict constraints on arm weight and mechanical complexity. In this work, we study a lightweight 2-degree-of-freedom (DoF) arm mounted on a quadrotor via a differential mechanism, capable of full six-DoF end-effector pose control. While the minimal design enables simplicity and reduced payload, it also introduces challenges such as underactuation and sensitivity to external disturbances. To address these, we employ reinforcement learning, training a Proximal Policy Optimization (PPO) agent in simulation to generate feedforward commands for quadrotor acceleration and body rates, along with joint angle targets. These commands are tracked by an incremental nonlinear dynamic inversion (INDI) attitude controller and a PID joint controller, respectively. Flight experiments demonstrate centimeter-level position accuracy and degree-level orientation precision, with robust performance under external force disturbances, including manipulation of heavy loads and pushing tasks. The results highlight the potential of learning-based control strategies for enabling contact-rich aerial manipulation using simple, lightweight platforms. Videos of the experiment and the method are summarized in this https URL.
 
 **arXiv ID:** 2512.21085
+</details>
+
+<details>
+<summary><strong>Cross-embodied Co-design for Dexterous Hands</strong> - Kehlani Fay, Darin Anthony Djapri, Anya Zorin, James Clinton, Ali El Lahib, Hao Su, Michael T. Tolley, Sha Yi, Xiaolong Wang - [[pdf]](https://arxiv.org/pdf/2512.03743)</summary>
+
+**Abstract:** Dexterous manipulation is limited by both control and design, without consensus as to what makes manipulators best for performing dexterous tasks. This raises a fundamental challenge: how should we design and control robot manipulators that are optimized for dexterity? We present a co-design framework that learns task-specific hand morphology and complementary dexterous control policies. The framework supports 1) an expansive morphology search space including joint, finger, and palm generation, 2) scalable evaluation across the wide design space via morphology-conditioned cross-embodied control, and 3) real-world fabrication with accessible components. We evaluate the approach across multiple dexterous tasks, including in-hand rotation with simulation and real deployment. Our framework enables an end-to-end pipeline that can design, train, fabricate, and deploy a new robotic hand in under 24 hours. The full framework will be open-sourced and available on our website: this https URL .
+
+**arXiv ID:** 2512.03743
 </details>
 
 <details>
