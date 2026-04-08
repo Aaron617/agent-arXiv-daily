@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-04-08 03:30:42
+**Last Updated:** 2026-04-08 04:07:39
 
 **Total Papers:** 93
 
@@ -265,19 +265,19 @@ To make this operational, we define five dimensions of agent auditability, i.e.,
 <summary><h2>Multi-Agent Systems (25 papers)</h2></summary>
 
 <details>
-<summary><strong>MMORF: A Multi-agent Framework for Designing Multi-objective Retrosynthesis Planning Systems</strong> - Frazier N. Baker, Trieu Nguyen, Reza Averly, Botao Yu, Daniel Adu-Ampratwum, Huan Sun, Xia Ning - [[pdf]](https://arxiv.org/pdf/2604.05075)</summary>
-
-**Abstract:** Multi-objective retrosynthesis planning is a critical chemistry task requiring dynamic balancing of quality, safety, and cost objectives. Language model-based multi-agent systems (MAS) offer a promising approach for this task: leveraging interactions of specialized agents to incorporate multiple objectives into retrosynthesis planning. We present MMORF, a framework for constructing MAS for multi-objective retrosynthesis planning. MMORF features modular agentic components, which can be flexibly combined and configured into different systems, enabling principled evaluation and comparison of different system designs. Using MMORF, we construct two representative MAS: MASIL and RFAS. On a newly curated benchmark consisting of 218 multi-objective retrosynthesis planning tasks, MASIL achieves strong safety and cost metrics on soft-constraint tasks, frequently Pareto-dominating baseline routes, while RFAS achieves a 48.6% success rate on hard-constraint tasks, outperforming state-of-the-art baselines. Together, these results show the effectiveness of MMORF as a foundational framework for exploring MAS for multi-objective retrosynthesis planning. Code and data are available at this https URL.
-
-**arXiv ID:** 2604.05075
-</details>
-
-<details>
 <summary><strong>PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing</strong> - Yiwen Song, Yale Song, Tomas Pfister, Jinsung Yoon - [[pdf]](https://arxiv.org/pdf/2604.05018)</summary>
 
 **Abstract:** Synthesizing unstructured research materials into manuscripts is an essential yet under-explored challenge in AI-driven scientific discovery. Existing autonomous writers are rigidly coupled to specific experimental pipelines, and produce superficial literature reviews. We introduce PaperOrchestra, a multi-agent framework for automated AI research paper writing. It flexibly transforms unconstrained pre-writing materials into submission-ready LaTeX manuscripts, including comprehensive literature synthesis and generated visuals, such as plots and conceptual diagrams. To evaluate performance, we present PaperWritingBench, the first standardized benchmark of reverse-engineered raw materials from 200 top-tier AI conference papers, alongside a comprehensive suite of automated evaluators. In side-by-side human evaluations, PaperOrchestra significantly outperforms autonomous baselines, achieving an absolute win rate margin of 50%-68% in literature review quality, and 14%-38% in overall manuscript quality.
 
 **arXiv ID:** 2604.05018
+</details>
+
+<details>
+<summary><strong>MMORF: A Multi-agent Framework for Designing Multi-objective Retrosynthesis Planning Systems</strong> - Frazier N. Baker, Trieu Nguyen, Reza Averly, Botao Yu, Daniel Adu-Ampratwum, Huan Sun, Xia Ning - [[pdf]](https://arxiv.org/pdf/2604.05075)</summary>
+
+**Abstract:** Multi-objective retrosynthesis planning is a critical chemistry task requiring dynamic balancing of quality, safety, and cost objectives. Language model-based multi-agent systems (MAS) offer a promising approach for this task: leveraging interactions of specialized agents to incorporate multiple objectives into retrosynthesis planning. We present MMORF, a framework for constructing MAS for multi-objective retrosynthesis planning. MMORF features modular agentic components, which can be flexibly combined and configured into different systems, enabling principled evaluation and comparison of different system designs. Using MMORF, we construct two representative MAS: MASIL and RFAS. On a newly curated benchmark consisting of 218 multi-objective retrosynthesis planning tasks, MASIL achieves strong safety and cost metrics on soft-constraint tasks, frequently Pareto-dominating baseline routes, while RFAS achieves a 48.6% success rate on hard-constraint tasks, outperforming state-of-the-art baselines. Together, these results show the effectiveness of MMORF as a foundational framework for exploring MAS for multi-objective retrosynthesis planning. Code and data are available at this https URL.
+
+**arXiv ID:** 2604.05075
 </details>
 
 <details>
