@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-04-13 03:50:45
+**Last Updated:** 2026-04-13 04:29:20
 
 **Total Papers:** 99
 
@@ -798,19 +798,19 @@ To overcome these challenges, we propose ChipSeek, a novel hierarchical reward b
 </details>
 
 <details>
-<summary><strong>Simulation of Adaptive Running with Flexible Sports Prosthesis using Reinforcement Learning of Hybrid-link System</strong> - Yuta Shimane, Ko Yamamoto - [[pdf]](https://arxiv.org/pdf/2604.08882)</summary>
-
-**Abstract:** This study proposes a reinforcement learning-based adaptive running motion simulation for a unilateral transtibial amputee with the flexibility of a leaf-spring-type sports prosthesis using hybrid-link system. The design and selection of sports prostheses often rely on trial and error. A comprehensive whole-body dynamics analysis that considers the interaction between human motion and prosthetic deformation could provide valuable insights for user-specific design and selection. The hybrid-link system facilitates whole-body dynamics analysis by incorporating the Piece-wise Constant Strain model to represent the flexible deformation of the prosthesis. Based on this system, the simulation methodology generates whole-body dynamic motions of a unilateral transtibial amputee through a reinforcement learning-based approach, which combines imitation learning from motion capture data with accurate prosthetic dynamics computation. We simulated running motions under different virtual prosthetic stiffness conditions and analyzed the metabolic cost of transport obtained from the simulations, suggesting that variations in stiffness influence running performance. Our findings demonstrate the potential of this approach for simulation and analysis under virtual conditions that differ from real conditions.
-
-**arXiv ID:** 2604.08882
-</details>
-
-<details>
 <summary><strong>Boosted Distributional Reinforcement Learning: Analysis and Healthcare Applications</strong> - Zequn Chen, Wesley J. Marrero - [[pdf]](https://arxiv.org/pdf/2604.04334)</summary>
 
 **Abstract:** Researchers and practitioners are increasingly considering reinforcement learning to optimize decisions in complex domains like robotics and healthcare. To date, these efforts have largely utilized expectation-based learning. However, relying on expectation-focused objectives may be insufficient for making consistent decisions in highly uncertain situations involving multiple heterogeneous groups. While distributional reinforcement learning algorithms have been introduced to model the full distributions of outcomes, they can yield large discrepancies in realized benefits among comparable agents. This challenge is particularly acute in healthcare settings, where physicians (controllers) must manage multiple patients (subordinate agents) with uncertain disease progression and heterogeneous treatment responses. We propose a Boosted Distributional Reinforcement Learning (BDRL) algorithm that optimizes agent-specific outcome distributions while enforcing comparability among similar agents and analyze its convergence. To further stabilize learning, we incorporate a post-update projection step formulated as a constrained convex optimization problem, which efficiently aligns individual outcomes with a high-performing reference within a specified tolerance. We apply our algorithm to manage hypertension in a large subset of the US adult population by categorizing individuals into cardiovascular disease risk groups. Our approach modifies treatment plans for median and vulnerable patients by mimicking the behavior of high-performing references in each risk group. Furthermore, we find that BDRL improves the number and consistency of quality-adjusted life years compared with reinforcement learning baselines.
 
 **arXiv ID:** 2604.04334
+</details>
+
+<details>
+<summary><strong>Simulation of Adaptive Running with Flexible Sports Prosthesis using Reinforcement Learning of Hybrid-link System</strong> - Yuta Shimane, Ko Yamamoto - [[pdf]](https://arxiv.org/pdf/2604.08882)</summary>
+
+**Abstract:** This study proposes a reinforcement learning-based adaptive running motion simulation for a unilateral transtibial amputee with the flexibility of a leaf-spring-type sports prosthesis using hybrid-link system. The design and selection of sports prostheses often rely on trial and error. A comprehensive whole-body dynamics analysis that considers the interaction between human motion and prosthetic deformation could provide valuable insights for user-specific design and selection. The hybrid-link system facilitates whole-body dynamics analysis by incorporating the Piece-wise Constant Strain model to represent the flexible deformation of the prosthesis. Based on this system, the simulation methodology generates whole-body dynamic motions of a unilateral transtibial amputee through a reinforcement learning-based approach, which combines imitation learning from motion capture data with accurate prosthetic dynamics computation. We simulated running motions under different virtual prosthetic stiffness conditions and analyzed the metabolic cost of transport obtained from the simulations, suggesting that variations in stiffness influence running performance. Our findings demonstrate the potential of this approach for simulation and analysis under virtual conditions that differ from real conditions.
+
+**arXiv ID:** 2604.08882
 </details>
 
 <details>
