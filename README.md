@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-04-14 03:39:02
+**Last Updated:** 2026-04-14 04:18:40
 
 **Total Papers:** 149
 
@@ -925,19 +925,19 @@ We introduce ClawMobile as a concrete exploration of this design space. ClawMobi
 </details>
 
 <details>
-<summary><strong>Help Without Being Asked: A Deployed Proactive Agent System for On-Call Support with Continuous Self-Improvement</strong> - Fengrui Liu, Xiao He, Tieying Zhang - [[pdf]](https://arxiv.org/pdf/2604.09579)</summary>
-
-**Abstract:** In large-scale cloud service platforms, thousands of customer tickets are generated daily and are typically handled through on-call dialogues. This high volume of on-call interactions imposes a substantial workload on human support analysts. Recent studies have explored reactive agents that leverage large language models as a first line of support to interact with customers directly and resolve issues. However, when issues remain unresolved and are escalated to human support, these agents are typically disengaged. As a result, they cannot assist with follow-up inquiries, track resolution progress, or learn from the cases they fail to address. In this paper, we introduce Vigil, a novel proactive agent system designed to operate throughout the entire on-call life-cycle. Unlike reactive agents, Vigil focuses on providing assistance during the phase in which human support is already involved. It integrates into the dialogue between the customer and the analyst, proactively offering assistance without explicit user invocation. Moreover, Vigil incorporates a continuous self-improvement mechanism that extracts knowledge from human-resolved cases to autonomously update its capabilities. Vigil has been deployed on Volcano Engine, ByteDance's cloud platform, for over ten months, and comprehensive evaluations based on this deployment demonstrate its effectiveness and practicality. The open source version of this work is publicly available at this https URL.
-
-**arXiv ID:** 2604.09579
-</details>
-
-<details>
 <summary><strong>OOWM: Structuring Embodied Reasoning and Planning via Object-Oriented Programmatic World Modeling</strong> - Hongyu Chen, Liang Lin, Guangrun Wang - [[pdf]](https://arxiv.org/pdf/2604.09580)</summary>
 
 **Abstract:** Standard Chain-of-Thought (CoT) prompting empowers Large Language Models (LLMs) with reasoning capabilities, yet its reliance on linear natural language is inherently insufficient for effective world modeling in embodied tasks. While text offers flexibility, it fails to explicitly represent the state-space, object hierarchies, and causal dependencies required for robust robotic planning. To address these limitations, we propose Object-Oriented World Modeling (OOWM), a novel framework that structures embodied reasoning through the lens of software engineering formalisms. We redefine the world model not as a latent vector space, but as an explicit symbolic tuple $W = \langle S, T \rangle$: a State Abstraction ($G_\text{state}$) instantiating the environmental state $S$, coupled with a Control Policy ($G_\text{control}$) representing the transition logic $T: S \times A \rightarrow S'$. OOWM leverages the Unified Modeling Language (UML) to materialize this definition: it employs Class Diagrams to ground visual perception into rigorous object hierarchies, and Activity Diagrams to operationalize planning into executable control flows. Furthermore, we introduce a three-stage training pipeline combining Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO). Crucially, this method utilizes outcome-based rewards from the final plan to implicitly optimize the underlying object-oriented reasoning structure, enabling effective learning even with sparse annotations. Extensive evaluations on the MRoom-30k benchmark demonstrate that OOWM significantly outperforms unstructured textual baselines in planning coherence, execution success, and structural fidelity, establishing a new paradigm for structured embodied reasoning.
 
 **arXiv ID:** 2604.09580
+</details>
+
+<details>
+<summary><strong>Help Without Being Asked: A Deployed Proactive Agent System for On-Call Support with Continuous Self-Improvement</strong> - Fengrui Liu, Xiao He, Tieying Zhang - [[pdf]](https://arxiv.org/pdf/2604.09579)</summary>
+
+**Abstract:** In large-scale cloud service platforms, thousands of customer tickets are generated daily and are typically handled through on-call dialogues. This high volume of on-call interactions imposes a substantial workload on human support analysts. Recent studies have explored reactive agents that leverage large language models as a first line of support to interact with customers directly and resolve issues. However, when issues remain unresolved and are escalated to human support, these agents are typically disengaged. As a result, they cannot assist with follow-up inquiries, track resolution progress, or learn from the cases they fail to address. In this paper, we introduce Vigil, a novel proactive agent system designed to operate throughout the entire on-call life-cycle. Unlike reactive agents, Vigil focuses on providing assistance during the phase in which human support is already involved. It integrates into the dialogue between the customer and the analyst, proactively offering assistance without explicit user invocation. Moreover, Vigil incorporates a continuous self-improvement mechanism that extracts knowledge from human-resolved cases to autonomously update its capabilities. Vigil has been deployed on Volcano Engine, ByteDance's cloud platform, for over ten months, and comprehensive evaluations based on this deployment demonstrate its effectiveness and practicality. The open source version of this work is publicly available at this https URL.
+
+**arXiv ID:** 2604.09579
 </details>
 
 <details>
