@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-04-24 03:47:50
+**Last Updated:** 2026-04-24 04:26:14
 
 **Total Papers:** 73
 
@@ -74,19 +74,19 @@
 </details>
 
 <details>
-<summary><strong>Can Virtual Agents Care? Designing an Empathetic and Personalized LLM-Driven Conversational Agent</strong> - Truong Le Minh Toan, Dieu Bang Mach, Tan Duy Le, Nguyen Tan Viet Tuyen - [[pdf]](https://arxiv.org/pdf/2604.20948)</summary>
-
-**Abstract:** Mental health challenges are rising globally, while traditional support services face limited availability and high costs. Large language models offer potential for conversational support, but often lack personalization, empathy, and factual grounding. A virtual agent framework is introduced to provide empathetic, personalized, and reliable wellbeing support through retrieval-augmented architecture, structured memory, and multimodal interaction. Objective benchmarks demonstrate improved retrieval and response quality, particularly for smaller models. A cross-cultural study with university students from Vietnam and Australia shows the system outperforms LLM-only baselines in coherence, perceived accuracy, and empathy, with most participants clearly preferring the proposed approach.
-
-**arXiv ID:** 2604.20948
-</details>
-
-<details>
 <summary><strong>A Bayesian Reasoning Framework for Robotic Systems in Autonomous Casualty Triage</strong> - Szymon Rusiecki, Cecilia Morales, Pia Störy, Kimberly Elenberg, Leonard Weiss, Artur Dubrawski - [[pdf]](https://arxiv.org/pdf/2604.21568)</summary>
 
 **Abstract:** Autonomous robots deployed in mass casualty incidents (MCI) face the challenge of making critical decisions based on incomplete and noisy perceptual data. We present an autonomous robotic system for casualty assessment that fuses outputs from multiple vision-based algorithms, estimating signs of severe hemorrhage, visible trauma, or physical alertness, into a coherent triage assessment. At the core of our system is a Bayesian network, constructed from expert-defined rules, which enables probabilistic reasoning about a casualty's condition even with missing or conflicting sensory inputs. The system, evaluated during the DARPA Triage Challenge (DTC) in realistic MCI scenarios involving 11 and 9 casualties, demonstrated a nearly three-fold improvement in physiological assessment accuracy (from 15\% to 42\% and 19\% to 46\%) compared to a vision-only baseline. More importantly, overall triage accuracy increased from 14\% to 53\%, while the diagnostic coverage of the system expanded from 31\% to 95\% of cases. These results demonstrate that integrating expert-guided probabilistic reasoning with advanced vision-based sensing can significantly enhance the reliability and decision-making capabilities of autonomous systems in critical real-world applications.
 
 **arXiv ID:** 2604.21568
+</details>
+
+<details>
+<summary><strong>Can Virtual Agents Care? Designing an Empathetic and Personalized LLM-Driven Conversational Agent</strong> - Truong Le Minh Toan, Dieu Bang Mach, Tan Duy Le, Nguyen Tan Viet Tuyen - [[pdf]](https://arxiv.org/pdf/2604.20948)</summary>
+
+**Abstract:** Mental health challenges are rising globally, while traditional support services face limited availability and high costs. Large language models offer potential for conversational support, but often lack personalization, empathy, and factual grounding. A virtual agent framework is introduced to provide empathetic, personalized, and reliable wellbeing support through retrieval-augmented architecture, structured memory, and multimodal interaction. Objective benchmarks demonstrate improved retrieval and response quality, particularly for smaller models. A cross-cultural study with university students from Vietnam and Australia shows the system outperforms LLM-only baselines in coherence, perceived accuracy, and empathy, with most participants clearly preferring the proposed approach.
+
+**arXiv ID:** 2604.20948
 </details>
 
 <details>
@@ -318,19 +318,19 @@ By focusing evaluation on semantically diverse and underexplored trajectories, D
 <summary><h2>Multi-Agent Systems (15 papers)</h2></summary>
 
 <details>
-<summary><strong>Agentic AI for Personalized Physiotherapy: A Multi-Agent Framework for Generative Video Training and Real-Time Pose Correction</strong> - Abhishek Dharmaratnakar, Srivaths Ranganathan, Anushree Sinha, Debanshu Das - [[pdf]](https://arxiv.org/pdf/2604.21154)</summary>
-
-**Abstract:** At-home physiotherapy compliance remains critically low due to a lack of personalized supervision and dynamic feedback. Existing digital health solutions rely on static, pre-recorded video libraries or generic 3D avatars that fail to account for a patient's specific injury limitations or home environment. In this paper, we propose a novel Multi-Agent System (MAS) architecture that leverages Generative AI and computer vision to close the tele-rehabilitation loop. Our framework consists of four specialized micro-agents: a Clinical Extraction Agent that parses unstructured medical notes into kinematic constraints; a Video Synthesis Agent that utilizes foundational video generation models to create personalized, patient-specific exercise videos; a Vision Processing Agent for real-time pose estimation; and a Diagnostic Feedback Agent that issues corrective instructions. We present the system architecture, detail the prototype pipeline using Large Language Models and MediaPipe, and outline our clinical evaluation plan. This work demonstrates the feasibility of combining generative media with agentic autonomous decision-making to scale personalized patient care safely and effectively.
-
-**arXiv ID:** 2604.21154
-</details>
-
-<details>
 <summary><strong>Multi-Agent Empowerment and Emergence of Complex Behavior in Groups</strong> - Tristan Shah, Ilya Nemenman, Daniel Polani, Stas Tiomkin - [[pdf]](https://arxiv.org/pdf/2604.21155)</summary>
 
 **Abstract:** Intrinsic motivations are receiving increasing attention, i.e. behavioral incentives that are not engineered, but emerge from the interaction of an agent with its surroundings. In this work we study the emergence of behaviors driven by one such incentive, empowerment, specifically in the context of more than one agent. We formulate a principled extension of empowerment to the multi-agent setting, and demonstrate its efficient calculation. We observe that this intrinsic motivation gives rise to characteristic modes of group-organization in two qualitatively distinct environments: a pair of agents coupled by a tendon, and a controllable Vicsek flock. This demonstrates the potential of intrinsic motivations such as empowerment to not just drive behavior for only individual agents but also higher levels of behavioral organization at scale.
 
 **arXiv ID:** 2604.21155
+</details>
+
+<details>
+<summary><strong>Agentic AI for Personalized Physiotherapy: A Multi-Agent Framework for Generative Video Training and Real-Time Pose Correction</strong> - Abhishek Dharmaratnakar, Srivaths Ranganathan, Anushree Sinha, Debanshu Das - [[pdf]](https://arxiv.org/pdf/2604.21154)</summary>
+
+**Abstract:** At-home physiotherapy compliance remains critically low due to a lack of personalized supervision and dynamic feedback. Existing digital health solutions rely on static, pre-recorded video libraries or generic 3D avatars that fail to account for a patient's specific injury limitations or home environment. In this paper, we propose a novel Multi-Agent System (MAS) architecture that leverages Generative AI and computer vision to close the tele-rehabilitation loop. Our framework consists of four specialized micro-agents: a Clinical Extraction Agent that parses unstructured medical notes into kinematic constraints; a Video Synthesis Agent that utilizes foundational video generation models to create personalized, patient-specific exercise videos; a Vision Processing Agent for real-time pose estimation; and a Diagnostic Feedback Agent that issues corrective instructions. We present the system architecture, detail the prototype pipeline using Large Language Models and MediaPipe, and outline our clinical evaluation plan. This work demonstrates the feasibility of combining generative media with agentic autonomous decision-making to scale personalized patient care safely and effectively.
+
+**arXiv ID:** 2604.21154
 </details>
 
 <details>
