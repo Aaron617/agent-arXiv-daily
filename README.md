@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-04-29 04:00:08
+**Last Updated:** 2026-04-29 04:39:10
 
 **Total Papers:** 90
 
@@ -750,19 +750,19 @@ We employ here a novel and simpler definition of `grassroots' that better captur
 </details>
 
 <details>
-<summary><strong>TEACar: An Open-Source Autonomous Driving Platform</strong> - Zhongzheng Zhang, Maxwell Ruyle, Andrew Kappes, Tyler Ruble, William Shaoul, Dana Moreno, Jack Penn, Ivan Ruchkin - [[pdf]](https://arxiv.org/pdf/2604.24934)</summary>
-
-**Abstract:** Intelligent Transportation Systems (ITS) increasingly rely on vision-based perception and learning-based control, necessitating experimental platforms that support realistic hardware-in-the-loop validation. Small-scale platforms for autonomous racing offer a practical path to hardware validation, but often suffer from limited modularity, high integration complexity, or restricted extensibility. This paper presents TEACAR, a 1/14- to 1/16-scale autonomous driving platform designed with modular mechanical architecture, hardware abstraction, and ROS 2-based software. The system adopts a four-layer deck structure that physically decouples sensing, computation, actuation, and power subsystems, improving structural rigidity while simplifying reconfiguration. We constructed and comprehensively evaluated the prototype of TEACAR. Its mechanical stability, structural characteristics, and software performance were quantified based on three CNN-based steering controllers. Inference latency, power consumption, and system operating time were measured to evaluate computational capability and robustness. Our experiments demonstrated that TEACAR offers a scalable, modular, and cost-effective testbed for ITS research, education, and development. Our project repository is available on GitHub.
-
-**arXiv ID:** 2604.24934
-</details>
-
-<details>
 <summary><strong>A Deep Reinforcement Learning Approach to Automated Stock Trading, using xLSTM Networks</strong> - Faezeh Sarlakifar, Mohammadreza Mohammadzadeh Asl, Sajjad Rezvani Khaledi, Armin Salimi-Badr - [[pdf]](https://arxiv.org/pdf/2503.09655)</summary>
 
 **Abstract:** Traditional Long Short-Term Memory (LSTM) networks are effective for handling sequential data but have limitations such as gradient vanishing and difficulty in capturing long-term dependencies, which can impact their performance in dynamic and risky environments like stock trading. To address these limitations, this study explores the usage of the newly introduced Extended Long Short Term Memory (xLSTM) network in combination with a deep reinforcement learning (DRL) approach for automated stock trading. Our proposed method utilizes xLSTM networks in both actor and critic components, enabling effective handling of time series data and dynamic market environments. Proximal Policy Optimization (PPO), with its ability to balance exploration and exploitation, is employed to optimize the trading strategy. Experiments were conducted using financial data from major tech companies over a comprehensive timeline, demonstrating that the xLSTM-based model outperforms LSTM-based methods in key trading evaluation metrics, including cumulative return, average profitability per trade, maximum earning rate, maximum pullback, and Sharpe ratio. These findings mark the potential of xLSTM for enhancing DRL-based stock trading systems.
 
 **arXiv ID:** 2503.09655
+</details>
+
+<details>
+<summary><strong>TEACar: An Open-Source Autonomous Driving Platform</strong> - Zhongzheng Zhang, Maxwell Ruyle, Andrew Kappes, Tyler Ruble, William Shaoul, Dana Moreno, Jack Penn, Ivan Ruchkin - [[pdf]](https://arxiv.org/pdf/2604.24934)</summary>
+
+**Abstract:** Intelligent Transportation Systems (ITS) increasingly rely on vision-based perception and learning-based control, necessitating experimental platforms that support realistic hardware-in-the-loop validation. Small-scale platforms for autonomous racing offer a practical path to hardware validation, but often suffer from limited modularity, high integration complexity, or restricted extensibility. This paper presents TEACAR, a 1/14- to 1/16-scale autonomous driving platform designed with modular mechanical architecture, hardware abstraction, and ROS 2-based software. The system adopts a four-layer deck structure that physically decouples sensing, computation, actuation, and power subsystems, improving structural rigidity while simplifying reconfiguration. We constructed and comprehensively evaluated the prototype of TEACAR. Its mechanical stability, structural characteristics, and software performance were quantified based on three CNN-based steering controllers. Inference latency, power consumption, and system operating time were measured to evaluate computational capability and robustness. Our experiments demonstrated that TEACAR offers a scalable, modular, and cost-effective testbed for ITS research, education, and development. Our project repository is available on GitHub.
+
+**arXiv ID:** 2604.24934
 </details>
 
 <details>
