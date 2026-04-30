@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-04-30 04:01:17
+**Last Updated:** 2026-04-30 04:41:49
 
 **Total Papers:** 70
 
@@ -46,19 +46,19 @@
 <summary><h2>Benchmarks and Datasets (18 papers)</h2></summary>
 
 <details>
-<summary><strong>DreamProver: Evolving Transferable Lemma Libraries via a Wake-Sleep Theorem-Proving Agent</strong> - Youyuan Zhang, Jialiang Sun, Hangrui Bi, Chuqin Geng, Wenjie Ma, Zhaoyu Li, Xujie Si - [[pdf]](https://arxiv.org/pdf/2604.26311)</summary>
-
-**Abstract:** We introduce DreamProver, an agentic framework that leverages a "wake-sleep" program induction paradigm to discover reusable lemmas for formal theorem proving. Existing approaches either rely on fixed lemma libraries, which limit adaptability, or synthesize highly specific intermediate lemmas tailored to individual theorems, thereby lacking generality. DreamProver addresses this gap through an iterative two-stage process. In the wake stage, DreamProver attempts to prove theorems from a training set using the current lemma library while proposing new candidate lemmas. In the "sleep" stage, it abstracts, refines, and consolidates these candidates to compress and optimize the library. Through this alternating cycle, DreamProver progressively evolves a compact set of high-level, transferable lemmas that can be effectively used to prove unseen theorems in related domains. Experimental results demonstrate that DreamProver substantially improves proof success rates across a diverse set of mathematical benchmarks, while also producing more concise proofs and reducing computational cost.
-
-**arXiv ID:** 2604.26311
-</details>
-
-<details>
 <summary><strong>Evaluating Strategic Reasoning in Forecasting Agents</strong> - Tom Liptay, Dan Schwarz, Rafael Poyiadzi, Jack Wildman, Nikos I. Bosse - [[pdf]](https://arxiv.org/pdf/2604.26106)</summary>
 
 **Abstract:** Forecasting benchmarks produce accuracy leaderboards but little insight into why some forecasters are more accurate than others. We introduce Bench to the Future 2 (BTF-2), 1,417 pastcasting questions with a frozen 15M-document research corpus in which agents reproducibly research and forecast offline, producing full reasoning traces. BTF-2 detects accuracy differences of 0.004 Brier score, and can distinguish differential agent strengths in research vs. judgment. We build a forecaster 0.011 Brier more accurate than any single frontier agent, and use it to evaluate agent strategic reasoning without hindsight bias. We find the better forecaster differs primarily in its pre-mortem analysis of its blind spots and consideration of black swans. Expert human forecasters found the dominant strategic reasoning failures of frontier agents are in assessing political and business leaders' incentives, judging their likelihood to follow through on stated plans, and modeling institutional processes.
 
 **arXiv ID:** 2604.26106
+</details>
+
+<details>
+<summary><strong>DreamProver: Evolving Transferable Lemma Libraries via a Wake-Sleep Theorem-Proving Agent</strong> - Youyuan Zhang, Jialiang Sun, Hangrui Bi, Chuqin Geng, Wenjie Ma, Zhaoyu Li, Xujie Si - [[pdf]](https://arxiv.org/pdf/2604.26311)</summary>
+
+**Abstract:** We introduce DreamProver, an agentic framework that leverages a "wake-sleep" program induction paradigm to discover reusable lemmas for formal theorem proving. Existing approaches either rely on fixed lemma libraries, which limit adaptability, or synthesize highly specific intermediate lemmas tailored to individual theorems, thereby lacking generality. DreamProver addresses this gap through an iterative two-stage process. In the wake stage, DreamProver attempts to prove theorems from a training set using the current lemma library while proposing new candidate lemmas. In the "sleep" stage, it abstracts, refines, and consolidates these candidates to compress and optimize the library. Through this alternating cycle, DreamProver progressively evolves a compact set of high-level, transferable lemmas that can be effectively used to prove unseen theorems in related domains. Experimental results demonstrate that DreamProver substantially improves proof success rates across a diverse set of mathematical benchmarks, while also producing more concise proofs and reducing computational cost.
+
+**arXiv ID:** 2604.26311
 </details>
 
 <details>
