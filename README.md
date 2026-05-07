@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-05-07 04:00:53
+**Last Updated:** 2026-05-07 04:43:35
 
 **Total Papers:** 76
 
@@ -225,19 +225,19 @@ We evaluate over 6 rounds of capability upgrade with 15 random seeds. Naive upgr
 </details>
 
 <details>
-<summary><strong>When Context Hurts: The Crossover Effect of Knowledge Transfer on Multi-Agent Design Exploration</strong> - Saranyan Vigraham - [[pdf]](https://arxiv.org/pdf/2605.04361)</summary>
-
-**Abstract:** The prevailing assumption in agent orchestration is that more context is better. We test this on multi-agent software design across 10 tasks, 7 context-injection conditions, and over 2,700 runs, and find a crossover effect: the same artifact type improves design exploration on some tasks (up to 20$\times$ tradeoff coverage) and actively degrades it on others (up to 46% reduction). On several tasks, an irrelevant document performs as well as or better than every relevant artifact. The direction is predicted by a single measurable variable--baseline exploration without context--with Pearson $r = -0.82$ ($p < 0.001$). Probing the mechanism by manipulating convergence pressure through prompt design reveals two distinct regimes: convergence driven by training data priors (natural) responds to artifact disruption, while convergence driven by explicit instructions (induced) does not. The implication is that context injection should be conditional, not universal: one no-context trial is a cheap diagnostic that predicts whether knowledge artifacts will help or hurt a given task.
-
-**arXiv ID:** 2605.04361
-</details>
-
-<details>
 <summary><strong>Agent Island: A Saturation- and Contamination-Resistant Benchmark from Multiagent Games</strong> - Connacher Murphy - [[pdf]](https://arxiv.org/pdf/2605.04312)</summary>
 
 **Abstract:** Static capabilities benchmarks suffer from saturation and contamination, making it difficult to track capabilities progress over time. We introduce Agent Island, a multiplayer simulation environment in which language-model agents compete in a game of interagent cooperation, conflict, and persuasion. The environment yields a dynamic benchmark designed to mitigate both saturation and contamination; new models can always outperform the current leading player in this winner-take-all game, and agents compete against other adaptive agents rather than face a fixed task set. We rank players with a Bayesian Plackett-Luce model, allowing us to quantify uncertainty in player skill. In 999 games involving 49 unique models, openai/gpt-5.5 dominates its peers with a posterior mean skill of 5.64, compared with 3.10 for the second-ranked model, openai/gpt-5.2, and 2.86 for the third-ranked model, openai/gpt-5.3-codex. We release the game logs as a dataset for analyses of model behavior. As an example, we investigate same-provider preference in final-round votes and find that models are 8.3 p.p. more likely to support a same-provider finalist than finalists from other providers. This preference is not uniform across providers: among separately estimated providers, the effect is strongest for OpenAI models and weakest for Anthropic models.
 
 **arXiv ID:** 2605.04312
+</details>
+
+<details>
+<summary><strong>When Context Hurts: The Crossover Effect of Knowledge Transfer on Multi-Agent Design Exploration</strong> - Saranyan Vigraham - [[pdf]](https://arxiv.org/pdf/2605.04361)</summary>
+
+**Abstract:** The prevailing assumption in agent orchestration is that more context is better. We test this on multi-agent software design across 10 tasks, 7 context-injection conditions, and over 2,700 runs, and find a crossover effect: the same artifact type improves design exploration on some tasks (up to 20$\times$ tradeoff coverage) and actively degrades it on others (up to 46% reduction). On several tasks, an irrelevant document performs as well as or better than every relevant artifact. The direction is predicted by a single measurable variable--baseline exploration without context--with Pearson $r = -0.82$ ($p < 0.001$). Probing the mechanism by manipulating convergence pressure through prompt design reveals two distinct regimes: convergence driven by training data priors (natural) responds to artifact disruption, while convergence driven by explicit instructions (induced) does not. The implication is that context injection should be conditional, not universal: one no-context trial is a cheap diagnostic that predicts whether knowledge artifacts will help or hurt a given task.
+
+**arXiv ID:** 2605.04361
 </details>
 
 <details>
