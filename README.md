@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-05-25 04:48:35
+**Last Updated:** 2026-05-25 05:49:13
 
 **Total Papers:** 85
 
@@ -30,6 +30,14 @@
 <summary><h2>Benchmarks and Datasets (16 papers)</h2></summary>
 
 <details>
+<summary><strong>RMA: an Agentic System for Research-Level Mathematical Problems</strong> - Zelin Zhao, Bo Yuan, Jaemoo Choi, Yongxin Chen - [[pdf]](https://arxiv.org/pdf/2605.22875)</summary>
+
+**Abstract:** We present $\textbf{Research Math Agents (RMA)}$, an agentic framework for automated reasoning on research-level mathematical problems. Unlike prior studies centered on competition mathematics or formal theorem proving, RMA targets research-level mathematical problems that require long-horizon reasoning, literature grounding, and iterative proof refinement. RMA decomposes research-level proof solving into specialized modules for problem analysis, literature search and understanding, fair comparison, knowledge-bank construction, and proof verification, all coordinated by initializer, proposer, and verifier agents through a shared structured memory. Within this unified framework, these agents operate in a multi-role, multi-round workflow, collaboratively generating, refining, and verifying candidate proofs through iterative feedback. We evaluate RMA on the First Proof benchmark, which consists of ten research-level problems contributed by expert mathematicians across diverse domains. Through comprehensive expert evaluation, RMA outperforms strong baselines on the First Proof benchmark, including GPT-5.2R and Aletheia, solving eight out of ten research problems and producing more logically sound and readable proofs. Our comprehensive ablation studies further show that performance gains arise from the interaction of structured reasoning modules, iterative refinement, and verifier-based feedback, rather than any single component. Our solutions and implementations will be made publicly available upon acceptance.
+
+**arXiv ID:** 2605.22875
+</details>
+
+<details>
 <summary><strong>Energy per Successful Goal: Goal-Level Energy Accounting for Agentic AI Systems</strong> - Deepak Panigrahy, Aakash Tyagi - [[pdf]](https://arxiv.org/pdf/2605.22883)</summary>
 
 **Abstract:** Current AI energy benchmarks measure consumption at the granularity of a single model invocation or training run. For classical single-turn workloads this unit remains coherent. For agentic systems - where a single user goal may trigger multi-step orchestration, tool calls, retries, and failure-recovery cycles - the invocation count is an implementation artifact rather than a task property, and inference-level normalization misrepresents the energy cost of goal completion. We present A-LEMS (Agentic LLM Energy Measurement System), a cross-layer measurement framework that redefines the unit of AI energy accounting from energy per inference to Energy per Successful Goal (EpG). EpG aggregates total workflow energy across all execution attempts, including failures and retries, normalized by successfully completed goals. A-LEMS formalizes energy attribution through a temporal boundary model, a five-layer observation pipeline mapping RAPL signals to workflow-level energy, and a reproducibility protocol binding every measurement to hardware and runtime configuration. Building on EpG, we define the Orchestration Overhead Index (OOI), isolating the energy cost of orchestration relative to linear execution under identical task criteria.
@@ -37,14 +45,6 @@ Across five reasoning and three tool-augmented task families, agentic workflows 
 These findings establish that energy-per-inference is insufficient for agentic AI. EpG and OOI provide the measurement foundation for accurate benchmarking, where orchestration structure is the primary determinant of energy cost.
 
 **arXiv ID:** 2605.22883
-</details>
-
-<details>
-<summary><strong>RMA: an Agentic System for Research-Level Mathematical Problems</strong> - Zelin Zhao, Bo Yuan, Jaemoo Choi, Yongxin Chen - [[pdf]](https://arxiv.org/pdf/2605.22875)</summary>
-
-**Abstract:** We present $\textbf{Research Math Agents (RMA)}$, an agentic framework for automated reasoning on research-level mathematical problems. Unlike prior studies centered on competition mathematics or formal theorem proving, RMA targets research-level mathematical problems that require long-horizon reasoning, literature grounding, and iterative proof refinement. RMA decomposes research-level proof solving into specialized modules for problem analysis, literature search and understanding, fair comparison, knowledge-bank construction, and proof verification, all coordinated by initializer, proposer, and verifier agents through a shared structured memory. Within this unified framework, these agents operate in a multi-role, multi-round workflow, collaboratively generating, refining, and verifying candidate proofs through iterative feedback. We evaluate RMA on the First Proof benchmark, which consists of ten research-level problems contributed by expert mathematicians across diverse domains. Through comprehensive expert evaluation, RMA outperforms strong baselines on the First Proof benchmark, including GPT-5.2R and Aletheia, solving eight out of ten research problems and producing more logically sound and readable proofs. Our comprehensive ablation studies further show that performance gains arise from the interaction of structured reasoning modules, iterative refinement, and verifier-based feedback, rather than any single component. Our solutions and implementations will be made publicly available upon acceptance.
-
-**arXiv ID:** 2605.22875
 </details>
 
 <details>
