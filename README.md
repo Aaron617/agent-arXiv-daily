@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-05-26 04:24:04
+**Last Updated:** 2026-05-26 05:14:51
 
 **Total Papers:** 158
 
@@ -1153,19 +1153,19 @@ Timing-aware RL requires extensive exploration, demanding efficient infrastructu
 </details>
 
 <details>
-<summary><strong>A Contractive Feedback Semantics for Reinforcement Learning</strong> - Zuyuan Zhang - [[pdf]](https://arxiv.org/pdf/2605.24759)</summary>
-
-**Abstract:** Discounted reinforcement learning is usually presented through Bellman equations on closed Markov decision processes. This paper develops a compositional view: a one-step decision process is treated as an open stochastic component, and infinite-horizon policy evaluation is obtained by closing a contractive feedback loop. The resulting semantics assigns typed Bellman transformers to open components, interprets series and parallel wiring as composition and tensoring of transformers, and interprets feedback as an admissible guarded Banach trace realized by a unique fixed point. This perspective yields three theoretical consequences. First, approximate component equivalence is a contextual congruence for admitted well-typed guarded one-hole contexts: local operator error remains controlled after plugging the component into a surrounding circuit that uses the hole once and whose feedback nodes have certified uniform guardedness. Second, exact and approximate state abstractions become commuting or near-commuting coalgebraic diagrams, giving value-preservation and explicit sup-norm distortion bounds. Third, under monotone $\omega$-continuous contract-transformer semantics, safety, risk, and resource specifications can be represented as quantale-valued contracts, where local inductive bounds lift through wiring and feedback by least-fixed-point reasoning. Its central claim is not that all RL morphisms form a global traced monoidal category, but that discounted Bellman evaluation admits a contractive feedback semantics on the admissible class of guarded circuits.
-
-**arXiv ID:** 2605.24759
-</details>
-
-<details>
 <summary><strong>Reinforcement Learning for Reachability: Guaranteeing Asymptotic Optimality</strong> - Amogh Palasamudram, Jakub Svoboda, Suguman Bansal, Krishnendu Chatterjee - [[pdf]](https://arxiv.org/pdf/2605.24740)</summary>
 
 **Abstract:** Reinforcement learning (RL) for reachability specifications is fundamental in sequential decision-making, yet theoretical guarantees remain less explored. A recent work achieves asymptotic convergence to optimal policies. However, this approach provides limited insight into convergence dynamics. In this work, we present an alternative approach that provides deeper theoretical insights into convergence. Our approach builds on PAC learning with assumptions. PAC learning guarantees near-optimal policies with high confidence in finite time but requires knowing internal MDP parameters like minimum transition probability. We argue that while these parameters are unknown in RL, they can be iteratively refined and estimated with increasing accuracy. By iteratively satisfying PAC conditions, we show that exact optimality can be achieved in the limit. Empirical evaluations on standard benchmarks validate our theoretical insights into convergence dynamics.
 
 **arXiv ID:** 2605.24740
+</details>
+
+<details>
+<summary><strong>A Contractive Feedback Semantics for Reinforcement Learning</strong> - Zuyuan Zhang - [[pdf]](https://arxiv.org/pdf/2605.24759)</summary>
+
+**Abstract:** Discounted reinforcement learning is usually presented through Bellman equations on closed Markov decision processes. This paper develops a compositional view: a one-step decision process is treated as an open stochastic component, and infinite-horizon policy evaluation is obtained by closing a contractive feedback loop. The resulting semantics assigns typed Bellman transformers to open components, interprets series and parallel wiring as composition and tensoring of transformers, and interprets feedback as an admissible guarded Banach trace realized by a unique fixed point. This perspective yields three theoretical consequences. First, approximate component equivalence is a contextual congruence for admitted well-typed guarded one-hole contexts: local operator error remains controlled after plugging the component into a surrounding circuit that uses the hole once and whose feedback nodes have certified uniform guardedness. Second, exact and approximate state abstractions become commuting or near-commuting coalgebraic diagrams, giving value-preservation and explicit sup-norm distortion bounds. Third, under monotone $\omega$-continuous contract-transformer semantics, safety, risk, and resource specifications can be represented as quantale-valued contracts, where local inductive bounds lift through wiring and feedback by least-fixed-point reasoning. Its central claim is not that all RL morphisms form a global traced monoidal category, but that discounted Bellman evaluation admits a contractive feedback semantics on the admissible class of guarded circuits.
+
+**arXiv ID:** 2605.24759
 </details>
 
 <details>
@@ -1177,20 +1177,20 @@ Timing-aware RL requires extensive exploration, demanding efficient infrastructu
 </details>
 
 <details>
+<summary><strong>Unifying Value Alignment and Assignment in Cross-Domain Offline Reinforcement Learning with Heterogeneous Datasets</strong> - Zhongjian Qiao, Jiafei Lyu, Chenjia Bai, Peisong Wang, Siyang Gao, Shuang Qiu - [[pdf]](https://arxiv.org/pdf/2605.24862)</summary>
+
+**Abstract:** Cross-domain offline reinforcement learning (RL) aims to learn a policy in the target domain with a limited target domain dataset and a source domain dataset that exhibits a dynamics shift. Training directly on the original source dataset typically leads to performance collapse. Recent studies perform data filtering from the perspective of dynamics alignment or value alignment to enable efficient policy transfer. However, these studies are typically validated on single-domain or single-behavior-policy source datasets. In this work, we explore a more general heterogeneous cross-domain offline RL setting, where the source datasets may be collected from multiple source domains by diverse behavior policies. We first uncover a critical yet overlooked issue in this setting: value misassignment. Empirically and theoretically, we demonstrate that value misassignment can undermine value alignment, mislead data filtering toward selecting suboptimal samples, and loosen the suboptimality gap, thereby degrading the agent's performance. To address this issue, we propose V2A, which integrates dynamics alignment, value alignment, and value assignment. V2A first employs temporally-consistent modality representation learning to extract dynamics modalities from the source dataset, followed by modality-aware advantage learning to rectify value alignment. Finally, it adopts a data filtering paradigm to selectively share source data for policy learning. Empirical results show that V2A significantly outperforms strong baseline methods under general heterogeneous cross-domain offline RL settings.
+
+**arXiv ID:** 2605.24862
+</details>
+
+<details>
 <summary><strong>A perspective on fluid mechanical environments for challenges in reinforcement learning</strong> - Shruti Mishra, Michael Chang, Vamsi Spandan, Shmuel M. Rubinstein - [[pdf]](https://arxiv.org/pdf/2605.25011)</summary>
 
 **Abstract:** We consider the challenge of developing agents that efficiently interact with high-dimensional, evolving environments, towards a view of practical reinforcement learning (RL) agents interacting with open worlds, of which they witness and affect only a small part. We argue that canonical fluid mechanics problems, and their simulations, present a compelling testbed for the development of such methods. These problems arise in nonlinear instabilities, where small disturbances can grow to transform the dynamics of a system. Nonlinear instabilities represent several open scientific challenges with industrial applications -- the droplet breakup of a liquid jet, mixing at an interface between two fluids, and the appearance of unusually tall rogue waves in the ocean. In these settings, agents may leverage preserved representations across the changing dynamics to learn efficiently.
 We present two problem descriptions of agents interacting with a fluid mechanical environment, and describe the state and action spaces, and reward functions, for these agents. For these examples, we specify the aspects of the environment which are nonstationary and the preserved invariances. We note Dedalus and JAX-CFD as open-source simulators that can be used for the development of reinforcement learning methods (Burns et al., 2016; Kochkov et al., 2021)) We demonstrate the use of Dedalus for environment generation by creating RL agents that learn to navigate in a stationary environment that is simulated using Dedalus. This sets the stage for future development of RL agents that learn to meaningfully interact with simulated environments that represent scientific challenges in natural and industrial flows.
 
 **arXiv ID:** 2605.25011
-</details>
-
-<details>
-<summary><strong>Unifying Value Alignment and Assignment in Cross-Domain Offline Reinforcement Learning with Heterogeneous Datasets</strong> - Zhongjian Qiao, Jiafei Lyu, Chenjia Bai, Peisong Wang, Siyang Gao, Shuang Qiu - [[pdf]](https://arxiv.org/pdf/2605.24862)</summary>
-
-**Abstract:** Cross-domain offline reinforcement learning (RL) aims to learn a policy in the target domain with a limited target domain dataset and a source domain dataset that exhibits a dynamics shift. Training directly on the original source dataset typically leads to performance collapse. Recent studies perform data filtering from the perspective of dynamics alignment or value alignment to enable efficient policy transfer. However, these studies are typically validated on single-domain or single-behavior-policy source datasets. In this work, we explore a more general heterogeneous cross-domain offline RL setting, where the source datasets may be collected from multiple source domains by diverse behavior policies. We first uncover a critical yet overlooked issue in this setting: value misassignment. Empirically and theoretically, we demonstrate that value misassignment can undermine value alignment, mislead data filtering toward selecting suboptimal samples, and loosen the suboptimality gap, thereby degrading the agent's performance. To address this issue, we propose V2A, which integrates dynamics alignment, value alignment, and value assignment. V2A first employs temporally-consistent modality representation learning to extract dynamics modalities from the source dataset, followed by modality-aware advantage learning to rectify value alignment. Finally, it adopts a data filtering paradigm to selectively share source data for policy learning. Empirical results show that V2A significantly outperforms strong baseline methods under general heterogeneous cross-domain offline RL settings.
-
-**arXiv ID:** 2605.24862
 </details>
 
 <details>
@@ -1234,19 +1234,19 @@ We present two problem descriptions of agents interacting with a fluid mechanica
 </details>
 
 <details>
-<summary><strong>Learning in Low-Dimensional Subspaces: Orthogonal Bottlenecks for Reinforcement Learning</strong> - Aleksandar Todorov, Matthia Sabatelli - [[pdf]](https://arxiv.org/pdf/2605.26012)</summary>
-
-**Abstract:** Deep reinforcement learning (RL) agents commonly rely on high-dimensional neural representations, despite growing evidence that task-relevant value and policy structure may be intrinsically low-dimensional. In this work, we present a simple yet effective representation-level prior that inserts a fixed orthonormal projection to constrain encoder features to a low-dimensional subspace, requiring no auxiliary objectives, pretraining, or changes to the underlying RL algorithm. Under a linear realizability assumption, we prove that when the bottleneck dimension exceeds the intrinsic rank of the optimal value function in feature space, the bottleneck preserves expressivity and leaves the induced gradient dynamics unchanged up to an equivalent low-dimensional parameterization. Empirically, we find that across both single and multi-task benchmarks, baseline performance is either matched or improved once the bottleneck dimension exceeds a small task-dependent threshold; in many cases, value representations can be compressed to extremely low dimensions without loss, and the minimal sufficient dimension depends far more on environment complexity than encoder width. In addition, we analyze representation geometry and find that orthogonal bottlenecks stabilize feature norms and are associated with higher effective rank. Together, these results support a representation-space interpretation of the manifold hypothesis in reinforcement learning and position orthogonal bottlenecks as a lightweight, architecture-agnostic mechanism for shaping RL representations.
-
-**arXiv ID:** 2605.26012
-</details>
-
-<details>
 <summary><strong>Joint Optimization of Training and Inference in Federated Edge Learning via Constrained Multi-Objective Deep Reinforcement Learning</strong> - Zhen Li, Jun Cai, Chao Yang, Haoran Gao - [[pdf]](https://arxiv.org/pdf/2605.25916)</summary>
 
 **Abstract:** Federated edge learning (FEEL) has recently emerged as a promising paradigm for achieving edge intelligence (EI) via enabling collaborative model training across edge devices while protecting data privacy. In this paper, we put forth an online optimization framework that jointly manages federated training and inference on resource-constrained edge devices. We introduce a tandem-queue-inspired conversion mechanism that bridges inference requests and training data, and further incorporate both data and model freshness into the accuracy formulation to capture temporal dynamics in real-world environments. To maximize inference accuracy while minimizing latency and energy consumption, the mode selections, communication, and computation resource allocations of edge devices are jointly optimized. We formulate this optimization as a multi-objective optimization problem, which is NP-hard and further complicated by the online setting. To address these challenges, we transform the problem into a multi-objective Markov decision process (MOMDP) and develop a \underline{c}onstrained \underline{m}ulti-\underline{o}bjective \underline{p}roximal \underline{p}olicy \underline{o}ptimization (C-MOPPO) algorithm. Specifically, C-MOPPO first learns a set of policies with different preferences across three objectives, then leverages constrained policy optimization to enrich the Pareto front and obtain high-quality, dense solutions. Extensive experiments demonstrate that C-MOPPO achieves well-balanced trade-offs among objectives and significantly outperforms baselines under various system configurations.
 
 **arXiv ID:** 2605.25916
+</details>
+
+<details>
+<summary><strong>Learning in Low-Dimensional Subspaces: Orthogonal Bottlenecks for Reinforcement Learning</strong> - Aleksandar Todorov, Matthia Sabatelli - [[pdf]](https://arxiv.org/pdf/2605.26012)</summary>
+
+**Abstract:** Deep reinforcement learning (RL) agents commonly rely on high-dimensional neural representations, despite growing evidence that task-relevant value and policy structure may be intrinsically low-dimensional. In this work, we present a simple yet effective representation-level prior that inserts a fixed orthonormal projection to constrain encoder features to a low-dimensional subspace, requiring no auxiliary objectives, pretraining, or changes to the underlying RL algorithm. Under a linear realizability assumption, we prove that when the bottleneck dimension exceeds the intrinsic rank of the optimal value function in feature space, the bottleneck preserves expressivity and leaves the induced gradient dynamics unchanged up to an equivalent low-dimensional parameterization. Empirically, we find that across both single and multi-task benchmarks, baseline performance is either matched or improved once the bottleneck dimension exceeds a small task-dependent threshold; in many cases, value representations can be compressed to extremely low dimensions without loss, and the minimal sufficient dimension depends far more on environment complexity than encoder width. In addition, we analyze representation geometry and find that orthogonal bottlenecks stabilize feature norms and are associated with higher effective rank. Together, these results support a representation-space interpretation of the manifold hypothesis in reinforcement learning and position orthogonal bottlenecks as a lightweight, architecture-agnostic mechanism for shaping RL representations.
+
+**arXiv ID:** 2605.26012
 </details>
 
 <details>
