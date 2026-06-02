@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-02 05:00:11
+**Last Updated:** 2026-06-02 06:03:25
 
 **Total Papers:** 192
 
@@ -798,19 +798,19 @@ Across 28 real-world tasks on DevEval and CodeProjectEval, Co-Coder advances the
 </details>
 
 <details>
-<summary><strong>MARFT: Multi-Agent Reinforcement Fine-Tuning</strong> - Junwei Liao, Muning Wen, Jun Wang, Weinan Zhang - [[pdf]](https://arxiv.org/pdf/2504.16129)</summary>
-
-**Abstract:** Large Language Model (LLM)-based Multi-Agent Systems (LaMAS) have demonstrated strong capabilities on complex agentic tasks requiring multifaceted reasoning and collaboration, from high-quality presentation generation to scientific research. Meanwhile, Reinforcement Learning (RL) is widely recognized for enhancing agent intelligence, but limited work has studied fine-tuning LaMAS with foundational RL techniques. Directly applying conventional Multi-Agent Reinforcement Learning (MARL) to LaMAS also introduces major challenges due to the unique mechanisms of LaMAS. To address these challenges, this article presents a comprehensive study of LLM-based MARL and proposes Multi-Agent Reinforcement Fine-Tuning (MARFT). We introduce Flex-MG, a new Markov Game formulation aligned with real-world LaMAS optimization, together with a universal algorithmic framework tailored to LaMAS. We review the evolution from traditional RL to Reinforcement Fine-Tuning (RFT), then analyze the multi-agent counterpart. For LaMAS, we identify key differences between classical MARL and MARFT, including asynchronous agent interactions, profile-aware agent design, and heterogeneous architectures. These differences motivate a LaMAS-oriented formulation of RFT. We present a robust and scalable MARFT framework, detail its modular algorithm, and provide an open-source implementation to support adoption and further research. The paper further discusses application perspectives and open challenges, including dynamic environment modeling, sample inefficiency, and the lack of cohesive frameworks. By connecting theoretical foundations with practical methodology, this work aims to serve as a roadmap for advancing MARFT toward resilient, adaptive, and human-aligned agentic systems. Implementation: this https URL.
-
-**arXiv ID:** 2504.16129
-</details>
-
-<details>
 <summary><strong>A Sheaf Framework for Strategic Multi-Agent Systems: From Consensus to Nash Equilibria</strong> - Manuel Hernández, Eduardo Sánchez-Soto - [[pdf]](https://arxiv.org/pdf/2606.01663)</summary>
 
 **Abstract:** The coordination of heterogeneous autonomous agents in dynamic, adversarial environments requires simultaneous satisfaction of geometric constraints, logical consistency, temporal reasoning, and strategic optimization. Existing sheaf- and topos-theoretic frameworks provide powerful tools for geometric consensus, knowledge alignment, and causal planning, but lack explicit models for value, reward, and strategic choice. This report presents a unified categorical framework that integrates event calculus, SCEL-like ensemble formation, and game-theoretic reward structures into a single Grothendieck topos of time-space histories. We introduce the notion of a \emph{game sheaf} whose stalks contain utility functions and policy distributions, and restriction maps encode both parallel transport and best-response dynamics. We prove that Nash equilibria correspond to global sections of a derived best-response correspondence sheaf, while cohomological obstructions classify failures of strategic consistency. A detailed case study of an immunological ``bastion defense'' scenario -- heterogeneous agents forming attack/defense ensembles under resource constraints -- demonstrates the framework's expressiveness. This synthesis provides a rigorous foundation for verifiable, autonomic, and economically rational multi-agent systems.
 
 **arXiv ID:** 2606.01663
+</details>
+
+<details>
+<summary><strong>MARFT: Multi-Agent Reinforcement Fine-Tuning</strong> - Junwei Liao, Muning Wen, Jun Wang, Weinan Zhang - [[pdf]](https://arxiv.org/pdf/2504.16129)</summary>
+
+**Abstract:** Large Language Model (LLM)-based Multi-Agent Systems (LaMAS) have demonstrated strong capabilities on complex agentic tasks requiring multifaceted reasoning and collaboration, from high-quality presentation generation to scientific research. Meanwhile, Reinforcement Learning (RL) is widely recognized for enhancing agent intelligence, but limited work has studied fine-tuning LaMAS with foundational RL techniques. Directly applying conventional Multi-Agent Reinforcement Learning (MARL) to LaMAS also introduces major challenges due to the unique mechanisms of LaMAS. To address these challenges, this article presents a comprehensive study of LLM-based MARL and proposes Multi-Agent Reinforcement Fine-Tuning (MARFT). We introduce Flex-MG, a new Markov Game formulation aligned with real-world LaMAS optimization, together with a universal algorithmic framework tailored to LaMAS. We review the evolution from traditional RL to Reinforcement Fine-Tuning (RFT), then analyze the multi-agent counterpart. For LaMAS, we identify key differences between classical MARL and MARFT, including asynchronous agent interactions, profile-aware agent design, and heterogeneous architectures. These differences motivate a LaMAS-oriented formulation of RFT. We present a robust and scalable MARFT framework, detail its modular algorithm, and provide an open-source implementation to support adoption and further research. The paper further discusses application perspectives and open challenges, including dynamic environment modeling, sample inefficiency, and the lack of cohesive frameworks. By connecting theoretical foundations with practical methodology, this work aims to serve as a roadmap for advancing MARFT toward resilient, adaptive, and human-aligned agentic systems. Implementation: this https URL.
+
+**arXiv ID:** 2504.16129
 </details>
 
 <details>
