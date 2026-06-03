@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-03 05:08:17
+**Last Updated:** 2026-06-03 06:17:42
 
 **Total Papers:** 16
 
@@ -129,14 +129,6 @@ Across 44 (model $\times$ task $\times$ condition) cells spanning peer debate, s
 <summary><h2>Other Agent Research (3 papers)</h2></summary>
 
 <details>
-<summary><strong>OpenAgenet/OAN: Open Infrastructure for Trusted Agent Interconnection</strong> - Jinliang Xu - [[pdf]](https://arxiv.org/pdf/2606.03161)</summary>
-
-**Abstract:** OpenAgenet, abbreviated as OAN, is an open infrastructure project for trusted Agent interconnection. It addresses a problem that becomes visible when Agents move from isolated applications into open, multi-operator networks: before an Agent can safely discover, select, and invoke another Agent, it needs a way to verify identity provenance, governance state, discovery authorization, freshness, and pre-connection trust evidence. OAN is designed as a protocol-neutral trust layer. It does not replace Agent interaction protocols, tool protocols, model orchestration frameworks, or application-level workflows. Instead, it provides Root-governed identity admission, Registrar-assisted onboarding, Root-verified package publication, authorization-aware Discovery, and signed trusted invocation. This paper presents the motivation, architecture, roles, governance model, relationship with MCP, A2A, and ANP, deployment patterns, cooperation model, blockchain-backed authorization bulletin, prototype status, performance profile, and roadmap of OAN.
-
-**arXiv ID:** 2606.03161
-</details>
-
-<details>
 <summary><strong>Capability Advertisement as a Market for Lemons: A Trust Layer for Heterogeneous Agent Networks</strong> - Gaurav Naresh Mittal - [[pdf]](https://arxiv.org/pdf/2606.03034)</summary>
 
 **Abstract:** Large language model (LLM) agents have begun to delegate work to one another. Protocols such as the Model Context Protocol (MCP) and the Agent2Agent protocol (A2A) let an agent publish what it can do and let others call it, and public registries of such agents are already appearing. These protocols assume an advertised capability is a static, truthful fact. A real agent is none of these things: its competence is probabilistic, varies with input, drifts when the underlying model is updated, and, because the agent is itself a language model, it can describe itself with complete confidence and be wrong. A caller therefore sees what an agent claims to do, not what it can do, with no principled way to tell a reliable provider from a fluent impostor.
@@ -144,6 +136,14 @@ We argue these difficulties share one cause: the market for lemons. When quality
 We make four contributions: (1) a failure taxonomy that names confident-wrong as a non-adversarial, correlated subclass of Byzantine faults that classical fault-tolerance mismodels; (2) a market-for-lemons model showing that faith-based protocols admit only a low-trust equilibrium; (3) the Trust Layer, a thin, protocol-agnostic narrow waist above MCP and A2A that adds probabilistic capability descriptors, screening, and reputation, and admits a separating equilibrium when the cost of sustaining an overclaim exceeds the gain from it; and (4) a reliability-composition bound for delegation chains with an end-to-end placement argument. The design needs no model retraining and degrades gracefully when its trust anchors are absent or corrupt.
 
 **arXiv ID:** 2606.03034
+</details>
+
+<details>
+<summary><strong>OpenAgenet/OAN: Open Infrastructure for Trusted Agent Interconnection</strong> - Jinliang Xu - [[pdf]](https://arxiv.org/pdf/2606.03161)</summary>
+
+**Abstract:** OpenAgenet, abbreviated as OAN, is an open infrastructure project for trusted Agent interconnection. It addresses a problem that becomes visible when Agents move from isolated applications into open, multi-operator networks: before an Agent can safely discover, select, and invoke another Agent, it needs a way to verify identity provenance, governance state, discovery authorization, freshness, and pre-connection trust evidence. OAN is designed as a protocol-neutral trust layer. It does not replace Agent interaction protocols, tool protocols, model orchestration frameworks, or application-level workflows. Instead, it provides Root-governed identity admission, Registrar-assisted onboarding, Root-verified package publication, authorization-aware Discovery, and signed trusted invocation. This paper presents the motivation, architecture, roles, governance model, relationship with MCP, A2A, and ANP, deployment patterns, cooperation model, blockchain-backed authorization bulletin, prototype status, performance profile, and roadmap of OAN.
+
+**arXiv ID:** 2606.03161
 </details>
 
 <details>
