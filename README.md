@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-05 04:45:02
+**Last Updated:** 2026-06-05 05:48:38
 
-**Total Papers:** 126
+**Total Papers:** 121
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Agent Applications (3 papers)</h2></summary>
+<summary><h2>Agent Applications (2 papers)</h2></summary>
 
 <details>
 <summary><strong>ADK Arena: Evaluating Agent Development Kits via LLM-as-a-Developer</strong> - Jintao Huang, Xiaomin Li, Gaurav Mittal, Yu Hu - [[pdf]](https://arxiv.org/pdf/2606.05548)</summary>
@@ -23,14 +23,6 @@
 **Abstract:** The rapid proliferation of Agent Development Kits (ADKs), SDK-level frameworks for building LLM-powered autonomous agents, has outpaced any empirical understanding of how framework choice affects agent performance. We propose \textbf{LLM-as-a-Developer}, a methodology that replaces human developers with an LLM coding agent that learns each framework's API from documentation, writes agent code, and iteratively repairs it through a validate-and-feedback loop until tests pass. By holding the developer constant and varying only the framework, generation effort becomes a quantitative proxy for API usability and the resulting agents provide a controlled measure of framework effectiveness. We implement this in \textbf{ADK Arena}, a fully automated pipeline with per-framework Docker isolation, a three-level validation pipeline, and benchmark adapters for SWE-bench, $\tau^2$-bench, Terminal-Bench, and MCP-Atlas. Evaluating all 51 popular Python ADK frameworks (204 agent--benchmark pairs), we find that: (1)~generation succeeds for 57\% of runs, and its cost varies 5.6$\times$ across frameworks (\$0.6 to \$3.4 per agent), a quantitative proxy for API complexity, though cost alone does not predict success; (2)~no single framework dominates: the best single-benchmark ADK agents resolve up to 80\% of tasks and can even \emph{beat} general-purpose frontier coding agents at a fraction of the cost, yet the median framework resolves only 32\%; (3)~across information-source ablations, genuine framework usage stays within a narrow 28--40\% band (highest with raw source access and still 33\% with no reference material at all), indicating that documentation, source code, and parametric knowledge are largely substitutable rather than any one being a hard bottleneck.
 
 **arXiv ID:** 2606.05548
-</details>
-
-<details>
-<summary><strong>Drishti AI-Event Guardian: An Intelligent Real-Time Crowd Monitoring and Emergency Response System for Mass Gathering Events</strong> - Ritabrata Roy Choudhury, Arkajyoti Karmakar, Rudra Pratap Mitra - [[pdf]](https://arxiv.org/pdf/2606.05185)</summary>
-
-**Abstract:** Mass gathering events are associated with critical safety incidents caused by insufficient crowd monitoring and inadequate emergency response coordination. Traditional surveillance systems lack intelligent analytics, resulting in delayed threat identification, poor resource deployment, and weak support for vulnerable individuals during dense public assemblies. This paper presents Drishti AI-Event Guardian, an intelligent crowd management framework using deep learning for public safety enhancement. The architecture combines multimodal data from CCTV networks and UAV platforms, processed by models on Google Vertex AI infrastructure. Core methods include real-time crowd density estimation using YOLOv8, spatiotemporal anomaly detection, and predictive crowd-flow modeling through gradient-boosted regression. Drishti also integrates four modules: (i) facial recognition for missing person identification with crowd-wide notification; (ii) medical emergency reporting with automated dispatch; (iii) a conversational AI chatbot for reports and complaints; and (iv) an intelligent guard reallocation engine that dynamically reassigns personnel in response to crowd density changes. The system is evaluated on two scenarios: the Kumbh Mela gathering and the RCB Victory Parade event, achieving crowd density estimation MAE of 3.2 persons/m2, anomaly detection F1-score of 0.91, facial recognition precision of 0.93, and median alert latency of 111 ms. Predictive congestion modeling provides five-minute forecasts with MAPE of 8.3%, enabling preemptive intervention. The chatbot resolved 89% of incident filings without human operators, while guard reallocation reduced responder deployment latency by 34% versus manual reassignment. Results demonstrate a shift from passive surveillance toward active crowd intelligence and scalable foundation for events from local gatherings to mega festivals.
-
-**arXiv ID:** 2606.05185
 </details>
 
 <details>
@@ -44,7 +36,7 @@
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (19 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (18 papers)</h2></summary>
 
 <details>
 <summary><strong>SentinelBench: A Benchmark for Long-Running Monitoring Agents</strong> - Matheus Kunzler Maldaner, Adam Fourney, Amanda Swearngin, Hussein Mozzanar, Gagan Bansal, Maya Murad, Rafah Hosn, Saleema Amershi - [[pdf]](https://arxiv.org/pdf/2606.05342)</summary>
@@ -189,14 +181,6 @@ SentinelBench contains 100 tasks across 10 synthetic web environments, including
 **Abstract:** Designing neural architectures for time-series forecasting and anomaly detection remains a resource-intensive task that often requires substantial domain expertise. Traditional Automated Machine Learning (AutoML) systems typically rely on static, predefined search spaces, limiting their ability to adapt to diverse data characteristics. We present GenAutoML, an agentic framework that leverages Large Language Models (LLMs) as neural architects to bridge natural-language requirements and executable PyTorch implementations. The framework incorporates a Sandboxed Reflection Loop for autonomous code refinement and a Signature-Aware Runtime that enforces architectural consistency and execution safety. To improve robustness under non-stationary conditions, we further introduce a Dynamic Reversible Instance Normalization (Dyn-RevIN) wrapper. Experiments on the ETTh1, ETTm1, and Weather benchmarks demonstrate that GenAutoML can dynamically generate task-specific neural architectures tailored to dataset characteristics. Among the generated models, WaveInterferenceNet achieves inference latency below 0.01 ms per sample while maintaining competitive predictive performance. By emphasizing computational efficiency, architectural adaptability, and stable optimization behavior, GenAutoML enables the creation of ultra-lightweight neural networks suitable for resource-constrained and latency-sensitive Edge AI deployments.
 
 **arXiv ID:** 2606.05860
-</details>
-
-<details>
-<summary><strong>Hybrid CNN-LSTM Framework for Intelligent Cyber Attack Detection and Prevention in U.S. Critical Digital Infrastructure: A Comparative Machine Learning Evaluation on CSE-CIC-IDS2018</strong> - Md. Iqbal Hossan, Md. Serajul Kabir Chowdhury Rubel, Md. Arifur Rahman, B. M. Taslimul Haque - [[pdf]](https://arxiv.org/pdf/2606.05714)</summary>
-
-**Abstract:** Digital infrastructure is growing at a rapid pace in the United States, and as a result, exposure to advanced cyber threats to critical sectors including healthcare, finance, transportation, energy and government systems is growing. The traditional cybersecurity approaches, including signature-based intrusion detection systems, have become less effective against today's cyber attacks, as they are unable to detect unknown and changing attacks in real time. To overcome these constraints, this research suggests a smart cyber-defense system, which utilizes Artificial Intelligence (AI) and Machine Learning (ML) algorithms in the detection and prevention of cyber attacks in the U.S. digital infrastructure. This study uses the CSE-CIC-IDS2018 dataset, which is a realistic network traffic dataset, along with various cyber attack scenarios, including Distributed Denial of Service (DDoS), brute force attacks, botnets, infiltration attacks, and web-based attacks. A number of machine learning and deep learning models such as Random Forest, XGBoost, Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks are implemented and evaluated to be used in identifying malicious network behavior and boosting the accuracy of intrusion detection. The framework proposed combines data preprocessing, feature engineering, real-time traffic monitoring, intelligent threat classification with automated prevention mechanisms to build cybersecurity resilience. E
-
-**arXiv ID:** 2606.05714
 </details>
 
 </details>
@@ -400,7 +384,7 @@ We propose Causal Minimal Tool Filtering (CMTF), a training-free method that sel
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (22 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (21 papers)</h2></summary>
 
 <details>
 <summary><strong>What Should Agents Say? Action-state Communication for Efficient Multi-Agent Systems</strong> - Chen Huang, Yuhao Wu, Wenxuan Zhang - [[pdf]](https://arxiv.org/pdf/2606.05304)</summary>
@@ -561,14 +545,6 @@ The main finding is bounded and operationally useful, but it is not the original
 **Abstract:** As Large Language Model (LLM) agents are increasingly deployed in open-ended domains like software engineering, they frequently encounter underspecified instructions that lack crucial context. While human developers naturally resolve underspecification by asking clarifying questions, current agents are largely optimized for autonomous execution. In this work, we systematically evaluate the clarification-seeking abilities of LLM agents on an underspecified variant of SWE-bench Verified. We propose an uncertainty-aware multi-agent scaffold that decouples underspecification detection from code execution. Across both proprietary and open-weight frontier LLMs, our scaffold achieves a 69.40% task resolve rate, significantly outperforming a standard single-agent setup and closing the performance gap with agents operating on fully specified instructions. Furthermore, we find that the multi-agent system exhibits well-calibrated information-seeking behavior, conserving queries on simple tasks while proactively seeking information on more complex issues. These findings indicate that current models can be turned into proactive collaborators, where agents independently recognize when to ask questions to elicit missing information in real-world, underspecified tasks.
 
 **arXiv ID:** 2603.26233
-</details>
-
-<details>
-<summary><strong>Drag reduction or reward hacking? Recurrent multi-agent reinforcement learning that earns its reward</strong> - Giorgio Maria Cavallazzi, Miguel Pérez-Cuadrado, Alfredo Pinelli - [[pdf]](https://arxiv.org/pdf/2606.06227)</summary>
-
-**Abstract:** A reinforcement-learning agent maximises its reward, which can diverge from the outcome its designer intended. In physical control the reward rarely closes that gap, and drag reduction in wall turbulence makes it concrete. A mass-conservation projection couples agents' outputs and erases the per-agent credit the policy gradient needs; a memoryless policy cannot resolve the slow near-wall cycle it acts on; and a pressure-gradient reward pays for nominal drag reduction by pumping power through the wall. Two degenerate controllers achieve large drag reductions while total dissipation rises, so the reported figure can mask a more wasteful flow. We trace each fault to its cause and fix it: a differentiable projection that restores credit, a recurrent policy with a widened sensing stencil, and a reward scored on the true wall power. The corrected controller acts on the flow within a closed energy budget, earning a conservative $17\%$ under honest accounting.
-
-**arXiv ID:** 2606.06227
 </details>
 
 <details>
@@ -749,19 +725,19 @@ This paper introduces Data Flow Control (DFC), a framework to declaratively spec
 </details>
 
 <details>
-<summary><strong>HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers</strong> - Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh, Robert Griffin, Georgia Gkioxari, Aaron Ames - [[pdf]](https://arxiv.org/pdf/2606.06493)</summary>
-
-**Abstract:** For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid whole-body controller that follows this interface and is distilled via multi-teacher KL distillation under a context-conditioned gating scheme into a mixture-of-experts student from three complementary specialists: whole-body motion tracking with safety-filtered data, locomotion, and fall-recovery. On the Unitree G1, HANDOFF matches state-of-the-art velocity tracking and offers one of the largest robust manipulation workspaces. We further demonstrate hardware feasibility through multiple natural-language-driven task roll-outs, powered by a VLM-driven agentic planner with no task-specific data or controller fine-tuning.
-
-**arXiv ID:** 2606.06493
-</details>
-
-<details>
 <summary><strong>Towards a Data Flywheel for Embodied Intelligence in Logistics</strong> - Anlan Yu, Zaishu Chen, Zhiqing Hong, Daqing Zhang - [[pdf]](https://arxiv.org/pdf/2606.05960)</summary>
 
 **Abstract:** Embodied intelligence is moving from laboratory demonstrations toward industrial deployment, with the logistics industry serving as a key application scenario. Learning-based policies offer a promising path beyond traditional perception-planning-control pipelines, but their scalability depends on how embodied data can be collected, organized, and reused. This research studies a data-centric framework for industrial embodied intelligence by constructing a logistics data flywheel. Our framework converts daily operations into reusable data assets, uses World Models to generate reliable supervision for long-tail parcel manipulation, and feeds deployment feedback back into policy improvement. As an initial result, \textit{WM-DAgger} introduces a World-Model-based data aggregation framework that synthesizes out-of-distribution recovery data for robust imitation learning. Building on this result, ongoing work explores how large-scale in-the-wild multimodal data, including labeled human demonstrations, unlabeled operational videos, and system-level robot logs, can be aligned for policy learning and transformed into feedback for continual system improvement.
 
 **arXiv ID:** 2606.05960
+</details>
+
+<details>
+<summary><strong>HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers</strong> - Lizhi Yang, Junheng Li, Nehar Poddar, Yiling Hou, Gio Huh, Robert Griffin, Georgia Gkioxari, Aaron Ames - [[pdf]](https://arxiv.org/pdf/2606.06493)</summary>
+
+**Abstract:** For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid whole-body controller that follows this interface and is distilled via multi-teacher KL distillation under a context-conditioned gating scheme into a mixture-of-experts student from three complementary specialists: whole-body motion tracking with safety-filtered data, locomotion, and fall-recovery. On the Unitree G1, HANDOFF matches state-of-the-art velocity tracking and offers one of the largest robust manipulation workspaces. We further demonstrate hardware feasibility through multiple natural-language-driven task roll-outs, powered by a VLM-driven agentic planner with no task-specific data or controller fine-tuning.
+
+**arXiv ID:** 2606.06493
 </details>
 
 <details>
@@ -799,7 +775,7 @@ A Yahoo deployment surveying 67 engineers shows statistically significant develo
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (33 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (31 papers)</h2></summary>
 
 <details>
 <summary><strong>Insurance of Agentic AI</strong> - Quanyan Zhu - [[pdf]](https://arxiv.org/pdf/2606.05449)</summary>
@@ -1015,22 +991,6 @@ A Yahoo deployment surveying 67 engineers shows statistically significant develo
 **Abstract:** We study KL-regularized contextual bandits and episodic reinforcement learning (RL) under general function approximation with model misspecification. Existing guarantees rely on realizability and therefore do not extend to misspecified models, where classical regret bounds may fail. This work introduces KL misspecification formulations for contextual bandits and episodic RL and analyzes regression-based algorithms with Gibbs policy updates. High-probability KL-regret guarantees with explicit misspecification terms are established, recovering the standard realizable KL-regularized setting as a special case.
 
 **arXiv ID:** 2606.06053
-</details>
-
-<details>
-<summary><strong>Maximising the Set-Piece Return: Optimising Football Corner Tactics with Graph Reinforcement Learning</strong> - Sean Groom, Michael Groom, Francisco Belo, Axl Rice, Liam Anderson, Victor-Alexandru Darvariu, Shuo Wang - [[pdf]](https://arxiv.org/pdf/2606.06353)</summary>
-
-**Abstract:** Machine learning is increasingly employed for the evaluation of football tactics. However, existing approaches focus on characterising historical actions or analyst-specified counterfactual scenarios. In this work, we seek to go beyond the imitation of historically observed patterns towards discovering new generalisable player configurations and strategies. To tackle this, we focus on optimising corner kick routines, and formulate a decision-making problem in which a central policy makes adjustments to attacking player positions and velocities to maximise first contact shot probability. Unlike classic optimisation that solves for isolated setups, we contribute a reinforcement learning architecture operating on graph-structured data that yields a general policy for adjusting arbitrary starting player positions. Evaluated on over 3,000 Premier League corners, our approach strongly outperforms baseline optimisation techniques under matched inference budgets. Our results suggest that graph reinforcement learning can shift set-piece analysis from historical evaluation and imitation towards reward-driven tactical discovery.
-
-**arXiv ID:** 2606.06353
-</details>
-
-<details>
-<summary><strong>Transformer-Enhanced Reinforcement Learning: Fundamentals and Applications in Communication Networks</strong> - Nguyen Cong Luong, Shaohan Feng, Nguyen Duc Hai, Zeping Sui, Bo Ma, Min Xu, Zhihao Dong, Qiushi Zhao, Nguyen Duc Duy Anh, Nguyen Quoc Khanh, Ngoc Hung Nguyen, Zitian Zhang, Jie Cao - [[pdf]](https://arxiv.org/pdf/2606.05208)</summary>
-
-**Abstract:** Reinforcement Learning (RL) has long been a powerful solution to various problems in communication networks. However, traditional RL models still face with several limitations. Not only do they rely on large numbers of interactions with the environment, but they are also limited in terms of modeling long-term relationships and tackling partial observability. In recent years, the Transformer model has demonstrated the ability to enhance RL models, allowing them to overcome these issues. Particularly, the self-attention mechanism within the Transformer enables efficient modeling of long-range dependencies and global correlations, as well as accelerates training processes and handles heterogeneous data modalities. In this paper, we present a comprehensive survey of Transformer-based RL algorithms and their applications in communication networks. Specifically, the paper provides the mathematical background of RL and Transformer architectures, along with insights into key issues such as resource allocation, computation offloading, routing, and trajectory control, and network security. We conclude the paper by discussing challenges, open issues, and notable future research directions, including Transformer-enhanced DRL algorithms for semantic communication and network optimization.
-
-**arXiv ID:** 2606.05208
 </details>
 
 <details>
