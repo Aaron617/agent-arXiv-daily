@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-09 04:22:41
+**Last Updated:** 2026-06-09 05:18:05
 
-**Total Papers:** 156
+**Total Papers:** 141
 
 ## Table of Contents
 
@@ -92,19 +92,19 @@ This paper specifies that clearing protocol.
 </details>
 
 <details>
-<summary><strong>6G Empowering Future Robotics: A Vision for Next-Generation Autonomous Systems</strong> - Mona Ghassemian, Andrés Meseguer Valenzuela, Ana Garcia Armada, Dejan Vukobratovic, Periklis Chatzimisios, Kaspar Althoefer, Ranga Rao Venkatesha Prasad - [[pdf]](https://arxiv.org/pdf/2602.12246)</summary>
-
-**Abstract:** The convergence of robotics and next-generation communication is a critical driver of technological advancement. As the world transitions from 5G to 6G, the foundational capabilities of wireless networks are evolving to support increasingly complex and autonomous systems. We examine the transformative impact of 6G on enhancing key robotics functionalities. It provides a systematic mapping of IMT-2030 key performance indicators to robotic functional blocks, including sensing, perception, cognition, actuation, and self-learning. Building upon this mapping, we propose a high-level architectural framework integrating robotic, intelligent, and network service planes, underscoring the need for a holistic approach. As an example, use case, we present a real-time, dynamic safety framework enabled by IMT-2030 capabilities for safe and efficient human-robot collaboration in shared spaces.
-
-**arXiv ID:** 2602.12246
-</details>
-
-<details>
 <summary><strong>QuickLAP: Quick Language-Action Preference Learning for Semi-Autonomous Agents</strong> - Jordan Abi Nader, David Lee, Nathaniel Dennler, Andreea Bobu - [[pdf]](https://arxiv.org/pdf/2511.17855)</summary>
 
 **Abstract:** Robots must learn from both what people do and what they say, but either modality alone is often incomplete: physical corrections are grounded but ambiguous in intent, while language expresses high-level goals but lacks physical grounding. We introduce QuickLAP: Quick Language-Action Preference learning, a Bayesian framework that fuses physical and language feedback to infer reward functions in real time. Our key insight is to treat language as a probabilistic observation over the user's latent preferences, clarifying which reward features matter and how physical corrections should be interpreted. QuickLAP uses Large Language Models (LLMs) to extract reward feature attention masks and preference shifts from free-form utterances, which it integrates with physical feedback in a closed-form update rule. This enables fast, real-time, and robust reward learning that handles ambiguous feedback. In a semi-autonomous driving simulator, QuickLAP reduces reward learning error by over 70% compared to physical-only and heuristic multimodal baselines. A 15-participant user study further validates our approach: participants found QuickLAP significantly more understandable and collaborative, and preferred its learned behavior over baselines. Code is available at this https URL.
 
 **arXiv ID:** 2511.17855
+</details>
+
+<details>
+<summary><strong>6G Empowering Future Robotics: A Vision for Next-Generation Autonomous Systems</strong> - Mona Ghassemian, Andrés Meseguer Valenzuela, Ana Garcia Armada, Dejan Vukobratovic, Periklis Chatzimisios, Kaspar Althoefer, Ranga Rao Venkatesha Prasad - [[pdf]](https://arxiv.org/pdf/2602.12246)</summary>
+
+**Abstract:** The convergence of robotics and next-generation communication is a critical driver of technological advancement. As the world transitions from 5G to 6G, the foundational capabilities of wireless networks are evolving to support increasingly complex and autonomous systems. We examine the transformative impact of 6G on enhancing key robotics functionalities. It provides a systematic mapping of IMT-2030 key performance indicators to robotic functional blocks, including sensing, perception, cognition, actuation, and self-learning. Building upon this mapping, we propose a high-level architectural framework integrating robotic, intelligent, and network service planes, underscoring the need for a holistic approach. As an example, use case, we present a real-time, dynamic safety framework enabled by IMT-2030 capabilities for safe and efficient human-robot collaboration in shared spaces.
+
+**arXiv ID:** 2602.12246
 </details>
 
 <details>
@@ -118,7 +118,7 @@ This paper specifies that clearing protocol.
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (21 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (17 papers)</h2></summary>
 
 <details>
 <summary><strong>A case study of evaluating AI agents on a neuroscience data-to-discovery pipeline</strong> - Kai A. Horstmann, Ethan Lin, Alice A. Robie, Jennifer J. Sun, Kristin Branson - [[pdf]](https://arxiv.org/pdf/2606.07718)</summary>
@@ -211,14 +211,6 @@ On Qwen2.5 agents (0.5B-3B) self-evolving at the prompt level on GSM8K, SVAMP, a
 </details>
 
 <details>
-<summary><strong>SWE-Marathon: Can Agents Autonomously Complete Ultra-Long-Horizon Software Work?</strong> - Rishi Desai, Jesse Hu, Joan Cabezas, Neel Harsola, Pratyush Shukla, Roey Ben Chaim, Adnan El Assadi, Omkaar Mukund Kamath, Fenil Faldu, Prannay Hebbar, Jiankai Sun, Yiyuan Li, Pramod Srinivasan, Ishan Gupta, Christopher Settles, Daniel Wang, Derek Chen, Pranav Raja, Albert Liu, Marek Šuppa, Nevasini Sasikumar, Luyang Kong, Erik Quintanilla, Xiangyi Li, Ivan Bercovich, Steven Dillmann - [[pdf]](https://arxiv.org/pdf/2606.07682)</summary>
-
-**Abstract:** AI agents are increasingly expected to complete long-horizon workflows that require sustained progress over hours, millions of tokens, and complex environments. Yet current agent benchmarks largely evaluate short-form tasks, such as single pull requests, small tickets, or 5-10 minute exercises, limiting our ability to measure agents' capabilities in planning, long-context understanding, and memory use. We introduce SWE-Marathon, a benchmark of 20 long-horizon tasks spanning software engineering and adjacent technical domains. Each task consists of a unique executable environment, a human-written reference solution, and a multi-layer verification suite. Logged agent attempts average 27.2M total tokens, making SWE-Marathon substantially longer-horizon than existing SWE and command-line agent benchmarks. Current frontier coding agents solve fewer than 30% of tasks. Failures often arise from poor self-verification, self-reported infeasibility, and premature termination. We also observe reward-hacking behavior in 13.8% of rollouts, where agents attempt to exploit the environment or verifier to bypass the intended workflow. SWE-Marathon includes adversarial review of test suites and execution environments, as well as multi-layer checks designed to prevent shortcut solutions. We release SWE-Marathon, evaluation code, and agent trajectories at this https URL.
-
-**arXiv ID:** 2606.07682
-</details>
-
-<details>
 <summary><strong>When Should an AI Scientist Stop? Verifiable Experiment Steering and Refusal for Autonomous Discovery</strong> - Neel Tushar Shah, Manglam Kartik - [[pdf]](https://arxiv.org/pdf/2606.07576)</summary>
 
 **Abstract:** We present CARTOGRAPH, a verification layer for AI scientists that couples unresolved-subspace experiment steering (select), explicit ambiguity closure (resolve), and residual-based library inadequacy detection (refuse). Under a local linear-Gaussian bridge, raw unresolved projection is the isotropic unresolved Fisher-information trace, while CARTOGRAPH-A is the exact unresolved A-optimal rule; closed-form EIG and Box-Hill arise as local comparators rather than global equivalents. Across five testbeds, CARTOGRAPH-A beats raw projection 129W/0T/15L at d = 8 (p < 10^-21) in a replicated structured cascade. More distinctively, the framework tentatively identifies three out-of-library pharmacokinetic mechanisms and then revokes those identifications as residuals expose structural misfit, while one perturbed in-library control stays identified throughout. In low-dimensional pharmacokinetic and filtered EPA settings, near-ties against disagreement are predicted by theory and observed. Finally, in a retrospective audit of 40 positive claims from the published A-Lab autonomous materials system, the refuse guard flags all 4 claims later marked inconclusive under manual reanalysis while passing 32/36 confirmed claims. Code is available at this https URL
@@ -232,30 +224,6 @@ On Qwen2.5 agents (0.5B-3B) self-evolving at the prompt level on GSM8K, SVAMP, a
 **Abstract:** LLM-agent workflows chain model calls and tool invocations, and spend most of their wall-clock time waiting on upstream operations before downstream ones can start. Speculative execution can reclaim that idle time by launching a downstream operation with a predicted upstream input, but here each speculation costs real money (per-token billing) and its success probability is hard to estimate and drifts over time. This paper presents a method organized around five design decisions: (D1) start a downstream operation before its upstream completes; (D2) price each speculation in real dollars at separate input and output rates; (D3) expose a single operator dial for latency versus cost; (D4) decide via an expected-value rule with a failure-weighted cost term and a preference-adjusted threshold; and (D5) estimate the success probability with a Bayesian Beta-Binomial posterior whose prior is keyed to a dependency-type taxonomy. Variants of these ideas appear in recent work; the combination, with every decision logged in dollars, is what is new. The rule fires only on edges passing an admissibility precondition (side-effect-free, idempotent, or stageable behind a commit barrier), since a wrong speculation is rolled back by re-execution, which refunds tokens but cannot un-send an irreversible side effect. We specify the runtime mechanics, a closed-form result that the rule self-limits as the upstream branching factor grows, a five-stage calibration pipeline (offline replay, shadow, canary, online calibration, drift-triggered kill-switch), and a workload-fit rubric over eight production archetypes. Contrast tables against the four closest published systems (DSP, Speculative Actions v2, Sherlock, B-PASTE) show differentiators on every dimension, and a synthetic validation suite confirms the predicted decision boundary, probability threshold, posterior recovery, and streaming-cancellation behavior.
 
 **arXiv ID:** 2606.07846
-</details>
-
-<details>
-<summary><strong>Agentic Search for Counterfactual Recourse under Fixed LLM Budgets</strong> - Yasuo Tabei - [[pdf]](https://arxiv.org/pdf/2606.08696)</summary>
-
-**Abstract:** Counterfactual recourse aims to provide actionable feature changes that would alter an unfavorable decision made by a predictive model. In practice, affected individuals often benefit from multiple feasible alternatives rather than a single optimal explanation. A natural way to produce such alternatives is to prompt large language models (LLMs). However, prompting incurs a practical constraint: the number of LLM calls is often the dominant computational and economic cost. Together, the need for multiple alternatives and this cost constraint shift the problem from finding a single high-quality counterfactual to efficiently generating a set of oracle-validated counterfactuals under a fixed LLM-call budget. In this work, we study counterfactual recourse generation in the LLM-agentic setting as a fixed-budget search problem and propose Comp-MCTS, an agentic tree-search framework that maximizes the yield of unique, oracle-validated counterfactuals under this budget while maintaining favorable quantity--quality trade-offs. Comp-MCTS allocates the budget toward novel intervention directions via LLM-based proposal generation, oracle validation, and compression-guided pruning, in a training-free, oracle-only setting. Experiments on four real-world tabular datasets show that Comp-MCTS substantially outperforms single-candidate LATS-style baselines in the yield of unique, oracle-validated counterfactuals, and offers favorable quantity--quality--efficiency trade-offs against stronger multi-candidate variants: comparable or higher yield at similar or lower oracle-evaluation cost on three of four datasets, plus competitive proximity, sparsity, and novelty.
-
-**arXiv ID:** 2606.08696
-</details>
-
-<details>
-<summary><strong>SkillHone: A Harness for Continual Agent Skill Evolution Through Persistent Decision History</strong> - Zhiwei Li, Yong Hu - [[pdf]](https://arxiv.org/pdf/2606.08671)</summary>
-
-**Abstract:** Agent skills extend language-model agents with task-specific procedures, scripts, and references, but the tasks and environments they target continually change. Existing methods improve skills in bounded runs and retain only the final artifact, discarding the decision history that later agents need to interpret prior revisions, evaluations, and rejected alternatives. We introduce SkillHone, a harness for continual agent skill evolution grounded in persistent decision history. SkillHone pairs skill revisions with evaluation-side evidence that supplies practice feedback, recording structured histories of diagnoses, revisions, evidence, and outcomes. Role-separated subagents run candidate skills on practice probes with redacted reporting and propose revisions informed by prior decisions, enabling cross-session refinement without rediscovering past rationale. We evaluate SkillHone on deep-research benchmarks in a raw open-web setting, where agents are not given an integrated search stack and must organize retrieval through portable skills. We compare against a deep-research agent backed by commercial retrieval services. With Qwen3.6-35B-A3B as the evaluation-time backbone, the resulting skills outperform the deep-research agent by 15.8 points on GAIA and 3.2 points on WebWalkerQA-EN, while also exceeding prior skill-evolution methods.
-
-**arXiv ID:** 2606.08671
-</details>
-
-<details>
-<summary><strong>CANS: Accelerating Multiuser Collaborative Edge Inference via Cooperative Autodidactic NeuroSurgeon</strong> - Zheshun Wu, Ziyang Zhang, Changyao Lin, Zenglin Xu, Jie Liu - [[pdf]](https://arxiv.org/pdf/2606.09175)</summary>
-
-**Abstract:** Recently, mobile edge computing (MEC)-enabled collaborative deep neural network (DNN) inference has emerged as a promising approach for delivering intelligent services to resource-constrained mobile devices. A representative scenario is multi-user collaborative edge inference, where distinct devices independently partition their DNN models and offload backend computation to a common edge server over wireless networks. However, determining the optimal DNN partition for each device is challenging due to unknown and time-varying system conditions, including fluctuating wireless links and diverse device capabilities. To address this problem, we propose Cooperative Autodidactic NeuroSurgeon (CANS), a collaborative edge inference framework that enables devices to adaptively learn optimal DNN partitions by sharing informative feedback during online inference. To handle the challenge of device heterogeneity and better leverage offline inference experience, we integrate a novel FedLinUCB-DW algorithm that groups devices of the same type and warm-starts online exploration using local offline early-exit inference experience. Furthermore, we provide theoretical guarantees for FedLinUCB-DW by deriving the regret upper bound. We also validate our method on both a simulated environment and a hardware prototype system. Empirical evaluations demonstrate that CANS achieves lower inference latency compared to state-of-the-art baselines. Especially, in prototype experiments on two edge devices, the proposed CANS reduced average inference latency by up to 50% compared to the non-cooperative baseline.
-
-**arXiv ID:** 2606.09175
 </details>
 
 <details>
@@ -293,7 +261,7 @@ On Qwen2.5 agents (0.5B-3B) self-evolving at the prompt level on GSM8K, SVAMP, a
 </details>
 
 <details open>
-<summary><h2>LLM Agents (20 papers)</h2></summary>
+<summary><h2>LLM Agents (18 papers)</h2></summary>
 
 <details>
 <summary><strong>Contract2Tool: Learning Preconditions and Effects for Reliable Tool-Augmented LLM Agents</strong> - Rahul Suresh Babu, Laxmipriya Ganesh Iyer - [[pdf]](https://arxiv.org/pdf/2606.07904)</summary>
@@ -453,26 +421,10 @@ On KernelBench, the loop drives the attack success rate from 62% to 0% on a held
 **arXiv ID:** 2606.07943
 </details>
 
-<details>
-<summary><strong>Rosetta Memory: Adaptive Memory for Cross-LLM Agents</strong> - Hao Yang, Shiqi Shen, Haoxuan Li, Zhipeng Wang, Zhi Gong, Xu Chen - [[pdf]](https://arxiv.org/pdf/2606.07711)</summary>
-
-**Abstract:** Memory is the key component for transforming a stateless LLM into a persistent, evolving agent through experience accumulation, long-horizon planning, and continual self-improvement. Existing memory systems typically take the LLM as the center and design memory operations tailored to a specific backbone. In practice, however, users frequently switch between LLMs, for example using Claude for coding and GPT for writing across tasks, or routing different steps to different backbones within a single task for cost-effective trade-offs. As a result, memory written by one model often needs to be consumed by another. Making upstream memory effectively adapt to and activate downstream LLMs remains a critical yet underexplored problem. To bridge this gap, we shift the perspective from LLM-centric memory design to \emph{memory-centric LLM adaptation}. Specifically, we approach the above upstream-downstream memory adaptation problem from both the write and read sides, and design two profile-conditioned operators that are jointly trained to optimize how memory is stored and presented for better task completion. To ensure the learned operators generalize across a broad set of LLMs, we propose a minimum-gain sampling curriculum that prioritizes the least-served LLMs during training. To better measure the operators' actual contribution rather than the LLM's own capability, we design a performance-gap reward that compares against a naive memory baseline. Experiments on HotpotQA, 2WikiMultihopQA, and MuSiQue demonstrate that our model consistently outperforms baselines and remains robust under unseen-model replacement.
-
-**arXiv ID:** 2606.07711
-</details>
-
-<details>
-<summary><strong>Causal Agent Replay: Counterfactual Attribution for LLM-Agent Failures</strong> - Jaineet Shah - [[pdf]](https://arxiv.org/pdf/2606.08275)</summary>
-
-**Abstract:** When an LLM agent fails -- issues a refund it should not have, calls the wrong tool, leaks data -- existing tooling answers what happened (observability) or whether it passed (evaluation), but not which step caused the failure. The obvious heuristics are wrong: the step that executes the harmful action is usually not the step that decided on it, and LLM-judge attribution is correlational and unreliable (state-of-the-art step-level accuracy on the Who&When benchmark is about 14%). We present Causal Agent Replay (CAR), which answers the question by intervention: it models an agent run as a structural causal model, applies a do-operation to a step, and re-executes the trajectory forward under the same stochastic policy, measuring the shift in the outcome distribution. We define an intervention algebra over agent steps, a single-step contrastive estimator whose point-of-commitment rule resolves a confound specific to stochastic run-forward, and a budget-bounded Monte-Carlo Shapley estimator that splits credit across interacting steps. Every effect is reported with confidence intervals. We validate against synthetic structural causal models with planted ground truth: the contrastive estimator recovers the pivotal step, and Shapley recovers a two-step interaction (0.44, 0.45, ~0; efficiency sum 0.909 versus the analytic 0.91). CAR is open source and runs on hosted or free local models.
-
-**arXiv ID:** 2606.08275
-</details>
-
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (42 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (39 papers)</h2></summary>
 
 <details>
 <summary><strong>Beyond Goodhart's Law: A Dynamic Benchmark for Evaluating Compliance in Multi-Agent Systems</strong> - Yiyang Zhao, Zhuo Zhang, Qingxuan Le, Lizhen Qu, Zenglin Xu - [[pdf]](https://arxiv.org/pdf/2606.07805)</summary>
@@ -571,22 +523,6 @@ On KernelBench, the loop drives the attack success rate from 62% to 0% on a held
 </details>
 
 <details>
-<summary><strong>ViMax: Agentic Video Generation</strong> - Lingxuan Huang, Sizhe He, Hengji Zhou, Liqiang Nie, Lianghao Xia, Chao Huang - [[pdf]](https://arxiv.org/pdf/2606.07649)</summary>
-
-**Abstract:** Long-form video generation requires systematic narrative planning and visual consistency that current short-clip methods cannot provide. Existing methods generate isolated sequences without narrative structure and lack mechanisms for maintaining character and environmental consistency across scenes. We present ViMax, an agentic video generation framework that addresses video creation through coordinated multi-agent collaboration where specialized components negotiate narrative decisions, visual continuity, and production quality. Our framework employs a hierarchical narrative engine with retrieval-augmented generation for global story coherence and a dependency-aware visual consistency mechanism that tracks character and environmental states across temporal boundaries, while VLM-guided agents continuously monitor and refine both narrative coherence and visual fidelity. The framework enables coordinated agent collaboration to generate extended narrative content. This maintains both storytelling integrity and visual coherence across multi-scene timelines.
-
-**arXiv ID:** 2606.07649
-</details>
-
-<details>
-<summary><strong>TianJi-Environ: An Autonomous AI Scientist for Atmospheric Environmental Research</strong> - Haoluo Zhao, Hongchun Zhang, Nan Li, Jing-Jia Luo, Kaikai Zhang, Mengyang Yu, Nan Chen, Tao Song, Fan Meng - [[pdf]](https://arxiv.org/pdf/2606.07697)</summary>
-
-**Abstract:** As atmospheric environmental prediction continues to improve, interpretable validation of pollution mechanisms and feedback processes has become a main challenge in atmospheric chemistry. Yet mechanism validation based on complex numerical models still relies heavily on expert knowledge: mechanistic hypotheses must be operationalized into executable experiments, and model outputs must be organized into traceable evidence. We present TianJi-Environ, an auditable AI Scientist for atmospheric-chemistry mechanism validation. TianJi-Environ establishes the first WRF-Chem-based multi-agent framework that autonomously drives complex atmospheric-chemistry simulations, converting mechanistic hypotheses into executable configurations, testing experiments, and evidence criteria. Using ozone response and particulate-matter feedback as two representative examples, we demonstrate TianJi-Environ's capability for mechanism validation. In a summertime ozone case over the North China Plain, the system detects directionally consistent aerosol-radiation-interaction signals in shortwave radiation and boundary-layer height, but judges the evidence for ozone response to NOx control to be incomplete. In a wintertime PM2.5 case over the Guanzhong Basin, it localizes the unsupported link to insufficient propagation from black-carbon perturbation to particulate response and missing diagnostics of vertical absorptive heating. These results show that TianJi-Environ makes expert-driven mechanism validation explicit, structured, and auditable, offering a reproducible paradigm for multi-agent systems coupled with complex atmospheric-chemistry models.
-
-**arXiv ID:** 2606.07697
-</details>
-
-<details>
 <summary><strong>GRPO Does Not Close the Multi-Agent Coordination Gap</strong> - Najmul Hasan, Prashanth BusiReddyGari - [[pdf]](https://arxiv.org/pdf/2606.07845)</summary>
 
 **Abstract:** We measure how well current large language models coordinate as multiple agents sharing a common resource, using the dining philosophers problem as a clean test bed. Across 630 episodes spanning seven models and three philosopher counts, four frontier closed-source systems reach mean reward 0.45 to 0.87 and Mistral-Small 24B reaches 0.83 to 0.99, while Qwen3-14B reaches 0.13 to 0.35. We then ask whether group relative policy optimization (GRPO) on rollouts from the task itself can close the gap and find that it cannot: a Welch's t-test on per-episode reward at five philosophers gives p = 0.66 and a Hedges' g of -0.11, with no statistically significant change at ten or fifteen philosophers either. Two further observations qualify the result. The training reward of both 8B and 14B runs peaked at step nine and then declined, so the default saved checkpoint at step 15 is strictly worse than several earlier ones. The four-term reward we use admits a degenerate maximum at zero actions, which DeepSeek-R1-Distill-Qwen-7B and Mistral-Small 24B at five philosophers both inhabit, with mean reward 1.0 and 0.83 respectively at zero meals. The bottleneck for an open-weight 14B model on multi-agent coordination is not training compute but training methodology: reward shaping that does not collapse to a no-action maximum, checkpoint discipline that does not depend on the final step, and curriculum across problem scales.
@@ -676,14 +612,6 @@ We review research across six areas: (1) evolution of intelligent agents, (2) hu
 </details>
 
 <details>
-<summary><strong>Noncooperative Coordination via a Trading-based Auction</strong> - Jaehan Im, Filippos Fotiadis, Daniel Delahaye, Ufuk Topcu, David Fridovich-Keil - [[pdf]](https://arxiv.org/pdf/2502.03616)</summary>
-
-**Abstract:** Noncooperative multi-agent systems often face coordination challenges due to conflicting preferences among agents. In particular, when agents act in their own self-interest, they may prefer different choices among multiple feasible outcomes, leading to suboptimal outcomes or even safety concerns. We propose an algorithm named trading auction for consensus (TACo), a decentralized approach that enables noncooperative agents to reach consensus without communicating directly or disclosing private valuations. TACo facilitates coordination through a structured trading-based auction, where agents iteratively select choices of interest and provably reach an agreement within an a priori bounded number of steps. A series of numerical experiments validate that the termination guarantees of TACo hold in practice, and show that TACo achieves a median performance that minimizes the total cost across all agents, while allocating resources significantly more fairly than baseline approaches.
-
-**arXiv ID:** 2502.03616
-</details>
-
-<details>
 <summary><strong>Channel Fracture: Three Instances of Cross-Boundary Silent Delivery Reliability Failures in Multi-Agent Systems</strong> - Dexing Liu - [[pdf]](https://arxiv.org/pdf/2606.04896)</summary>
 
 **Abstract:** We report the discovery of channel fracture, a silent architectural failure in multi-agent systems where information routed across agent boundaries is silently blocked by invisible constraints. We present three instances in a production Hermes Agent deployment: (1) cron memory injection blocked by scheduler barriers; (2) cross-profile skill routing fractured by recursive directory traversal; (3) WebSocket delivery confirmation fallback fracture causing message duplication. We propose CADVP v1.1, a 13-dimension verification protocol with a veto-level confirmation check. Through 30,012 trials, zero failure rates under protocol versus 69 to 98 percent without. Real-world validation (10,008 trials) confirms quality elevation from 0.90 to 1.00. Three design principles: inverse verification, channel matching, and PIP protection.
@@ -692,11 +620,11 @@ We review research across six areas: (1) evolution of intelligent agents, (2) hu
 </details>
 
 <details>
-<summary><strong>Payoff scaling shapes cooperation in LLM agents across languages</strong> - Trung-Kiet Huynh, Dao-Sy Duy-Minh, Thanh-Bang Cao, Phong-Hao Le, Hong-Dan Nguyen, Phu-Quy Nguyen-Lam, Minh-Luan Nguyen-Vo, Hong-Phat Pham, Phu-Hoa Pham, Thien-Kim Than, Chi-Nguyen Tran, Huy Tran, Gia-Thoai Tran-Le, Alessio Buscemi, Le Hong Trang, Anh Han - [[pdf]](https://arxiv.org/pdf/2601.19082)</summary>
+<summary><strong>Noncooperative Coordination via a Trading-based Auction</strong> - Jaehan Im, Filippos Fotiadis, Daniel Delahaye, Ufuk Topcu, David Fridovich-Keil - [[pdf]](https://arxiv.org/pdf/2502.03616)</summary>
 
-**Abstract:** Large language models (LLMs) are increasingly deployed as autonomous agents that negotiate, coordinate, and act on behalf of users. Whether they cooperate in such settings is no longer just an academic question, but a central issue for AI governance. We approach it from a strategic-behaviour angle, asking how two everyday levers - the size of what is at stake, and the language in which the interaction is described - shape the strategies LLMs adopt in a repeated Prisoner's Dilemma. Rather than reading cooperation off raw action counts, we train supervised classifiers to recognise the canonical strategies of repeated games (always cooperate, always defect, Tit-for-Tat, Win-Stay-Lose-Shift) and use them as a lens onto LLM behaviour. To know what the strategy distribution should look like under the same payoffs, we derive an evolutionary game theory (EGT) baseline and compare it with the LLM data. The two outcomes disagree in a revealing way: as stakes grow, evolutionary theory predicts that defection should take over the population, yet LLMs move in the opposite direction, becoming more cooperative - a signature, we argue, of alignment training and the human-like reasoning patterns LLMs inherit from their training data. We further show that this picture is not particular to frontier-scale, proprietary models: it also occurs with three open-weight smaller LLMs. Overall, our analysis highlights that payoff design and linguistic framing are powerful but under-explored levers for steering LLM behaviour, with direct implications for evaluating, aligning, and governing multi-agent AI systems deployed in high-stakes, multilingual environments.
+**Abstract:** Noncooperative multi-agent systems often face coordination challenges due to conflicting preferences among agents. In particular, when agents act in their own self-interest, they may prefer different choices among multiple feasible outcomes, leading to suboptimal outcomes or even safety concerns. We propose an algorithm named trading auction for consensus (TACo), a decentralized approach that enables noncooperative agents to reach consensus without communicating directly or disclosing private valuations. TACo facilitates coordination through a structured trading-based auction, where agents iteratively select choices of interest and provably reach an agreement within an a priori bounded number of steps. A series of numerical experiments validate that the termination guarantees of TACo hold in practice, and show that TACo achieves a median performance that minimizes the total cost across all agents, while allocating resources significantly more fairly than baseline approaches.
 
-**arXiv ID:** 2601.19082
+**arXiv ID:** 2502.03616
 </details>
 
 <details>
@@ -705,6 +633,14 @@ We review research across six areas: (1) evolution of intelligent agents, (2) hu
 **Abstract:** LLMs have shown the capacity to improve their performance on reasoning tasks through reflecting on their mistakes, and acting with these reflections in mind. However, continual reflections of the same LLM onto itself exhibit degeneration of thought, where the LLM continues to repeat the same errors again and again even with the knowledge that its wrong. To address this problem, we instead introduce multi-agent with multi-persona debators as the method to generate reflections. Through out extensive experimentation, we've found that the leads to better diversity of in the reflections generated by the llm agent. We demonstrate an accuracy of 47% EM HotPot QA (question answering) and 82.7% on HumanEval (programming), both performances surpassing reflection with a single llm.
 
 **arXiv ID:** 2512.20845
+</details>
+
+<details>
+<summary><strong>Payoff scaling shapes cooperation in LLM agents across languages</strong> - Trung-Kiet Huynh, Dao-Sy Duy-Minh, Thanh-Bang Cao, Phong-Hao Le, Hong-Dan Nguyen, Phu-Quy Nguyen-Lam, Minh-Luan Nguyen-Vo, Hong-Phat Pham, Phu-Hoa Pham, Thien-Kim Than, Chi-Nguyen Tran, Huy Tran, Gia-Thoai Tran-Le, Alessio Buscemi, Le Hong Trang, Anh Han - [[pdf]](https://arxiv.org/pdf/2601.19082)</summary>
+
+**Abstract:** Large language models (LLMs) are increasingly deployed as autonomous agents that negotiate, coordinate, and act on behalf of users. Whether they cooperate in such settings is no longer just an academic question, but a central issue for AI governance. We approach it from a strategic-behaviour angle, asking how two everyday levers - the size of what is at stake, and the language in which the interaction is described - shape the strategies LLMs adopt in a repeated Prisoner's Dilemma. Rather than reading cooperation off raw action counts, we train supervised classifiers to recognise the canonical strategies of repeated games (always cooperate, always defect, Tit-for-Tat, Win-Stay-Lose-Shift) and use them as a lens onto LLM behaviour. To know what the strategy distribution should look like under the same payoffs, we derive an evolutionary game theory (EGT) baseline and compare it with the LLM data. The two outcomes disagree in a revealing way: as stakes grow, evolutionary theory predicts that defection should take over the population, yet LLMs move in the opposite direction, becoming more cooperative - a signature, we argue, of alignment training and the human-like reasoning patterns LLMs inherit from their training data. We further show that this picture is not particular to frontier-scale, proprietary models: it also occurs with three open-weight smaller LLMs. Overall, our analysis highlights that payoff design and linguistic framing are powerful but under-explored levers for steering LLM behaviour, with direct implications for evaluating, aligning, and governing multi-agent AI systems deployed in high-stakes, multilingual environments.
+
+**arXiv ID:** 2601.19082
 </details>
 
 <details>
@@ -729,14 +665,6 @@ We review research across six areas: (1) evolution of intelligent agents, (2) hu
 **Abstract:** Artificial Intelligence (AI) holds great potential in legal services, yet Large Language Models (LLMs) face two major challenges: limited knowledge of the Chinese legal system and vulnerability to hallucinations. To address these issues, we present Chatlaw, a multi-agent legal assistant. Chatlaw's framework is designed to emulate the Standard Operating Procedures (SOP) of real law firms, where different roles (e.g., assistant, researcher, senior lawyer) collaborate on a case. To computationally mirror this collaborative structure, we developed a novel Role-Aligned Mixture-of-Experts (RA-MoE) architecture. In this system, the internal "experts" are specifically trained to align with the distinct tasks of each agent role (e.g., inquiry, analysis, drafting). These specialized agents (Legal Assistant, Researcher, etc.) then form the collaborative framework. When they interact with users, retrieve legal knowledge, analyze case details, or generate reliable consultations, the RA-MoE architecture intelligently routes their computations to the corresponding dedicated expert, ensuring each step is handled by the most qualified parameters. In evaluations, Chatlaw surpasses general-purpose AI models, including GPT-4, achieving a 7.73% improvement in accuracy on the LawBench benchmark and an 11-point higher score on the Unified Qualification Exam for Legal Professionals. Real-case studies and expert assessments further confirm its robustness. Chatlaw enhances the accessibility and reliability of legal services, advancing the provision of legal support to the public.
 
 **arXiv ID:** 2306.16092
-</details>
-
-<details>
-<summary><strong>DICE: Entropy-Regularized Equilibrium Selection for Stable Multi-Agent LLM Coordination</strong> - Yi Xie, Zhanke Zhou, Chentao Cao, Bo Liu, Bo Han - [[pdf]](https://arxiv.org/pdf/2606.08068)</summary>
-
-**Abstract:** Multi-agent large language model (LLM) systems often fail to reliably outperform a single strong model equipped with best-of-N sampling. We argue that a core source of this instability is ill-posed equilibrium selection: current systems specify what information agents share, but not which coordination convention should be selected. We formalize a broad class of such systems as discounted incomplete-information Markov games and show that two common pathologies, oscillation between competing conventions and drift across them, can both induce unstable learning and linear Bayesian regret. To obtain a well-posed target, we introduce the Heterogeneous Quantal Response Equilibrium (HQRE), an entropy-regularized equilibrium concept with agent- and state-dependent temperatures. Under a monotonicity condition, HQRE is unique, admits linearly convergent mirror updates, and yields bounded Bayesian regret; the same condition yields rollout-measurable stability diagnostics. We instantiate this objective in two algorithms: DICE-PC, which coordinates frozen models through prompt-control actions, and DICE-FT, which performs parameter-efficient mirror fine-tuning. Across eleven benchmarks in four domains, DICE improves accuracy-cost trade-offs over strong within-class baselines; on reasoning and planning tasks, DICE-PC improves by 4.3 percentage points on average and DICE-FT by 8.5 points.
-
-**arXiv ID:** 2606.08068
 </details>
 
 <details>
@@ -958,7 +886,7 @@ The language was introduced together with concurrent (cGLP) and multiagent (maGL
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (46 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (40 papers)</h2></summary>
 
 <details>
 <summary><strong>Beyond Agent Architecture: Execution Assumptions and Reproducibility in LLM-Based Trading Systems</strong> - Junyi Yao, Zihao Zheng - [[pdf]](https://arxiv.org/pdf/2606.08285)</summary>
@@ -1081,14 +1009,6 @@ The language was introduced together with concurrent (cGLP) and multiagent (maGL
 </details>
 
 <details>
-<summary><strong>AgentCompile: An LLM-Guided Compiler for Direct CUDA Inference</strong> - Xuanzhe Li, Ziyan Weng, Zhiyu Zhu, Junhui Hou - [[pdf]](https://arxiv.org/pdf/2606.07665)</summary>
-
-**Abstract:** Transformer inference increasingly depends on specialized compiler and runtime support, but real model graphs still require semantic decisions about which regions are worth specializing and which CUDA implementation families are plausible. We present AgentCompile, an LLM-guided CUDA inference compiler that uses LLM outputs only as advisory search metadata. Given compiler-derived region summaries and bounded candidate spaces, the LLM proposes semantic labels, candidate priorities, parameter hints, and risk annotations; the compiler materializes CUDA candidates through templates, checks interface and hardware constraints, validates candidates empirically, selects implementations by measured latency, and falls back when specialization is unsupported or unprofitable. In end-to-end autoregressive generation, AgentCompile averages 5.66x, 4.05x, and 4.26x speedup over PyTorch eager on Qwen3-1.7B, Qwen3-4B, and Llama-3.2-1B-Instruct, respectively, across five representative workloads. We will open-source the project.
-
-**arXiv ID:** 2606.07665
-</details>
-
-<details>
 <summary><strong>GLP: A Grassroots, Multiagent, Concurrent, Logic Programming Language for AI (Full Version)</strong> - Ehud Shapiro - [[pdf]](https://arxiv.org/pdf/2510.15747)</summary>
 
 **Abstract:** A grassroots platform is a multiagent distributed system in which multiple independent instances can form and operate independently of each other and of any global resource, yet may coalesce into ever larger instances, possibly resulting in a single global instance. Grassroots platforms aim to offer an egalitarian/democratic alternative to centralised/autocratic and decentralised/plutocratic global platforms.
@@ -1181,54 +1101,6 @@ A central insight is that evaluation-pipeline quality directly determines iterat
 </details>
 
 <details>
-<summary><strong>SAW: Stage-Aware Dynamic Weighting for Multi-Objective Reinforcement Learning in Large Language Models</strong> - Yuchen He, Baolong Bi, Shenghua Liu, Huaming Liao, Yuyao Ge, Bolin Wan, Siqian Tong, Juan Chen, Jiafeng Guo, Xueqi Cheng - [[pdf]](https://arxiv.org/pdf/2606.07705)</summary>
-
-**Abstract:** Although multi-objective reinforcement learning (MORL) is central to aligning large language models with complex human preferences, the prevailing practice of static weighted summation overlooks a more fundamental phenomenon: reward learning is markedly asynchronous across objectives. Well-learned dimensions quickly produce homogeneous, low-variance signals whose residual noise contaminates the aggregated reward (in GRPO) or occupies a fixed share of the advantage budget (in GDPO), interfering with the scarce yet high-value signals carried by under-learned dimensions. To address this asynchrony, we propose Stage-Aware Dynamic Weighting (SAW), a lightweight, algorithm-agnostic dynamic weighting mechanism. SAW utilizes the coefficient of variation (CV) as a scale-invariant proxy for real-time informativeness, reweighting each dimension's reward or advantage contribution by its relative informativeness within the batch. Unlike gradient-based methods that require multiple forward and backward passes, SAW relies solely on batch-level statistics, introducing nearly negligible computational overhead. Experiments on tool-calling and text summarization tasks demonstrate that SAW consistently improves both training efficiency and final performance under both GRPO and GDPO frameworks, confirming it as a general-purpose plug-in for multi-reward LLM alignment. Our code is available at this https URL
-
-**arXiv ID:** 2606.07705
-</details>
-
-<details>
-<summary><strong>LogNEO: A GPT-Neo Reinforcement Learning Framework for Accurate Real-Time Log Anomaly Detection</strong> - David Eje, Tanmay Sharma, Khush Patel, Manuel Mazzara, Leonard Johard - [[pdf]](https://arxiv.org/pdf/2606.08153)</summary>
-
-**Abstract:** Detecting anomalies in large-scale system logs is critical for the reliability and security of modern computing infrastructure. We present LogNEO, a log anomaly detector built on EleutherAI's GPT-Neo (1.3B parameters) and fine-tuned with a novel partial-credit, exponentially decaying position-aware reward scheme combined with cross-entropy regularisation via Proximal Policy Optimisation (PPO). The position-aware reward explicitly models prediction difficulty: early positions receive higher rewards for correct predictions, while later positions incur stronger penalties for errors. LogNEO attains F1-scores of 0.927, 0.913, and 0.984 on the HDFS, BGL, and Thunderbird benchmarks, improving recall by up to 6 percentage points over the prior state-of-the-art LogGPT while maintaining comparable precision. A production microservice deployment over Apache Kafka, Redis, and TensorRT-accelerated inference demonstrates 45 ms end-to-end latency at 15,000 events per second.
-
-**arXiv ID:** 2606.08153
-</details>
-
-<details>
-<summary><strong>Autonomous Aerial Manipulation via Contextual Contrastive Meta Reinforcement Learning</strong> - Lixuan Jin, Bingxuan Lan, Xinyi Bao, Xiangyuan Xie, Chunjie Zhang, Zheng Chen, Tianshuo Liu, Ruijie Tian, Jinyu Ru, Gang Wang, Lei Yuan, Yang Yu - [[pdf]](https://arxiv.org/pdf/2606.08533)</summary>
-
-**Abstract:** Unmanned aerial vehicles (UAVs) are increasingly being deployed in logistics, service robotics, and other real-world applications, creating a growing demand for autonomous payload acquisition and delivery. Existing approaches typically assume pre-attached payloads or rely on specialized grippers, leaving versatile end-to-end aerial delivery largely unresolved, where different payloads induce highly variable flight dynamics, requiring a single policy to adapt online without manual calibration or explicit system identification. To this end, we study \textbf{A}utonomous \textbf{A}erial Manipulation via \textbf{Co}ntextual \textbf{Co}ntrastive Meta Reinforcement Learning (\textbf{\textit{Aco2}}), a fully autonomous aerial delivery setting in which a quadrotor equipped with a lightweight hook continuously picks up, transports, and delivers diverse handle-equipped objects between randomized locations, all without human intervention. First, we design a contextual observation encoder that infers a compact latent context from recent interaction history, enabling the policy to adapt online to payload-dependent dynamics. To further improve the quality of this context, we introduce a contrastive objective that structures the context embedding around task-relevant variations, improving generalization across diverse payloads without requiring explicit system identification. Trained entirely in simulation with extensive domain randomization, \textit{Aco2} can be directly deployed on a physical quadrotor without real-world fine-tuning.
-
-**arXiv ID:** 2606.08533
-</details>
-
-<details>
-<summary><strong>Reinforcement Learning for Flow-Matching Policies with Density Transport</strong> - Boshu Lei, Kostas Daniilidis, Antonio Loquercio - [[pdf]](https://arxiv.org/pdf/2606.08602)</summary>
-
-**Abstract:** We present an online reinforcement learning (RL) algorithm for fine-tuning flow-matching policies in continuous-control problems. Our key insight is to view RL-based policy improvement as a transport of action densities towards regions of high reward, which naturally aligns with the transport formulation of flow matching models. Prior methods either approximate the current or optimal policy distribution or resort to distillation, which introduces biased gradients or sacrifices multimodal modeling capacity. In contrast, our approach for RL with Density Transport, which we name \emph{RLDT}, constructs a transport field from a maximum-entropy RL objective using Stein Variational Gradient Descent (SVGD). Then, it finetunes a pretrained flow matching policy to align with this field. Training with this alignment objective is nontrivial because flow-matching policies generate actions via a multi-step process, making direct gradient-based optimization challenging. To overcome this challenge and stabilize training, we approximate policy actions from intermediate denoising steps via expected-target estimation. This allows the transport-field update to propagate into the network parameters without unstable backpropagation through time. Experimental results demonstrate that RLDT outperforms competitive baselines in reward quality and convergence speed. This performance holds across diverse continuous-control tasks, encompassing both dense and sparse rewards, as well as state- and vision-based long-horizon robot manipulation. The project webpage is \href{this https URL}{this https URL}.
-
-**arXiv ID:** 2606.08602
-</details>
-
-<details>
-<summary><strong>Reformulate LLM Reinforcement Learning for Efficient Training under Black-box Discrepancy</strong> - Jiashun Liu, Runze Liu, Xu Wan, Jing Liang, Hongyao Tang, Ling Pan - [[pdf]](https://arxiv.org/pdf/2606.08779)</summary>
-
-**Abstract:** Reinforcement Learning (RL) has emerged as a pivotal post-training paradigm, yet it frequently suffers from unpredictable sub-optimum performance or even training collapses. Recent findings attribute these failures to a hidden train-inference discrepancy (or mismatch), stemming from the disparate underlying engines and architecture. We find that the training policy can actively self-correct such a discrepancy when provided with an appropriate learning signal. Then, we further empirically identify a discrepancy tolerance region: within this region, aggressively narrowing the discrepancy can suppress policy exploration and reduce learning efficiency, whereas outside this region, reducing excessive discrepancy improves optimization consistency and raises the achievable local performance ceiling. According to such findings, we formulate this problem as a Discrepancy-Constrained Markov Decision Process (DCMDP), where reward maximization is coupled with a constraint that aligns training-Inference behavior, achieving stable dual-objective optimization. To adaptively balance performance improvement and discrepancy control, we introduce a Lagrangian relaxation mechanism that dynamically adjusts the relative weight of the two objectives according to the current degree of discrepancy violation. This enables stable dual-objective optimization: the policy is allowed to explore freely within the tolerance region, while being guided back when the discrepancy exceeds the safe boundary. Empirically, DCMDP significantly improves the performance of 8B dense model (Qwen-3-8b) and 30B Mixture-of-Expert model (Qwen-3-30bA3b), and enables a heterogeneous training paradigm, where LLMs can be optimized in high-fidelity training setup while being explicitly aligned for low-cost, resource-constrained inference deployment.
-
-**arXiv ID:** 2606.08779
-</details>
-
-<details>
-<summary><strong>From Shortcuts to Reasoning: Robust Post-Training of Theory of Mind with Reinforcement Learning</strong> - Jike Zhong, Yuxiang Lai, Ming Li, Yuheng Li, Wuao Liu, Behzad Dariush, Konstantinos Psounis, Shao-Yuan Lo - [[pdf]](https://arxiv.org/pdf/2606.09092)</summary>
-
-**Abstract:** Theory of Mind (ToM) is a must-acquire skill for modern foundation model systems to operate effectively and safely in the real world. Recent works have explored honing ToM via post-training; however, we show that such progress is confounded by a pervasive "shortcut" issue: tasks can reach up to 99% accuracy by simply exploiting spurious causal correlations, leading to a false sense of ToM. Motivated by this, we first develop a framework to systematically examine ToM datasets for shortcuts and provide guidance for future development. We find that questions reducible to pure state tracking, such as "belief," are especially shortcut-prone compared to mind questions, such as "intention," where reasoning beyond tracking is required. Using four shortcut-free datasets across three ToM contexts, we then comprehensively study whether Reinforcement Fine-Tuning with verifiable rewards and explicit reasoning chains, called Thinking-RFT, elevates ToM beyond Supervised Fine-Tuning, or SFT. Our key findings are as follows. First, Thinking-RFT effectively improves ToM in all scenarios, with a 6% improvement over SFT, particularly in complex higher-order reasoning, with a 10% improvement over SFT, and multimodal cases, with a 7% improvement over SFT. It also generalizes notably better to unseen domains and higher-order queries while being more robust to counterfactuals. Second, ToM benefits specifically from the joint effect of reasoning and RL: Thinking-RFT outperforms Non-Thinking-RFT by 7% on average. Third, RFT works by learning to ground its reasoning on anchor cues, such as keywords and state changes, that correspond to causal factors. We believe our study is useful for developing effective and robust ToM post-training datasets and advancing critical ToM capabilities.
-
-**arXiv ID:** 2606.09092
-</details>
-
-<details>
 <summary><strong>Path Planning Using Deep Deterministic Policy Gradient: A Reinforcement Learning Approach</strong> - Qiang Le, Yaguang Yang, Isaac E. Weintraub - [[pdf]](https://arxiv.org/pdf/2606.07855)</summary>
 
 **Abstract:** Path-planning for autonomous vehicles in threat-laden environments is a fundamental challenge because the problem is nonlinear and nonconvex even in simplest scenarios. While traditional optimal control methods can be used to find ideal paths, the computational time is often too slow for real-time decision-making. To solve this challenge, we propose a method based on Deep Deterministic Policy Gradient (DDPG) and model the threat as possibly multiple circular 'no-go' zones. A mission is regarded as a failure if the vehicle enters this restricted zone at any time or does not reach a neighborhood of the destination. The DDPG agent is trained through trial and error in a simulated environment, learning a direct mapping from its current state (position and heading) to a series of feasible actions that guide the agent to safely reach its destination. The reword function has three parts: (a) an attractive field centered at the final destination, (b) some repulsive fields centered at the origins of circular obstacles, and (c) a penalty of control energy consumption (the magnitude of heading change) that indirectly in favor for straight path. The DDPG trains the agent using these incentives to find the largest possible set of starting points wherein a safe path to the destination is guaranteed. This provides critical information for mission planning, showing beforehand whether a task is achievable from a given starting point, assisting pre-mission planning activities. The approach is validated in simulation. A comparison between the DDPG method and a traditional optimal control (pseudo-spectral) method is carried out. The results show that the learning-based agent produces effective paths while being significantly faster, making it a better fit for real-time applications.
@@ -1285,6 +1157,14 @@ A central insight is that evaluation-pipeline quality directly determines iterat
 </details>
 
 <details>
+<summary><strong>TORL-VLA: Tactile Guided Online Reinforcement Learning for Contact-Rich Manipulation</strong> - Huaihang Zheng, Yi Yang, Kai Ma, Shenglin Xu, Tian Xie, Guozheng Li, Xiangyu Wang, Yiren Ma, Si Liu, Yinian Mao, Baoxu Liu - [[pdf]](https://arxiv.org/pdf/2606.09337)</summary>
+
+**Abstract:** Vision-Language-Action (VLA) models have become a powerful framework for robotic manipulation, and recent studies have introduced tactile or force feedback into VLAs to address contact-rich tasks. However, these models are typically deployed as offline policies. When contact conditions shift from the training distribution, the policy cannot perform online adaptation, leading to problems such as inappropriate contact forces and inefficient retries. Therefore, we propose TORL-VLA, a tactile-guided online reinforcement learning framework that couples tactile feedback with policy refinement for contact-rich manipulation. Our method introduces a tactile-derived wrench-aware VLA to predict reference actions and future wrench sequences, while a lightweight online RL module is used to refine the reference actions. To stabilize learning from mixed exploratory policy-generated and human-intervention data, we introduce an intervention-censored critic that prevents post-intervention success from being wrongly credited to policy-generated actions preceding intervention. Real-robot experiments on long-horizon contact-rich tasks, including latch manipulation, coffee-cup placement, and egg handling, show that TORL-VLA improves success rates at both subtask and full-task levels, as well as time-bounded execution efficiency over strong baselines.
+
+**arXiv ID:** 2606.09337
+</details>
+
+<details>
 <summary><strong>Efficient Minimal Solvers for Relative Pose Estimation in Autonomous Driving Applications</strong> - Tao Li, Liang Liu, Jianli Han, Weimin Lv - [[pdf]](https://arxiv.org/pdf/2606.09569)</summary>
 
 **Abstract:** With the advancement of visual sensing systems, computer vision is playing an increasingly important role in autonomous driving and robot navigation. Relative pose estimation in multi-camera systems is essential for accurate vehicle localization and environment perception, demanding high real-time performance and robustness. Existing methods, however, often involve high computational costs and rely heavily on abundant feature matches, limiting their applicability in time-sensitive driving scenarios. To address these limitations, this paper introduces a unified framework for efficient relative pose estimation, built upon a novel translation parameterization and first-order rotation approximation. Within this framework, we propose three efficient minimal solvers specifically designed for autonomous vehicles. The first solver integrates the vertical direction prior from Inertial Measurement Units (IMUs), the second utilizes the rotation axis direction prior during steering maneuvers, and the third is designed for planar motion - a realistic assumption for ground vehicles operating on structured roads. By reducing both the minimal number of point correspondences and the algebraic complexity, our methods enable faster hypothesis generation within RANSAC-based pipelines, improving suitability for real-time systems. Extensive experiments on synthetic datasets and the KITTI autonomous driving benchmark demonstrate that the proposed solvers achieve a favorable balance between speed and accuracy compared to existing state-of-the-art algorithms.
@@ -1293,11 +1173,11 @@ A central insight is that evaluation-pipeline quality directly determines iterat
 </details>
 
 <details>
-<summary><strong>TORL-VLA: Tactile Guided Online Reinforcement Learning for Contact-Rich Manipulation</strong> - Huaihang Zheng, Yi Yang, Kai Ma, Shenglin Xu, Tian Xie, Guozheng Li, Xiangyu Wang, Yiren Ma, Si Liu, Yinian Mao, Baoxu Liu - [[pdf]](https://arxiv.org/pdf/2606.09337)</summary>
+<summary><strong>Autonomous Aerial Manipulation via Contextual Contrastive Meta Reinforcement Learning</strong> - Lixuan Jin, Bingxuan Lan, Xinyi Bao, Xiangyuan Xie, Chunjie Zhang, Zheng Chen, Tianshuo Liu, Ruijie Tian, Jinyu Ru, Gang Wang, Lei Yuan, Yang Yu - [[pdf]](https://arxiv.org/pdf/2606.08533)</summary>
 
-**Abstract:** Vision-Language-Action (VLA) models have become a powerful framework for robotic manipulation, and recent studies have introduced tactile or force feedback into VLAs to address contact-rich tasks. However, these models are typically deployed as offline policies. When contact conditions shift from the training distribution, the policy cannot perform online adaptation, leading to problems such as inappropriate contact forces and inefficient retries. Therefore, we propose TORL-VLA, a tactile-guided online reinforcement learning framework that couples tactile feedback with policy refinement for contact-rich manipulation. Our method introduces a tactile-derived wrench-aware VLA to predict reference actions and future wrench sequences, while a lightweight online RL module is used to refine the reference actions. To stabilize learning from mixed exploratory policy-generated and human-intervention data, we introduce an intervention-censored critic that prevents post-intervention success from being wrongly credited to policy-generated actions preceding intervention. Real-robot experiments on long-horizon contact-rich tasks, including latch manipulation, coffee-cup placement, and egg handling, show that TORL-VLA improves success rates at both subtask and full-task levels, as well as time-bounded execution efficiency over strong baselines.
+**Abstract:** Unmanned aerial vehicles (UAVs) are increasingly being deployed in logistics, service robotics, and other real-world applications, creating a growing demand for autonomous payload acquisition and delivery. Existing approaches typically assume pre-attached payloads or rely on specialized grippers, leaving versatile end-to-end aerial delivery largely unresolved, where different payloads induce highly variable flight dynamics, requiring a single policy to adapt online without manual calibration or explicit system identification. To this end, we study \textbf{A}utonomous \textbf{A}erial Manipulation via \textbf{Co}ntextual \textbf{Co}ntrastive Meta Reinforcement Learning (\textbf{\textit{Aco2}}), a fully autonomous aerial delivery setting in which a quadrotor equipped with a lightweight hook continuously picks up, transports, and delivers diverse handle-equipped objects between randomized locations, all without human intervention. First, we design a contextual observation encoder that infers a compact latent context from recent interaction history, enabling the policy to adapt online to payload-dependent dynamics. To further improve the quality of this context, we introduce a contrastive objective that structures the context embedding around task-relevant variations, improving generalization across diverse payloads without requiring explicit system identification. Trained entirely in simulation with extensive domain randomization, \textit{Aco2} can be directly deployed on a physical quadrotor without real-world fine-tuning.
 
-**arXiv ID:** 2606.09337
+**arXiv ID:** 2606.08533
 </details>
 
 <details>
