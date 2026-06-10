@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-10 04:43:49
+**Last Updated:** 2026-06-10 05:47:39
 
-**Total Papers:** 20
+**Total Papers:** 28
 
 ## Table of Contents
 
@@ -13,7 +13,15 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Benchmarks and Datasets (7 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (10 papers)</h2></summary>
+
+<details>
+<summary><strong>Bittensor Agent Arenas as a Trajectory Primitive: Distilling a Shopping Agent from ShoppingBench Subnet Traces</strong> - Shardul Bansal, Seth Schilbe, Jarrod Barnes - [[pdf]](https://arxiv.org/pdf/2606.10064)</summary>
+
+**Abstract:** Small-model agentic post-training is bottlenecked less by the algorithm than by the trajectory substrate it consumes. Leading recipes (RLVR, group-relative RL, rejection-sampled re-SFT) all need multi-turn traces carrying per-trajectory supervision, and the two existing sources fall short: frontier-synthesised data inherits the synthesizer's biases and collapses the long tail, while unfiltered production logs are unjudged and contaminated by shortcut behaviour. We argue that an incentive-aligned agent arena can be engineered to manufacture such trajectories, and demonstrate this on ORO Subnet 15 (SN15), a Bittensor deployment of the ShoppingBench agentic-commerce benchmark. SN15's race mechanism, LLM reasoning judge, and rotating leak-cluster-guarded problem suite yield a corpus with three properties: incentive-aligned diversity, per-trajectory judging, and anti-memorised held-out evaluation. We introduce a structural-quality filter that converts the raw firehose into a trainable corpus by keeping agentic trajectories (the model itself emits the tool calls) and rejecting sub-task trajectories (the model only classifies or narrates over a deterministic search loop), then post-train Qwen3-4B with a recipe matched to the published ShoppingBench SFT-then-GRPO pipeline. On a leak-cluster-guarded held-out partition scored production-strict, the model lifts from the published Qwen3-4B base of 18.0% ASR to 42.7%, within single-problem noise of the synthetic-data SFT-only baseline (43.6%), while training on a fraction of a single day of subnet output. The supervised stack leaves a large pass@8 to pass@1 gap (53.3% vs 34.8%); a per-step teacher-grounded Dr. GRPO reward converts that headroom into process improvement, and we identify the sub-task firehose as the primary lever for closing the gap to the 48.7% SFT+GRPO bar. We release the filter, the corpus splits, and the arena mechanics.
+
+**arXiv ID:** 2606.10064
+</details>
 
 <details>
 <summary><strong>What Matters in Orchestrating Robot Policies: A Systematic Study of Hierarchical VLA Agents</strong> - Jiaheng Hu, Mohit Shridhar, Caden Lu, Dhruv Shah, Hao-Tien Lewis Chiang, Jie Tan, Annie Xie - [[pdf]](https://arxiv.org/pdf/2606.10267)</summary>
@@ -56,6 +64,22 @@
 </details>
 
 <details>
+<summary><strong>EM-Fall: Embodied mmWave Sensing for Day-and-Night Fall Detection on Humanoid Robots</strong> - Yanshuo Lu, Yuxuan Hu, Shenghai Yuan, Xinyu Zhou, Kuangji Zuo, Bofan Lyu, XiChen Yuan, Jianfei Yang - [[pdf]](https://arxiv.org/pdf/2606.11109)</summary>
+
+**Abstract:** Falls are one of the leading causes of injury and hospitalization among elderly individuals, making reliable fall awareness an essential capability for safety monitoring in residential environments. However, existing fall detection systems often rely on wearable devices or fixed sensing installations, which may suffer from low user compliance, limited spatial coverage, or degraded performance under occlusion and poor lighting conditions. In this work, we propose \textbf{EM-Fall}, an embodied fall detection framework deployed on a mobile humanoid robot. The system integrates millimeter-wave (mmWave) sensing with robotic mobility, allowing the robot to actively adjust its sensing viewpoint and maintain target observability across rooms and under occlusion. To address interference in complex residential environments, including pet motion and multipath artifacts, we design a human-centered perception pipeline combined with lightweight temporal modeling to capture motion evolution before, during, and after fall events. We evaluate the proposed system across eight real indoor environments with four participants and construct an in-home mmWave fall detection dataset. Experimental results show that the embodied mobile sensing paradigm improves monitoring continuity and maintains robust fall detection performance under diverse environmental conditions. The proposed framework provides a practical solution for robot-assisted safety monitoring in home environments.
+
+**arXiv ID:** 2606.11109
+</details>
+
+<details>
+<summary><strong>A Survey of Robotic Navigation and Manipulation with Physics Simulators in the Era of Embodied AI</strong> - Lik Hang Kenny Wong, Xueyang Kang, Kaixin Bai, Jianwei Zhang - [[pdf]](https://arxiv.org/pdf/2505.01458)</summary>
+
+**Abstract:** Navigation and manipulation are core capabilities in Embodied AI, but training agents to perform them directly in the real world is costly, time-consuming, and unsafe. Therefore, sim-to-real transfer has emerged as a key approach, yet the sim-to-real gap persists. This survey examines how physics simulators address this gap by analyzing properties that have received limited attention in prior surveys. We also analyze their features for navigation and manipulation tasks, as well as their hardware requirements. Additionally, we offer a resource with benchmark datasets, metrics, simulation platforms, and methods to help researchers select suitable tools while accounting for hardware constraints.
+
+**arXiv ID:** 2505.01458
+</details>
+
+<details>
 <summary><strong>CollabSkill: Evaluating Human-Agent Collaboration On Real-World Tasks</strong> - Yijia Shao, Zora Zhiruo Wang, Neel Ahuja, Yicheng Wang, Bowen Liu, Diyi Yang - [[pdf]](https://arxiv.org/pdf/2606.09833)</summary>
 
 **Abstract:** AI agents are reshaping the workspace, leading to drastic change of how humans work. Despite the considerable potential of human-agent collaboration both in preserving human agency and generating economic value, this paradigm remains largely absent from occupational task evaluation, hindered by the difficulty of gathering real human data and accounting for inter-human variability. We introduce CollabSkill, a framework for evaluating human-agent collaboration on real-world occupational tasks. CollabSkill pairs real human workers with AI agents on tasks matched to their occupational background, collecting data that capture the complexity of economically valuable tasks and the usage patterns of real workers. To account for inter-human variability, CollabSkill employs a Bayesian skill rating system to disentangle and quantify the skill contributions of both humans and AI agents. Drawing on over 1,500 prompts from 386 working sessions contributed by 93 human workers, our analysis yields insights on two fronts: on the agent side, rankings on CollabSkill diverge meaningfully from those of existing fully autonomous benchmarks where Codex leads, with Claude Code ranking first; on the human side, CollabSkill reveals that practical experience emerges as the primary driver of collaboration skill, with hands-on collaboration meaningfully shifting workers' AI literacy. Together, we hope CollabSkill enables the community to invest in systematic evaluation of human-agent collaboration and spurs development efforts aimed at building AI agents that genuinely augment human workers.
@@ -76,7 +100,23 @@ Experiments demonstrate the CSP solver achieves a 95.5% success rate on grid sca
 </details>
 
 <details open>
-<summary><h2>LLM Agents (1 papers)</h2></summary>
+<summary><h2>LLM Agents (3 papers)</h2></summary>
+
+<details>
+<summary><strong>IntentKV: Cross-Turn Intent-Aware KV Cache Pruning for Agent Inference</strong> - Junjie Li, Jiong Lou, Jie Li - [[pdf]](https://arxiv.org/pdf/2606.09916)</summary>
+
+**Abstract:** Multi-turn LLM agents fan short queries into long trajectories of tool calls, search results, and intermediate reasoning. Both KV memory and KV read bandwidth grow by orders of magnitude across a single trajectory, making the key-value (KV) cache, not parameter compute, the dominant serving bottleneck for long-horizon agents. We introduce IntentKV, learned KV pruning that keeps the base LLM frozen. IntentKV maintains a session-level QueryMemory of cross-turn intent, scores live history tokens with a memory-attention rule, and adds a zero-initialized residual head with cross-attention over current-query K-vectors. To stay composable with prefix caches, eviction is a slot-map redirection: dropped positions route to a sentinel dead slot while surviving K/V rows, RoPE phases, and slot identities stay in place. IntentKV matches the no-pruning full-cache baseline with almost no accuracy drop under tight KV budgets: at an 8k KV budget, mean peak request tokens drop 23.9% on Qwen3-8B and 30.7% on Qwen2.5-14B. On the 100 longest BCP queries that all methods complete on Qwen2.5-14B, IntentKV-8k further cuts worst-case peak request tokens from 92.3k to 20.5k, a 77.8% reduction, and worst-case raw KV reads from 411M to 31M, a 92.6% reduction.
+
+**arXiv ID:** 2606.09916
+</details>
+
+<details>
+<summary><strong>3SPO: State-Score-Supervised Policy Optimization for LLM Agents</strong> - Yu Han, Kailing Li, Yang Jiao, Yulin Dai, Yuqian Fu, Linhai Zhuo, Tianwen Qian - [[pdf]](https://arxiv.org/pdf/2606.09961)</summary>
+
+**Abstract:** Training large language models (LLMs) as autonomous agents via reinforcement learning (RL) has enabled frontier models to achieve superhuman performance in long-horizon tasks. However, existing RL algorithms operate at the trajectory level, performing policy optimization only after collecting complete episode rollouts. This coarse-grained approach faces fundamental challenges in multi-turn agent settings where rewards are sparse, delayed, and credit assignment across individual steps is critical. In this work, we propose \textbf{State-Score-Supervised Policy Optimization (3SPO)}, a novel RL algorithm that performs post-step policy optimization with dynamic state score supervision. At each step, 3SPO computes the state score based on historical success rates, supervising step-wise credit assignment, adaptive rollout and post-step policy optimization without requiring value function estimation or additional auxiliary models. Theoretically, under a per-state bandit abstraction, we show that the proposed score-supervised allocation mechanism achieves logarithmic allocation regret and provide sample-complexity guarantees for action identification, score distinguishability, and filtering stability. Experiments on ALFWorld and WebShop with Qwen2.5-1.5B/7B-Instruct show that 3SPO consistently outperforms GRPO by $+22.6\%$ on ALFWorld and $+15.6$ points on WebShop, while using comparable resources to achieve $2.4\times$ more state exploration and $1.8\times$ faster convergence. Code is available at this https URL.
+
+**arXiv ID:** 2606.09961
+</details>
 
 <details>
 <summary><strong>From Confident Closing to Silent Failure: Characterizing False Success in LLM Agents</strong> - Laksh Advani - [[pdf]](https://arxiv.org/pdf/2606.09863)</summary>
@@ -148,7 +188,15 @@ We refer to this as the \textbf{Interlocutor Effect}. Through an ablation study,
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (6 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (9 papers)</h2></summary>
+
+<details>
+<summary><strong>Discovering Interpretable Multi-Parameter Control Policies for Evolutionary Algorithms Using Deep Reinforcement Learning</strong> - Tai Nguyen, Phong Le, Carola Doerr, Nguyen Dang - [[pdf]](https://arxiv.org/pdf/2606.10129)</summary>
+
+**Abstract:** While deep Reinforcement Learning (deep-RL) has been increasingly applied to parameter control in evolutionary algorithms, rigorous theoretical analysis of parameter control remains largely restricted to single-parameter settings, owing to the difficulty of deriving effective, interpretable multi-parameter policies amenable to formal study. We demonstrate how deep-RL can be leveraged to overcome this barrier, using the (1+($\lambda$,$\lambda$))-genetic algorithm optimizing OneMax, one of the few problems where a super-constant speedup of dynamic control has been formally proven, as a representative case study. We first show that standard approaches struggle to converge in this multi-parameter setting, and introduce algorithm-agnostic enhancements targeting action-space decomposition, reward shifting, and long-horizon discounting. With these in place, we compare common deep-RL methods and find that Double Deep Q-Networks uniquely avoid the policy collapse observed in Proximal Policy Optimization, yielding trajectories suitable for downstream analysis. Crucially, we move beyond the ``black-box'' nature of neural networks by distilling the learned behaviors into a transparent, symbolic control policy. This resulting policy does not only offer interpretability for future theoretical analysis but also yields exceptional performance, consistently outperforming existing baselines across a wide range of problem sizes.
+
+**arXiv ID:** 2606.10129
+</details>
 
 <details>
 <summary><strong>Uncertainty-Aware Motion Planning for Autonomous Driving in Mixed Traffic Environment</strong> - Ming Cheng, Hao Chen, Ziyi Yang, Ziluowen Luo, Senzhang Wang - [[pdf]](https://arxiv.org/pdf/2606.09958)</summary>
@@ -188,6 +236,22 @@ We refer to this as the \textbf{Interlocutor Effect}. Through an ablation study,
 **Abstract:** Lifelong embodied navigation in dynamic environments requires robots to form persistent scene understanding from fragmentary observations, which remains difficult for existing methods that rely on explicit maps or scene graphs and struggle to generalize beyond structured settings. We propose AllDayNav, a lifelong self-learning navigation framework that implicitly encodes scene dynamics into the billion-scale parameters of a large model via reinforcement learning, powered by a self-evolving multimodal memory that maintains and updates visual keyframes, semantic descriptions, and temporal context while autonomously generating open-vocabulary instructions, image goals, and structured rewards. Experiments in both synthetic and real-world environments across cross-room, cross-episode, and cross-task scenarios show that AllDayNav achieves success rates approaching $100\%$ and consistently surpasses strong map-based, VLM, and RL baselines in path efficiency and robustness, demonstrating implicit, memory-driven reinforcement learning as a scalable alternative to explicit mapping for reliable lifelong navigation.
 
 **arXiv ID:** 2606.10927
+</details>
+
+<details>
+<summary><strong>RoboNaldo: Accurate, Stable and Powerful Humanoid Soccer Shooting via Motion-Guided Curriculum Reinforcement Learning</strong> - Yichao Zhong, Yidan Lu, Yuhang Lu, Tianyang Tang, Haoguang Mai, Yixuan Pan, Tianyu Li, Li Chen, Jingbo Wang, Zhongyu Li, Peng Lu, Hongyang Li - [[pdf]](https://arxiv.org/pdf/2606.11092)</summary>
+
+**Abstract:** Elite humanoid soccer shooting requires whole-body stability, high-impulse whole-body interactions, and accuracy to targets. Motion tracking-driven reinforcement learning (RL) provides stability in whole-body movement coordination, but a fixed reference makes it hard to adapt to varied ball positions and strike timings; in contrast, task reward-driven RL struggles to explore and discover valid kicks from scratch. We therefore introduce RoboNaldo, a three-stage motion-guided curriculum RL framework for high-impulse humanoid interaction. A single human-kick reference is used as a scaffold and progressively shifts optimization towards shooting performance. The curriculum first learns a stable whole-body kicking prior, then adapts the kick to free-kick settings where the ball is stationary at random positions, and finally extends it to moving-ball shooting through a locomotion-command and kick-trigger interface. A high-level heuristic planner controls this interface during training, while alternative high-level controllers can drive the same low-level policy at inference. In simulation, RoboNaldo demonstrates free-kick shot error 48.6% lower and shoot velocity 2.96x than prior work baselines. In real world on a Unitree G1 with onboard perception, RoboNaldo attains 0.73 m and 0.86 m average target shooting error from 3 m away in free-kick and moving-ball cases, accordingly. And the post-contact ball velocity reaches 13.10 m/s, which is 59-71% of reported professional open-play shot speed. Project page: $\href{this https URL}{\text{this http URL}}$.
+
+**arXiv ID:** 2606.11092
+</details>
+
+<details>
+<summary><strong>On-sky demonstration of reinforcement learning for adaptive optics control</strong> - Jalo Nousiainen, Vincent Chambouleyron, Benoit Neichel, Sylvain Cetre, Jean-Francois Sauvage, Angelie Alagao, Markus Kasper, Jonathan Dray, Romain Fetick, Byron Engler - [[pdf]](https://arxiv.org/pdf/2606.10771)</summary>
+
+**Abstract:** Reinforcement learning (RL)-based algorithms have recently emerged as a promising approach for adaptive optics (AO) control. In simulations and laboratory experiments, they have demonstrated robustness to real-world effects such as photon and detector noise, misregistration, vibrations, and rapid variations in seeing conditions. However, their performance has not yet been validated on sky. We report the first on-sky demonstration of a reinforcement learning controller for adaptive optics, named Policy Optimization for AO (PO4AO). We further analyze its on-sky behavior and identify directions for improving the algorithm and its implementation.PO4AO was implemented and deployed on the Papyrus adaptive optics system installed at the Coudé focus of the 1.52 m telescope (T152) at the OHP. A Python-based implementation was interfaced with the existing real-time controller (DAO RTC) via shared-memory buffers. The performance of PO4AO was compared to that of a standard integrator controller over several nights, covering a range of flux levels and atmospheric conditions. PO4AO consistently outperformed the standard integrator in all tested configurations. The controller successfully learned and compensated for vibration patterns and demonstrated strong robustness to measurement noise. Once tuned for Papyrus, PO4AO operated in a turnkey fashion, using a single set of hyperparameters across varying observing conditions and science targets. These performance gains were achieved despite a non-optimized Python implementation introducing approximately $750\,\mu\text{s}$ of additional latency, along with control jitter and occasional frame drops. When properly implemented and optimized, PO4AO constitutes a robust and high-performance turnkey controller for single-conjugate adaptive optics systems, paving the way for broader adoption of reinforcement learning strategies in on-sky AO operations.
+
+**arXiv ID:** 2606.10771
 </details>
 
 <details>
