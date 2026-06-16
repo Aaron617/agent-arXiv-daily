@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-16 05:29:15
+**Last Updated:** 2026-06-16 06:44:31
 
 **Total Papers:** 170
 
@@ -234,20 +234,20 @@ This changes what memory can do. On standard long-term conversation benchmarks, 
 </details>
 
 <details>
-<summary><strong>Interactor: Agentic RL oriented Iterative Creation for Ad Description Generation in Sponsored Search</strong> - Penghui Wei, Jiayu Wu, Chao Ye, Zhi Guo, Shuanglong Li, Lin Liu - [[pdf]](https://arxiv.org/pdf/2606.15911)</summary>
-
-**Abstract:** This paper focuses on automatically generating informative ad descriptions in sponsored search. Unlike ad titles which are usually optimized to attract user click feedbacks, ad descriptions have a longer text span and possess the potential of incorporating world knowledge to address user search intents while presenting the fine-grained selling points of the ads. We propose Interactor, a multi-turn iterative creation framework optimized with agentic RL for ad description generation. The generation model acts as a policy that interacts with a customized environment consisting of multiple generative reward models. Given initial generations by the policy, the customized GenRMs evaluate multi-dimensional qualities including knowledge capacity and landing page consistency, providing both binary signals and reasoning feedbacks. The policy then iteratively refines the descriptions based on such feedbacks to ensure continuous improvement. Experiments on industrial datasets show that the Interactor framework significantly outperforms state-of-the-art approaches in generating knowledge-rich and faithful ad descriptions. Since May 2026, it has been deployed online in a leading search ads system, contributing to both ad revenue and user experience.
-
-**arXiv ID:** 2606.15911
-</details>
-
-<details>
 <summary><strong>Control-Plane Placement Shapes Forgetting: An Architectural Study of Agent Memory Across Thirteen System Configurations</strong> - Dongxu Yang - [[pdf]](https://arxiv.org/pdf/2606.15903)</summary>
 
 **Abstract:** Where an LLM sits in an agent memory pipeline -- between the recall plane that retrieves stored facts (extensively benchmarked) and the control plane that mutates them via supersede, release, purge (largely untested) -- shapes which forgetting failure modes the system recovers. Comparing thirteen system configurations on a 385-case adversarial surface, we observe three placement regimes with partly complementary coverage: deterministic primitives suffice for lexical/temporal categories but fail canonicalization (5% on identifier-obfuscation, 0% on cross-lingual); inscribe-time LLM recovers canonicalization (100%) but cannot help intent-aware deletion (0% on prefix-collision and compound-fact); a mutation-time hook recovers intent-aware deletion (78-85%) and brightens nearly all categories simultaneously (91.7-93.2% overall, $0.17 per 385-case run, 2.3s/case mutation latency vs. 64-191ms/case deterministic, recall path unchanged).
 We expose the trade-off via ForgetEval, a 1000-case templated suite plus a 385-case adversarial layer (132 hand-crafted + 253 LLM-drafted oracle-validated) scored by deterministic substring match, paired with a six-method Adapter Protocol with honest N/A scoring that lets heterogeneous memory stores enter in 130 lines. Admission is corroborated by 10-annotator IAA (Fleiss' kappa = 0.958) and a 77-case external-authored subset (four blind contributors) that replicates the canonicalization asymmetry and amplifies the joint-placement lift (+27.8 pt). Production failures are predominantly forgetting failures rather than recall failures, yet existing benchmarks measure only recall. ForgetEval and all adapters are released under MIT.
 
 **arXiv ID:** 2606.15903
+</details>
+
+<details>
+<summary><strong>Interactor: Agentic RL oriented Iterative Creation for Ad Description Generation in Sponsored Search</strong> - Penghui Wei, Jiayu Wu, Chao Ye, Zhi Guo, Shuanglong Li, Lin Liu - [[pdf]](https://arxiv.org/pdf/2606.15911)</summary>
+
+**Abstract:** This paper focuses on automatically generating informative ad descriptions in sponsored search. Unlike ad titles which are usually optimized to attract user click feedbacks, ad descriptions have a longer text span and possess the potential of incorporating world knowledge to address user search intents while presenting the fine-grained selling points of the ads. We propose Interactor, a multi-turn iterative creation framework optimized with agentic RL for ad description generation. The generation model acts as a policy that interacts with a customized environment consisting of multiple generative reward models. Given initial generations by the policy, the customized GenRMs evaluate multi-dimensional qualities including knowledge capacity and landing page consistency, providing both binary signals and reasoning feedbacks. The policy then iteratively refines the descriptions based on such feedbacks to ensure continuous improvement. Experiments on industrial datasets show that the Interactor framework significantly outperforms state-of-the-art approaches in generating knowledge-rich and faithful ad descriptions. Since May 2026, it has been deployed online in a leading search ads system, contributing to both ad revenue and user experience.
+
+**arXiv ID:** 2606.15911
 </details>
 
 <details>
@@ -820,19 +820,19 @@ The Replicator-Optimization Mechanism governs selection over coordination strate
 </details>
 
 <details>
-<summary><strong>Evolutionary Dynamics of Cooperation in Next-Generation LLM Agent Systems: A Cross-Provider Empirical Extension</strong> - Francisco León Zúñiga Bolívar - [[pdf]](https://arxiv.org/pdf/2605.29874)</summary>
-
-**Abstract:** Do next-generation LLM agents inherit the cooperative biases documented in their predecessors, or does scale and provider diversity reshape equilibrium behaviour in competitive multi-agent settings? Willis et al. established a benchmark for this question using evolutionary game theory and the Iterated Prisoner's Dilemma (IPD), finding consistent cooperative biases in ChatGPT-4o and Claude 3.5 Sonnet. We extend this benchmark to four frontier models released in 2025-2026 - Claude Sonnet 4.6, Gemini 2.5 Flash, Gemini 3.1 Pro, and GPT-5.4 Mini - applying the identical protocol across three prompting styles (Default, Prose, Self-Refine) and four population compositions (balanced and biased, with and without noise). Cooperative bias persists across providers (H1): ten of twelve model-prompt combinations favour cooperative equilibria in balanced noiseless conditions. Cross-provider divergence is substantial (H3): Gemini 2.5 Flash reaches up to 77% aggressive equilibria under biased conditions, while GPT-5.4 Mini reaches 70% cooperative equilibria under Self-Refine. Support for aggressive capability parity is partial (H2): Self-Refine raises ICD in all models and Gemini 3.1 Pro Refine achieves the highest ICD in the dataset (0.925), but Default and Prose prompts show no systematic narrowing. Evidence on noise robustness is directionally positive but not robustly confirmed (H4): with n=500 Moran iterations per condition, average noise sensitivity is about 6 percentage points for Claude Sonnet 4.6 versus 13 pp for Claude 3.5 Sonnet, but this cross-study gap is not statistically significant once the predecessor's unreported sampling error is propagated. Provider identity, rather than model generation, is the strongest correlate of equilibrium outcomes; noise remains a universal challenge regardless of model size or vintage.
-
-**arXiv ID:** 2605.29874
-</details>
-
-<details>
 <summary><strong>HCP-MAD:Heterogeneous Consensus-Progressive Reasoning for Efficient Multi-Agent Debate</strong> - Yiqing Liu, Hantao Yao, Wu Liu, Allen He, Yongdong Zhang - [[pdf]](https://arxiv.org/pdf/2604.09679)</summary>
 
 **Abstract:** Multi-Agent Debate (MAD) is a collaborative framework in which multiple agents iteratively refine solutions through the generation of reasoning and alternating critique cycles. Current work primarily optimizes intra-round topologies and inter-round interactions separately, limiting the adaptation of token costs to task complexity. This work introduces Heterogeneous Consensus-Progressive Reasoning for Efficient Multi-Agent Debate (HCP-MAD), leveraging consensus as a dynamic signal to facilitate progressive reasoning. The core motivation is that a majority of straightforward tasks can be effectively resolved via lightweight pair-agent debates, while complex tasks require expanded collaboration. Firstly, Heterogeneous Consensus Verification conducts rapid consensus verification using a pair of heterogeneous agents for early stopping. Next, Heterogeneous Pair-Agent Debate applies an adaptive stopping criterion to terminate mutual critique of reasoning traces. Finally, the unresolved tasks are addressed through Escalated Collective Voting by aggregating diverse perspectives from additional agents. Experiments across six benchmarks show that HCP-MAD enhances accuracy while substantially reducing token costs. Code is this https URL.
 
 **arXiv ID:** 2604.09679
+</details>
+
+<details>
+<summary><strong>Evolutionary Dynamics of Cooperation in Next-Generation LLM Agent Systems: A Cross-Provider Empirical Extension</strong> - Francisco León Zúñiga Bolívar - [[pdf]](https://arxiv.org/pdf/2605.29874)</summary>
+
+**Abstract:** Do next-generation LLM agents inherit the cooperative biases documented in their predecessors, or does scale and provider diversity reshape equilibrium behaviour in competitive multi-agent settings? Willis et al. established a benchmark for this question using evolutionary game theory and the Iterated Prisoner's Dilemma (IPD), finding consistent cooperative biases in ChatGPT-4o and Claude 3.5 Sonnet. We extend this benchmark to four frontier models released in 2025-2026 - Claude Sonnet 4.6, Gemini 2.5 Flash, Gemini 3.1 Pro, and GPT-5.4 Mini - applying the identical protocol across three prompting styles (Default, Prose, Self-Refine) and four population compositions (balanced and biased, with and without noise). Cooperative bias persists across providers (H1): ten of twelve model-prompt combinations favour cooperative equilibria in balanced noiseless conditions. Cross-provider divergence is substantial (H3): Gemini 2.5 Flash reaches up to 77% aggressive equilibria under biased conditions, while GPT-5.4 Mini reaches 70% cooperative equilibria under Self-Refine. Support for aggressive capability parity is partial (H2): Self-Refine raises ICD in all models and Gemini 3.1 Pro Refine achieves the highest ICD in the dataset (0.925), but Default and Prose prompts show no systematic narrowing. Evidence on noise robustness is directionally positive but not robustly confirmed (H4): with n=500 Moran iterations per condition, average noise sensitivity is about 6 percentage points for Claude Sonnet 4.6 versus 13 pp for Claude 3.5 Sonnet, but this cross-study gap is not statistically significant once the predecessor's unreported sampling error is propagated. Provider identity, rather than model generation, is the strongest correlate of equilibrium outcomes; noise remains a universal challenge regardless of model size or vintage.
+
+**arXiv ID:** 2605.29874
 </details>
 
 <details>
