@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-23 04:19:43
+**Last Updated:** 2026-06-23 05:15:24
 
 **Total Papers:** 191
 
@@ -624,6 +624,14 @@ Case studies and prototypes demonstrate adaptive task planning, event-driven con
 <summary><h2>Multi-Agent Systems (37 papers)</h2></summary>
 
 <details>
+<summary><strong>PEAR: Permutation-Equivariant Adaptive Routing Multi-Agent Debate</strong> - Yang Feng, Ziwei Xu, Xia Hu, Fengxiang He - [[pdf]](https://arxiv.org/pdf/2606.20621)</summary>
+
+**Abstract:** Multi-agent debate improves the reliability of large language models (LLMs) through iterative peer critiques. However, fixed topologies often introduce persistent positional biases, amplify unreliable agents, and cause high sensitivity to role assignments. We introduce \textit{Permutation-Equivariant Adaptive Routing Multi-Agent Debate (PEAR)}, an inference-time protocol that dynamically reconfigures communication roles and sparse topologies across consecutive debate rounds. By strategically switching agent-to-role assignments based on evolving agent states, PEAR prevents any agent from permanently occupying a privileged network position or distributes influence more evenly across the debate. We theoretically characterize PEAR as an equivariant sparse router: it preserves accuracy under agent relabeling while reducing routing complexity and improving generalization. Comprehensive empirical evaluations across four reasoning benchmarks and six diverse LLM backbones demonstrate PEAR significantly improves average accuracy over the strongest debate baselines. The code is at this https URL.
+
+**arXiv ID:** 2606.20621
+</details>
+
+<details>
 <summary><strong>Specifying AI-SDLC Processes: A Protocol Language for Human-Agent Boundaries</strong> - Ylli Prifti - [[pdf]](https://arxiv.org/pdf/2606.20615)</summary>
 
 **Abstract:** AI agents now participate as first-class team members across the software development lifecycle, yet no specification language exists for expressing the human-agent responsibility boundaries, approval gates, and governance constraints this collaboration requires. Existing approaches encode process in agent prompts (subject to drift), target adjacent domains (workflow management, business processes), or address only fragments (access control, approval gates).
@@ -632,14 +640,6 @@ Three results follow. A failure rate analysis shows that structural enforcement 
 We position the contribution against multi-agent frameworks (MetaGPT), workflow specification (FlowAgent, BPMN extensions), and capability-based security (SAGA): the novelty lies in the specific integration, not any single primitive. A working implementation demonstrates feasibility; empirical evaluation is future work.
 
 **arXiv ID:** 2606.20615
-</details>
-
-<details>
-<summary><strong>PEAR: Permutation-Equivariant Adaptive Routing Multi-Agent Debate</strong> - Yang Feng, Ziwei Xu, Xia Hu, Fengxiang He - [[pdf]](https://arxiv.org/pdf/2606.20621)</summary>
-
-**Abstract:** Multi-agent debate improves the reliability of large language models (LLMs) through iterative peer critiques. However, fixed topologies often introduce persistent positional biases, amplify unreliable agents, and cause high sensitivity to role assignments. We introduce \textit{Permutation-Equivariant Adaptive Routing Multi-Agent Debate (PEAR)}, an inference-time protocol that dynamically reconfigures communication roles and sparse topologies across consecutive debate rounds. By strategically switching agent-to-role assignments based on evolving agent states, PEAR prevents any agent from permanently occupying a privileged network position or distributes influence more evenly across the debate. We theoretically characterize PEAR as an equivariant sparse router: it preserves accuracy under agent relabeling while reducing routing complexity and improving generalization. Comprehensive empirical evaluations across four reasoning benchmarks and six diverse LLM backbones demonstrate PEAR significantly improves average accuracy over the strongest debate baselines. The code is at this https URL.
-
-**arXiv ID:** 2606.20621
 </details>
 
 <details>
