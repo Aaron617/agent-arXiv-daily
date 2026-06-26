@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-06-26 04:37:30
+**Last Updated:** 2026-06-26 05:21:33
 
 **Total Papers:** 82
 
@@ -386,19 +386,19 @@ The system orchestrates four tightly coupled stages in a closed loop. A Brainsto
 <summary><h2>Other Agent Research (10 papers)</h2></summary>
 
 <details>
-<summary><strong>Governing Actions, Not Agents: Institutional Attestation as a Governance Model for Autonomous AI Systems</strong> - Jakob Salfeld-Nebgen - [[pdf]](https://arxiv.org/pdf/2606.26298)</summary>
-
-**Abstract:** Autonomous AI agents may begin to perform consequential, irreversible actions such as clinical prescribing and production software deployment. This paper observes that human institutions have governed powerful autonomous actors not by monitoring their reasoning but by requiring independently attested evidence at the point of consequential action. We formalise this institutional pattern as a computational governance model for AI agent systems. Under the proposed model, an agent retains full autonomy over planning and reasoning but holds no execution authority over designated high-risk actions. Execution is conditional on preconditions that are each independently attested by a separate authoritative source, cryptographically bound to a declared intent, and evaluated by a deterministic policy. Decisions are recorded in a tamper-evident log amenable to independent re-verification. We present a proof-of-concept implementation and illustrate the model with examples from software deployment and clinical prescribing.
-
-**arXiv ID:** 2606.26298
-</details>
-
-<details>
 <summary><strong>Agentic Analysis for Agentic Infrastructure: An LLM-Powered Pipeline for Comparative Governance of DAO and Corporate AI Protocols</strong> - Yutian Wang, Luyao Zhang - [[pdf]](https://arxiv.org/pdf/2606.26203)</summary>
 
 **Abstract:** As AI agent protocols proliferate, the governance structures shaping their interoperability standards remain empirically underexamined. We introduce an LLM-powered comparative pipeline for large-scale governance discourse analysis, integrating automated annotation, neural topic modeling, and multi-layer network analysis to study socio-technical power structures at scale. We validate it on two contrasting standards for agent interoperability: ERC-8004 (permissionless, on-chain) and Google A2A (corporate-led). Analyzing 4,323 governance participation records, we combine LLM-assisted coding, topic modeling, and multi-layer network analysis to examine how institutional design shapes thematic priorities and community structure. We find that while governance form influences substantive focus, both regimes exhibit comparable levels of participation inequality and community fragmentation. Discourse alignment is denser in the permissionless setting, suggesting that open governance may foster greater thematic convergence despite decentralized participation. These findings illustrate how LLM-assisted methods can advance the empirical study of technology governance, with implications for designing more equitable agentic AI standards. All data and code are openly available.
 
 **arXiv ID:** 2606.26203
+</details>
+
+<details>
+<summary><strong>Governing Actions, Not Agents: Institutional Attestation as a Governance Model for Autonomous AI Systems</strong> - Jakob Salfeld-Nebgen - [[pdf]](https://arxiv.org/pdf/2606.26298)</summary>
+
+**Abstract:** Autonomous AI agents may begin to perform consequential, irreversible actions such as clinical prescribing and production software deployment. This paper observes that human institutions have governed powerful autonomous actors not by monitoring their reasoning but by requiring independently attested evidence at the point of consequential action. We formalise this institutional pattern as a computational governance model for AI agent systems. Under the proposed model, an agent retains full autonomy over planning and reasoning but holds no execution authority over designated high-risk actions. Execution is conditional on preconditions that are each independently attested by a separate authoritative source, cryptographically bound to a declared intent, and evaluated by a deterministic policy. Decisions are recorded in a tamper-evident log amenable to independent re-verification. We present a proof-of-concept implementation and illustrate the model with examples from software deployment and clinical prescribing.
+
+**arXiv ID:** 2606.26298
 </details>
 
 <details>
