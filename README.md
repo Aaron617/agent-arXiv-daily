@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-07-08 03:39:38
+**Last Updated:** 2026-07-08 04:28:46
 
 **Total Papers:** 101
 
@@ -793,19 +793,19 @@ In this paper, we propose a specialized training recipe using Reinforcement Lear
 </details>
 
 <details>
-<summary><strong>Policy Improvement Reinforcement Learning</strong> - Huaiyang Wang, Xiaojie Li, Xiaohan Wang, Zhixia Zhang, Xiaodong Lu, Zixuan Huang, Jiajun Chai, Guojun Yin, Deqing Wang, Haoyi Zhou, Yaodong Yang, Jianxin Li, Yikun Ban - [[pdf]](https://arxiv.org/pdf/2604.00860)</summary>
-
-**Abstract:** Reinforcement learning has become a central post-training paradigm for improving LLM and agent capabilities. Yet existing RL post-training methods share a common blind spot: they construct local learning signals from sampled trajectories, rewards, or feedback-conditioned targets, then update the policy without explicitly verifying whether the resulting policy outperforms its predecessor. Optimizing these local signals does not necessarily produce a better policy, while finite sampling, generation stochasticity and feedback noise can further widen this gap. We argue that the missing ingredient is policy improvement feedback: the ability to measure progress across policy iterations. We introduce Policy Improvement Reinforcement Learning (PIRL), which formulates inter-iteration performance gain as an explicit objective structurally aligned with final task performance. Building on PIRL, we propose Policy Improvement Policy Optimization (PIPO), a plug-in closed-loop framework that verifies the previous update against a sliding-window historical performance anchor. PIPO uses this improvement feedback to modulate the local learning signal of the base policy optimization algorithm, reinforcing updates associated with measured progress and suppressing those associated with performance drops. We provide theoretical evidence that PIPO locally aligns policy updates with the PIRL improvement objective. Experiments on mathematical reasoning, code, tool-use, and self-distillation settings show that PIPO yields consistent gains across PPO, group-relative, and self-distillation policy optimization families.
-
-**arXiv ID:** 2604.00860
-</details>
-
-<details>
 <summary><strong>Streaming Reinforcement Learning under Partial Observability with Real-Time Recurrent Learning</strong> - Noah Farr, Aryaman Reddi, Carlo D'Eramo, Jan Peters - [[pdf]](https://arxiv.org/pdf/2605.24709)</summary>
 
 **Abstract:** Streaming reinforcement learning has emerged as an online learning paradigm that conforms to the restrictions of natural learning agents that process data incrementally, i.e. with a batch size of 1 and no replay buffer. While streaming RL has recently been shown to scale with deep function approximation with full observability, partially observable settings have remained out of reach. Truncated backpropagation through time collapses to a one-step gradient horizon under the streaming setting, and exact real-time recurrent learning is prohibitively expensive. We close this gap using recurrent trace units, a diagonal recurrent architecture that enables exact RTRL with linear time and memory complexity in the parameter count, and show that they integrate cleanly into existing streaming algorithms across both discrete and continuous control. On a MemoryChain diagnostic with chain lengths from 2 to 128, our method sustains performance where streaming TBPTT(1) baselines using feedforward, GRU, and RTU networks collapse. On five POPGym tasks and on partially observable MuJoCo continuous control, the streaming approach is competitive with batched PPO on POPGym and recovers a substantial fraction of batched performance on masked MuJoCo, despite using no replay buffer or batched updates.
 
 **arXiv ID:** 2605.24709
+</details>
+
+<details>
+<summary><strong>Policy Improvement Reinforcement Learning</strong> - Huaiyang Wang, Xiaojie Li, Xiaohan Wang, Zhixia Zhang, Xiaodong Lu, Zixuan Huang, Jiajun Chai, Guojun Yin, Deqing Wang, Haoyi Zhou, Yaodong Yang, Jianxin Li, Yikun Ban - [[pdf]](https://arxiv.org/pdf/2604.00860)</summary>
+
+**Abstract:** Reinforcement learning has become a central post-training paradigm for improving LLM and agent capabilities. Yet existing RL post-training methods share a common blind spot: they construct local learning signals from sampled trajectories, rewards, or feedback-conditioned targets, then update the policy without explicitly verifying whether the resulting policy outperforms its predecessor. Optimizing these local signals does not necessarily produce a better policy, while finite sampling, generation stochasticity and feedback noise can further widen this gap. We argue that the missing ingredient is policy improvement feedback: the ability to measure progress across policy iterations. We introduce Policy Improvement Reinforcement Learning (PIRL), which formulates inter-iteration performance gain as an explicit objective structurally aligned with final task performance. Building on PIRL, we propose Policy Improvement Policy Optimization (PIPO), a plug-in closed-loop framework that verifies the previous update against a sliding-window historical performance anchor. PIPO uses this improvement feedback to modulate the local learning signal of the base policy optimization algorithm, reinforcing updates associated with measured progress and suppressing those associated with performance drops. We provide theoretical evidence that PIPO locally aligns policy updates with the PIRL improvement objective. Experiments on mathematical reasoning, code, tool-use, and self-distillation settings show that PIPO yields consistent gains across PPO, group-relative, and self-distillation policy optimization families.
+
+**arXiv ID:** 2604.00860
 </details>
 
 <details>
