@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-07-09 04:10:09
+**Last Updated:** 2026-07-09 05:04:41
 
 **Total Papers:** 79
 
@@ -47,19 +47,19 @@ While databases remain central to modern computing, agents operate over a broade
 <summary><h2>Benchmarks and Datasets (15 papers)</h2></summary>
 
 <details>
-<summary><strong>Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1</strong> - Kabir Moghe, Peter Chin - [[pdf]](https://arxiv.org/pdf/2607.06764)</summary>
-
-**Abstract:** Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, exhaustive sampling, extended chain-of-thought), or benchmark-specific training in which small models are fine-tuned on ARC data, often with task-specialized architectures. We study a third regime: an open-weight model in non-thinking mode (DeepSeek V3.2) under a strict budget, with no ARC-specific fine-tuning. We study what is recoverable through architecture alone, building agentic harnesses that decompose pattern-discovery and program-synthesis stages explicitly. First, we introduce an Explorer-Definer Pipeline that separates pattern discovery from executable transformation synthesis, implemented as a two-stage agent pipeline. Next, we present the Reflective Orchestrator, which augments the pipeline with autonomous exploration of new transformations when previous hypotheses fail on training pairs. On the ARC-AGI-1 public 400-task evaluation set, the pipeline reaches 57.50% pass@2 at \$0.25 per task, and the orchestrator reaches 67.25% pass@2 at \$0.62 per task. Together these architectures lift a 15.50% one-shot baseline by ~52 points without benchmark-specific training or heavy test-time compute. Furthermore, the orchestrator-driven lift tests a falsifiable diagnostic the pipeline produces; unbiased pass@k analysis suggests the pipeline is generation-bound, not selection-bound (selection via training-pair accuracy captures ~95% of the candidate ceiling) and predicts that significant improvement requires broader generation, not better ranking. The orchestrator implements this prediction via adaptive re-exploration and confirms it (unbiased pass@1 lift +9.81 pp, matching selection-mediated pass@2 lift). An additional pipeline ablation identifies its think tool as a significant component, with removal reducing pass@2 by 5.75 pp.
-
-**arXiv ID:** 2607.06764
-</details>
-
-<details>
 <summary><strong>AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation</strong> - Andrey Podivilov, Vadim Lomshakov, Sergey Savin, Matvei Startsev, Roman Pozharskiy, Maksim Parshin, Sergey Nikolenko - [[pdf]](https://arxiv.org/pdf/2607.06624)</summary>
 
 **Abstract:** We present AgentLens, a production-assessed benchmark for interactive code agents. Most code-agent benchmarks reduce a run to a single bit -- did the task pass? -- but the people who actually use these agents experience the entire trajectory: how the agent follows instructions, uses its tools, verifies its own work, recovers from mistakes, and talks to them along the way. AgentLens evaluates that whole trajectory. It pairs formal verification, where an objective check exists, with LLM-written trajectory reviews and side-by-side comparisons, so that each run yields a readable explanation of why the score is what it is. This makes AgentLens useful for more than ranking models: we use it to diagnose model behavior, compare successive versions of our own agent, and catch product regressions in a nightly evaluation pipeline. We release the benchmark as open source at this https URL.
 
 **arXiv ID:** 2607.06624
+</details>
+
+<details>
+<summary><strong>Cost-Effective Agent Harnesses for Abstract Reasoning and Generalization on ARC-AGI-1</strong> - Kabir Moghe, Peter Chin - [[pdf]](https://arxiv.org/pdf/2607.06764)</summary>
+
+**Abstract:** Recent progress on ARC-AGI-1 from disclosed architectures has come broadly from two regimes: heavy test-time compute over frontier models (evolutionary search, exhaustive sampling, extended chain-of-thought), or benchmark-specific training in which small models are fine-tuned on ARC data, often with task-specialized architectures. We study a third regime: an open-weight model in non-thinking mode (DeepSeek V3.2) under a strict budget, with no ARC-specific fine-tuning. We study what is recoverable through architecture alone, building agentic harnesses that decompose pattern-discovery and program-synthesis stages explicitly. First, we introduce an Explorer-Definer Pipeline that separates pattern discovery from executable transformation synthesis, implemented as a two-stage agent pipeline. Next, we present the Reflective Orchestrator, which augments the pipeline with autonomous exploration of new transformations when previous hypotheses fail on training pairs. On the ARC-AGI-1 public 400-task evaluation set, the pipeline reaches 57.50% pass@2 at \$0.25 per task, and the orchestrator reaches 67.25% pass@2 at \$0.62 per task. Together these architectures lift a 15.50% one-shot baseline by ~52 points without benchmark-specific training or heavy test-time compute. Furthermore, the orchestrator-driven lift tests a falsifiable diagnostic the pipeline produces; unbiased pass@k analysis suggests the pipeline is generation-bound, not selection-bound (selection via training-pair accuracy captures ~95% of the candidate ceiling) and predicts that significant improvement requires broader generation, not better ranking. The orchestrator implements this prediction via adaptive re-exploration and confirms it (unbiased pass@1 lift +9.81 pp, matching selection-mediated pass@2 lift). An additional pipeline ablation identifies its think tool as a significant component, with removal reducing pass@2 by 5.75 pp.
+
+**arXiv ID:** 2607.06764
 </details>
 
 <details>
@@ -143,19 +143,19 @@ While databases remain central to modern computing, agents operate over a broade
 </details>
 
 <details>
-<summary><strong>ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation</strong> - Yunhan Xu, Qifeng Wu, Xunjin Li, Yuanwei Bin, Qingsong Yao, Jianghang Gu, Guan Wang, Weihao Lv, Huiyu Yang, Wenfa Luo, Jiao Xiang, Yuntian Chen, Shiyi Chen - [[pdf]](https://arxiv.org/pdf/2607.05750)</summary>
-
-**Abstract:** Computer-aided design (CAD) for industrial components requires long-horizon procedural modeling, robust feature dependencies, editable parametric geometry, and production-grade B-Rep execution. Existing text-to-CAD methods have made promising progress in generating CAD programs from natural-language descriptions, but they still struggle when user prompts are ambiguous, underspecified, or only describe high-level design intent. They also rarely exploit expert procedural knowledge naturally available in industrial workflows, such as CATIA operation recordings, macro logs, drawing notes, and engineering descriptions. We present ArtisanCAD, a skill-guided industrial CAD agent with expert-grounded knowledge distillation. The core of ArtisanCAD is CAD intermediate representation (CAD-IR), an executable procedural representation that encodes parameters, ordered operations, MCP tool bindings, dependencies, generated entities, and verification rules. CAD-IR plays two key roles: it first serves as the carrier for distilling expert CAD procedures into reusable parameterized skills; then it provides a procedural scaffold that turns vague or intermediate-level prompts into complete executable CAD operations. ArtisanCAD retrieves expert-derived skills, instantiates and revises CAD-IR, executes the resulting procedure through a dedicated CATIA-MCP backend, and uses multi-view visual feedback for iterative refinement, and finally generates production-ready B-Rep models. On the Text2CAD benchmark, CAD-IR improves generation from intermediate prompts by reducing mean Chamfer Distance from $14.83$ to $9.88$, showing its ability to bridge ambiguous textual intent and executable CAD construction. On four complex automotive components, CAD-IR enables expert CATIA recordings to be distilled into reusable skills, allowing ArtisanCAD to generate editable CATIA-native B-Rep models for new variant requests.
-
-**arXiv ID:** 2607.05750
-</details>
-
-<details>
 <summary><strong>AgenticPD: A Stage-Aware Agentic Framework for Physical Design QoR Optimization</strong> - Shuo Ren, Zijin Cheng, Yaohui Han, Libo Shen, Leilei Jin, Wanting Tian, Rongliang Fu, Chao Wang, Bei Yu, Tsung-Yi Ho - [[pdf]](https://arxiv.org/pdf/2607.04758)</summary>
 
 **Abstract:** Physical design quality-of-results~(QoR) optimization is hard and expensive. Choices made at one stage can help or hurt later stages. Each evaluation requires a costly EDA run through the full flow. While existing methods still treat optimization as flat parameter tuning or a LLM-based script generation task, we present AgenticPD, a stage-aware agentic framework for physical design QoR optimization. Instead of re-running the full flow after every trial, AgenticPD is organized around the stage boundaries of the physical design flow, where a Judge Agent navigates the search and stage-specialized agents make local decisions within their own stage using stage-local tools. Additionally, the agent harness in AgenticPD provides structured observations, execution history, and agent context management. As a result, the system can branch from prior intermediate states and reuse checkpoints to continue the optimization procedure, and every candidate is evaluated at the post-route signoff. Across these baselines, AgenticPD achieves strong post-route timing while remaining competitive in power and area.
 
 **arXiv ID:** 2607.04758
+</details>
+
+<details>
+<summary><strong>ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation</strong> - Yunhan Xu, Qifeng Wu, Xunjin Li, Yuanwei Bin, Qingsong Yao, Jianghang Gu, Guan Wang, Weihao Lv, Huiyu Yang, Wenfa Luo, Jiao Xiang, Yuntian Chen, Shiyi Chen - [[pdf]](https://arxiv.org/pdf/2607.05750)</summary>
+
+**Abstract:** Computer-aided design (CAD) for industrial components requires long-horizon procedural modeling, robust feature dependencies, editable parametric geometry, and production-grade B-Rep execution. Existing text-to-CAD methods have made promising progress in generating CAD programs from natural-language descriptions, but they still struggle when user prompts are ambiguous, underspecified, or only describe high-level design intent. They also rarely exploit expert procedural knowledge naturally available in industrial workflows, such as CATIA operation recordings, macro logs, drawing notes, and engineering descriptions. We present ArtisanCAD, a skill-guided industrial CAD agent with expert-grounded knowledge distillation. The core of ArtisanCAD is CAD intermediate representation (CAD-IR), an executable procedural representation that encodes parameters, ordered operations, MCP tool bindings, dependencies, generated entities, and verification rules. CAD-IR plays two key roles: it first serves as the carrier for distilling expert CAD procedures into reusable parameterized skills; then it provides a procedural scaffold that turns vague or intermediate-level prompts into complete executable CAD operations. ArtisanCAD retrieves expert-derived skills, instantiates and revises CAD-IR, executes the resulting procedure through a dedicated CATIA-MCP backend, and uses multi-view visual feedback for iterative refinement, and finally generates production-ready B-Rep models. On the Text2CAD benchmark, CAD-IR improves generation from intermediate prompts by reducing mean Chamfer Distance from $14.83$ to $9.88$, showing its ability to bridge ambiguous textual intent and executable CAD construction. On four complex automotive components, CAD-IR enables expert CATIA recordings to be distilled into reusable skills, allowing ArtisanCAD to generate editable CATIA-native B-Rep models for new variant requests.
+
+**arXiv ID:** 2607.05750
 </details>
 
 <details>
@@ -366,19 +366,19 @@ Our central finding is the fragmentation effect: as more agents coordinate to at
 </details>
 
 <details>
-<summary><strong>CILC: Cryptographically-secure Inter-agent Loop Closure Candidate Detection for Multi-Agent Collaborative SLAM</strong> - Andrew Fishberg, Yixuan Jia, Jonathan P. How - [[pdf]](https://arxiv.org/pdf/2607.06700)</summary>
-
-**Abstract:** Multi-agent Simultaneous Localization and Mapping (SLAM) and collaborative SLAM (CSLAM) require robots to continuously exchange global descriptors (GDs) to detect inter-agent loop closures (ILCs). While encrypted radios protect this traffic from external eavesdroppers, they offer no protection against a compromised swarm member. We show this threat is concrete by demonstrating how a corrupted agent can reconstruct approximations of an honest agent's imagery and trajectory from its public GD broadcasts. To address this, we propose CILC (Cryptographically-secure Inter-agent Loop Closure candidate detection), a first-of-its-kind system leveraging Secure Multi-Party Computation (SMPC) to detect ILC candidates without exchanging GDs in the clear. Rather than securing the entire CSLAM pipeline, we apply SMPC only to ILC candidate detection (i.e., GD similarity comparison), a privacy-sensitive yet computationally lightweight step, yielding an advantageous privacy-to-overhead trade-off. We validate in both simulation and hardware experiments that CILC remains real-time and communication-feasible across multimodal GDs (visual and LiDAR), while mitigating information leakage to a compromised swarm agent.
-
-**arXiv ID:** 2607.06700
-</details>
-
-<details>
 <summary><strong>DICE: Entropy-Regularized Equilibrium Selection for Stable Multi-Agent LLM Coordination</strong> - Yi Xie, Zhanke Zhou, Chentao Cao, Bo Liu, Bo Han - [[pdf]](https://arxiv.org/pdf/2606.08068)</summary>
 
 **Abstract:** Multi-agent large language model (LLM) systems often fail to reliably outperform a single strong model equipped with best-of-N sampling. We argue that a core source of this instability is ill-posed equilibrium selection: current systems specify what information agents share, but not which coordination convention should be selected. We formalize a broad class of such systems as discounted incomplete-information Markov games and show that two common pathologies, oscillation between competing conventions and drift across them, can both induce unstable learning and linear Bayesian regret. To obtain a well-posed target, we introduce the Heterogeneous Quantal Response Equilibrium (HQRE), an entropy-regularized equilibrium concept with agent- and state-dependent temperatures. Under a monotonicity condition, HQRE is unique, admits linearly convergent mirror updates, and yields bounded Bayesian regret; the same condition yields rollout-measurable stability diagnostics. We instantiate this objective in two algorithms: DICE-PC, which coordinates frozen models through prompt-control actions, and DICE-FT, which performs parameter-efficient mirror fine-tuning. Across eleven benchmarks in four domains, DICE improves accuracy-cost trade-offs over strong within-class baselines; on reasoning and planning tasks, DICE-PC improves by 4.3 percentage points on average and DICE-FT by 8.5 points.
 
 **arXiv ID:** 2606.08068
+</details>
+
+<details>
+<summary><strong>CILC: Cryptographically-secure Inter-agent Loop Closure Candidate Detection for Multi-Agent Collaborative SLAM</strong> - Andrew Fishberg, Yixuan Jia, Jonathan P. How - [[pdf]](https://arxiv.org/pdf/2607.06700)</summary>
+
+**Abstract:** Multi-agent Simultaneous Localization and Mapping (SLAM) and collaborative SLAM (CSLAM) require robots to continuously exchange global descriptors (GDs) to detect inter-agent loop closures (ILCs). While encrypted radios protect this traffic from external eavesdroppers, they offer no protection against a compromised swarm member. We show this threat is concrete by demonstrating how a corrupted agent can reconstruct approximations of an honest agent's imagery and trajectory from its public GD broadcasts. To address this, we propose CILC (Cryptographically-secure Inter-agent Loop Closure candidate detection), a first-of-its-kind system leveraging Secure Multi-Party Computation (SMPC) to detect ILC candidates without exchanging GDs in the clear. Rather than securing the entire CSLAM pipeline, we apply SMPC only to ILC candidate detection (i.e., GD similarity comparison), a privacy-sensitive yet computationally lightweight step, yielding an advantageous privacy-to-overhead trade-off. We validate in both simulation and hardware experiments that CILC remains real-time and communication-feasible across multimodal GDs (visual and LiDAR), while mitigating information leakage to a compromised swarm agent.
+
+**arXiv ID:** 2607.06700
 </details>
 
 <details>
