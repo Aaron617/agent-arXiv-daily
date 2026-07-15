@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-07-15 03:28:07
+**Last Updated:** 2026-07-15 04:16:28
 
 **Total Papers:** 85
 
@@ -103,19 +103,19 @@
 </details>
 
 <details>
-<summary><strong>Track, Rank, Crack: Epistemic Working Memory Scales Multi-Hop Reasoning in Language Agents</strong> - Ning Liu - [[pdf]](https://arxiv.org/pdf/2607.12267)</summary>
-
-**Abstract:** Language agents that interleave reasoning and tool use degrade sharply as reasoning chains lengthen, even when each individual step is easy. We trace this to context dilution: an agent's investigative state (what it has confirmed, what it suspects, and what it still needs) lives only implicitly in a growing context window, where early discoveries are buried under later retrievals. We introduce SLEUTH, which makes this state explicit and actionable through a structured epistemic working memory: the agent maintains Confirmed Facts grounded to sources, Active Hypotheses ranked by evidence, and Open Questions that directly drive its next action. Across five multi-hop benchmarks and five established baselines, SLEUTH's advantage grows with difficulty, from +5 points on HotpotQA to +11 on 4-hop chains, surpassing Reflexion without multiple episodes. Analyzing where the remaining gap lies, we identify the evidence sufficiency problem: agents often find the answer but fail to commit, exhausting their budget on needless verification. A lightweight commitment trigger fixes this, but only when the agent already maintains structured state: the identical trigger applied to an unstructured agent yields no improvement, isolating organized epistemic state as the necessary condition for effective commitment. Finally, enforcing protocol adherence on a weaker model recovers up to +19 points on the hardest problems, showing that how an agent organizes its reasoning, not raw model capability, is the active ingredient for scaling multi-hop reasoning.
-
-**arXiv ID:** 2607.12267
-</details>
-
-<details>
 <summary><strong>Agent-Safety Evaluations as Load-Bearing Evidence: A Vendor-Neutral, Cross-Harness Reconstructability Metric</strong> - Oleg Solozobov - [[pdf]](https://arxiv.org/pdf/2607.12469)</summary>
 
 **Abstract:** Many agent-safety evaluation results are not yet load-bearing evidence: identical nominal outcomes (task success, attack success, monitor scores) may sit atop materially different evidence regimes. No vendor-neutral, runnable instrument scores reconstructability as an evaluation-validity metric: whether captured evidence can reconstruct the decision a claim depends on. This paper introduces a property-level reconstructability metric over eight decision-property classes and a cross-harness adapter emitting per-decision Evidence Sufficiency Cards backing a per-run monitor-coverage release check. It specifies a counterfactual-replay intervention protocol, implements its replayability-precondition probe, and defines a claim-evidence overclaim gap. On public and bundled traces, without new model runs, twelve-field sufficiency spans 0.458-0.833 across four inputs sharing a surface reading; replay preconditions are unmet in every scored trace. In a synthetic release-gate pair, the sufficiency gate blocks the raw variant (0.542) and passes the instrumented (0.667). Safety-evaluation claims should travel with their reconstructability vector; a reproducibility package regenerates every reported number.
 
 **arXiv ID:** 2607.12469
+</details>
+
+<details>
+<summary><strong>Track, Rank, Crack: Epistemic Working Memory Scales Multi-Hop Reasoning in Language Agents</strong> - Ning Liu - [[pdf]](https://arxiv.org/pdf/2607.12267)</summary>
+
+**Abstract:** Language agents that interleave reasoning and tool use degrade sharply as reasoning chains lengthen, even when each individual step is easy. We trace this to context dilution: an agent's investigative state (what it has confirmed, what it suspects, and what it still needs) lives only implicitly in a growing context window, where early discoveries are buried under later retrievals. We introduce SLEUTH, which makes this state explicit and actionable through a structured epistemic working memory: the agent maintains Confirmed Facts grounded to sources, Active Hypotheses ranked by evidence, and Open Questions that directly drive its next action. Across five multi-hop benchmarks and five established baselines, SLEUTH's advantage grows with difficulty, from +5 points on HotpotQA to +11 on 4-hop chains, surpassing Reflexion without multiple episodes. Analyzing where the remaining gap lies, we identify the evidence sufficiency problem: agents often find the answer but fail to commit, exhausting their budget on needless verification. A lightweight commitment trigger fixes this, but only when the agent already maintains structured state: the identical trigger applied to an unstructured agent yields no improvement, isolating organized epistemic state as the necessary condition for effective commitment. Finally, enforcing protocol adherence on a weaker model recovers up to +19 points on the hardest problems, showing that how an agent organizes its reasoning, not raw model capability, is the active ingredient for scaling multi-hop reasoning.
+
+**arXiv ID:** 2607.12267
 </details>
 
 <details>
@@ -537,6 +537,14 @@ We evaluate CT-Repair on 854 Java bugs from Defects4J v3.0. In the mixed-model c
 <summary><h2>Reinforcement Learning (24 papers)</h2></summary>
 
 <details>
+<summary><strong>In-Context Reinforcement Learning under Non-Stationarity: A Survey</strong> - A Run, Ziluo Ding - [[pdf]](https://arxiv.org/pdf/2607.11906)</summary>
+
+**Abstract:** The development of decision-pretrained transformers, algorithm distillation, long-context meta-RL, and retrieval-augmented agents has renewed interest in in-context reinforcement learning (ICRL): the ability of a pretrained or fine-tuned decision model to infer latent task rules and improve future behavior from interaction context, without test-time parameter updates. This line of work asks when trial-and-error evidence, rewards, transitions, demonstrations, feedback, or retrieved experience can make learning-like computation happen inside the context window. However, existing surveys of ICRL mainly organize the field around pretraining objectives, architectures, context formats, evaluation protocols, and theoretical mechanisms, while the non-stationary setting remains comparatively underexamined. In changing environments, accumulated context is not merely more evidence about a fixed task: the reward specification, transition kernel, observation channel, action interface, constraint model, or demonstration and memory distribution can fall out of alignment with the current regime. Previously useful context can therefore become stale, misleading, or useful again when an old regime returns. We survey non-stationary ICRL as the problem of adapting through context while deployed policy parameters remain fixed: the policy must infer both the current decision rule and which parts of its accumulated evidence still support that rule. We define non-stationary ICRL, relate it to meta-RL, decision sequence modeling, retrieval-augmented RL, value- and model-aware ICRL, and reward-feedback agents, and organize the literature along three questions: what changes, how the change unfolds, and how observable the change is to the agent.
+
+**arXiv ID:** 2607.11906
+</details>
+
+<details>
 <summary><strong>Calibration-First Reward-Component Auditing for Reinforcement Learning Control in Smart Greenhouses</strong> - Yuhui Bie, Guowei Xu, Yaojun Wang - [[pdf]](https://arxiv.org/pdf/2607.11959)</summary>
 
 **Abstract:** Greenhouse reinforcement learning can test climate-control ideas at a speed and scale that is difficult to achieve with crop experiments alone. For smart-greenhouse control, however, a single simulator return is not enough: a grower or control engineer also needs to know when the policy heats, enriches CO2, vents, manages humidity, deploys screens, or uses this http URL propose a reproducible calibration-first reward audit framework that keeps named greenhouse-control reward components comparable across simulator training, facility-adapted rollouts, logged Autonomous Greenhouse Challenge records, and actuator-rule distillation. In GreenLight-Gym, the framework decomposes the scalar reward into conditional temperature, CO2, humidity and vapor-pressure-deficit, screen, and actuation-proxy terms; adapts GreenLight to the second Autonomous Greenhouse Challenge logged climate traces; and scores the same components on logged greenhouse data.
@@ -550,14 +558,6 @@ We evaluate CT-Repair on 854 Java bugs from Defects4J v3.0. In the mixed-model c
 **Abstract:** Online shopping is increasingly shifting toward a model in which AI agents independently search for products, compare options, evaluate constraints, and carry out parts of the purchasing process for users. Website design must now support both human and agent-mediated interaction. This paper introduces the agent-ready website, a design framework for enhancing the readability, interpretability, verifiability, and actionability of e-commerce platforms for AI agents. Existing web design, SEO, and generative engine optimization (GEO) metrics do not fully assess a website's capacity for agent-mediated interaction. The proposed framework is structured around three dimensions agent interpretability, agent executability, and agent decision reliability supported by features such as machine readability, semantic clarity, agent actionability, and contextual decision-reliability signals. The framework is evaluated through a controlled experiment comparing a human-oriented baseline and an agent-ready version of an identical website prototype, with identical catalogs, pricing, stock, and shopping workflows. The evaluation involved five tasks, three browser-agent models (GPT-4.1, Gemini-2.5 Flash, and Grok-4 Fast), and 300 runs, measuring PASS,PARTIAL,FAIL outcomes, strict and functional success rates, error patterns, step counts, and token consumption. The agent-ready website achieved 134 PASS runs out of 150 versus 74 out of 150 for the baseline (strict success rates of 89.3% vs. 49.3%), with the largest gains in product detail extraction, comparison, and multi-constraint selection. It also reduced PARTIAL outcomes from 43 to 3 and lowered the average step count from 9.31 to 6.49. These results provide preliminary evidence that enhanced structural clarity, action cues, evidence signals, and temporal validity indicators can substantially improve the reliability and efficiency of AI browser agents.
 
 **arXiv ID:** 2607.12056
-</details>
-
-<details>
-<summary><strong>In-Context Reinforcement Learning under Non-Stationarity: A Survey</strong> - A Run, Ziluo Ding - [[pdf]](https://arxiv.org/pdf/2607.11906)</summary>
-
-**Abstract:** The development of decision-pretrained transformers, algorithm distillation, long-context meta-RL, and retrieval-augmented agents has renewed interest in in-context reinforcement learning (ICRL): the ability of a pretrained or fine-tuned decision model to infer latent task rules and improve future behavior from interaction context, without test-time parameter updates. This line of work asks when trial-and-error evidence, rewards, transitions, demonstrations, feedback, or retrieved experience can make learning-like computation happen inside the context window. However, existing surveys of ICRL mainly organize the field around pretraining objectives, architectures, context formats, evaluation protocols, and theoretical mechanisms, while the non-stationary setting remains comparatively underexamined. In changing environments, accumulated context is not merely more evidence about a fixed task: the reward specification, transition kernel, observation channel, action interface, constraint model, or demonstration and memory distribution can fall out of alignment with the current regime. Previously useful context can therefore become stale, misleading, or useful again when an old regime returns. We survey non-stationary ICRL as the problem of adapting through context while deployed policy parameters remain fixed: the policy must infer both the current decision rule and which parts of its accumulated evidence still support that rule. We define non-stationary ICRL, relate it to meta-RL, decision sequence modeling, retrieval-augmented RL, value- and model-aware ICRL, and reward-feedback agents, and organize the literature along three questions: what changes, how the change unfolds, and how observable the change is to the agent.
-
-**arXiv ID:** 2607.11906
 </details>
 
 <details>
