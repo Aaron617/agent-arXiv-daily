@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-07-29 03:33:02
+**Last Updated:** 2026-07-29 04:26:52
 
 **Total Papers:** 94
 
@@ -759,19 +759,19 @@ Among compared methods, only CPR avoids policy collapse over 400M training steps
 </details>
 
 <details>
-<summary><strong>VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening</strong> - Syed Mhamudul Hasan, Anas AlSobeh, Hussein Zangoti, Abdur R. Shahid - [[pdf]](https://arxiv.org/pdf/2607.26042)</summary>
-
-**Abstract:** We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an edge sensing device and sends captured images, together with optional symptom descriptions, to a server-hosted vision-language model for zero-shot disease classification. The system separates agent interaction from workflow orchestration: OpenClaw provides scheduling, tool access, user interaction, and notification services on the edge device, while LangGraph manages the stateful screening workflow, including input validation, image transmission, model invocation, safety checks, conditional routing, failure handling, and structured logging. This design moves beyond static image classification by enabling the system to collect visual evidence, invoke external models, apply deterministic safety rules, and generate diagnostic-support alerts. Results show that image-only VLM prediction remains limited, whereas symptom-guided and multimodal inputs improve zero-shot classification performance. Thus, VetClaw transforms a static prediction model into a coordinated, safety-aware system that can use tools, manage workflows, handle failures, and escalate uncertain cases.
-
-**arXiv ID:** 2607.26042
-</details>
-
-<details>
 <summary><strong>Physics-Aware End-to-End Deep Reinforcement Learning for Quadcopter Control with Actuator Dynamics</strong> - Ya-Chia Shen, Woei-Leong Chan - [[pdf]](https://arxiv.org/pdf/2607.25985)</summary>
 
 **Abstract:** Unmanned aerial vehicles (UAVs), particularly quadcopters, present unique challenges for autonomous control due to their underactuated dynamics: only four available control inputs must govern six degrees of freedom. This paper investigates a physics-aware, end-to-end deep reinforcement learning (DRL) approach that acts directly on low-level body inputs, total thrust and body torques $(T, \tau_x, \tau_y, \tau_z)$, and closes the loop through a high-fidelity Simulink environment. Our simulator integrates a 12-state rigid-body model (MATLAB Level-2 S-Function) with (i) an Action2RPM allocation based on the Moore-Penrose pseudo-inverse of a coefficient matrix derived from thrust and drag terms, and (ii) first-order actuator dynamics for each motor (time constant $T_m = 0.076$ s), including rotor gyroscopic coupling. A shaped reward balances goal-reaching and stability using an exponential position well, attitude penalties, and quadratic velocity costs. Four DRL algorithms, DDPG, TD3, PPO, and SAC, are evaluated in two stages: (S1) thrust-only hover and (S2) hover with pitch torque and a translated goal. Results show that SAC and TD3 achieve superior stability and exploration efficiency, while PPO is less sample-efficient. The study highlights the significance of modeling actuator lags and aerodynamic moments for stable low-level control and provides a reproducible benchmark for quadcopter DRL.
 
 **arXiv ID:** 2607.25985
+</details>
+
+<details>
+<summary><strong>VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening</strong> - Syed Mhamudul Hasan, Anas AlSobeh, Hussein Zangoti, Abdur R. Shahid - [[pdf]](https://arxiv.org/pdf/2607.26042)</summary>
+
+**Abstract:** We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an edge sensing device and sends captured images, together with optional symptom descriptions, to a server-hosted vision-language model for zero-shot disease classification. The system separates agent interaction from workflow orchestration: OpenClaw provides scheduling, tool access, user interaction, and notification services on the edge device, while LangGraph manages the stateful screening workflow, including input validation, image transmission, model invocation, safety checks, conditional routing, failure handling, and structured logging. This design moves beyond static image classification by enabling the system to collect visual evidence, invoke external models, apply deterministic safety rules, and generate diagnostic-support alerts. Results show that image-only VLM prediction remains limited, whereas symptom-guided and multimodal inputs improve zero-shot classification performance. Thus, VetClaw transforms a static prediction model into a coordinated, safety-aware system that can use tools, manage workflows, handle failures, and escalate uncertain cases.
+
+**arXiv ID:** 2607.26042
 </details>
 
 <details>
