@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-07-31 03:47:09
+**Last Updated:** 2026-07-31 04:35:51
 
 **Total Papers:** 90
 
@@ -729,14 +729,6 @@ We evaluate state-of-the-art commercial and open-source coding agents. Although 
 </details>
 
 <details>
-<summary><strong>Noisy Data is Destructive to Reinforcement Learning with Verifiable Rewards</strong> - Yuxuan Zhu, Daniel Kang - [[pdf]](https://arxiv.org/pdf/2603.16140)</summary>
-
-**Abstract:** Reinforcement learning with verifiable rewards (RLVR) has driven recent capability advances of large language models across various domains. Recent studies suggest that improved RLVR algorithms allow models to learn effectively from incorrect annotations, achieving performance comparable to learning from clean data. In this work, we show that these findings are invalid because the claimed 100% noisy training data is "contaminated" with clean data. After rectifying the dataset with a rigorous re-verification pipeline, we demonstrate that noise is destructive to RLVR. We show that existing RLVR algorithm improvements fail to mitigate the impact of noise, achieving similar performance to that of the basic GRPO. Furthermore, we find that the model trained on truly incorrect annotations performs 8-10% worse than the model trained on clean data across mathematical reasoning benchmarks. Finally, we show that these findings hold for real-world noise in Text2SQL tasks, where training on real-world, human annotation errors cause 5-12% lower accuracy than clean data. Our results show that current RLVR methods cannot yet compensate for poor data quality. High-quality data remains essential.
-
-**arXiv ID:** 2603.16140
-</details>
-
-<details>
 <summary><strong>When Does Muon Help Agentic Reinforcement Learning?</strong> - Kai Ruan, Jinghao Lin, Zihe Huang, Ziqi Zhou, Qianshan Wei, Xuan Wang, Hao Sun - [[pdf]](https://arxiv.org/pdf/2607.16169)</summary>
 
 **Abstract:** Muon is competitive with AdamW in large-scale pre-training, but its operating regime in reinforcement-learning post-training remains unclear. We map this regime on ALFWorld, a sparse-reward agentic benchmark, using three group-based objectives and Qwen2.5 models from 0.5B to 3B. Under a shared KL and clipping recipe, matched optimizer comparisons and AdamW learning-rate controls trace the usable step-size range. AdamW responds non-monotonically to its learning rate, whereas fan-in Muon remains stable at a more aggressive effective step. At a learning rate of 3 x 10^-5, it improves late success over an AdamW 10^-6 baseline after correction across rate-metric tests. Its normalized-AUC effect is directionally positive but less uniform; the heuristic-matched lower-rate effect is less consistent, and tuned AdamW nearly matches high-rate Muon on 3B GraphGPO. High-rate Muon applies 3.53 times AdamW's hidden-matrix update RMS, while a full-budget RMS-matched control removes the late-success gain. Together, these results identify a recipe-level operating regime in which fan-in Muon supports a more aggressive stable effective step under shared KL and clipping. The margin is largest when optimization headroom remains and contracts near saturation, after AdamW tuning, or under magnitude matching. The scale-matched control ties this spectral effect to Muon's scaling convention rather than establishing a universal optimizer ranking.
@@ -750,6 +742,14 @@ We evaluate state-of-the-art commercial and open-source coding agents. Although 
 **Abstract:** Recent advances in robotics research have created a strong demand for high-performance simulators. Surgical robotics simulation faces unique challenges due to the need to model diverse objects, such as rigid instruments, soft tissue, and fluids. While many studies simulate sutures or soft tissue independently, only a few have considered the complete soft-tissue suturing scenario, including the contact between sutures and deformable tissue during suture insertion. Building on previous work, this paper presents a novel suturing simulation environment using sutures modelled by position-based dynamics (PBD) and soft bodies modelled by the material point method (MPM) while considering two-way contact with frictional and drag forces. We introduce a contact coupling method between the PBD suture and the MPM soft tissue, enabling visually plausible suture-tissue interactions. The simulator is optimized for GPU execution with parallel scenes using multiple CUDA streams, and we present a Reinforcement Learning (RL) environment for autonomous suturing sub-tasks, including needle insertion, driving, and extraction. Using ML-Agents, RL agents trained in the simulator show stable learning and achieve 80% and 68% success rates in needle insertion and extraction, respectively, under the strictest distance threshold.
 
 **arXiv ID:** 2607.27494
+</details>
+
+<details>
+<summary><strong>Noisy Data is Destructive to Reinforcement Learning with Verifiable Rewards</strong> - Yuxuan Zhu, Daniel Kang - [[pdf]](https://arxiv.org/pdf/2603.16140)</summary>
+
+**Abstract:** Reinforcement learning with verifiable rewards (RLVR) has driven recent capability advances of large language models across various domains. Recent studies suggest that improved RLVR algorithms allow models to learn effectively from incorrect annotations, achieving performance comparable to learning from clean data. In this work, we show that these findings are invalid because the claimed 100% noisy training data is "contaminated" with clean data. After rectifying the dataset with a rigorous re-verification pipeline, we demonstrate that noise is destructive to RLVR. We show that existing RLVR algorithm improvements fail to mitigate the impact of noise, achieving similar performance to that of the basic GRPO. Furthermore, we find that the model trained on truly incorrect annotations performs 8-10% worse than the model trained on clean data across mathematical reasoning benchmarks. Finally, we show that these findings hold for real-world noise in Text2SQL tasks, where training on real-world, human annotation errors cause 5-12% lower accuracy than clean data. Our results show that current RLVR methods cannot yet compensate for poor data quality. High-quality data remains essential.
+
+**arXiv ID:** 2603.16140
 </details>
 
 <details>
