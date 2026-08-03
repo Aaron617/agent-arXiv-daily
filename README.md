@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-03 03:49:43
+**Last Updated:** 2026-08-03 04:43:43
 
 **Total Papers:** 95
 
@@ -533,19 +533,19 @@ Across 17 tokenizer families, differential campaigns cover 1.5x10^10 split check
 </details>
 
 <details>
-<summary><strong>STAGE: STyle-controllable Action GEneration for personalized autonomous driving</strong> - Zihao Liu, Xing Liu, Yizhai Zhang, Panfeng Huang - [[pdf]](https://arxiv.org/pdf/2607.29517)</summary>
-
-**Abstract:** Driving style refers to the behavioral preferences that drivers maintain during driving, shaped by their diverse experiences, habits, and needs, and is typically reflected in varying levels of aggressiveness. If humans choose to use autonomous driving systems, they would expect the driving style of the systems to closely resemble their own habit. However, this is challenging for current industrial autonomous driving systems. To address this, we developed a style controllable action generation method, STAGE, for driving tasks. Its training process is based on imitation learning, incorporating both style value and latent value action modality encoding. Preference learning is then used to identify the user's driving style as a continuous, monotonic style value. And to reduce the cost of human involvement in the preference training process, we also developed a set of rules to compare driving style in data pairs. Then, during inference, the user inputs the style value to control the generated action patterns, dynamically meeting the user's expectations. Using the STAGE method, we verified that the style-controlled action generation results in several typical road scenarios significantly align with human expectations. Furthermore, through comparisons between the STAGE method and various other approaches, we reveal the unique functionalities of STAGE, including its style controllability, style continuity, driving style alignment capability and driving safety. The code for this work is available at: this https URL
-
-**arXiv ID:** 2607.29517
-</details>
-
-<details>
 <summary><strong>MROPE: A Multi-Robot Safe Cooperative Strategy via combined Predictive Safety Filters and Ellipse-based Constraint Compression</strong> - Alice Rosetti, Lorenzo Pichierri, Domenico Cappello, Fabrizio Schiano, Giuseppe Notarstefano - [[pdf]](https://arxiv.org/pdf/2607.29203)</summary>
 
 **Abstract:** Deploying drone swarms to track a dynamic target in cluttered environments presents severe computational and safety challenges. We propose MROPE, a hierarchical strategy that decouples the cooperative monitoring mission from strict local safety requirements. To overcome the computational bottlenecks typical of dense spaces, our approach dynamically aggregates complex obstacle geometries into a single safe bounding ellipse for each drone. Methodologically, this architecture is realized by combining distributed aggregative optimization for high-level swarm coordination, a decentralized consensus scheme for the safe area computation, and local Predictive Safety Filters (PSF) for real-time collision avoidance. Virtual and real-world experiments validate the framework, demonstrating superior real-time efficiency and scalability compared to centralized approaches.
 
 **arXiv ID:** 2607.29203
+</details>
+
+<details>
+<summary><strong>STAGE: STyle-controllable Action GEneration for personalized autonomous driving</strong> - Zihao Liu, Xing Liu, Yizhai Zhang, Panfeng Huang - [[pdf]](https://arxiv.org/pdf/2607.29517)</summary>
+
+**Abstract:** Driving style refers to the behavioral preferences that drivers maintain during driving, shaped by their diverse experiences, habits, and needs, and is typically reflected in varying levels of aggressiveness. If humans choose to use autonomous driving systems, they would expect the driving style of the systems to closely resemble their own habit. However, this is challenging for current industrial autonomous driving systems. To address this, we developed a style controllable action generation method, STAGE, for driving tasks. Its training process is based on imitation learning, incorporating both style value and latent value action modality encoding. Preference learning is then used to identify the user's driving style as a continuous, monotonic style value. And to reduce the cost of human involvement in the preference training process, we also developed a set of rules to compare driving style in data pairs. Then, during inference, the user inputs the style value to control the generated action patterns, dynamically meeting the user's expectations. Using the STAGE method, we verified that the style-controlled action generation results in several typical road scenarios significantly align with human expectations. Furthermore, through comparisons between the STAGE method and various other approaches, we reveal the unique functionalities of STAGE, including its style controllability, style continuity, driving style alignment capability and driving safety. The code for this work is available at: this https URL
+
+**arXiv ID:** 2607.29517
 </details>
 
 <details>
