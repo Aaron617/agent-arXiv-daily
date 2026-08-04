@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-04 03:34:09
+**Last Updated:** 2026-08-04 04:28:09
 
 **Total Papers:** 190
 
@@ -1528,19 +1528,19 @@ backbones. Code is available at this https URL.
 </details>
 
 <details>
-<summary><strong>Expert Knowledge-driven Reinforcement Learning for Autonomous Racing via Trajectory Guidance and Dynamics Constraints</strong> - Bo Leng, Weiqi Zhang, Zhuoren Li, Lu Xiong, Guizhe Jin, Ran Yu, Chen Lv - [[pdf]](https://arxiv.org/pdf/2603.05842)</summary>
-
-**Abstract:** Reinforcement learning has shown significant potential for autonomous racing, but it still faces challenges such as training instability, inefficient exploration, and unsafe action outputs in high-dynamic racing scenarios. This paper proposes a Trajectory guidance and Dynamics constraints Reinforcement Learning (TraD-RL) framework for autonomous racing. The proposed method incorporates expert prior knowledge into policy learning through Minimum Curvature Racing Line (MCRL) guidance, explicit vehicle dynamics constraints, and two-stage curriculum learning. MCRL provides global path and velocity references through observation augmentation and reward shaping, thereby improving exploration efficiency and racing performance. Yaw rate and sideslip angle constraints are introduced to characterize the vehicle dynamic safe operating envelope, and the corresponding stability costs are incorporated into policy optimization through Lagrangian relaxation. Moreover, the two-stage curriculum learning strategy enables a progressive transition from stable trajectory following to high-speed performance exploration. Experiments on two racetracks demonstrate that TraD-RL improves racing performance while maintaining a favorable balance between speed and dynamic stability. Further analyses of ablation, sensitivity, and robustness validate the effectiveness and stability of the proposed framework.
-
-**arXiv ID:** 2603.05842
-</details>
-
-<details>
 <summary><strong>ACDC: Adaptive Curriculum Planning with Dynamic Contrastive Control for Goal-Conditioned Reinforcement Learning in Robotic Manipulation</strong> - Xuerui Wang, Guangyu Ren, Tianhong Dai, Bintao Hu, Shuangyao Huang, Wenzhang Zhang, Hengyan Liu - [[pdf]](https://arxiv.org/pdf/2603.02104)</summary>
 
 **Abstract:** Goal-conditioned reinforcement learning has shown considerable potential in robotic manipulation; however, existing approaches remain limited by their reliance on prioritizing collected experience, resulting in suboptimal performance across diverse tasks. Inspired by human learning behaviors, we propose a more comprehensive learning paradigm, ACDC, which integrates multidimensional Adaptive Curriculum (AC) Planning with Dynamic Contrastive (DC) Control to guide the agent along a well-designed learning trajectory. More specifically, at the planning level, the AC component schedules the learning curriculum by dynamically balancing diversity-driven exploration and quality-driven exploitation based on the agent's success rate and training progress. At the control level, the DC component implements the curriculum plan through norm-constrained contrastive learning, enabling magnitude-guided experience selection aligned with the current curriculum focus. Extensive experiments on challenging robotic manipulation tasks demonstrate that ACDC consistently outperforms the state-of-the-art baselines in both sample efficiency and final task success rate.
 
 **arXiv ID:** 2603.02104
+</details>
+
+<details>
+<summary><strong>Expert Knowledge-driven Reinforcement Learning for Autonomous Racing via Trajectory Guidance and Dynamics Constraints</strong> - Bo Leng, Weiqi Zhang, Zhuoren Li, Lu Xiong, Guizhe Jin, Ran Yu, Chen Lv - [[pdf]](https://arxiv.org/pdf/2603.05842)</summary>
+
+**Abstract:** Reinforcement learning has shown significant potential for autonomous racing, but it still faces challenges such as training instability, inefficient exploration, and unsafe action outputs in high-dynamic racing scenarios. This paper proposes a Trajectory guidance and Dynamics constraints Reinforcement Learning (TraD-RL) framework for autonomous racing. The proposed method incorporates expert prior knowledge into policy learning through Minimum Curvature Racing Line (MCRL) guidance, explicit vehicle dynamics constraints, and two-stage curriculum learning. MCRL provides global path and velocity references through observation augmentation and reward shaping, thereby improving exploration efficiency and racing performance. Yaw rate and sideslip angle constraints are introduced to characterize the vehicle dynamic safe operating envelope, and the corresponding stability costs are incorporated into policy optimization through Lagrangian relaxation. Moreover, the two-stage curriculum learning strategy enables a progressive transition from stable trajectory following to high-speed performance exploration. Experiments on two racetracks demonstrate that TraD-RL improves racing performance while maintaining a favorable balance between speed and dynamic stability. Further analyses of ablation, sensitivity, and robustness validate the effectiveness and stability of the proposed framework.
+
+**arXiv ID:** 2603.05842
 </details>
 
 <details>
