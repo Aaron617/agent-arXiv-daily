@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-05 03:29:00
+**Last Updated:** 2026-08-05 04:26:06
 
 **Total Papers:** 117
 
@@ -190,19 +190,19 @@
 </details>
 
 <details>
-<summary><strong>HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following</strong> - Liudas Panavas, Sebastian Minus, Bradley Monton, Derek Ray, Suhaas Garre, Sushant Mehta, Edwin Chen - [[pdf]](https://arxiv.org/pdf/2607.25398)</summary>
-
-**Abstract:** Language-model agents are increasingly deployed under standing instructions: a system prompt, a policy file, or a skills document is placed in context, and the agent is trusted to let that document govern every action that follows. Existing benchmarks rarely test this deployment pattern directly; they measure whether an agent can complete a task, not whether a long, binding policy document constrains its behavior over an extended tool-use horizon. We present HANDBOOK_md, a benchmark of 65 agentic tasks modeled on how employees follow company handbooks. Each task places an agent in a self-contained company environment (a file workspace with mock email, chat, calendar, issue-tracking, and commerce services exposed over the Model Context Protocol) and instructs it to carry out routine professional work governed by an expert-written standard operating procedure of 20-124 pages. Tasks span five domains (finance, medical billing, insurance, logistics, and HR) and 10 fictional companies. To resist memorization, every task modifies one of 10 base handbooks, altering the specific rules and thresholds on which grading depends, so no two tasks share the same set of policies. Grading is fully deterministic: each task carries a rubric of programmatic criteria (824 in total) that check both that required actions occurred and that prohibited actions did not. Under strict grading, where a trial passes only if every criterion is satisfied, the strongest evaluated model passes 36.2% of trials, and most frontier models remain below 25%. Failures follow consistent patterns: agents let a plausible but unauthorized in-environment request override the standing policy, perform a required check and then act against its result, lose rule details over long horizons, and report compliance they did not achieve. We release the tasks, environments, and evaluation harness.
-
-**arXiv ID:** 2607.25398
-</details>
-
-<details>
 <summary><strong>PersonaTrail: Benchmarking Personalized Web Agents through Browsing Trails</strong> - Seungbin Yang, Chaewoon Ki, Dohyun Lee, Jaegul Choo, ChaeHun Park - [[pdf]](https://arxiv.org/pdf/2607.20482)</summary>
 
 **Abstract:** Recent advances in large language models have enabled web agents to autonomously execute complex tasks. In practice, users frequently provide underspecified instructions, requiring agents to infer the missing context from their raw browsing histories. Existing benchmarks fail to capture this form of personalization, as they either restrict tasks to fully explicit prompts or abstract web interaction history into simplified forms. To bridge this gap, we introduce PersonaTrail, a benchmark for personalized web agents operating in a managed open web environment. By leveraging realistic browsing trajectories as user history, PersonaTrail evaluates an agent's ability to infer user preferences and recall information from past browsing sessions. We further propose Preference-Aware Contextual Memory (PACMem), a framework that decomposes raw browsing histories into two types of structured memory: factual memories that summarize individual sessions and preference memories that distill recurring behavioral patterns. At inference time, the agent retrieves the most relevant entries from these memories to guide personalized navigation. Extensive experiments show that PACMem consistently outperforms existing memory-based baselines on both tasks.
 
 **arXiv ID:** 2607.20482
+</details>
+
+<details>
+<summary><strong>HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following</strong> - Liudas Panavas, Sebastian Minus, Bradley Monton, Derek Ray, Suhaas Garre, Sushant Mehta, Edwin Chen - [[pdf]](https://arxiv.org/pdf/2607.25398)</summary>
+
+**Abstract:** Language-model agents are increasingly deployed under standing instructions: a system prompt, a policy file, or a skills document is placed in context, and the agent is trusted to let that document govern every action that follows. Existing benchmarks rarely test this deployment pattern directly; they measure whether an agent can complete a task, not whether a long, binding policy document constrains its behavior over an extended tool-use horizon. We present HANDBOOK_md, a benchmark of 65 agentic tasks modeled on how employees follow company handbooks. Each task places an agent in a self-contained company environment (a file workspace with mock email, chat, calendar, issue-tracking, and commerce services exposed over the Model Context Protocol) and instructs it to carry out routine professional work governed by an expert-written standard operating procedure of 20-124 pages. Tasks span five domains (finance, medical billing, insurance, logistics, and HR) and 10 fictional companies. To resist memorization, every task modifies one of 10 base handbooks, altering the specific rules and thresholds on which grading depends, so no two tasks share the same set of policies. Grading is fully deterministic: each task carries a rubric of programmatic criteria (824 in total) that check both that required actions occurred and that prohibited actions did not. Under strict grading, where a trial passes only if every criterion is satisfied, the strongest evaluated model passes 36.2% of trials, and most frontier models remain below 25%. Failures follow consistent patterns: agents let a plausible but unauthorized in-environment request override the standing policy, perform a required check and then act against its result, lose rule details over long horizons, and report compliance they did not achieve. We release the tasks, environments, and evaluation harness.
+
+**arXiv ID:** 2607.25398
 </details>
 
 <details>
