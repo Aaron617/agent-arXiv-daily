@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-06 03:32:05
+**Last Updated:** 2026-08-06 04:27:42
 
 **Total Papers:** 102
 
@@ -372,19 +372,19 @@ We study behavioral skill reconstruction (BSR), in which an attacker uses valid 
 </details>
 
 <details>
-<summary><strong>A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents</strong> - Wei-Chieh Huang, Weizhi Zhang, Yueqing Liang, Yuanchen Bei, Yankai Chen, Tao Feng, Xinyu Pan, Zhen Tan, Yu Wang, Tianxin Wei, Shanglin Wu, Ruiyao Xu, Liangwei Yang, Rui Yang, Wooseong Yang, Chin-Yuan Yeh, Hanrong Zhang, Haozhen Zhang, Siqi Zhu, Henry Peng Zou, Wanjia Zhao, Song Wang, Wujiang Xu, Zixuan Ke, Zheng Hui, Dawei Li, Yaozu Wu, Langzhou He, Chen Wang, Xiongxiao Xu, Baixiang Huang, Juntao Tan, Shelby Heinecke, Huan Wang, Caiming Xiong, Ahmed A. Metwally, Jun Yan, Chen-Yu Lee, Hanqing Zeng, Yinglong Xia, Xiaokai Wei, Ali Payani, Yu Wang, Haitong Ma, Wenya Wang, Chenguang Wang, Yu Zhang, Xin Eric Wang, Yongfeng Zhang, Jiaxuan You, Hanghang Tong, Xiao Luo, Xue Liu, Yizhou Sun, Wei Wang, Julian McAuley, James Zou, Jiawei Han, Philip S. Yu, Kai Shu - [[pdf]](https://arxiv.org/pdf/2602.06052)</summary>
-
-**Abstract:** Research in artificial intelligence is shifting from model innovations and benchmark scores towards problem definition and rigorous real-world evaluation. As the field enters the "second half," the central challenge becomes real utility in long-horizon, dynamic, and user-dependent settings such as agentic coding, deep research, and computer use, where LLM-based agents face context explosion beyond fixed context windows and must continuously accumulate, manage, and selectively reuse information across extended interactions. Memory, with hundreds of papers released in 2025, therefore emerges as the critical solution to fill this utility gap. Beyond passive storage, memory is increasingly the substrate through which agents self-evolve: short-term memory gates which experiences are perceived and abstracted during execution, while long-term memory consolidates them into reusable knowledge and skills, forming the loop through which agents improve from their own experience. In this survey, we provide a unified view of foundation agent memory along three dimensions: memory substrate (internal parametric state and external retrieval-augmented stores), cognitive mechanism (sensory, working, episodic, semantic, and procedural), and memory subject (user-centric personalization and agent-centric experience). We then analyze how memory is operated under single- and multi-agent topologies and highlight learning policies over memory operations, showing how memory management itself is becoming a trainable capability spanning reinforcement-learned context curation, experience consolidation at decision time, and the emerging ecosystem of portable, shareable agent skills. Finally, we review evaluation benchmarks and metrics for memory utility, and outline open challenges and future directions.
-
-**arXiv ID:** 2602.06052
-</details>
-
-<details>
 <summary><strong>FinRpt: Dataset, Evaluation System and LLM-based Multi-agent Framework for Equity Research Report Generation</strong> - Song Jin, Shuqi Li, Shukun Zhang, Rui Yan - [[pdf]](https://arxiv.org/pdf/2511.07322)</summary>
 
 **Abstract:** While LLMs have shown great success in financial tasks like stock prediction and question answering, their application in fully automating Equity Research Report generation remains uncharted territory. In this paper, we formulate the Equity Research Report (ERR) Generation task for the first time. To address the data scarcity and the evaluation metrics absence, we present an open-source evaluation benchmark for ERR generation - FinRpt. We frame a Dataset Construction Pipeline that integrates 7 financial data types and produces a high-quality ERR dataset automatically, which could be used for model training and evaluation. We also introduce a comprehensive evaluation system including 11 metrics to assess the generated ERRs. Moreover, we propose a multi-agent framework specifically tailored to address this task, named FinRpt-Gen, and train several LLM-based agents on the proposed datasets using Supervised Fine-Tuning and Reinforcement Learning. Experimental results indicate the data quality and metrics effectiveness of the benchmark FinRpt and the strong performance of FinRpt-Gen, showcasing their potential to drive innovation in the ERR generation field. All code and datasets are publicly available.
 
 **arXiv ID:** 2511.07322
+</details>
+
+<details>
+<summary><strong>A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents</strong> - Wei-Chieh Huang, Weizhi Zhang, Yueqing Liang, Yuanchen Bei, Yankai Chen, Tao Feng, Xinyu Pan, Zhen Tan, Yu Wang, Tianxin Wei, Shanglin Wu, Ruiyao Xu, Liangwei Yang, Rui Yang, Wooseong Yang, Chin-Yuan Yeh, Hanrong Zhang, Haozhen Zhang, Siqi Zhu, Henry Peng Zou, Wanjia Zhao, Song Wang, Wujiang Xu, Zixuan Ke, Zheng Hui, Dawei Li, Yaozu Wu, Langzhou He, Chen Wang, Xiongxiao Xu, Baixiang Huang, Juntao Tan, Shelby Heinecke, Huan Wang, Caiming Xiong, Ahmed A. Metwally, Jun Yan, Chen-Yu Lee, Hanqing Zeng, Yinglong Xia, Xiaokai Wei, Ali Payani, Yu Wang, Haitong Ma, Wenya Wang, Chenguang Wang, Yu Zhang, Xin Eric Wang, Yongfeng Zhang, Jiaxuan You, Hanghang Tong, Xiao Luo, Xue Liu, Yizhou Sun, Wei Wang, Julian McAuley, James Zou, Jiawei Han, Philip S. Yu, Kai Shu - [[pdf]](https://arxiv.org/pdf/2602.06052)</summary>
+
+**Abstract:** Research in artificial intelligence is shifting from model innovations and benchmark scores towards problem definition and rigorous real-world evaluation. As the field enters the "second half," the central challenge becomes real utility in long-horizon, dynamic, and user-dependent settings such as agentic coding, deep research, and computer use, where LLM-based agents face context explosion beyond fixed context windows and must continuously accumulate, manage, and selectively reuse information across extended interactions. Memory, with hundreds of papers released in 2025, therefore emerges as the critical solution to fill this utility gap. Beyond passive storage, memory is increasingly the substrate through which agents self-evolve: short-term memory gates which experiences are perceived and abstracted during execution, while long-term memory consolidates them into reusable knowledge and skills, forming the loop through which agents improve from their own experience. In this survey, we provide a unified view of foundation agent memory along three dimensions: memory substrate (internal parametric state and external retrieval-augmented stores), cognitive mechanism (sensory, working, episodic, semantic, and procedural), and memory subject (user-centric personalization and agent-centric experience). We then analyze how memory is operated under single- and multi-agent topologies and highlight learning policies over memory operations, showing how memory management itself is becoming a trainable capability spanning reinforcement-learned context curation, experience consolidation at decision time, and the emerging ecosystem of portable, shareable agent skills. Finally, we review evaluation benchmarks and metrics for memory utility, and outline open challenges and future directions.
+
+**arXiv ID:** 2602.06052
 </details>
 
 <details>
@@ -428,19 +428,19 @@ We study behavioral skill reconstruction (BSR), in which an attacker uses valid 
 </details>
 
 <details>
-<summary><strong>Learning Sexism Detection Using Multi-Agent Perspectivist Preference Optimization</strong> - Hadi Mohammadi, Tina Shahedi, Robert A. Bagheri, Mehdi Dastani, Masoume M. Raeissi - [[pdf]](https://arxiv.org/pdf/2608.04056)</summary>
-
-**Abstract:** When people label text for sexism, they often disagree, and not because some of them are wrong: they genuinely perceive sexism differently. Most NLP systems discard this disagreement by collapsing it into a majority vote. We propose the Multi-Agent Perspectivist Preference Optimization (MAP-PO) framework to keep these different perspectives. On the EXIST 2024 dataset of labeled English and Spanish tweets, we first cluster annotators by their labeling behavior rather than their demographic attributes. We then fine-tune one Large Language Model agent per cluster to reproduce that cluster's annotation behavior, and coordinate the agents with preference optimization that combines individual and team-level rewards. We evaluate MAP-PO in four settings defined by two languages and two backbone language models, asking whether each agent reproduces the annotations of its own cluster and whether the agents together reproduce the majority label. Two findings hold in all four settings. First, without fine-tuning the agents behave almost identically, so cluster-specific training is necessary. Second, we show that training each agent only on the labels of its own cluster pushes the agents far beyond the clusters they should represent, while adding a shared team-level training signal consistently keeps each agent calibrated to its cluster.
-
-**arXiv ID:** 2608.04056
-</details>
-
-<details>
 <summary><strong>Cross-Layer Semantic Flow Reconstruction for Attack Detection in Agentic Systems</strong> - Qizhi Cai, Yangyang Wei, Zhipeng Chen, Shouling Ji, Zhenyuan Li - [[pdf]](https://arxiv.org/pdf/2603.04469)</summary>
 
 **Abstract:** Agentic systems increasingly orchestrate complex, tool-using workflows within agentic execution environments, where high-level goals and tool invocations at the application layer materialize as process, file, and network activities at the operating-system layer. This cross-layer execution creates security risks that conventional input guardrails cannot capture, because malicious intent may become observable only through downstream execution effects. In multi-agent deployments, inter-agent communication and delegation introduce additional propagation paths. To address this gap, we propose AScope, an execution-aware framework that correlates application-level agent semantics with kernel-level audit events and reconstructs them as cross-layer semantic flows. AScope connects fragmented operations into causal behavioral trajectories and uses a supervisor LLM to identify data flow violations, control flow deviations, and intent inconsistencies. We evaluate AScope on published AgentDojo traces with application-layer evidence and on ten multi-agent scenarios with cross-layer telemetry. The results demonstrate strong detection sensitivity across both evidence settings and achieve node- and path-level F1-scores of 85.3% and 66.7% on the cross-layer dataset.
 
 **arXiv ID:** 2603.04469
+</details>
+
+<details>
+<summary><strong>Learning Sexism Detection Using Multi-Agent Perspectivist Preference Optimization</strong> - Hadi Mohammadi, Tina Shahedi, Robert A. Bagheri, Mehdi Dastani, Masoume M. Raeissi - [[pdf]](https://arxiv.org/pdf/2608.04056)</summary>
+
+**Abstract:** When people label text for sexism, they often disagree, and not because some of them are wrong: they genuinely perceive sexism differently. Most NLP systems discard this disagreement by collapsing it into a majority vote. We propose the Multi-Agent Perspectivist Preference Optimization (MAP-PO) framework to keep these different perspectives. On the EXIST 2024 dataset of labeled English and Spanish tweets, we first cluster annotators by their labeling behavior rather than their demographic attributes. We then fine-tune one Large Language Model agent per cluster to reproduce that cluster's annotation behavior, and coordinate the agents with preference optimization that combines individual and team-level rewards. We evaluate MAP-PO in four settings defined by two languages and two backbone language models, asking whether each agent reproduces the annotations of its own cluster and whether the agents together reproduce the majority label. Two findings hold in all four settings. First, without fine-tuning the agents behave almost identically, so cluster-specific training is necessary. Second, we show that training each agent only on the labels of its own cluster pushes the agents far beyond the clusters they should represent, while adding a shared team-level training signal consistently keeps each agent calibrated to its cluster.
+
+**arXiv ID:** 2608.04056
 </details>
 
 <details>
