@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-11 02:23:44
+**Last Updated:** 2026-08-11 03:09:51
 
-**Total Papers:** 77
+**Total Papers:** 85
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (14 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (15 papers)</h2></summary>
 
 <details>
 <summary><strong>Shape Your Feed: An LLM-based Agentic System for Conversational Recommendation</strong> - Ziyun Xu, Bosen Ding, Yue Zhang, Ji Qi, Qingyuan Song, Jizhou Huang, Liwei Wang, Jefferey Santelli, Yue Weng, Qichao Que, Zhenheng Yang, Junfeng Pan, Linhong Zhu - [[pdf]](https://arxiv.org/pdf/2608.06632)</summary>
@@ -119,19 +119,27 @@
 </details>
 
 <details>
-<summary><strong>From Plan to Action: How Well Do Agents Follow the Plan?</strong> - Shuyang Liu, Saman Dehghan, Jatin Ganhotra, Martin Hirzel, Reyhaneh Jabbarvand - [[pdf]](https://arxiv.org/pdf/2604.12147)</summary>
-
-**Abstract:** Agents are commonly instructed to follow a task-specific plan for guidance. However, it is unknown to what extent agents actually follow instructed plans. Without such an analysis, determining the extent agents comply with a given plan, it is impossible to assess whether a solution was reached through correct strategic reasoning or through other means, e.g., data contamination or overfitting to a benchmark. This paper presents the first extensive, systematic analysis of plan compliance in programming agents, examining 21,120 trajectories from SWE-agent across four LLMs on SWE-bench Verified and SWE-bench Pro under eight plan variations. Without an explicit plan, agents fall back on internalized workflows during training, which are often incomplete, overfit, or inconsistently applied. Providing the standard plan improves issue resolution, and we observe that periodic plan reminders can mitigate plan violations and improve task success. A subpar plan hurts performance even more than no plan at all. Surprisingly, inserting additional task-relevant phases in the early stage can degrade performance, particularly when these phases do not align with the model's internal problem-solving strategy. These findings call for fine-tuning paradigms that teach models to follow instructed plans, rather than encoding task-specific plans in them, so that they reason and act adaptively, rather than memorizing workflows.
-
-**arXiv ID:** 2604.12147
-</details>
-
-<details>
 <summary><strong>OpenForgeRL: Train Harness-native Agents in Any Environment</strong> - Xiao Yu, Baolin Peng, Ruize Xu, Hao Zou, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao - [[pdf]](https://arxiv.org/pdf/2607.21557)</summary>
 
 **Abstract:** Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForgeRL, an open-source framework for training harness-based agents end-to-end in diverse environments. OpenForgeRL achieves this with a lightweight proxy that serves the harness's model calls while recording them as training data for a standard RL codebase (e.g., veRL), and a Kubernetes orchestrator that runs each rollout in its own remote container, together enabling training on any harness in any environment at scale. By decoupling training and inference, OpenForgeRL allows researchers to easily train, study, and improve agents directly in the real harnesses and environments they are deployed with. We validate our framework across diverse, complex harnesses and environments, spanning tool/claw-based agents and multimodal GUI browser- and computer-use agents. Using only hundreds to a few thousand tasks, OpenForgeClaw reaches 31.7 pass^3 and 55.9 pass@3 on ClawEval and 33.7 on QwenClawBench. OpenForgeGUI reaches 37.7 on OSWorld-Verified, 63.0 on Online-Mind2Web, and 72.3 on WebVoyager. Both outperform open baselines of similar size on nearly all benchmarks, and in the GUI setting match or surpass models several times larger. Beyond benchmarks, we analyze how harness choice (e.g., ZeroClaw, OpenClaw, Codex) and RL shape agent behavior. We find that some harnesses are substantially harder to learn than others, and that RL improves agentic reliability, such as self-verification, tool coverage, and completing multi-step plans, though critical abilities such as error recovery remain weak.
 
 **arXiv ID:** 2607.21557
+</details>
+
+<details>
+<summary><strong>Can AI agents conduct open-ended AI research? Early evidence from two case studies</strong> - Peter Kirgis, Sayash Kapoor, Andrew Schwartz, Stephan Rabanser, David Africa, Konstantinos Voudouris, Viet Nguyen, Toby Pilditch, Magda Dubois, Harry Coppock, Cozmin Ududec, Nitya Nadgir, Matilda Orona, Tilman Bayer, Derrick Chan-Sew, Yue Ling, Abhishek Shetty, Helen Toner, Gillian Hadfield, Seth Lazar, Steve Newman, Shoshannah Tekofsky, Rishi Bommasani, Arvind Narayanan - [[pdf]](https://arxiv.org/pdf/2607.27191)</summary>
+
+**Abstract:** Forecasts of explosive AI progress hinge on AI agents automating AI research. But evidence on whether agents can carry out open-ended AI research is thin. Current evaluations either test agents on narrow, verifiable tasks, which excludes open-ended research, or submit AI-generated papers to blind peer review, which is overstretched, stochastic, and suffers from poor review quality. We introduce a third way to measure progress towards AI R\&D automation. An agent takes on the central, open-ended research question of a high-quality unpublished paper, and the paper's original authors grade its output. We call these shadow evaluations. We ran shadow evaluations on two unpublished NeurIPS 2026 submissions, giving frontier agents six days and thousands of dollars of compute. The agents completed all of the engineering without human help, yet could not make substantial progress towards answering the research questions. As a result, both papers were unambiguously rejected by the authors. We identify five recurring failure modes: poor judgment about the bar for publishable research, uncreative responses to shortcomings in the research design, ineffective backtracking from dead ends, poor resource awareness, and instruction drift. A robustness check with a second model and scaffold reproduced these failures. We release the expert reviews, survey responses, agent repositories, and logs. Our results provide early evidence that today's agents can do the engineering of AI research, but struggle with critical parts of the research lifecycle.
+
+**arXiv ID:** 2607.27191
+</details>
+
+<details>
+<summary><strong>From Plan to Action: How Well Do Agents Follow the Plan?</strong> - Shuyang Liu, Saman Dehghan, Jatin Ganhotra, Martin Hirzel, Reyhaneh Jabbarvand - [[pdf]](https://arxiv.org/pdf/2604.12147)</summary>
+
+**Abstract:** Agents are commonly instructed to follow a task-specific plan for guidance. However, it is unknown to what extent agents actually follow instructed plans. Without such an analysis, determining the extent agents comply with a given plan, it is impossible to assess whether a solution was reached through correct strategic reasoning or through other means, e.g., data contamination or overfitting to a benchmark. This paper presents the first extensive, systematic analysis of plan compliance in programming agents, examining 21,120 trajectories from SWE-agent across four LLMs on SWE-bench Verified and SWE-bench Pro under eight plan variations. Without an explicit plan, agents fall back on internalized workflows during training, which are often incomplete, overfit, or inconsistently applied. Providing the standard plan improves issue resolution, and we observe that periodic plan reminders can mitigate plan violations and improve task success. A subpar plan hurts performance even more than no plan at all. Surprisingly, inserting additional task-relevant phases in the early stage can degrade performance, particularly when these phases do not align with the model's internal problem-solving strategy. These findings call for fine-tuning paradigms that teach models to follow instructed plans, rather than encoding task-specific plans in them, so that they reason and act adaptively, rather than memorizing workflows.
+
+**arXiv ID:** 2604.12147
 </details>
 
 <details>
@@ -153,7 +161,7 @@
 </details>
 
 <details open>
-<summary><h2>LLM Agents (11 papers)</h2></summary>
+<summary><h2>LLM Agents (13 papers)</h2></summary>
 
 <details>
 <summary><strong>Gated-BEPO: Confidence-Gated Bellman Credit Assignment for Large Language Model Agents</strong> - Hongxi Yan, Ziyue Huang, Shichao Fan, Qingjie Liu - [[pdf]](https://arxiv.org/pdf/2608.06861)</summary>
@@ -222,11 +230,19 @@ Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verificatio
 </details>
 
 <details>
-<summary><strong>The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</strong> - Mingguang Chen, Licheng Wang, Bo Qu - [[pdf]](https://arxiv.org/pdf/2608.06663)</summary>
+<summary><strong>"LLM Agent Performance" Is Not a Single Evaluation Target</strong> - Pengyu Zhu, Li Sun, Philip S. Yu, Sen Su - [[pdf]](https://arxiv.org/pdf/2602.03238)</summary>
 
-**Abstract:** Frontier language models solve reasoning problems in a single forward pass that would have been research contributions years ago, yet fail at multi-hour tasks: losing track of earlier decisions, declaring half-finished work done, or drifting from goals. We call this the horizon gap and survey 1,547 arXiv papers (2024-2026) collected via systematic seed harvest with a disclosed 26.8% bleed filter, extended by targeted supplementation. We disambiguate three routinely conflated properties: long-horizon (task property: required steps), long-context (model property: token capacity), and long-term memory (system property: persistence across steps/sessions). We organize the corpus into six categories tracking a long-horizon task's lifecycle -- planning, memory, execution, training, evaluation, and foundations/safety -- crossed with an axis capturing where horizons are carried (within-context, within-task-beyond-context, or cross-task-persistent). Across all categories, we find the same pattern: outcome-only signals grow uninformative as horizons lengthen, and the field's response -- whether process reward models, credit assignment, or trajectory-level diagnostics -- manufactures denser step-level signals. We treat critical and diagnostic literature as first-class threads throughout, arguing that segregating critique from method would routinely split single papers across chapters. We close by naming open measurement problems: decomposing model versus harness capability, managing correlated bias in process-level signals used for both training and evaluation, and whether long-horizon reliability admits general predictive theory.
+**Abstract:** LLM agent benchmark scores are shaped not only by the model but also by the agent harness, environment, evaluator, and inference budget. Unified execution controls these non-model factors by evaluating candidate models under the same configuration, making observed differences more attributable to the models themselves. However, model comparison is only one use of agent benchmarks. Other evaluations compare complete agent systems or test whether a fixed model or system remains stable across predeclared changes in its operating conditions. These results can all be reported under the common label of "LLM agent performance." Our position is that "LLM agent performance" does not denote a single evaluation target. Model comparisons under a reference stack and comparisons of complete agent systems answer different questions, while robustness asks whether either conclusion persists across predeclared conditions. The claim supported by a score therefore depends on the declared candidate boundary and condition policy. We derive implications for leaderboards, result reporting, and benchmark versioning, showing how distinguishing these classes preserves fair comparison while accommodating system innovation and robustness analysis.
 
-**arXiv ID:** 2608.06663
+**arXiv ID:** 2602.03238
+</details>
+
+<details>
+<summary><strong>ForesightSafety-SAGE:A Fully Automated Scenario Generation and Safety Evaluation Framework for LLM Agents</strong> - Lu Jia, Haibo Tong, Feifei Zhao, Jindong Li, Dongqi Liang, Ping Wu, Qian Zhang, Yi Zeng - [[pdf]](https://arxiv.org/pdf/2606.08531)</summary>
+
+**Abstract:** Large language models (LLMs) are increasingly evolving from simple text-based interaction systems into LLM agents that can maintain memory, use tools, access external environments, and execute tasks. As their capabilities and autonomy expand, the safety risks they face also become more diverse. Existing evaluations often rely on manually written scenarios, static prompts, or final-output judgments, making it difficult to capture the diverse risks that agents may face during task execution. We introduce ForesightSafety-SAGE, a fully automated scenario generation and safety evaluation framework for LLM agents. Based on five risk dimensions,we instantiae abstract and diverse safety risks in real-world task execution into 1,072 measurable evaluation scenarios. Using the automated evaluation pipeline, 12 LLM agents are evaluated under two authority contexts. The results show that current agents still face substantial behavioral safety risks during task execution, with an average ASR of 47.1% and several models exceeding 70%. These findings demonstrate the importance of executable, process-level evaluation for understanding and improving LLM agent safety.
+
+**arXiv ID:** 2606.08531
 </details>
 
 <details>
@@ -235,6 +251,14 @@ Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verificatio
 **Abstract:** Socioeconomic prediction aims to leverage various urban data to predict the socioeconomic indicators of regions such as population and commercial activity level, which plays an important role in understanding urban regions and supporting decision-making. Existing studies leverage knowledge graphs (KG) to model heterogeneous urban data, and further apply graph representation learning methods for socioeconomic prediction. However, these approaches heavily rely on heuristic ideas and expertise to extract task-relevant knowledge from diverse data, which may not be optimal for specific tasks. Additionally, they tend to overlook the inherent relationships between different indicators, limiting the prediction accuracy. Motivated by the remarkable abilities of large language models (LLMs), in this work, we propose a synergistic framework of LLM agents and KG, which integrates the reasoning and representation learning on KG with LLM agents. We first construct an urban knowledge graph (UrbanKG) to model multi-sourced urban data and finetune an embedding language model to generate embeddings for KG entities with semantic information. Then we leverage the reasoning power of LLM to identify relevant meta-paths in the UrbanKG for each type of socioeconomic prediction task, and design a semantic-guided attention module for knowledge fusion with meta-paths. Moreover, we introduce a cross-task communication mechanism to further enhance performance by enabling knowledge sharing across tasks at both LLM agent and KG levels. On the one hand, the LLM agents for different tasks collaborate to generate more diverse and comprehensive meta-paths. On the other hand, the embeddings from different tasks are adaptively merged. Experiments on two datasets demonstrate the effectiveness of the synergistic design between LLM and KG, providing insights for information sharing across socioeconomic prediction tasks.
 
 **arXiv ID:** 2411.00028
+</details>
+
+<details>
+<summary><strong>The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</strong> - Mingguang Chen, Licheng Wang, Bo Qu - [[pdf]](https://arxiv.org/pdf/2608.06663)</summary>
+
+**Abstract:** Frontier language models solve reasoning problems in a single forward pass that would have been research contributions years ago, yet fail at multi-hour tasks: losing track of earlier decisions, declaring half-finished work done, or drifting from goals. We call this the horizon gap and survey 1,547 arXiv papers (2024-2026) collected via systematic seed harvest with a disclosed 26.8% bleed filter, extended by targeted supplementation. We disambiguate three routinely conflated properties: long-horizon (task property: required steps), long-context (model property: token capacity), and long-term memory (system property: persistence across steps/sessions). We organize the corpus into six categories tracking a long-horizon task's lifecycle -- planning, memory, execution, training, evaluation, and foundations/safety -- crossed with an axis capturing where horizons are carried (within-context, within-task-beyond-context, or cross-task-persistent). Across all categories, we find the same pattern: outcome-only signals grow uninformative as horizons lengthen, and the field's response -- whether process reward models, credit assignment, or trajectory-level diagnostics -- manufactures denser step-level signals. We treat critical and diagnostic literature as first-class threads throughout, arguing that segregating critique from method would routinely split single papers across chapters. We close by naming open measurement problems: decomposing model versus harness capability, managing correlated bias in process-level signals used for both training and evaluation, and whether long-horizon reliability admits general predictive theory.
+
+**arXiv ID:** 2608.06663
 </details>
 
 <details>
@@ -248,7 +272,7 @@ Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verificatio
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (10 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (11 papers)</h2></summary>
 
 <details>
 <summary><strong>A Multi-Agent Framework for Automated Coarse-Grained Molecular Dynamics of Polymers</strong> - Joohee Choi, Junhyeong Lee, Seunghwa Ryu - [[pdf]](https://arxiv.org/pdf/2608.06694)</summary>
@@ -299,6 +323,14 @@ Proof generation adds 2260.6 +/- 218.4 ms per approved action, while verificatio
 </details>
 
 <details>
+<summary><strong>AutoMOOSE: An Agentic AI for Autonomous Phase-Field Simulation</strong> - Sukriti Manna, Henry Chan, Subramanian K.R.S. Sankaranarayanan - [[pdf]](https://arxiv.org/pdf/2603.20986)</summary>
+
+**Abstract:** Phase-field modeling links thermodynamics and kinetics to microstructural evolution, but multiphysics frameworks such as MOOSE require expertise to construct inputs, manage campaigns, diagnose failures, and validate results. We introduce AutoMOOSE, an open-source multi-agent framework that orchestrates the simulation lifecycle from a single natural-language prompt. Six specialized agents--Architect, Input Writer, Runner, Reviewer, Visualization, and a physics-grounded Skeptic--generate, execute, analyze, and adversarially test simulations against conservation laws, asymptotic limits, and scaling relations. We validate AutoMOOSE in two domains: non-conserved copper grain growth governed by Allen-Cahn dynamics and conserved Fe-Cr spinodal decomposition governed by Cahn-Hilliard dynamics. On a prospectively specified 25-task grain-growth benchmark spanning temperature, grain count, resolution, and model formulation, AutoMOOSE generates valid inputs for all 25 tasks, completes 19 simulations with measurable coarsening, and delivers 15 results that satisfy Burke-Turnbull kinetics ($R^2 \geq 0.90$) and survive Skeptic falsification. The failures trace to two identifiable generator defects. An ensemble of 1000 simulations recovers the prescribed activation energy to within 1% after finite-size extrapolation ($Q_\infty = 0.228$ eV versus $0.230$ eV). In the conserved domain, an agent-generated CALPHAD-based Fe-Cr simulation limits relative mass drift to $6.3 \times 10^{-6}$, dissipates free energy to a stable plateau, and evolves toward the equilibrium tie-line. Controlled ablations show that the full pipeline converts stochastic raw generation--3-7 successful tasks out of 8 across repeated trials--into consistent success on all 8 tasks. AutoMOOSE therefore provides a practical route from natural-language specification to reproducible, physics-validated phase-field simulation campaigns.
+
+**arXiv ID:** 2603.20986
+</details>
+
+<details>
 <summary><strong>Why Study Emergent Behavior When You Can Regulate It? Aligning Multi-Agent Systems with Reward Prediction</strong> - Assaf Caftory, Almog Zemach, Moshe Butman, Doron Friedman - [[pdf]](https://arxiv.org/pdf/2608.07280)</summary>
 
 **Abstract:** Multi-agent simulations are widely used to study complex social and ecological systems, where rich and often unexpected emergent behaviors arise from local interactions. A large body of prior work has focused on analyzing such emergent dynamics across domains. In this paper, we move beyond analyzing emergent behavior and introduce a learning-based mechanism for actively shaping it via social reward modeling. We introduce Multi-Agent Reward Prediction (MARP), a simple framework that extends preference-based reward modeling to multi-agent reinforcement learning. While the framework is designed to be applicable across multi-agent settings, the present empirical validation is limited to a single environment, and we therefore present MARP as a proof of concept within the studied domain. Rather than relying on handcrafted rewards, MARP learns a shared reward model from episode-level evaluations of collective outcomes, enabling decentralized agents to align their behavior with global social objectives.
@@ -334,7 +366,7 @@ We study MARP in the Harvest Game, a canonical sequential social dilemma modelin
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (13 papers)</h2></summary>
+<summary><h2>Other Agent Research (14 papers)</h2></summary>
 
 <details>
 <summary><strong>KNOWPLAN: Knowledge-Driven AI Agents for Smart Degree Pathway Planning</strong> - Shuheng Cao, Weijia Zhang, Jiaqi Wu, Xiyun Hu, Yat Yang, Juqy Chen, Zhaoxiang Feng - [[pdf]](https://arxiv.org/pdf/2608.06530)</summary>
@@ -434,6 +466,14 @@ We present CyberForge, a framework that synthesizes executable, repository-level
 </details>
 
 <details>
+<summary><strong>Trustworthy Agent Network: Trust in Agent Networks Must Be Baked In, Not Bolted On</strong> - Yixiang Yao, Yuhang Yao, Xinyi Fan, Jiechao Gao, Jie Wang, Minjia Zhang, Srivatsan Ravi, Carlee Joe-Wong - [[pdf]](https://arxiv.org/pdf/2605.19035)</summary>
+
+**Abstract:** The rapid advancement of Large Language Models has given rise to autonomous LLM-based agents capable of complex reasoning and execution. As these agents transition from isolated operation to collaborative ecosystems, we witness the emergence of the Agent-to-Agent (A2A) network, a paradigm where heterogeneous agents autonomously coordinate to solve multi-step tasks. While these networks may offer better task performance compared to simply using one agent to complete the entire task, they introduce systemic vulnerabilities, such as adversarial composition, semantic misalignment, and cascading operational failures, that existing agent alignment techniques cannot address. In this vision paper, we argue that the trustworthiness of A2A networks cannot be fully guaranteed via retrofitting on existing protocols that are largely designed for individual agents. Rather, it must be architected from the very beginning of the A2A coordination framework. We present a comprehensive conceptual framework that situates trust in A2A systems through four design pillars.
+
+**arXiv ID:** 2605.19035
+</details>
+
+<details>
 <summary><strong>TokTier: Exact Stateful CPU+GPU Tokenization for Agentic LLM Serving</strong> - Zhenyu Zhang, Zhichao Cao - [[pdf]](https://arxiv.org/pdf/2607.29678)</summary>
 
 **Abstract:** LLM serving caches prompt KV state, yet most front ends still re-tokenize the full request on every call. Coding agents pay most: sessions repeatedly submit a long transcript after a small append, which can shift token boundaries near the end of the prior sequence. Across 153,951 calls the median append is ~1.4K characters; only 1.0-3.6% of calls start or rebuild a session, yet those carrymulti-million-character contexts. Fleet prompt-cache hit rate is 94.1%, and as it approaches 0.99, tokenization grows from 10% to 64% of time to first token (TTFT) in component measurements.
@@ -459,7 +499,7 @@ Across 17 production tokenizer families, differential campaigns cover 1.5x10^10 
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (26 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (29 papers)</h2></summary>
 
 <details>
 <summary><strong>ADIAS: Automated Design of Interactive Agentic Systems</strong> - Lekang Jiang, Bohan Tang, Stephan Goetz, Yiwen Guo - [[pdf]](https://arxiv.org/pdf/2608.06410)</summary>
@@ -582,11 +622,35 @@ Across 17 production tokenizer families, differential campaigns cover 1.5x10^10 
 </details>
 
 <details>
-<summary><strong>Trajectory-Relative Hindsight Distillation for Agentic Reinforcement Learning</strong> - Haoyu Zheng, Yun Zhu, Qing Wang, Wenqiao Zhang - [[pdf]](https://arxiv.org/pdf/2608.07371)</summary>
+<summary><strong>Homebot: A Personal AI Agent for Conversational Home Assistance and Automation</strong> - Shengyuan Ye, Yixin Zhang, Han Liang, Liekang Zeng, Jiangsu Du, Mu Yuan - [[pdf]](https://arxiv.org/pdf/2608.02254)</summary>
 
-**Abstract:** Recent agentic reinforcement learning methods use hindsight to complement sparse outcome rewards. However, a completed rollout can yield many such signals, leaving their appropriate allocation across turns unclear. We introduce TRIAL, a trajectory-relative hindsight distillation framework with a unified turn-aligned scoring protocol. For each decision turn, TRIAL extracts an outcome view of that decision's realized consequence and evaluates the same response under ordinary and hindsight-conditioned contexts. The signed log-probability gap determines the direction and local strength of token-level supervision, while turn-level magnitudes are normalized jointly over the realized trajectory. The resulting allocation multipliers have an eligible-token-weighted mean of one, redistributing dense supervision across turns while fixing its average multiplier. Experiments on WebShop and ALFWorld with different backbones show that TRIAL outperforms GRPO across all eight combinations of backbone, environment, and evaluation metric, while achieving the best or tied-best performance among six methods on six of them. On WebShop with Qwen3-1.7B, TRIAL improves the success rate from 56.4% to 75.2% and the task score from 78.7% to 85.7%. Controlled ablations further show that trajectory-relative turn allocation provides substantial gains beyond those of dense hindsight distillation alone.
+**Abstract:** \texttt{Homebot} is a locally deployable AI agent for conversational household assistance and automation. It accepts voice and instant-messaging requests through a shared runtime that combines language-model responses with registered tools and task-specific skills. The design separates common request processing from session ownership: messaging history remains scoped to a channel and chat, whereas voice interaction is bounded by wake-word activation. For hands-free use, \texttt{Homebot} combines local wake-word detection, streaming speech recognition and synthesis, and an explicit dialogue-state protocol for ending, following up, or continuing a conversation. Clear channel, tool, and skill contracts support practical customization for household use.
 
-**arXiv ID:** 2608.07371
+**arXiv ID:** 2608.02254
+</details>
+
+<details>
+<summary><strong>SkillTrace: Multi-Trace Provenance Auditing for LLM-Agent Skill Reuse</strong> - Jialuo Chen, Minghe Wang, Lingqi Jiang, Jianan Ma, Xinhao Deng, Xiaohu Du, Ruixiao Lin, Yunhao Feng, Linkang Du, Jingyi Wang - [[pdf]](https://arxiv.org/pdf/2608.05204)</summary>
+
+**Abstract:** LLM-agent ecosystems are rapidly growing around reusable skills: mixed-modality packages of metadata, natural-language instructions, code, tools, references, and operational workflows. As skills become marketplace artifacts, auditing their reuse is no longer the same problem as ordinary code clone detection. Existing detectors target single-modality source code or whole-package similarity, yet skill reuse evidence is distributed across authored text, implementation fragments, and operational structure. As a result, they can miss reuse that preserves only one part of a skill. We present SKILLTRACE, a multi-trace provenance auditing framework for LLM-agent skill reuse. SKILLTRACE extracts three provenance traces: Expression, Implementation, and Operational. It represents the Operational Trace as a Skill Operational Graph (SOG) that captures activation, procedure, and resource-flow structure. An LLM assists only the Operational-trace extraction, once at ingestion; at audit time SKILLTRACE compares cached traces deterministically, calibrates each trace against same-function strict negatives, and reports which trace supports a reuse decision. On SKILLTRACE-BENCH, with 820 transformed reuse positives over 100 marketplace anchors and 751 negative controls, SKILLTRACE achieves AUROC 0.938 and F1 0.898. A 36,446-skill wild audit further shows that trace-attributed evidence surfaces actionable reuse review queues beyond repository-level baselines.
+
+**arXiv ID:** 2608.05204
+</details>
+
+<details>
+<summary><strong>Contextual Information Policy Optimization for Search Agents</strong> - Xingyu Guo, Wei Chen, Linlin Yang, Baochang Zhang - [[pdf]](https://arxiv.org/pdf/2608.06128)</summary>
+
+**Abstract:** Search agents extend large language models beyond static parametric memory by enabling them to acquire and use external evidence during multi-step reasoning. For knowledge-intensive tasks involving complex or evolving information, their reliability depends not only on retrieving relevant evidence but also on using it to guide subsequent reasoning. However, existing methods primarily reward final-answer correctness or intermediate progress, without directly assessing whether post-retrieval actions are grounded in the retrieved evidence. This misalignment encourages prior-driven reasoning: agents form conclusions based on internal knowledge and use retrieval mainly to confirm them, resulting in confirmation bias and inefficient evidence use. To address this issue, we propose Contextual Information Policy Optimization (CIPO), an evidence-oriented reinforcement learning framework that explicitly aligns policy optimization with external evidence use. CIPO assigns dense, turn-level credit to reasoning actions influenced by retrieved information, while combining this evidence-use signal with a global outcome reward to preserve answer correctness. With this manner, CIPO discourages evidence-detached guesses and promotes reasoning trajectories in which retrieved facts can guide or revise subsequent reasoning. Importantly, CIPO requires neither human process annotations nor an additional reward model. Extensive experiments on seven in-domain and out-of-domain benchmarks show that CIPO reduces the prevalence of prior-driven reasoning and achieves excellent performance on most tasks.
+
+**arXiv ID:** 2608.06128
+</details>
+
+<details>
+<summary><strong>Beyond Top-K: Replacing Black-Box Retrieval with Interpretable Agentic Operations</strong> - Sagar Tamang, Ayush Vyas, Tabarakul Hazarika - [[pdf]](https://arxiv.org/pdf/2608.06305)</summary>
+
+**Abstract:** Retrieval-augmented generation over long documents is dominated by one design: chunk the text, embed the chunks, and surface the top-k nearest neighbours of the query. We argue that for an important class of documents -- financial statements, audit reports, regulatory returns -- this design is structurally unsound, and we make the argument measurable. On a 780-page government financial report, 86.8% of content lines are table rows, thousands of near-identical figures compete in one embedding space, and a figure inherits its unit from a header a median of 13 lines above it -- so a chunk boundary routinely separates a number from whether it is in lakh or crore, an error of two orders of magnitude. A table-aware chunker built as a steelman fixes the unit problem but leaves 27-30% of numeric chunks with no fiscal-year header at every chunk size we tried. We propose READ (Reliable Embedding-free Agentic Document-search), in which an agent reads the raw document through three deterministic operations -- normalized lexical search, structural navigation, and bounded span reads -- exposed over the Model Context Protocol, so a trajectory is a replayable audit trail, not an opaque similarity score. On 51 verified questions READ answers 58.8% against dense retrieval's 15.7% (p_Holm = 2 x 10^-5) -- or 35.3% tuned, which READ still leads by 23.5 points (p_Holm = 0.017). An agent given the same loop but a top-k tool reaches only 27.5%, locating the gain in the interface rather than in iteration. We also report what the evidence does not support: BM25 is statistically indistinguishable from READ, so our result separates embedding-based from embedding-free retrieval, not agentic from lexical search.
+
+**arXiv ID:** 2608.06305
 </details>
 
 <details>
@@ -598,19 +662,19 @@ Across 17 production tokenizer families, differential campaigns cover 1.5x10^10 
 </details>
 
 <details>
+<summary><strong>Trajectory-Relative Hindsight Distillation for Agentic Reinforcement Learning</strong> - Haoyu Zheng, Yun Zhu, Qing Wang, Wenqiao Zhang - [[pdf]](https://arxiv.org/pdf/2608.07371)</summary>
+
+**Abstract:** Recent agentic reinforcement learning methods use hindsight to complement sparse outcome rewards. However, a completed rollout can yield many such signals, leaving their appropriate allocation across turns unclear. We introduce TRIAL, a trajectory-relative hindsight distillation framework with a unified turn-aligned scoring protocol. For each decision turn, TRIAL extracts an outcome view of that decision's realized consequence and evaluates the same response under ordinary and hindsight-conditioned contexts. The signed log-probability gap determines the direction and local strength of token-level supervision, while turn-level magnitudes are normalized jointly over the realized trajectory. The resulting allocation multipliers have an eligible-token-weighted mean of one, redistributing dense supervision across turns while fixing its average multiplier. Experiments on WebShop and ALFWorld with different backbones show that TRIAL outperforms GRPO across all eight combinations of backbone, environment, and evaluation metric, while achieving the best or tied-best performance among six methods on six of them. On WebShop with Qwen3-1.7B, TRIAL improves the success rate from 56.4% to 75.2% and the task score from 78.7% to 85.7%. Controlled ablations further show that trajectory-relative turn allocation provides substantial gains beyond those of dense hindsight distillation alone.
+
+**arXiv ID:** 2608.07371
+</details>
+
+<details>
 <summary><strong>Joint Optimization of Reasoning and Dual-Memory for Self-Learning Diagnostic Agent</strong> - Bingxuan Li, Simo Du, Yue Guo - [[pdf]](https://arxiv.org/pdf/2604.07269)</summary>
 
 **Abstract:** Clinical expertise improves not only by acquiring medical knowledge, but by accumulating experience that yields reusable diagnostic patterns. Recent LLMs-based diagnostic agents have shown promising progress in clinical reasoning for decision support. However, most approaches treat cases independently, limiting experience reuse and continual adaptation. We propose SEA, a self-learning diagnostic agent with cognitively inspired dual-memory module. We design a reinforcement training framework tailored to our designed agent for joint optimization of reasoning and memory management. We evaluate SEA in two complementary settings. On standard evaluation with MedCaseReasoning dataset, SEA achieves 92.46% accuracy, outperforming the strongest baseline by +19.6%, demonstrating the benefit of jointly optimizing reasoning and memory. On the long-horizon with ER-Reason dataset, SEA attains the best final accuracy (0.7214) and the largest improvement (+0.35 Acc@100), while baseline methods show limited or unstable gains. Expert evaluation further indicates that rules consolidated from SEA show strong clinical correctness, usefulness and trust, suggesting that the induced rules in dual-memory module are reliable and practically meaningful. Overall, SEA improves both diagnostic reasoning ability and continual learning by effectively transforming experience into reusable knowledge.
 
 **arXiv ID:** 2604.07269
-</details>
-
-<details>
-<summary><strong>Beyond Top-K: Replacing Black-Box Retrieval with Interpretable Agentic Operations</strong> - Sagar Tamang, Ayush Vyas, Tabarakul Hazarika - [[pdf]](https://arxiv.org/pdf/2608.06305)</summary>
-
-**Abstract:** Retrieval-augmented generation over long documents is dominated by one design: chunk the text, embed the chunks, and surface the top-k nearest neighbours of the query. We argue that for an important class of documents -- financial statements, audit reports, regulatory returns -- this design is structurally unsound, and we make the argument measurable. On a 780-page government financial report, 86.8% of content lines are table rows, thousands of near-identical figures compete in one embedding space, and a figure inherits its unit from a header a median of 13 lines above it -- so a chunk boundary routinely separates a number from whether it is in lakh or crore, an error of two orders of magnitude. A table-aware chunker built as a steelman fixes the unit problem but leaves 27-30% of numeric chunks with no fiscal-year header at every chunk size we tried. We propose READ (Reliable Embedding-free Agentic Document-search), in which an agent reads the raw document through three deterministic operations -- normalized lexical search, structural navigation, and bounded span reads -- exposed over the Model Context Protocol, so a trajectory is a replayable audit trail, not an opaque similarity score. On 51 verified questions READ answers 58.8% against dense retrieval's 15.7% (p_Holm = 2 x 10^-5) -- or 35.3% tuned, which READ still leads by 23.5 points (p_Holm = 0.017). An agent given the same loop but a top-k tool reaches only 27.5%, locating the gain in the interface rather than in iteration. We also report what the evidence does not support: BM25 is statistically indistinguishable from READ, so our result separates embedding-based from embedding-free retrieval, not agentic from lexical search.
-
-**arXiv ID:** 2608.06305
 </details>
 
 <details>
