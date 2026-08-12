@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-12 02:40:09
+**Last Updated:** 2026-08-12 03:30:05
 
 **Total Papers:** 123
 
@@ -726,19 +726,19 @@ The paper contributes a five-step methodology for selecting runtime patterns, a 
 </details>
 
 <details>
-<summary><strong>Self-Correcting Long-Horizon Search Agents via Tree-Structured Memory</strong> - Aijun Yang, Qianxue Guo, Ziyi Huang, Yuxuan Chen, Shiyou Qian, Jian Cao - [[pdf]](https://arxiv.org/pdf/2608.10676)</summary>
-
-**Abstract:** Large language model (LLM)-based search agents answer questions through multi-step interactions with external environments. However, providing complete execution trajectories to the LLM causes unbounded context growth and introduces noise. Existing compression methods reduce context at the cost of important details and often replace erroneous facts without repairing downstream reasoning derived from them. To address this problem, we propose ReTree, a self-correcting tree-structured memory mechanism for search agents. ReTree constructs a bounded per-step reasoning context while preserving source-linked evidence. It models search as an evidence tree whose nodes store bounded summaries, evidence, and revision histories. When newly retrieved evidence contradicts an earlier claim, ReTree traces back to the node where the claim was introduced, replaces outdated evidence, regenerates summaries, prunes affected branches, and resumes search. Source-grounded evidence provenance supports reliable conflict localization and keeps final claims traceable to retrieved passages. Experiments on four public question-answering and search benchmarks show that ReTree consistently outperforms Full-Trajectory ReAct, improving answer accuracy by up to 25.6 percentage points (pp); the average maximum per-step reasoning context of Full-Trajectory ReAct is $1.27$--$1.51\times$ that of ReTree. These results establish ReTree as an effective self-correcting memory abstraction for long-horizon search.
-
-**arXiv ID:** 2608.10676
-</details>
-
-<details>
 <summary><strong>ChemWorld: Programmable Chemical Worlds for Controlled and Replayable Agent Experimentation</strong> - Jiangjie Qiu, Yijun Li, Xiaonan Wang - [[pdf]](https://arxiv.org/pdf/2608.10792)</summary>
 
 **Abstract:** Autonomous chemistry increasingly depends on environments in which agents can repeatedly act, observe, and this http URL laboratories provide essential real-material evidence but are costly to repeat and difficult to use for tightly matched interventions, whereas most digital environments keep the underlying experimental world largely fixed. We introduce ChemWorld, a programmable chemical environment in which reusable process and observation components are compiled into executable worlds. ChemWorld separates the public experimental contract available to an agent from evaluator-owned chemical and material laws. Researchers can therefore vary world composition and operating conditions, or change a single hidden law while holding the public task and interaction conditions fixed. Transactional execution records operations, failures, resource changes, and state transitions, allowing complete environment-action trajectories to be replayed exactly and audited. Full-census qualification covered the reference registry, 52 generated compositions, and module, interface, compilation, and invalid-action tests. Eight deterministic experimental cases demonstrated shared lifecycle semantics, failure recovery, and exact replay, while six parent-child world-fork pairs isolated the effects of single private-law interventions under matched public conditions. An independent agent also completed a full lifecycle in a non-reference world through the same public interface. Within the declared component and model domain, ChemWorld provides a controlled and replayable substrate for studying experimentation across systematically varied chemical worlds, complementary to physical-laboratory evidence and calibration.
 
 **arXiv ID:** 2608.10792
+</details>
+
+<details>
+<summary><strong>Self-Correcting Long-Horizon Search Agents via Tree-Structured Memory</strong> - Aijun Yang, Qianxue Guo, Ziyi Huang, Yuxuan Chen, Shiyou Qian, Jian Cao - [[pdf]](https://arxiv.org/pdf/2608.10676)</summary>
+
+**Abstract:** Large language model (LLM)-based search agents answer questions through multi-step interactions with external environments. However, providing complete execution trajectories to the LLM causes unbounded context growth and introduces noise. Existing compression methods reduce context at the cost of important details and often replace erroneous facts without repairing downstream reasoning derived from them. To address this problem, we propose ReTree, a self-correcting tree-structured memory mechanism for search agents. ReTree constructs a bounded per-step reasoning context while preserving source-linked evidence. It models search as an evidence tree whose nodes store bounded summaries, evidence, and revision histories. When newly retrieved evidence contradicts an earlier claim, ReTree traces back to the node where the claim was introduced, replaces outdated evidence, regenerates summaries, prunes affected branches, and resumes search. Source-grounded evidence provenance supports reliable conflict localization and keeps final claims traceable to retrieved passages. Experiments on four public question-answering and search benchmarks show that ReTree consistently outperforms Full-Trajectory ReAct, improving answer accuracy by up to 25.6 percentage points (pp); the average maximum per-step reasoning context of Full-Trajectory ReAct is $1.27$--$1.51\times$ that of ReTree. These results establish ReTree as an effective self-correcting memory abstraction for long-horizon search.
+
+**arXiv ID:** 2608.10676
 </details>
 
 <details>
@@ -790,19 +790,19 @@ The paper contributes a five-step methodology for selecting runtime patterns, a 
 </details>
 
 <details>
-<summary><strong>Exploration-Driven Personalized Federated Reinforcement Learning via Intrinsic Motivation</strong> - Md Rafid Islam, Rafsan Jany, Zahid Hasan, Ratun Rahman - [[pdf]](https://arxiv.org/pdf/2608.10499)</summary>
-
-**Abstract:** Personalized Federated Reinforcement Learning (PFRL) takes a decentralized approach to storing and accessing information based on past experiences while keeping each client's data private during the learning of each client's policy. Many current methods for PFRL rely heavily on exploiting existing reinforcement learning reward signals to derive an optimal policy for each client, thereby neglecting exploration in non-stationary or sparse-reward environments. In this work, we introduce a new exploration-driven framework, Exploration-Driven Personalized Federated Reinforcement Learning via Intrinsic Motivation (EDPFRL-IM), that leverages an inherent curiosity-driven exploration at each client to promote local exploration and protect client privacy. Furthermore, to facilitate policy discovery via exploration in previously unexplored state spaces, clients add an intrinsic random network distillation (RND) signal to their extrinsic reward. Additionally, the server does not have access to clients' raw experiences or local gradient estimates; instead, the server sends global exploration priors and collects minimal novelty summaries from each client to enable both diverse and coordinated exploration among clients. Experiments in benchmark environments show that our framework outperforms average PFRL benchmarks in policy personalization and sample efficiency, primarily in delayed and sparse reward systems. Overall, EDPFRL-IM enables the integration of a flexible exploratory learning structure into federated reinforcement learning systems while preserving client privacy.
-
-**arXiv ID:** 2608.10499
-</details>
-
-<details>
 <summary><strong>SafeCap: Improving LVLM Safety with Image Captioning Reinforcement Learning</strong> - Caoyuan Ma, Wenpu Liu, Weichu Xie, Tian Gu, Shilei Zhao, Lingxi Min, Shuai Dong, Yuqi Xu, Ji Zhao, Ziyue Wang, Wenzheng Chang, Taiqiang Wu, Yongfu Zhu, Wenqi Shao, Yinqiang Zheng - [[pdf]](https://arxiv.org/pdf/2608.10513)</summary>
 
 **Abstract:** Large vision-language models (LVLMs) remain vulnerable to jailbreak attacks that exploit visual inputs to bypass safety alignment inherited from their language backbones. We propose SafeCap, a reinforcement-learning framework that aligns LVLMs through learned self-captioning. SafeCap trains a policy model to first generate a safety-relevant image caption and then produce a final answer; the caption is further optimized by whether it enables a frozen LLM to reach a safety-aligned decision. This caption-mediated objective encourages the policy to expose visual cues relevant to safe response generation rather than relying solely on direct refusal supervision. Across five multimodal safety benchmarks and six vision-utility benchmarks, SafeCap substantially improves aggregate safety performance under its intended DirectCap protocol, with gains of 3.7-19.0 points in safety average across four model settings while maintaining comparable or improved vision utility. Under controlled comparisons on matched backbones and data, SafeCap outperforms safety SFT, DPO, and SafeGRPO, demonstrating the effectiveness of caption-mediated reinforcement learning for multimodal safety alignment.
 
 **arXiv ID:** 2608.10513
+</details>
+
+<details>
+<summary><strong>Exploration-Driven Personalized Federated Reinforcement Learning via Intrinsic Motivation</strong> - Md Rafid Islam, Rafsan Jany, Zahid Hasan, Ratun Rahman - [[pdf]](https://arxiv.org/pdf/2608.10499)</summary>
+
+**Abstract:** Personalized Federated Reinforcement Learning (PFRL) takes a decentralized approach to storing and accessing information based on past experiences while keeping each client's data private during the learning of each client's policy. Many current methods for PFRL rely heavily on exploiting existing reinforcement learning reward signals to derive an optimal policy for each client, thereby neglecting exploration in non-stationary or sparse-reward environments. In this work, we introduce a new exploration-driven framework, Exploration-Driven Personalized Federated Reinforcement Learning via Intrinsic Motivation (EDPFRL-IM), that leverages an inherent curiosity-driven exploration at each client to promote local exploration and protect client privacy. Furthermore, to facilitate policy discovery via exploration in previously unexplored state spaces, clients add an intrinsic random network distillation (RND) signal to their extrinsic reward. Additionally, the server does not have access to clients' raw experiences or local gradient estimates; instead, the server sends global exploration priors and collects minimal novelty summaries from each client to enable both diverse and coordinated exploration among clients. Experiments in benchmark environments show that our framework outperforms average PFRL benchmarks in policy personalization and sample efficiency, primarily in delayed and sparse reward systems. Overall, EDPFRL-IM enables the integration of a flexible exploratory learning structure into federated reinforcement learning systems while preserving client privacy.
+
+**arXiv ID:** 2608.10499
 </details>
 
 <details>
@@ -918,19 +918,19 @@ The paper contributes a five-step methodology for selecting runtime patterns, a 
 </details>
 
 <details>
-<summary><strong>Dreamer-SAC: Off-Policy Learning in Latent World Models for Sample-Efficient Autonomous Driving</strong> - Jiazhuo Li, Linjiang Cao, Qi Liu, Xi Xiong - [[pdf]](https://arxiv.org/pdf/2608.10386)</summary>
-
-**Abstract:** Sample-efficient reinforcement learning for autonomous driving is often limited by the trade-off between data efficiency and model bias. While world models reduce the reliance on costly environment interactions, policy optimization over learned dynamics remains sensitive to prediction errors. This paper proposes the Dreamer-SAC framework, which integrates a recurrent state-space world model with an off-policy soft actor-critic algorithm trained directly in latent space. The framework uses a combination of real interactions and short-horizon generated trajectories with n-step target estimation and multi-objective supervision. Evaluated in autonomous driving scenarios with objectives encompassing driving efficiency and safety, the proposed framework consistently outperforms representative reinforcement learning baselines, including DreamerV3, SAC, and PPO, while achieving improved performance with substantially fewer real environment interactions. Experiments reveal an inverted-U relationship between rollout horizon and policy performance, where short-horizon latent rollouts achieve the best trade-off between additional training signals and accumulated model bias. Furthermore, n-step target estimation demonstrates more effectiveness over one-step temporal-difference targets in exploiting predicted experience for value learning.
-
-**arXiv ID:** 2608.10386
-</details>
-
-<details>
 <summary><strong>TideRL: Boosting Agentic RL Goodput with Readiness-Aware Scheduling</strong> - Yanyu Ren, Xizheng Wang, Xiao Liu, Bowen Lv, Hanchen Zhang, Shudan Zhang, Hanyu Lai, Shuai Wang, Li Chen, Dan Li, Jie Tang - [[pdf]](https://arxiv.org/pdf/2608.10402)</summary>
 
 **Abstract:** Reinforcement learning (RL) for large language models is moving toward multi-turn agentic workloads, where rollout tasks repeatedly pause for external environments, resume with growing contexts, and finish at highly variable times. In this setting, RL training goodput, measured by training throughput, matters more than raw GPU occupancy: GPU waiting and repeated prefill recomputation are pure overhead. We present TideRL, a readiness-aware elastic RL system with Continuous Task Batching, Resource-Aware Ref-Actor Pipelining, and Elastic Resource Scaling. CTB preserves useful rollout state, $\textrm{RA}^2\textrm{P}$ selects between decoupled streaming and colocated aggregation from the ready backlog and arrival interval, and ERS moves ranks between rollout and training using the same readiness signals. Across text-only and multi-modal agentic workloads, TideRL improves RL training goodput by up to 5.6$\times$ over synchronous baselines and over 33% over asynchronous baselines, while reaching similar task performance. It also improves KV cache hit rate by 1.58$\times$, reduces per-step training time by up to 44.3%, and cuts total waiting time by up to 77.6%.
 
 **arXiv ID:** 2608.10402
+</details>
+
+<details>
+<summary><strong>Dreamer-SAC: Off-Policy Learning in Latent World Models for Sample-Efficient Autonomous Driving</strong> - Jiazhuo Li, Linjiang Cao, Qi Liu, Xi Xiong - [[pdf]](https://arxiv.org/pdf/2608.10386)</summary>
+
+**Abstract:** Sample-efficient reinforcement learning for autonomous driving is often limited by the trade-off between data efficiency and model bias. While world models reduce the reliance on costly environment interactions, policy optimization over learned dynamics remains sensitive to prediction errors. This paper proposes the Dreamer-SAC framework, which integrates a recurrent state-space world model with an off-policy soft actor-critic algorithm trained directly in latent space. The framework uses a combination of real interactions and short-horizon generated trajectories with n-step target estimation and multi-objective supervision. Evaluated in autonomous driving scenarios with objectives encompassing driving efficiency and safety, the proposed framework consistently outperforms representative reinforcement learning baselines, including DreamerV3, SAC, and PPO, while achieving improved performance with substantially fewer real environment interactions. Experiments reveal an inverted-U relationship between rollout horizon and policy performance, where short-horizon latent rollouts achieve the best trade-off between additional training signals and accumulated model bias. Furthermore, n-step target estimation demonstrates more effectiveness over one-step temporal-difference targets in exploiting predicted experience for value learning.
+
+**arXiv ID:** 2608.10386
 </details>
 
 <details>
@@ -1014,19 +1014,19 @@ The paper contributes a five-step methodology for selecting runtime patterns, a 
 </details>
 
 <details>
-<summary><strong>UXCascade: Scalable Usability Testing with Simulated User Agents</strong> - Steffen Holter, Eunyee Koh, Mustafa Doga Dogan, Gromit Yeuk-Yin Chan - [[pdf]](https://arxiv.org/pdf/2601.15777)</summary>
-
-**Abstract:** Simulated user agents are increasingly deployed in usability testing to support fast, iterative UX workflows, as they generate rich data such as action logs and think-aloud reasoning, but the unstructured nature of this output often obscures actionable insights. We present UXCascade, an interactive tool for extracting, aggregating, and presenting agent-generated usability feedback at scale. Our core contribution is a multi-level analysis workflow that (1) highlights patterns across persona traits, goals, and outcomes, (2) links agent reasoning to specific issues, and (3) supports actionable design improvements. UXCascade operationalizes this approach by listing agent goals, traits, and issues in a structured overview. Practitioners can explore detailed reasoning traces and annotated views, propose interface edits, and assess their impact across personas. This enables a top-down, exploration-driven analysis from patterns to concrete, actionable UX interventions. A user study with eight UX professionals demonstrates that UXCascade integrates into existing workflows, enabling iterative feedback during early-stage interface development.
-
-**arXiv ID:** 2601.15777
-</details>
-
-<details>
 <summary><strong>Access Timing as Scaffolding: A Reinforcement Learning Approach to GenAI in Education</strong> - Janne Rotter, Pau Benazet i Montobbio, Davinia Hernández-Leo - [[pdf]](https://arxiv.org/pdf/2605.15850)</summary>
 
 **Abstract:** In recent years, generative AI (GenAI) in educational settings has become ubiquitous in university students' daily lives, despite its potential to induce over-reliance, metacognitive disengagement, and diminished learning when used unrestrictedly. While most prior research has focused on how to pedagogically scaffold its usage, the question of when to allow off-the-shelf GenAI remains understudied and lacks pedagogically grounded empirical investigation. We treat access timing itself as a form of implicit scaffolding and operationalize it through a reinforcement learning (RL) agent that decides when students should access GenAI, with a reward function grounded in metacognitive theory, cognitive load theory, and productive failure. In a mixed-methods controlled lab study with N=105 higher education students, we compared the agent's effect on learning gains and metacognitive engagement to unrestricted and fully restricted use. Results show that strategically timed GenAI access under the reinforcement learning condition improved objective post-test performance and metacognitive accuracy compared with unrestricted access, without requiring explicit metacognitive prompts or structured scaffolding. Exploratory comparisons with the fully restricted condition further suggest that timed access may reduce task errors and time on task relative to complete withholding. Overall, timing of GenAI access therefore is a tractable, theoretically grounded, and scalable pedagogical strategy that improves over completely unrestricted and withheld access, compatible with off-the-shelf tools and potentially low adoption barrier. This opens up a new research area that explores how access timing can be facilitated by educators and implemented in human-AI learning system design.
 
 **arXiv ID:** 2605.15850
+</details>
+
+<details>
+<summary><strong>UXCascade: Scalable Usability Testing with Simulated User Agents</strong> - Steffen Holter, Eunyee Koh, Mustafa Doga Dogan, Gromit Yeuk-Yin Chan - [[pdf]](https://arxiv.org/pdf/2601.15777)</summary>
+
+**Abstract:** Simulated user agents are increasingly deployed in usability testing to support fast, iterative UX workflows, as they generate rich data such as action logs and think-aloud reasoning, but the unstructured nature of this output often obscures actionable insights. We present UXCascade, an interactive tool for extracting, aggregating, and presenting agent-generated usability feedback at scale. Our core contribution is a multi-level analysis workflow that (1) highlights patterns across persona traits, goals, and outcomes, (2) links agent reasoning to specific issues, and (3) supports actionable design improvements. UXCascade operationalizes this approach by listing agent goals, traits, and issues in a structured overview. Practitioners can explore detailed reasoning traces and annotated views, propose interface edits, and assess their impact across personas. This enables a top-down, exploration-driven analysis from patterns to concrete, actionable UX interventions. A user study with eight UX professionals demonstrates that UXCascade integrates into existing workflows, enabling iterative feedback during early-stage interface development.
+
+**arXiv ID:** 2601.15777
 </details>
 
 </details>
