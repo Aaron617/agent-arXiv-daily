@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-13 02:42:30
+**Last Updated:** 2026-08-13 03:32:37
 
 **Total Papers:** 87
 
@@ -696,19 +696,19 @@ Building on these principles, we advocate for a systematic approach to AI agent 
 </details>
 
 <details>
-<summary><strong>Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning</strong> - Xuekang Wang, Zhuoyuan Hao, Shuo Hou, Hao Peng, Juanzi Li, Xiaozhi Wang - [[pdf]](https://arxiv.org/pdf/2606.04923)</summary>
-
-**Abstract:** Rubric-based reinforcement learning (RL) uses an LLM-as-a-Judge (LaaJ) to score model outputs according to rubrics as rewards. However, policy models may exploit latent biases in the judge, leading to reward hacking and ineffective or unsafe training outcomes. In real-world rubric-based RL, such hacking behaviors are often subtle and entangled with multiple judge biases, making them difficult to analyze, detect, and mitigate. In this paper, we introduce CHERRL, a Controllable Hacking Environment for Rubric-based RL. By injecting known biases into LaaJ, CHERRL enables stable reproduction of reward hacking, explicit observation of reward divergence, and identification of hacking onset. This provides a clean experimental testbed for studying the mechanisms and mitigations of reward hacking in rubric-based RL. To demonstrate its utility, we analyze different judge biases from the perspectives of discoverability and exploitability, and explore an agent for automatically detecting reward hacking onset from training logs. The code and environment are publicly available at this https URL.
-
-**arXiv ID:** 2606.04923
-</details>
-
-<details>
 <summary><strong>Unmasking Toxic Mimicry in Medical Offline Reinforcement Learning for ICU Sepsis Management via Counterfactual Clinical Audits</strong> - Hangqi Ren, Junyi Liao - [[pdf]](https://arxiv.org/pdf/2608.11410)</summary>
 
 **Abstract:** Offline reinforcement learning (RL) offers considerable promise for optimizing ICU treatment decisions, yet standard evaluation metrics Mean Squared Error (MSE) and Fitted Q-Evaluation (FQE) assess only behavioral imitation and cannot detect Toxic Mimicry, a failure mode in which agents replicate harmful patterns such as treatment withdrawal during comfort-care transitions. Using the MIMIC-III database, we propose the Counterfactual Clinical Audit (CCA) framework, which stress-tests RL agents through physiological perturbations anchored in Surviving Sepsis Campaign (SSC) guidelines. We audit a Medical Decision Transformer (MedDT) and a Historical Causal Transformer (HCT-RL), the latter employing Causal Action Shielding, propensity-based importance weighting, and Conservative Q-Learning. CCA reveals that MedDT paradoxically reduces vasopressor dosage as lactate escalates, contradicting resuscitation guidelines, while HCT-RL maintains physiologically consistent responses. These findings expose a systemic misalignment between statistical fit and clinical safety, supporting counterfactual audits as a necessary evaluation standard for medical RL.
 
 **arXiv ID:** 2608.11410
+</details>
+
+<details>
+<summary><strong>Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning</strong> - Xuekang Wang, Zhuoyuan Hao, Shuo Hou, Hao Peng, Juanzi Li, Xiaozhi Wang - [[pdf]](https://arxiv.org/pdf/2606.04923)</summary>
+
+**Abstract:** Rubric-based reinforcement learning (RL) uses an LLM-as-a-Judge (LaaJ) to score model outputs according to rubrics as rewards. However, policy models may exploit latent biases in the judge, leading to reward hacking and ineffective or unsafe training outcomes. In real-world rubric-based RL, such hacking behaviors are often subtle and entangled with multiple judge biases, making them difficult to analyze, detect, and mitigate. In this paper, we introduce CHERRL, a Controllable Hacking Environment for Rubric-based RL. By injecting known biases into LaaJ, CHERRL enables stable reproduction of reward hacking, explicit observation of reward divergence, and identification of hacking onset. This provides a clean experimental testbed for studying the mechanisms and mitigations of reward hacking in rubric-based RL. To demonstrate its utility, we analyze different judge biases from the perspectives of discoverability and exploitability, and explore an agent for automatically detecting reward hacking onset from training logs. The code and environment are publicly available at this https URL.
+
+**arXiv ID:** 2606.04923
 </details>
 
 <details>
