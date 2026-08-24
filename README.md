@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-24 01:55:13
+**Last Updated:** 2026-08-24 02:37:21
 
 **Total Papers:** 98
 
@@ -343,7 +343,7 @@ These failures make CMB-0.1 an instrument-calibration result rather than a model
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (12 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (11 papers)</h2></summary>
 
 <details>
 <summary><strong>SDAD: Spec-Driven Agentic Development for the AI-Native SDLC</strong> - Vu Hung Nguyen, Thanh Nguyen - [[pdf]](https://arxiv.org/pdf/2608.20341)</summary>
@@ -395,14 +395,6 @@ We present an empirical characterisation of LLM-call interarrival time distribut
 </details>
 
 <details>
-<summary><strong>Specification Portability Across LLM Development Agents: Cross-Agent Compatibility in Specification-Driven Software Migration</strong> - Oleg Grynets, Oleksii Ilchuk, Dariia Zatulna, Vasyl Lyashkevych - [[pdf]](https://arxiv.org/pdf/2608.21208)</summary>
-
-**Abstract:** This paper investigates cross-agent specification portability using Oracle-to-PostgreSQL migration as a controlled software transformation task. The study combines two experimental stages. First, a specification-first migration pipeline was evaluated on 1,006 PL/SQL files, of which 623 were successfully regenerated and 380 generated scripts executed successfully in PostgreSQL 16. Second, cross-agent experiments were conducted on a dataset of 1,802 Oracle scripts with corresponding PostgreSQL implementations using Amazon Kiro, Google Gemini, and GitHub Copilot, with Claude Code and Cursor included in the initial single-agent evaluation. Native and foreign specifications were assessed using Token F1, exact match, SQL syntax validity, AST exact match, AST mean similarity, and immediate runnability. The results show that specification size alone does not predict implementation quality and that cross-agent transfer can produce substantial agent-dependent degradation. The strongest replicated case occurred when Gemini directly consumed a Kiro-origin specification, producing a Token F1 of 0.035, SQL syntax validity of 2.33%, and AST mean similarity of 0.015. Rewriting substantially improved Gemini in the tested configuration, compression did not provide a universal benefit, and retrieval-augmented ingestion was the only common strategy represented on the per-agent Pareto frontiers of both Gemini and Copilot. The findings suggest that specifications in heterogeneous SDD workflows should not automatically be treated as agent-neutral artifacts and motivate explicit consideration of specification portability, agent-specific interpretation, and retrieval-based access in multi-agent software engineering.
-
-**arXiv ID:** 2608.21208
-</details>
-
-<details>
 <summary><strong>Two Heads are Better Than One: Test-time Scaling of Multi-agent Collaborative Reasoning</strong> - Can Jin, Hongwu Peng, Qixin Zhang, Yujin Tang, Dimitris N. Metaxas, Tong Che - [[pdf]](https://arxiv.org/pdf/2504.09772)</summary>
 
 **Abstract:** Test-Time Scaling has emerged as a powerful method to extend the reasoning capabilities of Large Language Models. However, single-agent TTS faces significant scalability bottlenecks, as excessively long reasoning traces lead to increased inference costs and stability issues caused by context management failures. To address these limitations, we propose leveraging Multi-Agent Systems as a structural upgrade to standard TTS. By decomposing monolithic reasoning chains into distinct, manageable contexts across multiple agents, MAS offers a more robust framework for scaling reasoning. We validate this approach by introducing M500, a dataset comprising 500 high-quality multi-agent, multi-turn collaborative reasoning traces generated via DeepSeek-R1. Through Supervised Fine-Tuning on M500, we enable open-source models to internalize collaborative reasoning patterns and show improved TTS performance in MAS. Furthermore, we propose an adaptive scaling strategy incorporating a ``CEO'' agent to dynamically guide the reasoning process and optimize collaboration depth. Extensive experiments within the AgentVerse framework demonstrate that our fine-tuned models, Qwen2.5-32B-MAS and Phi4-14B-MAS, significantly outperform their base counterparts. Codes are available at this https URL.
@@ -445,7 +437,7 @@ We present an empirical characterisation of LLM-call interarrival time distribut
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (13 papers)</h2></summary>
+<summary><h2>Other Agent Research (14 papers)</h2></summary>
 
 <details>
 <summary><strong>A Survey on Foundations and Frontiers of Multimodal Agentic Frameworks: Techniques and Applications</strong> - Neel Mokaria, Rishie Raj, Dheeraj Baiju, Xiaoqian Shen, Shraman Pramanick, Kevin Qinghong Lin, Arda Senocak, Mike Zheng Shou, Philip Torr, Mohamed Elhoseiny, Yapeng Tian, Ruohan Gao, Salman Khan, Sayan Nag, Sanjoy Chowdhury, Dinesh Manocha - [[pdf]](https://arxiv.org/pdf/2608.20379)</summary>
@@ -501,6 +493,14 @@ We present an empirical characterisation of LLM-call interarrival time distribut
 **Abstract:** Visual world-model agents such as DreamerV3 act through a recurrent latent state rather than a single observation, which weakens frame-wise observation attacks and makes their perturbations vary sharply over time under a strict per-frame perturbation constraint. We study white-box, causal, online attacks on such agents and propose Critic-Induced Value-Subspace Attacks (\textbf{CIVA}). Our key observation is that, along a rollout, critic-guided perturbations concentrate in a low-dimensional subspace induced by the victim's own critic. Based on this observation, CIVA first probes the frozen victim offline with critic-guided PGD and extracts a low-rank value-subspace by SVD. At test time, it optimizes only the subspace coefficients, smooths them with an exponential moving average (EMA), and maps them back to pixels. This design attacks value-sensitive recurrent dynamics while keeping the online optimization cheap and temporally coherent. Extensive experiments on DMC walker walk, Atari Pong, and Crafter show that CIVA consistently outperforms five recent methods; on DMC walker walk, it achieves the largest reward drop of 26.07\% while keeping temporal variation low, with TempAbs of 0.646.
 
 **arXiv ID:** 2608.21114
+</details>
+
+<details>
+<summary><strong>Specification Portability Across LLM Development Agents: Cross-Agent Compatibility in Specification-Driven Software Migration</strong> - Oleg Grynets, Oleksii Ilchuk, Dariia Zatulna, Vasyl Lyashkevych - [[pdf]](https://arxiv.org/pdf/2608.21208)</summary>
+
+**Abstract:** 
+
+**arXiv ID:** 2608.21208
 </details>
 
 <details>
@@ -669,19 +669,19 @@ We derive ten assurance claims for the first three assumption clusters and asses
 </details>
 
 <details>
-<summary><strong>Advantage-level Aggregation Reinforcement Learning for X-point Target Magnetic Configuration Control in an EXL-50U Experiment-Calibrated Simulation Environment</strong> - Siqi Ding, Xuanhe Wang, Pei Guo, Guoyang Shi, Changquan Yu, Yiting Wang, Xianming Song, Xiang Gu, Zhengyuan Chen, Lei Xing, Yapeng Zhang, Jianguo Chen, Tianyuan Liu - [[pdf]](https://arxiv.org/pdf/2608.20834)</summary>
-
-**Abstract:** Managing divertor heat loads is a central challenge for compact, high-power tokamaks. To increase local flux expansion and decouple the dissipation volume from the core, EHL-2 adopts the X-point target (XPT) divertor. This requires the secondary X-point to remain on the divertor leg; displacement degrades the topology and exhaust geometry. Current experiments, including EXL-50U discharges, rely on precomputed feedforward waveforms with PID loops on global quantities. Lacking dedicated closed-loop feedback for the secondary null, XPT operation is repeatable but not routine. We formulate XPT feedback as a multi-objective reinforcement learning (RL) control problem in a free-boundary environment calibrated to EXL-50U discharge #13906. To address strong coupling among plasma current, shape, and null constraints - where reward scalarisation collapses objective-specific temporal credit - we develop Advantage Aggregation (AdvA). AdvA preserves objective-wise temporal credit before worst-objective-aware nonlinear scalarisation and introduces a residual correction to policy updates. AdvA-PPO is evaluated against Reward-PPO and a feedforward-plus-PID baseline under nominal operation, measurement uncertainties, and unseen initial equilibria. On a 500 ms rollout, AdvA-PPO raises the mean worst-channel score from 0.23 to 0.81 over Reward-PPO, reducing X-point flux RMSE by ~20x. Under combined measurement uncertainties, it is the only learned controller completing the horizon while retaining a usable XPT shape. Multi-initialization fine-tuning enables a single AdvA-PPO policy to complete full-horizon operation across divertor and limiter initial equilibria. These results provide a simulation-based foundation for future real-time XPT validation on EXL-50U.
-
-**arXiv ID:** 2608.20834
-</details>
-
-<details>
 <summary><strong>BC-Bench: Evaluating Agentic Engineering in a Domain-Specific Language for ERP</strong> - Haoran Sun, Klaus Marius Hansen - [[pdf]](https://arxiv.org/pdf/2608.20851)</summary>
 
 **Abstract:** Agentic engineering systems have shown strong performance on general-purpose benchmarks, yet their effectiveness in enterprise resource planning (ERP) domain-specific languages (DSLs) remains underexplored. We introduce BC-Bench, a benchmark designed to evaluate agentic engineering on real-world tasks in AL, the DSL for Microsoft Dynamics 365 Business Central. BC-Bench comprises 101 manually curated tasks extracted from two Microsoft-owned production repositories, reflecting authentic ERP development workflows. Adapting the SWE-Bench methodology, we address the unique constraints of the AL ecosystem---including limited public resources and complex environment provisioning. Beyond generating functional code, BC-Bench evaluates test generation and supports multimodal problem statements where visual context is commonly present. We evaluate multiple frontier models across two agent harnesses, utilizing multi-run metrics to account for nondeterminism. In the Bug Fixing category, under our evaluated settings, between-model differences in resolution rate are larger than differences between the two evaluated agent harnesses, and improvements reported on general-purpose benchmarks do not consistently transfer to AL. These results highlight the need for domain-specific evaluation.
 
 **arXiv ID:** 2608.20851
+</details>
+
+<details>
+<summary><strong>Advantage-level Aggregation Reinforcement Learning for X-point Target Magnetic Configuration Control in an EXL-50U Experiment-Calibrated Simulation Environment</strong> - Siqi Ding, Xuanhe Wang, Pei Guo, Guoyang Shi, Changquan Yu, Yiting Wang, Xianming Song, Xiang Gu, Zhengyuan Chen, Lei Xing, Yapeng Zhang, Jianguo Chen, Tianyuan Liu - [[pdf]](https://arxiv.org/pdf/2608.20834)</summary>
+
+**Abstract:** Managing divertor heat loads is a central challenge for compact, high-power tokamaks. To increase local flux expansion and decouple the dissipation volume from the core, EHL-2 adopts the X-point target (XPT) divertor. This requires the secondary X-point to remain on the divertor leg; displacement degrades the topology and exhaust geometry. Current experiments, including EXL-50U discharges, rely on precomputed feedforward waveforms with PID loops on global quantities. Lacking dedicated closed-loop feedback for the secondary null, XPT operation is repeatable but not routine. We formulate XPT feedback as a multi-objective reinforcement learning (RL) control problem in a free-boundary environment calibrated to EXL-50U discharge #13906. To address strong coupling among plasma current, shape, and null constraints - where reward scalarisation collapses objective-specific temporal credit - we develop Advantage Aggregation (AdvA). AdvA preserves objective-wise temporal credit before worst-objective-aware nonlinear scalarisation and introduces a residual correction to policy updates. AdvA-PPO is evaluated against Reward-PPO and a feedforward-plus-PID baseline under nominal operation, measurement uncertainties, and unseen initial equilibria. On a 500 ms rollout, AdvA-PPO raises the mean worst-channel score from 0.23 to 0.81 over Reward-PPO, reducing X-point flux RMSE by ~20x. Under combined measurement uncertainties, it is the only learned controller completing the horizon while retaining a usable XPT shape. Multi-initialization fine-tuning enables a single AdvA-PPO policy to complete full-horizon operation across divertor and limiter initial equilibria. These results provide a simulation-based foundation for future real-time XPT validation on EXL-50U.
+
+**arXiv ID:** 2608.20834
 </details>
 
 <details>
@@ -710,19 +710,19 @@ We implement a Python/SQLite prototype. In a declared loopback MCP domain, 13 li
 </details>
 
 <details>
-<summary><strong>AIRL-S: Unifying Reinforcement Learning and Search-Based Test-Time Scaling via Adversarial Inverse Reinforcement Learning</strong> - Can Jin, Yang Zhou, Qixin Zhang, Hongwu Peng, Di Zhang, Zihan Dong, Marco Pavone, Ligong Han, Zhang-Wei Hong, Tong Che, Dimitris N. Metaxas - [[pdf]](https://arxiv.org/pdf/2508.14313)</summary>
-
-**Abstract:** Test-time scaling strategies for Large Language Models predominantly rely on either reinforcement learning with sparse outcome rewards or search-based methods guided by static Process Reward Models. However, outcome-based RL often suffers from training instability and sample inefficiency, while static PRMs require expensive step-wise supervision and are susceptible to reward hacking due to distributional shifts. In this paper, we introduce AIRL-S, a unified framework that integrates Adversarial Inverse Reinforcement Learning with Group Relative Policy Optimization. By inferring a dense, step-wise reward model directly from reference trajectories, AIRL-S eliminates the dependency on labeled process data and uses the same learned PRM as both a training signal and a verifier for search-based TTS. Extensive evaluations across eight benchmarks in mathematics, science, and code generation demonstrate that our policy model improves average performance by 9\% over the base model, matching GPT-4o. We further analyze how the AIRL and GRPO objectives complement each other and how the learned PRM transfers across generators and search algorithms, establishing a robust and cost-effective methodology for scaling test-time computation in complex reasoning tasks.
-
-**arXiv ID:** 2508.14313
-</details>
-
-<details>
 <summary><strong>Can you see how I learn? Human observers' inferences about Reinforcement Learning agents' learning processes</strong> - Bernhard Hilpert, Muhan Hou, Kim Baraka, Joost Broekens - [[pdf]](https://arxiv.org/pdf/2506.13583)</summary>
 
 **Abstract:** Reinforcement Learning (RL) agents often exhibit learning behaviors that are not intuitively interpretable by human observers, which can result in suboptimal feedback in collaborative teaching settings. Yet, how humans perceive and interpret RL agent's learning behavior is largely unknown. In a bottom-up approach with two experiments, this work provides a data-driven understanding of the factors of human observers' understanding of the agent's learning process. A novel, observation-based paradigm to directly assess human inferences about agent learning was developed. In an exploratory interview study (\textit{N}=9), we identify four core themes in human interpretations: Agent Goals, Knowledge, Decision Making, and Learning Mechanisms. A second confirmatory study (\textit{N}=34) applied an expanded version of the paradigm across two tasks (navigation/manipulation) and two RL algorithms (tabular/function approximation). Analyses of 816 responses confirmed the reliability of the paradigm and refined the thematic framework, revealing how these themes evolve over time and interrelate. Our findings provide a human-centered understanding of how people make sense of agent learning, offering actionable insights for designing interpretable RL systems and improving transparency in Human-Robot Interaction.
 
 **arXiv ID:** 2506.13583
+</details>
+
+<details>
+<summary><strong>AIRL-S: Unifying Reinforcement Learning and Search-Based Test-Time Scaling via Adversarial Inverse Reinforcement Learning</strong> - Can Jin, Yang Zhou, Qixin Zhang, Hongwu Peng, Di Zhang, Zihan Dong, Marco Pavone, Ligong Han, Zhang-Wei Hong, Tong Che, Dimitris N. Metaxas - [[pdf]](https://arxiv.org/pdf/2508.14313)</summary>
+
+**Abstract:** Test-time scaling strategies for Large Language Models predominantly rely on either reinforcement learning with sparse outcome rewards or search-based methods guided by static Process Reward Models. However, outcome-based RL often suffers from training instability and sample inefficiency, while static PRMs require expensive step-wise supervision and are susceptible to reward hacking due to distributional shifts. In this paper, we introduce AIRL-S, a unified framework that integrates Adversarial Inverse Reinforcement Learning with Group Relative Policy Optimization. By inferring a dense, step-wise reward model directly from reference trajectories, AIRL-S eliminates the dependency on labeled process data and uses the same learned PRM as both a training signal and a verifier for search-based TTS. Extensive evaluations across eight benchmarks in mathematics, science, and code generation demonstrate that our policy model improves average performance by 9\% over the base model, matching GPT-4o. We further analyze how the AIRL and GRPO objectives complement each other and how the learned PRM transfers across generators and search algorithms, establishing a robust and cost-effective methodology for scaling test-time computation in complex reasoning tasks.
+
+**arXiv ID:** 2508.14313
 </details>
 
 <details>
@@ -743,19 +743,19 @@ We show that human-level Text-to-SQL performance is achievable by fine-tuning an
 </details>
 
 <details>
-<summary><strong>SMOPD: Multi-Reward Reinforcement Learning via Specialize-and-Merge Online Policy Distillation</strong> - Wen Wang, Jiahua Bao, Tu Yongsiqi, Yihao Liu, Haotian Zhou, Haoxuan Ma, Mengyu Zhou, Wenkui Fan, Junwei He, Xiaoxi Jiang, Guanjun Jiang - [[pdf]](https://arxiv.org/pdf/2608.03092)</summary>
-
-**Abstract:** We aim to improve model performance in multi-reward reinforcement learning training process. Existing Group reward-Decoupled Normalization Policy Optimization (GDPO) has mitigated the issue of reward signals masking one another during direct scalarization by normalizing each reward dimension separately before aggregation. However, our experiments show that GDPO still struggles to balance reward signals with different granularities. Specifically, in some particular training tasks, the model may receive a dense reward that assigns fine-grained scores ranging from 0.1 to 1.0, together with a sparse reward that provides only binary feedback of either 0 or 1. In such cases, we find that the sparse reward may provide an insufficient optimization signal, preventing its corresponding capability from being effectively reinforced. Therefore, how can we strengthen the optimization signal from the sparse reward without sacrificing the capability already learned from the fine-grained reward? To overcome this limitation, we propose Specialize-and-Merge Online Policy Distillation (SMOPD), a two-stage training method for multi-reward optimization. Stage1-Specialize: SMOPD first employs reward-priority configurations to train multiple reward-specialized teachers, allowing each reward to be learned under conditions where its signal can effectively drive optimization. Stage2-Merge: SMOPD then utilizes online policy distillation to combine the reward-specialized capabilities of these teachers into a single student policy, while maintaining balanced task-level optimization. To validate our method, we conduct experiments on two multi-reward settings: complementary rewards(tool-calling accuracy and format) and conflicting rewards (helpful and harmless rewards). Based on above settings, SMOPD outperforms GDPO across 1.5B, 3B and 7B backbones.
-
-**arXiv ID:** 2608.03092
-</details>
-
-<details>
 <summary><strong>Metag: A dataset to build agentic meta-reviewing capabilities</strong> - Anirudh Sundar, Min Chen, Divya Tadimeti, Gemma Zhang, Alice Li, Nigel Boachie Kumankumah, Pavan Uttej Ravva, Sadid Hasan, Somya Chatterjee, Pruthvi Prakash Navada, Xiao Wang, Yue Kang, Sulaiman Vesal, Larry Heck - [[pdf]](https://arxiv.org/pdf/2608.20488)</summary>
 
 **Abstract:** AI tools increasingly support tasks across the scientific research cycle, from experiment design and manuscript preparation to peer review. At the same time, the continuing growth in conference submissions has increased the burden on meta-reviewers, who must synthesize reviewer feedback, author rebuttals, and manuscript revisions. To address this concern, this paper introduces Metag, a dataset to accelerate the development of meta-reviewing agents, specifically to identify changes made to scientific articles during the review-rebuttal process. Each instance contains a reviewer concern, the author's proposed resolution, and the manuscript diffs implementing the stated change. Metag is collected by obtaining manuscript versions from before the review deadline and after acceptance, computing differences between the two documents, and asking human annotators to align these differences with action items from OpenReview discussions. The resulting dataset consists of 349 high-quality action items tied to paper differences and will enable building methods to empower meta reviewers to quickly identify whether authors have addressed reviewer statements and where in the paper those changes have been made, resulting in additional transparency and traceability throughout peer review. The dataset is publicly available at this https URL.
 
 **arXiv ID:** 2608.20488
+</details>
+
+<details>
+<summary><strong>SMOPD: Multi-Reward Reinforcement Learning via Specialize-and-Merge Online Policy Distillation</strong> - Wen Wang, Jiahua Bao, Tu Yongsiqi, Yihao Liu, Haotian Zhou, Haoxuan Ma, Mengyu Zhou, Wenkui Fan, Junwei He, Xiaoxi Jiang, Guanjun Jiang - [[pdf]](https://arxiv.org/pdf/2608.03092)</summary>
+
+**Abstract:** We aim to improve model performance in multi-reward reinforcement learning training process. Existing Group reward-Decoupled Normalization Policy Optimization (GDPO) has mitigated the issue of reward signals masking one another during direct scalarization by normalizing each reward dimension separately before aggregation. However, our experiments show that GDPO still struggles to balance reward signals with different granularities. Specifically, in some particular training tasks, the model may receive a dense reward that assigns fine-grained scores ranging from 0.1 to 1.0, together with a sparse reward that provides only binary feedback of either 0 or 1. In such cases, we find that the sparse reward may provide an insufficient optimization signal, preventing its corresponding capability from being effectively reinforced. Therefore, how can we strengthen the optimization signal from the sparse reward without sacrificing the capability already learned from the fine-grained reward? To overcome this limitation, we propose Specialize-and-Merge Online Policy Distillation (SMOPD), a two-stage training method for multi-reward optimization. Stage1-Specialize: SMOPD first employs reward-priority configurations to train multiple reward-specialized teachers, allowing each reward to be learned under conditions where its signal can effectively drive optimization. Stage2-Merge: SMOPD then utilizes online policy distillation to combine the reward-specialized capabilities of these teachers into a single student policy, while maintaining balanced task-level optimization. To validate our method, we conduct experiments on two multi-reward settings: complementary rewards(tool-calling accuracy and format) and conflicting rewards (helpful and harmless rewards). Based on above settings, SMOPD outperforms GDPO across 1.5B, 3B and 7B backbones.
+
+**arXiv ID:** 2608.03092
 </details>
 
 <details>
@@ -767,19 +767,19 @@ We show that human-level Text-to-SQL performance is achievable by fine-tuning an
 </details>
 
 <details>
-<summary><strong>Reinforcement Learning for Continuous-Time Jump Markov Decision Processes with Applications to Network Dynamic Pricing</strong> - Huiling Meng, Ningyuan Chen, Xuefeng Gao - [[pdf]](https://arxiv.org/pdf/2608.20680)</summary>
-
-**Abstract:** We study reinforcement learning (RL) in Continuous-Time Jump Markov Decision Processes (CTJMDPs) featuring general discrete state spaces (which need not possess a vector space structure) and continuous/discrete action spaces. The setup covers many well-known applications in operations such as multi-product dynamic pricing with capacitated resources (Gallego and van Ryzin 1997). To model the exploration-exploitation tradeoff, we formulate an entropy-regularized continuous-time control problem with stochastic policies. Recent continuous-time RL techniques such as $q$-learning for controlled diffusions in (Jia and Zhou 2023) focus on continuous state spaces $\mathbb{R}^d$ and rely heavily on semimartingale theory in $\mathbb{R}^d$ for their theoretical analysis. Consequently, their methods cannot be directly applied to CTJMDPs with general discrete state spaces, which may lack the algebraic addition and subtraction structures inherent to Euclidean spaces. To bridge this gap, we establish the theoretical foundations of $q$-learning for CTJMDPs and develop model-free $q$-learning algorithms. Compared to naïve time discretization and approximating CTJMDPs using discrete-time MDPs, our approach has several conceptual and empirical benefits. Numerical experiments in network dynamic pricing (Gallego and van Ryzin 1997) show that our proposed RL algorithm reliably learns near-optimal policies and consistently outperforms standard benchmark methods, demonstrating superior solution quality and effective scalability to large-scale network instances.
-
-**arXiv ID:** 2608.20680
-</details>
-
-<details>
 <summary><strong>Decoupling Policy Extraction for Offline Reinforcement Learning</strong> - Xuyao Lin, Yixiang Shan, Jinru Duan, Tao Yang, Xinyu Zhao, Runyu Lei, Yiming Zhao, Jiaxin Fan, Zongbao Feng, Peng Jia - [[pdf]](https://arxiv.org/pdf/2608.20909)</summary>
 
 **Abstract:** Offline RL methods commonly jointly train the actor and critic, where the critic is used to guide the actor toward higher-value actions. This coupled learning process is well motivated in online RL, where an improved actor collects new data that can further update the actor and the critic. However, training data remains fixed in offline RL, making actor-side policy improvement unable to generate new data to validate or correct the critic. Moreover, retaining this coupled paradigm leads to two related challenges. Firstly, actor updates can drift toward high-valued but potentially out-of-distribution (OOD) actions and amplify critic overestimation. Secondly, conservative value estimation or behavior-cloning regularization creates a difficult trade-off between suppressing OOD actions and selecting high-value actions within the data-supported region. Motivated by this observation, we revisit the conventional offline RL paradigm and propose decoupling policy improvement from actor training. Specifically, we train the actor solely to model the behavior distribution and perform policy improvement at inference time by reranking multiple actor-generated proposals with a separately learned critic. We refer to this paradigm as the decoupled policy extraction paradigm. Under such paradigm, the actor provides behavior-supported action candidates, while the critic performs value-based selection within this candidate set. Extensive experiments show that the decoupled policy extraction paradigm outperforms both behavior cloning and jointly learned offline RL methods, while remaining effective even with a naive Q-learning critic.
 
 **arXiv ID:** 2608.20909
+</details>
+
+<details>
+<summary><strong>Reinforcement Learning for Continuous-Time Jump Markov Decision Processes with Applications to Network Dynamic Pricing</strong> - Huiling Meng, Ningyuan Chen, Xuefeng Gao - [[pdf]](https://arxiv.org/pdf/2608.20680)</summary>
+
+**Abstract:** We study reinforcement learning (RL) in Continuous-Time Jump Markov Decision Processes (CTJMDPs) featuring general discrete state spaces (which need not possess a vector space structure) and continuous/discrete action spaces. The setup covers many well-known applications in operations such as multi-product dynamic pricing with capacitated resources (Gallego and van Ryzin 1997). To model the exploration-exploitation tradeoff, we formulate an entropy-regularized continuous-time control problem with stochastic policies. Recent continuous-time RL techniques such as $q$-learning for controlled diffusions in (Jia and Zhou 2023) focus on continuous state spaces $\mathbb{R}^d$ and rely heavily on semimartingale theory in $\mathbb{R}^d$ for their theoretical analysis. Consequently, their methods cannot be directly applied to CTJMDPs with general discrete state spaces, which may lack the algebraic addition and subtraction structures inherent to Euclidean spaces. To bridge this gap, we establish the theoretical foundations of $q$-learning for CTJMDPs and develop model-free $q$-learning algorithms. Compared to naïve time discretization and approximating CTJMDPs using discrete-time MDPs, our approach has several conceptual and empirical benefits. Numerical experiments in network dynamic pricing (Gallego and van Ryzin 1997) show that our proposed RL algorithm reliably learns near-optimal policies and consistently outperforms standard benchmark methods, demonstrating superior solution quality and effective scalability to large-scale network instances.
+
+**arXiv ID:** 2608.20680
 </details>
 
 <details>
@@ -799,19 +799,19 @@ We show that human-level Text-to-SQL performance is achievable by fine-tuning an
 </details>
 
 <details>
-<summary><strong>Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models</strong> - Lars van der Laan, Aurélien Bibaut, Nathan Kallus - [[pdf]](https://arxiv.org/pdf/2512.24407)</summary>
-
-**Abstract:** In many sequential decision-making problems, researchers observe actions but not the rewards that drive behavior, yet still wish to evaluate and compare counterfactual policies. Inverse reinforcement learning (IRL) and dynamic discrete choice (DDC) models address this setting by positing an optimality model that links latent rewards to observed actions. Existing flexible IRL methods allow rich reward representations but typically do not provide valid inference, whereas classical DDC methods support inference only under restrictive parametric structure. We develop a semiparametric framework for debiased inverse reinforcement learning in maximum-entropy IRL and Gumbel-shock DDC models. Our key identification result is that the log-behavior policy can be treated as a pseudo-reward: it point-identifies policy value differences and, under a normalization constraint, the reward itself. This reduces inference on reward-dependent estimands to inference on smooth functionals of the behavior policy and transition kernel. We establish pathwise differentiability, derive efficient influence functions, and construct automatic debiased machine-learning estimators that permit flexible nuisance estimation while attaining $\sqrt{n}$-consistency, asymptotic normality, and semiparametric efficiency. The result is a computationally tractable framework for valid uncertainty quantification in flexible IRL and DDC models.
-
-**arXiv ID:** 2512.24407
-</details>
-
-<details>
 <summary><strong>Maximum Likelihood Reinforcement Learning</strong> - Fahim Tajwar, Guanning Zeng, Yueer Zhou, Yuda Song, Daman Arora, Yiding Jiang, Jeff Schneider, Ruslan Salakhutdinov, Haiwen Feng, Andrea Zanette - [[pdf]](https://arxiv.org/pdf/2602.02710)</summary>
 
 **Abstract:** Reinforcement learning (RL) is the method of choice for training models in setups where the objective function can only be evaluated by sampling from the model. Our key observation is that when the feedback is terminal and binary, models implicitly induce a likelihood over correct rollouts. Maximum likelihood would be the natural framework in such settings, but RL is used instead as a workaround to the non-differentiability. We prove that the standard, expected-reward RL formulation is only a first-order approximation of the likelihood. To remedy this mismatch, we introduce Maximum Likelihood Reinforcement Learning (MaxRL), a compute-indexed family of sample-based objectives that interpolate between expected-reward RL and maximum likelihood as sampling compute is scaled. The resulting objective is a one-line change to standard RL implementations. MaxRL Pareto-dominates existing methods in all tested models and tasks, achieves up to $20\times$ gains in test-time scaling efficiency over GRPO, and scales more favorably with additional training data and compute.
 
 **arXiv ID:** 2602.02710
+</details>
+
+<details>
+<summary><strong>Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models</strong> - Lars van der Laan, Aurélien Bibaut, Nathan Kallus - [[pdf]](https://arxiv.org/pdf/2512.24407)</summary>
+
+**Abstract:** In many sequential decision-making problems, researchers observe actions but not the rewards that drive behavior, yet still wish to evaluate and compare counterfactual policies. Inverse reinforcement learning (IRL) and dynamic discrete choice (DDC) models address this setting by positing an optimality model that links latent rewards to observed actions. Existing flexible IRL methods allow rich reward representations but typically do not provide valid inference, whereas classical DDC methods support inference only under restrictive parametric structure. We develop a semiparametric framework for debiased inverse reinforcement learning in maximum-entropy IRL and Gumbel-shock DDC models. Our key identification result is that the log-behavior policy can be treated as a pseudo-reward: it point-identifies policy value differences and, under a normalization constraint, the reward itself. This reduces inference on reward-dependent estimands to inference on smooth functionals of the behavior policy and transition kernel. We establish pathwise differentiability, derive efficient influence functions, and construct automatic debiased machine-learning estimators that permit flexible nuisance estimation while attaining $\sqrt{n}$-consistency, asymptotic normality, and semiparametric efficiency. The result is a computationally tractable framework for valid uncertainty quantification in flexible IRL and DDC models.
+
+**arXiv ID:** 2512.24407
 </details>
 
 <details>
