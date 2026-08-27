@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-08-27 09:36:18
+**Last Updated:** 2026-08-27 11:11:03
 
 **Total Papers:** 105
 
@@ -815,6 +815,14 @@ These are bounded contract and implementation results, not open-world model accu
 </details>
 
 <details>
+<summary><strong>Reinforcement Learning on Benign Facts Amplifies Leakage of Memorized Private Data</strong> - Renfei Zhang, Niloofar Mireshghallah - [[pdf]](https://arxiv.org/pdf/2608.21727)</summary>
+
+**Abstract:** Reinforcement learning with verifiable rewards (RLVR) is deployed to make models better at reasoning tasks, but its side effect on what models will divulge is under studied. Here we show that RLVR on facts increases extraction of personally identifiable information (PII) the instruct model had already memorized. We first confirm that instruct models have already memorized PII but leave them latent, rarely surfacing one when asked. We then apply RL on benign factual data that contains no PII of any kind, and re-probe: a targeted probe over name->email pairs, and an untargeted free-recall prompt that simply asks the model to list the addresses it knows. PII extraction rises sharply under both: on DeepSeek-V3.1, verbatim recall@k increases from 0.155 to 0.370, a 2.4x gain. The effect scales with model size: across three models spanning 8B to 671B parameters, absolute leakage is largest in the biggest model. Meanwhile model's reasoning abilities and refusal rates are retained, indicating that RL selectively changes which memorized information is accessible rather than broadly altering the model. In summary, memorized private data can be made markedly more extractable by training that never touches it. This gives an adversary a route to memorized data that requires no privacy-relevant training signal and no access to the data itself -- only the ability to fine-tune on something innocuous.
+
+**arXiv ID:** 2608.21727
+</details>
+
+<details>
 <summary><strong>Activation Steering Transfer to Agents: One Gain Ratio Does Not Identify Potency and Efficacy</strong> - Lucas Pinto - [[pdf]](https://arxiv.org/pdf/2607.09156)</summary>
 
 **Abstract:** Additive activation steering is calibrated in single-turn chat and then deployed inside agent scaffolds. The quantity usually reported for that move is a gain: a ratio of steered effects, T = Delta_agent / Delta_chat. We sweep eight family x arm dose-response cells over six models in both deployment contexts and show this ratio does not identify potency and efficacy. Reconstructing the published estimator in both of its forms on our own grids, its realized range contains 1 in five of five scorable cells, it moves with dose in four of five, and two cells with opposite, CI-clean potency shifts return gain intervals overlapping at a width under 0.08. Every scorable cell is an amplifier at one dose and an attenuator at another, so an amplify/attenuate taxonomy reports the dose it was read at.
@@ -823,14 +831,6 @@ We report the discipline at the same volume as the result: one cell is quarantin
 The consequence is a measurement instruction rather than a theorem: a transfer conclusion read at one strength does not identify what changed, because a displacement and a gain are not distinguishable from a single operating point.
 
 **arXiv ID:** 2607.09156
-</details>
-
-<details>
-<summary><strong>Reinforcement Learning on Benign Facts Amplifies Leakage of Memorized Private Data</strong> - Renfei Zhang, Niloofar Mireshghallah - [[pdf]](https://arxiv.org/pdf/2608.21727)</summary>
-
-**Abstract:** Reinforcement learning with verifiable rewards (RLVR) is deployed to make models better at reasoning tasks, but its side effect on what models will divulge is under studied. Here we show that RLVR on facts increases extraction of personally identifiable information (PII) the instruct model had already memorized. We first confirm that instruct models have already memorized PII but leave them latent, rarely surfacing one when asked. We then apply RL on benign factual data that contains no PII of any kind, and re-probe: a targeted probe over name->email pairs, and an untargeted free-recall prompt that simply asks the model to list the addresses it knows. PII extraction rises sharply under both: on DeepSeek-V3.1, verbatim recall@k increases from 0.155 to 0.370, a 2.4x gain. The effect scales with model size: across three models spanning 8B to 671B parameters, absolute leakage is largest in the biggest model. Meanwhile model's reasoning abilities and refusal rates are retained, indicating that RL selectively changes which memorized information is accessible rather than broadly altering the model. In summary, memorized private data can be made markedly more extractable by training that never touches it. This gives an adversary a route to memorized data that requires no privacy-relevant training signal and no access to the data itself -- only the ability to fine-tune on something innocuous.
-
-**arXiv ID:** 2608.21727
 </details>
 
 <details>
