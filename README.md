@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-09-03 04:19:04
+**Last Updated:** 2026-09-03 05:45:57
 
 **Total Papers:** 103
 
@@ -866,19 +866,19 @@ These findings support a two-stage conjecture of the observable lane-change proc
 </details>
 
 <details>
-<summary><strong>From Proxy Learning to Driving Decisions: A Transfer-Based Framework for Evaluating Future-Aware Autonomous Driving Planners</strong> - Yikai Wu - [[pdf]](https://arxiv.org/pdf/2609.02688)</summary>
-
-**Abstract:** Future-aware representations and world models are increasingly used in proposal-based autonomous-driving planners to improve trajectory selection. However, improvements in proxy objectives or restricted subsets are often interpreted as planning gains without verifying proposal ordering, selected trajectories, full-scale utility, and critical driving components. We propose the Proxy-to-Decision Transfer (PDT) Framework, an analysis framework that evaluates when learned future information supports a reliable driving-performance improvement claim. Its Decision-Transfer Decomposition Module localizes value loss through score margins, switch-conditioned utility, and support-versus-selection regret. Its Reliability-Constrained Validation Module requires exact pairing, a minimum meaningful effect, scale-expanded confirmation, safety non-compensation, sequential comparability, and family-level robustness. On a representative future-aware planner evaluated with NAVSIM-v1, component BCE decreases from 0.705 to 0.530 while held selected PDM decreases from 0.963 to 0.961. A separate candidate improves a 512-record prefix by 0.00909, with a scene-bootstrap 95% interval of [0.000744, 0.0177], but its 2048-record and complete-support intervals include zero. A proposal-level replay further confirms the switch-utility decomposition, yet none of 432 screened configurations passes the two-half, two-seed robustness gate. PDT therefore identifies where decision transfer fails or remains indeterminate across proxy, subset, aggregate, and selection evidence.
-
-**arXiv ID:** 2609.02688
-</details>
-
-<details>
 <summary><strong>Passivity-Centric Safe Reinforcement Learning for Contact-Rich Robotic Tasks</strong> - Heng Zhang, Gokhan Solak, Sebastian Hjorth, Arash Ajoudani - [[pdf]](https://arxiv.org/pdf/2503.00287)</summary>
 
 **Abstract:** Reinforcement learning (RL) has achieved remarkable success in various robotic tasks; however, its deployment in real-world scenarios, particularly in contact-rich environments, often overlooks critical safety and stability aspects. Policies without passivity guarantees can result in system instability, posing risks to robots, their environments, and human operators. In this work, we investigate the limitations of traditional RL policies when deployed in contact-rich tasks and explore the combination of energy-based passive control with safe RL in both training and deployment to answer these challenges. Firstly, we reveal the discovery that standard RL policy does not satisfy stability in contact-rich scenarios. Secondly, we introduce a \textit{passivity-aware} RL policy training with energy-based constraints in our safe RL formulation. Lastly, a passivity filter is exerted on the policy output for \textit{passivity-ensured} control during deployment. We conduct comparative studies on a contact-rich robotic maze exploration task, evaluating the effects of learning passivity-aware policies and the importance of passivity-ensured control. The experiments demonstrate that a passivity-agnostic RL policy easily violates energy constraints in deployment, even though it achieves high task completion in training. The results show that our proposed approach guarantees control stability through passivity filtering and improves the energy efficiency through passivity-aware training. A video of real-world experiments is available as supplementary material. We also release the checkpoint model and offline data for pre-training at \href{this https URL}{Hugging Face}.
 
 **arXiv ID:** 2503.00287
+</details>
+
+<details>
+<summary><strong>From Proxy Learning to Driving Decisions: A Transfer-Based Framework for Evaluating Future-Aware Autonomous Driving Planners</strong> - Yikai Wu - [[pdf]](https://arxiv.org/pdf/2609.02688)</summary>
+
+**Abstract:** Future-aware representations and world models are increasingly used in proposal-based autonomous-driving planners to improve trajectory selection. However, improvements in proxy objectives or restricted subsets are often interpreted as planning gains without verifying proposal ordering, selected trajectories, full-scale utility, and critical driving components. We propose the Proxy-to-Decision Transfer (PDT) Framework, an analysis framework that evaluates when learned future information supports a reliable driving-performance improvement claim. Its Decision-Transfer Decomposition Module localizes value loss through score margins, switch-conditioned utility, and support-versus-selection regret. Its Reliability-Constrained Validation Module requires exact pairing, a minimum meaningful effect, scale-expanded confirmation, safety non-compensation, sequential comparability, and family-level robustness. On a representative future-aware planner evaluated with NAVSIM-v1, component BCE decreases from 0.705 to 0.530 while held selected PDM decreases from 0.963 to 0.961. A separate candidate improves a 512-record prefix by 0.00909, with a scene-bootstrap 95% interval of [0.000744, 0.0177], but its 2048-record and complete-support intervals include zero. A proposal-level replay further confirms the switch-utility decomposition, yet none of 432 screened configurations passes the two-half, two-seed robustness gate. PDT therefore identifies where decision transfer fails or remains indeterminate across proxy, subset, aggregate, and selection evidence.
+
+**arXiv ID:** 2609.02688
 </details>
 
 </details>
