@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-09-16 04:44:14
+**Last Updated:** 2026-09-16 05:59:05
 
-**Total Papers:** 60
+**Total Papers:** 75
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Agent Applications (1 papers)</h2></summary>
+<summary><h2>Agent Applications (2 papers)</h2></summary>
 
 <details>
 <summary><strong>ThinkFlow: Self-Evolving Probabilistic Latent Memory for Lifelong Conversational Agents</strong> - Cai Ke, Xin Liu, Han Zhang, Jiangyue Yan, Zike Yuan, Ling Deng, Yue Yu, Hui Wang, Ruifeng Xu - [[pdf]](https://arxiv.org/pdf/2609.17010)</summary>
@@ -24,18 +24,20 @@
 **arXiv ID:** 2609.17010
 </details>
 
+<details>
+<summary><strong>API Benchmark Scores Do Not Reliably Transfer to Chatbot Interfaces</strong> - Jennifer Wang, Joachim Baumann, Daniel E. Ho, Sanmi Koyejo - [[pdf]](https://arxiv.org/pdf/2609.08861)</summary>
+
+**Abstract:** Benchmark scores are a central currency in model releases: they inform purchasing decisions, shape public trust, and influence policy. Yet, a key assumption underlying benchmark scores is that the model performance measured through APIs faithfully reflects the behavior of deployed systems.
+We challenge this assumption by auditing ChatGPT, Claude, and Gemini across seven systems and nine benchmarks spanning general capability, social bias, and sycophancy. We find systematic API--interface differences in both accuracy and consistency. On average, API evaluations score 3.4 percentage points higher in accuracy and 2.1 percentage points higher in test--retest agreement than corresponding interface evaluations. For ChatGPT, the performance difference between API and interface access rivals the API-only difference between GPT 5.3 and GPT 5.4. Put differently, switching access surfaces can degrade performance as much as downgrading a full model generation.
+We further test whether exposed API controls can reproduce interface behavior by varying system prompts, sampling parameters, and reasoning settings. These controls shift behavior in some cases but do not reliably eliminate the gap. Our findings document a context-validity gap: measurements obtained through APIs do not necessarily generalize to corresponding deployed interfaces, complicating the use of API evaluations as proxies for deployed systems.
+
+**arXiv ID:** 2609.08861
+</details>
+
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (14 papers)</h2></summary>
-
-<details>
-<summary><strong>BLINDSPOT: A Benchmark for Safety and Refusal Calibration in Long-Horizon Tool-Using Agents</strong> - Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas, Tejaswini Pedapati, Prasanna Sattigeri - [[pdf]](https://arxiv.org/pdf/2609.16305)</summary>
-
-**Abstract:** Large language model (LLM) agents increasingly operate over long-horizon interactions involving tool use, persistent state, evolving authorization, and external environment feedback. In such settings, safety failures may emerge only after multiple turns, yet existing evaluations often reduce agent behavior to task or attack success, obscuring whether an agent acts, refuses, or remains appropriately calibrated as the interaction evolves. We introduce Blindspot, a benchmark for trajectory-level safety calibration of long-horizon tool-using agents. Blindspot evaluates complete user-agent-environment trajectories through adaptive adversarial interaction, stateful tool execution, and execution-grounded adjudication. Its current instantiation contains 22 attack families and 35 scenarios across seven domains, yielding more than 2,500 long-horizon trajectories with an average interaction length of 14.7 turns. Each trajectory is assigned one of five outcomes: Safe Completion, Correct Refusal, Unsafe Completion, Over-Refusal, or Indeterminate. Unlike fixed attack datasets, Blindspot is an extensible live-simulation framework in which attacks, scenarios, tools, policies, domains, and agent configurations can be added without redesigning the evaluation pipeline. We evaluate 13 proprietary and open-weight LLMs using eight metrics covering unsafe completion, appropriate refusal, benign utility, over-refusal, repeated-run robustness, and post-refusal failure. Preliminary results reveal substantial differences in safety-utility calibration across models and show that failures can emerge only after several initially safe interaction steps. These findings motivate treating agent safety as a trajectory-level property rather than a single-turn or binary success criterion.
-
-**arXiv ID:** 2609.16305
-</details>
+<summary><h2>Benchmarks and Datasets (21 papers)</h2></summary>
 
 <details>
 <summary><strong>Toward Governance-Aware Autonomous GIS: A Narrative Review of Ethical and Privacy Risks in LLM-Enabled GeoAI</strong> - Maya Subramanian, Devika Jain - [[pdf]](https://arxiv.org/pdf/2609.16232)</summary>
@@ -43,6 +45,14 @@
 **Abstract:** Geospatial artificial intelligence (GeoAI) powered by large language models (LLMs) is expanding the capacity to query, generate, and interpret spatial information through natural-language interfaces and agentic autonomous GIS workflows. This capability creates governance challenges that general AI ethics discussions do not fully capture, including passive location inference from mobility traces, spatially structured bias amplification driven by spatial autocorrelation and scale effects, hallucinated spatial facts, and uncertainty compounding across multimodal geospatial inputs. This narrative review identifies eight recurring issues in LLM-enabled GeoAI: data provenance and consent, spatial privacy and inference risk, algorithmic bias and spatial inequity, spatial mechanisms as structural risk (spatial autocorrelation, the modifiable areal unit problem, and scale effects), LLM-specific technical risks, explainability, policy and regulatory gaps, and public enablement and workforce development. For each issue, we characterize the underlying mechanism, ground it in an illustrative example from the literature, and assess the current state of technical or institutional responses, ranging from largely unaddressed to actively debated or subject to emerging policy. Building on this synthesis, we propose a governance-aware architecture for LLM-enabled autonomous GIS that maps each issue to enforceable controls and auditable artifacts across the geospatial data lifecycle, illustrated through a worked flood-response routing scenario. The review highlights a persistent evidence gap: proposed responses remain largely conceptual, and field-tested evaluations of governance controls for LLM-enabled GeoAI remain limited. We close by outlining a research agenda emphasizing empirical validation, spatially specific interpretability tools, and workforce training aligned with these emerging risks.
 
 **arXiv ID:** 2609.16232
+</details>
+
+<details>
+<summary><strong>BLINDSPOT: A Benchmark for Safety and Refusal Calibration in Long-Horizon Tool-Using Agents</strong> - Sadia Asif, Mohammad Mohammadi Amiri, Momin Abbas, Tejaswini Pedapati, Prasanna Sattigeri - [[pdf]](https://arxiv.org/pdf/2609.16305)</summary>
+
+**Abstract:** Large language model (LLM) agents increasingly operate over long-horizon interactions involving tool use, persistent state, evolving authorization, and external environment feedback. In such settings, safety failures may emerge only after multiple turns, yet existing evaluations often reduce agent behavior to task or attack success, obscuring whether an agent acts, refuses, or remains appropriately calibrated as the interaction evolves. We introduce Blindspot, a benchmark for trajectory-level safety calibration of long-horizon tool-using agents. Blindspot evaluates complete user-agent-environment trajectories through adaptive adversarial interaction, stateful tool execution, and execution-grounded adjudication. Its current instantiation contains 22 attack families and 35 scenarios across seven domains, yielding more than 2,500 long-horizon trajectories with an average interaction length of 14.7 turns. Each trajectory is assigned one of five outcomes: Safe Completion, Correct Refusal, Unsafe Completion, Over-Refusal, or Indeterminate. Unlike fixed attack datasets, Blindspot is an extensible live-simulation framework in which attacks, scenarios, tools, policies, domains, and agent configurations can be added without redesigning the evaluation pipeline. We evaluate 13 proprietary and open-weight LLMs using eight metrics covering unsafe completion, appropriate refusal, benign utility, over-refusal, repeated-run robustness, and post-refusal failure. Preliminary results reveal substantial differences in safety-utility calibration across models and show that failures can emerge only after several initially safe interaction steps. These findings motivate treating agent safety as a trajectory-level property rather than a single-turn or binary success criterion.
+
+**arXiv ID:** 2609.16305
 </details>
 
 <details>
@@ -118,11 +128,61 @@
 </details>
 
 <details>
-<summary><strong>EviSI: An Evidence-Based Evaluation Agent for Simultaneous Interpreting</strong> - Ben Yan, Zongyao Li, Xiaoyu Chen, Daimeng Wei, Weidong Liu, Huan Zhao, Chong Li, Yaode Wang, Yuzhe Shang - [[pdf]](https://arxiv.org/pdf/2609.08171)</summary>
+<summary><strong>Autonomous Assessment of Generalizability of AI Agent Capabilities</strong> - Daniel Bramblett, Rushang Karia, Adrian Ciotinga, Pulkit Verma, YooJung Choi, Siddharth Srivastava - [[pdf]](https://arxiv.org/pdf/2512.16733)</summary>
 
-**Abstract:** Low-latency simultaneous speech-to-speech translation must keep pace with ongoing speech while preserving key information. To meet these demands, systems use segmentation, reformulation and condensation to reorganize and rephrase information. However, metrics developed for text translation, including BLEU and COMET, may not consistently distinguish faithful adaptations from semantic errors. We propose EviSI, a large language model evaluation agent combining Multidimensional Quality Metrics (MQM) with criteria developed with professional interpreters. Shared source evidence guides assessment across four dimensions: Anchor, Event, Logic and Fluency. Verified errors are deduplicated before deterministic scoring. On human-rated English to Chinese and Chinese to English data, EviSI recovers the aggregate English to Chinese human system ranking. Mean within-dataset Kendall correlations for system rankings reach 0.707 and 0.467, respectively, exceeding evaluated BLEU and COMET baselines. A multilingual extension to five directions without human ratings retains the dimensions and scoring rule, showing positive system ranking correlations with COMET throughout.
+**Abstract:** Safe deployment of black-box AI (BBAI) systems such as foundation model agents requires methods for evaluating their capabilities in novel settings. We define an agent's capability as its ability to achieve a short term objective and formalize the problem of learning models that predict whether, with what effects, and under what conditions, an agent can perform a capability. We introduce Monte Carlo Query Search (MCQS), an active query-synthesis method for learning symbolic stochastic capability models of BBAIs. MCQS models capabilities as conditional probability distributions over outcomes and formulates capability evaluation as an active learning problem over policies. We use Monte Carlo tree search to synthesize queries that maximally distinguish between extremal capability hypotheses: the lattice meet and join corresponding to the most pessimistic and optimistic models consistent with observed behavior. Executing these queries yields trajectories that prune inconsistent hypotheses. We prove soundness, completeness, and convergence properties under standard realizability and sampling assumptions. Experiments with multiple BBAI systems show that MCQS learns accurate capability models more efficiently than baseline query strategies, enabling systematic characterization of agent capability boundaries with fewer interactions.
 
-**arXiv ID:** 2609.08171
+**arXiv ID:** 2512.16733
+</details>
+
+<details>
+<summary><strong>Shared Selective Persistent Memory for Agentic LLM Systems</strong> - Sanjana Pedada, Aditya Dhavala, Neelraj Patil - [[pdf]](https://arxiv.org/pdf/2607.09493)</summary>
+
+**Abstract:** Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the domain constraints, data schemas, tool configurations, and output preferences that made previous sessions productive. We introduce shared selective persistent memory, an architecture that retains four categories of reusable context - task specifications, data schemas, tool configurations, and output constraints - while discarding session-specific reasoning traces, and that packages them into workspaces transferable across users under role-based access control. The resulting cost curve is non-monotonic. In a controlled replication on four public datasets, where a formatting specification is established once and then withheld, no memory completes 0/12 trials at 3.8K input tokens, selective memory completes 12/12 at 3.9K, and full conversation history completes 8/12 at 7.7K. What is kept matters more than how much is kept: the winning configuration costs essentially what the failing one does, and twice as much context does not improve on it. Both differences from no memory survive Bonferroni-corrected exact McNemar tests (p = 0.0005, p = 0.008); the two memory conditions separate on price rather than completion. We implement this in a deployed platform where agents produce git-versioned artifacts from CSV, SQL, REST, and MCP sources. A complementary zero-token data refresh contract decouples generated programs from runtime data, firing on 12/12 trials at a median 0.08s with no model call, while summary-driven data representation costs 97-431x fewer tokens than raw injection. Across 24 recurring enterprise tasks selective memory completes 23/24 against 19/24 and 17/24, though at that sample no pairwise difference reaches significance.
+
+**arXiv ID:** 2607.09493
+</details>
+
+<details>
+<summary><strong>Know Your Agent: Reconnaissance-Driven Pentesting of AI Agents</strong> - Or Zion Eliav, Eyal Lenga, Shir Bernstien, Yisroel Mirsky - [[pdf]](https://arxiv.org/pdf/2607.19837)</summary>
+
+**Abstract:** Traditional pentesting uses reconnaissance at each step to uncover unseen weaknesses, build stronger attacks, and advance the objective; we argue that AI agents require the same treatment. We formalize agent reconnaissance by modeling the process and identifying the knowledge assets it seeks to extract: what they are, how they are used, and which agent weaknesses they exploit to give adversaries leverage in indirect prompt injection attacks. We instantiate these insights in Know Your Agent (KYA), a framework that automates black-box, reconnaissance-driven pentesting by probing agents, building target profiles, and using those profiles to craft stronger attacks. We evaluate KYA on agent-security benchmarks and a real-world coding agent, and release KYA, its benchmarks, and baseline implementations for reproducibility.
+
+**arXiv ID:** 2607.19837
+</details>
+
+<details>
+<summary><strong>CASCADE: An Agentic Regulatory Network Framework for Patient-Data-Validated Downstream Perturbation Prediction</strong> - Jose A. Bird - [[pdf]](https://arxiv.org/pdf/2608.05359)</summary>
+
+**Abstract:** CASCADE is an agentic framework that predicts downstream transcriptional effects of gene perturbation from precomputed
+ARACNe regulatory networks, exposed via MCP. Prior work validates such tools by checking whether predicted genes are
+known cancer genes (membership); we instead test whether the predicted direction of change matches reality, using
+focal-gene copy-number amplification as a dosage-based proxy for the inverse of knockdown against real TCGA patient
+tumor data.
+For MYC, CASCADE's predicted knockdown targets show strong concordance with real amplified-vs-non-amplified tumor
+expression across three cancer types (BRCA: 90.0%, COAD: 72.0%, STAD: 85.7%; all p<0.0013), well above permutation
+baselines, surviving a PAM50 subtype control and replicating in an independent cohort (METABRIC, 87.2%). Compared
+against curated MSigDB gene-set baselines via Fisher's exact test, CASCADE's accuracy is not shown to exceed existing
+public knowledge of MYC- or E2F-driven biology, though its gene-specific direction-calling clearly outperforms a naive
+uniform guess.
+Extending to fifteen additional genes, validation proves gene-specific rather than universal: proliferation-machinery
+regulators mostly replicate, while lineage-identity transcription factors and one cyclin-D paralog (CCND2)
+consistently fail, a pattern we discuss as a hedged, post-hoc hypothesis.
+We separately benchmark whether an LLM-based agent correctly grounds natural-language requests into CASCADE's real MCP
+tool calls. Across 35 queries, a documented local model reaches 71.4% exact match (85.7% for a larger model); schema
+and gene-alias failures are resolved by scale or server-side correction, but both models confidently default to the
+wrong perturbation type on ambiguous queries, a failure a targeted fix could not resolve because its trigger condition
+never occurs.
+
+**arXiv ID:** 2608.05359
+</details>
+
+<details>
+<summary><strong>CAFE: Self-Improving Search Agents Need Co-Evolving Feedback</strong> - Boyang Liu, Senjie Jin, Peixin Wang, Zhangyue Yin, Yibo Wang, Yuhao Zhou, Zhihao Zhang, Xinbing Liang, Shizheng Zhu, Yuhui Wang, Jingqi Tong, Dingwei Zhu, Zhiheng Xi, Jiazheng Zhang, Clive Bai, Clarenceai, Blaze Chen, Tao Gui, Qi Zhang, Xuanjing Huang - [[pdf]](https://arxiv.org/pdf/2608.24794)</summary>
+
+**Abstract:** Reliable search requires more than acquiring external evidence. An agent must also recognize and recover from errors as its trajectory unfolds. In-trajectory feedback provides a mechanism for such recovery by diagnosing where the search has drifted and redirecting subsequent reasoning steps. This is particularly important in long-horizon search, where an early directional error may receive no immediate corrective signal and can compound across later steps. Making such feedback learnable, however, creates a coupled problem: the agent must learn when to request and use feedback, while the critic must learn corrections from outcome-confounded rollouts as the agent's failure patterns evolve. We introduce CAFE (Coupled Agent--Feedback Evolution), a framework in which a shared-parameter model alternates between search-agent and critic roles. CAFE initializes feedback-conditioned recovery from trajectories built around the base agent's own failures, then couples online and offline optimization. During online RL, a comparative feedback estimate uses a prompt-level call--skip success gap to shape request returns, while feedback-aware advantage shaping reweights token advantages before and after feedback. Offline, rollout-derived preference optimization learns feedback from matched successful and unsuccessful trajectories. On seven agentic search benchmarks, CAFE outperforms the evaluated RL-based search agents on average, retains its gains across all six out-of-domain benchmarks, and reduces answer-level hallucinations. One-sided ablations show that improving only the agent or only the critic eventually plateaus, whereas alternating the two updates continues to improve performance. These findings suggest that a self-improving search agent needs feedback that co-evolves with the policy it guides.
+
+**arXiv ID:** 2608.24794
 </details>
 
 <details>
@@ -135,11 +195,35 @@ We demonstrate the capabilities of Colosseum through open-ended research and eva
 </details>
 
 <details>
+<summary><strong>DoubleAgents: Human-Agent Alignment in a Socially Embedded Workflow</strong> - Tao Long, Xuanming Zhang, Sitong Wang, Zhou Yu, Lydia B Chilton - [[pdf]](https://arxiv.org/pdf/2509.12626)</summary>
+
+**Abstract:** Aligning agentic AI with user intent is critical for delegating complex, socially embedded tasks, yet user preferences are often implicit, evolving, and difficult to specify upfront. We present DoubleAgents, a system for human-agent alignment in coordination tasks, grounded in distributed cognition. DoubleAgents integrates three components: (1) a coordination agent that maintains state and proposes plans and actions, (2) a dashboard visualization that makes the agent's reasoning legible for user evaluation, and (3) a policy module that transforms user edits into reusable alignment artifacts, including coordination policies, email templates, and stop hooks, which improve system behavior over time. We evaluate DoubleAgents through a two-day in-lab interactive simulation study (n=10), three real-world deployments, and a technical evaluation. Participants' comfort in offloading tasks and reliance on DoubleAgents both increased over time, correlating with the three distributed cognition components. Participants still required control at points of uncertainty - edge-case flagging and context-dependent actions. We contribute a distributed cognition approach to human-agent alignment in socially embedded tasks. We further introduce interactive simulation as a methodological testbed for rapid iteration and alignment testing of agentic systems.
+
+**arXiv ID:** 2509.12626
+</details>
+
+<details>
+<summary><strong>EviSI: An Evidence-Based Evaluation Agent for Simultaneous Interpreting</strong> - Ben Yan, Zongyao Li, Xiaoyu Chen, Daimeng Wei, Weidong Liu, Huan Zhao, Chong Li, Yaode Wang, Yuzhe Shang - [[pdf]](https://arxiv.org/pdf/2609.08171)</summary>
+
+**Abstract:** Low-latency simultaneous speech-to-speech translation must keep pace with ongoing speech while preserving key information. To meet these demands, systems use segmentation, reformulation and condensation to reorganize and rephrase information. However, metrics developed for text translation, including BLEU and COMET, may not consistently distinguish faithful adaptations from semantic errors. We propose EviSI, a large language model evaluation agent combining Multidimensional Quality Metrics (MQM) with criteria developed with professional interpreters. Shared source evidence guides assessment across four dimensions: Anchor, Event, Logic and Fluency. Verified errors are deduplicated before deterministic scoring. On human-rated English to Chinese and Chinese to English data, EviSI recovers the aggregate English to Chinese human system ranking. Mean within-dataset Kendall correlations for system rankings reach 0.707 and 0.467, respectively, exceeding evaluated BLEU and COMET baselines. A multilingual extension to five directions without human ratings retains the dimensions and scoring rule, showing positive system ranking correlations with COMET throughout.
+
+**arXiv ID:** 2609.08171
+</details>
+
+<details>
 <summary><strong>Distilling Foundation Models for Agentic What-If Reasoning:Cost, Latency, and Governance in a Hybrid LLM+SLM Architecture</strong> - Sourish Dey, Aditya Kumar - [[pdf]](https://arxiv.org/pdf/2609.16091)</summary>
 
 **Abstract:** Tabular foundation models deliver strong zero-training predictive performance via in-context learning, but their high inference latency makes them impractical as hot-path decision backends in interactive agentic loops. We distill a TabPFN teacher into a compact feed-forward student across a business-decision simulation on UCI Adult and five OpenML benchmarks: the classification head compresses 53.2M parameters to 8,546 (6,220x); the deployed two-head loan pipeline compresses 111.4M parameters to 17,059 (6,532x). The student retains 95.4-100.5% accuracy and 96.8-100.0% AUC, with the lowest accuracy retention on credit-g at 95.4%; an alpha = 0 hard-label control shows that the teacher's soft targets provide a 2.1-7.0 AUC point gain.
 
 **arXiv ID:** 2609.16091
+</details>
+
+<details>
+<summary><strong>ForkSCOPE: Charting the Agentic Garden of Forking Paths</strong> - Arjun Balaji, Batuhan Duru Yeltekin, Tian Zheng - [[pdf]](https://arxiv.org/pdf/2609.12438)</summary>
+
+**Abstract:** Even with a fixed dataset and research question, data analysis involves many defensible decisions. Understanding how these choices influence the results is scientifically important but remains challenging. Crowdsourcing and agentic AI can generate hundreds of end-to-end analyses, but scaling generation alone can create a processing bottleneck and an analytic ``black hole.'' A common workaround is to impose a shared fixed decision taxonomy, which can limit insight and understate uncertainty. We present ForkSCOPE, a human-AI collaboration framework that induces structure bottom-up from the code corpus of end-to-end analyses, without a taxonomy fixed before or after generation, so the organization and evaluation of the garden can scale with the corpus. ForkSCOPE surfaces the charted garden of forking paths through a human-AI collaboration pipeline and an evidence-linked interactive viewer for steering and verification: it spotlights organically identified forks and structures and produces a derived taxonomy and decision map compatible with existing multiverse tools.
+
+**arXiv ID:** 2609.12438
 </details>
 
 </details>
@@ -188,6 +272,14 @@ We demonstrate the capabilities of Colosseum through open-ended research and eva
 </details>
 
 <details>
+<summary><strong>DynSTEER: Dynamic Stage-wise Trajectory Evaluation and Execution-time Review for Agents</strong> - Zhichao Shi, Xuhui Jiang, Wenjie Zhang, Xiaojun Wu, Cehao Yang, Chengjin Xu, Jian Guo, Yuanzhuo Wang - [[pdf]](https://arxiv.org/pdf/2609.14637)</summary>
+
+**Abstract:** Large language model agents are increasingly deployed for long-horizon task execution, raising a central granularity question for trajectory evaluation: whole-trajectory verification is too coarse to capture concrete failures and their associated evidence in long trajectories, while atomic-step scoring is too fine-grained, noise-sensitive, and computationally expensive. This granularity gap makes a single-reference trajectory paradigm inadequate for assessing the rich space of valid agent execution paths and delays timely feedback and early stopping in long-horizon tasks. To address these issues, we propose DynSTEER, a dynamic stage-wise framework for agent trajectory evaluation. DynSTEER bridges the granularity gap through stage-wise dynamic evaluation that segments rollouts at key execution nodes and adapts its multi-tier review strategy based on stage-level results; it compiles a path-tolerant milestone graph from public task views to preserve diverse legal paths without reference leakage; and it supports terminating unrecoverable agent executions to curb resource waste. Experiments show that DynSTEER improves evaluation discriminability by 85.2\% over native evaluation, separates all model pairs with statistical significance, and saves 45.41\% of execution steps on failed rollouts.
+
+**arXiv ID:** 2609.14637
+</details>
+
+<details>
 <summary><strong>Spurious Tool Use: When RL Agents Learn the Wrong Reason to Act</strong> - Yiwei Yang, Haoxiang Zhang, Bingbing Wen, Yao Lu, Yuchen Wu, Lei Zhang, Julian McAuley, Pan Lu, Bill Howe - [[pdf]](https://arxiv.org/pdf/2609.16268)</summary>
 
 **Abstract:** Large language model (LLM) agents increasingly interleave natural language reasoning with external tools such as web search and code execution. These tool-use policies are often optimized via reinforcement learning (RL), which can amplify spurious correlations in the training data. In this work, we study when and why RL-trained agents learn shortcut tool-selection policies: invoking tools based on superficial prompt cues rather than genuine task requirements. We construct controlled synthetic environments combining factual question answering and mathematical reasoning tasks, and inject cues that are strongly correlated with specific tools during training but causally irrelevant to tool necessity. Across counterfactual evaluations where cues are present but the associated tools are not required, agents exhibit substantial shortcut behavior, with spurious tool invocation rates increasing by up to 39 percent. However, shortcut formation is not universal: across the conditions we test, it arises only when the agent has already learned to use the target tool reliably, suggesting that task competence, rather than dataset imbalance alone, is a key factor in shortcut learning. A swapped-cue analysis further shows that semantic alignment between cues and tools substantially amplifies this effect. To mitigate these failures, we introduce a dense, decision-level reward in which an LLM judge evaluates the necessity of each tool call. This tool-necessity reward effectively suppresses cue-driven tool use while preserving task performance, providing a practical approach to improving the robustness of LLM agent tool-use policies.
@@ -203,18 +295,10 @@ We demonstrate the capabilities of Colosseum through open-ended research and eva
 **arXiv ID:** 2605.28108
 </details>
 
-<details>
-<summary><strong>Agentic Search Spaces for Tabular Machine Learning</strong> - Renat Sergazinov, Artem Chistyakov, Sergey Pankevich, Artem Babenko - [[pdf]](https://arxiv.org/pdf/2609.16309)</summary>
-
-**Abstract:** Despite the rapid progress of LLM-based agents for planning, code generation, and debugging, their practical value for tabular machine learning remains underexplored. In this paper, we investigate a concrete use case: whether state-of-the-art agentic AI systems can design extended HPO search spaces for established tabular models that outperform the standard search spaces provided by the model authors. Specifically, we represent each tabular model as a modular pipeline covering preprocessing, embeddings, architecture, training, and inference. We then task the agent to propose candidate code implementations for each module and use a classical HPO algorithm to jointly optimize over these candidates and the model's default hyperparameters. Compared with the base HPO spaces, the expanded search spaces improve the performance of nearly every model family across a suite of 45 datasets, with average relative gains of 0.6%, rising to 2.0% on small-to-medium regression datasets. Notably, these gains come at no extra tuning cost: the enlarged spaces outperform the base under the same tuning and ensembling budgets. The gains transfer to the recent TabArena benchmark, where the agentic spaces improve the official Elo scores of four of the five model families and the two strongest agentic ensembles surpass the best AutoGluon ensemble of conventional models. Overall, our study suggests that LLM agents can provide practical value for tabular ML by expanding the design space.
-
-**arXiv ID:** 2609.16309
-</details>
-
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (6 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (14 papers)</h2></summary>
 
 <details>
 <summary><strong>Self-Emergence Agent Architecture:Behavior-Inertia HMM, Reflexive Metacognition,and Social-Contrastive Self-Modeling</strong> - Xiaoyang Liu - [[pdf]](https://arxiv.org/pdf/2609.17331)</summary>
@@ -241,6 +325,22 @@ We demonstrate the capabilities of Colosseum through open-ended research and eva
 </details>
 
 <details>
+<summary><strong>Multi-Agent Collaboration for Automated Design Exploration on High Performance Computing Systems</strong> - Harshitha Menon, Charles F. Jekel, Kevin Korner, M. Giselle Fernandez-Godino, Brian Gunnarson, Nathan K. Brown, Michael Stees, Walter Nissen, Meir H. Shachar, Dane M. Sterbentz, William J. Schill, Yue Hao, Robert Rieben, William Quadros, Steve Owen, Scott Mitchell, Ismael D. Boureima, Jonathan L. Belof - [[pdf]](https://arxiv.org/pdf/2603.11515)</summary>
+
+**Abstract:** Today's scientific challenges, from climate modeling to Inertial Confinement Fusion design to novel material design, require exploring huge design spaces. In order to enable high-impact scientific discovery, we need to scale up our ability to test hypotheses, generate results, and learn from them rapidly. We present MADA (Multi-Agent Design Assistant), a Large Language Model (LLM) powered multi-agent framework that coordinates specialized agents for complex design workflows. A Job Management Agent (JMA) launches and manages ensemble simulations on HPC systems, a Geometry Agent (GA) generates meshes, and an Inverse Design Agent (IDA) proposes new designs informed by simulation outcomes. While general purpose, we focus development and validation on Richtmyer--Meshkov Instability (RMI) suppression, a critical challenge in Inertial Confinement Fusion. We evaluate on two complementary settings: running a hydrodynamics simulations on HPC systems, and using a pre-trained machine learning surrogate for rapid design exploration. Our results demonstrate that the MADA system successfully executes iterative design refinement, automatically improving designs toward optimal RMI suppression with minimal manual intervention. Our framework reduces cumbersome manual workflow setup, and enables automated design exploration at scale. More broadly, it demonstrates a reusable pattern for coupling reasoning, simulation, specialized tools, and coordinated workflows to accelerate scientific discovery.
+
+**arXiv ID:** 2603.11515
+</details>
+
+<details>
+<summary><strong>RegNetAgents: A Multi-Agent Framework for Cross-Network Regulatory Driver Identification in Cancer Genomics</strong> - Jose A. Bird - [[pdf]](https://arxiv.org/pdf/2607.14097)</summary>
+
+**Abstract:** We introduce RegNetAgents, an AI-oriented multi-agent framework for structured, query-driven regulatory candidate identification across heterogeneous gene regulatory networks. The system enables unified analysis of bulk tumor and single-cell-derived ARACNe networks by integrating TCGA-derived cancer networks with large-scale single-cell regulatory networks from the GREmLN project. For a given focal gene, the framework performs dual-network classification, cancer gene filtering using OncoKB annotations, and mode-of-action (MoA) assignment for tumor-derived regulatory relationships. Candidates are ranked by evidence consistency across networks (Both, TCGA-only, GREmLN-only). The system is implemented as a multi-agent LangGraph DAG workflow, accessible through a unified Python API and Model Context Protocol (MCP) client, operating as a downstream analytical layer over precomputed regulatory networks rather than a network inference method. Across eleven breast cancer (BRCA) and twelve colorectal cancer (COAD) focal genes, RegNetAgents identifies candidate regulators significantly enriched for OncoKB-annotated cancer genes. TCGA-derived candidates show strong enrichment (Stouffer Z = 6.69 for BRCA and 6.95 for COAD), while GREmLN-derived candidates also demonstrate significant enrichment (Z = 5.51 for BRCA and 7.06 for COAD; all p < 0.0001). No enrichment is observed in housekeeping or non-driver control gene sets, supporting signal specificity. An extended module enables structured evaluation of oncogenic potential, druggability, clinical relevance, and network vulnerability, supporting end-to-end interpretation from candidate identification to biological hypothesis generation. RegNetAgents establishes an interpretable AI framework for cross-network regulatory candidate identification in cancer genomics.
+
+**arXiv ID:** 2607.14097
+</details>
+
+<details>
 <summary><strong>MASCOT: Multi-Agent Socio-Collaborative Companion Systems</strong> - Yiyang Wang, Yiqiao Jin, Alex Cabral, Josiah Hester - [[pdf]](https://arxiv.org/pdf/2601.14230)</summary>
 
 **Abstract:** Multi-agent systems (MAS) are emerging as promising socio-collaborative companions for emotional and cognitive support. However, existing systems frequently suffer from persona collapse, where agents revert to generic, homogenized assistant behaviors, and social sycophancy, where agents produce redundant, non-constructive dialogue. We propose MASCOT, a multi-agent framework for multi-perspective socio-collaborative companions. MASCOT introduces a novel bi-level optimization strategy to harmonize individual and collective behaviors: 1) Persona-Aware Behavioral Alignment, an RLAIF-driven pipeline that finetunes individual agents for agent-specific identities; and 2) Collaborative Dialogue Optimization, a group-level adaptation process that promotes complementary, diverse, and productive discourse. We evaluate MASCOT using human-grounded contexts drawn across both in-domain and out-of-domain (OOD) settings against state-of-the-art baselines. MASCOT improves persona consistency by up to +14.1 and social contribution by up to +10.6. A broad evaluation suite, including human evaluation, multiple LLM judges, three-way comparisons, and automatic metrics, further shows that MASCOT produces more role-consistent and less redundant multi-agent dialogue.
@@ -249,11 +349,76 @@ We demonstrate the capabilities of Colosseum through open-ended research and eva
 </details>
 
 <details>
+<summary><strong>Cheap Talk Stabilizes Strategic Interaction in LLM Agents</strong> - Nunzio Lorè, Hongan Zhu, Babak Heydari - [[pdf]](https://arxiv.org/pdf/2609.16270)</summary>
+
+**Abstract:** Large language models are increasingly deployed as interacting agents, making the persistence of their action policies across repeated interaction critical for reliable multi-agent operation. We investigate whether and how agent-generated, non-binding pre-play communication ("cheap talk") increases such persistence in four open-weight 7-9B-parameter LLMs. Our experiments span four repeated two-player games -- Prisoner's Dilemma, Snowdrift, Stag Hunt, and Harmony -- with incentive structures ranging from strategic conflict to alignment, each presented in six contexts. We observe unstable trajectories in all four games, although their prevalence and magnitude depend strongly on model and context. Across models, games, and contexts, cheap talk is predominantly stabilizing, with five corrected reversals concentrated in social or team framings; effects vary substantially by model and context. Controlled current-message interventions identify two separable output-level channels in Qwen: reduced action uncertainty and less between-round drift in action probabilities. Matched history-by-message counterfactuals further show that recent partner behavior conditions how mutual-benefit versus self-prioritizing language affects policy persistence. Finally, in Prisoner's Dilemma, we identify in Qwen and Falcon a history-balanced policy-content direction in late transformer layers; projecting out this direction increases realized switching during closed-loop play, demonstrating that complete trajectories are causally sensitive to this component. Together, these findings show that cheap talk can make individual trajectories more persistent across diverse incentive structures, while revealing that the magnitude and mechanisms of stabilization are model- and history-dependent.
+
+**arXiv ID:** 2609.16270
+</details>
+
+<details>
 <summary><strong>Multi-Agent Learning with Cooperation-Driven Optimization Dynamics</strong> - Jarod Ketcha Kouakep, Sreyvi UANN, Timoteo Carletti - [[pdf]](https://arxiv.org/pdf/2609.16917)</summary>
 
 **Abstract:** Multilayer Artificial Neural Networks trained via backpropagation are the basic blocks of many, more complex, classification algorithms. Their strength lies in the possibility of realizing, with arbitrary precision, any function. This result comes at the cost of the large number of involved parameters to be optimized. In this work, we propose a mechanism for cooperation, i.e., information exchange among several artificial neural networks, with the goal of reducing model complexity while maintaining performance. More precisely, we consider several "small" agents, i.e., containing fewer parameters than a reference "large" one, that during training share their predictions by incorporating this information into the loss function and thus directly influence weight updates. We consider several strategies for implementing cooperation, e.g., the voter model, majority model, and weighted average model based on an agent's confidence in its prediction. We numerically compare the accuracy of those strategies on several standard benchmarks. Our results support the claim that several small agents can outperform a single large model on a given classification task; the shared signals affect each agent's optimization algorithm by modulating both the descent direction and the step size, converging toward a global consensus. The proposed proof-of-concept significantly reduces the number of parameters to be trained while preserving comparable performance, thereby limiting computational resource usage.
 
 **arXiv ID:** 2609.16917
+</details>
+
+<details>
+<summary><strong>ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures</strong> - Muhammad Ashar Ishfaq, Glaucia Melo - [[pdf]](https://arxiv.org/pdf/2609.16986)</summary>
+
+**Abstract:** LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92. We then used the converted items as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B. On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items. Post-hoc adapter checks show why: under the learning rate used, the LoRA update remained numerically negligible (max abs Delta W about 7e-6), so all conditions decode identically to the untrained checkpoint. The experiment therefore does not show a training effect and cannot establish one; it reports an executable pipeline together with two limitations that any conclusive study must address: a provenance gap between the training and evaluation items, and lexical-overlap scoring. ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies the requirements for a conclusive matched-domain evaluation.
+
+**arXiv ID:** 2609.16986
+</details>
+
+<details>
+<summary><strong>Calibrate Once, Fly Any Team: Residual-Grounded Low-Fidelity Training for Cooperative Drone Swarms</strong> - Maxim Mednikov, Oren Gal - [[pdf]](https://arxiv.org/pdf/2609.17265)</summary>
+
+**Abstract:** Training multi-agent drone-swarm policies directly in high-fidelity (HF) rigid-body physics is accurate but computationally expensive. This cost scales poorly with team size, as each additional agent multiplies contact-resolution complexity and sharply raises the in-simulation crash rate. To address this, we propose a mixed-fidelity training scheme that eliminates HF reinforcement learning entirely.
+A single shared, decentralized policy is optimized inside a fully-differentiable, JAX-native low-fidelity (LF) point-mass simulator. The simulator is corrected by a small, per-agent bagged residual ensemble fit once, offline, using short calibration flights in the HF simulator. Because calibration requires only one isolated drone, the data collection budget does not compound with team size. Reference trajectories are generated by rolling out an existing LF-only policy and tracked in the HF simulator by a zero-training PD controller.
+Evaluated across four cooperative drone tasks and team sizes from 3 to 18, the residual-corrected policy outperforms an uncorrected LF baseline in all combinations, and a from-scratch HF policy in 22 of 24 combinations tested. It trails an HF-finetuned policy by a margin that narrows steadily with team size. Ultimately, the proposed method achieves near-equivalent performance at the largest team sizes at a fraction of the computational cost, completely avoiding the high crash rates typical of HF training.
+
+**arXiv ID:** 2609.17265
+</details>
+
+<details>
+<summary><strong>Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems</strong> - Deepak Akkil, Tamer Abuelsaad, Karthik Vikram, Matthew Pace, Aditya Vempaty, Saahir Beotra, Ravi Kokku, Satya Nitta - [[pdf]](https://arxiv.org/pdf/2609.17320)</summary>
+
+**Abstract:** As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.
+
+**arXiv ID:** 2609.17320
+</details>
+
+<details>
+<summary><strong>How a Chatbot's Response Style Shapes a Classroom: A Multi-Agent Simulation of Students Consulting AI</strong> - Rin Tamai, Yuya Dan - [[pdf]](https://arxiv.org/pdf/2609.05018)</summary>
+
+**Abstract:** Chatbots built on large language models (LLMs) are increasingly used as confidants. Tuned to satisfy users, they may answer with excessive empathy and affirmation that fosters dependence, and how the states and relationships of many users co-evolve under repeated consultation is hard to observe in real settings. We build a virtual classroom of 20 student agents who interact through rule-based chats, quarrels and consultations with friends and, when stressed, may instead consult a counselor AI (Gemini 2.5 Flash) under one of six style prompts: affirming, listening, solution-oriented, reality-redirecting, inciting and blaming. A second LLM call turns each exchange into updates of five state variables (stress, happiness, self-reliance, sociability, AI dependence) without seeing the prompt. We compare the seven conditions, including a no-AI control, over 15 and 50 days and under a lower consultation threshold, and test the robustness of the 50-day comparison with a pre-specified protocol: the same block in ten independent classrooms, repeated LLM realizations of one classroom with its event stream fixed, and evaluator updates scaled by 0.3 and 0.1. In every classroom the affirming and inciting prompts ended with lower self-reliance and higher AI dependence than the control, and the listening, reality-redirecting, inciting and blaming prompts with higher stress, lower happiness and more non-attendance; the solution-oriented prompt did not differ consistently from the control. The robust self-reliance and AI-dependence differences kept their signs at the 0.3 scale with highly similar rankings (Spearman 0.89, 0.93); the stress and happiness rankings did not, and the affirming prompt's lower stress reversed its sign. All quantities are simulation state variables, not effects on users. We specify the agent dynamics completely and discuss the limits of an LLM as generator of state updates.
+
+**arXiv ID:** 2609.05018
+</details>
+
+<details>
+<summary><strong>Orchestra: Corroboration-Based Regulatory Candidate Discovery via Composed Bioinformatics MCP Agents</strong> - Jose A. Bird - [[pdf]](https://arxiv.org/pdf/2609.05496)</summary>
+
+**Abstract:** Orchestra composes two independently built bioinformatics MCP servers -- RegNetAgents, which infers gene regulatory
+network topology from ARACNe networks, and CASCADE, which supplies four independent evidence sources (LINCS knockdown,
+DepMap essentiality, super-enhancer status, DoRothEA transcription-factor confidence) -- into one multi-agent
+workflow exposed via the Model Context Protocol. Its central architectural claim is that requiring RegNetAgents'
+topology evidence and CASCADE's experimental evidence to agree on a candidate regulator yields a more trustworthy
+candidate than either alone -- not previously tested directly, since RegNetAgents' own validation asked only whether
+its candidate lists beat chance.
+We test this on the TCGA tumor-acquired regulator tier (regulators in a gene's tumor ARACNe network but absent from
+the GREmLN population-averaged baseline), selecting candidates by ARACNe mutual-information (MI) edge weight. On
+RegNetAgents' published BRCA/COAD focal-gene panel plus matched negative controls, agreement among at least 2 of the 4
+CASCADE sources predicts OncoKB cancer-gene status among focal genes (odds ratio 2.89, Benjamini-Hochberg-adjusted
+p=0.0166) but not among negative controls (p=0.0721); a single source is not diagnostic for either group. The pattern
+replicates and strengthens in a third cancer type, STAD, on a separately constructed panel (odds ratio 5.82), and
+against an independently curated ground truth (the Sanger COSMIC Cancer Gene Census). MI edge weight is the strongest
+single predictor overall (p=0.0003); a logistic-regression likelihood-ratio test confirms corroboration adds value
+beyond it in both panels (p=0.0234; p=0.0001). Every experiment invokes Orchestra's real agentic entry point.
+
+**arXiv ID:** 2609.05496
 </details>
 
 <details>
@@ -267,7 +432,7 @@ We demonstrate the capabilities of Colosseum through open-ended research and eva
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (10 papers)</h2></summary>
+<summary><h2>Other Agent Research (12 papers)</h2></summary>
 
 <details>
 <summary><strong>Symbolic Separation: Grounding Deep Agents in Knowledge Graphs for Trustworthy Operational Data Analytics</strong> - Baibek Davletiyarov, Junaid Ahmed Khan, Andrea Bartolini - [[pdf]](https://arxiv.org/pdf/2609.17107)</summary>
@@ -335,6 +500,14 @@ We formalize the admission calculus and the assumptions connecting it to mediate
 </details>
 
 <details>
+<summary><strong>Social Behavior Among Autonomous AI: How Large Language Models Interact in Dynamic Networks</strong> - Narges Fardnia, Fatemeh Seyedin, Matthias Becker, Mahmoudreza Babaei, Adrian Weller - [[pdf]](https://arxiv.org/pdf/2609.16013)</summary>
+
+**Abstract:** Cooperation is a cornerstone of human societies, enabling collective progress in dynamic and uncertain environments. With the advent of AI systems acting autonomously, it becomes crucial to understand not only human-AI cooperation but also AI-AI interactions in adaptive networks. In this work, we examine the interactions of AI using Large Language Models -- Mistral, Llama3, Gemma3, and Phi3 -- in a public goods game within dynamic network structures. Our experiments were conducted under single-model and mixed-model conditions across Watts-Strogatz (WS), Barabasi-Albert (BA), and Erdos-Renyi (ER) networks. We analyzed the impact of model architecture, network topology, and prompt design on cooperative behavior. Results show that Mistral and Llama3 offer high cooperation rates, while Phi3 shows defective tendencies. Additionally, the random structure of Erdos-Renyi networks dramatically improves cooperation. Prompt design also plays a key role; a society-benefits prompt leads to a higher cooperation level. These findings offer a preliminary framework for LLM-based simulations in adaptive social networks.
+
+**arXiv ID:** 2609.16013
+</details>
+
+<details>
 <summary><strong>GRAFT-ATHENA: Self-Improving Agentic Teams for Autonomous Discovery and Evolutionary Numerical Algorithms</strong> - Juan Diego Toscano, Zhaojie Chai, George Em Karniadakis - [[pdf]](https://arxiv.org/pdf/2605.11117)</summary>
 
 **Abstract:** Scientific methods are developed for classes of problems, so knowledge transfers across structurally related cases. Language-model agents can execute scientific workflows, but their problem--method relationships remain implicit, so each new problem restarts the search and little of what worked transfers. We introduce GRAFT--ATHENA, which makes this problem-to-method map explicit as an expandable probabilistic structure of admissible problems, methods, and their dependencies. Graph factorization keeps the substrate tractable, and semantic fingerprints measure similarity, so experience guides related problems. As a result, the framework matched or exceeded expert baselines, attaining near-machine-precision losses in physics-informed learning, reproducing clinically consistent blood-rheology trends, and developing a high-order hypersonic-flow solver for the Apollo Command Module that matched experimental measurements within $1.8\%$. It also proposed a certified regularization for ill-posed in vivo brain-flow reconstruction, developed a spectrally convergent physics-informed architecture, and established machine-checked universal-approximation theorems for two widely used architectures. Scientific structure enables cumulative and verifiable agentic discovery.
@@ -350,10 +523,18 @@ We formalize the admission calculus and the assumptions connecting it to mediate
 **arXiv ID:** 2609.17206
 </details>
 
+<details>
+<summary><strong>When Should Users Check? Modeling Confirmation Frequency in Multi-Step Agentic AI Tasks</strong> - Jieyu Zhou, Aryan Roy, Sneh Gupta, Daniel Weitekamp, Christopher J. MacLellan - [[pdf]](https://arxiv.org/pdf/2510.05307)</summary>
+
+**Abstract:** Existing AI agents typically execute multi-step tasks autonomously and only allow user confirmation at the end. During execution, users have little control, making the confirm-at-end approach brittle: a single error can cascade and force a complete restart. Confirming every step avoids such failures, but imposes tedious overhead. Balancing excessive interruptions against costly rollbacks remains an open challenge. We address this problem by modeling confirmation as a minimum time scheduling problem. We conducted a formative study with eight participants, which revealed a recurring Confirmation-Diagnosis-Correction-Redo (CDCR) pattern in how users monitor errors. Based on this pattern, we developed a decision-theoretic model to determine time-efficient confirmation point placement. We then evaluated our approach using a within-subjects study where 48 participants monitored AI agents and repaired their mistakes while executing tasks. Results show that 81 percent of participants preferred our intermediate confirmation approach over the confirm-at-end approach used by existing systems, and task completion time was reduced by 13.54 percent.
+
+**arXiv ID:** 2510.05307
+</details>
+
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (21 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (18 papers)</h2></summary>
 
 <details>
 <summary><strong>EchoPath: Execution-Level Replayable Memory for GUI Agents</strong> - Yao Zhao, Aditya Shanmugham, Swastik Roy, Yanxun Xu - [[pdf]](https://arxiv.org/pdf/2609.16635)</summary>
@@ -452,11 +633,11 @@ We formalize the admission calculus and the assumptions connecting it to mediate
 </details>
 
 <details>
-<summary><strong>Rewarding Reasoning, Not Answers: Fixing and Bounding Test-Time Reinforcement Learning on Medical QA</strong> - Kailong Fan, Anqi Pu, Yichen Wu, Wanhua Li, Yicong Li, Hanspeter Pfister, Huafeng Liu, Xiang Li, Quanzheng Li, Ning Guo - [[pdf]](https://arxiv.org/pdf/2609.16660)</summary>
+<summary><strong>BlueLM-GUI Technical Report: A Real-Device-Centric Flywheel for Self-Improving Mobile GUI Agents</strong> - Tong Ye, Kunyang Han, Guozhi Wang, Longqiang Luo, Zhifeng Ding, Yongxiang Zhang, Xiaolei Shen, Yuxuan Zhang, Zhuping Zhang, Tao Xu, Yue Pan, Yucheng Zhao, Yupei Hu, Yuanjiang Ouyang, Danfeng Shen, Runqi Lin, Hongda Cai, Zhaoxiong Wang, Mengjia Yan, Yingjie Zhong, Chen Zhou, Zeyu Zhang, Xuwen Zhu, Penggang Shi, Mingcheng Luo, Ziyang Wu, Min Jin, Mingfu Shen, Zairong Xu, Fan Zhang, Hao Wang, Liang Liu, Zhulin Xie, Lijun Yao, Xiao Liang, Liangmin Wen, Liqiang Feng, Feilong Wu, Min Hu, Min Chen, Guanjing Xiong, Xiaohu Ruan, Xiaoxin Chen - [[pdf]](https://arxiv.org/pdf/2609.12394)</summary>
 
-**Abstract:** Test-time reinforcement learning adapts a model on its own unlabeled test set using majority-vote pseudo-labels and has shown strong results in mathematics. We show that this recipe collapses on medical multiple-choice QA: accuracy stagnates while output diversity rapidly declines. Through a controlled experiment that keeps the questions, model, and optimizer fixed while changing only the answer space, we trace this failure to answer-space structure rather than domain difficulty. In small answer spaces, incorrect rollouts often collide on the same wrong pseudo-label and reinforce it; in large answer spaces, they disperse and receive little reward. This diagnosis motivates PROSE, Process Reward Guided Self-Training, which rewards reasoning quality instead of answer agreement. PROSE scores each reasoning step with a medical process reward model, assigns the trajectory reward as the minimum score across steps, and enforces answer-format constraints. Without labels, PROSE substantially improves a general Llama model, surpassing purpose-built medical models and matching much larger systems. Because the process signal is internalized into the policy, the adapted model requires no reward model at inference and transfers its gains to unseen datasets. We further show that the minimum aggregation is essential: mean aggregation can be exploited, saturating the proxy reward while degrading accuracy.
+**Abstract:** Mobile GUI agents are shifting from multi-module frameworks to native models trained end-to-end, yet industrial deployment faces three persistent gaps. Sandbox training produces a distribution mismatch with production environments; expensive real-device failures remain underutilized; and fixed benchmarks saturate, losing the power to guide iteration. We present BlueLM-GUI, a 35B-A3B mobile GUI agent built as a real-device-centric flywheel that closes these gaps through three principles. Every Sample Matters: a dual-track pipeline with Heterogeneous Triple-System Consensus evaluation and an Error Correction \& Derivation Module salvages every trajectory into usable supervision. Every Rollout Is Real: a three-stage recipe---continual pre-training, supervised fine-tuning, and agentic reinforcement learning on hundreds of real phones---grounds every rollout in real production environments, so the capability the model learns transfers directly to deployment. Every Query Evolves: a quota-driven benchmark methodology with three orthogonal axes enables precise attribution and allows the benchmark to be systematically upgraded as the model improves. BlueLM-GUI achieves 87.4 on MobileGUI-VBench, surpassing the best closed-source model by 5.1 points, and 84.9 on AndroidWorld, the best result among open-source models and competitive with closed-source models. These results demonstrate that grounding model training and iterative improvement in both real devices and the three Every principles yields strong, robust, and transferable mobile GUI capability.
 
-**arXiv ID:** 2609.16660
+**arXiv ID:** 2609.12394
 </details>
 
 <details>
@@ -468,43 +649,19 @@ We formalize the admission calculus and the assumptions connecting it to mediate
 </details>
 
 <details>
+<summary><strong>Rewarding Reasoning, Not Answers: Fixing and Bounding Test-Time Reinforcement Learning on Medical QA</strong> - Kailong Fan, Anqi Pu, Yichen Wu, Wanhua Li, Yicong Li, Hanspeter Pfister, Huafeng Liu, Xiang Li, Quanzheng Li, Ning Guo - [[pdf]](https://arxiv.org/pdf/2609.16660)</summary>
+
+**Abstract:** Test-time reinforcement learning adapts a model on its own unlabeled test set using majority-vote pseudo-labels and has shown strong results in mathematics. We show that this recipe collapses on medical multiple-choice QA: accuracy stagnates while output diversity rapidly declines. Through a controlled experiment that keeps the questions, model, and optimizer fixed while changing only the answer space, we trace this failure to answer-space structure rather than domain difficulty. In small answer spaces, incorrect rollouts often collide on the same wrong pseudo-label and reinforce it; in large answer spaces, they disperse and receive little reward. This diagnosis motivates PROSE, Process Reward Guided Self-Training, which rewards reasoning quality instead of answer agreement. PROSE scores each reasoning step with a medical process reward model, assigns the trajectory reward as the minimum score across steps, and enforces answer-format constraints. Without labels, PROSE substantially improves a general Llama model, surpassing purpose-built medical models and matching much larger systems. Because the process signal is internalized into the policy, the adapted model requires no reward model at inference and transfers its gains to unseen datasets. We further show that the minimum aggregation is essential: mean aggregation can be exploited, saturating the proxy reward while degrading accuracy.
+
+**arXiv ID:** 2609.16660
+</details>
+
+<details>
 <summary><strong>Evaluating Open-Weight E-Commerce Agents with Environment-Grounded Verification</strong> - Nimit Shah, Haitz Sáez de Ocáriz Borde - [[pdf]](https://arxiv.org/pdf/2609.16093)</summary>
 
 **Abstract:** A shopping conversation has many routes to the same cart, and a task-success rate reduces all of them to one score. We build a deterministic and reproducible e-commerce environment that precommits each trial's customer and trajectory parameters, including the persona, difficulty, target cart, and an item reveal schedule. A simulated consumer attempts to buy a target cart from the environment with assistance from the evaluated model. The environment guides the simulator's actions and records every assistant action alongside the environment state at that point. After the trial, these records allow the evaluator to assess individual parts of the conversation against the retained evidence. For example, the evaluator penalizes a search for failing to surface a target product only when the customer has already mentioned that product. We further use this evidence to apply different penalties to tool calls depending on how the assistant's actions compare with an expected tool-call set. Our environment also interacts with the simulator bidirectionally, reading its output to stop the trial when the simulator determines that the customer has become too frustrated and injecting directives in real time that specify when to explore, defer buying an item, or recall a previous exchange. This interaction creates an open-ended and verifiable simulation. Across eight open-weight agents from 20B to 35B parameters, with 160 trials per agent and 44 metrics, the resulting capability profiles distinguish under-action, over-purchase, unsupported product attributes, and poor search, all of which terminal success obscures.
 
 **arXiv ID:** 2609.16093
-</details>
-
-<details>
-<summary><strong>Autonomous Droplet Navigation via Model-Based Reinforcement Learning</strong> - Rajneesh Anand, Mayuresh V. Kothare - [[pdf]](https://arxiv.org/pdf/2609.16369)</summary>
-
-**Abstract:** Precise manipulation of liquid droplets underpins lab-on-a-chip platforms for diagnostics, chemical synthesis, and biological assays. Yet autonomous droplet transport through confined geometries of varying complexity remains an open challenge. Droplets exhibit contact-angle hysteresis, deformability, and capillary pinning, which make their response to actuation nonlinear and history dependent, that classical controllers and pre-programmed trajectories cannot cope in multi-turn environments. Here we demonstrate autonomous navigation of a liquid droplet through geometries of increasing complexity on a gravity driven (Labyrinth) platform using model-based reinforcement learning. A thin silicone oil film reduces contact-line pinning while two-axis tilt supplies the gravitational driving force, and an overhead camera tracks the droplet in real time. An offline-trained policy discovers effective tilt strategies from limited physical interaction data, without simulation or analytical droplet models. The system operates under partial observability, as oil-film thickness, instantaneous contact angle, and droplet deformation state remain hidden from the controller. Despite these challenges, the learned policy achieves reliable navigation across straight, right-angle, and curved-arc paths, including outside-corner geometries. We further demonstrate that a policy trained on a simpler geometry transfers to complex ones, succeeding zero-shot on right-angle and staircase paths and reaching full success on a curved arc with a fifth of the training data. The findings suggest promising avenues for enabling droplet based microfluidic systems to serve as intelligent chemical laboratories.
-
-**arXiv ID:** 2609.16369
-</details>
-
-<details>
-<summary><strong>Towards Surrogate Based Dequantization of Quantum Reinforcement Learning</strong> - Pablo Rodriguez-Grasa, Sofiene Jerbi, Mikel Sanz, Ryan Sweke - [[pdf]](https://arxiv.org/pdf/2609.16266)</summary>
-
-**Abstract:** In recent years, the utility of parameterized quantum circuits as function approximators has been widely studied. In the context of reinforcement learning, this approach has led to variational quantum algorithms such as quantum Q-learning. While these methods show promising empirical results, and can provide provable advantages for artificial problems, it remains unclear whether they can provide a provable quantum advantage over classical approaches for problems of practical relevance. A natural way to investigate this question is through the lens of dequantization: The construction of efficient classical algorithms capable of matching the performance of quantum variational methods. Building on recent kernel-based dequantization results for supervised learning, we take steps towards extending this surrogate-based dequantization program to reinforcement learning. Specifically, we study the simplified setting of reinforcement learning with a uniform generative model in which uniformly random state-action samples are available, which models the regime of sampling from a large experience replay buffer after sufficient exploration. Within this setting, we provide finite sample guarantees for classical kernelized Fitted Q-Iteration, with classical kernels designed to match the inductive bias of particular parameterized quantum circuits. Using these results, we then provide a set of sufficient conditions, on the data-encoding strategy of a parameterized quantum circuit, the corresponding classical kernel, and the problem structure, under which kernelized Fitted Q-Iteration provides a meaningful dequantization of quantum Q-learning, in this simplified setting. Apart from providing rigorous dequantization guarantees when these conditions are met, these results also motivate the use of kernelized fitted Q-iteration as a dequantization heuristic when these sufficient conditions cannot be verified.
-
-**arXiv ID:** 2609.16266
-</details>
-
-<details>
-<summary><strong>Intrinsic Robot Rewarding: Reusing VLA Representations for Autonomous Evaluation and Policy Improvement</strong> - Tobias Schaffer, Mohab Elkhayat, Daniela Nicklas, Mustafa Almohamad, Elham Al-Fuqara - [[pdf]](https://arxiv.org/pdf/2609.17115)</summary>
-
-**Abstract:** Vision-language-action (VLA) systems already bring together two valuable resources for robot learning: rich visual representations and demonstrations of successful task execution. Intrinsic Robot Rewarding (IRR) proposes to use these resources for a second, complementary purpose: evaluating the robot's own outcomes and providing feedback for policy improvement. Successful demonstration endpoints define task-specific references, and the policy's frozen visual encoder provides the feature space in which new outcomes are assessed. The core reward mechanism adds a reference bank and a scoring operation to the existing pipeline, without requiring a separate learned evaluator or an additional perception backbone. Our position is that this reuse offers a promising route to lower integration effort, efficient reward computation, and reduced recurring human outcome scoring. Building on established research in visual rewards and learning from experience, IRR brings these ideas into the robot's existing perception and demonstration pipeline. An operational COMAU Racer 3 demonstrator is available at technology readiness level 4 (TRL 4). This laboratory foundation supports the next research step: connecting internal outcome evaluation to physical policy improvement. We present the reward formulation, central research questions, and an evaluation methodology linking reward reliability to task success and supervision effort. The intended contribution is a reusable approach to learn and improve from the data and experience already available in industrial robot systems.
-
-**arXiv ID:** 2609.17115
-</details>
-
-<details>
-<summary><strong>Robust Recurrent Reinforcement Learning under Evolving Hidden Disturbances with Application to Rover Wheel Slip</strong> - Saki Omi, Hyo-Sang Shin, Namhoon Cho, Antonios Tsourdos, Miguel A. Olivares-Mendez - [[pdf]](https://arxiv.org/pdf/2307.15931)</summary>
-
-**Abstract:** Reinforcement learning (RL) performs well in continuous-control tasks, but evolving hidden disturbances create partial observability: the agent must infer decision-relevant latent dynamics from interaction history. This study investigates how observation history, action history, history length, and network structure affect recurrent Twin Delayed Deep Deterministic Policy Gradient (TD3) agents. Three recurrent architectures are evaluated under controlled disturbances with different temporal characteristics. Results show that action history is particularly important when observed responses depend on previous actions, and that processing past and current action-observation information within a unified temporal sequence improves performance compared with using separate branches. We also introduce H-TD3, which reuses recurrent states generated by the actor to initialize the critic, reducing duplicated sequence processing. The architectures are further tested in a simulation-based differential-drive rover motion-regulation task under hidden asymmetric wheel slip. Recurrent architectures retain their advantage under the physically motivated multiplicative wheel-slip model, while policies trained with abstract temporally structured disturbances transfer more effectively to previously unseen wheel-slip dynamics than policies trained without disturbances. These findings provide practical guidance for recurrent RL under partial observability and evolving hidden disturbances.
-
-**arXiv ID:** 2307.15931
 </details>
 
 <details>
