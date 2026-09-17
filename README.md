@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-09-17 04:49:33
+**Last Updated:** 2026-09-17 06:07:12
 
 **Total Papers:** 106
 
@@ -533,19 +533,19 @@
 </details>
 
 <details>
-<summary><strong>ABM-SIRTEM: A Hybrid Agent-Based and Epidemiological Model for Pandemic Response</strong> - Sheryl Paul, Samuel Williams, Preetom K. Biswas, Giulia Pedrielli, Jyotirmoy V. Deshmukh - [[pdf]](https://arxiv.org/pdf/2609.18223)</summary>
-
-**Abstract:** The COVID-19 pandemic has had profound impacts on global health, social structures, and economies. It disproportionately affected lower socioeconomic groups and those reliant on interaction-based jobs. Regulatory bodies faced the challenge of designing policies that preserve public health while limiting disruption to economic stability and productivity. Epidemiological models such as SIR and agent-based models (ABMs) have been used to study disease dynamics and the socioeconomic impacts of disease and interventions. Population-level models often simplify individual heterogeneity, while detailed ABMs can become computationally expensive as the numbers of agents and interactions increase. We propose ABM-SIRTEM, a hybrid model that incorporates occupation categories, economic productivity, and welfare at the individual level while dynamically modeling compliance with government interventions. We calibrate the model against historical positive and negative test counts from four U.S. states and examine the resulting compliance dynamics. This framework provides a basis for studying the interaction between disease spread and socioeconomic behavior in pandemic-response planning.
-
-**arXiv ID:** 2609.18223
-</details>
-
-<details>
 <summary><strong>Investigating Adversarial Robustness of Heterogeneous Cooperative Perception</strong> - Chenyi Wang, Yutong Liu, Qingzhao Zhang, Ming F. Li - [[pdf]](https://arxiv.org/pdf/2609.17856)</summary>
 
 **Abstract:** Heterogeneous cooperative perception (CP) enables connected vehicles with diverse sensor setups to share spatial awareness via compact feature maps, where receivers reconcile these maps using learned translation modules for fusion and inference. Prior attacks against CP in a homogeneous setting reveal that the data exchange introduces a critical attack surface: a single malicious agent can transmit crafted features that erase real objects from a neighbor's fused scene. Yet, it is widely hypothesized that heterogeneity naturally defends against these attacks, as the attacker lacks knowledge of the victim's detector and the translation module scrambles adversarial gradients. We demonstrate that this protection is largely an illusion. Using a matched-objective harness to standardize the perturbation budget, objective, and forward path, we show that properly tuned iterative attacks close or reverse the apparent robustness gap. However, these optimization-based attacks require ground-truth labels and iterative backpropagation, meaning they do not represent a practical field threat running in real-time. To bridge this gap, we introduce HetPoison, a learned generator that crafts a removal perturbation in a single, label-free forward pass. HetPoison transfers across major heterogeneous designs without requiring access to the victim's detector, matching or exceeding the effectiveness of expensive optimizer-based attacks. Since heterogeneity itself is not a defense, we propose HetShield, a lightweight trust layer that validates the spatiotemporal consistency across features, recovering 83--95% of the accuracy degraded by attacks, outperforming prior art.
 
 **arXiv ID:** 2609.17856
+</details>
+
+<details>
+<summary><strong>ABM-SIRTEM: A Hybrid Agent-Based and Epidemiological Model for Pandemic Response</strong> - Sheryl Paul, Samuel Williams, Preetom K. Biswas, Giulia Pedrielli, Jyotirmoy V. Deshmukh - [[pdf]](https://arxiv.org/pdf/2609.18223)</summary>
+
+**Abstract:** The COVID-19 pandemic has had profound impacts on global health, social structures, and economies. It disproportionately affected lower socioeconomic groups and those reliant on interaction-based jobs. Regulatory bodies faced the challenge of designing policies that preserve public health while limiting disruption to economic stability and productivity. Epidemiological models such as SIR and agent-based models (ABMs) have been used to study disease dynamics and the socioeconomic impacts of disease and interventions. Population-level models often simplify individual heterogeneity, while detailed ABMs can become computationally expensive as the numbers of agents and interactions increase. We propose ABM-SIRTEM, a hybrid model that incorporates occupation categories, economic productivity, and welfare at the individual level while dynamically modeling compliance with government interventions. We calibrate the model against historical positive and negative test counts from four U.S. states and examine the resulting compliance dynamics. This framework provides a basis for studying the interaction between disease spread and socioeconomic behavior in pandemic-response planning.
+
+**arXiv ID:** 2609.18223
 </details>
 
 <details>
