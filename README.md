@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-09-21 04:49:26
+**Last Updated:** 2026-09-21 06:16:53
 
 **Total Papers:** 93
 
@@ -219,19 +219,19 @@
 </details>
 
 <details>
-<summary><strong>MemAudit: Auditing Long-Term Agent Memory via Hidden User-State Recovery</strong> - Enze Ma, Yufan Zhou, Wei-Chieh Huang, Jie Yang, Huanhuan Ma, Zixuan Wang, Chengze Li, Chunyu Miao, Philip S. Yu, Zhen Wang - [[pdf]](https://arxiv.org/pdf/2606.24595)</summary>
-
-**Abstract:** Long-term memory promises LLM agents that grow more capable across sessions, maintaining an accurate, evolving understanding of the user that interaction forms. In practice, however, this memory is evaluated mostly through downstream behavior, such as later answers, personalization quality, or task success, which tests that understanding only indirectly and leaves the memory artifact itself largely unaudited. We argue that long-term memory should instead be evaluated as an auditable post-interaction artifact: after ordinary assistance, what structured user state can be reconstructed from the memory the agent leaves behind? We instantiate this view in MEMPROBE, a benchmark in which a memory-equipped agent assists simulated users, each carrying a hidden, taxonomy-anchored user-state bank, across a trajectory of leak-controlled tasks, after which that bank is reconstructed from the agent's resulting memory under both full-store and top-k access. Built on synthetic ground truth for efficient, scalable measurement, MEMPROBE spans 50 simulated users with 31 hidden dimensions each (1,550 recovery targets) and tests 5 representative memory systems. Testing state-of-the-art memory agents, we find that successful assistance and recoverable memory behave as distinct capabilities. Task completion nearly saturates, even for a memoryless baseline, while category-balanced recovery stays moderate (about 0.6) and drops further under top-k retrieval. MEMPROBE is the first benchmark to study memory recovery directly, reconstructing the user state a system retains and scoring it against ground truth. We see recovery as a concrete objective for future memory agents to optimize, and MEMPROBE as a step toward an environment where agents are trained to remember their users, growing more faithful the longer they know them.
-
-**arXiv ID:** 2606.24595
-</details>
-
-<details>
 <summary><strong>PersonalAI 2.0: Enhancing knowledge graph traversal/retrieval with planning mechanism for Personalized LLM Agents</strong> - Mikhail Menschikov, Matvey Iskornev, Alexander Kharitonov, Alina Bogdanova, Mikhail Belkin, Ekaterina Lisitsyna, Artyom Sosedka, Victoria Dochkina, Ruslan Kostoev, Ilia Perepechkin, Evgeny Burnaev - [[pdf]](https://arxiv.org/pdf/2605.13481)</summary>
 
 **Abstract:** We introduce PersonalAI 2.0 (PAI-2), a novel framework designed to enhance LLM-based systems through integration of external knowledge graphs (KGs). The proposed approach addresses key limitations of existing Graph Retrieval-Augmented Generation (GraphRAG) methods by incorporating a dynamic, multistage query-processing pipeline. The central point of the PAI-2 design is its ability to perform adaptive, iterative information search, guided by extracted entities, matched graph vertices, and generated clue-queries. An evaluation conducted on five benchmarks (Natural Questions, TriviaQA, HotpotQA, 2WikiMultihopQA, and MuSiQue) demonstrates an improvement in the factual correctness of generated answers compared to analogue methods (LightRAG, RAPTOR, HippoRAG 2, and PAI-1). PAI-2 achieves a 9% average gain by LLM-as-a-Judge on the 2WikiMultihopQA and MuSiQue benchmarks, and attains accuracy comparable to HippoRAG 2 on the TriviaQA and HotpotQA benchmarks, reflecting its effectiveness in reducing hallucination rates and increasing precision. We show that enabled search plan enhancement mechanism gain 18% boost compared to disabled one by LLM-as-a-Judge across five benchmarks. In addition, an ablation study reveals that PAI-2 achieves SOTA result on the MINE-1 benchmark, obtaining an 89% information-retention score with LLMs in the 7--15B tiers. Collectively, these findings underscore the potential of PAI-2 to serve as a reusable component for personalized AI applications, which require scalable, context-aware knowledge-representation and reasoning capabilities. The source code of PAI-2 is available at the following link: this https URL.
 
 **arXiv ID:** 2605.13481
+</details>
+
+<details>
+<summary><strong>MemAudit: Auditing Long-Term Agent Memory via Hidden User-State Recovery</strong> - Enze Ma, Yufan Zhou, Wei-Chieh Huang, Jie Yang, Huanhuan Ma, Zixuan Wang, Chengze Li, Chunyu Miao, Philip S. Yu, Zhen Wang - [[pdf]](https://arxiv.org/pdf/2606.24595)</summary>
+
+**Abstract:** Long-term memory promises LLM agents that grow more capable across sessions, maintaining an accurate, evolving understanding of the user that interaction forms. In practice, however, this memory is evaluated mostly through downstream behavior, such as later answers, personalization quality, or task success, which tests that understanding only indirectly and leaves the memory artifact itself largely unaudited. We argue that long-term memory should instead be evaluated as an auditable post-interaction artifact: after ordinary assistance, what structured user state can be reconstructed from the memory the agent leaves behind? We instantiate this view in MEMPROBE, a benchmark in which a memory-equipped agent assists simulated users, each carrying a hidden, taxonomy-anchored user-state bank, across a trajectory of leak-controlled tasks, after which that bank is reconstructed from the agent's resulting memory under both full-store and top-k access. Built on synthetic ground truth for efficient, scalable measurement, MEMPROBE spans 50 simulated users with 31 hidden dimensions each (1,550 recovery targets) and tests 5 representative memory systems. Testing state-of-the-art memory agents, we find that successful assistance and recoverable memory behave as distinct capabilities. Task completion nearly saturates, even for a memoryless baseline, while category-balanced recovery stays moderate (about 0.6) and drops further under top-k retrieval. MEMPROBE is the first benchmark to study memory recovery directly, reconstructing the user state a system retains and scoring it against ground truth. We see recovery as a concrete objective for future memory agents to optimize, and MEMPROBE as a step toward an environment where agents are trained to remember their users, growing more faithful the longer they know them.
+
+**arXiv ID:** 2606.24595
 </details>
 
 </details>
