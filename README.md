@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-09-29 05:40:04
+**Last Updated:** 2026-09-29 06:52:28
 
 **Total Papers:** 251
 
@@ -977,19 +977,19 @@ Across ProgSpec and five existing benchmarks, RepoMAS achieves the best performa
 </details>
 
 <details>
-<summary><strong>MASTraceBench: Diagnosing Collaboration Gains through Proposal Trajectories in LLM-Based Multi-Agent Systems</strong> - Yapeng Li, Songze Li, Shuang Yu, Jing Yu, Zhixin Liu, Liqiang Wen, Tonghua Su - [[pdf]](https://arxiv.org/pdf/2609.34496)</summary>
-
-**Abstract:** LLM-based multi-agent systems (MAS) have shown promise in complex problem solving. As MAS methods diversify, systematic evaluation becomes increasingly challenging. However, existing benchmarks largely focus on final outcomes, leaving unclear how collaboration gains arise, are preserved, or are lost. To address this limitation, we introduce MASTraceBench, a benchmark for diagnosing collaboration gains through proposal trajectories in MAS. Across six cooperative and competitive tasks, MASTraceBench tracks and grades proposal trajectories and provides a multi-layer metric suite covering Task Score, Collaboration Gain, proposal-trajectory indicators, and Token Cost. Using MASTraceBench, we systematically compare representative MAS methods not only by final performance, but also by how agent proposals evolve and are aggregated into the final answer. This analysis reveals a recurring pattern: final MAS answers rarely surpass the strongest initial proposal; interaction often lifts initially weaker proposals toward it, while strong initial proposals are seldom further improved and may regress. To reduce this risk, we propose CLEARS, which replaces whole-proposal exchange with claim-level evaluation across agents to guide reliable synthesis. CLEARS more often preserves or improves upon the strongest initial proposal and achieves the highest Collaboration Gain on five of the six tasks.
-
-**arXiv ID:** 2609.34496
-</details>
-
-<details>
 <summary><strong>TRACE: Governing Memory Validity in Evolving Multi-Agent Systems</strong> - Wenjun Xiong, Shengtao Zhang, Shangding Gu, Bo Tang, Zhiyu Li, Feiyu Xiong, Ying Wen, Muning Wen - [[pdf]](https://arxiv.org/pdf/2609.33517)</summary>
 
 **Abstract:** Persistent memory lets language-model agents carry information across long-running collaborations, but leaves a lifecycle question open: what may a returning agent still act on once the shared state has changed? A memory can be correctly retrieved, relevant to the current task, and faithful to its source, and nonetheless be inadmissible for action: an itinerary saved before a pause still names the hotel the team has since replaced. We formalize this as temporal memory admission and present TRACE, a training-free layer that treats re-entry as an eligibility decision rather than a storage or retrieval operation, reconciling a departure checkpoint against absence-period updates, resolving explicit and implicit invalidation, and releasing a bounded Return View only when it covers the returning role's open obligations. We evaluate TRACE under three actor models on Memora, STALE Type II, and a derived ManBench-Return setting, each recast as return episodes: one agent departs, four teammates change the shared state, and the agent rejoins. What separates methods is not overall accuracy but whether one can retain valid memory and reject stale memory at once, and no single-policy baseline can: Restore (reinstate the departure checkpoint in full) admits stale state, Reset (start the return from an empty memory) discards valid state, each bottoming out at 0% on one of the two. TRACE is the only method high on both, reaching 92.6-98.3% valid-information availability with 98.4-99.5% invalid-information rejection on ManBench-Return, within 3.8 points of the best baseline's overall accuracy. On STALE Type II it improves Overall over the strongest comparison policy by 22.3 (Qwen), 18.5 (Gemini), and 27.5 (DeepSeek) points at roughly 2.3 times their tokens, while a write-time consolidation pipeline is more accurate still at 3.99 times TRACE's.
 
 **arXiv ID:** 2609.33517
+</details>
+
+<details>
+<summary><strong>MASTraceBench: Diagnosing Collaboration Gains through Proposal Trajectories in LLM-Based Multi-Agent Systems</strong> - Yapeng Li, Songze Li, Shuang Yu, Jing Yu, Zhixin Liu, Liqiang Wen, Tonghua Su - [[pdf]](https://arxiv.org/pdf/2609.34496)</summary>
+
+**Abstract:** LLM-based multi-agent systems (MAS) have shown promise in complex problem solving. As MAS methods diversify, systematic evaluation becomes increasingly challenging. However, existing benchmarks largely focus on final outcomes, leaving unclear how collaboration gains arise, are preserved, or are lost. To address this limitation, we introduce MASTraceBench, a benchmark for diagnosing collaboration gains through proposal trajectories in MAS. Across six cooperative and competitive tasks, MASTraceBench tracks and grades proposal trajectories and provides a multi-layer metric suite covering Task Score, Collaboration Gain, proposal-trajectory indicators, and Token Cost. Using MASTraceBench, we systematically compare representative MAS methods not only by final performance, but also by how agent proposals evolve and are aggregated into the final answer. This analysis reveals a recurring pattern: final MAS answers rarely surpass the strongest initial proposal; interaction often lifts initially weaker proposals toward it, while strong initial proposals are seldom further improved and may regress. To reduce this risk, we propose CLEARS, which replaces whole-proposal exchange with claim-level evaluation across agents to guide reliable synthesis. CLEARS more often preserves or improves upon the strongest initial proposal and achieves the highest Collaboration Gain on five of the six tasks.
+
+**arXiv ID:** 2609.34496
 </details>
 
 <details>
@@ -1009,19 +1009,19 @@ Across ProgSpec and five existing benchmarks, RepoMAS achieves the best performa
 </details>
 
 <details>
-<summary><strong>CollisionGAT: Controller-Agnostic One-Step Collision Screening for Multi-Agent Motion</strong> - Alan Debbas, Edwin Meriaux, Gregory Dudek - [[pdf]](https://arxiv.org/pdf/2609.32783)</summary>
-
-**Abstract:** Before a team of robots moves, each proposed step must be checked for collisions with other robots and with obstacles. We present CollisionGAT, a graph-attention network that reads the current and proposed states of moving agents together with locally relevant stationary obstacles and returns one collision-risk score per moving agent. Any controller can use these scores to accept, repair, replan, or postpone a proposed step. We mount CollisionGAT on a continuous path-following controller and on GATeD, an obstacle-blind D* Lite planner that uses typed vetoes to update its planning graphs. Exact geometric checks supply the training labels and independently audit every executed step.
-
-**arXiv ID:** 2609.32783
-</details>
-
-<details>
 <summary><strong>AsynCodeBench: Benchmarking Collaboration of Asynchronous Multi-Agent Systems in Software Engineering</strong> - Kaituo Zhang, Zhen Xiong, Zhimeng Jiang, Mingyu Zhong, Zhouyuan Yuan, Zhecheng Li, Bowen Lin, Chia-Yuan Chang, Mingzhi Hu, Huazheng Wang, Ying Lin - [[pdf]](https://arxiv.org/pdf/2609.32662)</summary>
 
 **Abstract:** Multi-agent coding has emerged as an increasingly active direction in software engineering, where complex development tasks are decomposed across multiple specialized agents working on different parts of the problem. Despite the shift from individual problem solving to distributed collaboration, multi-agent systems still lack a direct measure of collaboration and are largely evaluated through task-level outcomes inherited from single-agent coding, conflating individual coding capability with cross-agent coordination. We introduce AsynCodeBench, a dependency-centric benchmark for asynchronous multi-agent software engineering that represents each task with an explicit dependency graph and executable Dependency Checkers. Through this dependency-tracking process, we propose two complementary measures: Asynchronous Dependency Pass Rate (ADPR), which measures how many cross-agent dependencies are ultimately satisfied, and Dependency Resolution Step (DRS), which measures when each dependency first becomes satisfied during execution. AsynCodeBench comprises 19 tasks from real-world repositories, exposing 52 directed dependencies as explicit units for evaluating cross-agent collaboration. Experiments across model families, scales, and generations reveal a clear gap between coding and collaboration capability: improvements in coding performance do not necessarily translate into stronger collaboration, and task-level metrics can diverge substantially from dependency-level collaboration measures. Dependency-trajectory analysis further reveals that successful coordination often emerges not gradually, but through concentrated bursts in which many dependencies become resolved over a short portion of the execution trajectory, a pattern we term a hopping window.
 
 **arXiv ID:** 2609.32662
+</details>
+
+<details>
+<summary><strong>CollisionGAT: Controller-Agnostic One-Step Collision Screening for Multi-Agent Motion</strong> - Alan Debbas, Edwin Meriaux, Gregory Dudek - [[pdf]](https://arxiv.org/pdf/2609.32783)</summary>
+
+**Abstract:** Before a team of robots moves, each proposed step must be checked for collisions with other robots and with obstacles. We present CollisionGAT, a graph-attention network that reads the current and proposed states of moving agents together with locally relevant stationary obstacles and returns one collision-risk score per moving agent. Any controller can use these scores to accept, repair, replan, or postpone a proposed step. We mount CollisionGAT on a continuous path-following controller and on GATeD, an obstacle-blind D* Lite planner that uses typed vetoes to update its planning graphs. Exact geometric checks supply the training labels and independently audit every executed step.
+
+**arXiv ID:** 2609.32783
 </details>
 
 <details>
@@ -1057,19 +1057,19 @@ Across ProgSpec and five existing benchmarks, RepoMAS achieves the best performa
 </details>
 
 <details>
-<summary><strong>Maat: Independent Deterministic Contract-Based Governance for Multi-Agent LLM Workflows</strong> - Uliana Elina - [[pdf]](https://arxiv.org/pdf/2609.34017)</summary>
-
-**Abstract:** Large-language-model multi-agent systems (LLM-MAS) introduce a characteristic reliability problem: an error produced by one agent can be accepted as context by downstream agents and propagate across the workflow. Many proposed safeguards rely on learned or LLM-based judges whose verdicts are themselves probabilistic; we ask whether a deterministic layer can instead stop contract-detectable handoff defects. We present Maat, a runtime governance layer that validates agent-to-agent handoffs against a versioned workflow contract, or anchor, with no language model in the validation or scoring path. We evaluate it in six controlled domain workflows (6-15 agents, 522 trials) with injected data-level defects and a deterministic seven-check rubric. Version 1 reported gains in all six workflows (2.9-26.5%). A post-publication audit found that three benchmark scorers credited any early halt as a prevented defect. On paired trials where the governed run completed or halted on a finding attributable to a verified defect, the rubric score changes by +7.7% to +29.1% in five workflows and is flat in software development; model-call cost falls 17-53% where attributable halts occur early. A hand review of all 94 governed-arm halts found 35 false alarms (37%), caused by validator defects rather than model behaviour; counting those halts as failed work, the governed arm scores below the ungoverned arm in four of six workflows. The results support deterministic handoff validation for contract-expressible defects and show that validator configuration and halt attribution must themselves be tested; they do not establish universal correctness, hallucination detection, or model-independent effectiveness.
-
-**arXiv ID:** 2609.34017
-</details>
-
-<details>
 <summary><strong>DEALS: Decentralized Expertise-Aware Load Serving for Multi-Agent LLM Systems</strong> - Jingjuan Huang, Wenbin Wang, Yanchuan Yin, Alvaro Velasquez, Jia Liu - [[pdf]](https://arxiv.org/pdf/2609.33768)</summary>
 
 **Abstract:** Multi-agent systems (MAS) have recently emerged as an effective approach for coordinating large language model (LLM)-based agents to solve complex tasks through structured interactions. In practice, MASs often handle a stream of heterogeneous and complex tasks, requiring agents to decompose each task and then self-organize and self-evolve to adapt to incoming tasks while sharing execution resources. However, most early approaches to MASs rely on centralized controllers or fixed coordination patterns, which can limit scalability or adaptability. In contrast, existing decentralized and dynamic MASs often require training dedicated routers or invoking LLMs for agent selection, resulting in substantial computational costs and coordination overhead. To address these challenges and enable efficient task-level self-organization and self-evolution for task- and workload-level collaboration, we propose Decentralized Expertise-Aware Load Serving (DEALS), a decentralized and low-complexity framework that enables agents to self-organize and dynamically route concurrent tasks for processing. Specifically, each agent maintains local queues of incoming tasks, and its router decides whether to process a task locally or forward it to a neighbor based on differences in backlog and success rate. Meanwhile, executors process independent tasks concurrently within and across agents, and partially solved tasks can be resumed by other agents. Experiments show that DEALS not only improves performance along multiple dimensions (e.g., answer accuracy and task throughput) in both homogeneous and heterogeneous agent pools, but also balances agent expertise and workload in a self-organized manner, enabling effective decentralized coordination.
 
 **arXiv ID:** 2609.33768
+</details>
+
+<details>
+<summary><strong>Maat: Independent Deterministic Contract-Based Governance for Multi-Agent LLM Workflows</strong> - Uliana Elina - [[pdf]](https://arxiv.org/pdf/2609.34017)</summary>
+
+**Abstract:** Large-language-model multi-agent systems (LLM-MAS) introduce a characteristic reliability problem: an error produced by one agent can be accepted as context by downstream agents and propagate across the workflow. Many proposed safeguards rely on learned or LLM-based judges whose verdicts are themselves probabilistic; we ask whether a deterministic layer can instead stop contract-detectable handoff defects. We present Maat, a runtime governance layer that validates agent-to-agent handoffs against a versioned workflow contract, or anchor, with no language model in the validation or scoring path. We evaluate it in six controlled domain workflows (6-15 agents, 522 trials) with injected data-level defects and a deterministic seven-check rubric. Version 1 reported gains in all six workflows (2.9-26.5%). A post-publication audit found that three benchmark scorers credited any early halt as a prevented defect. On paired trials where the governed run completed or halted on a finding attributable to a verified defect, the rubric score changes by +7.7% to +29.1% in five workflows and is flat in software development; model-call cost falls 17-53% where attributable halts occur early. A hand review of all 94 governed-arm halts found 35 false alarms (37%), caused by validator defects rather than model behaviour; counting those halts as failed work, the governed arm scores below the ungoverned arm in four of six workflows. The results support deterministic handoff validation for contract-expressible defects and show that validator configuration and halt attribution must themselves be tested; they do not establish universal correctness, hallucination detection, or model-independent effectiveness.
+
+**arXiv ID:** 2609.34017
 </details>
 
 <details>
@@ -1778,19 +1778,19 @@ We formalize this problem as agent attribution: linking an observed agent intera
 </details>
 
 <details>
-<summary><strong>CyberWorld: World Models for Sample-Efficient Autonomous Cyber Defense</strong> - Ryozo Masukawa, Sanggeon Yun, Raheeb Hassan, Hyunwoo Oh, SungHeon Jeong, Mohsen Imani - [[pdf]](https://arxiv.org/pdf/2609.31893)</summary>
-
-**Abstract:** Deep reinforcement learning has become a prominent approach to autonomous cyber defense. Existing methods are predominantly model-free and consequently require extensive environment interaction. World models provide an alternative by learning predictive dynamics and optimizing policies through imagined trajectories, yielding substantial gains in sample efficiency in robotics and embodied control. Extending this paradigm to cybersecurity raises a fundamental question: what should constitute the "world" in a cyber world model? We introduce CyberWorld, a Dreamer-style world modeling framework that learns latent cyber dynamics from vector, graph, textual, and multimodal representations of the defended network. Across all four scoreable CyberWheel attack strategies, the graph-based CyberWorld variant exceeds a strategy-agnostic control after 3.6k-15.8k environment steps, compared with millions of steps required by model-free PPO. Across representation choices, graph structure provides greater robustness under topology-dependent attacks, while simpler representations remain competitive in overall performance. Among successful runs, the number of episodes required to reach the control remains approximately constant as network size increases from 15 to 100 hosts. These results establish learned cyber dynamics as a sample-efficient and scalable basis for autonomous defense, and identify world representation as a central design axis for robustness and scalability.
-
-**arXiv ID:** 2609.31893
-</details>
-
-<details>
 <summary><strong>FARE: Deep Reinforcement Learning For Fair Exposure Constrained Uncertainty Aware Financial Content Personalization</strong> - Arundeep Chinta, Lucas Vinh Tran, Jay Katukuri - [[pdf]](https://arxiv.org/pdf/2609.31890)</summary>
 
 **Abstract:** Content personalization systems in financial services must ensure fair exposure across diverse offerings-a requirement driven by contractual obligations and the need to prevent "rich-get-richer" dynamics where content with high click-through rate (CTR) dominates while other relevant products receive minimal visibility. Share of Voice (SOV) constraints, which guarantee each content category a target fraction of top-position exposure, address this by promoting product diversity and balanced user discovery. While re-ranking layers atop CTR models are common in practice, we propose two key novelties: (1) framing SOV-constrained ranking as a deep reinforcement learning problem analogous to constrained trade execution in algorithmic finance, and (2) explicitly incorporating CTR prediction uncertainty into the agent's state space and policy design-enabling larger ranking adjustments for high-uncertainty predictions where deviation from CTR-optimal ordering is less costly. We introduce FARE (Fair Ranking Executor), a modular uncertainty-aware execution layer that translates any black-box CTR model's predictions into SOV-fair rankings without retraining the underlying model. Our uncertainty-weighted proportional control policy (FARE-PC) and learned neural policies (FARE-ES, FARE-PPO) demonstrate that uncertainty-aware approaches can substantially reduce SOV deviation from fairness targets while minimizing engagement loss, with gradient-free evolution strategies outperforming policy gradient methods on synthetic data and the ordering reversing on KuaiRand-Pure.
 
 **arXiv ID:** 2609.31890
+</details>
+
+<details>
+<summary><strong>CyberWorld: World Models for Sample-Efficient Autonomous Cyber Defense</strong> - Ryozo Masukawa, Sanggeon Yun, Raheeb Hassan, Hyunwoo Oh, SungHeon Jeong, Mohsen Imani - [[pdf]](https://arxiv.org/pdf/2609.31893)</summary>
+
+**Abstract:** Deep reinforcement learning has become a prominent approach to autonomous cyber defense. Existing methods are predominantly model-free and consequently require extensive environment interaction. World models provide an alternative by learning predictive dynamics and optimizing policies through imagined trajectories, yielding substantial gains in sample efficiency in robotics and embodied control. Extending this paradigm to cybersecurity raises a fundamental question: what should constitute the "world" in a cyber world model? We introduce CyberWorld, a Dreamer-style world modeling framework that learns latent cyber dynamics from vector, graph, textual, and multimodal representations of the defended network. Across all four scoreable CyberWheel attack strategies, the graph-based CyberWorld variant exceeds a strategy-agnostic control after 3.6k-15.8k environment steps, compared with millions of steps required by model-free PPO. Across representation choices, graph structure provides greater robustness under topology-dependent attacks, while simpler representations remain competitive in overall performance. Among successful runs, the number of episodes required to reach the control remains approximately constant as network size increases from 15 to 100 hosts. These results establish learned cyber dynamics as a sample-efficient and scalable basis for autonomous defense, and identify world representation as a central design axis for robustness and scalability.
+
+**arXiv ID:** 2609.31893
 </details>
 
 <details>
@@ -1962,19 +1962,19 @@ We formalize this problem as agent attribution: linking an observed agent intera
 </details>
 
 <details>
-<summary><strong>NavHarness: Towards Lifelong Embodied Navigation</strong> - Xunyi Zhao, Jian Zhou, Sihao Lin, Gengze Zhou, Zerui Li, Xinyu Yan, Jiajun Liu, Anton van den Hengel, Qi Wu - [[pdf]](https://arxiv.org/pdf/2609.34276)</summary>
-
-**Abstract:** Frontier models can now perform well on individual embodied navigation tasks through multi-round multimodal reasoning with simple tools. Across successive tasks, however, an agent must also rely on an evolving map and earlier search records, both of which may be incomplete or conflict with new observations. We present NavHarness, a training-free embodied harness towards lifelong navigation that makes memory processing part of the navigation loop. During navigation, its multi-round agentic session draws on maps, task records, and house knowledge, checking them against observations and recording corrections to guide its actions. NavHarness preserves this experience across fresh conversations for new tasks or recovery attempts, while outcome verification and run-end summaries support its later reuse. On GOAT-Bench, NavHarness improves s-SR over context-only independent sessions by 18.6 points with Astra and 22.6 with Opus 5. Using SLAM-estimated poses, NavHarness with GPT-6 Astra achieves state-of-the-art task success of 83.7 s-SR with 36.9 e-SR on GOAT-Bench and 85.9 s-SR on IR2R-CE. To understand these gains, we examine how experience is carried between sessions and find that structured recovery handovers outperform length-matched summaries. In extended deployments across houses, consolidation improves navigation beyond retaining maps and task records, with case studies showing how agents use earlier experience to interpret new goals, investigate unresolved questions, and resume failed searches. We suggest that progress towards lifelong navigation depends on how successive reasoning sessions build on prior experience, alongside improvements in single-task capability.
-
-**arXiv ID:** 2609.34276
-</details>
-
-<details>
 <summary><strong>RoboICL: Embodied In-Context Learning with GPT-6 Astra</strong> - Fangcheng Liu, Yeqing Shen, Anda Cheng, Weishi Mi, Chao Tang, Chenyuan Liu, Yushun Xiang, Tingguang Li, Yong-Lu Li, Yehui Tang - [[pdf]](https://arxiv.org/pdf/2609.34261)</summary>
 
 **Abstract:** General-purpose vision-language models offer a promising way to zero-shot robot control: \gptastra{} excels at open-ended and language- or image-conditioned manipulation but remains substantially weaker on high-precision and long-horizon tasks. We introduce \emph{RoboICL}, an in-context robot-control framework that narrows these gaps without robot-specific parameter updates or a learned VLA. RoboICL separates \emph{demonstration context}, which provides recorded examples when available, from \emph{interaction memory}, which accumulates the model's own actions and observed outcomes. Both use a shared observation--action--receipt--observation grammar. To preserve experience across task stages, RoboICL combines sampled demonstration blocks with bounded anchored memory. Fixed anchors keep earlier rollout interactions available for in-context learning, while the latest interaction supports immediate error correction. Across 30 RoboDojo tasks, using zero shot for Open and one demonstration elsewhere, RoboICL improves on official zero-shot \gptastra{} by 20--27 progress-score points in every category. It leads the leaderboard baselines on Memory and Open, achieves comparable performance to the strongest Precision baseline, and remains competitive on Long-Horizon. Its 30-task Overall score is 50.64, versus 33.68 for the strongest baseline. On a separate ten-task subset, RoboICL scores 60.60, within 2.00 points of the $\pi_{0.5}$ + \gptastra{} hybrid approach. On three real-robot tasks, mean progress rises from 14.45 at zero shot to 63.33 at one shot and 78.89 at three shots. On two development tasks, optional Jev-gated action reuse reduces \gptastra{} calls by 33--48\%. Code is available at \href{this https URL}{this https URL}.
 
 **arXiv ID:** 2609.34261
+</details>
+
+<details>
+<summary><strong>NavHarness: Towards Lifelong Embodied Navigation</strong> - Xunyi Zhao, Jian Zhou, Sihao Lin, Gengze Zhou, Zerui Li, Xinyu Yan, Jiajun Liu, Anton van den Hengel, Qi Wu - [[pdf]](https://arxiv.org/pdf/2609.34276)</summary>
+
+**Abstract:** Frontier models can now perform well on individual embodied navigation tasks through multi-round multimodal reasoning with simple tools. Across successive tasks, however, an agent must also rely on an evolving map and earlier search records, both of which may be incomplete or conflict with new observations. We present NavHarness, a training-free embodied harness towards lifelong navigation that makes memory processing part of the navigation loop. During navigation, its multi-round agentic session draws on maps, task records, and house knowledge, checking them against observations and recording corrections to guide its actions. NavHarness preserves this experience across fresh conversations for new tasks or recovery attempts, while outcome verification and run-end summaries support its later reuse. On GOAT-Bench, NavHarness improves s-SR over context-only independent sessions by 18.6 points with Astra and 22.6 with Opus 5. Using SLAM-estimated poses, NavHarness with GPT-6 Astra achieves state-of-the-art task success of 83.7 s-SR with 36.9 e-SR on GOAT-Bench and 85.9 s-SR on IR2R-CE. To understand these gains, we examine how experience is carried between sessions and find that structured recovery handovers outperform length-matched summaries. In extended deployments across houses, consolidation improves navigation beyond retaining maps and task records, with case studies showing how agents use earlier experience to interpret new goals, investigate unresolved questions, and resume failed searches. We suggest that progress towards lifelong navigation depends on how successive reasoning sessions build on prior experience, alongside improvements in single-task capability.
+
+**arXiv ID:** 2609.34276
 </details>
 
 <details>
