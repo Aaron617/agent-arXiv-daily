@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-09-30 05:27:05
+**Last Updated:** 2026-09-30 06:40:27
 
 **Total Papers:** 183
 
@@ -788,19 +788,19 @@ AI chatbots recognized most psychiatric emergencies but still missed clinically 
 </details>
 
 <details>
-<summary><strong>RAVEN: Receiver-Conditioned Action-Value Encoding for Finite-Alphabet Multi-Agent Communication</strong> - Shuwei Sun, Chenxi Wang, Jian Huang, Weiyun Ru, Hui Cao - [[pdf]](https://arxiv.org/pdf/2609.37566)</summary>
-
-**Abstract:** A message drawn from a small alphabet helps a teammate only if it keeps the distinctions that change that teammate's next decision. We show that scoring messages by action values averaged over the receiver's situation can erase exactly these distinctions, and we propose RAVEN (Receiver-conditioned Action-Value ENcoding), which trains a four-symbol, one-step-delayed channel to preserve each receiver's centered action-value profile within the receiver's own context. The sender never needs to know that context: the receiver decodes every symbol with its private information. We give two estimators of this target. With a teacher, offline RAVEN selects the codebook that exactly minimizes an empirical conditional distortion and distills it into a frozen sender; we bound the resulting codebook-selection error and one-step decision loss. Without a teacher, online RAVEN aligns, inside a QMIX learner, the deployed symbol pathway with a training-only continuous reference that shares its routing. Against five recent communication methods on eight navigation settings, offline RAVEN attains the highest return in seven, and removing receiver conditioning forfeits 83% of its communication gain. Online RAVEN raises predator-prey capture success from 53.2% to 96.0% over the same QMIX backbone without communication, and on SMAC and MPE it attains the best mean normalized score of 14 methods, including methods that exchange kilobit messages. Every RAVEN message costs 2 bits, 12-1,024x fewer than those of NDQ, CACOM and ExpoComm on navigation.
-
-**arXiv ID:** 2609.37566
-</details>
-
-<details>
 <summary><strong>IMPACT: Modeling Socially Interdependent Movement in a Generative Multi-Agent Simulation of a Pompeian Household</strong> - Tianqi Liu, Nayoung Kim, Julia Sebastien, Kathryn Gleason, Caitlín Eilís Barrett, Andrea Stevenson Won - [[pdf]](https://arxiv.org/pdf/2609.38113)</summary>
 
 **Abstract:** Simulations of archaeological sites can make interpretations of past cultural practices observable and examinable. Generative multi-agent simulations offer a bottom-up approach to modeling how people collectively moved through and used historical spaces. However, current agents designed to simulate everyday life often plan and act independently, limiting their ability to capture how movement depends on others' actions. We introduce IMPACT (Interdependent Movement Planning through Inter-Agent Constraints and Triggers), an architecture that uses culturally specific roles and obligations to define dependencies among agents' activities and guide coordination. IMPACT connects socially gated milestone planning, wait-or-prompt resolution, structured directive issuance, and directive integration. These mechanisms determine whether and when activities can begin or change as social conditions evolve, producing socially constrained and prompted movement as their primary observable outcome. We instantiate IMPACT in a five-hour simulation of a Pompeian dinner involving ten agents across interdependent roles. Analysis of five simulation runs shows how social roles, responsibilities, and status relations shape household activities and spatial practices, as reflected in patterns of co-location, asymmetric waiting, co-movement, and social directives. In a controlled ablation evaluation, thirty-seven participants rated the complete architecture's behavior as more socially coherent and believable than that of two reduced architectures. Interviews with six archaeology experts highlighted historically plausible movement patterns and the simulation's potential to support archaeological interpretation, while identifying areas requiring stronger historical grounding for future work.
 
 **arXiv ID:** 2609.38113
+</details>
+
+<details>
+<summary><strong>RAVEN: Receiver-Conditioned Action-Value Encoding for Finite-Alphabet Multi-Agent Communication</strong> - Shuwei Sun, Chenxi Wang, Jian Huang, Weiyun Ru, Hui Cao - [[pdf]](https://arxiv.org/pdf/2609.37566)</summary>
+
+**Abstract:** A message drawn from a small alphabet helps a teammate only if it keeps the distinctions that change that teammate's next decision. We show that scoring messages by action values averaged over the receiver's situation can erase exactly these distinctions, and we propose RAVEN (Receiver-conditioned Action-Value ENcoding), which trains a four-symbol, one-step-delayed channel to preserve each receiver's centered action-value profile within the receiver's own context. The sender never needs to know that context: the receiver decodes every symbol with its private information. We give two estimators of this target. With a teacher, offline RAVEN selects the codebook that exactly minimizes an empirical conditional distortion and distills it into a frozen sender; we bound the resulting codebook-selection error and one-step decision loss. Without a teacher, online RAVEN aligns, inside a QMIX learner, the deployed symbol pathway with a training-only continuous reference that shares its routing. Against five recent communication methods on eight navigation settings, offline RAVEN attains the highest return in seven, and removing receiver conditioning forfeits 83% of its communication gain. Online RAVEN raises predator-prey capture success from 53.2% to 96.0% over the same QMIX backbone without communication, and on SMAC and MPE it attains the best mean normalized score of 14 methods, including methods that exchange kilobit messages. Every RAVEN message costs 2 bits, 12-1,024x fewer than those of NDQ, CACOM and ExpoComm on navigation.
+
+**arXiv ID:** 2609.37566
 </details>
 
 <details>
