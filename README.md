@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-10-06 06:14:34
+**Last Updated:** 2026-10-06 07:32:17
 
 **Total Papers:** 218
 
@@ -746,19 +746,19 @@ Across four conversational and research-agent benchmarks under memory-constraine
 </details>
 
 <details>
-<summary><strong>When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning</strong> - Zihao Zhao, Tunyu Zhang, Haizhou Shi, Yusong Zhao, Xinxi Zhang, Hao Wang - [[pdf]](https://arxiv.org/pdf/2610.04686)</summary>
-
-**Abstract:** Multi-agent debate can improve reasoning, yet often fails to beat simple majority voting. We argue that successful debate requires two distinct mechanisms: proposal supply must surface a correct answer, and readout must identify that answer when voting misses it. We formalize the first requirement through recoverable headroom, which measures cases where a correct proposal is available but the majority answer is wrong. For the second, we develop Latent Verification Debate (LVD), an accounting model in which candidate proposals receive answer-specific verification evidence before final generation. Controlled fixed-proposal interventions estimate this latent effect in equivalent peer-support units and show that correct evidence changes answer probabilities and generated decisions while proposal supply remains fixed. To improve proposal supply, we construct societies from neural-thicket agents using labeled and label-free coverage objectives. Across two backbones and matched-budget reasoning benchmarks, coverage-selected societies increase complementary proposal supply and improve aggregate accuracy in repeated stochastic evaluations. Round-level controls further show that interaction provides gains beyond applying the same finalizer directly to the initial proposals. These results identify proposal coverage and truth-sensitive evidence use as complementary conditions for debate to outperform voting. Code is available at this https URL.
-
-**arXiv ID:** 2610.04686
-</details>
-
-<details>
 <summary><strong>MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability</strong> - Qizhi Chu, Zekai Yu, Sijie Wen, Yang Liu, Chen Qian, Cheng Yang, Chuan Shi, Zhiyuan Liu - [[pdf]](https://arxiv.org/pdf/2610.04672)</summary>
 
 **Abstract:** Large language models (LLMs) have progressively evolved into the core of autonomous agents. Building on this progress, LLM-based multi-agent systems (MAS) coordinate multiple agents into a synergistic team to accomplish complex tasks that exceed the capabilities of individual agents. The effectiveness of such systems depends not only on the agents themselves, but also on how collaboration mechanisms are designed and organized. Note that real-world collaboration is typically partially observable, where each agent can only access partial information about the environment due to physical or privacy-related constraints. However, many existing multi-agent benchmarks assume global observability, and leave limited support for systematically evaluating collaboration mechanisms. To bridge this gap, we introduce MASBench, a multi-agent collaboration benchmark designed under partially observable constraints. It is organized into three progressive task categories: Reasoning, Scheduling, and Game. Through this structure, we progressively evaluate three representative collaboration mechanisms: Protocol, Memory, and Routing. MASBench further provides deterministic evaluation metrics, including performance score, communication cost, and cost effectiveness, to characterize both collaboration outcomes and communication overhead. Experiments across diverse LLM backbones and mechanism configurations offer empirical guidance for effective MAS design. Code is available at: this https URL
 
 **arXiv ID:** 2610.04672
+</details>
+
+<details>
+<summary><strong>When Debate Helps: Proposal Supply and Verification-Aware Readout in Multi-Agent Reasoning</strong> - Zihao Zhao, Tunyu Zhang, Haizhou Shi, Yusong Zhao, Xinxi Zhang, Hao Wang - [[pdf]](https://arxiv.org/pdf/2610.04686)</summary>
+
+**Abstract:** Multi-agent debate can improve reasoning, yet often fails to beat simple majority voting. We argue that successful debate requires two distinct mechanisms: proposal supply must surface a correct answer, and readout must identify that answer when voting misses it. We formalize the first requirement through recoverable headroom, which measures cases where a correct proposal is available but the majority answer is wrong. For the second, we develop Latent Verification Debate (LVD), an accounting model in which candidate proposals receive answer-specific verification evidence before final generation. Controlled fixed-proposal interventions estimate this latent effect in equivalent peer-support units and show that correct evidence changes answer probabilities and generated decisions while proposal supply remains fixed. To improve proposal supply, we construct societies from neural-thicket agents using labeled and label-free coverage objectives. Across two backbones and matched-budget reasoning benchmarks, coverage-selected societies increase complementary proposal supply and improve aggregate accuracy in repeated stochastic evaluations. Round-level controls further show that interaction provides gains beyond applying the same finalizer directly to the initial proposals. These results identify proposal coverage and truth-sensitive evidence use as complementary conditions for debate to outperform voting. Code is available at this https URL.
+
+**arXiv ID:** 2610.04686
 </details>
 
 <details>
@@ -949,19 +949,19 @@ Keywords: LLM Multi-Agent Systems, Design-Time Security, Threat Modeling, Vulner
 </details>
 
 <details>
-<summary><strong>Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM</strong> - Oskar Bohn Lassen, Serio Angelo Maria Agriesti, Filipe Rodrigues, Blaz Kurnik, Francisco Camara Pereira - [[pdf]](https://arxiv.org/pdf/2510.07971)</summary>
-
-**Abstract:** Climate policy analysis requires models that capture multi-gas climate effects, but such models are too slow to embed in reinforcement learning loops at scale. In collaboration with the European Environment Agency, we develop a multi-agent reinforcement learning (MARL) framework that integrates a higher-fidelity climate surrogate as the environment transition, enabling regional agents to learn policies under multi-gas dynamics. We train a recurrent surrogate on $20{,}000$ multi-gas emission pathways to emulate CICERO-SCM. The surrogate achieves near-simulator accuracy (global-mean temperature RMSE $\approx\!4\!\times \!10^{-4}\,\mathrm{K}$) with $\sim\!1000\times$ faster one-step inference and yields $>\!100\times$ end-to-end MARL training speed-up. We show policy agreement with the simulator in tractable settings and propose a replay- and rank-consistency test (Kendall's $\tau$) for assessing policy fidelity when simulator-in-the-loop training is infeasible. This enables large-scale multi-agent policy experiments while retaining high-fidelity multi-gas climate response.
-
-**arXiv ID:** 2510.07971
-</details>
-
-<details>
 <summary><strong>VehicleArena: A Realistic Urban Environment for Multi-Agent Driving</strong> - Jie Yang, Jiajun Chen, Jiazheng Zhou, Mianqiu Huang, Yining Zheng, Yuxin Wang, Xipeng Qiu - [[pdf]](https://arxiv.org/pdf/2609.35916)</summary>
 
 **Abstract:** Real-world embodied agents often pursue independent objectives within a shared physical environment, where their actions can alter the conditions faced by others. Existing benchmarks, however, typically assume shared goals or explicitly prescribed interaction protocols, leaving such emergent physical coupling underexplored. We introduce VehicleArena, a 3D urban-driving benchmark for studying independently operating agents in a dynamic shared world. In VehicleArena, LLM-controlled agents must fulfill evolving passenger requests while navigating complex traffic, and each agent's driving decisions can reshape traffic flow, delays, risks, and subsequent observations for surrounding agents. The benchmark provides 112 evaluation tasks spanning single-agent and multi-agent driving. Across nine evaluated models, the highest arrival rates reach only 65.0% on single-agent tasks and 65.6% on multi-agent tasks, while strong passenger-request or cabin scores do not reliably translate into successful trip completion. Moreover, in matched multi-agent runs, every tested focal policy reduces the arrival rate of surrounding vehicles relative to the simulator's native traffic controller, revealing measurable externalities beyond the focal vehicle itself.
 
 **arXiv ID:** 2609.35916
+</details>
+
+<details>
+<summary><strong>Climate Surrogates for Scalable Multi-Agent Reinforcement Learning: A Case Study with CICERO-SCM</strong> - Oskar Bohn Lassen, Serio Angelo Maria Agriesti, Filipe Rodrigues, Blaz Kurnik, Francisco Camara Pereira - [[pdf]](https://arxiv.org/pdf/2510.07971)</summary>
+
+**Abstract:** Climate policy analysis requires models that capture multi-gas climate effects, but such models are too slow to embed in reinforcement learning loops at scale. In collaboration with the European Environment Agency, we develop a multi-agent reinforcement learning (MARL) framework that integrates a higher-fidelity climate surrogate as the environment transition, enabling regional agents to learn policies under multi-gas dynamics. We train a recurrent surrogate on $20{,}000$ multi-gas emission pathways to emulate CICERO-SCM. The surrogate achieves near-simulator accuracy (global-mean temperature RMSE $\approx\!4\!\times \!10^{-4}\,\mathrm{K}$) with $\sim\!1000\times$ faster one-step inference and yields $>\!100\times$ end-to-end MARL training speed-up. We show policy agreement with the simulator in tractable settings and propose a replay- and rank-consistency test (Kendall's $\tau$) for assessing policy fidelity when simulator-in-the-loop training is infeasible. This enables large-scale multi-agent policy experiments while retaining high-fidelity multi-gas climate response.
+
+**arXiv ID:** 2510.07971
 </details>
 
 <details>
@@ -1517,19 +1517,19 @@ We prove trace-policy and modeled forbidden-state preservation under explicit me
 </details>
 
 <details>
-<summary><strong>Small Agents with Semantic Search: Efficient Multilingual Code Localization</strong> - Maxence Lasbordes, Aarush Sinha, Raphael Sourty, Amélie Chatelain, Djamé Seddah - [[pdf]](https://arxiv.org/pdf/2610.05099)</summary>
-
-**Abstract:** Locating relevant files from natural-language requests is a core subtask for agents operating over code repositories. We investigate whether this task can be delegated to compact, specialized models to enable on-device search while reducing the token usage, latency, and inference cost of larger agents. We show that semantic search improves file localization, with gains in accuracy, cross-language transfer, and inference efficiency. To study this setting, we introduce a training framework for file-localization agents built around ColGREP, a local semantic search tool based on late-interaction retrieval models. Our recipe combines weighted supervised fine-tuning on teacher trajectories, assigning turn-level credit based on retrieval outcomes, with reinforcement learning on localization quality. We train three model families with fewer than two billion parameters to formulate search queries, inspect retrieved content, and identify relevant files. On localization tasks derived from SWE-bench Lite and Multi-SWE-bench Flash, ColGREP-equipped agents substantially improve over their base models and outperform corresponding GREP-based agents. In addition to improving localization accuracy, ColGREP reduces mean end-to-end trajectory latency by 44.1\% on CPU while using 29.1\% fewer tokens, and enables better generalization to programming languages unseen during fine-tuning. These results suggest that compact, tool-specialized localization agents can provide an efficient interface between natural-language requests and large codebases.
-
-**arXiv ID:** 2610.05099
-</details>
-
-<details>
 <summary><strong>Causal Improvement Graph for Agentic Harness Optimization</strong> - Junjie Zhang, Shunyu Liu, Haoyu Wang, Ting-En Lin, Yongbin Li, Dacheng Tao - [[pdf]](https://arxiv.org/pdf/2610.05039)</summary>
 
 **Abstract:** Agentic Harness is the runtime that constructs task context and controls execution flow, thereby shaping overall agent performance. Given a fixed model and external evaluation, automated Harness optimization seeks to improve this runtime through an iterative proposal--evaluation loop to better solve target tasks. Existing meta-harness methods mainly adopt proposer-centric discovery, in which an LLM-based proposer integrates accumulated experimental findings to determine subsequent Harness revisions. This places the burden of maintaining the evolving improvement state on the proposer as history expands and its underlying experimental logic becomes harder to discern. In this paper, we introduce the Causal Improvement Graph (CIG), a graph-governed meta-harness framework that externalizes the evolving improvement state in a persistent graph, allowing prior findings to directly govern subsequent Harness optimization through local proposer operations. CIG grows and links Evidence, Hypothesis, Intervention, and Outcome nodes to represent what was observed, how it may be explained, how to test that explanation, and what the evaluation reveals. Their structural relations preserve how the improvement state changes across iterations, allowing local proposers to build directly on relations among prior findings rather than recover them from raw history. Across various agent tasks, CIG discovers stronger Harnesses than previous meta-harness baselines and remains robust to the choice of task solver and proposer. Structural ablations further support the design of an explicit improvement state with graph-governed evolution.
 
 **arXiv ID:** 2610.05039
+</details>
+
+<details>
+<summary><strong>Small Agents with Semantic Search: Efficient Multilingual Code Localization</strong> - Maxence Lasbordes, Aarush Sinha, Raphael Sourty, Amélie Chatelain, Djamé Seddah - [[pdf]](https://arxiv.org/pdf/2610.05099)</summary>
+
+**Abstract:** Locating relevant files from natural-language requests is a core subtask for agents operating over code repositories. We investigate whether this task can be delegated to compact, specialized models to enable on-device search while reducing the token usage, latency, and inference cost of larger agents. We show that semantic search improves file localization, with gains in accuracy, cross-language transfer, and inference efficiency. To study this setting, we introduce a training framework for file-localization agents built around ColGREP, a local semantic search tool based on late-interaction retrieval models. Our recipe combines weighted supervised fine-tuning on teacher trajectories, assigning turn-level credit based on retrieval outcomes, with reinforcement learning on localization quality. We train three model families with fewer than two billion parameters to formulate search queries, inspect retrieved content, and identify relevant files. On localization tasks derived from SWE-bench Lite and Multi-SWE-bench Flash, ColGREP-equipped agents substantially improve over their base models and outperform corresponding GREP-based agents. In addition to improving localization accuracy, ColGREP reduces mean end-to-end trajectory latency by 44.1\% on CPU while using 29.1\% fewer tokens, and enables better generalization to programming languages unseen during fine-tuning. These results suggest that compact, tool-specialized localization agents can provide an efficient interface between natural-language requests and large codebases.
+
+**arXiv ID:** 2610.05099
 </details>
 
 <details>
