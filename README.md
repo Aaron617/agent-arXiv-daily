@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-10-08 05:55:42
+**Last Updated:** 2026-10-08 07:18:42
 
 **Total Papers:** 134
 
@@ -207,19 +207,19 @@
 </details>
 
 <details>
-<summary><strong>FREIDA: A Framework for developing quantitative agent based models based on qualitative expert knowledge</strong> - Frederike Oetker, Vittorio Nespeca, Rick Quax - [[pdf]](https://arxiv.org/pdf/2308.00505)</summary>
-
-**Abstract:** Agent Based Models (ABMs) often deal with systems where there is a lack of quantitative data or where quantitative data alone may be insufficient to fully capture the complexities of real-world systems. Expert knowledge and qualitative insights, such as those obtained through interviews, ethnographic research, historical accounts, or participatory workshops, are critical in constructing realistic behavioral rules, interactions, and decision-making processes within these models. However, there is a scarcity of systematic approaches that are able to incorporate both qualitative and quantitative data across the entire modeling cycle. To address this, we propose FREIDA, a systematic mixed-methods framework to develop, train, and validate ABMs, particularly in data-sparse contexts. The main technical innovation introduced within this framework is the extraction of what we call Expected System Behaviors (ESBs) from qualitative data, which are testable statements evaluated through model simulations. Divided into Calibration Statements (CS) for model calibration and Validation Statements (VS) for model validation, ESBs underpin a rigorous evaluation mechanism on the same footing as quantitative data. By structuring qualitative insights as explicit model constraints, FREIDA creates a transparent foundation for applying established modelling practices such as Sensitivity Analysis (SA) and Uncertainty Quantification (UQ), allowing modellers to assess parameter influence, model robustness, and remaining uncertainties in a systematic manner. Through this, qualitative insights can inform not only model specification but also parameterization, validation, and continuous improvement of model reliability and fitness for purpose, addressing a long-standing challenge in agent-based modeling. We illustrate the application of FREIDA through a case study of criminal cocaine networks in the Netherlands.
-
-**arXiv ID:** 2308.00505
-</details>
-
-<details>
 <summary><strong>Persuasion Propagation: Does Persuasion Change AI Agent Behavior?</strong> - Hyejun Jeong, Amir Houmansadr, Shlomo Zilberstein, Eugene Bagdasarian - [[pdf]](https://arxiv.org/pdf/2602.00851)</summary>
 
 **Abstract:** AI agents combine normal conversation with autonomous task execution, allowing earlier context to shape how later tasks are executed. Yet studying this possibility is challenging because agent behavior is noisy and costly to reproduce, and observed behavioral changes can be difficult to separate from generic context sensitivity. We first ask whether task-irrelevant persuasion changes how agents act, a phenomenon we call \emph{persuasion propagation}, and whether persuasion susceptibility explains variation in these effects. We show that persuasive interaction leaves a measurable, task-dependent behavioral footprint on downstream agent execution. In web research, it increases execution time by 56\% and domains visited by 16.3\% relative to a baseline, while coding shows faster execution with larger revisions. However, agents that are more susceptible to persuasive conversational context do not reliably predict the magnitude of the downstream behavioral shifts. This motivates behavior-level evaluation of persuasion in AI agents.
 
 **arXiv ID:** 2602.00851
+</details>
+
+<details>
+<summary><strong>FREIDA: A Framework for developing quantitative agent based models based on qualitative expert knowledge</strong> - Frederike Oetker, Vittorio Nespeca, Rick Quax - [[pdf]](https://arxiv.org/pdf/2308.00505)</summary>
+
+**Abstract:** Agent Based Models (ABMs) often deal with systems where there is a lack of quantitative data or where quantitative data alone may be insufficient to fully capture the complexities of real-world systems. Expert knowledge and qualitative insights, such as those obtained through interviews, ethnographic research, historical accounts, or participatory workshops, are critical in constructing realistic behavioral rules, interactions, and decision-making processes within these models. However, there is a scarcity of systematic approaches that are able to incorporate both qualitative and quantitative data across the entire modeling cycle. To address this, we propose FREIDA, a systematic mixed-methods framework to develop, train, and validate ABMs, particularly in data-sparse contexts. The main technical innovation introduced within this framework is the extraction of what we call Expected System Behaviors (ESBs) from qualitative data, which are testable statements evaluated through model simulations. Divided into Calibration Statements (CS) for model calibration and Validation Statements (VS) for model validation, ESBs underpin a rigorous evaluation mechanism on the same footing as quantitative data. By structuring qualitative insights as explicit model constraints, FREIDA creates a transparent foundation for applying established modelling practices such as Sensitivity Analysis (SA) and Uncertainty Quantification (UQ), allowing modellers to assess parameter influence, model robustness, and remaining uncertainties in a systematic manner. Through this, qualitative insights can inform not only model specification but also parameterization, validation, and continuous improvement of model reliability and fitness for purpose, addressing a long-standing challenge in agent-based modeling. We illustrate the application of FREIDA through a case study of criminal cocaine networks in the Netherlands.
+
+**arXiv ID:** 2308.00505
 </details>
 
 <details>
