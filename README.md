@@ -1,6 +1,6 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-10-20 04:43:16
+**Last Updated:** 2026-10-20 06:00:07
 
 **Total Papers:** 218
 
@@ -313,19 +313,19 @@ Game theory identifies when a strategic action should be accepted, but not how l
 </details>
 
 <details>
-<summary><strong>Has GPT-6-Astra Achieved Embodied Intelligence?</strong> - SenseNova, Joint Research Team, Zhongang Cai, Ziang Cao, Tailai Chen, Han Chong Chua, Linjun Dai, Hanming Deng, Hokin Deng, Haiwen Diao, Chenjing Ding, Weichen Fan, Xiao Fu, Zerui Gong, Chenyang Gu, Zexin He, Zhi Hou, Bo Li, Qinyue Li, Quanzhou Li, Xiaowan Li, Zhichao Liao, Dahua Lin, Zilong Lin, Bo Liu, Chunxiao Liu, Pengfei Liu, Tianqi Liu, Ziwei Liu, Chen Change Loy, Lewei Lu, Jiapeng Luo, Yuexiao Ma, Liang Pan, Xingang Pan, Oscar Qian, Ziyi Shang, Yuyao Shao, Dawei Su, Dacheng Tao, Qingyi Tao, Quan Wang, Ruisi Wang, Xiaogang Wang, Ziyi Wang, Beichen Wen, Donghao Wu, Jiaxu Wu, Silei Wu, Xiaoming Wu, Zhonghua Wu, Hongcan Xiao, Weiye Xu, Atsushi Yamashita, Lei Yang, Zhe Yang, Baiqiao Yin, Wanqi Yin, Hanfei Zhao, Tianbo Zhong, Long Zhuo, Jing Zuo - [[pdf]](https://arxiv.org/pdf/2610.22471)</summary>
-
-**Abstract:** GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and execution time, 3) physical-state verification, 4) recovery from irreversible failures, and 5) long-horizon preservation of progress. Second, we study the agentic harness for embodied control. We identify that close-loop coordination between a high-level "System 2" reasoner (i.e., GPT-6-Astra) and a low-level "System 1" controller (e.g., {\pi}0.5) is costly but effective. Third, we examine GPT-6-Astra on real-world deployment. Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints. Fourth, we envision the next generation of embodied benchmarks. We develop a prototype that 1) derives tasks from real-world needs, 2) provides no in-domain demonstrations, and 3) judges agents on a world clock that keeps running while they deliberate. Taken together, our results suggest that GPT-6-Astra has largely crossed the threshold of embodied competence, but not yet that of practical embodied intelligence.
-
-**arXiv ID:** 2610.22471
-</details>
-
-<details>
 <summary><strong>Embodied Agents Take Control: Minimal-Interface Zero-Shot Agents Rival Industrial-Scale Policies in Vision-and-Language Navigation</strong> - Jian Zhou, Xunyi Zhao, Gengze Zhou, Zerui Li, Sihao Lin, Jiajun Liu, Qi Wu - [[pdf]](https://arxiv.org/pdf/2607.26148)</summary>
 
 **Abstract:** Autonomous embodied agents must sustain a long decision-making loop of perceiving, acting, verifying, and self-correcting. In trained end-to-end policies and hand-designed workflows, the interaction structure remains externally specified. We study how much of this loop a general-purpose model can direct through a minimal interface. We term this organization agentic embodied control: the reasoning model directly steers every action, keeping reasoning and control aligned. We evaluate fourteen frontier multimodal models as provided by their vendors, with monocular RGB and primitive actions across six navigation and embodied question-answering benchmarks. On 100-episode subsets, the best agents exceed published scores and approach or surpass our human tester. Who directs the loop matters: SmartWay and O2C-Nav using the same strong models achieve substantially lower success rates on R2R-CE. The lightweight mini-swe-agent harness performs comparably to vendor harnesses. Stronger models benefit from optional rather than imposed waypoints; adding SLAM raises R2R-CE success to 88%. Physical trials expose limitations in body awareness, execution feedback, and persistent spatial understanding.
 
 **arXiv ID:** 2607.26148
+</details>
+
+<details>
+<summary><strong>Has GPT-6-Astra Achieved Embodied Intelligence?</strong> - SenseNova, Joint Research Team, Zhongang Cai, Ziang Cao, Tailai Chen, Han Chong Chua, Linjun Dai, Hanming Deng, Hokin Deng, Haiwen Diao, Chenjing Ding, Weichen Fan, Xiao Fu, Zerui Gong, Chenyang Gu, Zexin He, Zhi Hou, Bo Li, Qinyue Li, Quanzhou Li, Xiaowan Li, Zhichao Liao, Dahua Lin, Zilong Lin, Bo Liu, Chunxiao Liu, Pengfei Liu, Tianqi Liu, Ziwei Liu, Chen Change Loy, Lewei Lu, Jiapeng Luo, Yuexiao Ma, Liang Pan, Xingang Pan, Oscar Qian, Ziyi Shang, Yuyao Shao, Dawei Su, Dacheng Tao, Qingyi Tao, Quan Wang, Ruisi Wang, Xiaogang Wang, Ziyi Wang, Beichen Wen, Donghao Wu, Jiaxu Wu, Silei Wu, Xiaoming Wu, Zhonghua Wu, Hongcan Xiao, Weiye Xu, Atsushi Yamashita, Lei Yang, Zhe Yang, Baiqiao Yin, Wanqi Yin, Hanfei Zhao, Tianbo Zhong, Long Zhuo, Jing Zuo - [[pdf]](https://arxiv.org/pdf/2610.22471)</summary>
+
+**Abstract:** GPT-6-Astra demonstrates a level of competence in robotic manipulation and navigation that challenges the conventional paradigm of building specialized models for individual tasks and embodiments. In this report, we ask not only how capable GPT-6-Astra is, but what its capabilities imply for the field. First, we probe the limits of standalone GPT-6-Astra. We conduct a large-scale evaluation across 12 representative benchmarks spanning tabletop manipulation, humanoids, mobile platforms, and dexterous hands. Under a unified protocol that allows in-context learning (ICL) from training-set demonstrations and substantially increases the number of execution steps, GPT-6-Astra achieves unprecedented performance (Fig. 1). Future research may focus on improving 1) the generality of ICL 2) cost and execution time, 3) physical-state verification, 4) recovery from irreversible failures, and 5) long-horizon preservation of progress. Second, we study the agentic harness for embodied control. We identify that close-loop coordination between a high-level "System 2" reasoner (i.e., GPT-6-Astra) and a low-level "System 1" controller (e.g., {\pi}0.5) is costly but effective. Third, we examine GPT-6-Astra on real-world deployment. Our experiments on 8 robot configurations reveal substantial gaps: 1) robot demonstrations required for ICL are expensive to collect, and 2) it is implausible to trade longer execution for higher success rates with physical constraints. Fourth, we envision the next generation of embodied benchmarks. We develop a prototype that 1) derives tasks from real-world needs, 2) provides no in-domain demonstrations, and 3) judges agents on a world clock that keeps running while they deliberate. Taken together, our results suggest that GPT-6-Astra has largely crossed the threshold of embodied competence, but not yet that of practical embodied intelligence.
+
+**arXiv ID:** 2610.22471
 </details>
 
 </details>
@@ -407,19 +407,19 @@ On $\tau^2$-bench telecom, the controller with no model solves 79% of tasks. As 
 </details>
 
 <details>
-<summary><strong>Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources</strong> - Jeonghwan Choi, Jibin Hwang, Hayoon Park, Hyeonjae Cheon, Hwanjun Song - [[pdf]](https://arxiv.org/pdf/2610.25096)</summary>
-
-**Abstract:** Enterprise retail workflows require agents to chain evidence across heterogeneous sources, from structured product and order records to unstructured inquiries and reviews, yet existing agentic RAG benchmarks rarely capture this challenge. To enable controlled evaluation of such workflows, we introduce RetailBridge, a compositional retail benchmark built from persona-driven simulations. Its questions are constructed by linking entities and intermediate answers across heterogeneous sources, requiring agents to identify the relevant sources, carry evidence between them, and produce a grounded answer. To systematically evaluate LLMs on these retail workflows, we develop RetailRAG, a retail-aware framework equipped with auto-schema briefing, source-routed plan chaining, and diagnostic plan revision. RetailRAG consistently outperforms existing agentic RAG baselines across all evaluation axes, serving as a strong reference system for assessing LLM agents on retail workflows. On RetailBridge, evaluating ten LLM backbones with RetailRAG reveals multi-source chaining as the dominant bottleneck across providers and model scales, suggesting that reliable retail agents require explicit cross-source orchestration rather than scaling alone. Code and data are publicly available at \url{this https URL}.
-
-**arXiv ID:** 2610.25096
-</details>
-
-<details>
 <summary><strong>Explore or Confirm? LLM Agents Misallocate Measurements Under Noise</strong> - Abdul Karim, Matt Keon - [[pdf]](https://arxiv.org/pdf/2610.25111)</summary>
 
 **Abstract:** As model reasoning gets cheaper, the physical experiment becomes the slow and costly step in discovery. Each experiment returns a noisy reading: a high value can mean a good candidate or a lucky draw. With a fixed budget, an AI agent must keep choosing between exploring a new candidate and confirming a promising one by re-testing it. We measure that choice in Wellocate, a simulated assay campaign with known true values. It is built on a generated landscape and on two real protein datasets, GB1 and PhoQ, scrambled so no model can answer from memory. We test five language models as minimal agents, with no tools and no memory beyond the history in each prompt. They misallocate in both directions. Three over-confirm, spending most of the budget re-testing. On the generated landscape one under-confirms, trusting single readings, and there every model ends with a worse final pick than a basic scripted strategy. Each failure has its own cause. The over-confirmers run short of new candidates worth trying: a list of untried candidates cuts their re-testing and, on real protein data, makes two of them pick much better. A running summary of their readings or a description of the landscape changes it by at most five percentage points. For the under-confirmer, re-testing its top candidates in a final round, replayed on its own campaigns, recovers only about a quarter of what it loses by picking the wrong candidate. This suggests confirmation has to run through the whole campaign. We release Wellocate as a benchmark and reinforcement-learning environment with frozen splits and scripted baselines. With it, anyone can measure how an agent splits its budget before trusting it with real experiments, and train agents to split it better. Code, data and the environment are available at this https URL.
 
 **arXiv ID:** 2610.25111
+</details>
+
+<details>
+<summary><strong>Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources</strong> - Jeonghwan Choi, Jibin Hwang, Hayoon Park, Hyeonjae Cheon, Hwanjun Song - [[pdf]](https://arxiv.org/pdf/2610.25096)</summary>
+
+**Abstract:** Enterprise retail workflows require agents to chain evidence across heterogeneous sources, from structured product and order records to unstructured inquiries and reviews, yet existing agentic RAG benchmarks rarely capture this challenge. To enable controlled evaluation of such workflows, we introduce RetailBridge, a compositional retail benchmark built from persona-driven simulations. Its questions are constructed by linking entities and intermediate answers across heterogeneous sources, requiring agents to identify the relevant sources, carry evidence between them, and produce a grounded answer. To systematically evaluate LLMs on these retail workflows, we develop RetailRAG, a retail-aware framework equipped with auto-schema briefing, source-routed plan chaining, and diagnostic plan revision. RetailRAG consistently outperforms existing agentic RAG baselines across all evaluation axes, serving as a strong reference system for assessing LLM agents on retail workflows. On RetailBridge, evaluating ten LLM backbones with RetailRAG reveals multi-source chaining as the dominant bottleneck across providers and model scales, suggesting that reliable retail agents require explicit cross-source orchestration rather than scaling alone. Code and data are publicly available at \url{this https URL}.
+
+**arXiv ID:** 2610.25096
 </details>
 
 <details>
@@ -1763,19 +1763,19 @@ On the identity side, we find that most registrations are placeholders rather th
 </details>
 
 <details>
-<summary><strong>GazeAgent: VLM-Guided Implicit Gaze Calibration from Egocentric Multimodal Behavior for AI Glasses</strong> - Yuhong Zhang, Khanh An Nguyen, Xinyu Tian, KungYi Chang, Abraham Padua, Yuchen Xu, Ying Choon Wu, Gert Cauwenberghs, Tzyy-Ping Jung - [[pdf]](https://arxiv.org/pdf/2610.24364)</summary>
-
-**Abstract:** AI glasses typically require explicit, user-specific eye-tracker calibration, and accuracy can drift when the device shifts during use. We present GazeAgent, a VLM-guided framework that continuously and adaptively improves gaze-calibration accuracy from naturally occurring behavior without asking users to interrupt their activities. GazeAgent identifies precise visual attention (PVA) events from multimodal streams of inertial measurement unit (IMU), gaze, and wearer-hand signals, validates their task relevance, and localizes functional targets as pseudo-calibration targets. In a 10-participant scripted study, the system detected all 820 predefined PVA opportunities and, under device disturbance, reduced median gaze error by 44.1% compared with explicit calibration. In a five-participant case study, autonomous calibration produced the lowest workload and interruption ratings, and all participants preferred it for routine use. By deriving task-critical targets from natural multimodal behavior, GazeAgent demonstrates the potential for continuous, adaptive, and low-burden gaze interaction on egocentric AI glasses.
-
-**arXiv ID:** 2610.24364
-</details>
-
-<details>
 <summary><strong>VLX-Go: Robust Embodied Tracking through Multi-Stage Learning and On-Policy Refinement</strong> - Kyusong Lee, Heting Ying, Tiancheng Zhao - [[pdf]](https://arxiv.org/pdf/2610.19361)</summary>
 
 **Abstract:** Embodied visual tracking requires a robot to identify a designated target from visual observations and control its own motion to follow that target through an environment. Following an isolated person is a comparatively simple demonstration of embodied visual tracking, but following the intended person among distractors remains challenging. Existing methods exhibit a substantial drop in success from single-target to distractor tracking, motivating a focus on the shared spaces that person-following robots must navigate. We present VLX-GO, a vision-language waypoint policy built around the hypothesis that visual and language representations should be aligned before tracking-specific motion is learned. The policy combines complementary frozen visual encoders, multiscale temporal context, a transformer backbone, and a lightweight head for robot-centric waypoint prediction. Its training progresses through vision--language alignment, multimodal reasoning mid-training, and tracking specialization on 19,532 oracle episodes. Compared with 41.54% distractor-tracking success for our earlier OmTrackVLA model, the complete multi-stage recipe achieves 55.80%. We then explore on-policy refinement using filtered oracle labels for states visited by the policy. This preliminary study adds 2.42 percentage points of distractor-tracking success, reaching 58.22%, while reducing collision rate by 1.99 pts. The final policy records the highest distractor- and ambiguous-tracking success rates among the compared methods. These results support staged multimodal learning as a promising direction for tracking among distractors and motivate further study of on-policy refinement for person following in shared spaces. Code is available at this https URL.
 
 **arXiv ID:** 2610.19361
+</details>
+
+<details>
+<summary><strong>GazeAgent: VLM-Guided Implicit Gaze Calibration from Egocentric Multimodal Behavior for AI Glasses</strong> - Yuhong Zhang, Khanh An Nguyen, Xinyu Tian, KungYi Chang, Abraham Padua, Yuchen Xu, Ying Choon Wu, Gert Cauwenberghs, Tzyy-Ping Jung - [[pdf]](https://arxiv.org/pdf/2610.24364)</summary>
+
+**Abstract:** AI glasses typically require explicit, user-specific eye-tracker calibration, and accuracy can drift when the device shifts during use. We present GazeAgent, a VLM-guided framework that continuously and adaptively improves gaze-calibration accuracy from naturally occurring behavior without asking users to interrupt their activities. GazeAgent identifies precise visual attention (PVA) events from multimodal streams of inertial measurement unit (IMU), gaze, and wearer-hand signals, validates their task relevance, and localizes functional targets as pseudo-calibration targets. In a 10-participant scripted study, the system detected all 820 predefined PVA opportunities and, under device disturbance, reduced median gaze error by 44.1% compared with explicit calibration. In a five-participant case study, autonomous calibration produced the lowest workload and interruption ratings, and all participants preferred it for routine use. By deriving task-critical targets from natural multimodal behavior, GazeAgent demonstrates the potential for continuous, adaptive, and low-burden gaze interaction on egocentric AI glasses.
+
+**arXiv ID:** 2610.24364
 </details>
 
 <details>
