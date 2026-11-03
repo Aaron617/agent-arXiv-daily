@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-11-03 06:39:59
+**Last Updated:** 2026-11-03 07:53:03
 
-**Total Papers:** 110
+**Total Papers:** 100
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Agent Applications (4 papers)</h2></summary>
+<summary><h2>Agent Applications (2 papers)</h2></summary>
 
 <details>
 <summary><strong>SoK: Agentic Retrieval-Augmented Generation (RAG): Taxonomy, Architectures, Evaluation, and Research Directions</strong> - Saroj Mishra, Suman Niroula, Umesh Yadav, Dilip Thakur, Srijan Gyawali, Shiva Gaire - [[pdf]](https://arxiv.org/pdf/2603.07379)</summary>
@@ -22,22 +22,6 @@
 **Abstract:** Retrieval-Augmented Generation (RAG) systems are increasingly evolving into agentic architectures where large language models autonomously coordinate multi-step reasoning, dynamic memory management, and iterative retrieval strategies. Despite rapid industrial adoption, current research lacks a systematic understanding of Agentic RAG as a sequential decision-making system, leading to highly fragmented architectures, inconsistent evaluation methodologies, and unresolved reliability risks. This Systematization of Knowledge (SoK) paper provides the first unified framework for understanding these autonomous systems. We formalize agentic retrieval-generation loops as finite-horizon partially observable Markov decision processes, explicitly modeling their control policies and state transitions. Building upon this formalization, we develop a comprehensive taxonomy and modular architectural decomposition that categorizes systems by their planning mechanisms, retrieval orchestration, memory paradigms, and tool-invocation behaviors. We further analyze the critical limitations of traditional static evaluation practices and identify severe systemic risks inherent to autonomous loops, including compounding hallucination propagation, memory poisoning, retrieval misalignment, and cascading tool-execution vulnerabilities. Finally, we outline key doctoral-scale research directions spanning stable adaptive retrieval, cost-aware orchestration, formal trajectory evaluation, and oversight mechanisms, providing a definitive roadmap for building reliable, controllable, and scalable agentic retrieval systems.
 
 **arXiv ID:** 2603.07379
-</details>
-
-<details>
-<summary><strong>DialFork: Going Beyond Factuality to Evaluate Procedural Hallucination in Conversational Agents</strong> - Sergio Burdisso, Esaú Villatoro-Tello, Dairazalia Sánchez-Cortés, Yanis Labrak, Jordi Luque, Milos Cernak, Petr Motlicek - [[pdf]](https://arxiv.org/pdf/2610.21561)</summary>
-
-**Abstract:** Large language models (LLMs) deployed as conversational agents are increasingly expected to follow procedural logic. While factual hallucination has received extensive attention, a different failure mode has been overlooked: procedural hallucination, in which an agent produces individually fluent and factually plausible utterances while deviating from the intended conversational process. We introduce DialFork, the first benchmark to measure this failure mode on raw dialogue text. DialFork is built by forking conformant dialogues at controlled turn positions and injecting one of four hallucination types, yielding 36,278 dialogues across 24 tasks in 12 domains; 30 human annotators validate the construction. We define three evaluation tasks that characterize procedural deviation at three granularities: how far a set of dialogues deviates from conformant ones (monitoring deployed agents), how far a single dialogue does (procedural retrieval), and at which turn a dialogue first goes off-track (real-time guardrails). For the first two, we propose dialog-flow-aware metrics, FlowKL and FlowScore, that compare dialogues by how they unfold rather than their content. At the dialogue level, FlowScore significantly outperforms all baselines across seven encoders, showing that semantic similarity is no substitute for procedural similarity. We release DialFork under open licenses at this https URL, hoping the community will measure conversational process alongside content.
-
-**arXiv ID:** 2610.21561
-</details>
-
-<details>
-<summary><strong>Robustness of Chatbot LLM Judgments of Presidential Actions and Hypothetical Reforms</strong> - Oleg Vasilyev - [[pdf]](https://arxiv.org/pdf/2610.39398)</summary>
-
-**Abstract:** Chatbots are increasingly consulted about public affairs, and their judgments of policies are useful only if they are robust. We measure this robustness in the setting of an ordinary user, through consumer chat interfaces. For 30 days, five chatbot configurations (Mistral, Gemini Flash, Claude Sonnet, and Claude Opus at two effort settings) were asked twice a day to score the long-term effect on the United States of 40 actions of the last four presidential administrations and of 15 hypothetical reforms, each with a confidence and a short comment. The judgments are robust: all configurations agree on the sign and the ranking of the administrations' mean scores, and two different configurations asked on the same day give opposite signs to the same action in about 4% of cases. Responses from different days differ more than same-day responses (which shared the order of the items); the difference grows slowly over the month, except where the service itself changed. We identify three such changes, which shifted the judgments while leaving little or no trace in the interface. Treating the comments as a retrieval task, we find them specific to each item and consistent across runs and chatbots, with lexical and embedding similarities agreeing. We release the dataset of 16,500 judgments.
-
-**arXiv ID:** 2610.39398
 </details>
 
 <details>
@@ -51,7 +35,7 @@
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (21 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (17 papers)</h2></summary>
 
 <details>
 <summary><strong>More Rules, Longer Lists? Benchmarking Self-Evolving Agents on a Hidden-Rule Curriculum</strong> - Chenjie Qiu, Boyan Xu, Shaobin Shi, Bingfeng Chen, Ruichu Cai, Dongsheng Luo - [[pdf]](https://arxiv.org/pdf/2610.40758)</summary>
@@ -175,30 +159,6 @@ The reference profile registers 12 effect families, five interfaces, and 60 rout
 </details>
 
 <details>
-<summary><strong>Open Biomedical Knowledge Graphs at Scale: Construction, Federation, and AI Agent Access with Samyama Graph Database</strong> - Madhulatha Mandarapu, Sandeep Kunkunuru - [[pdf]](https://arxiv.org/pdf/2603.15080)</summary>
-
-**Abstract:** Biomedical knowledge is fragmented across siloed databases---Reactome, STRING, Gene Ontology, this http URL, DrugBank, DGIdb, SIDER, PubMed, ClinVar, ChEMBL, OpenTargets, and more. We present an open, reproducible biomedical knowledge graph ecosystem built on Samyama, a Rust-native graph database: three foundational graphs detailed end-to-end---Pathways KG (118,686 nodes, 834,785 edges), Clinical Trials KG (7,774,446 nodes, 26,973,997 edges), and Drug Interactions KG (32,726 nodes, 191,970 edges)---and their expansion into a 22-graph, 2-cohort merged biomedical store (328,130,739 nodes and 1,441,425,733 imported edges, including 295,000 synthetic OMOP CDM patients from Synthea). First, we describe a reproducible ETL and portable .sgsnap snapshot pattern where graphs load alone or compose into one store. Second, we analyze single-store cross-KG integration via query-time property joins and load-time identifier deduplication (--dedup-keys): across all 24 snapshots (Samyama-Graph v1.13.0), 328.1M nodes and 1.44B edges load in 2,269.1 s (37m 49s) within 366.5 GB peak RSS (254 B/edge), merging 132,511 cross-source entities across five audited keys (mondo_id,uniprot_id,go_id,drugbank_id,symbol)---87.8% of the 150,965 Bound A sound-identifier ceiling, with zero conflicting-ID refusals. On a frozen 81-query suite, 62 queries return results (17 data-gap empties, 2 timeouts); on an expanded 200-query oracle suite, 195 of 200 pass (97.5%). Third, we introduce schema-driven Model Context Protocol (MCP) server generation: on the 40-question BiomedQA benchmark over the 3-KG subset, domain-specific MCP tools achieve 98% accuracy vs. 85% for schema-aware text-to-Cypher and 75% for standalone GPT-4o, with zero schema errors.
-
-**arXiv ID:** 2603.15080
-</details>
-
-<details>
-<summary><strong>EvoMemBench: Benchmarking Agent Memory from a Self-Evolving Perspective</strong> - Yuyao Wang, Zhongjian Zhang, Mo Chi, Kaichi Yu, Yuhan Li, Miao Peng, Bing Tong, Chen Zhang, Yan Zhou, Jia Li - [[pdf]](https://arxiv.org/pdf/2605.18421)</summary>
-
-**Abstract:** Recent benchmarks for Large Language Model (LLM) agents mainly evaluate reasoning, planning, and execution. However, memory is also essential for agents, as it enables them to store, update, and retrieve information over time. This ability remains under-evaluated, largely because existing benchmarks do not provide a systematic way to assess memory mechanisms. In this paper, we study agent memory from a self-evolving perspective and introduce EvoMemBench, a unified benchmark organized along two axes: memory scope (in-episode vs. cross-episode) and memory content (knowledge-oriented vs. execution-oriented). We compare 15 representative memory methods with strong long-context baselines under a standardized protocol. Results show that current memory systems are still far from a general solution: long-context baselines remain highly competitive, memory helps most when the current context is insufficient or tasks are difficult, and no single memory form works consistently across all settings. Retrieval-based methods remain strong for knowledge-intensive settings, whereas procedural and long-term memory methods are more effective for execution-oriented tasks when their stored experience matches the task structure. We hope EvoMemBench facilitates future research on more effective memory systems for LLM-based agents. Our dataset and code are available at this https URL.
-
-**arXiv ID:** 2605.18421
-</details>
-
-<details>
-<summary><strong>Metacognitive Decoding: Efficient Inference for Diffusion Language Agents</strong> - Mingyu Zhao, Shuhang Lin, Ligong Han, Xiaojing Yu, Zhenting Wang, Yifei Pang, Yang Zhou, Dimitris N. Metaxas - [[pdf]](https://arxiv.org/pdf/2610.37642)</summary>
-
-**Abstract:** Diffusion language models offer a promising path to efficient agents through parallel token generation. However, efficient interaction requires adapting both where computation is spent and how much text is generated. We introduce a metacognitive controller that guides diffusion generation according to the needs of the current response and the agent's interaction with the environment. It learns when to finalize tokens and how far generation should extend, reducing overall computation within responses. Our controller, a lightweight plug-in for the diffusion backbone, is trained on agent trajectories to balance correctness and generation cost. This approach connects the agent's generation process to the interaction the agent serves. Experiments across five benchmarks demonstrate that our approach reduces inference FLOPs by 20.6% on average compared with the most efficient baseline, while maintaining competitive task accuracy. Ablation studies further validate the effectiveness of our approach.
-
-**arXiv ID:** 2610.37642
-</details>
-
-<details>
 <summary><strong>RetryRoute: Retry-Aware Model Routing for Agentic Image Editing Services</strong> - Hanshuai Cui, Zhiqing Tang, Zhi Yao, Jun Luo, Weijia Jia - [[pdf]](https://arxiv.org/pdf/2610.41460)</summary>
 
 **Abstract:** Web agents increasingly edit images by calling open editing models in a critique-and-retry loop, and these models differ in cost by more than an order of magnitude. After every rejected edit, a service must decide whether to retry the same model, escalate to another or give up. Existing routers pick one model per request, and cascades escalate in a fixed order. However, both treat a retry as an independent draw. We identify sticky failures, meaning that a retry after a failure succeeds only 17-53% as often as a first try across six open models, three benchmarks and two judges. Based on this finding, we propose RetryRoute, a retry-aware router that estimates each model's chance of success given the request's failure history. It plans retries, escalations and abandonment over failure states and adds live queue waits to the cost, so the same plan becomes load-aware dispatch. At the main budget, RetryRoute's success under the in-loop judge exceeds the strongest of eleven prior baselines by 2.8 points on average over eight groups. On a GPU serving testbed it raises the share of edits delivered within the service-level objective by 5.0-6.3 points over the best prior baseline at every load.
@@ -214,18 +174,10 @@ The reference profile registers 12 effect families, five interfaces, and 60 rout
 **arXiv ID:** 2610.41868
 </details>
 
-<details>
-<summary><strong>SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving</strong> - Jinyang Wang, Shiwei Li, Junjian Wang, Zhiqiang Deng, Jianbin Gao, Yihang Zhao, Liu Liu, Yongjia Zhao, Jinlong Chen, Huirui Xu, Yifeng Pan, Kangwei Liu, Fan Ren, Ji Tao, Minghao Yang - [[pdf]](https://arxiv.org/pdf/2609.03602)</summary>
-
-**Abstract:** World models (WMs) have demonstrated strong potential for end-to-end autonomous driving by learning predictive representations of future scene dynamics. However, generating future videos during inference introduces substantial computational overhead, leading many recent driving WMs to adopt a single front camera as input for efficient deployment. This design restricts spatial coverage in safety-critical maneuvers such as lane changes, merges, and turns. To address this limitation, we propose SV-WAM, a surround-view world-action model (WAM) that preserves full six-camera observations while maintaining efficient inference. SV-WAM leverages future-video prediction as dense training supervision for action learning within a shared generative model, rather than as an inference-time output. At the core of this design is an action-centered causal mask that prevents action tokens from attending to future-video tokens during joint action-video denoising. Consequently, the video branch can be discarded at deployment, enabling efficient action-only planning. Furthermore, we introduce a differentiable drivable-area compliance regularizer that penalizes vehicle-footprint corners approaching or crossing drivable boundaries, improving planning safety and boundary awareness. Extensive experiments on the closed-loop NAVSIMv2 benchmark and the open-loop nuScenes benchmark demonstrate that SV-WAM achieves state-of-the-art planning performance with low inference latency and competitive zero-shot transfer capability.
-
-**arXiv ID:** 2609.03602
-</details>
-
 </details>
 
 <details open>
-<summary><h2>LLM Agents (22 papers)</h2></summary>
+<summary><h2>LLM Agents (20 papers)</h2></summary>
 
 <details>
 <summary><strong>Agentic World Modeling for Agent Test-time Scaling without Environment Replica</strong> - Wendi Li, Huseyin A. Inan, Wei-Ning Chen, Yanzhi Chen, Chetan Bansal, Saravan Rajmohan, Sharon Li - [[pdf]](https://arxiv.org/pdf/2610.40927)</summary>
@@ -372,22 +324,6 @@ The reference profile registers 12 effect families, five interfaces, and 60 rout
 </details>
 
 <details>
-<summary><strong>Completeness and Cost of Retrieval Structures for Multi-Tool Requests in LLM Agents</strong> - Shuyang Zhang - [[pdf]](https://arxiv.org/pdf/2610.41905)</summary>
-
-**Abstract:** An agent that must call several tools to fulfill a request fails when the tool retriever omits any one of them, yet tool retrievers are mostly built and evaluated on queries requiring a single tool. We compare representatives of six retrieval structures (flat lexical and dense retrieval, LLM query decomposition, LLM-navigated hierarchies, server-then-tool matching, dependency graphs, and trained set-level retrievers) across two multi-tool testbeds: 345 AppWorld queries with expert dependency labels and 103 MCP-Bench tasks over 257 MCP tools. We measure completeness@k, the share of queries whose entire required tool set appears in the top k, alongside the LLM calls, tokens, and latency that each structure incurs at retrieval time. A motivating analysis on all 7,961 ToolRet queries shows that aggregate completeness mixes two regimes: completeness at 10 is .58 to .67 on single-target queries and .08 to .17 on queries with four or more targets, and the ordering of retrievers on single-target queries reverses on multi-target ones. Across the two testbeds, none of the compared structures that is untrained on the testbed and makes at most one LLM call per query completes more than 10% of AppWorld queries at k = 16. The two structures that do better incur different costs: a set-level retriever trained on 75 to 90 in-domain queries reaches .33 on AppWorld and .58 on MCP-Bench with no LLM calls, while an LLM-navigated hierarchy reaches .30 and .40 with a median of 31 to 38 LLM calls and about five minutes per query. Their failure modes also differ: the trained retriever mostly ranks the missing tools just below the cutoff, whereas the hierarchy finds the target API and stops before collecting its prerequisites. In a downstream check with the official AppWorld agent, tasks with a complete retrieved set succeeded 21 of 21 times, whereas incomplete ones succeeded 2 of 39 times.
-
-**arXiv ID:** 2610.41905
-</details>
-
-<details>
-<summary><strong>AgentCollab: A Self-Evaluation-Driven Collaboration Paradigm for Efficient LLM Agents</strong> - Wenbo Gao, Renxi Liu, Xian Wang, Fang Guo, Shuai Yang, Xi Chen, Hui-Ling Zhen, Hanting Chen, Weizhe Lin, Xiaosong Li, Yaoyuan Wang - [[pdf]](https://arxiv.org/pdf/2603.26034)</summary>
-
-**Abstract:** Autonomous agents powered by large language models (LLMs) perform complex tasks through long-horizon reasoning and tool interaction, where a fundamental trade-off arises between execution efficiency and reasoning robustness. Models at different capability-cost levels offer complementary advantages: lower-cost models enable fast execution but may struggle on difficult reasoning segments, while stronger models provide more robust reasoning at higher computational cost. We present AgentCollab, a self-driven collaborative inference framework that dynamically coordinates models with different reasoning capacities during agent execution. Instead of relying on external routing modules, the framework uses the agent's own self-reflection signal to determine whether the current reasoning trajectory is making meaningful progress, and escalates control to a stronger reasoning tier only when necessary. To further stabilize long-horizon execution, we introduce a difficulty-aware cumulative escalation strategy that allocates additional reasoning budget based on recent failure signals. In our experiments, we instantiate this framework using a two-level small-large model setting. Experiments on diverse multi-step agent benchmarks show that AgentCollab consistently improves the accuracy-efficiency Pareto frontier of LLM agents. The code is available at this https URL.
-
-**arXiv ID:** 2603.26034
-</details>
-
-<details>
 <summary><strong>What Standard Evaluations Hide About Detectors of Hijacked LLM Agents: Rare Attacks, Unseen Tools and Benchmark Transfer</strong> - Mahmoud Abbasi, Juan M. Núñez V., Amin Shahraki - [[pdf]](https://arxiv.org/pdf/2610.41803)</summary>
 
 **Abstract:** Detectors can flag hijacked large language model (LLM) agents from the traces of the tools they call. In the eleven evaluations we audited, attacks or anomalies make up 16% to 86% of the test samples, no evaluation varies that share, and six report no test on data from a second benchmark or source. We ask what such evaluations hide. On the AgentDrift and AgentDojo benchmarks we test trained detectors that read tool identities, behavior, call sequences, step embeddings or text, and a released LLM action monitor, AlignmentCheck, with thresholds fixed on training data or set by the monitor's released decision rule. First, at a 2% attack rate a detector with an area under the receiver operating characteristic curve (AUROC) of 0.879 reaches a precision of 0.076, and the mix of negatives alone moves that precision between 0.039 and 0.117. Second, as tool coverage, the share of test tool calls whose tool was seen in training, falls, detector rankings cross near 50% coverage and reverse below it, because unseen tools map to inputs that training never reached. Dropout on tool inputs largely removes the reversal. Third, no detector trained on AgentDrift ranks AgentDojo traces better than chance (AUROC 0.47 to 0.52), including one that reaches 0.996 within AgentDojo. The monitor, trained on neither, reaches 0.930, but with its open backbone its released decision rule would still mostly raise false alerts at a 2% attack rate (precision 0.096). We turn these findings into a checklist for evaluating trace detectors.
@@ -406,7 +342,7 @@ The reference profile registers 12 effect families, five interfaces, and 60 rout
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (12 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (11 papers)</h2></summary>
 
 <details>
 <summary><strong>Ax-Prover: A Deep Reasoning Agentic Framework for Theorem Proving in Mathematics and Quantum Physics</strong> - Benjamin Breen, Marco Del Tredici, Jacob McCarran, Javier Aspuru Mijares, Weichen Winston Yin, Kfir Sulimany, Jacob M. Taylor, Frank H. L. Koppens, Dirk Englund - [[pdf]](https://arxiv.org/pdf/2510.12787)</summary>
@@ -470,14 +406,6 @@ The reference profile registers 12 effect families, five interfaces, and 60 rout
 **Abstract:** Multireference calculations require time-consuming expert decisions about active spaces, state identity, and convergence. This study asks whether agents can make these decisions reliably. Using the El Agente Quntur multi-agent harness with GPT-5.6 Sol and GPT-5.6 Terra as its language models, agents study 32 fixed-geometry singlet excitations, detect missing active orbitals, compare excited states, and revise state assignments as calculations progress. Prompts specify equal-weight two-singlet state-averaged complete active space self-consistent field (CASSCF) calculations followed by strongly contracted second-order N-electron valence state perturbation theory (NEVPT2) with def2-TZVPD; agents choose and refine the active spaces. Excitation energies are evaluated against published complete active space second-order perturbation theory (CASPT2) reference values at matching geometries. Agentic execution reduces mean absolute error by 48\% relative to six deterministic Active Space Finder protocols. Computational traces vary substantially across runs in selection strategies and cost, even for the same molecule. These results underscore the advantage of agentic active space selection over fixed workflows, yet leave room to improve efficiency through runtime-aware decision-making, reduced inter-agent communication overhead and redundancy, more systematic checks of state identity, and clearer stopping criteria.
 
 **arXiv ID:** 2610.38145
-</details>
-
-<details>
-<summary><strong>VerifyMAS: Hypothesis Verification for Failure Attribution in LLM-based Multi-Agent Systems</strong> - Hezhe Qiao, Hanghang Tong, Ee-Peng Lim, Bing Liu, Guansong Pang - [[pdf]](https://arxiv.org/pdf/2605.17467)</summary>
-
-**Abstract:** Large language model-driven multi-agent systems (LLM-MAS) excel at complex tasks, yet unreliable agents remain a key bottleneck to system-level reliability. Automatic failure attribution is therefore critical, but existing approaches, such as direct prediction of agent-error pairs and agent-first failure attribution, rely on local logs of agents and miss global failures that only manifest over full interaction trajectories, such as cross-step inconsistencies and inter-agent coordination errors. Moreover, directly predicting failures induces a large combinatorial search space, hindering fine-grained attribution. To address these challenges, we propose VerifyMAS, a hypothesis verification framework for agent failure attribution. Instead of directly predicting faulty agents and error types, VerifyMAS formulates and verifies failure hypotheses against full trajectories. This verification-based approach decomposes attribution into trajectory-level error validation and fine-grained agent localization, providing an error-first attribution approach that captures global failure patterns while substantially reducing the search space. We further introduce a hypothesis-based data construction strategy grounded in a structured error taxonomy and fine-tune a specialized LLM verifier model for trajectory-level failure verification and agent attribution. Experiments on Aegis-Bench and Who&When show that VerifyMAS consistently improves diverse backbone models, including open-source Qwen and API-based GPT models, outperforming prior methods without sacrificing inference efficiency for long multi-agent trajectories. Code and data are available at this https URL.
-
-**arXiv ID:** 2605.17467
 </details>
 
 <details>
@@ -648,7 +576,7 @@ Exploratory analysis showed that participants chose "ask" for 114 of 140 POLICY 
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (35 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (34 papers)</h2></summary>
 
 <details>
 <summary><strong>Does Recursive Knowledge Construction Help Agents Verify Consensus Claims in Science?</strong> - Lun Ai, Yu-Heng Wu, Jonathan Schaul, Leonie Küchenhoff, Denes Turei, Francesco Carli, Fabio Petroni, Aurelien Dugourd, Julio Saez-Rodriguez - [[pdf]](https://arxiv.org/pdf/2610.40906)</summary>
@@ -771,30 +699,6 @@ Exploratory analysis showed that participants chose "ask" for 114 of 140 POLICY 
 </details>
 
 <details>
-<summary><strong>Fully Offline Reinforcement Learning</strong> - Mattie Fellows, Clarisse Wibault, Uljad Berdica, Johannes Forkel, Maike Osborne, Jakob N. Foerster - [[pdf]](https://arxiv.org/pdf/2505.22442)</summary>
-
-**Abstract:** Offline RL (ORL) promises safe and sample-efficient deployment but existing methods rely on undocumented online interactions for hyperparameter tuning and lack reliable fully offline estimates of initial online performance. We introduce SOReL, a fully offline Bayesian model-based RL method that learns a posterior over dynamics, estimates policy value via predictive uncertainty, and enables complete offline hyperparameter selection. We further propose TOReL, which extends this tuning framework to arbitrary model-free and model-based ORL algorithms. We provide a regret analysis showing that Bayesian offline RL achieves the minimax-optimal parametric rate under standard regularity conditions. Together, our methods establish a practical and theoretically grounded framework for fully offline RL.
-
-**arXiv ID:** 2505.22442
-</details>
-
-<details>
-<summary><strong>Safe Reinforcement Learning via Recovery-based Shielding with Gaussian Process Dynamics Models</strong> - Alexander W. Goodall, Francesco Belardinelli - [[pdf]](https://arxiv.org/pdf/2602.12444)</summary>
-
-**Abstract:** Reinforcement learning (RL) is a powerful framework for optimal decision-making and control but often lacks provable guarantees for safety-critical applications. In this paper, we introduce a novel recovery-based shielding framework that enables safe RL with a provable safety lower bound for unknown and non-linear continuous dynamical systems. The proposed approach integrates a backup policy (shield) with the RL agent, leveraging Gaussian process (GP) based uncertainty quantification to predict potential violations of safety constraints, dynamically recovering to safe trajectories only when necessary. Experience gathered by the 'shielded' agent is used to construct the GP models, with policy optimization via internal model-based sampling - enabling unrestricted exploration and sample efficient learning, without compromising safety. Empirically our approach demonstrates strong performance and strict safety-compliance on a suite of continuous control environments.
-
-**arXiv ID:** 2602.12444
-</details>
-
-<details>
-<summary><strong>STRIATUM-CTF: A Protocol-Driven Agentic Framework for Autonomous CTF Solving</strong> - James Hugglestone, Samuel Jacob Chacko, Dawson Stoller, Ryan Schmidt, Xiuwen Liu - [[pdf]](https://arxiv.org/pdf/2603.22577)</summary>
-
-**Abstract:** Autonomous cyber operations increasingly depend on agents that can chain reconnaissance, exploitation, and analysis across many tools while maintaining state over long task horizons. Large Language Models (LLMs) are promising orchestrators for this workflow, but naive agents that pipe model output directly into a shell are brittle: they emit malformed commands, hallucinate non-existent command-line options or packages, and lose track of earlier findings as the context window fills. We present STRIATUM-CTF, a modular agentic framework for Capture-the-Flag (CTF) solving that mediates between LLM reasoning and tool execution using the Model Context Protocol (MCP). Offensive-security tools are exposed as strictly typed, schema-validated functions; the protocol layer rejects out-of-schema tool calls before execution and returns structured observations that the agent uses to self-correct. We evaluate the system in two ways. In a controlled study of 180 runs across 15 CTF challenges under four levels of attached procedural documentation, the system succeeds on 77.8-86.7% of attempts; notably, a schema-only configuration with no procedural documentation already reaches 77.8%, and no condition differs significantly from another. In a single live, multi-team CTF at Florida State University, the system placed first against a field of more than 30 registered teams -- a single, non-replicated event decided by a 10-point margin over the runner-up, and therefore a demonstration of feasibility rather than of superiority over human experts. Because all four ablation conditions share the same tool layer, our controlled study isolates documentation volume rather than the protocol layer itself; we accordingly present schema-mediated grounding as a design principle with qualitative support rather than as a measured effect.
-
-**arXiv ID:** 2603.22577
-</details>
-
-<details>
 <summary><strong>Understanding LLM-Based Bargaining of Driving Agents in Mixed-Autonomy Traffic</strong> - Lingxiao Zhou, Di Chen, Jia Li - [[pdf]](https://arxiv.org/pdf/2610.41239)</summary>
 
 **Abstract:** Large Language Models (LLMs) offer a flexible computational approach for modeling social interactions among heterogeneous agents. This paper develops a novel framework towards characterizing and understanding LLM-based population-level bargaining of shared road space between autonomous vehicle (AV) and human-driven vehicle (HV) agents in mixed-autonomy traffic. Through controlled experiments varying traffic density, agent objectives, and traffic-domain knowledge, we first characterize bargaining outcomes and observe heterogeneous agreement rates across different experimental conditions. To understand how the bargaining process shapes the outcomes, we introduce a behavioral taxonomy that jointly characterizes numerical bidding actions and communicative attitudes. We examine two complementary aspects of social interaction: inter-agent bargaining dynamics and private-to-public behavioral transformation. Results reveal distinct interaction patterns associated with agreement and breakdown, including greater constructive reciprocity in agreement trials and more frequent conflict escalation in breakdown trials. Furthermore, private and public communicative attitudes often differ even when numerical bids remain unchanged. These findings illustrate how LLM-based bargaining simulations can support a structured analysis of social interaction behaviors in mixed-autonomy traffic.
@@ -803,11 +707,11 @@ Exploratory analysis showed that participants chose "ask" for 114 of 140 POLICY 
 </details>
 
 <details>
-<summary><strong>Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents</strong> - Haoqing Wang, Xiaoyi Zhang, Sicheng Fan, Zhexin Zhang, Xinjie Zhang, Jiahao Li, Bin Li, Yan Lu - [[pdf]](https://arxiv.org/pdf/2610.41432)</summary>
+<summary><strong>STRIATUM-CTF: A Protocol-Driven Agentic Framework for Autonomous CTF Solving</strong> - James Hugglestone, Samuel Jacob Chacko, Dawson Stoller, Ryan Schmidt, Xiuwen Liu - [[pdf]](https://arxiv.org/pdf/2603.22577)</summary>
 
-**Abstract:** Computer-use agents increasingly tackle tasks ranging from everyday desktop activities to long-horizon professional workflows. Yet interfaces centered on screenshots and mouse-and-keyboard actions can impose a human-interaction prior, requiring repeated screen interpretation while leaving the computer's semantic and programmatic capabilities underexposed. We argue for exposing these capabilities and letting models choose and combine them. We introduce Hybrid Computer Use (HCU), a unified interface for general agents that combines three complementary channels: programmatic interaction through code and command-line tools, semantic interaction through accessibility (AX), and visual interaction through graphical user interfaces (GUI). Our HCU supports efficient AX interaction and guards against stale-state actions during channel switching. A supplementary HCU skill guides agents in selecting and coordinating channels to use the unified interface effectively. Our designed AX tools return compact observations, execute actions in batches, and report their effects as AX diffs, so the model needs fewer round trips. On OSWorld 2.0, HCU achieves the highest Partial and Binary scores among the compared systems. Analyzing agent trajectories, we find that all evaluated models improve with HCU yet allocate work across the channels differently and consistently outperform compared baselines in terms of both efficiency and task success, highlighting the value of unified computer-use interfaces that allow flexible channel selection and combination.
+**Abstract:** Autonomous cyber operations increasingly depend on agents that can chain reconnaissance, exploitation, and analysis across many tools while maintaining state over long task horizons. Large Language Models (LLMs) are promising orchestrators for this workflow, but naive agents that pipe model output directly into a shell are brittle: they emit malformed commands, hallucinate non-existent command-line options or packages, and lose track of earlier findings as the context window fills. We present STRIATUM-CTF, a modular agentic framework for Capture-the-Flag (CTF) solving that mediates between LLM reasoning and tool execution using the Model Context Protocol (MCP). Offensive-security tools are exposed as strictly typed, schema-validated functions; the protocol layer rejects out-of-schema tool calls before execution and returns structured observations that the agent uses to self-correct. We evaluate the system in two ways. In a controlled study of 180 runs across 15 CTF challenges under four levels of attached procedural documentation, the system succeeds on 77.8-86.7% of attempts; notably, a schema-only configuration with no procedural documentation already reaches 77.8%, and no condition differs significantly from another. In a single live, multi-team CTF at Florida State University, the system placed first against a field of more than 30 registered teams -- a single, non-replicated event decided by a 10-point margin over the runner-up, and therefore a demonstration of feasibility rather than of superiority over human experts. Because all four ablation conditions share the same tool layer, our controlled study isolates documentation volume rather than the protocol layer itself; we accordingly present schema-mediated grounding as a design principle with qualitative support rather than as a measured effect.
 
-**arXiv ID:** 2610.41432
+**arXiv ID:** 2603.22577
 </details>
 
 <details>
@@ -875,6 +779,22 @@ Exploratory analysis showed that participants chose "ask" for 114 of 140 POLICY 
 </details>
 
 <details>
+<summary><strong>Fully Offline Reinforcement Learning</strong> - Mattie Fellows, Clarisse Wibault, Uljad Berdica, Johannes Forkel, Maike Osborne, Jakob N. Foerster - [[pdf]](https://arxiv.org/pdf/2505.22442)</summary>
+
+**Abstract:** Offline RL (ORL) promises safe and sample-efficient deployment but existing methods rely on undocumented online interactions for hyperparameter tuning and lack reliable fully offline estimates of initial online performance. We introduce SOReL, a fully offline Bayesian model-based RL method that learns a posterior over dynamics, estimates policy value via predictive uncertainty, and enables complete offline hyperparameter selection. We further propose TOReL, which extends this tuning framework to arbitrary model-free and model-based ORL algorithms. We provide a regret analysis showing that Bayesian offline RL achieves the minimax-optimal parametric rate under standard regularity conditions. Together, our methods establish a practical and theoretically grounded framework for fully offline RL.
+
+**arXiv ID:** 2505.22442
+</details>
+
+<details>
+<summary><strong>Safe Reinforcement Learning via Recovery-based Shielding with Gaussian Process Dynamics Models</strong> - Alexander W. Goodall, Francesco Belardinelli - [[pdf]](https://arxiv.org/pdf/2602.12444)</summary>
+
+**Abstract:** Reinforcement learning (RL) is a powerful framework for optimal decision-making and control but often lacks provable guarantees for safety-critical applications. In this paper, we introduce a novel recovery-based shielding framework that enables safe RL with a provable safety lower bound for unknown and non-linear continuous dynamical systems. The proposed approach integrates a backup policy (shield) with the RL agent, leveraging Gaussian process (GP) based uncertainty quantification to predict potential violations of safety constraints, dynamically recovering to safe trajectories only when necessary. Experience gathered by the 'shielded' agent is used to construct the GP models, with policy optimization via internal model-based sampling - enabling unrestricted exploration and sample efficient learning, without compromising safety. Empirically our approach demonstrates strong performance and strict safety-compliance on a suite of continuous control environments.
+
+**arXiv ID:** 2602.12444
+</details>
+
+<details>
 <summary><strong>CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents</strong> - Yijia Fan, Xilin He, Yilei Jiang, Dongming Wu, Jiaxu Wang, Xiangyu Yue - [[pdf]](https://arxiv.org/pdf/2610.40799)</summary>
 
 **Abstract:** Across coding, web, and tool-use tasks, language-model agents are now routinely trained with the same recipe: supervised fine-tuning (SFT) to learn the interface, then multi-turn reinforcement learning (RL) to master it. Code-as-policy (CaP) casts robot manipulation in the same form, as the policy writes code against robot APIs and reads back the results, so the same recipe should apply. Yet existing CaP agents sidestep training: they either prompt closed frontier models or delegate manipulation to pre-trained vision-language-action models (VLAs) and high-level skills, while small open vision-language models (VLMs) fail outright. We present CaPtain, an open post-training pipeline that turns a small open VLM into a capable CaP agent, with no VLA, frontier model, or privileged state at test time. CaPtain trains and deploys the policy inside CaPtain-Harness, which exposes low-level perception, geometry, and guarded-motion primitives across simulation and real hardware. We first align the base model via SFT on synthetic trajectories generated with GPT-6 Astra, then apply multi-turn RL. Multi-turn RL must credit tens of agent requests, whose physical effects often surface turns later, from a single end-of-episode outcome. We therefore introduce a physical critic that reads privileged simulator state, never seen by the policy, and credits each request by how much it changes the predicted chance of success. Starting from Qwen3.5-4B (0% zero-shot), CaPtain-4B reaches 55.4% held-out LIBERO success after SFT and 73.8% after RL. On LIBERO-PRO, it reaches 78.5%, surpassing several frontier-model agents, and its RL gains persist across three perturbation suites (+17.6 to +21.2 points). Without target-domain training, it attains 83.3% on SimplerEnv WidowX, exceeds frontier models on CaP-Bench, and runs on a real robot after simulation-only adaptation. We release all code, data, and model weights.
@@ -915,19 +835,19 @@ Exploratory analysis showed that participants chose "ask" for 114 of 140 POLICY 
 </details>
 
 <details>
-<summary><strong>Seeing and Imagining as One: Unified Video Generation and 4D Perception for Embodied World Modeling</strong> - Haitang Feng, Zhuoman Liu, Zhennan Wang, Sheng Wang, Juelin Li, Chengzhi Zhao, Hexiang Wei, Lin Shao - [[pdf]](https://arxiv.org/pdf/2610.39232)</summary>
-
-**Abstract:** Embodied world models should not only imagine plausible futures, but also perceive the geometric, semantic, and motion structure of the evolving world. We present GenSight, a unified embodied world model that brings future video generation and dense perception into a single pretrained video diffusion transformer. GenSight uses a unified spatiotemporal representation for video, depth, embodiment segmentation, and first-frame-relative 2D flow. Built on a shared DiT backbone, GenSight uses lightweight task modulation to predict all modalities within the same architecture. All tasks are jointly optimized within a unified velocity prediction space. At inference, GenSight supports two complementary modes: multi-step future video generation with aligned dense predictions and single-step dense perception from an observed video. By unifying modality representation, model architecture, and prediction space, GenSight avoids separate modality-specific pipelines and couples appearance, geometry, semantics, and motion in a shared representation. It promotes cross-modal consistency and allows dense perception to benefit from the spatiotemporal priors learned through video generation. Trained on embodied manipulation data spanning multiple robot embodiments and human-hand interactions, GenSight demonstrates strong performance in both video generation and dense 4D perception, highlighting the effectiveness of unifying seeing and imagining for embodied world modeling.
-
-**arXiv ID:** 2610.39232
-</details>
-
-<details>
 <summary><strong>Out of sync: Accommodation, evaluation, and emergence in five weeks with an agentic AI teammate</strong> - Nia Nixon, Jaeyoon Choi, Pedro Martins de Bastos, Mohammad Amin Samadi - [[pdf]](https://arxiv.org/pdf/2610.41057)</summary>
 
 **Abstract:** As agentic AI in education shifts from reactive tools toward partners that take initiative and persist over time, a central question is how learners relate to, evaluate, and benefit from artificial agency. We conducted a longitudinal experiment in an undergraduate learning analytics course, in which 17 student teams (N = 48) collaborated with a persistent LLM-based teammate across weekly sessions. The agent decided when to intervene through a trigger-based architecture, and its social role was manipulated between teams: a Cognitive Agent that challenged quick consensus or a Supportive Agent that invited quieter members to contribute. Combining chat discourse, post-session surveys, and spoken reflections, we identified distinct patterns unfolding across three timescales. Students accommodated their language to the agent's role immediately, using more social language toward the Supportive Agent from the first session. Their helpfulness evaluations were recalibrated from session to session in relation to the agent's observed behavior, rather than remaining anchored to students' pre-existing attitudes toward AI. A slower crossover emerged in perceived collaboration process and positive-affect word use in reflections: Supportive-Agent teams began below Cognitive-Agent teams and ended above them, although students rated the Supportive Agent less helpful throughout. Because these responses follow different trajectories, single-session evaluations of agentic AI may miss changes that emerge only through repeated interaction.
 
 **arXiv ID:** 2610.41057
+</details>
+
+<details>
+<summary><strong>Hybrid Computer Use: A Unified Programmatic, Semantic, and Visual Interface for General Agents</strong> - Haoqing Wang, Xiaoyi Zhang, Sicheng Fan, Zhexin Zhang, Xinjie Zhang, Jiahao Li, Bin Li, Yan Lu - [[pdf]](https://arxiv.org/pdf/2610.41432)</summary>
+
+**Abstract:** Computer-use agents increasingly tackle tasks ranging from everyday desktop activities to long-horizon professional workflows. Yet interfaces centered on screenshots and mouse-and-keyboard actions can impose a human-interaction prior, requiring repeated screen interpretation while leaving the computer's semantic and programmatic capabilities underexposed. We argue for exposing these capabilities and letting models choose and combine them. We introduce Hybrid Computer Use (HCU), a unified interface for general agents that combines three complementary channels: programmatic interaction through code and command-line tools, semantic interaction through accessibility (AX), and visual interaction through graphical user interfaces (GUI). Our HCU supports efficient AX interaction and guards against stale-state actions during channel switching. A supplementary HCU skill guides agents in selecting and coordinating channels to use the unified interface effectively. Our designed AX tools return compact observations, execute actions in batches, and report their effects as AX diffs, so the model needs fewer round trips. On OSWorld 2.0, HCU achieves the highest Partial and Binary scores among the compared systems. Analyzing agent trajectories, we find that all evaluated models improve with HCU yet allocate work across the channels differently and consistently outperform compared baselines in terms of both efficiency and task success, highlighting the value of unified computer-use interfaces that allow flexible channel selection and combination.
+
+**arXiv ID:** 2610.41432
 </details>
 
 </details>
