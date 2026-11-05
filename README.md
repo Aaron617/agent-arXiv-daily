@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-11-05 06:35:36
+**Last Updated:** 2026-11-05 07:53:14
 
-**Total Papers:** 91
+**Total Papers:** 103
 
 ## Table of Contents
 
@@ -59,7 +59,7 @@
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (22 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (24 papers)</h2></summary>
 
 <details>
 <summary><strong>Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents</strong> - Manu Agrawal, Shrey Nagpal - [[pdf]](https://arxiv.org/pdf/2611.05391)</summary>
@@ -233,6 +233,22 @@ To our knowledge, we provide the first controlled study in scientific vision-age
 </details>
 
 <details>
+<summary><strong>HexaShell: A Universal Harness for Robot Coding Agents in Simulation and the Real World</strong> - Hongcheng Gao, Jianshu Zeng, Alex Zhou, Shijia Ge, Xuan Shangguan, Yazhe Wang, Yexing Wan, Zelin Zheng, Jay Zhu, Xiping Li, Di Wu, Yongli Wang, Lingyu He, Zhiqi Jia, Sihang Wu, Xiao He - [[pdf]](https://arxiv.org/pdf/2610.23479)</summary>
+
+**Abstract:** Agents built on vision language models (VLMs) now control robots by writing code, but the strongest of them refine task-specific code over many rounds of trial and revision. Such code tends to overfit the benchmark on which it was tuned, can exploit the benchmark's shortcuts, and is costly to carry over to a new benchmark or robot. We present HexaShell, a thin, task-agnostic harness designed to test how far general tools can go instead. We design a simple and complete set of 14 basic tools, 4 for motion, 5 for perception and 5 for state, which the agent calls in one Python cell per turn. Perception pairs SAM 3, which segments an object from a few words or a click, with NumPy and OpenCV geometry that turns its outlines in several cameras, or a depth image, into its position, size and grasp angle. The API, agent loop and sandbox are shared across all tasks; a new simulator or robot needs only an adapter of 350 to 1,450 lines and a prompt describing its world, and the only task-specific input is an optional skill of about a page of guidance. The same code runs on four simulated benchmarks, built on three simulators with two kinds of arm, and on real robots. With GPT-6-Astra and no task-specific input, HexaShell reaches success rates of 69.9% on RoboDojo, 59.3% on RoboCasa365, 78.3% on LIBERO-PRO and 82.2% on RoboTwin 2.0. With task skills, it reaches 85.0% (score 88.8), 85.6%, 96.7% and 96.8%, respectively, above the best published result we are aware of on each benchmark. The RoboCasa365 result is listed first on its leaderboard. On real dual-arm robots, HexaShell succeeds in 76 of 90 episodes across nine tasks.
+
+**arXiv ID:** 2610.23479
+</details>
+
+<details>
+<summary><strong>META-Robot: Self-Cognition and Capability Scaling in Agentic Robots</strong> - Xuanzhi Feng, Zeyu Liu, Weiheng Gao, Xinchen Li, Jiankun Tang, Fangqi Zhu, Quanxin Shou, Hao Chen, Zhengyang Yan, Hualei Zhang, Junhao Li, Zhiyao Wu, Jie Zhang, Song Guo - [[pdf]](https://arxiv.org/pdf/2610.41868)</summary>
+
+**Abstract:** LLM-based robotic agent systems can generate programs for robot control, yet their generalization to new tasks often depends on elaborate scaffolding. Expanding their skill repertoires alone offers limited guidance on how to assess new capabilities or identify what remains beyond their reach. We introduce META-Robot, a framework that couples self cognition with capability scaling by expanding the criteria through which an agent evaluates and develops its skills. At its core, action-level predicates make execution outcomes explicit and available for LLM reasoning. The agent uses these assessments to identify its own limitations, extend relevant evaluation criteria, and guide the structured expansion of its skills. Proprioceptive feedback further grounds this process in the robot's physical state, enriching the evidence available for self-cognition. Experiments in simulation and on real robots demonstrate stronger overall task performance, generalization to new tasks, continued expansion of skills and evaluation criteria, and effective use of non-visual proprioceptive signals.
+
+**arXiv ID:** 2610.41868
+</details>
+
+<details>
 <summary><strong>Measuring the collaboration, not the agent</strong> - Xinxiao Li, Eisei Nakahara - [[pdf]](https://arxiv.org/pdf/2611.06487)</summary>
 
 **Abstract:** Benchmarks for visualization agents score the agent alone; the human only supplies reference answers. For high-dimensional data this misses what matters: the knowledge of which variables count is held by on-site experts, not by the model, so the useful question is how well an analyst and an agent do together. We study one specific form of collaboration, the agent proposes a view, the analyst accepts, rejects, or modifies it, and those judgments are kept for later sessions, and propose five measures for it: complementarity, intervention efficiency, appropriate reliance, knowledge retention, and agency. The first four are computed from interaction logs alone. We test the measures, not people: in a testbed for parallel-coordinates design on public manufacturing data (UCI SECOM), with a simulated analyst whose behavior we control, all four are computable and respond to the controlled differences. Whether they reveal anything about real analysts is the next step; we release the testbed for it.
@@ -243,7 +259,7 @@ To our knowledge, we provide the first controlled study in scientific vision-age
 </details>
 
 <details open>
-<summary><h2>LLM Agents (21 papers)</h2></summary>
+<summary><h2>LLM Agents (23 papers)</h2></summary>
 
 <details>
 <summary><strong>Route to Remember: Adaptive Memory Selection for LLM Agents</strong> - Zeyu Fang, Jun Yin, Yongsheng Mei, Xu Han, Chaitali Joshi, Zhongkai Sun, Jie Hao, Bin Guo, Chengyuan Ma, Benjamin Z. Yao, Chenlei Guo - [[pdf]](https://arxiv.org/pdf/2611.05636)</summary>
@@ -343,6 +359,38 @@ In this work, we challenge the prevailing assumption that agents must consume to
 </details>
 
 <details>
+<summary><strong>A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</strong> - Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel - [[pdf]](https://arxiv.org/pdf/2611.06914)</summary>
+
+**Abstract:** Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.
+
+**arXiv ID:** 2611.06914
+</details>
+
+<details>
+<summary><strong>When Disclosure Is Compulsory: Evaluating Ride-Hailing Rebalancing Policies with Self-Interested LLM Driver Agents</strong> - Xinyu Wang, Andres Fielbaum - [[pdf]](https://arxiv.org/pdf/2610.41132)</summary>
+
+**Abstract:** The EU Platform Work Directive, to be transposed by December 2026, requires ride-hailing platforms to state in plain language the main parameters of their automated decisions and how a worker's behaviour affects them. Such rules are exactly what a large language model (LLM) can read, so drivers will be able to let one decide for them. We compare two main families of rebalancing policy once their rules are public: a reactive policy (R) that sends idle drivers to cover requests just lost, and an anticipatory policy (A) that plans moves on a demand forecast. Each driver is an LLM agent maximizing its own net income, given no rules (N) or the rules at the directive's level of detail (L). We test two LLMs, Claude Haiku 5.5 and Jev, which understand the rules equally well, in a three-zone model and in Manhattan. With the rules disclosed, drivers follow the platform more closely: in Manhattan, the share of relocation offers they decline falls from about four in five to one in four under both policies. Yet the effects differ by policy. For the platform, disclosure costs R 3.7% of its profit in Manhattan, as R now pays for moves drivers used to make for free, while A's profit is unchanged; the two policies, which tie on profit under full compliance, end 6.1% apart. For drivers, disclosure raises income in the small model under both policies and LLMs; for users, it raises the service rate there by 10 to 18 percentage points. In Manhattan, self-interested drivers also make A a win-win-win against full compliance, raising driver income, platform profit and service rate by 10 to 12% each. Rebalancing policies that perform equally well under full compliance can thus show opposite results under mandatory disclosure. The study offers a framework to evaluate such policies under the new requirement and is, to our knowledge, the first to do so with LLM agents.
+
+**arXiv ID:** 2610.41132
+</details>
+
+<details>
+<summary><strong>Multi-User Large Language Model Agents</strong> - Shu Yang, Shenzhe Zhu, Hao Zhu, José Ramón Enríquez, Di Wang, Alex Pentland, Michiel A. Bakker, Jiaxin Pei - [[pdf]](https://arxiv.org/pdf/2604.08567)</summary>
+
+**Abstract:** Large language models (LLMs) and LLM-based agents are increasingly deployed as assistants in planning and decision making, yet most existing systems are implicitly optimized for a single-principal interaction paradigm, in which the model is designed to satisfy the objectives of one dominant user whose instructions are treated as the sole source of authority and utility. However, as they are integrated into team workflows and organizational tools, they are increasingly required to serve multiple users simultaneously, each with distinct roles, preferences, and authority levels, leading to multi-user, multi-principal settings with unavoidable conflicts, information asymmetry, and privacy constraints. In this work, we present the first systematic study of multi-user LLM agents. We begin by formalizing multi-user interaction with LLM agents as a multi-principal decision problem, where a single agent must account for multiple users with potentially conflicting interests and associated challenges. We then introduce a unified multi-user interaction protocol and design three targeted stress-testing scenarios to evaluate current LLMs' capabilities in instruction following, privacy preservation, and coordination. Our results reveal systematic gaps: frontier LLMs frequently fail to maintain stable prioritization under conflicting user objectives, exhibit increasing privacy violations over multi-turn interactions, and suffer from efficiency bottlenecks when coordination requires iterative information gathering.
+
+**arXiv ID:** 2604.08567
+</details>
+
+<details>
+<summary><strong>The Little Scientist: What Does the Scientific Method Buy an LLM Agent?</strong> - Travis Smith - [[pdf]](https://arxiv.org/pdf/2608.16951)</summary>
+
+**Abstract:** Scientific discovery emerges from cycles of hypothesis, implementation, empirical testing, and feedback. Can this process be automated? We approach automated algorithm design through the lens of the scientific method, where an LLM-based agent goes through each step of the process in an iterative fashion. Results: We present The Little Scientist, a framework that maps the scientific method onto an LLM agent in a loop: a Scientist agent iterates hypothesis, prediction, code, test, and reconciliation inside an evaluation environment that returns structured diagnostics, and a Kuhn agent injects paradigm-shifting reframings at plateaus. On DNA motif discovery, the process wrote an algorithm from scratch (DALE) that outperforms STREME across 132 ENCODE transcription factors on the shuffled-negative benchmark (mean AUROC 0.842 vs. 0.803) while running 11x faster. We then asked why this method worked, and that question became the paper's scientific core: a preregistered, controlled teardown of the framework's own scaffolding consisting of ten ablation arms against one-shot bandit nulls. The answer overturned the premise. Seven of ten loop arms fail to beat a bandit drawing samples from the same model and prompt, the full scaffold performs below blind sampling at 7-8x the token cost, and a floor-prompt arm with no framework at all wins on both score and value per token. On a held-out genomic benchmark, the best loop artifact and the best bandit draw agree to within 0.002, and the DALE algorithm from the initial experiment scored similarly. The convergent picture is that LLM agents do not reason their way past what training placed in the weights. Autoresearch, on this evidence, is sampling, selection, and remixing, which is the bet the Evolve-family architectures made when they chose populations and external selection over scratchpad reasoning, and why those choices were right.
+
+**arXiv ID:** 2608.16951
+</details>
+
+<details>
 <summary><strong>Cognitive Bias Signatures in Search-Equipped LLM Agents: A Stage-Resolved Analysis</strong> - Yanru Xiao, Yingwei Yu - [[pdf]](https://arxiv.org/pdf/2611.05720)</summary>
 
 **Abstract:** Search can help LLM agents correct mistakes, but their starting conditions may shape which evidence they find and use. Drawing on cognitive-bias paradigms, we develop a controlled search harness to examine result order, records of prior work, and initial hypotheses while holding each question and document collection fixed. Matched controls distinguish order effects from differences in document composition and the effects of failed work from context length. Across 10 models and 1,000 synthetic search worlds, we track queries, retrieved documents, document openings, and final answers. Our comparisons suggest that final answers are more sensitive to initial evidence order during active search than when all evidence is supplied in full. Dead-end histories can reduce strategy switching relative to matched neutral histories, indicating an effect beyond context length. Under wrong hypotheses, stage measurements distinguish reduced retrieval or opening from errors that persist after counter-evidence is opened. Exploratory interventions show that opening counter-evidence more often can coincide with lower accuracy, while accuracy can improve with little change in opening.
@@ -383,22 +431,6 @@ In this work, we challenge the prevailing assumption that agents must consume to
 </details>
 
 <details>
-<summary><strong>A Framework for Context Enrichment and Selective Robustness in LLM Social Agents</strong> - Mattia Greiche, Reihaneh Rabbany, Maximilian Puelma Touzel - [[pdf]](https://arxiv.org/pdf/2611.06914)</summary>
-
-**Abstract:** Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem for social simulation. One plausible hypothesis is that this brittleness reflects a lack of grounding and can be reduced by enriching the context provided to the agents. Whether richer context improves robustness remains unclear, in part because context richness and robustness are rarely defined in ways that support controlled comparisons. We address the first need with controlled context enrichment, a set of prompt substitution rules that systematically enriches distinct types of context: neutral padding, generic social background, descriptive decision grounding, and normative decision grounding. We address the second by introducing selective robustness as a validation criterion: insensitivity to meaning-preserving prompt variation combined with a directional response to decision-relevant changes in the social world. We demonstrate the framework in a Prisoner's Dilemma-like game, showing how it can be used to identify which forms of context enrichment produce more desirable and robust agent behavior. We find that these forms of enrichment produce distinct behavioral patterns that vary between the two models tested.
-
-**arXiv ID:** 2611.06914
-</details>
-
-<details>
-<summary><strong>Multi-User Large Language Model Agents</strong> - Shu Yang, Shenzhe Zhu, Hao Zhu, José Ramón Enríquez, Di Wang, Alex Pentland, Michiel A. Bakker, Jiaxin Pei - [[pdf]](https://arxiv.org/pdf/2604.08567)</summary>
-
-**Abstract:** Large language models (LLMs) and LLM-based agents are increasingly deployed as assistants in planning and decision making, yet most existing systems are implicitly optimized for a single-principal interaction paradigm, in which the model is designed to satisfy the objectives of one dominant user whose instructions are treated as the sole source of authority and utility. However, as they are integrated into team workflows and organizational tools, they are increasingly required to serve multiple users simultaneously, each with distinct roles, preferences, and authority levels, leading to multi-user, multi-principal settings with unavoidable conflicts, information asymmetry, and privacy constraints. In this work, we present the first systematic study of multi-user LLM agents. We begin by formalizing multi-user interaction with LLM agents as a multi-principal decision problem, where a single agent must account for multiple users with potentially conflicting interests and associated challenges. We then introduce a unified multi-user interaction protocol and design three targeted stress-testing scenarios to evaluate current LLMs' capabilities in instruction following, privacy preservation, and coordination. Our results reveal systematic gaps: frontier LLMs frequently fail to maintain stable prioritization under conflicting user objectives, exhibit increasing privacy violations over multi-turn interactions, and suffer from efficiency bottlenecks when coordination requires iterative information gathering.
-
-**arXiv ID:** 2604.08567
-</details>
-
-<details>
 <summary><strong>LLM Agents Already Know When to Call Tools -- Even Without Reasoning</strong> - Chung-En Sun, Linbo Liu, Ge Yan, Zimo Wang, Tsui-Wei Weng - [[pdf]](https://arxiv.org/pdf/2605.09252)</summary>
 
 **Abstract:** Tool-augmented LLM agents tend to call tools indiscriminately, even when the model can answer directly. Each unnecessary call wastes API fees and latency, yet no existing benchmark systematically studies when a tool call is actually needed. We propose When2Tool, a benchmark of 18 environments (15 single-hop, 3 multi-hop) spanning three categories of tool necessity -- computational scale, knowledge boundaries, and execution reliability -- each with controlled difficulty levels that create a clear decision boundary between tool-necessary and tool-unnecessary tasks. We evaluate two families of training-free baselines: Prompt-only (varying the prompt to discourage unnecessary calls) and Reason-then-Act (requiring the model to reason about tool necessity before acting). Both provide limited control: Prompt-only suppresses necessary calls alongside unnecessary ones, and Reason-then-Act still incurs a disproportionate accuracy cost on hard tasks. To understand why these baselines fail, we probe the models' hidden states and find that tool necessity is linearly decodable from the pre-generation representation with AUROC 0.89--0.96 across six models, substantially exceeding the model's own verbalized reasoning. This reveals that models already know when tools are needed, but fail to act on this knowledge during generation. Building on this finding, we propose Probe&Prefill, which uses a lightweight linear probe to read the hidden-state signal and prefills the model's response with a steering sentence. Across all models tested, Probe&Prefill reduces tool calls by 38\% with only 1.7\% accuracy loss, while the best baseline at comparable accuracy only reduces 6% of tool calls, or achieves a similar tool call reduction but incurs a 5$\times$ higher accuracy loss. Our code is available at this https URL
@@ -417,7 +449,7 @@ In this work, we challenge the prevailing assumption that agents must consume to
 </details>
 
 <details open>
-<summary><h2>Multi-Agent Systems (15 papers)</h2></summary>
+<summary><h2>Multi-Agent Systems (19 papers)</h2></summary>
 
 <details>
 <summary><strong>Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions</strong> - Fuad Ali - [[pdf]](https://arxiv.org/pdf/2611.05390)</summary>
@@ -492,6 +524,38 @@ In this work, we challenge the prevailing assumption that agents must consume to
 </details>
 
 <details>
+<summary><strong>Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment</strong> - Zhonghao Zhan, Javad Forough, Yefan Zhang, Krinos Li, Xiao Ma, Hamed Haddadi - [[pdf]](https://arxiv.org/pdf/2611.06727)</summary>
+
+**Abstract:** When multi-agent systems act on the external world, a single agent's faulty output can spread across tasks before detection, creating a system-wide blast radius. Single-agent guardrails are confined to individual harnesses, while existing multi-agent controls either cancel only the faulty source and miss downstream consumers or halt and roll back the entire workflow at the cost of healthy work. We present Airlock, a multi-agent runtime and guardrail for selective post-alert fault containment. Its tree-structured runtime, EdgeCitadel, narrows permissions vertically from parent to child agents to establish node boundaries and control switches. Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally. Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes. At the site switches, a default full quarantine tier freezes affected branches without a solver, while an assured optimized cut tier uses fence-then-prune to enforce a deadline-aware minimum cut minimizing collateral disruption. Across 1,832 testbed runs, 161 physical smart-home LLM runs, and 24,266 simulation records, Airlock blocks all post-alert faulty actuations on our main testbed and smart-home grids with zero post-convergence leaks. Whereas native controls in A2A and LangGraph either contain at most 33.3% of faults or retain at most 16% of work without redo, Airlock retains +68 pp to +96 pp more healthy work, and its optimized cut retains +46 pp more than full quarantine under dense spread. These results show that co-designing runtime authority boundaries with online provenance enables surgical fault containment without sacrificing healthy work (code: this https URL).
+
+**arXiv ID:** 2611.06727
+</details>
+
+<details>
+<summary><strong>Constrained Black-Box Attacks Against Cooperative Multi-Agent Reinforcement Learning</strong> - Amine Andam, Jamal Bentahar, Mustapha Hedabou - [[pdf]](https://arxiv.org/pdf/2508.09275)</summary>
+
+**Abstract:** Collaborative multi-agent reinforcement learning (MARL) is increasingly deployed in critical domains, yet its vulnerability to adversarial perturbations has not been thoroughly investigated. Most existing adversarial attacks against MARL rely on optimistic assumptions, such as access to policy weights or the ability to train surrogate policies. We investigate whether adversaries with limited capabilities remain effective against MARL agents. In particular, we study two restricted attack settings that are overlooked in the literature: (i) adversaries with access only to agent observations and (ii) adversaries with no access whatsoever. Our approach generates perturbations that intentionally misalign how victim agents perceive their environment, preventing them from collaborating. We conduct extensive experiments across a diverse set of 22 environments. Our results demonstrate both the effectiveness and sample efficiency of our attacks.
+
+**arXiv ID:** 2508.09275
+</details>
+
+<details>
+<summary><strong>Welfarist Control Design - How to fulfill the societal mandate in multi-agent control?</strong> - Sophie Hall, Kai Zhang, Ilia Shilov, Heinrich H. Nax, Saverio Bolognani - [[pdf]](https://arxiv.org/pdf/2606.23931)</summary>
+
+**Abstract:** At the core of most socio-technical systems lies a scarce resource that is allocated among agents: highway lanes, public transit, road space, water rights, energy access, grid capacity, user attention, pollution rights, etc. With further automation of the underlying allocation processes, control engineers are increasingly tasked with making decisive assumptions regarding what society wants. In practice to date, design choices are largely driven by industry norms and conventions rather than a result of conscientiously responsible and ethical design. In this paper, we look at tools available to control engineers to design systems in a more principled manner in order to match the societal mandate. We consider three control design paradigms: online feedback optimization, control of Markov decision processes, and model predictive control. Beginning with aggregating individual agents' preferences into control design objectives, subsequently ensuring and certifying the fulfillment of those specifications, we argue that the feedback nature of control systems enables appropriate allocation of the shared resources in ways hitherto unparalleled.
+
+**arXiv ID:** 2606.23931
+</details>
+
+<details>
+<summary><strong>Multi-Agent Coordination via Support-Preserving Distillation</strong> - Sangmin Lee, Youngju Na, Chanmi Lee, Sung-eui Yoon - [[pdf]](https://arxiv.org/pdf/2610.10087)</summary>
+
+**Abstract:** Offline MARL increasingly relies on generative policies to model multimodal joint behavior, typically by distilling a centralized teacher into decentralized one-step actors under the CTDE. We identify a failure mode at the teacher training stage: standard flow-based teachers pair noise with replay targets independently, so nearby noise samples can be routed toward conflicting coordination modes. The teacher then produces samples between valid modes, and because the distillation loss regresses each local actor onto the conditional mean of the teacher's output given local input, this error is not absorbed but propagated to the student. To remove this teacher-side artifact, we propose Mode-Support Semi-Discrete Optimal Transport (MoSDOT), which summarizes multimodal replay into a finite mode support with prescribed capacities and uses conditional semi-discrete optimal transport to assign each noise sample to a single mode before teacher training. We additionally study a shared-randomness variant that uses a shared noise component at execution to expose the residual gap intrinsic to strict-product execution. On controlled diagnostics and offline MARL benchmarks, MoSDOT improves endpoint quality and routing consistency, particularly on datasets exhibiting multimodal joint behavior.
+
+**arXiv ID:** 2610.10087
+</details>
+
+<details>
 <summary><strong>TandemBench: Benchmarking Decision Models for Multi-Agent Collaboration</strong> - Baohang Li, Xiaocheng Feng, Bing Qin - [[pdf]](https://arxiv.org/pdf/2611.05827)</summary>
 
 **Abstract:** Decision models choose among predefined options in tasks such as routing and action selection. In multi-agent collaboration, a decision determines how members divide work, exchange resources, and act in parallel. We introduce TandemBench, a benchmark of 1,200 questions in multi-agent cooking scenarios where coordination choices affect goal completion. Models receive complete global information and candidate team plans, with reference answers established through execution and exact search. Models select an optimal team plan and, in paired variants that retain or remove it, judge whether better arrangements exist beyond the supplied options. We evaluate 40 native decision models and compare them with 10 general-purpose language models. The best native decision model achieves 62.50% decision accuracy. Native decision models remain close to chance in optimality verification. Paired tests reveal that some report better alternatives regardless of whether an optimal plan is already present. These findings show that team-plan decision accuracy alone can conceal systematic errors in judging whether the supplied options contain an optimal arrangement. The dataset and evaluation code are publicly available at this https URL.
@@ -542,7 +606,7 @@ In this work, we challenge the prevailing assumption that agents must consume to
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (9 papers)</h2></summary>
+<summary><h2>Other Agent Research (10 papers)</h2></summary>
 
 <details>
 <summary><strong>Uncertainty-Aware Resource Orchestration for Agentic AI Systems</strong> - Masoud Shokrnezhad, Tarik Taleb - [[pdf]](https://arxiv.org/pdf/2611.05392)</summary>
@@ -617,10 +681,18 @@ Code is available at this https URL
 **arXiv ID:** 2611.06120
 </details>
 
+<details>
+<summary><strong>Learning to Live: A Step Toward Lifelong Embodied Intelligence</strong> - Lirong Che, Peidong Wang, Yimeng Su, Jiong Wang, Yang Chen, Wenbo Fu, Zhenyu Huang, Tiancheng Xu, Yuzhe Yang, Dongli Xie, Xu Cao, Chuang Wang, Daqi Liu, Jian Su - [[pdf]](https://arxiv.org/pdf/2611.00180)</summary>
+
+**Abstract:** Embodied agents are usually organized around individual tasks, yet the physical world keeps changing between tasks and during execution. We introduce LIFE (Lifelong Intelligence from Experience), a framework in which a robot observes continuously, remembers selectively, and turns experience into new capabilities. RoboBeats, a family of lightweight streaming gates, tracks conditions set by the agent and discovers new events, deciding when an observation warrants a response or a memory write. Selected observations enter Plastic Memory, a flat store of images and structured records that keeps the source evidence, so new fields and indexes can be added when later questions need them. When existing tools fall short, Explore-Distill-Mount (EDM) turns solutions found during problem solving into validated, reusable tools and skills. Under matched protocols, RoboBeats substantially improves condition tracking over its base models and, at the same writing budget, retains more useful evidence for memory question answering than uniform sampling. A case study of limited scale, replaying 24 hours of continuous video recorded by a real robot, illustrates how the integrated system builds memory from a day of experience and uses it to answer everyday questions. LIFE takes a step toward robots that become more familiar with their surroundings and more capable through experience: learning not only to complete tasks, but to live in the world.
+
+**arXiv ID:** 2611.00180
+</details>
+
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (19 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (22 papers)</h2></summary>
 
 <details>
 <summary><strong>VirtualTrialHarness: Coordinating Agentic Operationalization of Virtual Trial Protocols Across Complex Clinical Schemas</strong> - Pengze Li, Jingna Feng, Yue Yu, Yining Wu, Xinyue Hu, Jie Lin, Avanti Bhandarkar, Cui Tao - [[pdf]](https://arxiv.org/pdf/2611.05551)</summary>
@@ -745,6 +817,14 @@ Evaluating these algorithms against simulated adversaries across 813 buyers, we 
 </details>
 
 <details>
+<summary><strong>Mechanical Engineering Skills: An Open Library of Agent Skills for Design, Analysis and Manufacturing</strong> - Achuth Chandrasekhar, Jesse Barkley, Peter Pak, Rumi Loghmani, Aakash Oza, Amir Barati Farimani - [[pdf]](https://arxiv.org/pdf/2611.05758)</summary>
+
+**Abstract:** Mechanical engineers use specialized tools for CAD, simulation, manufacturing and research, each with a distinct interface and learning curve. We present Mechanical Engineering Skills, an open library of 33 agent skills that makes these capabilities accessible through a single text or voice conversation. Each skill combines operating instructions, executable tools and verification procedures. A language model interprets the request, selects and coordinates skills, while deterministic tools perform computations and return checked results. Default workflows require no tool-specific interface training, local model execution or model fine-tuning; skills load on demand and install with one command. Nineteen skills adapt published or preprint research from our laboratory, including text-to-CAD, linkage synthesis, CFD setup, stress-field and lattice surrogates, equation discovery, additive-manufacturing planning and in-process monitoring. Fourteen additional skills support core engineering and education. We describe the skill format, design principles and a method for translating research into practical workflows. Five case studies with explicit evidence scopes and independent reruns demonstrate exact analytical agreement for lattice homogenization, rocket apogee predictions within 4% of stored OpenRocket references, an equation fit nine times more accurate than a cubic polynomial at an unseen temperature, and an end-to-end rehearsal of porosity monitoring. Controlled agent comparisons remain future work. The open library is available at this https URL.
+
+**arXiv ID:** 2611.05758
+</details>
+
+<details>
 <summary><strong>Towards On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents</strong> - Shijue Huang, Hangyu Guo, Guanting Dong, Chenxin Li, Junting Lu, Xinyu Geng, Zhaochen Su, Zhenyu Li, Shuang Chen, Hongru Wang, Yi R. Fung - [[pdf]](https://arxiv.org/pdf/2605.10832)</summary>
 
 **Abstract:** Multimodal deep search requires an agent to solve open-world problems by chaining search, tool use, and visual reasoning over evolving textual and visual context. Two bottlenecks limit current systems. First, existing tool-use harnesses treat images returned by search, browsing, or transformation as transient outputs, so intermediate visual evidence cannot be re-consumed by later tools. Second, training data is usually built by fixed curation recipes that cannot track the target agent's evolving capability. To address these challenges, we first introduce a visual-native agent harness centered on an image bank reference protocol, which registers every tool-returned image as an addressable <image:N> reference and makes intermediate visual evidence reusable by later tools. On top of this harness, On-policy Data Evolution (ODE) runs a closed-loop data generator that refines itself across rounds from rollouts of the policy being trained. This per-round refinement makes each round's data target what the current policy still needs to learn. The same framework supports both diverse supervised fine-tuning data and policy-aware reinforcement learning data curation, covering the full training lifecycle of the target agent. Across 8 multimodal deep search benchmarks, ODE improves the Qwen3-VL-8B agent from 24.9% to 39.0% on average. At 30B, ODE raises the average score from 30.6% to 41.5%. Further analyses validate the effectiveness of image bank reuse, especially on complex tasks requiring iterative visual refinement, while rollout-feedback evolution yields more grounded SFT traces and better policy-matched RL tasks than static synthesis.
@@ -774,6 +854,22 @@ Evaluating these algorithms against simulated adversaries across 813 buyers, we 
 **Abstract:** The introduction of generalist robot policies has enabled a single, large model to learn to perform a variety of tasks from a vast pre-training corpus. While these models often exhibit powerful zero-shot generalization capabilities, they typically require an adaptation phase to achieve sufficient performance in deployment. Iterated self-improvement via reinforcement learning (RL) has demonstrated promise in enabling this adaptation, yet such approaches have been largely explored in single-task settings - where the goal is to simply improve on a narrow deployment task - which lies in stark contrast to the multi-task capabilities of the base policy. In this work we ask whether generalist robot policies are capable of multi-task, generalist improvement in deployment - targeting many diverse tasks simultaneously - and what algorithmic recipe enables this. To answer this question, we first develop a set of structured evaluations to test generalist improvement capabilities, and systematically evaluate algorithmic and practical design choices regarding value estimation, policy extraction and resource allocation. We show that not only can generalist policies be improved online across diverse tasks, but that the right recipe can enable generalization and increase performance on tasks not considered during online training. We characterize when this generalization occurs and show that both the training task distribution and the use of value-based RL are critical. To the best of our knowledge, this is among the first evidence for online generalist improvement for robot foundation models.
 
 **arXiv ID:** 2611.06905
+</details>
+
+<details>
+<summary><strong>MMUSV-Sim: A Maritime Simulation Platform for Multi-USV Cooperative Perception</strong> - Ziao Li, Jianxiong Ye, Biao Tang, Leping Zhang, Kun Zuo, Siyu Huang, Mengtang Li, Deyu Meng, Chenqiang Gao - [[pdf]](https://arxiv.org/pdf/2608.14207)</summary>
+
+**Abstract:** Perception from a single unmanned surface vehicle (USV) is limited by sensing range, field of view, and occlusions caused by islands, port infrastructure, and nearby vessels. Multi-USV cooperative perception can alleviate these limitations by integrating complementary observations from distributed viewpoints. However, progress is constrained by the high cost of coordinated sea trials, the scarcity of multi-USV datasets, and the lack of integrated maritime simulation and evaluation tools. We present MMUSV-Sim, a perception-oriented maritime simulation and data-generation platform built on Unreal Engine 5 and Project AirSim. It supports configurable maritime scenarios, synchronized multimodal acquisition across multiple USVs, and consistent 3D annotations in a shared world frame. Using MMUSV-Sim, we construct MarU2U-200m, a synchronized multi-USV RGB--LiDAR dataset with 341 sequences and 14,385 scene frames. We establish a cooperative bird's-eye-view (BEV) vessel detection benchmark with LiDAR and RGB--LiDAR inputs. Experimental results show that Early Fusion improves LiDAR detection AP@0.5 from 64.26 to 81.46 compared with the single-USV baseline. RGB features further improve intermediate fusion, increasing AP@0.5 by up to 4.55 percentage points. LiDAR and RGB transfer experiments also show the value of the generated data as a pretraining source for real maritime detection. The project are available at this https URL
+
+**arXiv ID:** 2608.14207
+</details>
+
+<details>
+<summary><strong>Provably Safe, Yet Scalable Reinforcement Learning</strong> - Kai S. Yun, Zeyang Li, Navid Azizan - [[pdf]](https://arxiv.org/pdf/2606.14536)</summary>
+
+**Abstract:** Safe reinforcement learning (RL) aims to learn policies that optimize rewards while satisfying constraints. Predominant approaches rely on soft-constrained policy optimization, which has achieved empirical success but does not provide formal safety guarantees for the learned policy. In contrast, methods with strict guarantees typically rely on explicit certificate functions, whose construction requires the direct synthesis and verification of control-invariant sets, a process that scales poorly with state dimension and often yields overly conservative behavior. In this paper, we present the Provably Safe, yet Scalable RL (PS2-RL) framework, a novel two-phase architecture for learning provably safe policies in a scalable manner, designed to overcome the key bottlenecks of prior methods. Rather than explicitly computing invariant sets, PS2-RL leverages a learned backup policy to forward-integrate the system dynamics, generating an implicit control-invariant set online. In the first phase, the backup policy is trained with the safe-arrival value function to achieve rapid, safe recovery to the certified base set for invariant-set construction. In the second phase, an RL policy is trained end-to-end through a differentiable projection layer that strictly enforces the safety guarantees induced by the learned backup policy. By maximizing the volume of the implicit control-invariant set in the first phase, the resulting PS2 policy from the second phase is performant and scalable, while maintaining provable safety. Crucially, PS2-RL imposes no restrictions on the underlying RL algorithm and can be plugged into any existing training pipeline. We establish theoretical guarantees for the proposed framework and evaluate it on robotic control tasks with state dimensions up to 10, a regime in which prior provably safe RL methods struggle or become impractical.
+
+**arXiv ID:** 2606.14536
 </details>
 
 </details>
