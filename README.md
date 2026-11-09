@@ -1,8 +1,8 @@
 # Agent arXiv Daily
 
-**Last Updated:** 2026-11-09 06:11:37
+**Last Updated:** 2026-11-09 07:54:44
 
-**Total Papers:** 65
+**Total Papers:** 71
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@
 - [Reinforcement Learning](#reinforcement-learning)
 
 <details open>
-<summary><h2>Agent Applications (3 papers)</h2></summary>
+<summary><h2>Agent Applications (5 papers)</h2></summary>
 
 <details>
 <summary><strong>Ontology-Driven Control of Conversational Agents with a Use-Case for Job Interview Practice</strong> - Barbara Gendron, Gaël Guibon, Mathieu D'aquin - [[pdf]](https://arxiv.org/pdf/2611.09282)</summary>
@@ -41,10 +41,26 @@
 **arXiv ID:** 2607.00642
 </details>
 
+<details>
+<summary><strong>"I had nobody to turn to": Why LGBTQ+ People Choose (Not) to Use AI Chatbots for Personal Health and Relationship Advice</strong> - Jacob Hobbs, Ashray Gupta, Dennis Ulmer, Geetanjali Aich, Nolan Golden, Yanan Long, Ian Rios-Sialer, Jennifer Mickel, Morgan Klaus Scheuerman, Rohit Avinash Mujumdar, Virginia K. Felkner, Jordan Taylor, William Agnew - [[pdf]](https://arxiv.org/pdf/2611.08854)</summary>
+
+**Abstract:** While there is an abundance of research into large language model (LLM) biases against LGBTQ+ communities, far less research has examined how and why LGBTQ+ people choose to make use of AI chatbots. In this work, we examine how LGBTQ+ people choose (not) to use AI chatbots across three domains in which LGBTQ+ users have unique needs: relationship support, mental health support, and gender or sexual health support. We surveyed 73 people (60 LGBTQ+; 13 non-LGBTQ+) on how they interact with AI chatbots and find that participants' access to external resources, privacy concerns, and perceptions of chatbot capabilities shape whether and how they choose to make use of AI chatbots. For instance, some LGBTQ+ participants felt that chatbots might actually be less biased against LGBTQ+ people than the people they know offline. We also find that LGBTQ+ participants report using AI chatbots less frequently than non-LGBTQ+ participants across 15 specific personal health and relationship advice scenarios, citing concerns about AI sycophancy and adverse cognitive side-effects. Recognizing AI chatbots as vital (albeit imperfect) resources for LGBTQ+ people, we recommend researchers consider systemic issues that drive users to AI chatbots and design technologies (AI or otherwise) that prioritize privacy, anonymity, and real human connection.
+
+**arXiv ID:** 2611.08854
+</details>
+
+<details>
+<summary><strong>AURA: A Reinforcement Learning Framework for AI-Driven Adaptive Conversational Surveys</strong> - Jinwen Tang, Yi Shang - [[pdf]](https://arxiv.org/pdf/2510.27126)</summary>
+
+**Abstract:** Conventional online surveys provide limited personalization, often resulting in low engagement and superficial responses. Although AI survey chatbots improve convenience, most are still reactive: they rely on fixed dialogue trees or static prompt templates and therefore cannot adapt within a session to fit individual users, which leads to generic follow-ups and weak response quality. We address these limitations with AURA (Adaptive Understanding through Reinforcement Learning for Assessment), a reinforcement learning framework for AI-driven adaptive conversational surveys. AURA quantifies response quality using a four-dimensional LSDE metric (Length, Self-disclosure, Emotion, and Specificity) and selects follow-up question types via an epsilon-greedy policy that updates the expected quality gain within each session. Initialized with priors extracted from 96 prior campus-climate conversations (467 total chatbot-user exchanges), the system balances exploration and exploitation across 10-15 dialogue exchanges, dynamically adapting to individual participants in real time. In controlled evaluations, AURA achieved a +0.076 mean gain in response quality and a statistically significant improvement over non-adaptive baselines (p=0.044, d=0.66), driven by a 63% reduction in specification prompts and a 10x increase in validation behavior. These results demonstrate that reinforcement learning can give survey chatbots improved adaptivity, transforming static questionnaires into interactive, self-improving assessment systems.
+
+**arXiv ID:** 2510.27126
+</details>
+
 </details>
 
 <details open>
-<summary><h2>Benchmarks and Datasets (13 papers)</h2></summary>
+<summary><h2>Benchmarks and Datasets (14 papers)</h2></summary>
 
 <details>
 <summary><strong>Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents</strong> - Jingdong Zhang, Jionghao Wang, Zhengming Yu, Yancheng Cai, Wei Chow, Chris Choy, Zhiyang Dou, Hang Hua, Jiachen Li, Zhixuan Liu, Chen Wang, Songlin Wei, Siyuan Yang, Yu Yuan, Xiaohang Zhan, Yucheng Zhang, Shuhong Zheng, Xin Li, Lingjie Liu, Wojciech Matusik, Zhengzhong Tu, Wenping Wang - [[pdf]](https://arxiv.org/pdf/2611.08946)</summary>
@@ -149,6 +165,14 @@ This work proposes an agent-based GraphRAG system that introduces a symbolic lay
 **Abstract:** Protein co-abundance clusters preserved across tissues can nominate shared disease mechanisms and therapeutic targets, particularly where proteins implicated in organ-confined diseases converge in other tissues. Yet cross-tissue proteomic studies have examined pre-selected tissue pairs, leaving most combinations, and non-obvious relationships among them, unexplored. Exhaustive comparison requires consistently assessing thousands of candidate clusters from hundreds of tissue-pair networks across heterogeneous evidence, a scale beyond manual curation. We present an LLM-agent framework for large-scale, evidence-grounded comparison of tissue-specific protein co-abundance networks. From sample-level proteomic data, it constructs tissue networks, derives conserved clusters for each tissue pair, integrates evidence from expression atlases, interaction and complex databases, pathways, disease associations and the literature, and proposes mechanistic hypotheses in which every conclusion cites its evidence. Applied to all 231 pairs among 22 human tissues and sample groups, it identified 1,825 conserved clusters in 216 tissue pairs. Co-abundance relationships were shared beyond chance in 76% of pairs, including unrelated organs, and shared clusters were only weakly associated with abundance similarity. Clusters were enriched 3.7- to 6.9-fold for known interactions and complex memberships, and 379 of 793 testable clusters replicated in independent CPTAC proteomes. Some clusters pointed to relationships absent from current databases: one shared by liver and bone marrow linked three genes causing inherited white matter disorders, suggesting a common mechanism via the integrated stress response. Conserved co-abundance clusters thus offer a hypothesis-generating resource for studying disease proteins beyond the affected organ. Code: this https URL
 
 **arXiv ID:** 2608.28990
+</details>
+
+<details>
+<summary><strong>Tracybot: Preserving Developer Intent by Tracing Agent-Generated Code to Prompts</strong> - Răzvan Albu, Aliaksei Khval, Maxine Orlova, Danis Music, Filipe Araújo Veras Rosa, Lirong Yi, Ranim Khojah - [[pdf]](https://arxiv.org/pdf/2611.09395)</summary>
+
+**Abstract:** Large language models (LLMs) are now widely used in software development, and LLM-based coding agents are given increasing autonomy. With coding agents, many design decisions are made in the conversation between the developer and the agent. Typically, the developer starts a conversation with an agent and states their intent, the agent proposes options if needed, and the developer plans the change accordingly. Then, the resulting code is committed. However, in such scenarios, the decisions and the intent behind the changes remain in the conversation, with no link to the code they produced. In this paper, we present Tracybot, an open-source tool that integrates with VS Code, Git, and coding agents to keep track of relevant conversations in an LLM-assisted development process. Tracybot captures each change as a Tasklet which consists of optional planning prompts used to plan a change, together with a build prompt that produces it. Tracybot has two main features: (i) it maps line-level code changes made by coding agents to the Tasklets that produced them, and (ii) it allows the developer to export a Tasklet as a decision record when needed, for example when the decision concerns the architecture of the project. We developed the tool over two iterations of a design science study, while focusing the evaluation on the usability and user-friendliness of the tool. In a focus group (7 participants) and a survey (24 participants), we found that Tracybot was perceived as useful for activities like code review, and most participants found our Tasklet design and presentation to be a clear way to represent the developer's intent. Tool: this https URL. Video: this https URL.
+
+**arXiv ID:** 2611.09395
 </details>
 
 </details>
@@ -350,7 +374,7 @@ Across the five-stage progression, the strongest systems represent behavioral me
 </details>
 
 <details open>
-<summary><h2>Other Agent Research (8 papers)</h2></summary>
+<summary><h2>Other Agent Research (10 papers)</h2></summary>
 
 <details>
 <summary><strong>Rethinking Agent Trajectory Compression: A Workflow-Aware Perspective</strong> - Qijia Zhuang, Rui Liu, Yuxiang Ren - [[pdf]](https://arxiv.org/pdf/2611.08865)</summary>
@@ -416,6 +440,22 @@ Across the five-stage progression, the strongest systems represent behavioral me
 **arXiv ID:** 2611.08905
 </details>
 
+<details>
+<summary><strong>Computer-Use Agents Are Embodied Generalists</strong> - Pranjal Aggarwal, Sean Welleck - [[pdf]](https://arxiv.org/pdf/2611.09847)</summary>
+
+**Abstract:** In many areas of AI, general-purpose models have increasingly replaced handcrafted methods and specialized architectures. We argue that embodied AI is poised for a similar shift. Our key claim is that embodied tasks can be formulated as interaction with digital software. Specifically, we build software that renders an agent's view of a physical environment on a screen and provides controls for acting in it. A computer-use agent (CUA) can then perform embodied tasks through the same screenshots and keyboard and mouse actions that it uses to operate ordinary software. Using a single CUA design and changing only the software, our entries win first-, second-, third-, and sixth-place prizes across four ECCV workshop competitions, without any competition-specific agent tuning. These results suggest that the skills CUAs learn on software, such as visual grounding, precise clicking, and exploration, already carry over to embodied tasks, giving CUAs a far broader scope in embodied AI than previously realized. We therefore advocate that computer-use agents can be embodied generalists. Further, we advocate that, by following the training strategy that made computer-use agents general, embodied AI can converge on a single general model as well, ushering in a new era of general embodied AI. Website: this https URL
+
+**arXiv ID:** 2611.09847
+</details>
+
+<details>
+<summary><strong>Lea: An Agent Backbone for Mathematician-Controlled Formalization in Lean</strong> - Shaswat Patel, Daniel Aarao Reis Arturi, Kevin Gomez, Jaume de Dios Pont, Jorge Poco, Eduardo V. Teixeira, Sam Westrick, Claudio Silva, Chinmay Hegde - [[pdf]](https://arxiv.org/pdf/2611.08849)</summary>
+
+**Abstract:** Agentic systems now formalize research-level mathematics in Lean, but they are built for autonomy: the mathematician states a target and inspects a result. The alternative, a general-purpose coding harness, is domain-neutral and must be assembled into a formalization workspace before any mathematics begins. Mathematicians, however, report wanting to keep high-level control over how an argument is decomposed and established. We present $\textbf{Lea}$, a Lean-specific agent backbone for mathematician-facing software rather than a single interface. Lea exposes runs, sessions, and typed events through one application-neutral API, and ships with Lean tooling (blueprints, LSP, Loogle, SafeVerify) already wired. We report two applications built on it: $\textbf{LeaChat}$, a web client for interactive proof authoring, and $\textbf{LeaOverleaf}$, which formalizes theorems annotated directly in an Overleaf document; a session begun in either continues in the other. In a case study, a mathematician outlined a proof of the Durfee square generating function in a few natural-language messages, and Lea produced a complete Lean development from Mathlib alone, following the intended decomposition closely and requiring substantive correction at a single point. Lea and both applications are released as open source so that further mathematician-facing tools can be built on the same backbone.
+
+**arXiv ID:** 2611.08849
+</details>
+
 </details>
 
 <details open>
@@ -432,7 +472,7 @@ Across the five-stage progression, the strongest systems represent behavioral me
 </details>
 
 <details open>
-<summary><h2>Reinforcement Learning (17 papers)</h2></summary>
+<summary><h2>Reinforcement Learning (18 papers)</h2></summary>
 
 <details>
 <summary><strong>Safe Reinforcement Learning via Probabilistic Option Shielding</strong> - Gian Luca Ascari, Isidoro Tamassia, Ying Jiao, Luc De Raedt, Giuseppe Marra - [[pdf]](https://arxiv.org/pdf/2611.09197)</summary>
@@ -570,6 +610,14 @@ We contribute the architecture, object model, researcher workbench design, and a
 **Abstract:** Language-guided embodied person tracking requires a mobile agent to identify a target from a referring description and consistently follow the target under egocentric observations. We present DobotTrack, a target-grounded vision-language-action (VLA) framework that integrates auxiliary grounding supervision with efficient temporal modeling. We systematically investigate five auxiliary tasks---person segmentation, bounding-box grounding, visual-spatial classification (VSC), future DINO feature prediction, and future-frame prediction---and adopt complementary mask and bounding-box supervision to enhance target delineation and localization. We introduce Q-identity, a target-conditioned historical visual compression module that leverages target-grounding predictions to selectively preserve identity-discriminative appearance features and spatial cues in compact historical tokens. On EVT-Bench, our 0.8B-parameter model achieves an average success rate of 77.9%, exceeding OmTrackVLA by 16.9 percentage points across the three tasks. We further construct a real-world person-tracking dataset collected using a quadruped robot, comprising 126 episodes and 596,323 mask-annotated frames. The target masks enable automatic derivation of bounding boxes and visual-spatial labels encoding horizontal position and apparent image scale, providing additional grounding supervision without separate manual annotation of these labels. Together, our framework and annotation pipeline support learning target-grounded tracking policies from simulated and real-world data. Code is available at this https URL.
 
 **arXiv ID:** 2611.09041
+</details>
+
+<details>
+<summary><strong>DeepRadio: A Human-Agent Workspace for Physical Radio Development</strong> - Jiazhen Lei, Yuxin Sha, Sihan Wang, Wenhui Li, Jinyang Sun, Chengyu Lu, Xiaohua Tian - [[pdf]](https://arxiv.org/pdf/2611.09418)</summary>
+
+**Abstract:** Agentic programming can automate software-defined radio (SDR) development, but decisions can propagate from software to hardware without sufficient user visibility or control. We present DeepRadio, a human-agent workspace embedded in GNU Radio Companion (GRC) for jointly constructing, verifying, and operating physical radio systems. DeepRadio uses a dynamic and state-driven workflow to coordinate a traceable radio specification, claim-oriented cross-layer verification, and mixed-initiative control. These mechanisms expose decisions, tie conclusions to available evidence, and return control to users before consequential hardware actions. Across seven atomic SDR tasks, DeepRadio completed nearly all runs while satisfying all prescribed software and radio-frequency constraints. In a 20-participant study, more participants achieved a verified physical deployment with DeepRadio than with Codex-assisted GRC. Participants reported stronger support for shared intent and understanding while retaining initiative and control. These results suggest that DeepRadio can make agent-assisted physical radio development more reliable, understandable, and controllable.
+
+**arXiv ID:** 2611.09418
 </details>
 
 </details>
